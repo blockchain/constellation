@@ -1,0 +1,16 @@
+{
+  "name": "stylelint-config-constellation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "dependencies": {
+    "stylelint": "^13.12.0",
+    "stylelint-config-recommended": "^4.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  }
+}

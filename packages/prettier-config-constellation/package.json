@@ -1,0 +1,13 @@
+{
+  "name": "prettier-config-constellation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "dependencies": {
+    "prettier": "^2.2.1"
+  }
+}

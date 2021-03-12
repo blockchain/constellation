@@ -209,7 +209,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.12.13, @babel/parser@npm:^7.13.0, @babel/parser@npm:^7.13.10":
+"@babel/parser@npm:^7.12.13, @babel/parser@npm:^7.13.0, @babel/parser@npm:^7.13.10, @babel/parser@npm:^7.8.3":
   version: 7.13.10
   resolution: "@babel/parser@npm:7.13.10"
   bin:
@@ -248,7 +248,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.13.0":
+"@babel/traverse@npm:^7.13.0, @babel/traverse@npm:^7.8.3":
   version: 7.13.0
   resolution: "@babel/traverse@npm:7.13.0"
   dependencies:
@@ -993,7 +993,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.0.0, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1":
+"debug@npm:^4.0.0, debug@npm:^4.1.0, debug@npm:^4.3.1":
+  version: 4.3.2
+  resolution: "debug@npm:4.3.2"
+  dependencies:
+    ms: 2.1.2
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 5543570879e2274f6725d4285a034d6e0822d35faefc6f55965933fb440e8c21eb3a0bef934e66f4b6b491f898ee2de37cab980e9d4fd61372136c19d3ce4527
+  languageName: node
+  linkType: hard
+
+"debug@npm:^4.0.1, debug@npm:^4.1.1":
   version: 4.3.1
   resolution: "debug@npm:4.3.1"
   dependencies:
@@ -1232,9 +1244,6 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-simple-import-sort: ^7.0.0
     prettier: ^2.2.1
-    stylelint: ^13.12.0
-    stylelint-config-recommended: ^4.0.0
-    stylelint-config-standard: ^21.0.0
     typescript: ^4.2.3
   languageName: unknown
   linkType: soft
@@ -2781,6 +2790,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-config-constellation@workspace:packages/prettier-config-constellation":
+  version: 0.0.0-use.local
+  resolution: "prettier-config-constellation@workspace:packages/prettier-config-constellation"
+  dependencies:
+    prettier: ^2.2.1
+  languageName: unknown
+  linkType: soft
+
 "prettier-linter-helpers@npm:^1.0.0":
   version: 1.0.0
   resolution: "prettier-linter-helpers@npm:1.0.0"
@@ -3295,6 +3312,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"stylelint-config-constellation@workspace:packages/stylelint-config-constellation":
+  version: 0.0.0-use.local
+  resolution: "stylelint-config-constellation@workspace:packages/stylelint-config-constellation"
+  dependencies:
+    stylelint: ^13.12.0
+    stylelint-config-recommended: ^4.0.0
+    stylelint-config-styled-components: ^0.1.1
+    stylelint-processor-styled-components: ^1.10.0
+  languageName: unknown
+  linkType: soft
+
 "stylelint-config-recommended@npm:^4.0.0":
   version: 4.0.0
   resolution: "stylelint-config-recommended@npm:4.0.0"
@@ -3304,14 +3332,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-standard@npm:^21.0.0":
-  version: 21.0.0
-  resolution: "stylelint-config-standard@npm:21.0.0"
+"stylelint-config-styled-components@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "stylelint-config-styled-components@npm:0.1.1"
+  checksum: 174eb36c0ddfee5aae5938677efbb2406f6492450d231d1eeee9e828090a396601de317abaf02c9e9c93d704ee6410444230548f9e6f2e726a6ef31eea03a33b
+  languageName: node
+  linkType: hard
+
+"stylelint-processor-styled-components@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "stylelint-processor-styled-components@npm:1.10.0"
   dependencies:
-    stylelint-config-recommended: ^4.0.0
-  peerDependencies:
-    stylelint: ^13.12.0
-  checksum: 143fa0f531ad9f8e27078dbd38c3075fbdcaa1a0d34ce49eaf0886072897bd285f0fac8e7f3cdb9cc8fac91b88a67f306598aa4822905730801245630e6e8ec6
+    "@babel/parser": ^7.8.3
+    "@babel/traverse": ^7.8.3
+    micromatch: ^4.0.2
+    postcss: ^7.0.26
+  checksum: 9ff9a43666dda4459b94d5acea415afee4cccc6ea1967a67d96777456d9680828d80f0daad191dec9b0763b74041569ee159b6ff296b8f4ed8350680488f41a4
   languageName: node
   linkType: hard
 
