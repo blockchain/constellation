@@ -3316,12 +3316,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "stylelint-config-constellation@workspace:packages/stylelint-config-constellation"
   dependencies:
+    prettier: ^2.2.1
     stylelint: ^13.12.0
+    stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^4.0.0
     stylelint-config-styled-components: ^0.1.1
+    stylelint-prettier: ^1.2.0
     stylelint-processor-styled-components: ^1.10.0
   languageName: unknown
   linkType: soft
+
+"stylelint-config-prettier@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "stylelint-config-prettier@npm:8.0.2"
+  peerDependencies:
+    stylelint: ">=11.0.0"
+  bin:
+    stylelint-config-prettier: bin/check.js
+    stylelint-config-prettier-check: bin/check.js
+  checksum: dd7b09ed02d2a932d9c2de4a1532298c559d590683dcb6c9974592e4e0a74e1d4b0962c9770a0499798dfef9341d4a0dac6a57877b23edc3d1e97e7f99cfd077
+  languageName: node
+  linkType: hard
 
 "stylelint-config-recommended@npm:^4.0.0":
   version: 4.0.0
@@ -3336,6 +3351,18 @@ __metadata:
   version: 0.1.1
   resolution: "stylelint-config-styled-components@npm:0.1.1"
   checksum: 174eb36c0ddfee5aae5938677efbb2406f6492450d231d1eeee9e828090a396601de317abaf02c9e9c93d704ee6410444230548f9e6f2e726a6ef31eea03a33b
+  languageName: node
+  linkType: hard
+
+"stylelint-prettier@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "stylelint-prettier@npm:1.2.0"
+  dependencies:
+    prettier-linter-helpers: ^1.0.0
+  peerDependencies:
+    prettier: ">= 0.11.0"
+    stylelint: ">= 9.2.1"
+  checksum: 01656db38aeab46fe3cfa9514d233a7e51f218aeba752c7e68d75e53702d31d4d9a1dd2d8520b97ab441769945ac8e4a4f9430f0335029ee8bcf6e9926aee43f
   languageName: node
   linkType: hard
 
