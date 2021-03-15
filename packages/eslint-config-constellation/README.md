@@ -4,6 +4,8 @@
 
 ```sh
 yarn add --dev eslint-config-constellation
+
+npx install-peerdeps --dev eslint-config-constellation
 ```
 
 ## Usage
@@ -16,19 +18,5 @@ On your `.eslintrc`
 }
 ```
 
-On your `.prettierrc.js`
-
-```js
-module.exports = {
-  ...require('eslint-config-constellation/prettier.config'),
-  semi: false,
-};
-```
-
-On your `.stylelintrc`
-
-```json
-{
-  "extends": "eslint-config-constellation/stylelint.config"
-}
-```
+// add peer
+// use blockchain npm
