@@ -33,11 +33,6 @@ module.exports = {
   rules: {
     "react/prop-types": [0],
     "prefer-const": "error",
-    "import/resolver": {
-      "eslint-import-resolver-lerna": {
-        packages: "src/packages",
-      },
-    },
     "sort-keys": [
       "error",
       "asc",
