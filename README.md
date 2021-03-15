@@ -4,9 +4,9 @@
 Constellation is [Blockchain.com](https://blockchain.com)'s open sourced component library and base code linting configs.
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://https://github.com/blockchain/constellation/blob/master/LICENSE)
-[![npm latest package](https://img.shields.io/npm/v/@material-ui/core/latest.svg)](https://www.npmjs.com/package/@material-ui/core)
+<!--[![npm latest package](https://img.shields.io/npm/v/@material-ui/core/latest.svg)](https://www.npmjs.com/package/@material-ui/core)
 [![npm downloads](https://img.shields.io/npm/dm/@material-ui/core.svg)](https://www.npmjs.com/package/@material-ui/core)
-
+-->
 </div>
 
 ## Installation
