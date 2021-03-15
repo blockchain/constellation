@@ -11,7 +11,7 @@ Constellation is [Blockchain.com](https://blockchain.com)'s open sourced compone
 
 ## Installation
 
-Constellation is mono-repo of various open-sourced packages available as an open-sourced package on [NPM](https://www.npmjs.com/~blockchain-official/constellation).
+Constellation is mono-repo of various open-sourced packages available on [NPM](https://www.npmjs.com/~blockchain-official/constellation).
 
 ```sh
 // NPM
