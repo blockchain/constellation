@@ -4,6 +4,8 @@
 
 ```sh
 yarn add --dev prettier-config-constellation
+
+npx install-peerdeps --dev prettier-config-constellation
 ```
 
 ## Usage
