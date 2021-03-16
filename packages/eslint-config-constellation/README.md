@@ -4,7 +4,11 @@
 
 ```sh
 yarn add --dev eslint-config-constellation
+```
 
+and then
+
+```sh
 npx install-peerdeps --dev eslint-config-constellation
 ```
 
@@ -14,7 +18,10 @@ On your `.eslintrc`
 
 ```json
 {
-  "extends": ["eslint-config-constellation"]
+  "extends": ["eslint-config-constellation"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
 ```
 
