@@ -20,7 +20,7 @@ module.exports = {
     "sort-destructure-keys",
   ],
   parserOptions: {
-    ecmaVersion: 11,
+    ecmaVersion: "es2021",
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,
