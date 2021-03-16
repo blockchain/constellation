@@ -9,9 +9,16 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:json/recommended",
+    "plugin:node/recommended",
     "plugin:prettier/recommended",
   ],
-  plugins: ["simple-import-sort", "typescript-sort-keys"],
+  plugins: [
+    "simple-import-sort",
+    "typescript-sort-keys",
+    "json",
+    "sort-destructure-keys",
+  ],
   parserOptions: {
     ecmaVersion: 11,
     sourceType: "module",
@@ -24,9 +31,7 @@ module.exports = {
   },
   env: {
     browser: true,
-
     "jest/globals": true,
-
     node: true,
   },
   settings: {

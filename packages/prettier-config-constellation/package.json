@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-constellation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "index.js",
   "keywords": [
@@ -11,6 +11,6 @@
     "prettier": "^2.2.1"
   },
   "peerDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "*"
   }
 }
