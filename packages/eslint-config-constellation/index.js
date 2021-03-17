@@ -10,13 +10,14 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:json/recommended",
-    "plugin:prettier/recommended",
+    "prettier",
   ],
   plugins: [
     "simple-import-sort",
     "typescript-sort-keys",
     "json",
     "sort-destructure-keys",
+    "prettier",
   ],
   parserOptions: {
     ecmaVersion: "es2021",
@@ -39,6 +40,9 @@ module.exports = {
     },
   },
   rules: {
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
     "react/prop-types": [0],
     "prefer-const": "error",
     "sort-keys": [

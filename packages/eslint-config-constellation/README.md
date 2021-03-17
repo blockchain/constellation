@@ -24,6 +24,3 @@ On your `.eslintrc`
   }
 }
 ```
-
-// add peer
-// use blockchain npm
