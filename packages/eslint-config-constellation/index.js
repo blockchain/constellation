@@ -10,14 +10,13 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:json/recommended",
-    "prettier",
+    "plugin:prettier/recommended",
   ],
   plugins: [
     "simple-import-sort",
     "typescript-sort-keys",
     "json",
     "sort-destructure-keys",
-    "prettier",
   ],
   parserOptions: {
     ecmaVersion: "es2021",
@@ -40,9 +39,6 @@ module.exports = {
     },
   },
   rules: {
-    "prettier/prettier": "error",
-    "arrow-body-style": "off",
-    "prefer-arrow-callback": "off",
     "react/prop-types": ["off"],
     "prefer-const": "error",
     "sort-keys": [
@@ -58,15 +54,7 @@ module.exports = {
     "no-console": "error",
     "no-underscore-dangle": "off",
     camelcase: "off",
-    "generator-star-spacing": [
-      "error",
-      {
-        before: true,
-        after: true,
-      },
-    ],
     "require-yield": "error",
-    "space-before-function-paren": "error",
     "typescript-sort-keys/interface": "error",
     "typescript-sort-keys/string-enum": "error",
     "@typescript-eslint/ban-ts-comment": "off",
