@@ -46,7 +46,7 @@ module.exports = {
     "react/prop-types": ["off"],
     "prefer-const": "error",
     "sort-keys": [
-      "warn",
+      "error",
       "asc",
       { caseSensitive: true, natural: false, minKeys: 2 },
     ],
