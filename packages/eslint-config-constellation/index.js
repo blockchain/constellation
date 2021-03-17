@@ -10,7 +10,6 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:json/recommended",
-    "plugin:node/recommended-module",
     "plugin:prettier/recommended",
   ],
   plugins: [

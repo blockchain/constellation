@@ -1334,7 +1334,6 @@ __metadata:
     eslint-plugin-jest-dom: ^3.6.5
     eslint-plugin-json: ^2.1.2
     eslint-plugin-jsx-a11y: ^6.4.1
-    eslint-plugin-node: ^11.1.0
     eslint-plugin-prettier: ^3.3.1
     eslint-plugin-react: ^7.22.0
     eslint-plugin-react-hooks: ^4.2.0
@@ -1352,11 +1351,11 @@ __metadata:
     eslint-plugin-jest-dom: "*"
     eslint-plugin-json: "*"
     eslint-plugin-jsx-a11y: "*"
-    eslint-plugin-node: "*"
     eslint-plugin-prettier: "*"
     eslint-plugin-react: "*"
     eslint-plugin-react-hooks: "*"
     eslint-plugin-simple-import-sort: "*"
+    eslint-plugin-sort-destructure-keys: "*"
     eslint-plugin-typescript-sort-keys: "*"
     prettier: "*"
     typescript: "*"
@@ -1371,18 +1370,6 @@ __metadata:
   bin:
     eslint-config-prettier: bin/cli.js
   checksum: 409d3a071f8228d4c958a6a9be9d5ec2b357ce21b7b6cbb137096cade2c31f008a0a3c3533dee8979c0cd944f220a959710b30fd86f8b96f0ef1f4f557d740b3
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-es@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "eslint-plugin-es@npm:3.0.1"
-  dependencies:
-    eslint-utils: ^2.0.0
-    regexpp: ^3.0.0
-  peerDependencies:
-    eslint: ">=4.19.1"
-  checksum: 11b3229c3c7126d24dea1df90ec6b7966f8a269fc95fa24ae1b868fb676474cdb7e5144076aefca99cb1d3e9c89e6d0ae72d4874242d0987f210e0ee7e7f6896
   languageName: node
   linkType: hard
 
@@ -1442,22 +1429,6 @@ __metadata:
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
   checksum: 680d13f5e3e23f7e9b5208c87fa81497bff31909796cbaf5f6245462e54f4bf6b5d03db97662eb67afb344d3f525ade0902472bc807b411b2c3806549faf7203
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-node@npm:^11.1.0":
-  version: 11.1.0
-  resolution: "eslint-plugin-node@npm:11.1.0"
-  dependencies:
-    eslint-plugin-es: ^3.0.0
-    eslint-utils: ^2.0.0
-    ignore: ^5.1.1
-    minimatch: ^3.0.4
-    resolve: ^1.10.1
-    semver: ^6.1.0
-  peerDependencies:
-    eslint: ">=5.16.0"
-  checksum: 634e03613a4aa0ffd5ccf0807a375840a915797781a4e5d44fb1c4d331cd2a5e6b3da41924a0d6a2123c1a51626db032a038210153fbba6a0012e0b7c7f26499
   languageName: node
   linkType: hard
 
@@ -2025,7 +1996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ignore@npm:^5.1.1, ignore@npm:^5.1.4, ignore@npm:^5.1.8":
+"ignore@npm:^5.1.4, ignore@npm:^5.1.8":
   version: 5.1.8
   resolution: "ignore@npm:5.1.8"
   checksum: b08e3d5b5d94eca13475f29a5d47d221060e9cdd7e38d7647088e29d90130669a970fecbc4cdb41b8fa295c6673740c729d3dc05dadc381f593efb42282cbf9f
@@ -3011,7 +2982,7 @@ __metadata:
   dependencies:
     prettier: ^2.2.1
   peerDependencies:
-    prettier: ^2.2.1
+    prettier: "*"
   languageName: unknown
   linkType: soft
 
@@ -3230,7 +3201,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@^1.10.0, resolve@^1.10.1, resolve@^1.17.0, resolve@^1.18.1":
+"resolve@^1.10.0, resolve@^1.17.0, resolve@^1.18.1":
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
   dependencies:
@@ -3240,7 +3211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#builtin<compat/resolve>":
   version: 1.20.0
   resolution: "resolve@patch:resolve@npm%3A1.20.0#builtin<compat/resolve>::version=1.20.0&hash=3388aa"
   dependencies:
@@ -3306,7 +3277,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^6.1.0, semver@npm:^6.3.0":
+"semver@npm:^6.3.0":
   version: 6.3.0
   resolution: "semver@npm:6.3.0"
   bin:
@@ -3541,13 +3512,13 @@ __metadata:
     stylelint-prettier: ^1.2.0
     stylelint-processor-styled-components: ^1.10.0
   peerDependencies:
-    prettier: ^2.2.1
-    stylelint: ^13.12.0
-    stylelint-config-prettier: ^8.0.2
-    stylelint-config-recommended: ^4.0.0
-    stylelint-config-styled-components: ^0.1.1
-    stylelint-prettier: ^1.2.0
-    stylelint-processor-styled-components: ^1.10.0
+    prettier: "*"
+    stylelint: "*"
+    stylelint-config-prettier: "*"
+    stylelint-config-recommended: "*"
+    stylelint-config-styled-components: "*"
+    stylelint-prettier: "*"
+    stylelint-processor-styled-components: "*"
   languageName: unknown
   linkType: soft
 
