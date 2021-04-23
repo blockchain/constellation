@@ -64,5 +64,7 @@ module.exports = {
     camelcase: "off",
     "require-yield": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
   },
 };
