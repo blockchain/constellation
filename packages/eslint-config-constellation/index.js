@@ -35,8 +35,14 @@ module.exports = {
     react: {
       version: "detect",
     },
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
   },
   rules: {
+    "import/no-unresolved": "error",
     "react/prop-types": ["off"],
     "prefer-const": "error",
     "sort-keys": [

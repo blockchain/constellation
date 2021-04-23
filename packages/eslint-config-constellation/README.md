@@ -21,6 +21,16 @@ On your `.eslintrc`
   "extends": ["eslint-config-constellation"],
   "parserOptions": {
     "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
   }
 }
 ```
