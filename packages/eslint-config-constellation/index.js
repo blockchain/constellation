@@ -42,6 +42,13 @@ module.exports = {
     },
   },
   rules: {
+    "react/jsx-filename-extension": "off",
+    "react/destructuring-assignment": "off",
+    "react/display-name": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "import/extensions": "off",
+    "import/no-cycle": "off",
     "import/no-unresolved": "error",
     "react/prop-types": ["off"],
     "prefer-const": "error",
