@@ -16,7 +16,7 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:prettier/recommended",
   ],
-  plugins: ["simple-import-sort", "sort-destructure-keys"],
+  plugins: ["simple-import-sort", "sort-destructure-keys", "sort-keys-fix"],
   parserOptions: {
     ecmaVersion: "es2021",
     sourceType: "module",
@@ -64,6 +64,7 @@ module.exports = {
       "asc",
       { caseSensitive: true, natural: false, minKeys: 2 },
     ],
+    "sort-keys-fix/sort-keys-fix": "warn",
     "sort-destructure-keys/sort-destructure-keys": 2,
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",

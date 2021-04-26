@@ -1469,6 +1469,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-simple-import-sort: ^7.0.0
     eslint-plugin-sort-destructure-keys: ^1.3.5
+    eslint-plugin-sort-keys-fix: ^1.1.1
     eslint-plugin-typescript-sort-keys: ^1.5.0
     prettier: ^2.2.1
     typescript: ^4.2.3
@@ -1478,6 +1479,7 @@ __metadata:
     eslint: "*"
     eslint-config-airbnb: "*"
     eslint-config-prettier: "*"
+    eslint-import-resolver-typescript: "*"
     eslint-plugin-import: "*"
     eslint-plugin-jest: "*"
     eslint-plugin-jest-dom: "*"
@@ -1685,6 +1687,15 @@ __metadata:
   peerDependencies:
     eslint: 3 - 7
   checksum: 4557c6e607f06f47fff7bcdbe98b78962e4ab653442458dbb959ecda634a57a490c9e801f032c76203505bbd36fd6f09e9a4634f6ad3b650e0bf1cf18bf330ee
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-sort-keys-fix@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "eslint-plugin-sort-keys-fix@npm:1.1.1"
+  dependencies:
+    requireindex: ~1.2.0
+  checksum: f2306e43cb1942ca258955aca293cbee598938c14eccacda01434d8ac554ce51b5228e7746b4d52778a551d609291aca2367f739fbbbe6d017a4ddf20da1e039
   languageName: node
   linkType: hard
 
@@ -3521,7 +3532,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"requireindex@npm:^1.2.0":
+"requireindex@npm:^1.2.0, requireindex@npm:~1.2.0":
   version: 1.2.0
   resolution: "requireindex@npm:1.2.0"
   checksum: a6c6c2edd46bcce88f839f69f1d29a11920664862d8b78c205fc69ab2d65a8f592c1a8d68755335898af14ab110cc9fdfc7c572412d38cec485bdf4db45c49c5
