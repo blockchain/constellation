@@ -74,6 +74,7 @@ module.exports = {
     "import/no-duplicates": "error",
     "no-alert": "error",
     "no-console": "error",
+    "no-redeclare": ["error", { builtinGlobals: false }],
     "no-shadow": "off",
     "require-yield": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
