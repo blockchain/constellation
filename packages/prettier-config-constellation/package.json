@@ -11,6 +11,6 @@
     "prettier": "^2.3.0"
   },
   "peerDependencies": {
-    "prettier": "*"
+    "prettier": "^2.3.0"
   }
 }
