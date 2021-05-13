@@ -51,6 +51,7 @@ module.exports = {
     "import/extensions": "off",
     "import/no-cycle": "off",
     "no-case-declarations": "off",
+    "no-done-callback": "off",
     "no-underscore-dangle": "off",
     "new-cap": "off",
     camelcase: "off",
@@ -73,8 +74,10 @@ module.exports = {
     "import/no-duplicates": "error",
     "no-alert": "error",
     "no-console": "error",
+    "no-shadow": "off",
     "require-yield": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
+    "@typescript-eslint/no-shadow": ["error"],
     "@typescript-eslint/no-use-before-define": ["error"],
   },
 };
