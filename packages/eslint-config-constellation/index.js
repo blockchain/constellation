@@ -48,7 +48,7 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/ban-types": "off",
-    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-shadow": ["off"],
     "@typescript-eslint/no-use-before-define": ["error"],
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "camelcase": "off",
