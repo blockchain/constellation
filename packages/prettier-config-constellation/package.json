@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-constellation",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "main": "index.js",
   "keywords": [

@@ -11,16 +11,12 @@ module.exports = {
     "plugin:json/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/typescript",
-    "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:typescript-sort-keys/recommended",
+    "plugin:prettier/recommended",
   ],
-  plugins: [
-    "simple-import-sort",
-    "sort-destructure-keys",
-    "sort-keys-fix"
-  ],
+  plugins: ["simple-import-sort", "sort-destructure-keys", "sort-keys-fix"],
   parserOptions: {
     ecmaVersion: "es2021",
     sourceType: "module",
@@ -51,7 +47,7 @@ module.exports = {
     "@typescript-eslint/no-shadow": ["off"],
     "@typescript-eslint/no-use-before-define": ["error"],
     "@typescript-eslint/switch-exhaustiveness-check": "error",
-    "camelcase": "off",
+    camelcase: "off",
     "import/export": "off",
     "import/extensions": "off",
     "import/first": "error",
