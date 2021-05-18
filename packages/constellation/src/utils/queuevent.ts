@@ -54,8 +54,10 @@ const queuevent = <K extends string, P extends {}>({
 } => {
   const queue = queueStorage<K, P>(queueName)
 
-  const debouncedCallback = debounceWithMaxCount<any>(
-    async (events: { key: K; payload: P }[]) => {
+  const debouncedCallback = debounceWithMaxCount<
+    (events: { key: K; payload: P }[]) => Promise<void>
+  >(
+    async (events) => {
       await queueCallback(events)
 
       queue.flush()

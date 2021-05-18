@@ -596,6 +596,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@blockchain-com/constellation@workspace:packages/constellation":
+  version: 0.0.0-use.local
+  resolution: "@blockchain-com/constellation@workspace:packages/constellation"
+  dependencies:
+    eslint-config-constellation: "workspace:*"
+    jest: ^26.6.3
+    prettier-config-constellation: "workspace:*"
+    stylelint-config-constellation: "workspace:*"
+    typescript: ^4.2.4
+  languageName: unknown
+  linkType: soft
+
 "@cnakazawa/watch@npm:^1.0.3":
   version: 1.0.4
   resolution: "@cnakazawa/watch@npm:1.0.4"
@@ -2262,18 +2274,6 @@ __metadata:
   checksum: 58a404d951bf270494fb91e136cf064652c1208ccedac23e4da24e6a3a3933998f302cadc45cbf6582a007a4aa44dab944e84056b24e3b1964e9a28aeedf76c9
   languageName: node
   linkType: hard
-
-"constellation@workspace:packages/constellation":
-  version: 0.0.0-use.local
-  resolution: "constellation@workspace:packages/constellation"
-  dependencies:
-    eslint-config-constellation: "workspace:*"
-    jest: ^26.6.3
-    prettier-config-constellation: "workspace:*"
-    stylelint-config-constellation: "workspace:*"
-    typescript: ^4.2.4
-  languageName: unknown
-  linkType: soft
 
 "contains-path@npm:^0.1.0":
   version: 0.1.0

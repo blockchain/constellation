@@ -1,5 +1,5 @@
 {
-  "name": "constellation",
+  "name": "@blockchain-com/constellation",
   "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",

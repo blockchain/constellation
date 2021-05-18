@@ -1,9 +1,9 @@
-const debounceWithMaxCount = <T extends (...args: unknown[]) => ReturnType<T>>(
+const debounceWithMaxCount = <T extends (...args: any[]) => ReturnType<T>>(
   debouncedCallback: T,
   waitFor: number,
   maxCount: number
 ): ((...args: Parameters<T>) => ReturnType<T>) => {
-  let timeout: ReturnType<typeof setTimeout>
+  let timeout: NodeJS.Timeout
 
   let counter = 0
 
