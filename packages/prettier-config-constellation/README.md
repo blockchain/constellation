@@ -17,5 +17,5 @@ npx install-peerdeps --dev prettier-config-constellation
 On your `.prettierrc`
 
 ```json
-"prettier-config-constellation";
+"prettier-config-constellation"
 ```

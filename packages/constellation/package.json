@@ -1,0 +1,20 @@
+{
+  "name": "constellation",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "NODE_ENV=production tsc"
+  },
+  "devDependencies": {
+    "eslint-config-constellation": "workspace:*",
+    "jest": "^26.6.3",
+    "prettier-config-constellation": "workspace:*",
+    "stylelint-config-constellation": "workspace:*"
+  },
+  "dependencies": {
+    "typescript": "^4.2.4"
+  }
+}
