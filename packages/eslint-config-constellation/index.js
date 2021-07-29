@@ -72,6 +72,8 @@ module.exports = {
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": ["off"],
+    "react/state-in-constructor": ["off"],
+    "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "require-yield": "error",
     "simple-import-sort/exports": "error",
