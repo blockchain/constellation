@@ -2,17 +2,31 @@
   "name": "@blockchain-com/constellation",
   "version": "0.0.5",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "prepublish": "yarn build",
-    "build": "NODE_ENV=production tsc"
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },
   "devDependencies": {
+    "@types/react": "^17.0.16",
+    "@types/react-dom": "^17.0.9",
     "eslint-config-constellation": "workspace:*",
     "jest": "^26.6.3",
     "prettier-config-constellation": "workspace:*",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "stylelint-config-constellation": "workspace:*",
     "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

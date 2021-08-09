@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "declaration": true,
-    "outDir": "dist",
+    "outDir": "dist/esm",
     "rootDir": "src"
   },
   "include": ["src"],
