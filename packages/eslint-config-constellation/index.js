@@ -44,6 +44,7 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-shadow": ["off"],
     "@typescript-eslint/no-use-before-define": ["error"],
     "@typescript-eslint/switch-exhaustiveness-check": "error",
