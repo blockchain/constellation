@@ -14,7 +14,9 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build:storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
+    "deploy:storybook": "yarn deploy-storybook --existing-output-dir=./storybook-static"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -24,6 +26,7 @@
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/react": "^6.3.7",
+    "@storybook/storybook-deployer": "^2.8.10",
     "@types/react": "^17.0.16",
     "@types/react-dom": "^17.0.9",
     "@types/styled-components": "^5.1.12",
