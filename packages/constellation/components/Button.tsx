@@ -158,9 +158,9 @@ const selectColor = (nature: Nature, small: boolean) => {
       }
     case 'exchangeTurquoise':
       return {
-        color: 'exchangeNight',
-        backgroundColor: 'exchangeTurquoise',
-        borderColor: 'exchangeTurquoise'
+        color: 'grey900',
+        backgroundColor: 'green300',
+        borderColor: 'green300'
       }
     case 'primary':
       return {
@@ -171,8 +171,8 @@ const selectColor = (nature: Nature, small: boolean) => {
     case 'purple':
       return {
         color: 'white',
-        backgroundColor: 'purple',
-        borderColor: 'purple'
+        backgroundColor: 'purple700',
+        borderColor: 'purple700'
       }
     case 'secondary':
       return {
@@ -183,25 +183,25 @@ const selectColor = (nature: Nature, small: boolean) => {
     case 'received':
       return {
         color: 'white',
-        backgroundColor: 'received',
-        borderColor: 'received'
+        backgroundColor: 'green600',
+        borderColor: 'green600'
       }
     case 'sent':
-      return { color: 'white', backgroundColor: 'sent', borderColor: 'sent' }
+      return { color: 'white', backgroundColor: 'red600', borderColor: 'red600' }
     case 'success':
       return {
         color: 'white',
-        backgroundColor: 'success',
-        borderColor: 'success'
+        backgroundColor: 'green600',
+        borderColor: 'green600'
       }
     case 'transferred':
       return {
         color: 'white',
-        backgroundColor: 'transferred',
-        borderColor: 'transferred'
+        backgroundColor: 'blue500',
+        borderColor: 'blue500'
       }
     case 'warning':
-      return { color: 'white', backgroundColor: 'error', borderColor: 'error' }
+      return { color: 'white', backgroundColor: 'red600', borderColor: 'red600' }
     case 'white-transparent':
       return {
         color: 'white',
