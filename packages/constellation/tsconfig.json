@@ -6,6 +6,6 @@
     "outDir": "dist/esm",
     "rootDir": "src"
   },
-  "include": ["src"],
+  "include": ["src", "components/stories"],
   "exclude": ["node_modules", "dist"]
 }
