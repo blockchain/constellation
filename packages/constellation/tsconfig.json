@@ -1,10 +1,10 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "src/",
     "declaration": true,
     "outDir": "dist/esm",
-    "rootDir": "src"
+    "rootDir": "src/"
   },
   "include": ["src", "components/stories"],
   "exclude": ["node_modules", "dist"]
