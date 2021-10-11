@@ -1,4 +1,10 @@
-const tracking = ({ api }: { api: string }) => {
+const tracking = ({
+  api,
+  platform
+}: {
+  api: string
+  platform: 'WALLET' | 'EXCHANGE' | 'BLOCKCHAIN_COM' | 'EXPLORER'
+}) => {
   const hasConsent = async (): Promise<boolean> => {
     const res = await fetch(`${api}/events/tracking/consent`, { credentials: 'include' })
 
@@ -28,16 +34,19 @@ const tracking = ({ api }: { api: string }) => {
 
   const publish = ({
     context,
-    events,
-    platform
+    events
   }: {
     context: {
-      traits: {
-        nabu_id: string
+      campaign?: {
+        [key: string]: unknown
+      }
+      traits?: {
+        [key: string]: unknown
       }
     }
-    events: { [key: string]: any }[]
-    platform: 'WALLET' | 'EXCHANGE' | 'BLOCKCHAIN_COM' | 'EXPLORER'
+    events: {
+      [key: string]: unknown
+    }[]
   }): void => {
     fetch(`${api}/publish`, {
       body: JSON.stringify({
@@ -60,13 +69,13 @@ export default tracking
 
 USAGE EXAMPLE
 
-const analytics = tracking({ api: 'https://api.blockchain.info' })
+const tracker = tracking({ api: 'https://api.blockchain.info' })
 
 const checkConsent = async () => {
-  const isActive = await analytics.hasConsent()
+  const isActive = await tracker.hasConsent()
 
   if (isActive) {
-    analytics.setIdentifier()
+    tracker.setIdentifier()
   } else {
     showConsentModal()
   }
@@ -77,18 +86,18 @@ useEffect(() => {
 }, [])
 
 const onAccept = async () => {
-  analytics.setIdentifier()
+  tracker.setIdentifier()
 
   hideConsentModal()
 }
 
 const onReject = async () => {
-  analytics.deleteIdentifier()
+  tracker.deleteIdentifier()
 
   hideConsentModal()
 }
 
-analytics.publish({
+tracker.publish({
   context: {
     traits: { nabu_id: '123456789' }
   },
