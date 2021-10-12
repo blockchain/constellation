@@ -1,4 +1,8 @@
-import debounceWithMaxCount from './debounceWithMaxCount'
+import debounce from './debounce'
+
+const TIME = 10000
+
+const MAX_QUEUE_SIZE = 10
 
 const queueStorage = <K extends string, P extends {}>(queueName: string) => {
   if (!localStorage.getItem(queueName)) {
@@ -54,16 +58,14 @@ const queuevent = <K extends string, P extends {}>({
 } => {
   const queue = queueStorage<K, P>(queueName)
 
-  const debouncedCallback = debounceWithMaxCount<
-    (events: { key: K; payload: P }[]) => Promise<void>
-  >(
+  const debouncedCallback = debounce<{ key: K; payload: P }[]>(
     async (events) => {
       await queueCallback(events)
 
       queue.flush()
     },
-    10000,
-    10
+    TIME,
+    MAX_QUEUE_SIZE
   )
 
   const push = (key: K, payload: P) => {

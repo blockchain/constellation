@@ -85,13 +85,13 @@ useEffect(() => {
   checkConsent()
 }, [])
 
-const onAccept = async () => {
+const onAccept = () => {
   tracker.setIdentifier()
 
   hideConsentModal()
 }
 
-const onReject = async () => {
+const onReject = () => {
   tracker.deleteIdentifier()
 
   hideConsentModal()
