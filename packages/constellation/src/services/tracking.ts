@@ -12,7 +12,7 @@ const tracking = ({
 
     const { active } = data
 
-    if (active === 'true') {
+    if (active) {
       return true
     }
 
