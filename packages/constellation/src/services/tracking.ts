@@ -48,7 +48,7 @@ const tracking = ({
       [key: string]: unknown
     }[]
   }): void => {
-    fetch(`${api}/publish`, {
+    fetch(`${api}/events/publish`, {
       body: JSON.stringify({
         context,
         device: 'WEB',
