@@ -10,6 +10,16 @@ This is used to make service (api) calls easier.
 
 ### [tracking](./docs/services/tracking)
 
+## Components
+
+This is used to create our primitive components
+
+## Icons
+
+This is used to create our icons
+
+### [icons](./docs/icons)
+
 ## Utils
 
 This is used to create our util functions that are used across our apps.

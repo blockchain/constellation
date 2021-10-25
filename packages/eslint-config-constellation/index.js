@@ -56,6 +56,7 @@ module.exports = {
     "import/no-cycle": "off",
     "import/no-duplicates": "error",
     "import/no-unresolved": "error",
+    "import/prefer-default-export": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "new-cap": "off",
     "no-alert": "error",
