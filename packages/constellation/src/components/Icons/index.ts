@@ -2,8 +2,6 @@ import IconActivity from './IconActivity'
 import IconAirdrop from './IconAirdrop'
 import IconIdentification from './IconIdentification'
 import IconInformation from './IconInformation'
-import IconInterest from './IconInterest'
-import IconInterestCircle from './IconInterestCircle'
 import IconKey from './IconKey'
 import IconKeyboard from './IconKeyboard'
 import IconLaptop from './IconLaptop'
@@ -42,6 +40,8 @@ import IconQuestionCircle from './IconQuestionCircle'
 import IconReceive from './IconReceive'
 import IconRefresh from './IconRefresh'
 import IconRepeat from './IconRepeat'
+import IconRewards from './IconRewards'
+import IconRewardsCircle from './IconRewardsCircle'
 import IconSearch from './IconSearch'
 import IconSecurity from './IconSecurity'
 import IconSell from './IconSell'
@@ -78,8 +78,6 @@ export {
   IconAirdrop,
   IconIdentification,
   IconInformation,
-  IconInterest,
-  IconInterestCircle,
   IconKey,
   IconKeyboard,
   IconLaptop,
@@ -117,6 +115,8 @@ export {
   IconQuestionCircle,
   IconReceive,
   IconRefresh,
+  IconRewards,
+  IconRewardsCircle,
   IconRepeat,
   IconSearch,
   IconSecurity,

@@ -1,6 +1,6 @@
 import type { IconProps } from './types'
 
-const IconInterestCircle = ({
+const IconRewardsCircle = ({
   color = 'currentColor',
   height = 24,
   width = 24,
@@ -29,4 +29,4 @@ const IconInterestCircle = ({
   )
 }
 
-export default IconInterestCircle
+export default IconRewardsCircle
