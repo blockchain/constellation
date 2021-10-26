@@ -1,5 +1,4 @@
-import Button from './Button'
+import * as Icons from './Icons'
+import Text from './Text'
 
-// TODO remove this eslint disable
-// eslint-disable-next-line import/prefer-default-export
-export { Button }
+export { Icons, Text }
