@@ -13,10 +13,14 @@
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "storybook": "start-storybook -p 6006",
+    "ci:lint:css": "stylelint \"src/**/*.{ts,tsx}\"",
+    "ci:lint:js": "eslint \"src/**/*.{ts,tsx}\"",
     "build:storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "deploy:storybook": "yarn deploy-storybook --existing-output-dir=./storybook-static"
+    "deploy:storybook": "yarn deploy-storybook --existing-output-dir=./storybook-static",
+    "lint": "npm run ci:lint:js && npm run ci:lint:css",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest --notify --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

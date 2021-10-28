@@ -1,0 +1,42 @@
+name: pull-request
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.16]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install node.js v${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Lint Constellation code
+        run: yarn workspace @blockchain-com/constellation lint
+
+      - name: Test Constellation code
+        run: yarn workspace @blockchain-com/constellation test
+
+      - name: Build Constellation code
+        run: yarn workspace @blockchain-com/constellation build
+
+      - name: Lint Constellation code
+        run: yarn workspace @blockchain-com/constellation lint
+
+      - name: Test Constellation code
+        run: yarn workspace @blockchain-com/constellation test
+
+      - name: Build Constellation code
+        run: yarn workspace @blockchain-com/constellation build
