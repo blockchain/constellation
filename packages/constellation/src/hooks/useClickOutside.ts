@@ -13,7 +13,10 @@ const useClickOutside = <T extends HTMLElement = any>(
     const listener = (event: any) => {
       if (Array.isArray(nodes)) {
         const shouldTrigger = nodes.every((node) => !!node && !node.contains(event.target))
-        shouldTrigger && handler()
+
+        if (shouldTrigger) {
+          handler()
+        }
       } else if (ref.current && !ref.current.contains(event.target)) {
         handler()
       }
@@ -24,7 +27,7 @@ const useClickOutside = <T extends HTMLElement = any>(
     return () => {
       ;(events || DEFAULT_EVENTS).forEach((fn) => document.removeEventListener(fn, listener))
     }
-  }, [ref, handler, nodes])
+  }, [ref, handler, nodes, events])
 
   return ref
 }
