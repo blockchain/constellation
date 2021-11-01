@@ -3,7 +3,7 @@ const screenSizes = {
   md: 768,
   sm: 540,
   xl: 1440,
-  xm: 320
+  xs: 320
 }
 
 export default screenSizes
