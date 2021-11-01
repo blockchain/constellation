@@ -1,10 +1,10 @@
-import { useEffect, useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 const eventListenerOptions = {
   passive: true
 }
 
-const browser = typeof window !== 'undefined'
+const isBrowser = typeof window !== 'undefined'
 
 const useWindowEvent = <K extends keyof WindowEventMap>(
   type: K,
@@ -13,24 +13,26 @@ const useWindowEvent = <K extends keyof WindowEventMap>(
 ) => {
   useEffect(() => {
     window.addEventListener(type, listener, options)
+
     return () => window.removeEventListener(type, listener, options)
-  }, [])
+  }, [listener, options, type])
 }
 
 const useViewportSize = () => {
   const [windowSize, setWindowSize] = useState({
-    width: browser ? window.innerWidth : 0,
-    height: browser ? window.innerHeight : 0
+    height: isBrowser ? window.innerHeight : 0,
+    width: isBrowser ? window.innerWidth : 0
   })
 
   const setSize = useCallback(() => {
     setWindowSize({
-      width: window.innerWidth || 0,
-      height: window.innerHeight || 0
+      height: window.innerHeight || 0,
+      width: window.innerWidth || 0
     })
   }, [])
 
   useWindowEvent('resize', setSize, eventListenerOptions)
+
   useWindowEvent('orientationchange', setSize, eventListenerOptions)
 
   return windowSize
