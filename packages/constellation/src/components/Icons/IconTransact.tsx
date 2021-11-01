@@ -1,6 +1,6 @@
 import type { IconProps } from './types'
 
-const IconTransact = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
+const IconTransact = ({ height = 24, width = 24, ...props }: IconProps) => {
   return (
     <svg width={width} height={height} fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
       <mask
