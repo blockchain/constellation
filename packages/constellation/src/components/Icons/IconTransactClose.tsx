@@ -18,8 +18,8 @@ const IconTransactClose = ({
         height='22'
       >
         <path
-          fill-rule='evenodd'
-          clip-rule='evenodd'
+          fillRule='evenodd'
+          clipRule='evenodd'
           d='M12 21.5c5.799 0 10.5-4.701 10.5-10.5S17.799.5 12 .5 1.5 5.201 1.5 11 6.201 21.5 12 21.5Zm.44-8.197 2.365 2.364a.623.623 0 0 0 .88 0l.982-.982a.623.623 0 0 0 0-.88l-2.364-2.364a.623.623 0 0 1 0-.882l2.364-2.364a.623.623 0 0 0 0-.88l-.982-.982a.623.623 0 0 0-.88 0L12.44 8.697a.623.623 0 0 1-.882 0L9.195 6.333a.623.623 0 0 0-.88 0l-.982.981a.623.623 0 0 0 0 .881l2.364 2.364a.623.623 0 0 1 0 .882l-2.364 2.364a.623.623 0 0 0 0 .88l.981.982a.623.623 0 0 0 .881 0l2.364-2.364a.623.623 0 0 1 .882 0Z'
           fill='#7349F2'
         />
@@ -60,9 +60,9 @@ const IconTransactClose = ({
           width='59.595'
           height='42.194'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
           <feGaussianBlur stdDeviation='5' result='effect1_foregroundBlur_980:1534' />
         </filter>
@@ -73,9 +73,9 @@ const IconTransactClose = ({
           width='60.997'
           height='42.126'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
           <feGaussianBlur stdDeviation='5' result='effect1_foregroundBlur_980:1534' />
         </filter>
@@ -86,9 +86,9 @@ const IconTransactClose = ({
           width='45.844'
           height='33.678'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
           <feGaussianBlur stdDeviation='5' result='effect1_foregroundBlur_980:1534' />
         </filter>
@@ -99,9 +99,9 @@ const IconTransactClose = ({
           width='48.519'
           height='36.317'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
           <feGaussianBlur stdDeviation='5' result='effect1_foregroundBlur_980:1534' />
         </filter>

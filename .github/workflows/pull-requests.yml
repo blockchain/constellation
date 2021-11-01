@@ -26,17 +26,8 @@ jobs:
       - name: Lint Constellation code
         run: yarn workspace @blockchain-com/constellation lint
 
-      - name: Test Constellation code
-        run: yarn workspace @blockchain-com/constellation test
-
-      - name: Build Constellation code
-        run: yarn workspace @blockchain-com/constellation build
-
-      - name: Lint Constellation code
-        run: yarn workspace @blockchain-com/constellation lint
-
-      - name: Test Constellation code
-        run: yarn workspace @blockchain-com/constellation test
+      # - name: Test Constellation code
+      #   run: yarn workspace @blockchain-com/constellation test
 
       - name: Build Constellation code
         run: yarn workspace @blockchain-com/constellation build
