@@ -1,33 +1,11 @@
-import { forwardRef, HTMLProps, ReactNode, Ref } from 'react'
+import { forwardRef, Ref } from 'react'
 import styled, { css } from 'styled-components'
 
-type VariantType =
-  | 'display'
-  | 'title-1'
-  | 'title-2'
-  | 'title-3'
-  | 'subheading'
-  | 'body-mono'
-  | 'body-1'
-  | 'body-2'
-  | 'paragraph-mono'
-  | 'paragraph-1'
-  | 'paragraph-2'
-  | 'caption-1'
-  | 'caption-2'
-  | 'overline'
-  | 'micro'
+import { TextProps } from './types'
 
-type ComponentType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
-
-type TextProps = Omit<HTMLProps<HTMLHeadingElement | HTMLParagraphElement>, 'ref' | 'as'> & {
-  children: ReactNode
-  component?: ComponentType
-  variant?: VariantType
-}
-
-const StyledText = styled.p<{ $variant: VariantType }>`
+const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
   font-family: 'Inter', sans-serif;
+  margin: 0;
 
   ${(props) =>
     props.$variant === 'display'
@@ -144,6 +122,7 @@ const StyledText = styled.p<{ $variant: VariantType }>`
           font-weight: 600;
           font-feature-settings: 'ss01' on, 'zero' on;
           text-transform: uppercase;
+          letter-spacing: 0.1em;
         `
       : null}
 

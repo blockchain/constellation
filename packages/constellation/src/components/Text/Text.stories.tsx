@@ -1,5 +1,16 @@
-// TODO stories here
+import { Story } from '@storybook/react'
+import React from 'react'
 
-const stories = {}
+import Component from '.'
+import { TextProps } from './types'
 
-export default stories
+export default {
+  component: Component,
+  title: 'Components/Text'
+}
+
+const Template: Story<TextProps> = (args) => <Component {...args} />
+
+export const Text = Template.bind({})
+
+Text.args = { children: 'Text', variant: 'display' }

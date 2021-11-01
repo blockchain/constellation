@@ -55,6 +55,12 @@ module.exports = {
     "import/newline-after-import": "error",
     "import/no-cycle": "off",
     "import/no-duplicates": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: ["**/*.stories.tsx"],
+      },
+    ],
     "import/no-unresolved": "error",
     "import/prefer-default-export": "off",
     "jsx-a11y/anchor-is-valid": "off",
