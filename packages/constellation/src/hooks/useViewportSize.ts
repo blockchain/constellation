@@ -15,14 +15,14 @@ const useViewportSize = () => {
     width: isBrowser ? window.innerWidth : 0
   })
 
-  const setSize = useCallback(() => {
+  const setSize = useCallback((e: Event) => {
     setWindowSize({
       height: window.innerHeight || 0,
       width: window.innerWidth || 0
     })
   }, [])
 
-  useWindowEvent('resize', debounce<UIEvent>(setSize, 500), eventListenerOptions)
+  useWindowEvent('resize', debounce(setSize, 500), eventListenerOptions)
 
   useWindowEvent('orientationchange', setSize, eventListenerOptions)
 
