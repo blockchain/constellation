@@ -1,5 +1,5 @@
 const debounce = <T extends unknown[]>(
-  callback: (...args: T[]) => PromiseLike<void>,
+  callback: (...args: T[]) => void,
   wait: number,
   maxCount = Infinity
 ) => {

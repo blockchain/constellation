@@ -1,22 +1,13 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
+
+import { debounce } from '../utils'
+import useWindowEvent from './useWindowEvent'
 
 const eventListenerOptions = {
   passive: true
 }
 
 const isBrowser = typeof window !== 'undefined'
-
-const useWindowEvent = <K extends keyof WindowEventMap>(
-  type: K,
-  listener: (this: Window, ev: WindowEventMap[K]) => any,
-  options?: boolean | AddEventListenerOptions
-) => {
-  useEffect(() => {
-    window.addEventListener(type, listener, options)
-
-    return () => window.removeEventListener(type, listener, options)
-  }, [listener, options, type])
-}
 
 const useViewportSize = () => {
   const [windowSize, setWindowSize] = useState({
@@ -31,7 +22,7 @@ const useViewportSize = () => {
     })
   }, [])
 
-  useWindowEvent('resize', setSize, eventListenerOptions)
+  useWindowEvent('resize', debounce<UIEvent>(setSize, 500), eventListenerOptions)
 
   useWindowEvent('orientationchange', setSize, eventListenerOptions)
 
