@@ -17,7 +17,7 @@ const colors = {
   purple,
   red,
   teal,
-  white
+  white,
 }
 
 export default colors
