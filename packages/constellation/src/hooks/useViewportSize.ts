@@ -15,7 +15,7 @@ const useViewportSize = () => {
     width: isBrowser ? window.innerWidth : 0
   })
 
-  const setSize = useCallback((e: Event) => {
+  const setSize = useCallback(() => {
     setWindowSize({
       height: window.innerHeight || 0,
       width: window.innerWidth || 0
