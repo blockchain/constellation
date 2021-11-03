@@ -21,7 +21,7 @@
     "lint": "yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
     "storybook": "start-storybook -p 6006",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
