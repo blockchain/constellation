@@ -40,7 +40,7 @@ const queueStorage = <K extends string, P extends {}>(queueName: string) => {
   const values = {
     flush,
     items,
-    push
+    push,
   }
 
   return values
@@ -48,7 +48,7 @@ const queueStorage = <K extends string, P extends {}>(queueName: string) => {
 
 const queuevent = <K extends string, P extends {}>({
   queueCallback,
-  queueName
+  queueName,
 }: {
   queueCallback: (events: { key: K; payload: P }[]) => PromiseLike<void>
   queueName: string
@@ -65,7 +65,7 @@ const queuevent = <K extends string, P extends {}>({
       queue.flush()
     },
     TIME,
-    MAX_QUEUE_SIZE
+    MAX_QUEUE_SIZE,
   )
 
   const push = (key: K, payload: P) => {
@@ -88,7 +88,7 @@ const queuevent = <K extends string, P extends {}>({
 
   const values = {
     clear,
-    push
+    push,
   }
 
   return values

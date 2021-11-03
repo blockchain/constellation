@@ -4,7 +4,7 @@ import { debounce } from '../utils'
 import useWindowEvent from './useWindowEvent'
 
 const eventListenerOptions = {
-  passive: true
+  passive: true,
 }
 
 const isBrowser = typeof window !== 'undefined'
@@ -12,13 +12,13 @@ const isBrowser = typeof window !== 'undefined'
 const useViewportSize = () => {
   const [windowSize, setWindowSize] = useState({
     height: isBrowser ? window.innerHeight : 0,
-    width: isBrowser ? window.innerWidth : 0
+    width: isBrowser ? window.innerWidth : 0,
   })
 
   const setSize = useCallback(() => {
     setWindowSize({
       height: window.innerHeight || 0,
-      width: window.innerWidth || 0
+      width: window.innerWidth || 0,
     })
   }, [])
 

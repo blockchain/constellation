@@ -6,7 +6,7 @@ import { TextProps } from './types'
 
 export default {
   component: Component,
-  title: 'Components/Text'
+  title: 'Components/Text',
 }
 
 const Template: Story<TextProps> = (args) => <Component {...args} />

@@ -5,7 +5,7 @@ const DEFAULT_EVENTS = ['mousedown', 'touchstart']
 const useClickOutside = <T extends HTMLElement = any>(
   handler: () => void,
   events?: string[] | null,
-  nodes?: HTMLElement[]
+  nodes?: HTMLElement[],
 ) => {
   const ref = useRef<T>()
 

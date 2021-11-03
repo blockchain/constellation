@@ -1,7 +1,7 @@
 const debounce = <T extends unknown, U extends void>(
   callback: (...args: T[]) => PromiseLike<U> | U,
   wait = 500,
-  maxCount = Infinity
+  maxCount = Infinity,
 ) => {
   let timer: ReturnType<typeof setTimeout>
 

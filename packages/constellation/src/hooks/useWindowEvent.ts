@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 const useWindowEvent = <K extends keyof WindowEventMap>(
   type: K,
   listener: (this: Window, ev: WindowEventMap[K]) => any,
-  options?: boolean | AddEventListenerOptions
+  options?: boolean | AddEventListenerOptions,
 ) => {
   useEffect(() => {
     window.addEventListener(type, listener, options)

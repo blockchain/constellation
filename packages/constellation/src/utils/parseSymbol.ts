@@ -1,5 +1,5 @@
 const parseSymbol = (
-  symbol: string
+  symbol: string,
 ): {
   base: string
   counter: string
@@ -12,7 +12,7 @@ const parseSymbol = (
 
   return {
     base: data[0],
-    counter: data[1]
+    counter: data[1],
   }
 }
 

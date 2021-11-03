@@ -1,6 +1,6 @@
 const tracking = ({
   api,
-  platform
+  platform,
 }: {
   api: string
   platform: 'WALLET' | 'EXCHANGE' | 'BLOCKCHAIN_COM' | 'EXPLORER'
@@ -22,19 +22,19 @@ const tracking = ({
   const deleteIdentifier = (): void => {
     fetch(`${api}/events/tracking`, {
       credentials: 'include',
-      method: 'DELETE'
+      method: 'DELETE',
     })
   }
 
   const setIdentifier = (): void => {
     fetch(`${api}/events/tracking`, {
-      credentials: 'include'
+      credentials: 'include',
     })
   }
 
   const publish = ({
     context,
-    events
+    events,
   }: {
     context: {
       campaign?: {
@@ -53,10 +53,10 @@ const tracking = ({
         context,
         device: 'WEB',
         events,
-        platform
+        platform,
       }),
       credentials: 'include',
-      method: 'POST'
+      method: 'POST',
     })
   }
 
