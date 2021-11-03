@@ -8,13 +8,13 @@ It contains:
 
 This is used to make service (api) calls easier.
 
-### [tracking](./docs/services/tracking)
+### [tracking](./docs/services/tracking.md)
 
 ## Components
 
 This is used to create our primitive components
 
-### [Icons](./docs/components/Icons)
+### [Icons](./docs/components/Icons.md)
 
 ## Utils
 
