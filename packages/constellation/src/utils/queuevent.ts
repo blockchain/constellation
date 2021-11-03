@@ -50,7 +50,7 @@ const queuevent = <K extends string, P extends {}>({
   queueCallback,
   queueName
 }: {
-  queueCallback: (events: { key: K; payload: P }[]) => Promise<void>
+  queueCallback: (events: { key: K; payload: P }[]) => PromiseLike<void>
   queueName: string
 }): {
   clear: () => void
@@ -58,7 +58,7 @@ const queuevent = <K extends string, P extends {}>({
 } => {
   const queue = queueStorage<K, P>(queueName)
 
-  const debouncedCallback = debounce<{ key: K; payload: P }[]>(
+  const debouncedCallback = debounce<{ key: K; payload: P }[], void>(
     async (events) => {
       await queueCallback(events)
 

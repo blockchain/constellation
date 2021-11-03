@@ -1,13 +1,13 @@
-const debounce = <T extends unknown[]>(
-  callback: (...args: T[]) => PromiseLike<void>,
-  wait: number,
+const debounce = <T extends unknown, U extends void>(
+  callback: (...args: T[]) => PromiseLike<U> | U,
+  wait = 500,
   maxCount = Infinity
 ) => {
   let timer: ReturnType<typeof setTimeout>
 
   let counter = 0
 
-  return (...args: T[]): Promise<void> => {
+  return (...args: T[]): PromiseLike<U> => {
     if (timer) clearTimeout(timer)
 
     if (counter >= maxCount) {
