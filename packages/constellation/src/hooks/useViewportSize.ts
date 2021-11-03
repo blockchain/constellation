@@ -22,7 +22,7 @@ const useViewportSize = () => {
     })
   }, [])
 
-  useWindowEvent('resize', debounce(setSize, 500), eventListenerOptions)
+  useWindowEvent('resize', debounce<Event, void>(setSize, 500), eventListenerOptions)
 
   useWindowEvent('orientationchange', setSize, eventListenerOptions)
 
