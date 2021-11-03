@@ -1,6 +1,6 @@
 import type { IconProps } from './types'
 
-const IconTransact = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
+const IconTransact = ({ height = 24, width = 24, ...props }: IconProps) => {
   return (
     <svg width={width} height={height} fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
       <mask
@@ -13,8 +13,8 @@ const IconTransact = ({ color = 'currentColor', height = 24, width = 24, ...prop
         height='20'
       >
         <path
-          fill-rule='evenodd'
-          clip-rule='evenodd'
+          fillRule='evenodd'
+          clipRule='evenodd'
           d='M19.5 13.5c0 .636-.06 1.259-.173 1.862a7 7 0 1 0-7.766-11.65c4.534.95 7.939 4.972 7.939 9.788Zm-10 8a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm-1.003-9.478a.475.475 0 0 1-.475.474H5.475a.475.475 0 0 0-.475.475v1.058c0 .262.212.475.475.475h2.547c.262 0 .475.212.475.474v2.547c0 .263.212.475.474.475h1.058a.475.475 0 0 0 .475-.475v-2.547c0-.262.212-.474.474-.474h2.547a.475.475 0 0 0 .475-.475V12.97a.475.475 0 0 0-.475-.475h-2.547a.475.475 0 0 1-.474-.474V9.475A.475.475 0 0 0 10.029 9H8.97a.475.475 0 0 0-.474.475v2.547Z'
           fill='#7349F2'
         />
@@ -55,9 +55,9 @@ const IconTransact = ({ color = 'currentColor', height = 24, width = 24, ...prop
           width='59.595'
           height='42.194'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
           <feGaussianBlur stdDeviation='5' result='effect1_foregroundBlur_980:1510' />
         </filter>
@@ -68,9 +68,9 @@ const IconTransact = ({ color = 'currentColor', height = 24, width = 24, ...prop
           width='60.997'
           height='42.126'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
           <feGaussianBlur stdDeviation='5' result='effect1_foregroundBlur_980:1510' />
         </filter>
@@ -81,9 +81,9 @@ const IconTransact = ({ color = 'currentColor', height = 24, width = 24, ...prop
           width='45.844'
           height='33.678'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
           <feGaussianBlur stdDeviation='5' result='effect1_foregroundBlur_980:1510' />
         </filter>
@@ -94,9 +94,9 @@ const IconTransact = ({ color = 'currentColor', height = 24, width = 24, ...prop
           width='48.519'
           height='36.317'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
           <feGaussianBlur stdDeviation='5' result='effect1_foregroundBlur_980:1510' />
         </filter>

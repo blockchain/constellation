@@ -16,8 +16,8 @@ const IconChevronLeft = ({
       {...props}
     >
       <path
-        fill-rule='evenodd'
-        clip-rule='evenodd'
+        fillRule='evenodd'
+        clipRule='evenodd'
         d='M15.665 19.665a1.143 1.143 0 0 1-1.616 0l-6.857-6.857a1.143 1.143 0 0 1 0-1.616l6.857-6.857a1.143 1.143 0 0 1 1.616 1.616L9.616 12l6.05 6.049c.446.446.446 1.17 0 1.616Z'
         fill={color}
       />

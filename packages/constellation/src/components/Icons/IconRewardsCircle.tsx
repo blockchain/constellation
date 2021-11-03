@@ -20,8 +20,8 @@ const IconRewardsCircle = ({
         fill={color}
       />
       <path
-        fill-rule='evenodd'
-        clip-rule='evenodd'
+        fillRule='evenodd'
+        clipRule='evenodd'
         d='M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12ZM6 8.5a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Zm7 7a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Zm5-8.3L7.2 18 6 16.8 16.8 6 18 7.2Z'
         fill={color}
       />
