@@ -8,7 +8,7 @@ const grey = {
   600: '#677184',
   700: '#50596B',
   800: '#353F52',
-  900: '#121D33'
+  900: '#121D33',
 } as const
 
 export default grey

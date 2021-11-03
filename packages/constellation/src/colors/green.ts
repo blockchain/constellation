@@ -8,7 +8,7 @@ const green = {
   600: '#00994C',
   700: '#006633',
   800: '#004C26',
-  900: '#003319'
+  900: '#003319',
 } as const
 
 export default green

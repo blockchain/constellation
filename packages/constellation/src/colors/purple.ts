@@ -8,7 +8,7 @@ const purple = {
   600: '#5322E5',
   700: '#451DBF',
   800: '#371799',
-  900: '#250B73'
+  900: '#250B73',
 } as const
 
 export default purple

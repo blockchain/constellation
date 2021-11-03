@@ -8,7 +8,7 @@ const red = {
   600: '#CF1726',
   700: '#A50D0D',
   800: '#8D0B0B',
-  900: '#790606'
+  900: '#790606',
 } as const
 
 export default red

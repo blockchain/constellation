@@ -8,7 +8,7 @@ const blue = {
   600: '#0C6CF2',
   700: '#1656B9',
   800: '#144699',
-  900: '#0D3578'
+  900: '#0D3578',
 } as const
 
 export default blue

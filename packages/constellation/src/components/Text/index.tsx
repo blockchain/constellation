@@ -139,14 +139,14 @@ const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
 const Text = forwardRef(
   (
     { children, component = 'span', variant = 'body-1', ...props }: TextProps,
-    ref: Ref<HTMLHeadingElement | HTMLParagraphElement>
+    ref: Ref<HTMLHeadingElement | HTMLParagraphElement>,
   ) => {
     return (
       <StyledText as={component} $variant={variant} ref={ref} {...props}>
         {children}
       </StyledText>
     )
-  }
+  },
 )
 
 export default Text

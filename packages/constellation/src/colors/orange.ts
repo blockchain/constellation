@@ -8,7 +8,7 @@ const orange = {
   600: '#D46A00',
   700: '#AF5200',
   800: '#8C4100',
-  900: '#6A2E00'
+  900: '#6A2E00',
 } as const
 
 export default orange
