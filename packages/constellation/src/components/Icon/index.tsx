@@ -1,4 +1,4 @@
-import { IconNameType, IconType } from './types'
+import { IconPropsType } from './types'
 import {
   IconActivity,
   IconAirdrop,
@@ -136,9 +136,8 @@ import {
   IconWallet,
   IconWithdraw
 } from '../Icons'
-import { IconProps } from '../Icons/types'
 
-const getIcon = (name: IconNameType, props: IconProps) => {
+const getIcon = ({ name, ...props }: IconPropsType) => {
   switch (name) {
     case 'activity':
       return <IconActivity {...props} />
@@ -410,11 +409,13 @@ const getIcon = (name: IconNameType, props: IconProps) => {
       return <IconWallet {...props} />
     case 'withdraw':
       return <IconWithdraw {...props} />
+    default:
+      return <IconBlockchain {...props} />
   }
 }
 
-const Icon = ({ name, ...props }: IconType) => {
-  return getIcon(name, props)
+const Icon = (props: IconPropsType) => {
+  return getIcon(props)
 }
 
 export default Icon
