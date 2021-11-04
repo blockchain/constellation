@@ -1,5 +1,66 @@
 import IconActivity from './IconActivity'
 import IconAirdrop from './IconAirdrop'
+import IconAlert from './IconAlert'
+import IconAndroid from './IconAndroid'
+import IconApple from './IconApple'
+import IconArrowDown from './IconArrowDown'
+import IconArrowLeft from './IconArrowLeft'
+import IconArrowRight from './IconArrowRight'
+import IconArrowUp from './IconArrowUp'
+import IconBackspace from './IconBackspace'
+import IconBackup from './IconBackup'
+import IconBank from './IconBank'
+import IconBlockchain from './IconBlockchain'
+import IconBlockchainCircle from './IconBlockchainCircle'
+import IconCalendar from './IconCalendar'
+import IconCall from './IconCall'
+import IconCamera from './IconCamera'
+import IconCart from './IconCart'
+import IconChart from './IconChart'
+import IconChartBubbles from './IconChartBubbles'
+import IconChartPie from './IconChartPie'
+import IconCheck from './IconCheck'
+import IconCheckCircle from './IconCheckCircle'
+import IconChevronDown from './IconChevronDown'
+import IconChevronLeft from './IconChevronLeft'
+import IconChevronRight from './IconChevronRight'
+import IconChevronUp from './IconChevronUp'
+import IconClipboard from './IconClipboard'
+import IconClose from './IconClose'
+import IconCloseCircle from './IconCloseCircle'
+import IconCloseCircleV2 from './IconCloseCircleV2'
+import IconCloseV2 from './IconCloseV2'
+import IconColorPicker from './IconColorPicker'
+import IconComment from './IconComment'
+import IconComponents from './IconComponents'
+import IconComputer from './IconComputer'
+import IconCopy from './IconCopy'
+import IconCreditCard from './IconCreditCard'
+import IconDelete from './IconDelete'
+import IconDeposit from './IconDeposit'
+import IconDownload from './IconDownload'
+import IconEdit from './IconEdit'
+import IconEducation from './IconEducation'
+import IconEmail from './IconEmail'
+import IconError from './IconError'
+import IconExchange from './IconExchange'
+import IconExpandLess from './IconExpandLess'
+import IconExpandMore from './IconExpandMore'
+import IconExplore from './IconExplore'
+import IconFaceId from './IconFaceId'
+import IconFavorite from './IconFavorite'
+import IconFilter from './IconFilter'
+import IconFingerprint from './IconFingerprint'
+import IconFlag from './IconFlag'
+import IconFlashOff from './IconFlashOff'
+import IconFlashOn from './IconFlashOn'
+import IconFullscreen from './IconFullscreen'
+import IconFullscreenExit from './IconFullscreenExit'
+import IconGlobe from './IconGlobe'
+import IconGoogleTranslate from './IconGoogleTranslate'
+import IconHardware from './IconHardware'
+import IconHistory from './IconHistory'
+import IconHome from './IconHome'
 import IconIdentification from './IconIdentification'
 import IconInformation from './IconInformation'
 import IconKey from './IconKey'
@@ -76,6 +137,67 @@ import IconWithdraw from './IconWithdraw'
 export {
   IconActivity,
   IconAirdrop,
+  IconAlert,
+  IconAndroid,
+  IconApple,
+  IconArrowDown,
+  IconArrowLeft,
+  IconArrowRight,
+  IconArrowUp,
+  IconBackspace,
+  IconBackup,
+  IconBank,
+  IconBlockchain,
+  IconBlockchainCircle,
+  IconCalendar,
+  IconCall,
+  IconCamera,
+  IconCart,
+  IconChart,
+  IconChartBubbles,
+  IconChartPie,
+  IconCheck,
+  IconCheckCircle,
+  IconChevronDown,
+  IconChevronLeft,
+  IconChevronRight,
+  IconChevronUp,
+  IconClipboard,
+  IconClose,
+  IconCloseCircle,
+  IconCloseCircleV2,
+  IconCloseV2,
+  IconColorPicker,
+  IconComment,
+  IconComponents,
+  IconComputer,
+  IconCopy,
+  IconCreditCard,
+  IconDelete,
+  IconDeposit,
+  IconDownload,
+  IconEdit,
+  IconEducation,
+  IconEmail,
+  IconError,
+  IconExchange,
+  IconExpandLess,
+  IconExpandMore,
+  IconExplore,
+  IconFaceId,
+  IconFavorite,
+  IconFilter,
+  IconFingerprint,
+  IconFlag,
+  IconFlashOff,
+  IconFlashOn,
+  IconFullscreen,
+  IconFullscreenExit,
+  IconGlobe,
+  IconGoogleTranslate,
+  IconHardware,
+  IconHistory,
+  IconHome,
   IconIdentification,
   IconInformation,
   IconKey,

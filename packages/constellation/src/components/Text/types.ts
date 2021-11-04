@@ -21,7 +21,7 @@ type ComponentType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
 type TextProps = Omit<HTMLProps<HTMLHeadingElement | HTMLParagraphElement>, 'ref' | 'as'> & {
   children: ReactNode
-  component?: ComponentType
+  htmlFor?: ComponentType
   variant?: VariantType
 }
 

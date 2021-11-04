@@ -1,4 +1,4 @@
-import * as Icons from './Icons'
+import Icon from './Icon'
 import Text from './Text'
 
-export { Icons, Text }
+export { Icon, Text }
