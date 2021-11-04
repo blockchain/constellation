@@ -269,5 +269,5 @@ export {
   IconVisibilityOff,
   IconVisibilityOn,
   IconWallet,
-  IconWithdraw
+  IconWithdraw,
 }

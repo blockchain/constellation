@@ -1,4 +1,4 @@
-import { IconProps } from '../Icons/types'
+import { IconProps } from './Icons/types'
 
 export enum IconName {
   ACTIVITY = 'activity',
@@ -135,6 +135,9 @@ export enum IconName {
   VISIBILITY_OFF = 'visibility-off',
   VISIBILITY_ON = 'visibility-on',
   WALLET = 'wallet',
-  WITHDRAW = 'withdraw'
+  WITHDRAW = 'withdraw',
 }
-export type IconPropsType = IconProps & { name: IconName }
+
+type IconSize = 'sm' | 'md' | 'lg'
+
+export type IconPropsType = IconProps & { name: IconName; size?: IconSize }
