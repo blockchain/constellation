@@ -414,8 +414,6 @@ const getIcon = ({ name, ...props }: IconPropsType) => {
   }
 }
 
-const Icon = (props: IconPropsType) => {
-  return getIcon(props)
-}
+const Icon = (props: IconPropsType) => getIcon(props)
 
 export default Icon
