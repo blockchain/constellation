@@ -1,4 +1,3 @@
-import { IconPropsType } from './types'
 import {
   IconActivity,
   IconAirdrop,
@@ -136,6 +135,7 @@ import {
   IconWallet,
   IconWithdraw
 } from '../Icons'
+import { IconPropsType } from './types'
 
 const getIcon = ({ name, ...props }: IconPropsType) => {
   switch (name) {
