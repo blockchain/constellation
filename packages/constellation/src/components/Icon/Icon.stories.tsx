@@ -1,42 +1,34 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { ComponentStory } from '@storybook/react'
 import React from 'react'
-import { IconName } from './types'
 
-import Icon from './index'
+import Icon, { iconSize } from '.'
+import { IconName } from './types'
 
 export default {
   argTypes: {
     color: {
       control: 'color',
       description: 'color of the icon',
-      required: false
-    },
-    height: {
-      defaultValue: '24px',
-      description: 'string value of the height of the icon',
-      required: false,
-      type: 'string'
     },
     name: {
       description: 'name of the icon',
       options: Object.values(IconName),
-      required: true,
-      type: 'select'
+      type: 'select',
     },
-    width: {
-      defaultValue: '24px',
-      description: 'string value of the width of the icon',
-      required: false,
-      type: 'string'
-    }
+    size: {
+      description: 'size of the icon',
+      options: Object.keys(iconSize),
+      type: 'select',
+    },
   },
   component: Icon,
-  title: 'Components/Icon'
-} as ComponentMeta<typeof Icon>
+  title: 'Components/Icon',
+}
 
 const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
 export const Default = Template.bind({})
+
 Default.args = {
-  name: IconName.BLOCKCHAIN_CIRCLE
+  name: IconName.BLOCKCHAIN_CIRCLE,
 }

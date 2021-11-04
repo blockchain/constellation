@@ -133,287 +133,295 @@ import {
   IconVisibilityOff,
   IconVisibilityOn,
   IconWallet,
-  IconWithdraw
-} from '../Icons'
-import { IconPropsType } from './types'
+  IconWithdraw,
+} from './Icons'
+import { IconName, IconPropsType } from './types'
 
-const getIcon = ({ name, ...props }: IconPropsType) => {
+const iconSize = {
+  lg: 48,
+  md: 24,
+  sm: 16,
+}
+
+const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
   switch (name) {
-    case 'activity':
-      return <IconActivity {...props} />
-    case 'airdrop':
-      return <IconAirdrop {...props} />
-    case 'alert':
-      return <IconAlert {...props} />
-    case 'android':
-      return <IconAndroid {...props} />
+    case IconName.ACTIVITY:
+      return <IconActivity width={iconSize[size]} height={iconSize[size]} {...props} />
+    case IconName.AIRDROP:
+      return <IconAirdrop width={iconSize[size]} height={iconSize[size]} {...props} />
+    case IconName.ALERT:
+      return <IconAlert width={iconSize[size]} height={iconSize[size]} {...props} />
+    case IconName.ANDROID:
+      return <IconAndroid width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'apple':
-      return <IconApple {...props} />
+      return <IconApple width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'arrow-down':
-      return <IconArrowDown {...props} />
+      return <IconArrowDown width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'arrow-left':
-      return <IconArrowLeft {...props} />
+      return <IconArrowLeft width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'arrow-right':
-      return <IconArrowRight {...props} />
+      return <IconArrowRight width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'arrow-up':
-      return <IconArrowUp {...props} />
+      return <IconArrowUp width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'backspace':
-      return <IconBackspace {...props} />
+      return <IconBackspace width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'backup':
-      return <IconBackup {...props} />
+      return <IconBackup width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'bank':
-      return <IconBank {...props} />
+      return <IconBank width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'blockchain':
-      return <IconBlockchain {...props} />
+      return <IconBlockchain width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'blockchain-circle':
-      return <IconBlockchainCircle {...props} />
+      return <IconBlockchainCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'calendar':
-      return <IconCalendar {...props} />
+      return <IconCalendar width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'call':
-      return <IconCall {...props} />
+      return <IconCall width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'camera':
-      return <IconCamera {...props} />
+      return <IconCamera width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'cart':
-      return <IconCart {...props} />
+      return <IconCart width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'chart':
-      return <IconChart {...props} />
+      return <IconChart width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'chart-bubbles':
-      return <IconChartBubbles {...props} />
+      return <IconChartBubbles width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'chart-pie':
-      return <IconChartPie {...props} />
+      return <IconChartPie width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'check':
-      return <IconCheck {...props} />
+      return <IconCheck width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'check-circle':
-      return <IconCheckCircle {...props} />
+      return <IconCheckCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'chevron-down':
-      return <IconChevronDown {...props} />
+      return <IconChevronDown width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'chevron-left':
-      return <IconChevronLeft {...props} />
+      return <IconChevronLeft width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'chevron-right':
-      return <IconChevronRight {...props} />
+      return <IconChevronRight width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'chevron-up':
-      return <IconChevronUp {...props} />
+      return <IconChevronUp width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'clipboard':
-      return <IconClipboard {...props} />
+      return <IconClipboard width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'close':
-      return <IconClose {...props} />
+      return <IconClose width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'close-circle':
-      return <IconCloseCircle {...props} />
+      return <IconCloseCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'close-circle-v2':
-      return <IconCloseCircleV2 {...props} />
+      return <IconCloseCircleV2 width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'close-v2':
-      return <IconCloseV2 {...props} />
+      return <IconCloseV2 width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'color-picker':
-      return <IconColorPicker {...props} />
+      return <IconColorPicker width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'comment':
-      return <IconComment {...props} />
+      return <IconComment width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'components':
-      return <IconComponents {...props} />
+      return <IconComponents width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'computer':
-      return <IconComputer {...props} />
+      return <IconComputer width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'copy':
-      return <IconCopy {...props} />
+      return <IconCopy width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'credit-card':
-      return <IconCreditCard {...props} />
+      return <IconCreditCard width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'delete':
-      return <IconDelete {...props} />
+      return <IconDelete width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'deposit':
-      return <IconDeposit {...props} />
+      return <IconDeposit width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'download':
-      return <IconDownload {...props} />
+      return <IconDownload width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'edit':
-      return <IconEdit {...props} />
+      return <IconEdit width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'education':
-      return <IconEducation {...props} />
+      return <IconEducation width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'email':
-      return <IconEmail {...props} />
+      return <IconEmail width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'error':
-      return <IconError {...props} />
+      return <IconError width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'exchange':
-      return <IconExchange {...props} />
+      return <IconExchange width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'expandless':
-      return <IconExpandLess {...props} />
+      return <IconExpandLess width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'expandmore':
-      return <IconExpandMore {...props} />
+      return <IconExpandMore width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'explore':
-      return <IconExplore {...props} />
+      return <IconExplore width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'faceid':
-      return <IconFaceId {...props} />
+      return <IconFaceId width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'favorite':
-      return <IconFavorite {...props} />
+      return <IconFavorite width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'filter':
-      return <IconFilter {...props} />
+      return <IconFilter width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'fingerprint':
-      return <IconFingerprint {...props} />
+      return <IconFingerprint width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'flag':
-      return <IconFlag {...props} />
+      return <IconFlag width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'flashoff':
-      return <IconFlashOff {...props} />
+      return <IconFlashOff width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'flashon':
-      return <IconFlashOn {...props} />
+      return <IconFlashOn width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'fullscreen':
-      return <IconFullscreen {...props} />
+      return <IconFullscreen width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'fullscreen-exit':
-      return <IconFullscreenExit {...props} />
+      return <IconFullscreenExit width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'globe':
-      return <IconGlobe {...props} />
+      return <IconGlobe width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'google-translate':
-      return <IconGoogleTranslate {...props} />
+      return <IconGoogleTranslate width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'hardware':
-      return <IconHardware {...props} />
+      return <IconHardware width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'history':
-      return <IconHistory {...props} />
+      return <IconHistory width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'home':
-      return <IconHome {...props} />
+      return <IconHome width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'identification':
-      return <IconIdentification {...props} />
+      return <IconIdentification width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'information':
-      return <IconInformation {...props} />
+      return <IconInformation width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'key':
-      return <IconKey {...props} />
+      return <IconKey width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'keyboard':
-      return <IconKeyboard {...props} />
+      return <IconKeyboard width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'laptop':
-      return <IconLaptop {...props} />
+      return <IconLaptop width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'legal':
-      return <IconLegal {...props} />
+      return <IconLegal width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'line-chart-up':
-      return <IconLineChartUp {...props} />
+      return <IconLineChartUp width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'link':
-      return <IconLink {...props} />
+      return <IconLink width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'list-bullet':
-      return <IconListBullet {...props} />
+      return <IconListBullet width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'loading':
-      return <IconLoading {...props} />
+      return <IconLoading width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'lock':
-      return <IconLock {...props} />
+      return <IconLock width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'logout':
-      return <IconLogout {...props} />
+      return <IconLogout width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'marketup':
-      return <IconMarketUp {...props} />
+      return <IconMarketUp width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'menu':
-      return <IconMenu {...props} />
+      return <IconMenu width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'microphone':
-      return <IconMicrophone {...props} />
+      return <IconMicrophone width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'minus-circle':
-      return <IconMinusCircle {...props} />
+      return <IconMinusCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'money-usd':
-      return <IconMoneyUsd {...props} />
+      return <IconMoneyUsd width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'more-horizontal':
-      return <IconMoreHorizontal {...props} />
+      return <IconMoreHorizontal width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'more-vertical':
-      return <IconMoreVertical {...props} />
+      return <IconMoreVertical width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'new-window':
-      return <IconNewWindow {...props} />
+      return <IconNewWindow width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'notification':
-      return <IconNotification {...props} />
+      return <IconNotification width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'notification-off':
-      return <IconNotificationOff {...props} />
+      return <IconNotificationOff width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'paperclip':
-      return <IconPaperclip {...props} />
+      return <IconPaperclip width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'pending':
-      return <IconPending {...props} />
+      return <IconPending width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'people':
-      return <IconPeople {...props} />
+      return <IconPeople width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'phone':
-      return <IconPhone {...props} />
+      return <IconPhone width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'placeholder':
-      return <IconPlaceholder {...props} />
+      return <IconPlaceholder width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'play-circle':
-      return <IconPlayCircle {...props} />
+      return <IconPlayCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'plus':
-      return <IconPlus {...props} />
+      return <IconPlus width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'plus-circle':
-      return <IconPlusCircle {...props} />
+      return <IconPlusCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'portfolio':
-      return <IconPortfolio {...props} />
+      return <IconPortfolio width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'present':
-      return <IconPresent {...props} />
+      return <IconPresent width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'print':
-      return <IconPrint {...props} />
+      return <IconPrint width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'private':
-      return <IconPrivate {...props} />
+      return <IconPrivate width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'qrcode':
-      return <IconQrCode {...props} />
+      return <IconQrCode width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'question':
-      return <IconQuestion {...props} />
+      return <IconQuestion width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'question-circle':
-      return <IconQuestionCircle {...props} />
+      return <IconQuestionCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'receive':
-      return <IconReceive {...props} />
+      return <IconReceive width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'refresh':
-      return <IconRefresh {...props} />
+      return <IconRefresh width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'repeat':
-      return <IconRepeat {...props} />
+      return <IconRepeat width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'rewards':
-      return <IconRewards {...props} />
+      return <IconRewards width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'rewards-circle':
-      return <IconRewardsCircle {...props} />
+      return <IconRewardsCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'search':
-      return <IconSearch {...props} />
+      return <IconSearch width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'security':
-      return <IconSecurity {...props} />
+      return <IconSecurity width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'sell':
-      return <IconSell {...props} />
+      return <IconSell width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'send':
-      return <IconSend {...props} />
+      return <IconSend width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'settings':
-      return <IconSettings {...props} />
+      return <IconSettings width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'share-android':
-      return <IconShareAndroid {...props} />
+      return <IconShareAndroid width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'share-ios':
-      return <IconShareIos {...props} />
+      return <IconShareIos width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'signout':
-      return <IconSignout {...props} />
+      return <IconSignout width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'subdirectory':
-      return <IconSubdirectory {...props} />
+      return <IconSubdirectory width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'support':
-      return <IconSupport {...props} />
+      return <IconSupport width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'swap':
-      return <IconSwap {...props} />
+      return <IconSwap width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'sync':
-      return <IconSync {...props} />
+      return <IconSync width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'tag-sell':
-      return <IconTagSell {...props} />
+      return <IconTagSell width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'timeout':
-      return <IconTimeout {...props} />
+      return <IconTimeout width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'tor':
-      return <IconTor {...props} />
+      return <IconTor width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'trade':
-      return <IconTrade {...props} />
+      return <IconTrade width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'transact':
-      return <IconTransact {...props} />
+      return <IconTransact width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'transact-close':
-      return <IconTransactClose {...props} />
+      return <IconTransactClose width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'triangle-down':
-      return <IconTriangleDown {...props} />
+      return <IconTriangleDown width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'triangle-up':
-      return <IconTriangleUp {...props} />
+      return <IconTriangleUp width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'unfold-less':
-      return <IconUnfoldLess {...props} />
+      return <IconUnfoldLess width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'unfold-more':
-      return <IconUnfoldMore {...props} />
+      return <IconUnfoldMore width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'unlocked':
-      return <IconUnlocked {...props} />
+      return <IconUnlocked width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'user':
-      return <IconUser {...props} />
+      return <IconUser width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'user-add':
-      return <IconUserAdd {...props} />
+      return <IconUserAdd width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'verified':
-      return <IconVerified {...props} />
+      return <IconVerified width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'visibility-off':
-      return <IconVisibilityOff {...props} />
+      return <IconVisibilityOff width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'visibility-on':
-      return <IconVisibilityOn {...props} />
+      return <IconVisibilityOn width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'wallet':
-      return <IconWallet {...props} />
+      return <IconWallet width={iconSize[size]} height={iconSize[size]} {...props} />
     case 'withdraw':
-      return <IconWithdraw {...props} />
+      return <IconWithdraw width={iconSize[size]} height={iconSize[size]} {...props} />
     default:
-      return <IconBlockchain {...props} />
+      return <IconBlockchain width={iconSize[size]} height={iconSize[size]} {...props} />
   }
 }
 
 const Icon = (props: IconPropsType) => getIcon(props)
+
+export { iconSize }
 
 export default Icon
