@@ -38,9 +38,12 @@ export const AllIcons: ComponentStory<typeof Component> = (args) => {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', fontFamily: 'helvetica', fontSize: '0.8rem' }}>
       {Object.values(IconName).map((name) => (
-        <div style={{ width: '5rem', height: '5rem', margin: '1rem', textAlign: 'center'}} key={name}>
-          <Component {...args} name={name} size="md" />
-          <div style={{ color: 'rgba(0, 0, 0, 0.5)'}}>{name}</div>
+        <div
+          style={{ width: '5rem', height: '5rem', margin: '1rem', textAlign: 'center' }}
+          key={name}
+        >
+          <Component {...args} name={name} size='md' />
+          <div style={{ color: 'rgba(0, 0, 0, 0.5)' }}>{name}</div>
         </div>
       ))}
     </div>
