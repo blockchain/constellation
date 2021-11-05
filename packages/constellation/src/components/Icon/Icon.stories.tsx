@@ -1,7 +1,7 @@
 import { ComponentStory } from '@storybook/react'
 import React from 'react'
 
-import Icon, { iconSize } from '.'
+import Component, { iconSize } from '.'
 import { IconName } from './types'
 
 export default {
@@ -21,14 +21,15 @@ export default {
       type: 'select',
     },
   },
-  component: Icon,
+  component: Component,
   title: 'Components/Icon',
 }
 
-const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
+const Template: ComponentStory<typeof Component> = (args) => <Component {...args} />
 
-export const Default = Template.bind({})
+export const Icon = Template.bind({})
 
-Default.args = {
+Icon.args = {
   name: IconName.BLOCKCHAIN_CIRCLE,
+  size: 'md',
 }

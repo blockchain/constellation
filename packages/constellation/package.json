@@ -20,7 +20,7 @@
     "deploy:storybook": "yarn deploy-storybook --existing-output-dir=./storybook-static",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 9009",
     "test": "jest --passWithNoTests"
   },
   "devDependencies": {
