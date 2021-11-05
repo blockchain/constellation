@@ -1,7 +1,18 @@
 import { forwardRef, Ref } from 'react'
 import styled, { css } from 'styled-components'
 
-import { TextProps } from './types'
+import { HtmlFor, TextProps } from './types'
+
+const htmlElement: { [key: string]: HtmlFor } = {
+  h1: 'h1',
+  h2: 'h2',
+  h3: 'h3',
+  h4: 'h4',
+  h5: 'h5',
+  h6: 'h6',
+  p: 'p',
+  span: 'span',
+}
 
 const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
   font-family: 'Inter', sans-serif;
@@ -142,11 +153,13 @@ const Text = forwardRef(
     ref: Ref<HTMLHeadingElement | HTMLParagraphElement>,
   ) => {
     return (
-      <StyledText as={htmlFor} $variant={variant} ref={ref} {...props}>
+      <StyledText as={htmlElement[htmlFor]} $variant={variant} ref={ref} {...props}>
         {children}
       </StyledText>
     )
   },
 )
+
+export { htmlElement }
 
 export default Text

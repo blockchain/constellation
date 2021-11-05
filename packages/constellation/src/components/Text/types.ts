@@ -17,12 +17,12 @@ type VariantType =
   | 'overline'
   | 'micro'
 
-type ComponentType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+type HtmlFor = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
 type TextProps = Omit<HTMLProps<HTMLHeadingElement | HTMLParagraphElement>, 'ref' | 'as'> & {
   children: ReactNode
-  htmlFor?: ComponentType
+  htmlFor?: HtmlFor
   variant?: VariantType
 }
 
-export type { TextProps }
+export type { HtmlFor, TextProps }
