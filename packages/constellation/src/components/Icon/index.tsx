@@ -100,6 +100,7 @@ import {
   IconQuestion,
   IconQuestionCircle,
   IconReceive,
+  IconReceiveV2,
   IconRefresh,
   IconRepeat,
   IconRewards,
@@ -108,6 +109,7 @@ import {
   IconSecurity,
   IconSell,
   IconSend,
+  IconSendV2,
   IconSettings,
   IconShareAndroid,
   IconShareIos,
@@ -347,6 +349,8 @@ const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
       return <IconQuestionCircle width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.RECEIVE:
       return <IconReceive width={iconSize[size]} height={iconSize[size]} {...props} />
+    case IconName.RECEIVE_V2:
+      return <IconReceiveV2 width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.REFRESH:
       return <IconRefresh width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.REPEAT:
@@ -363,6 +367,8 @@ const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
       return <IconSell width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.SEND:
       return <IconSend width={iconSize[size]} height={iconSize[size]} {...props} />
+    case IconName.SEND_V2:
+      return <IconSendV2 width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.SETTINGS:
       return <IconSettings width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.SHARE_ANDROID:

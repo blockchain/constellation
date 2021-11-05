@@ -99,6 +99,7 @@ import IconQrCode from './IconQrCode'
 import IconQuestion from './IconQuestion'
 import IconQuestionCircle from './IconQuestionCircle'
 import IconReceive from './IconReceive'
+import IconReceiveV2 from './IconReceiveV2'
 import IconRefresh from './IconRefresh'
 import IconRepeat from './IconRepeat'
 import IconRewards from './IconRewards'
@@ -107,6 +108,7 @@ import IconSearch from './IconSearch'
 import IconSecurity from './IconSecurity'
 import IconSell from './IconSell'
 import IconSend from './IconSend'
+import IconSendV2 from './IconSendV2'
 import IconSettings from './IconSettings'
 import IconShareAndroid from './IconShareAndroid'
 import IconShareIos from './IconShareIos'
@@ -236,6 +238,7 @@ export {
   IconQuestion,
   IconQuestionCircle,
   IconReceive,
+  IconReceiveV2,
   IconRefresh,
   IconRepeat,
   IconRewards,
@@ -244,6 +247,7 @@ export {
   IconSecurity,
   IconSell,
   IconSend,
+  IconSendV2,
   IconSettings,
   IconShareAndroid,
   IconShareIos,
