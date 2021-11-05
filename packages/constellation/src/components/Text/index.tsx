@@ -1,18 +1,7 @@
 import { forwardRef, Ref } from 'react'
 import styled, { css } from 'styled-components'
 
-import { HtmlFor, TextProps } from './types'
-
-const htmlElement: { [key: string]: HtmlFor } = {
-  h1: 'h1',
-  h2: 'h2',
-  h3: 'h3',
-  h4: 'h4',
-  h5: 'h5',
-  h6: 'h6',
-  p: 'p',
-  span: 'span',
-}
+import { TextProps } from './types'
 
 const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
   font-family: 'Inter', sans-serif;
@@ -48,7 +37,7 @@ const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
   ${(props) =>
     props.$variant === 'title-3'
       ? css`
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           font-weight: 600;
           font-feature-settings: 'zero' on, 'ss01' on;
         `
@@ -57,7 +46,7 @@ const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
   ${(props) =>
     props.$variant === 'subheading'
       ? css`
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           font-weight: 500;
           font-feature-settings: 'ss01' on, 'zero' on;
         `
@@ -87,6 +76,15 @@ const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
           font-size: 1rem;
           font-weight: 600;
           font-feature-settings: 'ss01' on, 'zero' on;
+        `
+      : null}
+      
+  ${(props) =>
+    props.$variant === 'paragraph-mono'
+      ? css`
+          font-size: 0.875rem;
+          font-weight: 500;
+          font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on, 'ss01' on;
         `
       : null}
       
@@ -153,13 +151,11 @@ const Text = forwardRef(
     ref: Ref<HTMLHeadingElement | HTMLParagraphElement>,
   ) => {
     return (
-      <StyledText as={htmlElement[htmlFor]} $variant={variant} ref={ref} {...props}>
+      <StyledText as={htmlFor} $variant={variant} ref={ref} {...props}>
         {children}
       </StyledText>
     )
   },
 )
-
-export { htmlElement }
 
 export default Text

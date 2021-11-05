@@ -25,4 +25,4 @@ type TextProps = Omit<HTMLProps<HTMLHeadingElement | HTMLParagraphElement>, 'ref
   variant?: VariantType
 }
 
-export type { HtmlFor, TextProps }
+export type { TextProps }
