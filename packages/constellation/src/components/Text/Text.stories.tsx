@@ -1,14 +1,14 @@
 import { Story } from '@storybook/react'
 import React from 'react'
 
-import Component, { htmlElement } from '.'
+import Component from '.'
 import { TextProps } from './types'
 
 export default {
   argTypes: {
     htmlFor: {
       description: 'html element that is going to be rendered',
-      options: Object.keys(htmlElement),
+      options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span'],
       type: 'select',
     },
   },
