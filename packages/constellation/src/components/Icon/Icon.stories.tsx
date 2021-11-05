@@ -1,7 +1,7 @@
 import { ComponentStory } from '@storybook/react'
 import React from 'react'
 
-import Icon, { iconSize } from '.'
+import Component, { iconSize } from '.'
 import { IconName } from './types'
 
 export default {
@@ -21,14 +21,29 @@ export default {
       type: 'select',
     },
   },
-  component: Icon,
+  component: Component,
   title: 'Components/Icon',
 }
 
-const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
+const Template: ComponentStory<typeof Component> = (args) => <Component {...args} />
 
-export const Default = Template.bind({})
 
-Default.args = {
+export const Icon = Template.bind({})
+
+Icon.args = {
   name: IconName.BLOCKCHAIN_CIRCLE,
+  size: 'md',
+}
+
+export const AllIcons: ComponentStory<typeof Component> = (args) => {
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', fontFamily: 'helvetica', fontSize: '0.8rem' }}>
+      {Object.values(IconName).map((name) => (
+        <div style={{ width: '5rem', height: '5rem', margin: '1rem', textAlign: 'center'}} key={name}>
+          <Component {...args} name={name} size="md" />
+          <div style={{ color: 'rgba(0, 0, 0, 0.5)'}}>{name}</div>
+        </div>
+      ))}
+    </div>
+  )
 }

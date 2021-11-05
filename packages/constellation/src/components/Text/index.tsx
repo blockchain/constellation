@@ -37,7 +37,7 @@ const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
   ${(props) =>
     props.$variant === 'title-3'
       ? css`
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           font-weight: 600;
           font-feature-settings: 'zero' on, 'ss01' on;
         `
@@ -46,7 +46,7 @@ const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
   ${(props) =>
     props.$variant === 'subheading'
       ? css`
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           font-weight: 500;
           font-feature-settings: 'ss01' on, 'zero' on;
         `
@@ -76,6 +76,15 @@ const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
           font-size: 1rem;
           font-weight: 600;
           font-feature-settings: 'ss01' on, 'zero' on;
+        `
+      : null}
+      
+  ${(props) =>
+    props.$variant === 'paragraph-mono'
+      ? css`
+          font-size: 0.875rem;
+          font-weight: 500;
+          font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on, 'ss01' on;
         `
       : null}
       
