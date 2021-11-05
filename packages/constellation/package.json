@@ -17,7 +17,7 @@
     "lint:js": "eslint --cache src/**",
     "build:storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "deploy:storybook": "yarn deploy-storybook --existing-output-dir=./storybook-static",
+    "deploy:storybook": "yarn build:storybook && yarn deploy-storybook --existing-output-dir=./storybook-static",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
     "storybook": "start-storybook -p 9009",
