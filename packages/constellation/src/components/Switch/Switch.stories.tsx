@@ -11,7 +11,7 @@ export default {
     },
     disabled: {
       control: 'boolean',
-      type: 'radio',
+      description: 'Should be disabled?',
     },
     disabledColor: {
       control: 'color',
@@ -21,9 +21,9 @@ export default {
       description: 'Enter first option',
       type: 'text',
     },
-    fullWidth: {
+    isFullWidth: {
       control: 'boolean',
-      type: 'radio',
+      description: 'Is full width?',
     },
     hoverColor: {
       control: 'color',
@@ -70,5 +70,5 @@ Switch.args = {
   firstItem: 'Android',
   secondItem: 'IOS',
   disabled: false,
-  fullWidth: false,
+  isFullWidth: false,
 }

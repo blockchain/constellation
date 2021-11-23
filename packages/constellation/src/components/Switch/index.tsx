@@ -15,7 +15,7 @@ const SwitchWrapper = styled.div<SwitchWrapperProps>`
   background: ${(p) => p.background ?? colors.dark[700]};
   border-radius: 8px;
   margin: 0;
-  width: ${({ fullWidth }) => (fullWidth ? '100%' : 'fit-content')};
+  width: ${({ isFullWidth }) => (isFullWidth ? '100%' : 'fit-content')};
 `
 
 const getSwitchColor = (state: SwitchLabelState) => (props: SwitchLabelProps) => {
@@ -81,7 +81,7 @@ const Switch = ({
   activeColor,
   disabled,
   disabledColor,
-  fullWidth,
+  isFullWidth,
   firstItem,
   hoverColor,
   regularColor,
@@ -95,7 +95,7 @@ const Switch = ({
   const [firstItemActive, setFirstItemActive] = useState(true)
 
   return (
-    <SwitchWrapper fullWidth={fullWidth}>
+    <SwitchWrapper isFullWidth={isFullWidth}>
       <SwitchLabel
         activeColor={activeColor}
         disabled={disabled}

@@ -7,9 +7,10 @@ export default {
   argTypes: {
     light: {
       control: 'boolean',
+      description: 'Color version',
     },
     value: {
-      description: 'Enter text',
+      description: 'Enter text to be copied',
       type: 'Text',
     },
   },
