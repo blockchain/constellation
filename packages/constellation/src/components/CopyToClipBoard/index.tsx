@@ -1,18 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
-import getIcon from 'components/Icon'
-import { IconName } from 'components/Icon/types'
-import colors from 'colors'
+import getIcon from '../Icon'
+import { IconName } from '../Icon/types'
+import colors from '../../colors'
+import iconColor from '../IconColor'
 
-import iconColor from 'components/iconColor'
-
-type OwnPropsType = {
-  customHandler?: () => void
-  light?: boolean
-  value: string
-}
-
-type IconProps = { light?: boolean; showSuccess: boolean }
+import { CopyToClipBoardTypes, IconProps } from './types'
 
 const getColor = (props: IconProps) =>
   props.showSuccess
@@ -26,11 +19,15 @@ const Icon = styled.div<IconProps>`
     transition: fill 150ms ease;
     ${getColor};
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
-const CopyToClipboard = ({ customHandler, light, value }: OwnPropsType) => {
+const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) => {
   let timeout: ReturnType<typeof setTimeout>
-  const [showSuccess, setShowSuccess] = useState(false)
+  const [showSuccess, setShowSuccess] = useState<boolean>(false)
   useEffect(() => {
     ;() => clearTimeout(timeout)
   }, [])
@@ -60,7 +57,7 @@ const CopyToClipboard = ({ customHandler, light, value }: OwnPropsType) => {
         if (res === true) {
           timeout = setTimeout(() => {
             setShowSuccess(false)
-          }, 500)
+          }, 1500)
         }
       } catch (err) {}
 
@@ -72,7 +69,9 @@ const CopyToClipboard = ({ customHandler, light, value }: OwnPropsType) => {
 
   return (
     <Icon light={light} onClick={handleClick} showSuccess={showSuccess}>
-      {getIcon({ name: IconName.CLIPBOARD, size: 'md' })}
+      {showSuccess
+        ? getIcon({ color: colors.green[600], name: IconName.CHECK, size: 'md' })
+        : getIcon({ name: IconName.CLIPBOARD, size: 'md' })}
     </Icon>
   )
 }
