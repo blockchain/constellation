@@ -6,15 +6,20 @@ export type SwitchLabelProps = {
   activeColor?: string // not selected, click over
   disabled?: boolean
   disabledColor?: string // disabled text color
-  hoverColor?: string // not selected, mouse over
-  regularColor?: string // not selected, no mouse event
+  hoverColor?: string
+  isFullWidth?: boolean
+  // not selected, mouse over
+  regularColor?: string
+  // not selected, no mouse event
   selected: boolean
-  selectedActiveColor?: string // selected, click over
-  selectedColor?: string // selected, no mouse event
-  selectedHoverColor?: string // selected, mouse over
+  selectedActiveColor?: string
+  // selected, click over
+  selectedColor?: string
+  // selected, no mouse event
+  selectedHoverColor?: string
+  // selected, mouse over
   selectedTextColor?: string
-  textColor?: string
-  isFullWidth?: boolean // make the toggle component full width
+  textColor?: string // make the toggle component full width
 }
 
 export type SwitchProps = {
@@ -22,10 +27,12 @@ export type SwitchProps = {
   disabled?: boolean
   disabledColor?: string // disabled text color
   firstItem: string
-  hoverColor?: string // not selected, mouse over
-  regularColor?: string // not selected, no mouse event
-  secondItem: string
+  hoverColor?: string
   isFullWidth?: boolean
+  // not selected, mouse over
+  regularColor?: string
+  // not selected, no mouse event
+  secondItem: string
   selectedActiveColor?: string // selected, click over
   selectedColor?: string // selected, no mouse event
   selectedHoverColor?: string // selected, mouse over

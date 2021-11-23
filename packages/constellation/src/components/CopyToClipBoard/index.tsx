@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
+
+import colors from '../../colors'
 import getIcon from '../Icon'
 import { IconName } from '../Icon/types'
-import colors from '../../colors'
 import iconColor from '../IconColor'
-
 import { CopyToClipBoardTypes, IconProps } from './types'
 
 const getColor = (props: IconProps) =>
@@ -28,8 +28,9 @@ const Icon = styled.div<IconProps>`
 const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) => {
   let timeout: ReturnType<typeof setTimeout>
   const [showSuccess, setShowSuccess] = useState<boolean>(false)
+
   useEffect(() => {
-    ;() => clearTimeout(timeout)
+    return () => clearTimeout(timeout)
   }, [])
 
   const handleClick = useCallback(() => {
@@ -59,7 +60,9 @@ const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) 
             setShowSuccess(false)
           }, 1500)
         }
-      } catch (err) {}
+      } catch (err) {
+        console.log(err) // eslint-disable-line
+      }
 
       if (document.body) {
         document.body.removeChild(temp)

@@ -6,7 +6,7 @@ const dark = {
   600: 'rgba(3, 17, 47, 0.6)',
   700: 'rgba(3, 17, 47, 0.7)',
   800: 'rgba(18, 29, 51, 0.8)',
-  900: 'rgba(18, 29, 51, 0.9)'
+  900: 'rgba(18, 29, 51, 0.9)',
 } as const
 
 export default dark

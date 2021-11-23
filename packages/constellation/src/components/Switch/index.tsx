@@ -1,8 +1,8 @@
-import styled from 'styled-components'
 import { useState } from 'react'
-import colors from '../../colors'
+import styled from 'styled-components'
 
-import { SwitchLabelState, SwitchLabelProps, SwitchProps, SwitchWrapperProps } from './types'
+import colors from '../../colors'
+import { SwitchLabelProps, SwitchLabelState, SwitchProps, SwitchWrapperProps } from './types'
 
 const SwitchWrapper = styled.div<SwitchWrapperProps>`
   position: relative;
@@ -81,9 +81,9 @@ const Switch = ({
   activeColor,
   disabled,
   disabledColor,
-  isFullWidth,
   firstItem,
   hoverColor,
+  isFullWidth,
   regularColor,
   secondItem,
   selectedActiveColor,

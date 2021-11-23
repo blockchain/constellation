@@ -21,13 +21,13 @@ export default {
       description: 'Enter first option',
       type: 'text',
     },
-    isFullWidth: {
-      control: 'boolean',
-      description: 'Is full width?',
-    },
     hoverColor: {
       control: 'color',
       description: 'Hover color',
+    },
+    isFullWidth: {
+      control: 'boolean',
+      description: 'Is full width?',
     },
     regularColor: {
       control: 'color',
@@ -67,8 +67,8 @@ const Template: Story<SwitchProps> = (args) => <Component {...args} />
 export const Switch = Template.bind({})
 
 Switch.args = {
-  firstItem: 'Android',
-  secondItem: 'IOS',
   disabled: false,
+  firstItem: 'Android',
   isFullWidth: false,
+  secondItem: 'IOS',
 }
