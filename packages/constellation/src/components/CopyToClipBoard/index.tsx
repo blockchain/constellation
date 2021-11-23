@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 
 import colors from '../../colors'
@@ -12,7 +12,7 @@ const getColor = (props: IconProps) =>
     ? css`
         fill: ${colors.blue[600]} !important;
       `
-    : iconColor(props.light === true ? colors.white[1] : colors.dark[900])
+    : iconColor(props.light ? colors.white[1] : colors.dark[900])
 
 const Icon = styled.div<IconProps>`
   svg {
@@ -31,9 +31,9 @@ const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) 
 
   useEffect(() => {
     return () => clearTimeout(timeout)
-  }, [])
+  })
 
-  const handleClick = useCallback(() => {
+  const handleClick = () => {
     setShowSuccess(true)
     if (customHandler) {
       customHandler()
@@ -68,7 +68,7 @@ const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) 
         document.body.removeChild(temp)
       }
     }
-  }, [customHandler, document])
+  }
 
   return (
     <Icon light={light} onClick={handleClick} showSuccess={showSuccess}>

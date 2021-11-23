@@ -43,7 +43,7 @@ export default {
     },
     selectedColor: {
       control: 'color',
-      description: 'Selectd color',
+      description: 'Selected color',
     },
     selectedHoverColor: {
       control: 'color',

@@ -12,7 +12,7 @@ const SwitchWrapper = styled.div<SwitchWrapperProps>`
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  background: ${(p) => p.background ?? colors.dark[700]};
+  background: ${({ background }) => background ?? colors.dark[700]};
   border-radius: 8px;
   margin: 0;
   width: ${({ isFullWidth }) => (isFullWidth ? '100%' : 'fit-content')};
