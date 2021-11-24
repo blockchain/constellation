@@ -1,14 +1,14 @@
 const purple = {
-  0: '#EFECFE',
-  100: '#DED8FD',
-  200: '#C6BBFC',
-  300: '#ADA6FF',
-  400: '#9080FF',
-  500: '#7349F2',
-  600: '#5322E5',
-  700: '#451DBF',
-  800: '#371799',
-  900: '#250B73',
+  purple0: '#EFECFE',
+  purple100: '#DED8FD',
+  purple200: '#C6BBFC',
+  purple300: '#ADA6FF',
+  purple400: '#9080FF',
+  purple500: '#7349F2',
+  purple600: '#5322E5',
+  purple700: '#451DBF',
+  purple800: '#371799',
+  purple900: '#250B73',
 } as const
 
 export default purple

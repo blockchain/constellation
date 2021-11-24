@@ -9,15 +9,15 @@ import teal from './teal'
 import white from './white'
 
 const colors = {
-  blue,
-  dark,
-  green,
-  grey,
-  orange,
-  purple,
-  red,
-  teal,
-  white,
+  ...blue,
+  ...dark,
+  ...green,
+  ...grey,
+  ...orange,
+  ...purple,
+  ...red,
+  ...teal,
+  ...white,
 }
 
 export default colors
