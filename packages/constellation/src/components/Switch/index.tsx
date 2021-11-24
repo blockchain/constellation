@@ -12,7 +12,7 @@ const SwitchWrapper = styled.div<SwitchWrapperProps>`
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  background: ${({ background }) => background ?? colors.dark[700]};
+  background: ${({ background }) => background ?? colors.dark700};
   border-radius: 8px;
   margin: 0;
   width: ${({ isFullWidth }) => (isFullWidth ? '100%' : 'fit-content')};
@@ -20,12 +20,12 @@ const SwitchWrapper = styled.div<SwitchWrapperProps>`
 
 const getSwitchColor = (state: SwitchLabelState) => (props: SwitchLabelProps) => {
   if (props.disabled) {
-    return props.disabledColor ?? colors.dark[400]
+    return props.disabledColor ?? colors.dark400
   }
   if (props.selected || state === 'hover') {
-    return props.selectedTextColor ?? colors.white[1]
+    return props.selectedTextColor ?? colors.white1
   }
-  return props.textColor ?? colors.white[1]
+  return props.textColor ?? colors.white1
 }
 
 const getSwitchBGColor = (state: SwitchLabelState) => (props: SwitchLabelProps) => {
@@ -35,19 +35,19 @@ const getSwitchBGColor = (state: SwitchLabelState) => (props: SwitchLabelProps) 
 
   if (props.selected) {
     if (state === 'active') {
-      return props.selectedActiveColor ?? props.selectedColor ?? colors.dark[700]
+      return props.selectedActiveColor ?? props.selectedColor ?? colors.dark700
     }
     if (state === 'hover') {
-      return props.selectedHoverColor ?? props.selectedColor ?? colors.dark[700]
+      return props.selectedHoverColor ?? props.selectedColor ?? colors.dark700
     }
-    return props.selectedColor ?? colors.dark[700]
+    return props.selectedColor ?? colors.dark700
   }
 
   if (state === 'active') {
-    return props.activeColor ?? props.regularColor ?? colors.dark[900]
+    return props.activeColor ?? props.regularColor ?? colors.dark900
   }
   if (state === 'hover') {
-    return props.hoverColor ?? props.regularColor ?? colors.dark[800]
+    return props.hoverColor ?? props.regularColor ?? colors.dark800
   }
   return props.regularColor ?? 'transparent'
 }

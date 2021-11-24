@@ -10,9 +10,9 @@ import { CopyToClipBoardTypes, IconProps } from './types'
 const getColor = (props: IconProps) =>
   props.showSuccess
     ? css`
-        fill: ${colors.blue[600]} !important;
+        fill: ${colors.blue600} !important;
       `
-    : iconColor(props.light ? colors.white[1] : colors.dark[900])
+    : iconColor(props.light ? 'white1' : 'dark900')
 
 const Icon = styled.div<IconProps>`
   svg {
@@ -73,7 +73,7 @@ const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) 
   return (
     <Icon light={light} onClick={handleClick} showSuccess={showSuccess}>
       {showSuccess
-        ? getIcon({ color: colors.green[600], name: IconName.CHECK, size: 'md' })
+        ? getIcon({ color: colors.green600, name: IconName.CHECK, size: 'md' })
         : getIcon({ name: IconName.CLIPBOARD, size: 'md' })}
     </Icon>
   )

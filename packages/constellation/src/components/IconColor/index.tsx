@@ -1,10 +1,12 @@
 import { css } from 'styled-components'
 
-const iconColor = (colorCode: string, hoverColorCode?: string) => css`
-  fill: ${colorCode};
+import colors from '../../colors'
+
+const iconColor = (colorCode: keyof typeof colors, hoverColorCode?: keyof typeof colors) => css`
+  fill: ${colors[colorCode]};
 
   &:hover {
-    fill: ${hoverColorCode ?? colorCode};
+    fill: ${hoverColorCode ? colors[hoverColorCode] : colors[colorCode]};
   }
 `
 

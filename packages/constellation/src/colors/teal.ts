@@ -1,14 +1,14 @@
 const teal = {
-  0: '#E6F8FA',
-  100: '#D1EDF0',
-  200: '#AEE1E6',
-  300: '#6CD0D9',
-  400: '#00B6C7',
-  500: '#12A5B2',
-  600: '#0E828C',
-  700: '#055E66',
-  800: '#08474C',
-  900: '#052F33',
+  teal0: '#E6F8FA',
+  teal100: '#D1EDF0',
+  teal200: '#AEE1E6',
+  teal300: '#6CD0D9',
+  teal400: '#00B6C7',
+  teal500: '#12A5B2',
+  teal600: '#0E828C',
+  teal700: '#055E66',
+  teal800: '#08474C',
+  teal900: '#052F33',
 } as const
 
 export default teal
