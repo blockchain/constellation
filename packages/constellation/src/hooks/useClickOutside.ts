@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 
 const DEFAULT_EVENTS = ['mousedown', 'touchstart']
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const useClickOutside = <T extends HTMLElement = any>(
   handler: () => void,
   events?: string[] | null,
@@ -10,6 +11,7 @@ const useClickOutside = <T extends HTMLElement = any>(
   const ref = useRef<T>()
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const listener = (event: any) => {
       if (Array.isArray(nodes)) {
         const shouldTrigger = nodes.every((node) => !!node && !node.contains(event.target))
