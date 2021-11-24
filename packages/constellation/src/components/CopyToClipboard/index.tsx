@@ -5,7 +5,7 @@ import colors from '../../colors'
 import getIcon from '../Icon'
 import { IconName } from '../Icon/types'
 import iconColor from '../IconColor'
-import { CopyToClipBoardTypes, IconProps } from './types'
+import { CopyToClipboardTypes, IconProps } from './types'
 
 const getColor = (props: IconProps) =>
   props.showSuccess
@@ -25,13 +25,14 @@ const Icon = styled.div<IconProps>`
   }
 `
 
-const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) => {
+const CopyToClipboard = ({ customHandler, light, value }: CopyToClipboardTypes) => {
   let timeout: ReturnType<typeof setTimeout>
   const [showSuccess, setShowSuccess] = useState<boolean>(false)
 
   useEffect(() => {
     return () => clearTimeout(timeout)
-  })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const handleClick = () => {
     setShowSuccess(true)

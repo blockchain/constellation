@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react'
 
 import Component from '.'
-import { CopyToClipBoardTypes } from './types'
+import { CopyToClipboardTypes } from './types'
 
 export default {
   argTypes: {
@@ -18,7 +18,7 @@ export default {
   title: 'Components/CopyToClipBoard',
 }
 
-const Template: Story<CopyToClipBoardTypes> = (args) => <Component {...args} />
+const Template: Story<CopyToClipboardTypes> = (args) => <Component {...args} />
 
 export const CopyToClipBoard = Template.bind({})
 

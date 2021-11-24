@@ -1,4 +1,4 @@
-export type CopyToClipBoardTypes = {
+export type CopyToClipboardTypes = {
   customHandler?: () => void
   light?: boolean
   value: string
