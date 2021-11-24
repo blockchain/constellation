@@ -1,30 +1,30 @@
 import { Story } from '@storybook/react'
 
-import Component from '.'
 import colors from '../../colors'
+import Component from '.'
 import { CopyToClipboardTypes } from './types'
 
 export default {
   argTypes: {
     color: {
+      description: 'Clipboard color',
       options: Object.keys(colors),
       type: 'select',
-      description: 'Clipboard color',
     },
     hoverColor: {
+      description: 'Clipboard hover color',
       options: Object.keys(colors),
       type: 'select',
-      description: 'Clipboard hover color',
     },
     successColor: {
+      description: 'Success color',
       options: Object.keys(colors),
       type: 'select',
-      description: 'Success color',
     },
     successHoverColor: {
+      description: 'Success hover color',
       options: Object.keys(colors),
       type: 'select',
-      description: 'Success hover color',
     },
     value: {
       description: 'Enter text to be copied',

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import colors from '../../colors'
 import getIcon from '../Icon'
@@ -32,8 +32,8 @@ const Icon = styled.div<IconProps>`
 `
 
 const CopyToClipboard = ({
-  customHandler,
   color,
+  customHandler,
   hoverColor,
   successColor,
   successHoverColor,

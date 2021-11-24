@@ -1,8 +1,8 @@
 import { ColorKeysType } from '../../colors/types'
 
 export type CopyToClipboardTypes = {
-  customHandler?: () => void
   color?: ColorKeysType
+  customHandler?: () => void
   hoverColor?: ColorKeysType
   successColor?: ColorKeysType
   successHoverColor?: ColorKeysType
@@ -13,7 +13,7 @@ export type IconProps = {
   color?: ColorKeysType
   hoverColor?: ColorKeysType
   light?: boolean
+  showSuccess: boolean
   successColor?: ColorKeysType
   successHoverColor?: ColorKeysType
-  showSuccess: boolean
 }
