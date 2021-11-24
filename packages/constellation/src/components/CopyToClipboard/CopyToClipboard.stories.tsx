@@ -1,13 +1,30 @@
 import { Story } from '@storybook/react'
 
 import Component from '.'
+import colors from '../../colors'
 import { CopyToClipboardTypes } from './types'
 
 export default {
   argTypes: {
-    light: {
-      control: 'boolean',
-      description: 'Color version',
+    color: {
+      options: Object.keys(colors),
+      type: 'select',
+      description: 'Clipboard color',
+    },
+    hoverColor: {
+      options: Object.keys(colors),
+      type: 'select',
+      description: 'Clipboard hover color',
+    },
+    successColor: {
+      options: Object.keys(colors),
+      type: 'select',
+      description: 'Success color',
+    },
+    successHoverColor: {
+      options: Object.keys(colors),
+      type: 'select',
+      description: 'Success hover color',
     },
     value: {
       description: 'Enter text to be copied',
@@ -15,13 +32,13 @@ export default {
     },
   },
   component: Component,
-  title: 'Components/CopyToClipBoard',
+  title: 'Components/CopyToClipboard',
 }
 
 const Template: Story<CopyToClipboardTypes> = (args) => <Component {...args} />
 
-export const CopyToClipBoard = Template.bind({})
+export const CopyToClipboard = Template.bind({})
 
-CopyToClipBoard.args = {
+CopyToClipboard.args = {
   value: 'https:blockchain.com',
 }
