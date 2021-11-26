@@ -1,37 +1,51 @@
 import { useEffect, useState } from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import colors from '../../colors'
 import getIcon from '../Icon'
 import { IconName } from '../Icon/types'
 import iconColor from '../IconColor'
-import { CopyToClipBoardTypes, IconProps } from './types'
+import { CopyToClipboardTypes, IconProps } from './types'
 
-const getColor = (props: IconProps) =>
-  props.showSuccess
-    ? css`
-        fill: ${colors.blue600} !important;
-      `
-    : iconColor(props.light ? 'white1' : 'dark900')
+const getIconColor = ({
+  color = 'red600',
+  hoverColor = 'dark600',
+  showSuccess,
+  successColor = 'green600',
+  successHoverColor = 'green400',
+}: IconProps) =>
+  showSuccess ? iconColor(successColor, successHoverColor) : iconColor(color, hoverColor)
 
 const Icon = styled.div<IconProps>`
+  width: fit-content;
   svg {
-    transition: fill 150ms ease;
-    ${getColor};
+    & > path {
+      transition: fill 150ms ease;
+    }
   }
+
+  ${(props) => getIconColor(props)};
 
   &:hover {
     cursor: pointer;
   }
 `
 
-const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) => {
+const CopyToClipboard = ({
+  color,
+  customHandler,
+  hoverColor,
+  successColor,
+  successHoverColor,
+  value,
+}: CopyToClipboardTypes) => {
   let timeout: ReturnType<typeof setTimeout>
   const [showSuccess, setShowSuccess] = useState<boolean>(false)
 
   useEffect(() => {
     return () => clearTimeout(timeout)
-  })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const handleClick = () => {
     setShowSuccess(true)
@@ -71,7 +85,14 @@ const CopyToClipboard = ({ customHandler, light, value }: CopyToClipBoardTypes) 
   }
 
   return (
-    <Icon light={light} onClick={handleClick} showSuccess={showSuccess}>
+    <Icon
+      color={color}
+      hoverColor={hoverColor}
+      onClick={handleClick}
+      showSuccess={showSuccess}
+      successColor={successColor}
+      successHoverColor={successHoverColor}
+    >
       {showSuccess
         ? getIcon({ color: colors.green600, name: IconName.CHECK, size: 'md' })
         : getIcon({ name: IconName.CLIPBOARD, size: 'md' })}
