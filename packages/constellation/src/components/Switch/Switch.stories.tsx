@@ -25,13 +25,13 @@ export default {
       control: 'color',
       description: 'Hover color',
     },
-    isFullWidth: {
-      control: 'boolean',
-      description: 'Is full width?',
-    },
     isFirstItemActive: {
       control: 'boolean',
       description: 'Is first item selected?',
+    },
+    isFullWidth: {
+      control: 'boolean',
+      description: 'Is full width?',
     },
     regularColor: {
       control: 'color',

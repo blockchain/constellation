@@ -30,8 +30,8 @@ export type SwitchProps = {
   handleFirstItemClicked: () => void
   handleSecondItemClicked: () => void
   hoverColor?: string
-  isFullWidth?: boolean
   isFirstItemActive: boolean
+  isFullWidth?: boolean
   // not selected, mouse over
   regularColor?: string
   // not selected, no mouse event
