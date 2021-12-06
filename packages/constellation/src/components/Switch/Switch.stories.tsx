@@ -29,6 +29,10 @@ export default {
       control: 'boolean',
       description: 'Is full width?',
     },
+    isFirstItemActive: {
+      control: 'boolean',
+      description: 'Is first item selected?',
+    },
     regularColor: {
       control: 'color',
       description: 'regular color',
