@@ -22,6 +22,11 @@ yarn workspace [package] npm publish
 
 and it will publish the package for you.
 
+## Deploying Storybook
+```sh
+yarn workspace @blockchain-com/constellation deploy:storybook
+```
+
 ## Packages
 
 ### [constellation](./packages/constellation)

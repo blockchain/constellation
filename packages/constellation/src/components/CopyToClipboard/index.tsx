@@ -35,6 +35,7 @@ const CopyToClipboard = ({
   color,
   customHandler,
   hoverColor,
+  size,
   successColor,
   successHoverColor,
   value,
@@ -94,8 +95,8 @@ const CopyToClipboard = ({
       successHoverColor={successHoverColor}
     >
       {showSuccess
-        ? getIcon({ color: colors.green600, name: IconName.CHECK, size: 'md' })
-        : getIcon({ name: IconName.CLIPBOARD, size: 'md' })}
+        ? getIcon({ color: colors.green600, name: IconName.CHECK, size: size ?? 'md' })
+        : getIcon({ name: IconName.CLIPBOARD, size: size ?? 'md' })}
     </Icon>
   )
 }

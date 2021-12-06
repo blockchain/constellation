@@ -27,7 +27,10 @@ export type SwitchProps = {
   disabled?: boolean
   disabledColor?: string // disabled text color
   firstItem: string
+  handleFirstItemClicked: () => void
+  handleSecondItemClicked: () => void
   hoverColor?: string
+  isFirstItemActive: boolean
   isFullWidth?: boolean
   // not selected, mouse over
   regularColor?: string
