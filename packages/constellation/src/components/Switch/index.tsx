@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styled from 'styled-components'
 
 import colors from '../../colors'
@@ -82,8 +81,11 @@ const Switch = ({
   disabled,
   disabledColor,
   firstItem,
+  handleFirstItemClicked,
+  handleSecondItemClicked,
   hoverColor,
   isFullWidth,
+  isFirstItemActive,
   regularColor,
   secondItem,
   selectedActiveColor,
@@ -91,45 +93,41 @@ const Switch = ({
   selectedHoverColor,
   selectedTextColor,
   textColor,
-}: SwitchProps) => {
-  const [firstItemActive, setFirstItemActive] = useState(true)
-
-  return (
-    <SwitchWrapper isFullWidth={isFullWidth}>
-      <SwitchLabel
-        activeColor={activeColor}
-        disabled={disabled}
-        disabledColor={disabledColor}
-        hoverColor={hoverColor}
-        onClick={() => setFirstItemActive(true)}
-        regularColor={regularColor}
-        selectedActiveColor={selectedActiveColor}
-        selectedColor={selectedColor}
-        selectedHoverColor={selectedHoverColor}
-        selectedTextColor={selectedTextColor}
-        selected={firstItemActive}
-        textColor={textColor}
-      >
-        {firstItem}
-      </SwitchLabel>
-      <SwitchLabel
-        activeColor={activeColor}
-        disabled={disabled}
-        disabledColor={disabledColor}
-        hoverColor={hoverColor}
-        onClick={() => setFirstItemActive(false)}
-        regularColor={regularColor}
-        selectedActiveColor={selectedActiveColor}
-        selectedColor={selectedColor}
-        selectedHoverColor={selectedHoverColor}
-        selectedTextColor={selectedTextColor}
-        selected={!firstItemActive}
-        textColor={textColor}
-      >
-        {secondItem}
-      </SwitchLabel>
-    </SwitchWrapper>
-  )
-}
+}: SwitchProps) => (
+  <SwitchWrapper isFullWidth={isFullWidth}>
+    <SwitchLabel
+      activeColor={activeColor}
+      disabled={disabled}
+      disabledColor={disabledColor}
+      hoverColor={hoverColor}
+      onClick={handleFirstItemClicked}
+      regularColor={regularColor}
+      selectedActiveColor={selectedActiveColor}
+      selectedColor={selectedColor}
+      selectedHoverColor={selectedHoverColor}
+      selectedTextColor={selectedTextColor}
+      selected={isFirstItemActive}
+      textColor={textColor}
+    >
+      {firstItem}
+    </SwitchLabel>
+    <SwitchLabel
+      activeColor={activeColor}
+      disabled={disabled}
+      disabledColor={disabledColor}
+      hoverColor={hoverColor}
+      onClick={handleSecondItemClicked}
+      regularColor={regularColor}
+      selectedActiveColor={selectedActiveColor}
+      selectedColor={selectedColor}
+      selectedHoverColor={selectedHoverColor}
+      selectedTextColor={selectedTextColor}
+      selected={!isFirstItemActive}
+      textColor={textColor}
+    >
+      {secondItem}
+    </SwitchLabel>
+  </SwitchWrapper>
+)
 
 export default Switch
