@@ -4,8 +4,10 @@
     "baseUrl": "src/",
     "declaration": true,
     "outDir": "dist/esm",
-    "rootDir": "src/"
+    "rootDir": "src/",
+    "jsx": "react"
   },
+  "module": "ES2020",
   "include": ["src", "components/stories"],
   "exclude": ["node_modules", "dist"]
 }

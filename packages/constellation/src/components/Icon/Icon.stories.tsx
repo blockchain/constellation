@@ -1,3 +1,4 @@
+import React from 'react'
 import { ComponentStory } from '@storybook/react'
 
 import Component, { iconSize } from '.'

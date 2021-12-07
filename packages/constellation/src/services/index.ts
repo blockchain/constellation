@@ -1,3 +1,3 @@
-import tracking from './tracking'
+import tracking from './tracking.js'
 
 export { tracking }
