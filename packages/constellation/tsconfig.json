@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "src/",
     "declaration": true,
-    "outDir": "dist/esm",
+    "outDir": "dist/",
     "rootDir": "src/"
   },
   "include": ["src", "components/stories"],
