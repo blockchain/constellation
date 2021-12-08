@@ -1,5 +1,4 @@
-import React from 'react'
-import { forwardRef, Ref } from 'react'
+import React, { forwardRef, Ref } from 'react'
 import styled, { css } from 'styled-components'
 
 import { TextProps } from './types'

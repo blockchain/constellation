@@ -1,5 +1,5 @@
-import React from 'react'
 import { Story } from '@storybook/react'
+import React from 'react'
 
 import colors from '../../colors'
 import { iconSize } from '../Icon'

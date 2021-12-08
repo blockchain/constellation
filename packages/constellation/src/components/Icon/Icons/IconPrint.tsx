@@ -1,4 +1,5 @@
 import React from 'react'
+
 import type { IconProps } from './types'
 
 const IconPrint = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
