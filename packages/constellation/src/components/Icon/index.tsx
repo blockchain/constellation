@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   IconActivity,
   IconAirdrop,
@@ -136,8 +137,8 @@ import {
   IconVisibilityOn,
   IconWallet,
   IconWithdraw,
-} from './Icons'
-import { IconName, IconPropsType } from './types'
+} from './Icons/index.js'
+import { IconName, IconPropsType } from './types.js'
 
 const iconSize = {
   lg: 48,

@@ -1,3 +1,4 @@
+import React from 'react'
 import type { IconProps } from './types'
 
 const IconAirdrop = ({ color = 'currentColor', height = 18, width = 18, ...props }: IconProps) => {
