@@ -1,5 +1,5 @@
-import useClickOutside from './useClickOutside.js'
-import useViewportSize from './useViewportSize.js'
-import useWindowEvent from './useWindowEvent.js'
+import useClickOutside from './useClickOutside'
+import useViewportSize from './useViewportSize'
+import useWindowEvent from './useWindowEvent'
 
 export { useClickOutside, useViewportSize, useWindowEvent }

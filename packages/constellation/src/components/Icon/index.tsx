@@ -138,8 +138,8 @@ import {
   IconVisibilityOn,
   IconWallet,
   IconWithdraw,
-} from './Icons/index.js'
-import { IconName, IconPropsType } from './types.js'
+} from './Icons'
+import { IconName, IconPropsType } from './types'
 
 const iconSize = {
   lg: 48,

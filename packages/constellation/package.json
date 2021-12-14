@@ -11,10 +11,10 @@
     "/dist"
   ],
   "scripts": {
-    "prepublish": "yarn build",
-    "build": "yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepublishOnly": "yarn build",
+    "build": "rimraf dist && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig-cjs.json",
     "lint:css": "stylelint --cache \"src/**\"",
     "lint:js": "eslint --cache \"src/**\"",
     "build:storybook": "build-storybook",
@@ -62,6 +62,7 @@
     "prettier-config-constellation": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
     "stylelint": "^13.12.0",
     "stylelint-config-constellation": "workspace:*",
     "stylelint-config-prettier": "^8.0.2",

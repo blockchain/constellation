@@ -1,4 +1,4 @@
-import debounce from './debounce.js'
+import debounce from './debounce'
 
 const TIME = 10000
 

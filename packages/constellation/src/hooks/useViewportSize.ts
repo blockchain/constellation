@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react'
 
-import { debounce } from '../utils/index.js'
-import useWindowEvent from './useWindowEvent.js'
+import { debounce } from '../utils'
+import useWindowEvent from './useWindowEvent'
 
 const eventListenerOptions = {
   passive: true,

@@ -1,8 +1,8 @@
-import debounce from './debounce.js'
-import parseSymbol from './parseSymbol.js'
-import parseUTM from './parseUTM.js'
-import queuevent from './queuevent.js'
-import screenSizes from './screenSizes.js'
-import utmCampaignBuilder from './utmCampaignBuilder.js'
+import debounce from './debounce'
+import parseSymbol from './parseSymbol'
+import parseUTM from './parseUTM'
+import queuevent from './queuevent'
+import screenSizes from './screenSizes'
+import utmCampaignBuilder from './utmCampaignBuilder'
 
 export { debounce, parseSymbol, parseUTM, queuevent, screenSizes, utmCampaignBuilder }

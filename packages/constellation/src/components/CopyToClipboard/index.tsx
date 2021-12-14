@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-import colors from '../../colors/index.js'
-import getIcon from '../Icon/index.js'
-import { IconName } from '../Icon/types.js'
-import iconColor from '../IconColor/index.js'
-import { CopyToClipboardTypes, IconProps } from './types.js'
+import colors from '../../colors'
+import getIcon from '../Icon'
+import { IconName } from '../Icon/types'
+import iconColor from '../IconColor'
+import { CopyToClipboardTypes, IconProps } from './types'
 
 const getIconColor = ({
   color = 'red600',

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import colors from '../../colors/index.js'
-import { SwitchLabelProps, SwitchLabelState, SwitchProps, SwitchWrapperProps } from './types.js'
+import colors from '../../colors'
+import { SwitchLabelProps, SwitchLabelState, SwitchProps, SwitchWrapperProps } from './types'
 
 const SwitchWrapper = styled.div<SwitchWrapperProps>`
   position: relative;
