@@ -1,12 +1,12 @@
-import blue from './blue.js'
-import dark from './dark.js'
-import green from './green.js'
-import grey from './grey.js'
-import orange from './orange.js'
-import purple from './purple.js'
-import red from './red.js'
-import teal from './teal.js'
-import white from './white.js'
+import blue from './blue'
+import dark from './dark'
+import green from './green'
+import grey from './grey'
+import orange from './orange'
+import purple from './purple'
+import red from './red'
+import teal from './teal'
+import white from './white'
 
 const colors = {
   ...blue,
