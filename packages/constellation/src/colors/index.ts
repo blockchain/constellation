@@ -20,4 +20,5 @@ const colors = {
   ...white,
 }
 
+export { colors }
 export default colors
