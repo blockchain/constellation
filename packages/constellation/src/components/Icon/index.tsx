@@ -142,9 +142,11 @@ import {
 import { IconName, IconPropsType } from './types'
 
 const iconSize = {
-  lg: 48,
+  lg: 36,
   md: 24,
   sm: 16,
+  xl: 48,
+  xm: 8,
 }
 
 const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
@@ -430,6 +432,6 @@ const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
 
 const Icon = (props: IconPropsType) => getIcon(props)
 
-export { iconSize }
+export { IconName, iconSize }
 
 export default Icon
