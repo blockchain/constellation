@@ -140,6 +140,6 @@ export enum IconName {
   WITHDRAW = 'withdraw',
 }
 
-type IconSize = 'sm' | 'md' | 'lg'
+type IconSize = 'sm' | 'md' | 'lg' | 'xl' | 'xm'
 
 export type IconPropsType = IconProps & { name: IconName; size?: IconSize }
