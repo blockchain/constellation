@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import colors from '../../colors'
+import { colors } from '../../colors'
 import { SwitchLabelProps, SwitchLabelState, SwitchProps, SwitchWrapperProps } from './types'
 
 const SwitchWrapper = styled.div<SwitchWrapperProps>`

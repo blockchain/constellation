@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react'
 import React from 'react'
 
-import colors from '../../colors'
+import { colors } from '../../colors'
 import { iconSize } from '../Icon'
 import Component from '.'
 import { CopyToClipboardTypes } from './types'

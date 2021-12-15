@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-import colors from '../../colors'
+import { colors } from '../../colors'
 import getIcon from '../Icon'
 import { IconName } from '../Icon/types'
 import iconColor from '../IconColor'
