@@ -10,6 +10,11 @@ export default {
       control: 'color',
       description: 'color of the icon',
     },
+    bgColor: { // not yet added to all icons svg files
+      control: 'color',
+      description: 'color of the icon\'s background',
+      defaultValue: 'transparent',
+    },
     name: {
       description: 'name of the icon',
       options: Object.values(IconName),
