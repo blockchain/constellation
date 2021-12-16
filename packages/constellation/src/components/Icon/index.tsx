@@ -6,6 +6,7 @@ import {
   IconAlert,
   IconAndroid,
   IconApple,
+  IconArrowBiDirectional,
   IconArrowDown,
   IconArrowLeft,
   IconArrowRight,
@@ -161,6 +162,8 @@ const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
       return <IconAndroid width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.APPLE:
       return <IconApple width={iconSize[size]} height={iconSize[size]} {...props} />
+    case IconName.ARROW_BI_DIRECTIONAL:
+      return <IconArrowBiDirectional width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.ARROW_DOWN:
       return <IconArrowDown width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.ARROW_LEFT:

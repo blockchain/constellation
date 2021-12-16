@@ -6,6 +6,7 @@ export enum IconName {
   ALERT = 'alert',
   ANDROID = 'android',
   APPLE = 'apple',
+  ARROW_BI_DIRECTIONAL = 'arrow-bi-directional',
   ARROW_DOWN = 'arrow-down',
   ARROW_LEFT = 'arrow-left',
   ARROW_RIGHT = 'arrow-right',

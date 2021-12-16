@@ -3,6 +3,7 @@ import IconAirdrop from './IconAirdrop'
 import IconAlert from './IconAlert'
 import IconAndroid from './IconAndroid'
 import IconApple from './IconApple'
+import IconArrowBiDirectional from './IconArrowBiDirectional'
 import IconArrowDown from './IconArrowDown'
 import IconArrowLeft from './IconArrowLeft'
 import IconArrowRight from './IconArrowRight'
@@ -142,6 +143,7 @@ export {
   IconAlert,
   IconAndroid,
   IconApple,
+  IconArrowBiDirectional,
   IconArrowDown,
   IconArrowLeft,
   IconArrowRight,
