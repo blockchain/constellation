@@ -1,13 +1,14 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "src/",
+    "baseUrl": "./src/",
     "declaration": true,
-    "outDir": "dist/esm",
-    "rootDir": "src/",
-    "jsx": "react"
+    "outDir": "./dist",
+    "rootDir": "./src/",
+    "jsx": "react",
+    "module": "ESNext",
+    "target": "ES6"
   },
-  "module": "ES2020",
   "include": ["src", "components/stories"],
   "exclude": ["node_modules", "dist"]
 }
