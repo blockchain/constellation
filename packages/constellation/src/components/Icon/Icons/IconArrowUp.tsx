@@ -18,7 +18,7 @@ const IconArrowUp = ({
       viewBox='0 0 24 24'
       {...props}
     >
-      <circle cx="12" cy="12" r="12" fill={bgColor}/>
+      <circle cx='12' cy='12' r='12' fill={bgColor}/>
       <path d='m20 12-1.41 1.41L13 7.83V20h-2V7.83l-5.58 5.59L4 12l8-8 8 8Z' fill={color} />
     </svg>
   )
