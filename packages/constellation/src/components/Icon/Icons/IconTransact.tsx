@@ -4,7 +4,7 @@ import type { IconProps } from './types'
 
 const IconTransact = ({ height = 24, width = 24, ...props }: IconProps) => {
   return (
-    <svg width={width} height={height} fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
+    <svg width={width} height={height} fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' {...props}>
       <mask
         id='a'
         // style='mask-type:alpha' ts does not like this

@@ -9,7 +9,7 @@ const IconTriangleDown = ({
   ...props
 }: IconProps) => {
   return (
-    <svg width={width} height={height} fill='none' xmlns='http://www.w3.org/2000/svg' {...props}>
+    <svg width={width} height={height} fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' {...props}>
       <path d='m6 9 6 6 6-6H6Z' fill={color} />
     </svg>
   )
