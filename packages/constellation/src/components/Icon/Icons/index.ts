@@ -122,6 +122,7 @@ import IconTagSell from './IconTagSell'
 import IconTimeout from './IconTimeout'
 import IconTor from './IconTor'
 import IconTrade from './IconTrade'
+import IconTradeFab from './IconTradeFab'
 import IconTransact from './IconTransact'
 import IconTransactClose from './IconTransactClose'
 import IconTriangleDown from './IconTriangleDown'
@@ -262,6 +263,7 @@ export {
   IconTimeout,
   IconTor,
   IconTrade,
+  IconTradeFab,
   IconTransact,
   IconTransactClose,
   IconTriangleDown,

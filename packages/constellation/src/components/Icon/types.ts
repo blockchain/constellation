@@ -125,6 +125,7 @@ export enum IconName {
   TIMEOUT = 'timeout',
   TOR = 'tor',
   TRADE = 'trade',
+  TRADE_FAB = 'trade_fab',
   TRANSACT = 'transact',
   TRANSACT_CLOSE = 'transact-close',
   TRIANGLE_DOWN = 'triangle-down',
