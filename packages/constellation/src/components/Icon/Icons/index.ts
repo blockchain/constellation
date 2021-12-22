@@ -3,6 +3,7 @@ import IconAirdrop from './IconAirdrop'
 import IconAlert from './IconAlert'
 import IconAndroid from './IconAndroid'
 import IconApple from './IconApple'
+import IconArrowBiDirectional from './IconArrowBiDirectional'
 import IconArrowDown from './IconArrowDown'
 import IconArrowLeft from './IconArrowLeft'
 import IconArrowRight from './IconArrowRight'
@@ -121,6 +122,7 @@ import IconTagSell from './IconTagSell'
 import IconTimeout from './IconTimeout'
 import IconTor from './IconTor'
 import IconTrade from './IconTrade'
+import IconTradeFab from './IconTradeFab'
 import IconTransact from './IconTransact'
 import IconTransactClose from './IconTransactClose'
 import IconTriangleDown from './IconTriangleDown'
@@ -142,6 +144,7 @@ export {
   IconAlert,
   IconAndroid,
   IconApple,
+  IconArrowBiDirectional,
   IconArrowDown,
   IconArrowLeft,
   IconArrowRight,
@@ -260,6 +263,7 @@ export {
   IconTimeout,
   IconTor,
   IconTrade,
+  IconTradeFab,
   IconTransact,
   IconTransactClose,
   IconTriangleDown,

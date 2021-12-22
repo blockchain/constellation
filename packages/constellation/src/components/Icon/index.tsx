@@ -6,6 +6,7 @@ import {
   IconAlert,
   IconAndroid,
   IconApple,
+  IconArrowBiDirectional,
   IconArrowDown,
   IconArrowLeft,
   IconArrowRight,
@@ -124,6 +125,7 @@ import {
   IconTimeout,
   IconTor,
   IconTrade,
+  IconTradeFab,
   IconTransact,
   IconTransactClose,
   IconTriangleDown,
@@ -161,6 +163,8 @@ const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
       return <IconAndroid width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.APPLE:
       return <IconApple width={iconSize[size]} height={iconSize[size]} {...props} />
+    case IconName.ARROW_BI_DIRECTIONAL:
+      return <IconArrowBiDirectional width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.ARROW_DOWN:
       return <IconArrowDown width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.ARROW_LEFT:
@@ -397,6 +401,8 @@ const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
       return <IconTor width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.TRADE:
       return <IconTrade width={iconSize[size]} height={iconSize[size]} {...props} />
+    case IconName.TRADE_FAB:
+      return <IconTradeFab width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.TRANSACT:
       return <IconTransact width={iconSize[size]} height={iconSize[size]} {...props} />
     case IconName.TRANSACT_CLOSE:

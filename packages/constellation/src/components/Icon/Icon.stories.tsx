@@ -6,6 +6,11 @@ import { IconName } from './types'
 
 export default {
   argTypes: {
+    bgColor: {
+      control: 'color',
+      defaultValue: 'transparent',
+      description: "color of the icon's background",
+    },
     color: {
       control: 'color',
       description: 'color of the icon',
@@ -42,7 +47,7 @@ export const AllIcons: ComponentStory<typeof Component> = (args) => {
           style={{ height: '5rem', margin: '1rem', textAlign: 'center', width: '5rem' }}
           key={name}
         >
-          <Component {...args} name={name} size='md' />
+          <Component {...args} name={name} />
           <div style={{ color: 'rgba(0, 0, 0, 0.5)' }}>{name}</div>
         </div>
       ))}
