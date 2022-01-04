@@ -2,21 +2,19 @@
   "name": "@blockchain-com/constellation",
   "version": "0.0.24",
   "license": "MIT",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "exports": {
     "import": "./dist/esm/index.js",
     "require": "./dist/cjs/index.js"
   },
-  "types": "./dist/esm/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
   "scripts": {
     "prepublish": "yarn build",
-    "build": "rimraf dist && yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc -p tsconfig.json",
-    "build:cjs": "tsc -p tsconfig-cjs.json",
+    "build": "rimraf dist && rollup -c",
     "lint:css": "stylelint --cache \"src/**\"",
     "lint:js": "eslint --cache \"src/**\"",
     "build:storybook": "build-storybook",
@@ -30,6 +28,9 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@mdx-js/react": "^1.6.22",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.2",
+    "@rollup/plugin-typescript": "^8.3.0",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-docs": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
@@ -65,6 +66,10 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
+    "rollup": "^2.63.0",
+    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
     "stylelint": "^13.12.0",
     "stylelint-config-constellation": "workspace:*",
     "stylelint-config-prettier": "^8.0.2",
@@ -76,9 +81,7 @@
   },
   "peerDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "dependencies": {
+    "react-dom": "^17.0.2",
     "styled-components": "4.4.1"
   }
 }
