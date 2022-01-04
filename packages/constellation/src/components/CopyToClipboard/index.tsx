@@ -1,11 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { colors } from '../../colors'
-import getIcon from '../Icon'
+import Icon from '../Icon'
 import { IconName } from '../Icon/types'
-import iconColor from '../IconColor'
 import { CopyToClipboardTypes, IconProps } from './types'
+
+const iconColorStyles = (
+  colorCode: keyof typeof colors,
+  hoverColorCode?: keyof typeof colors,
+) => css`
+  svg {
+    & > path {
+      fill: ${colors[colorCode]};
+    }
+    &:hover > path {
+      fill: ${hoverColorCode ? colors[hoverColorCode] : colors[colorCode]};
+    }
+  }
+`
 
 const getIconColor = ({
   color = 'red600',
@@ -14,9 +27,11 @@ const getIconColor = ({
   successColor = 'green600',
   successHoverColor = 'green400',
 }: IconProps) =>
-  showSuccess ? iconColor(successColor, successHoverColor) : iconColor(color, hoverColor)
+  showSuccess
+    ? iconColorStyles(successColor, successHoverColor)
+    : iconColorStyles(color, hoverColor)
 
-const Icon = styled.div<IconProps>`
+const StyledIcon = styled.div<IconProps>`
   width: fit-content;
   svg {
     & > path {
@@ -41,6 +56,7 @@ const CopyToClipboard = ({
   value,
 }: CopyToClipboardTypes) => {
   let timeout: ReturnType<typeof setTimeout>
+
   const [showSuccess, setShowSuccess] = useState<boolean>(false)
 
   useEffect(() => {
@@ -50,6 +66,7 @@ const CopyToClipboard = ({
 
   const handleClick = () => {
     setShowSuccess(true)
+
     if (customHandler) {
       customHandler()
     }
@@ -61,32 +78,24 @@ const CopyToClipboard = ({
       temp.style.position = 'absolute'
       temp.style.left = '-9999px'
 
-      if (document.body) {
-        document.body.appendChild(temp)
-      }
+      document.body.appendChild(temp)
 
       temp.select()
 
-      try {
-        const res: void | boolean = document.execCommand('copy')
+      const res: void | boolean = document.execCommand('copy')
 
-        if (res === true) {
-          timeout = setTimeout(() => {
-            setShowSuccess(false)
-          }, 1500)
-        }
-      } catch (err) {
-        console.log(err) // eslint-disable-line
+      if (res === true) {
+        timeout = setTimeout(() => {
+          setShowSuccess(false)
+        }, 1500)
       }
 
-      if (document.body) {
-        document.body.removeChild(temp)
-      }
+      document.body.removeChild(temp)
     }
   }
 
   return (
-    <Icon
+    <StyledIcon
       color={color}
       hoverColor={hoverColor}
       onClick={handleClick}
@@ -94,10 +103,12 @@ const CopyToClipboard = ({
       successColor={successColor}
       successHoverColor={successHoverColor}
     >
-      {showSuccess
-        ? getIcon({ color: colors.green600, name: IconName.CHECK, size: size ?? 'md' })
-        : getIcon({ name: IconName.CLIPBOARD, size: size ?? 'md' })}
-    </Icon>
+      {showSuccess ? (
+        <Icon color={colors.green600} name={IconName.CHECK} size={size} />
+      ) : (
+        <Icon color={colors.green600} name={IconName.CLIPBOARD} size={size} />
+      )}
+    </StyledIcon>
   )
 }
 
