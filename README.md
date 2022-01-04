@@ -23,6 +23,7 @@ yarn workspace [package] npm publish
 and it will publish the package for you.
 
 ## Deploying Storybook
+
 ```sh
 yarn workspace @blockchain-com/constellation deploy:storybook
 ```
@@ -31,7 +32,7 @@ yarn workspace @blockchain-com/constellation deploy:storybook
 
 ### [constellation](./packages/constellation)
 
-Our component library is available on [NPM](https://www.npmjs.com/package/constellation).
+Our component library is available on [NPM](https://www.npmjs.com/package/@blockchain-com/constellation).
 
 ### [eslint-config-constellation](./packages/eslint-config-constellation)
 
