@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { colors } from '../../colors'
+import Text from '../Text'
 import { SwitchLabelProps, SwitchLabelState, SwitchProps, SwitchWrapperProps } from './types'
 
 const SwitchWrapper = styled.div<SwitchWrapperProps>`
@@ -56,14 +57,10 @@ const SwitchLabel = styled.div<SwitchLabelProps>`
   flex: 1;
   text-align: center;
   cursor: ${({ disabled }) => (disabled ?? false ? 'not-allowed' : 'pointer')};
-  line-height: 150%;
-  font-weight: 600;
-  font-size: 16px;
   border-radius: 6px;
   margin: 2px;
   padding: 0.5rem;
   background-color: ${getSwitchBGColor('regular')};
-  color: ${getSwitchColor('regular')};
   transition: background-color 300, color 300;
   width: fit-content;
 
@@ -110,7 +107,7 @@ const Switch = ({
       selected={isFirstItemActive}
       textColor={textColor}
     >
-      {firstItem}
+      <Text>{firstItem}</Text>
     </SwitchLabel>
     <SwitchLabel
       activeColor={activeColor}
@@ -126,7 +123,7 @@ const Switch = ({
       selected={!isFirstItemActive}
       textColor={textColor}
     >
-      {secondItem}
+      <Text>{secondItem}</Text>
     </SwitchLabel>
   </SwitchWrapper>
 )
