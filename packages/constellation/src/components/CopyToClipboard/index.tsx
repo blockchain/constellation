@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 
 import { colors } from '../../colors'
+import useCopyToClipboard from '../../hooks/useCopyToClipboard'
 import Icon from '../Icon'
 import { IconName } from '../Icon/types'
 import { CopyToClipboardTypes, IconProps } from './types'
@@ -21,8 +22,8 @@ const iconColorStyles = (
 `
 
 const getIconColor = ({
-  color = 'red600',
-  hoverColor = 'dark600',
+  color = 'grey800',
+  hoverColor = 'grey600',
   showSuccess,
   successColor = 'green600',
   successHoverColor = 'green400',
@@ -56,7 +57,7 @@ const CopyToClipboard = ({
   value,
 }: CopyToClipboardTypes) => {
   let timeout: ReturnType<typeof setTimeout>
-
+  const [, copy] = useCopyToClipboard()
   const [showSuccess, setShowSuccess] = useState<boolean>(false)
 
   useEffect(() => {
@@ -64,34 +65,18 @@ const CopyToClipboard = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const handleClick = () => {
+  const handleClick = async () => {
     setShowSuccess(true)
 
     if (customHandler) {
       customHandler()
     }
 
-    if (document) {
-      const temp = document.createElement('textarea')
-      temp.value = value || ''
-      temp.setAttribute('readonly', '')
-      temp.style.position = 'absolute'
-      temp.style.left = '-9999px'
+    copy(value)
 
-      document.body.appendChild(temp)
-
-      temp.select()
-
-      const res: void | boolean = document.execCommand('copy')
-
-      if (res === true) {
-        timeout = setTimeout(() => {
-          setShowSuccess(false)
-        }, 1500)
-      }
-
-      document.body.removeChild(temp)
-    }
+    timeout = setTimeout(() => {
+      setShowSuccess(false)
+    }, 1500)
   }
 
   return (
@@ -104,9 +89,9 @@ const CopyToClipboard = ({
       successHoverColor={successHoverColor}
     >
       {showSuccess ? (
-        <Icon color={colors.green600} name={IconName.CHECK} size={size} />
+        <Icon name={IconName.CHECK} size={size} />
       ) : (
-        <Icon color={colors.green600} name={IconName.CLIPBOARD} size={size} />
+        <Icon name={IconName.CLIPBOARD} size={size} />
       )}
     </StyledIcon>
   )
