@@ -1,13 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
 const IconCreditCard = ({
   color = 'currentColor',
   height = 24,
   width = 24,
   ...props
-}: IconProps) => {
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -19,7 +20,7 @@ const IconCreditCard = ({
     >
       <path
         d='M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2Zm0 14H4v-6h16v6Zm0-10H4V6h16v2Z'
-        fill={color}
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
       />
     </svg>
   )

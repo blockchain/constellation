@@ -1,8 +1,9 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
-const IconBank = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
+const IconBank = ({ color = 'currentColor', height = 24, width = 24, ...props }: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -14,7 +15,7 @@ const IconBank = ({ color = 'currentColor', height = 24, width = 24, ...props }:
     >
       <path
         d='M4.895 10.5v7h2.842v-7H4.895Zm5.684 0v7h2.842v-7H10.58ZM3 22.5h18v-3H3v3Zm13.263-12v7h2.842v-7h-2.842ZM12 1.5l-9 5v2h18v-2l-9-5Z'
-        fill={color}
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
       />
     </svg>
   )

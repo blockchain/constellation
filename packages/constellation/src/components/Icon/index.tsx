@@ -1,5 +1,7 @@
 import React from 'react'
+import styled from 'styled-components'
 
+import { Color, colors } from '../../colors'
 import {
   IconActivity,
   IconAirdrop,
@@ -15,7 +17,6 @@ import {
   IconBackup,
   IconBank,
   IconBlockchain,
-  IconBlockchainCircle,
   IconCalendar,
   IconCall,
   IconCamera,
@@ -24,16 +25,12 @@ import {
   IconChartBubbles,
   IconChartPie,
   IconCheck,
-  IconCheckCircle,
   IconChevronDown,
   IconChevronLeft,
   IconChevronRight,
   IconChevronUp,
   IconClipboard,
   IconClose,
-  IconCloseCircle,
-  IconCloseCircleV2,
-  IconCloseV2,
   IconColorPicker,
   IconComment,
   IconComponents,
@@ -80,7 +77,6 @@ import {
   IconMarketUp,
   IconMenu,
   IconMicrophone,
-  IconMinusCircle,
   IconMoneyUsd,
   IconMoreHorizontal,
   IconMoreVertical,
@@ -92,27 +88,21 @@ import {
   IconPeople,
   IconPhone,
   IconPlaceholder,
-  IconPlayCircle,
   IconPlus,
-  IconPlusCircle,
   IconPortfolio,
   IconPresent,
   IconPrint,
   IconPrivate,
   IconQrCode,
   IconQuestion,
-  IconQuestionCircle,
   IconReceive,
-  IconReceiveV2,
   IconRefresh,
   IconRepeat,
   IconRewards,
-  IconRewardsCircle,
   IconSearch,
   IconSecurity,
   IconSell,
   IconSend,
-  IconSendV2,
   IconSettings,
   IconShareAndroid,
   IconShareIos,
@@ -141,7 +131,7 @@ import {
   IconWallet,
   IconWithdraw,
 } from './Icons'
-import { IconName, IconPropsType } from './types'
+import { IconName, IconProps, IconSize, WrappedIconProps } from './types'
 
 const iconSize = {
   lg: 36,
@@ -151,293 +141,290 @@ const iconSize = {
   xm: 8,
 }
 
-const getIcon = ({ name, size = 'md', ...props }: IconPropsType) => {
+const Icon = ({ name, size = 'md', ...props }: IconProps) => {
+  const dimensions = {
+    height: iconSize[size],
+    width: iconSize[size],
+  }
+
   switch (name) {
     case IconName.ACTIVITY:
-      return <IconActivity width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconActivity {...dimensions} {...props} />
     case IconName.AIRDROP:
-      return <IconAirdrop width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconAirdrop {...dimensions} {...props} />
     case IconName.ALERT:
-      return <IconAlert width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconAlert {...dimensions} {...props} />
     case IconName.ANDROID:
-      return <IconAndroid width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconAndroid {...dimensions} {...props} />
     case IconName.APPLE:
-      return <IconApple width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconApple {...dimensions} {...props} />
     case IconName.ARROW_BI_DIRECTIONAL:
-      return <IconArrowBiDirectional width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconArrowBiDirectional {...dimensions} {...props} />
     case IconName.ARROW_DOWN:
-      return <IconArrowDown width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconArrowDown {...dimensions} {...props} />
     case IconName.ARROW_LEFT:
-      return <IconArrowLeft width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconArrowLeft {...dimensions} {...props} />
     case IconName.ARROW_RIGHT:
-      return <IconArrowRight width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconArrowRight {...dimensions} {...props} />
     case IconName.ARROW_UP:
-      return <IconArrowUp width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconArrowUp {...dimensions} {...props} />
     case IconName.BACKSPACE:
-      return <IconBackspace width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconBackspace {...dimensions} {...props} />
     case IconName.BACKUP:
-      return <IconBackup width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconBackup {...dimensions} {...props} />
     case IconName.BANK:
-      return <IconBank width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconBank {...dimensions} {...props} />
     case IconName.BLOCKCHAIN:
-      return <IconBlockchain width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.BLOCKCHAIN_CIRCLE:
-      return <IconBlockchainCircle width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconBlockchain {...dimensions} {...props} />
     case IconName.CALENDAR:
-      return <IconCalendar width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconCalendar {...dimensions} {...props} />
     case IconName.CALL:
-      return <IconCall width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconCall {...dimensions} {...props} />
     case IconName.CAMERA:
-      return <IconCamera width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconCamera {...dimensions} {...props} />
     case IconName.CART:
-      return <IconCart width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconCart {...dimensions} {...props} />
     case IconName.CHART:
-      return <IconChart width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconChart {...dimensions} {...props} />
     case IconName.CHART_BUBBLES:
-      return <IconChartBubbles width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconChartBubbles {...dimensions} {...props} />
     case IconName.CHART_PIE:
-      return <IconChartPie width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconChartPie {...dimensions} {...props} />
     case IconName.CHECK:
-      return <IconCheck width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.CHECK_CIRCLE:
-      return <IconCheckCircle width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconCheck {...dimensions} {...props} />
     case IconName.CHEVRON_DOWN:
-      return <IconChevronDown width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconChevronDown {...dimensions} {...props} />
     case IconName.CHEVRON_LEFT:
-      return <IconChevronLeft width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconChevronLeft {...dimensions} {...props} />
     case IconName.CHEVRON_RIGHT:
-      return <IconChevronRight width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconChevronRight {...dimensions} {...props} />
     case IconName.CHEVRON_UP:
-      return <IconChevronUp width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconChevronUp {...dimensions} {...props} />
     case IconName.CLIPBOARD:
-      return <IconClipboard width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconClipboard {...dimensions} {...props} />
     case IconName.CLOSE:
-      return <IconClose width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.CLOSE_CIRCLE:
-      return <IconCloseCircle width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.CLOSE_CIRCLE_V2:
-      return <IconCloseCircleV2 width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.CLOSE_V2:
-      return <IconCloseV2 width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconClose {...dimensions} {...props} />
     case IconName.COLOR_PICKER:
-      return <IconColorPicker width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconColorPicker {...dimensions} {...props} />
     case IconName.COMMENT:
-      return <IconComment width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconComment {...dimensions} {...props} />
     case IconName.COMPONENTS:
-      return <IconComponents width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconComponents {...dimensions} {...props} />
     case IconName.COMPUTER:
-      return <IconComputer width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconComputer {...dimensions} {...props} />
     case IconName.COPY:
-      return <IconCopy width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconCopy {...dimensions} {...props} />
     case IconName.CREDIT_CARD:
-      return <IconCreditCard width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconCreditCard {...dimensions} {...props} />
     case IconName.DELETE:
-      return <IconDelete width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconDelete {...dimensions} {...props} />
     case IconName.DEPOSIT:
-      return <IconDeposit width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconDeposit {...dimensions} {...props} />
     case IconName.DOWNLOAD:
-      return <IconDownload width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconDownload {...dimensions} {...props} />
     case IconName.EDIT:
-      return <IconEdit width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconEdit {...dimensions} {...props} />
     case IconName.EDUCATION:
-      return <IconEducation width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconEducation {...dimensions} {...props} />
     case IconName.EMAIL:
-      return <IconEmail width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconEmail {...dimensions} {...props} />
     case IconName.ERROR:
-      return <IconError width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconError {...dimensions} {...props} />
     case IconName.EXCHANGE:
-      return <IconExchange width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconExchange {...dimensions} {...props} />
     case IconName.EXPANDLESS:
-      return <IconExpandLess width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconExpandLess {...dimensions} {...props} />
     case IconName.EXPANDMORE:
-      return <IconExpandMore width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconExpandMore {...dimensions} {...props} />
     case IconName.EXPLORE:
-      return <IconExplore width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconExplore {...dimensions} {...props} />
     case IconName.FACEID:
-      return <IconFaceId width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFaceId {...dimensions} {...props} />
     case IconName.FAVORITE:
-      return <IconFavorite width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFavorite {...dimensions} {...props} />
     case IconName.FILTER:
-      return <IconFilter width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFilter {...dimensions} {...props} />
     case IconName.FINGERPRINT:
-      return <IconFingerprint width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFingerprint {...dimensions} {...props} />
     case IconName.FLAG:
-      return <IconFlag width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFlag {...dimensions} {...props} />
     case IconName.FLASHOFF:
-      return <IconFlashOff width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFlashOff {...dimensions} {...props} />
     case IconName.FLASHON:
-      return <IconFlashOn width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFlashOn {...dimensions} {...props} />
     case IconName.FULLSCREEN:
-      return <IconFullscreen width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFullscreen {...dimensions} {...props} />
     case IconName.FULLSCREEN_EXIT:
-      return <IconFullscreenExit width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconFullscreenExit {...dimensions} {...props} />
     case IconName.GLOBE:
-      return <IconGlobe width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconGlobe {...dimensions} {...props} />
     case IconName.GOOGLE_TRANSLATE:
-      return <IconGoogleTranslate width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconGoogleTranslate {...dimensions} {...props} />
     case IconName.HARDWARE:
-      return <IconHardware width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconHardware {...dimensions} {...props} />
     case IconName.HISTORY:
-      return <IconHistory width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconHistory {...dimensions} {...props} />
     case IconName.HOME:
-      return <IconHome width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconHome {...dimensions} {...props} />
     case IconName.IDENTIFICATION:
-      return <IconIdentification width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconIdentification {...dimensions} {...props} />
     case IconName.INFORMATION:
-      return <IconInformation width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconInformation {...dimensions} {...props} />
     case IconName.KEY:
-      return <IconKey width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconKey {...dimensions} {...props} />
     case IconName.KEYBOARD:
-      return <IconKeyboard width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconKeyboard {...dimensions} {...props} />
     case IconName.LAPTOP:
-      return <IconLaptop width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconLaptop {...dimensions} {...props} />
     case IconName.LEGAL:
-      return <IconLegal width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconLegal {...dimensions} {...props} />
     case IconName.LINE_CHART_UP:
-      return <IconLineChartUp width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconLineChartUp {...dimensions} {...props} />
     case IconName.LINK:
-      return <IconLink width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconLink {...dimensions} {...props} />
     case IconName.LIST_BULLET:
-      return <IconListBullet width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconListBullet {...dimensions} {...props} />
     case IconName.LOADING:
-      return <IconLoading width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconLoading {...dimensions} {...props} />
     case IconName.LOCK:
-      return <IconLock width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconLock {...dimensions} {...props} />
     case IconName.LOGOUT:
-      return <IconLogout width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconLogout {...dimensions} {...props} />
     case IconName.MARKETUP:
-      return <IconMarketUp width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconMarketUp {...dimensions} {...props} />
     case IconName.MENU:
-      return <IconMenu width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconMenu {...dimensions} {...props} />
     case IconName.MICROPHONE:
-      return <IconMicrophone width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.MINUS_CIRCLE:
-      return <IconMinusCircle width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconMicrophone {...dimensions} {...props} />
     case IconName.MONEY_USD:
-      return <IconMoneyUsd width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconMoneyUsd {...dimensions} {...props} />
     case IconName.MORE_HORIZONTAL:
-      return <IconMoreHorizontal width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconMoreHorizontal {...dimensions} {...props} />
     case IconName.MORE_VERTICAL:
-      return <IconMoreVertical width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconMoreVertical {...dimensions} {...props} />
     case IconName.NEW_WINDOW:
-      return <IconNewWindow width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconNewWindow {...dimensions} {...props} />
     case IconName.NOTIFICATION:
-      return <IconNotification width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconNotification {...dimensions} {...props} />
     case IconName.NOTIFICATION_OFF:
-      return <IconNotificationOff width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconNotificationOff {...dimensions} {...props} />
     case IconName.PAPERCLIP:
-      return <IconPaperclip width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPaperclip {...dimensions} {...props} />
     case IconName.PENDING:
-      return <IconPending width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPending {...dimensions} {...props} />
     case IconName.PEOPLE:
-      return <IconPeople width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPeople {...dimensions} {...props} />
     case IconName.PHONE:
-      return <IconPhone width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPhone {...dimensions} {...props} />
     case IconName.PLACEHOLDER:
-      return <IconPlaceholder width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.PLAY_CIRCLE:
-      return <IconPlayCircle width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPlaceholder {...dimensions} {...props} />
     case IconName.PLUS:
-      return <IconPlus width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.PLUS_CIRCLE:
-      return <IconPlusCircle width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPlus {...dimensions} {...props} />
     case IconName.PORTFOLIO:
-      return <IconPortfolio width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPortfolio {...dimensions} {...props} />
     case IconName.PRESENT:
-      return <IconPresent width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPresent {...dimensions} {...props} />
     case IconName.PRINT:
-      return <IconPrint width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPrint {...dimensions} {...props} />
     case IconName.PRIVATE:
-      return <IconPrivate width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconPrivate {...dimensions} {...props} />
     case IconName.QRCODE:
-      return <IconQrCode width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconQrCode {...dimensions} {...props} />
     case IconName.QUESTION:
-      return <IconQuestion width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.QUESTION_CIRCLE:
-      return <IconQuestionCircle width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconQuestion {...dimensions} {...props} />
     case IconName.RECEIVE:
-      return <IconReceive width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.RECEIVE_V2:
-      return <IconReceiveV2 width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconReceive {...dimensions} {...props} />
     case IconName.REFRESH:
-      return <IconRefresh width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconRefresh {...dimensions} {...props} />
     case IconName.REPEAT:
-      return <IconRepeat width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconRepeat {...dimensions} {...props} />
     case IconName.REWARDS:
-      return <IconRewards width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.REWARDS_CIRCLE:
-      return <IconRewardsCircle width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconRewards {...dimensions} {...props} />
     case IconName.SEARCH:
-      return <IconSearch width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSearch {...dimensions} {...props} />
     case IconName.SECURITY:
-      return <IconSecurity width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSecurity {...dimensions} {...props} />
     case IconName.SELL:
-      return <IconSell width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSell {...dimensions} {...props} />
     case IconName.SEND:
-      return <IconSend width={iconSize[size]} height={iconSize[size]} {...props} />
-    case IconName.SEND_V2:
-      return <IconSendV2 width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSend {...dimensions} {...props} />
     case IconName.SETTINGS:
-      return <IconSettings width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSettings {...dimensions} {...props} />
     case IconName.SHARE_ANDROID:
-      return <IconShareAndroid width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconShareAndroid {...dimensions} {...props} />
     case IconName.SHARE_IOS:
-      return <IconShareIos width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconShareIos {...dimensions} {...props} />
     case IconName.SIGNOUT:
-      return <IconSignout width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSignout {...dimensions} {...props} />
     case IconName.SUBDIRECTORY:
-      return <IconSubdirectory width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSubdirectory {...dimensions} {...props} />
     case IconName.SUPPORT:
-      return <IconSupport width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSupport {...dimensions} {...props} />
     case IconName.SWAP:
-      return <IconSwap width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSwap {...dimensions} {...props} />
     case IconName.SYNC:
-      return <IconSync width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconSync {...dimensions} {...props} />
     case IconName.TAG_SELL:
-      return <IconTagSell width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTagSell {...dimensions} {...props} />
     case IconName.TIMEOUT:
-      return <IconTimeout width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTimeout {...dimensions} {...props} />
     case IconName.TOR:
-      return <IconTor width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTor {...dimensions} {...props} />
     case IconName.TRADE:
-      return <IconTrade width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTrade {...dimensions} {...props} />
     case IconName.TRADE_FAB:
-      return <IconTradeFab width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTradeFab {...dimensions} {...props} />
     case IconName.TRANSACT:
-      return <IconTransact width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTransact {...dimensions} {...props} />
     case IconName.TRANSACT_CLOSE:
-      return <IconTransactClose width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTransactClose {...dimensions} {...props} />
     case IconName.TRIANGLE_DOWN:
-      return <IconTriangleDown width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTriangleDown {...dimensions} {...props} />
     case IconName.TRIANGLE_UP:
-      return <IconTriangleUp width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconTriangleUp {...dimensions} {...props} />
     case IconName.UNFOLD_LESS:
-      return <IconUnfoldLess width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconUnfoldLess {...dimensions} {...props} />
     case IconName.UNFOLD_MORE:
-      return <IconUnfoldMore width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconUnfoldMore {...dimensions} {...props} />
     case IconName.UNLOCKED:
-      return <IconUnlocked width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconUnlocked {...dimensions} {...props} />
     case IconName.USER:
-      return <IconUser width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconUser {...dimensions} {...props} />
     case IconName.USER_ADD:
-      return <IconUserAdd width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconUserAdd {...dimensions} {...props} />
     case IconName.VERIFIED:
-      return <IconVerified width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconVerified {...dimensions} {...props} />
     case IconName.VISIBILITY_OFF:
-      return <IconVisibilityOff width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconVisibilityOff {...dimensions} {...props} />
     case IconName.VISIBILITY_ON:
-      return <IconVisibilityOn width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconVisibilityOn {...dimensions} {...props} />
     case IconName.WALLET:
-      return <IconWallet width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconWallet {...dimensions} {...props} />
     case IconName.WITHDRAW:
-      return <IconWithdraw width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconWithdraw {...dimensions} {...props} />
     default:
-      return <IconBlockchain width={iconSize[size]} height={iconSize[size]} {...props} />
+      return <IconBlockchain {...dimensions} {...props} />
   }
 }
 
-const Icon = (props: IconPropsType) => getIcon(props)
+const IconWrapper = styled.div<{
+  $bgColor: Color
+  $shape: 'square' | 'circle'
+  $size: IconSize
+}>``
 
-export { IconName, iconSize }
+const WrappedIcon = ({
+  bgColor = 'grey900',
+  color,
+  name,
+  shape = 'circle',
+  size = 'md',
+}: WrappedIconProps) => {
+  return (
+    <IconWrapper $size={size} $bgColor={bgColor} $shape={shape}>
+      <Icon name={name} color={color} />
+    </IconWrapper>
+  )
+}
 
-export default Icon
+export { Icon, IconName, iconSize, WrappedIcon }

@@ -1,8 +1,9 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
-const IconFlag = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
+const IconFlag = ({ color = 'currentColor', height = 24, width = 24, ...props }: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -12,7 +13,10 @@ const IconFlag = ({ color = 'currentColor', height = 24, width = 24, ...props }:
       viewBox='0 0 24 24'
       {...props}
     >
-      <path d='M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6h-5.6Z' fill={color} />
+      <path
+        d='M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6h-5.6Z'
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
+      />
     </svg>
   )
 }

@@ -1,8 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
-const IconShareIos = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
+const IconShareIos = ({
+  color = 'currentColor',
+  height = 24,
+  width = 24,
+  ...props
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -12,7 +18,7 @@ const IconShareIos = ({ color = 'currentColor', height = 24, width = 24, ...prop
       viewBox='0 0 24 24'
       {...props}
     >
-      <g clipPath='url(#a)' fill={color}>
+      <g clipPath='url(#a)' fill={color === 'currentColor' ? 'currentColor' : colors[color]}>
         <path d='m6 6 1.316 1.324L11 3.83V16h2V3.83l3.5 3.494L18 6l-6-6-6 6Z' />
         <path d='M6 10a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V12a2 2 0 0 0-2-2h-3v2h3v10H6V12h3v-2H6Z' />
       </g>

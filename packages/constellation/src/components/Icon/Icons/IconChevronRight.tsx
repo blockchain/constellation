@@ -1,13 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
 const IconChevronRight = ({
   color = 'currentColor',
   height = 24,
   width = 24,
   ...props
-}: IconProps) => {
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -21,7 +22,7 @@ const IconChevronRight = ({
         fillRule='evenodd'
         clipRule='evenodd'
         d='M7.335 4.335a1.143 1.143 0 0 1 1.616 0l6.857 6.857c.446.446.446 1.17 0 1.616l-6.857 6.857a1.143 1.143 0 0 1-1.616-1.616L13.384 12l-6.05-6.049a1.143 1.143 0 0 1 0-1.616Z'
-        fill={color}
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
       />
     </svg>
   )

@@ -1,13 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
 const IconSubdirectory = ({
   color = 'currentColor',
   height = 24,
   width = 24,
   ...props
-}: IconProps) => {
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -19,7 +20,7 @@ const IconSubdirectory = ({
     >
       <path
         d='M2.667 1v12h16.226L14.12 8.213 16 6.333l8 8-8 8-1.88-1.88 4.773-4.786H0V1h2.667Z'
-        fill={color}
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
       />
     </svg>
   )

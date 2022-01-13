@@ -12,7 +12,6 @@ import IconBackspace from './IconBackspace'
 import IconBackup from './IconBackup'
 import IconBank from './IconBank'
 import IconBlockchain from './IconBlockchain'
-import IconBlockchainCircle from './IconBlockchainCircle'
 import IconCalendar from './IconCalendar'
 import IconCall from './IconCall'
 import IconCamera from './IconCamera'
@@ -21,16 +20,12 @@ import IconChart from './IconChart'
 import IconChartBubbles from './IconChartBubbles'
 import IconChartPie from './IconChartPie'
 import IconCheck from './IconCheck'
-import IconCheckCircle from './IconCheckCircle'
 import IconChevronDown from './IconChevronDown'
 import IconChevronLeft from './IconChevronLeft'
 import IconChevronRight from './IconChevronRight'
 import IconChevronUp from './IconChevronUp'
 import IconClipboard from './IconClipboard'
 import IconClose from './IconClose'
-import IconCloseCircle from './IconCloseCircle'
-import IconCloseCircleV2 from './IconCloseCircleV2'
-import IconCloseV2 from './IconCloseV2'
 import IconColorPicker from './IconColorPicker'
 import IconComment from './IconComment'
 import IconComponents from './IconComponents'
@@ -77,7 +72,6 @@ import IconLogout from './IconLogout'
 import IconMarketUp from './IconMarketUp'
 import IconMenu from './IconMenu'
 import IconMicrophone from './IconMicrophone'
-import IconMinusCircle from './IconMinusCircle'
 import IconMoneyUsd from './IconMoneyUsd'
 import IconMoreHorizontal from './IconMoreHorizontal'
 import IconMoreVertical from './IconMoreVertical'
@@ -89,27 +83,21 @@ import IconPending from './IconPending'
 import IconPeople from './IconPeople'
 import IconPhone from './IconPhone'
 import IconPlaceholder from './IconPlaceholder'
-import IconPlayCircle from './IconPlayCircle'
 import IconPlus from './IconPlus'
-import IconPlusCircle from './IconPlusCircle'
 import IconPortfolio from './IconPortfolio'
 import IconPresent from './IconPresent'
 import IconPrint from './IconPrint'
 import IconPrivate from './IconPrivate'
 import IconQrCode from './IconQrCode'
 import IconQuestion from './IconQuestion'
-import IconQuestionCircle from './IconQuestionCircle'
 import IconReceive from './IconReceive'
-import IconReceiveV2 from './IconReceiveV2'
 import IconRefresh from './IconRefresh'
 import IconRepeat from './IconRepeat'
 import IconRewards from './IconRewards'
-import IconRewardsCircle from './IconRewardsCircle'
 import IconSearch from './IconSearch'
 import IconSecurity from './IconSecurity'
 import IconSell from './IconSell'
 import IconSend from './IconSend'
-import IconSendV2 from './IconSendV2'
 import IconSettings from './IconSettings'
 import IconShareAndroid from './IconShareAndroid'
 import IconShareIos from './IconShareIos'
@@ -153,7 +141,6 @@ export {
   IconBackup,
   IconBank,
   IconBlockchain,
-  IconBlockchainCircle,
   IconCalendar,
   IconCall,
   IconCamera,
@@ -162,16 +149,12 @@ export {
   IconChartBubbles,
   IconChartPie,
   IconCheck,
-  IconCheckCircle,
   IconChevronDown,
   IconChevronLeft,
   IconChevronRight,
   IconChevronUp,
   IconClipboard,
   IconClose,
-  IconCloseCircle,
-  IconCloseCircleV2,
-  IconCloseV2,
   IconColorPicker,
   IconComment,
   IconComponents,
@@ -218,7 +201,6 @@ export {
   IconMarketUp,
   IconMenu,
   IconMicrophone,
-  IconMinusCircle,
   IconMoneyUsd,
   IconMoreHorizontal,
   IconMoreVertical,
@@ -230,27 +212,21 @@ export {
   IconPeople,
   IconPhone,
   IconPlaceholder,
-  IconPlayCircle,
   IconPlus,
-  IconPlusCircle,
   IconPortfolio,
   IconPresent,
   IconPrint,
   IconPrivate,
   IconQrCode,
   IconQuestion,
-  IconQuestionCircle,
   IconReceive,
-  IconReceiveV2,
   IconRefresh,
   IconRepeat,
   IconRewards,
-  IconRewardsCircle,
   IconSearch,
   IconSecurity,
   IconSell,
   IconSend,
-  IconSendV2,
   IconSettings,
   IconShareAndroid,
   IconShareIos,

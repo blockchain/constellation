@@ -1,13 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
 const IconUnfoldLess = ({
   color = 'currentColor',
   height = 24,
   width = 24,
   ...props
-}: IconProps) => {
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -19,7 +20,7 @@ const IconUnfoldLess = ({
     >
       <path
         d='M7.41 18.59 8.83 20 12 16.83 15.17 20l1.41-1.41L12 14l-4.59 4.59Zm9.18-13.18L15.17 4 12 7.17 8.83 4 7.41 5.41 12 10l4.59-4.59Z'
-        fill={color}
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
       />
     </svg>
   )

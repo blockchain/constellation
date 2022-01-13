@@ -1,6 +1,7 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
 const IconArrowUp = ({
   bgColor = 'transparent',
@@ -8,7 +9,7 @@ const IconArrowUp = ({
   height = 24,
   width = 24,
   ...props
-}: IconProps) => {
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -19,7 +20,10 @@ const IconArrowUp = ({
       {...props}
     >
       <circle cx='12' cy='12' r='12' fill={bgColor} />
-      <path d='m20 12-1.41 1.41L13 7.83V20h-2V7.83l-5.58 5.59L4 12l8-8 8 8Z' fill={color} />
+      <path
+        d='m20 12-1.41 1.41L13 7.83V20h-2V7.83l-5.58 5.59L4 12l8-8 8 8Z'
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
+      />
     </svg>
   )
 }

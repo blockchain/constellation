@@ -1,19 +1,21 @@
 import { ComponentStory } from '@storybook/react'
 import React from 'react'
 
-import Component, { iconSize } from '.'
+import { colors } from '../../colors'
+import { Icon as Component, iconSize } from '.'
 import { IconName } from './types'
 
 export default {
   argTypes: {
     bgColor: {
-      control: 'color',
-      defaultValue: 'transparent',
-      description: "color of the icon's background",
+      description: 'color of the background',
+      options: Object.keys(colors),
+      type: 'select',
     },
     color: {
-      control: 'color',
       description: 'color of the icon',
+      options: Object.keys(colors),
+      type: 'select',
     },
     name: {
       description: 'name of the icon',
@@ -35,7 +37,7 @@ const Template: ComponentStory<typeof Component> = (args) => <Component {...args
 export const Icon = Template.bind({})
 
 Icon.args = {
-  name: IconName.BLOCKCHAIN_CIRCLE,
+  name: IconName.BLOCKCHAIN,
   size: 'md',
 }
 

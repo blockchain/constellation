@@ -1,8 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
-const IconDownload = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
+const IconDownload = ({
+  color = 'currentColor',
+  height = 24,
+  width = 24,
+  ...props
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -12,7 +18,10 @@ const IconDownload = ({ color = 'currentColor', height = 24, width = 24, ...prop
       viewBox='0 0 24 24'
       {...props}
     >
-      <path d='M19 9h-4V3H9v6H5l7 7 7-7ZM5 18v2h14v-2H5Z' fill={color} />
+      <path
+        d='M19 9h-4V3H9v6H5l7 7 7-7ZM5 18v2h14v-2H5Z'
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
+      />
     </svg>
   )
 }

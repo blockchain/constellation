@@ -1,8 +1,9 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
-const IconClose = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
+const IconClose = ({ color = 'currentColor', height = 24, width = 24, ...props }: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -13,8 +14,10 @@ const IconClose = ({ color = 'currentColor', height = 24, width = 24, ...props }
       {...props}
     >
       <path
-        d='M20 5.611 18.389 4 12 10.389 5.611 4 4 5.611 10.389 12 4 18.389 5.611 20 12 13.611 18.389 20 20 18.389 13.611 12 20 5.611Z'
-        fill={color}
+        fillRule='evenodd'
+        clipRule='evenodd'
+        d='M1.515 1.515a2 2 0 0 0 0 2.828L7.172 10l-5.657 5.657a2 2 0 1 0 2.828 2.828L10 12.828l5.657 5.657a2 2 0 0 0 2.828-2.828L12.828 10l5.657-5.657a2 2 0 0 0-2.828-2.828L10 7.172 4.343 1.515a2 2 0 0 0-2.828 0Z'
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
       />
     </svg>
   )

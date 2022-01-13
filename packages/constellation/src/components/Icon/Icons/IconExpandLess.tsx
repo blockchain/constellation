@@ -1,13 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
 const IconExpandLess = ({
   color = 'currentColor',
   height = 24,
   width = 24,
   ...props
-}: IconProps) => {
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -17,7 +18,10 @@ const IconExpandLess = ({
       viewBox='0 0 24 24'
       {...props}
     >
-      <path d='m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6Z' fill={color} />
+      <path
+        d='m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6Z'
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
+      />
     </svg>
   )
 }

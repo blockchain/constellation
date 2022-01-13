@@ -1,13 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
 const IconVisibilityOn = ({
   color = 'currentColor',
   height = 24,
   width = 24,
   ...props
-}: IconProps) => {
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -20,7 +21,7 @@ const IconVisibilityOn = ({
       <g clipPath='url(#a)'>
         <path
           d='M12 3.82c-5.455 0-10.113 3.393-12 8.182 1.887 4.789 6.545 8.182 12 8.182 5.454 0 10.113-3.393 12-8.182-1.887-4.79-6.546-8.182-12-8.182Zm0 13.636a5.457 5.457 0 0 1-5.455-5.454A5.457 5.457 0 0 1 12 6.547a5.456 5.456 0 0 1 5.454 5.455A5.457 5.457 0 0 1 12 17.456Zm0-8.727a3.268 3.268 0 0 0-3.273 3.273A3.268 3.268 0 0 0 12 15.275a3.268 3.268 0 0 0 3.273-3.273A3.268 3.268 0 0 0 12 8.729Z'
-          fill={color}
+          fill={color === 'currentColor' ? 'currentColor' : colors[color]}
         />
       </g>
       <defs>

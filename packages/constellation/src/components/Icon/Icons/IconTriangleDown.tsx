@@ -1,13 +1,14 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
 const IconTriangleDown = ({
   color = 'currentColor',
   height = 24,
   width = 24,
   ...props
-}: IconProps) => {
+}: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -17,7 +18,7 @@ const IconTriangleDown = ({
       viewBox='0 0 24 24'
       {...props}
     >
-      <path d='m6 9 6 6 6-6H6Z' fill={color} />
+      <path d='m6 9 6 6 6-6H6Z' fill={color === 'currentColor' ? 'currentColor' : colors[color]} />
     </svg>
   )
 }

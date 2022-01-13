@@ -20,4 +20,8 @@ const colors = {
   ...white,
 }
 
+type Color = keyof typeof colors
+
+export type { Color }
+
 export { colors }

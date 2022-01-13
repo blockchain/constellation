@@ -1,8 +1,9 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
-const IconTransact = ({ height = 24, width = 24, ...props }: IconProps) => {
+const IconTransact = ({ height = 24, width = 24, ...props }: RawIconProps) => {
   return (
     <svg
       width={width}

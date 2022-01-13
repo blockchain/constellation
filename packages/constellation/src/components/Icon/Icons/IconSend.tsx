@@ -1,8 +1,9 @@
 import React from 'react'
 
-import type { IconProps } from './types'
+import { colors } from '../../../colors'
+import type { RawIconProps } from '../types'
 
-const IconSend = ({ color = 'currentColor', height = 24, width = 24, ...props }: IconProps) => {
+const IconSend = ({ color = 'currentColor', height = 24, width = 24, ...props }: RawIconProps) => {
   return (
     <svg
       width={width}
@@ -13,10 +14,8 @@ const IconSend = ({ color = 'currentColor', height = 24, width = 24, ...props }:
       {...props}
     >
       <path
-        fillRule='evenodd'
-        clipRule='evenodd'
-        d='m3.237 10.322 3.07 2.362 4.996-2.735c.301-.187.602.248.361.497l-3.912 3.419v5.843c0 .559.662.808 1.023.435l2.95-3.295 5.296 4.04c.362.25.843.063.964-.372l3.01-16.783c.06-.498-.362-.87-.783-.684L3.358 9.265c-.422.186-.482.808-.12 1.056'
-        fill={color}
+        d='M15.782 13.862H12.75a.75.75 0 0 1-.691-.427.658.658 0 0 1-.059-.272v-2.329a.658.658 0 0 1 .104-.355.76.76 0 0 1 .646-.344h5.251V7.582c0-.518.672-.777 1.066-.41l4.757 4.428a.537.537 0 0 1 0 .795l-4.757 4.433c-.394.367-1.066.108-1.066-.41v-2.556h-2.219Zm-3.032 1h2.723a8 8 0 1 1-.001-5.726H12.75c-.9 0-1.75.693-1.75 1.698v2.329c0 1.005.85 1.699 1.75 1.699Z'
+        fill={color === 'currentColor' ? 'currentColor' : colors[color]}
       />
     </svg>
   )
