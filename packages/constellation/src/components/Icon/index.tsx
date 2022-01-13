@@ -1,7 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
 
-import { Color, colors } from '../../colors'
 import {
   IconActivity,
   IconAirdrop,
@@ -71,7 +69,6 @@ import {
   IconLineChartUp,
   IconLink,
   IconListBullet,
-  IconLoading,
   IconLock,
   IconLogout,
   IconMarketUp,
@@ -116,8 +113,6 @@ import {
   IconTor,
   IconTrade,
   IconTradeFab,
-  IconTransact,
-  IconTransactClose,
   IconTriangleDown,
   IconTriangleUp,
   IconUnfoldLess,
@@ -131,20 +126,18 @@ import {
   IconWallet,
   IconWithdraw,
 } from './Icons'
-import { IconName, IconProps, IconSize, WrappedIconProps } from './types'
+import { IconName, IconProps } from './types'
 
-const iconSize = {
+const iconSizes = {
   lg: 36,
   md: 24,
   sm: 16,
-  xl: 48,
-  xm: 8,
 }
 
 const Icon = ({ name, size = 'md', ...props }: IconProps) => {
   const dimensions = {
-    height: iconSize[size],
-    width: iconSize[size],
+    height: iconSizes[size],
+    width: iconSizes[size],
   }
 
   switch (name) {
@@ -284,8 +277,6 @@ const Icon = ({ name, size = 'md', ...props }: IconProps) => {
       return <IconLink {...dimensions} {...props} />
     case IconName.LIST_BULLET:
       return <IconListBullet {...dimensions} {...props} />
-    case IconName.LOADING:
-      return <IconLoading {...dimensions} {...props} />
     case IconName.LOCK:
       return <IconLock {...dimensions} {...props} />
     case IconName.LOGOUT:
@@ -374,10 +365,6 @@ const Icon = ({ name, size = 'md', ...props }: IconProps) => {
       return <IconTrade {...dimensions} {...props} />
     case IconName.TRADE_FAB:
       return <IconTradeFab {...dimensions} {...props} />
-    case IconName.TRANSACT:
-      return <IconTransact {...dimensions} {...props} />
-    case IconName.TRANSACT_CLOSE:
-      return <IconTransactClose {...dimensions} {...props} />
     case IconName.TRIANGLE_DOWN:
       return <IconTriangleDown {...dimensions} {...props} />
     case IconName.TRIANGLE_UP:
@@ -407,24 +394,6 @@ const Icon = ({ name, size = 'md', ...props }: IconProps) => {
   }
 }
 
-const IconWrapper = styled.div<{
-  $bgColor: Color
-  $shape: 'square' | 'circle'
-  $size: IconSize
-}>``
+export { IconName, iconSizes }
 
-const WrappedIcon = ({
-  bgColor = 'grey900',
-  color,
-  name,
-  shape = 'circle',
-  size = 'md',
-}: WrappedIconProps) => {
-  return (
-    <IconWrapper $size={size} $bgColor={bgColor} $shape={shape}>
-      <Icon name={name} color={color} />
-    </IconWrapper>
-  )
-}
-
-export { Icon, IconName, iconSize, WrappedIcon }
+export default Icon

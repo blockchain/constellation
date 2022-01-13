@@ -1,11 +1,11 @@
 import { ColorKeysType } from '../../colors/types'
-import { iconSize } from '../Icon'
+import { iconSizes } from '../Icon'
 
 export type CopyToClipboardTypes = {
   color?: ColorKeysType
   customHandler?: () => void
   hoverColor?: ColorKeysType
-  size?: keyof typeof iconSize
+  size?: keyof typeof iconSizes
   successColor?: ColorKeysType
   successHoverColor?: ColorKeysType
   value: string

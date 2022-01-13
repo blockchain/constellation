@@ -66,7 +66,6 @@ import IconLegal from './IconLegal'
 import IconLineChartUp from './IconLineChartUp'
 import IconLink from './IconLink'
 import IconListBullet from './IconListBullet'
-import IconLoading from './IconLoading'
 import IconLock from './IconLock'
 import IconLogout from './IconLogout'
 import IconMarketUp from './IconMarketUp'
@@ -111,8 +110,6 @@ import IconTimeout from './IconTimeout'
 import IconTor from './IconTor'
 import IconTrade from './IconTrade'
 import IconTradeFab from './IconTradeFab'
-import IconTransact from './IconTransact'
-import IconTransactClose from './IconTransactClose'
 import IconTriangleDown from './IconTriangleDown'
 import IconTriangleUp from './IconTriangleUp'
 import IconUnfoldLess from './IconUnfoldLess'
@@ -195,7 +192,6 @@ export {
   IconLineChartUp,
   IconLink,
   IconListBullet,
-  IconLoading,
   IconLock,
   IconLogout,
   IconMarketUp,
@@ -240,8 +236,6 @@ export {
   IconTor,
   IconTrade,
   IconTradeFab,
-  IconTransact,
-  IconTransactClose,
   IconTriangleDown,
   IconTriangleUp,
   IconUnfoldLess,

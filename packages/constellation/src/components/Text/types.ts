@@ -1,5 +1,7 @@
 import { HTMLProps, ReactNode } from 'react'
 
+import { ColorKeysType } from '../../colors/types'
+
 type VariantType =
   | 'display'
   | 'title-1'
@@ -21,6 +23,7 @@ type HtmlFor = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
 type TextProps = Omit<HTMLProps<HTMLHeadingElement | HTMLParagraphElement>, 'ref' | 'as'> & {
   children: ReactNode
+  color?: ColorKeysType
   htmlFor?: HtmlFor
   variant?: VariantType
 }

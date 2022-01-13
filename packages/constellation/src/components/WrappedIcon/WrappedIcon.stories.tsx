@@ -2,12 +2,17 @@ import { ComponentStory } from '@storybook/react'
 import React from 'react'
 
 import { colors } from '../../colors'
-import Text from '../Text'
-import Component, { iconSizes } from '.'
-import { IconName } from './types'
+import { iconSizes } from '../Icon'
+import { IconName } from '../Icon/types'
+import Component from '.'
 
 export default {
   argTypes: {
+    bgColor: {
+      description: 'background color of the icon',
+      options: Object.keys(colors),
+      type: 'select',
+    },
     color: {
       description: 'color of the icon',
       options: Object.keys(colors),
@@ -18,6 +23,11 @@ export default {
       options: Object.values(IconName),
       type: 'select',
     },
+    shape: {
+      description: 'name of the icon',
+      options: ['circle', 'square'],
+      type: 'select',
+    },
     size: {
       description: 'size of the icon',
       options: Object.keys(iconSizes),
@@ -25,31 +35,15 @@ export default {
     },
   },
   component: Component,
-  title: 'Components/Icon',
+  title: 'Components/WrappedIcon',
 }
 
 const Template: ComponentStory<typeof Component> = (args) => <Component {...args} />
 
-export const Icon = Template.bind({})
+export const WrappedIcon = Template.bind({})
 
-Icon.args = {
+WrappedIcon.args = {
+  color: 'white1',
   name: IconName.BLOCKCHAIN,
   size: 'md',
-}
-
-export const AllIcons: ComponentStory<typeof Component> = (args) => {
-  return (
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      {Object.values(IconName).map((name) => (
-        <div
-          style={{ height: '4rem', margin: '1rem', textAlign: 'center', width: '8rem' }}
-          key={name}
-        >
-          <Component {...args} name={name} />
-          <br />
-          <Text variant='caption-1'>{name}</Text>
-        </div>
-      ))}
-    </div>
-  )
 }

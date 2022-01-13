@@ -1,6 +1,7 @@
 import { SVGProps } from 'react'
 
-import { Color } from '../../colors'
+import { ColorKeysType } from '../../colors/types'
+import { iconSizes } from '.'
 
 export enum IconName {
   ACTIVITY = 'ACTIVITY',
@@ -132,22 +133,14 @@ export enum IconName {
   WITHDRAW = 'WITHDRAW',
 }
 
-type IconSize = 'sm' | 'md' | 'lg' | 'xl' | 'xm'
+type IconSizes = keyof typeof iconSizes
 
 type RawIconProps = SVGProps<SVGSVGElement> & {
-  color?: Color | 'currentColor'
+  color?: ColorKeysType | 'currentColor'
   height?: number
   width?: number
 }
 
-type WrappedIconProps = {
-  bgColor?: Color
-  color?: Color
-  name: IconName
-  shape?: 'circle' | 'square'
-  size?: IconSize
-}
+type IconProps = RawIconProps & { name: IconName; size?: IconSizes }
 
-type IconProps = RawIconProps & { name: IconName; size?: IconSize }
-
-export type { IconProps, IconSize, RawIconProps, WrappedIconProps }
+export type { IconProps, IconSizes, RawIconProps }

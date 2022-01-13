@@ -2,7 +2,7 @@ import { Story } from '@storybook/react'
 import React from 'react'
 
 import { colors } from '../../colors'
-import { iconSize } from '../Icon'
+import { iconSizes } from '../Icon'
 import Component from '.'
 import { CopyToClipboardTypes } from './types'
 
@@ -20,7 +20,7 @@ export default {
     },
     size: {
       description: 'Clipboard hover color',
-      options: Object.keys(iconSize),
+      options: Object.keys(iconSizes),
       type: 'select',
     },
     successColor: {
