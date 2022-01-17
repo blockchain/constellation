@@ -10,6 +10,7 @@ const StyledText = styled.span<{ $color: TextProps['color']; $variant: TextProps
   font-family: 'Inter', sans-serif;
   color: ${(props) => (props.$color ? colors[props.$color] : colors[defaultColor])};
   margin: 0;
+  display: block;
 
   ${(props) =>
     props.$variant === 'display'
@@ -147,6 +148,8 @@ const StyledText = styled.span<{ $color: TextProps['color']; $variant: TextProps
           font-feature-settings: 'ss01' on, 'zero' on;
         `
       : null}
+
+  margin-bottom: .35em;
 `
 
 const Text = forwardRef(
