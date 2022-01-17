@@ -20,7 +20,7 @@ export default {
   },
   component: Text,
   title: 'Components/Text',
-} as ComponentMeta<typeof Text>
+} as unknown as ComponentMeta<typeof Text>
 
 export const Default: ComponentStory<typeof Text> = (args) => <Text {...args} />
 
