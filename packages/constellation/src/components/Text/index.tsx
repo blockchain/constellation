@@ -1,11 +1,16 @@
 import React, { forwardRef, Ref } from 'react'
 import styled, { css } from 'styled-components'
 
+import { colors } from '../../colors'
 import { TextProps } from './types'
 
-const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
+const defaultColor = 'dark800'
+
+const StyledText = styled.span<{ $color: TextProps['color']; $variant: TextProps['variant'] }>`
   font-family: 'Inter', sans-serif;
+  color: ${(props) => (props.$color ? colors[props.$color] : colors[defaultColor])};
   margin: 0;
+  display: block;
 
   ${(props) =>
     props.$variant === 'display'
@@ -143,15 +148,17 @@ const StyledText = styled.p<{ $variant: TextProps['variant'] }>`
           font-feature-settings: 'ss01' on, 'zero' on;
         `
       : null}
+
+  margin-bottom: .35em;
 `
 
 const Text = forwardRef(
   (
-    { children, htmlFor = 'span', variant = 'body-1', ...props }: TextProps,
+    { children, color = 'grey800', htmlFor = 'span', variant = 'body-1', ...props }: TextProps,
     ref: Ref<HTMLHeadingElement | HTMLParagraphElement>,
   ) => {
     return (
-      <StyledText as={htmlFor} $variant={variant} ref={ref} {...props}>
+      <StyledText as={htmlFor} $variant={variant} $color={color} ref={ref} {...props}>
         {children}
       </StyledText>
     )
