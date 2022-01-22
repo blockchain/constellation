@@ -1,168 +1,111 @@
-import React, { forwardRef, Ref } from 'react'
-import styled, { css } from 'styled-components'
+import React from 'react'
 
 import { colors } from '../../colors'
+import { ColorKeysType } from '../../colors/types'
+import { styled } from '../../stitches.config'
 import { TextProps } from './types'
 
-const defaultColor = 'dark800'
-
-const StyledText = styled.span<{ $color: TextProps['color']; $variant: TextProps['variant'] }>`
-  font-family: 'Inter', sans-serif;
-  color: ${(props) => (props.$color ? colors[props.$color] : colors[defaultColor])};
-  margin: 0;
-  display: block;
-
-  ${(props) =>
-    props.$variant === 'display'
-      ? css`
-          font-size: 2.5rem;
-          font-weight: 600;
-          font-feature-settings: 'zero' on, 'ss01' on;
-        `
-      : null}
-
-  ${(props) =>
-    props.$variant === 'title-1'
-      ? css`
-          font-size: 2rem;
-          font-weight: 600;
-          font-feature-settings: 'ss01' on, 'zero' on;
-        `
-      : null}
-      
-  ${(props) =>
-    props.$variant === 'title-2'
-      ? css`
-          font-size: 1.5rem;
-          font-weight: 600;
-          font-feature-settings: 'ss01' on, 'zero' on;
-        `
-      : null}
-      
-  ${(props) =>
-    props.$variant === 'title-3'
-      ? css`
-          font-size: 1.25rem;
-          font-weight: 600;
-          font-feature-settings: 'zero' on, 'ss01' on;
-        `
-      : null}
-      
-  ${(props) =>
-    props.$variant === 'subheading'
-      ? css`
-          font-size: 1.25rem;
-          font-weight: 500;
-          font-feature-settings: 'ss01' on, 'zero' on;
-        `
-      : null}
-      
-  ${(props) =>
-    props.$variant === 'body-mono'
-      ? css`
-          font-size: 1rem;
-          font-weight: 500;
-          font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on, 'ss01' on;
-        `
-      : null}
-      
-  ${(props) =>
-    props.$variant === 'body-1'
-      ? css`
-          font-size: 1rem;
-          font-weight: 500;
-          font-feature-settings: 'ss01' on, 'zero' on;
-        `
-      : null}
-      
-  ${(props) =>
-    props.$variant === 'body-2'
-      ? css`
-          font-size: 1rem;
-          font-weight: 600;
-          font-feature-settings: 'ss01' on, 'zero' on;
-        `
-      : null}
-      
-  ${(props) =>
-    props.$variant === 'paragraph-mono'
-      ? css`
-          font-size: 0.875rem;
-          font-weight: 500;
-          font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on, 'ss01' on;
-        `
-      : null}
-      
-  ${(props) =>
-    props.$variant === 'paragraph-1'
-      ? css`
-          font-size: 0.875rem;
-          font-weight: 500;
-          font-feature-settings: 'zero' on, 'ordn' on;
-        `
-      : null}
-
-  ${(props) =>
-    props.$variant === 'paragraph-2'
-      ? css`
-          font-size: 0.875rem;
-          font-weight: 600;
-          font-feature-settings: 'zero' on, 'ss01' on;
-        `
-      : null}
-
-  ${(props) =>
-    props.$variant === 'caption-1'
-      ? css`
-          font-size: 0.75rem;
-          font-weight: 500;
-          font-feature-settings: 'ss01' on, 'zero' on;
-        `
-      : null}
-
-  ${(props) =>
-    props.$variant === 'caption-2'
-      ? css`
-          font-size: 0.75rem;
-          font-weight: 600;
-          font-feature-settings: 'zero' on, 'ss01' on;
-        `
-      : null}
-
-  ${(props) =>
-    props.$variant === 'overline'
-      ? css`
-          font-size: 0.75rem;
-          font-weight: 600;
-          font-feature-settings: 'ss01' on, 'zero' on;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-        `
-      : null}
-
-  ${(props) =>
-    props.$variant === 'micro'
-      ? css`
-          font-size: 0.625rem;
-          font-weight: 500;
-          font-feature-settings: 'ss01' on, 'zero' on;
-        `
-      : null}
-
-  margin-bottom: .35em;
-`
-
-const Text = forwardRef(
-  (
-    { children, color = 'grey800', htmlFor = 'span', variant = 'body-1', ...props }: TextProps,
-    ref: Ref<HTMLHeadingElement | HTMLParagraphElement>,
-  ) => {
-    return (
-      <StyledText as={htmlFor} $variant={variant} $color={color} ref={ref} {...props}>
-        {children}
-      </StyledText>
-    )
+/* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
+const BaseText = styled('span', {
+  variants: {
+    color: Object.assign(
+      {},
+      ...Object.keys(colors).map((color) => ({
+        [color]: {
+          color: colors[color as ColorKeysType],
+        },
+      })),
+    ),
+    variant: {
+      display: {
+        fontSize: '$40',
+        fontWeight: 600,
+        fontFeatureSettings: "'zero' on, 'ss01' on",
+      },
+      'title-1': {
+        fontSize: '$32',
+        fontWeight: 600,
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+      },
+      'title-2': {
+        fontSize: '$24',
+        fontWeight: 600,
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+      },
+      'title-3': {
+        fontSize: '$20',
+        fontWeight: 600,
+        fontFeatureSettings: "'zero' on, 'ss01' on",
+      },
+      subheading: {
+        fontSize: '$20',
+        fontWeight: 500,
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+      },
+      'body-mono': {
+        fontSize: '$16',
+        fontWeight: 500,
+        fontFeatureSettings: "'tnum' on, 'lnum' on, 'zero' on, 'ss01' on",
+      },
+      'body-1': {
+        fontSize: '$16',
+        fontWeight: 500,
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+      },
+      'body-2': {
+        fontSize: '$16',
+        fontWeight: 600,
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+      },
+      'paragraph-mono': {
+        fontSize: '$14',
+        fontWeight: 500,
+        fontFeatureSettings: "'tnum' on, 'lnum' on, 'zero' on, 'ss01' on",
+      },
+      'paragraph-1': {
+        fontSize: '$14',
+        fontWeight: 500,
+        fontFeatureSettings: "'zero' on, 'ordn' on",
+      },
+      'paragraph-2': {
+        fontSize: '$14',
+        fontWeight: 600,
+        fontFeatureSettings: "'zero' on, 'ss01' on",
+      },
+      'caption-1': {
+        fontSize: '$12',
+        fontWeight: 500,
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+      },
+      'caption-2': {
+        fontSize: '$12',
+        fontWeight: 600,
+        fontFeatureSettings: "'zero' on, 'ss01' on",
+      },
+      overline: {
+        fontSize: '$12',
+        fontWeight: 600,
+        fontFeatureSettings: "'zero' on, 'ss01' on",
+        textTransform: 'uppercase',
+        letterSpacing: '0.1em',
+      },
+      micro: {
+        fontSize: '$10',
+        fontWeight: 500,
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+      },
+    },
   },
+  defaultVariants: {
+    variant: 'body-1',
+  },
+})
+/* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
+
+const Text = ({ as = 'span', children, color, css, variant }: TextProps) => (
+  <BaseText as={as} css={css} color={color} variant={variant}>
+    {children}
+  </BaseText>
 )
 
 export default Text
