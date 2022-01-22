@@ -9,12 +9,13 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
 import svgr from '@svgr/rollup'
 // import svg from 'rollup-plugin-svg'
+import { babel } from '@rollup/plugin-babel'
 
 const packageJson = require('./package.json')
 
 export default [
   {
-    external: ['react', 'react-dom', 'styled-components'],
+    external: ['react', 'react-dom', '@babel/runtime'],
     input: 'src/index.ts',
     output: [
       {
@@ -35,6 +36,7 @@ export default [
       // svg(),
       svgr(),
       typescript({ tsconfig: './tsconfig.json' }),
+      babel({ babelHelpers: 'runtime' }),
       terser(),
     ],
   },
