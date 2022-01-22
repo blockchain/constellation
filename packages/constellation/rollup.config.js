@@ -7,6 +7,8 @@ import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
+import svgr from '@svgr/rollup'
+// import svg from 'rollup-plugin-svg'
 
 const packageJson = require('./package.json')
 
@@ -30,6 +32,8 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
+      // svg(),
+      svgr(),
       typescript({ tsconfig: './tsconfig.json' }),
       terser(),
     ],
