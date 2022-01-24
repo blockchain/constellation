@@ -3,11 +3,12 @@
   "compilerOptions": {
     "baseUrl": "src",
     "declaration": true,
-    "outDir": "dist",
     "declarationDir": "types",
-    "rootDir": "src",
+    "declarationMap": true,
     "jsx": "react",
     "module": "ESNext",
+    "outDir": "dist",
+    "rootDir": "src",
     "target": "ES6"
   },
   "include": ["src", "components/stories"],

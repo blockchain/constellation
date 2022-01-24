@@ -30,11 +30,10 @@ export default [
       },
     ],
     plugins: [
+      svgr(),
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      // svg(),
-      svgr(),
       typescript({ tsconfig: './tsconfig.json' }),
       babel({ babelHelpers: 'runtime' }),
       terser(),

@@ -102,8 +102,8 @@ const BaseText = styled('span', {
 })
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
-const Text = ({ as = 'span', children, color, css, variant }: TextProps) => (
-  <BaseText as={as} css={css} color={color} variant={variant}>
+const Text = ({ as = 'span', children, color = 'grey800', css, variant, ...rest }: TextProps) => (
+  <BaseText as={as} css={css} color={color} variant={variant} {...rest}>
     {children}
   </BaseText>
 )

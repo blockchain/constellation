@@ -3538,6 +3538,7 @@ __metadata:
     stylelint-config-styled-components: 0.1.1
     stylelint-prettier: 1.2.0
     stylelint-processor-styled-components: 1.10.0
+    svgo: 2.8.0
     ts-jest: 27.1.3
     ts-node: 10.4.0
     typescript: 4.2.4
@@ -19144,7 +19145,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"svgo@npm:^2.5.0":
+"svgo@npm:2.8.0, svgo@npm:^2.5.0":
   version: 2.8.0
   resolution: "svgo@npm:2.8.0"
   dependencies:

@@ -1,6 +1,7 @@
 export { default as Avatar } from './Avatar'
 export { default as Button } from './Button'
 export { default as Checkbox } from './Checkbox'
+export { default as Icon } from './Icon'
 export { default as Popover } from './Popover'
 export { default as ProgressBar } from './ProgressBar'
 export { default as Separator } from './Separator'

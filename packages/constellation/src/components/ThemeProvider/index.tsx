@@ -13,7 +13,7 @@ const ThemeProvider = (props: Props): JSX.Element | null => {
 }
 
 type Props = {
-  children?: React.ReactChild
+  children: React.ReactChild
 }
 
 export default ThemeProvider

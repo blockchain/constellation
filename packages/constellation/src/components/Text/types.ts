@@ -3,8 +3,6 @@ import { ReactNode } from 'react'
 
 import { ColorKeysType } from '../../colors/types'
 
-// type AlignmentType = 'start' | 'end' | 'left' | 'center' | 'right' | 'justify' | 'justify-all'
-
 type VariantType =
   | 'display'
   | 'title-1'
