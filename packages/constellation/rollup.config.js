@@ -8,7 +8,6 @@ import dts from 'rollup-plugin-dts'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
 import svgr from '@svgr/rollup'
-// import svg from 'rollup-plugin-svg'
 import { babel } from '@rollup/plugin-babel'
 
 const packageJson = require('./package.json')
@@ -30,10 +29,10 @@ export default [
       },
     ],
     plugins: [
-      svgr(),
       peerDepsExternal(),
       resolve(),
       commonjs(),
+      svgr(),
       typescript({ tsconfig: './tsconfig.json' }),
       babel({ babelHelpers: 'runtime' }),
       terser(),
