@@ -3528,7 +3528,6 @@ __metadata:
     rollup: 2.63.0
     rollup-plugin-dts: 4.1.0
     rollup-plugin-peer-deps-external: 2.2.4
-    rollup-plugin-svg: 2.0.0
     rollup-plugin-terser: 7.0.2
     styled-components: 4.4.1
     stylelint: 13.12.0
@@ -11039,13 +11038,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"estree-walker@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "estree-walker@npm:0.2.1"
-  checksum: eea29a6ab063bf0d456b4d6f3fabd6bb0d3806116c07e3735070a569dd69348ed812af582135fda407606a696a64d309c5f7f7a0fd981696c1548c1f4bb3409b
-  languageName: node
-  linkType: hard
-
 "estree-walker@npm:^0.6.1":
   version: 0.6.1
   resolution: "estree-walker@npm:0.6.1"
@@ -17802,15 +17794,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"rollup-plugin-svg@npm:2.0.0":
-  version: 2.0.0
-  resolution: "rollup-plugin-svg@npm:2.0.0"
-  dependencies:
-    rollup-pluginutils: ^1.3.1
-  checksum: 60a0d9c42c94cada15a81d7dad7c24f52fed4b1fb5edbe2fadcec71f9b1e6c24f511a8ee7292d94c4463d7a0fdfb15e25b42f4e968d6fde36ce55acf610a8757
-  languageName: node
-  linkType: hard
-
 "rollup-plugin-terser@npm:7.0.2":
   version: 7.0.2
   resolution: "rollup-plugin-terser@npm:7.0.2"
@@ -17822,16 +17805,6 @@ fsevents@^1.2.7:
   peerDependencies:
     rollup: ^2.0.0
   checksum: af84bb7a7a894cd00852b6486528dfb8653cf94df4c126f95f389a346f401d054b08c46bee519a2ab6a22b33804d1d6ac6d8c90b1b2bf8fffb097eed73fc3c72
-  languageName: node
-  linkType: hard
-
-"rollup-pluginutils@npm:^1.3.1":
-  version: 1.5.2
-  resolution: "rollup-pluginutils@npm:1.5.2"
-  dependencies:
-    estree-walker: ^0.2.1
-    minimatch: ^3.0.2
-  checksum: 8c669c0b3d2126d4bea1f03b7ae0b44bf16799f02c43549d254933af746d215186ed17077ad025aa137a0c548c98b8f502da805ae5ab9ae1775185965805ce2a
   languageName: node
   linkType: hard
 
