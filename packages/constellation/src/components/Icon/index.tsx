@@ -99,7 +99,55 @@ import NewWindow from './icons/newWindow.svg'
 import Nft from './icons/nft.svg'
 import NotificationOff from './icons/notificationOff.svg'
 import NotificationOn from './icons/notificationOn.svg'
-// import  from './icons/'
+import Pending from './icons/pending.svg'
+import People from './icons/people.svg'
+import Phone from './icons/phone.svg'
+import Pin from './icons/pin.svg'
+import Placeholder from './icons/placeholder.svg'
+import PlayCircle from './icons/playCircle.svg'
+import Plus from './icons/plus.svg'
+import PlusCircle from './icons/plusCircle.svg'
+import Portfolio from './icons/portfolio.svg'
+import Present from './icons/present.svg'
+import Print from './icons/print.svg'
+import Private from './icons/private.svg'
+import QrCode from './icons/qrCode.svg'
+import Question from './icons/question.svg'
+import QuestionCircle from './icons/questionCircle.svg'
+import Receive from './icons/receive.svg'
+import ReceiveV2 from './icons/receiveV2.svg'
+import Refresh from './icons/refresh.svg'
+import Repeat from './icons/repeat.svg'
+import Rewards from './icons/rewards.svg'
+import RewardsCircle from './icons/rewardsCircle.svg'
+import Search from './icons/search.svg'
+import Sell from './icons/sell.svg'
+import Send from './icons/send.svg'
+import SendV2 from './icons/sendV2.svg'
+import Settings from './icons/settings.svg'
+import ShareAndroid from './icons/shareAndroid.svg'
+import ShareIos from './icons/shareIos.svg'
+import Shield from './icons/shield.svg'
+import Signout from './icons/signout.svg'
+import Subdirectory from './icons/subdirectory.svg'
+import Support from './icons/support.svg'
+import Swap from './icons/swap.svg'
+import Sync from './icons/sync.svg'
+import Tag from './icons/tag.svg'
+import Timeout from './icons/timeout.svg'
+import Tor from './icons/tor.svg'
+import Trade from './icons/trade.svg'
+import TriangleDown from './icons/triangleDown.svg'
+import TriangleUp from './icons/triangleUp.svg'
+import UnfoldLess from './icons/unfoldLess.svg'
+import UnfoldMore from './icons/unfoldMore.svg'
+import User from './icons/user.svg'
+import UserAdd from './icons/userAdd.svg'
+import Verified from './icons/verified.svg'
+import VisibilityOff from './icons/visibilityOff.svg'
+import VisibilityOn from './icons/visibilityOn.svg'
+import Wallet from './icons/wallet.svg'
+import Withdraw from './icons/withdraw.svg'
 
 // icon component map
 const iconComponentMap: {
@@ -199,6 +247,55 @@ const iconComponentMap: {
   nft: Nft,
   notificationOff: NotificationOff,
   notificationOn: NotificationOn,
+  pending: Pending,
+  people: People,
+  phone: Phone,
+  pin: Pin,
+  placeholder: Placeholder,
+  playCircle: PlayCircle,
+  plus: Plus,
+  plusCircle: PlusCircle,
+  portfolio: Portfolio,
+  present: Present,
+  print: Print,
+  private: Private,
+  qrCode: QrCode,
+  question: Question,
+  questionCircle: QuestionCircle,
+  receive: Receive,
+  receiveV2: ReceiveV2,
+  refresh: Refresh,
+  repeat: Repeat,
+  rewards: Rewards,
+  rewardsCircle: RewardsCircle,
+  search: Search,
+  sell: Sell,
+  send: Send,
+  sendV2: SendV2,
+  settings: Settings,
+  shareAndroid: ShareAndroid,
+  shareIos: ShareIos,
+  shield: Shield,
+  signout: Signout,
+  subdirectory: Subdirectory,
+  support: Support,
+  swap: Swap,
+  sync: Sync,
+  tag: Tag,
+  timeout: Timeout,
+  tor: Tor,
+  trade: Trade,
+  triangleDown: TriangleDown,
+  triangleUp: TriangleUp,
+  unfoldLess: UnfoldLess,
+  unfoldMore: UnfoldMore,
+  user: User,
+  userAdd: UserAdd,
+  verified: Verified,
+  visibilityOff: VisibilityOff,
+  visibilityOn: VisibilityOn,
+  wallet: Wallet,
+  withdraw: Withdraw,
 }
 
 const iconSizes = {
