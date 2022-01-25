@@ -1,5 +1,9 @@
 import React from 'react'
 
-const Button = () => <button type='button'>Click me</button>
+import { ButtonComponentProps } from './types'
+
+const Button = ({ children, ...props }: ButtonComponentProps) => (
+  <button {...props}>{children}</button>
+)
 
 export default Button

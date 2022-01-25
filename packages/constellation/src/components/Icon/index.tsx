@@ -304,10 +304,10 @@ const iconSizes = {
   sm: '16px',
 }
 
-const Icon = ({ color = 'grey800', name, size = 'md' }: IconComponentProps) => {
+const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentProps) => {
   const IconComponent = iconComponentMap[name]
   return (
-    <div style={{ height: iconSizes[size], width: iconSizes[size] }}>
+    <div style={{ height: iconSizes[size], width: iconSizes[size] }} {...props}>
       <IconComponent fill={colors[color]} />
     </div>
   )
