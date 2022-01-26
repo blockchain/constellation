@@ -1,4 +1,5 @@
-import { HTMLProps, ReactNode } from 'react'
+import type * as Stitches from '@stitches/react'
+import { ReactNode } from 'react'
 
 import { ColorKeysType } from '../../colors/types'
 
@@ -21,10 +22,11 @@ type VariantType =
 
 type HtmlFor = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
-type TextProps = Omit<HTMLProps<HTMLHeadingElement | HTMLParagraphElement>, 'ref' | 'as'> & {
+type TextProps = {
+  as?: HtmlFor
   children: ReactNode
   color?: ColorKeysType
-  htmlFor?: HtmlFor
+  css?: Stitches.CSS
   variant?: VariantType
 }
 
