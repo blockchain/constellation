@@ -1,8 +1,8 @@
+/* eslint-disable no-param-reassign */
+
 module.exports = {
   plugins: [
     {
-      name: 'setFillToGreyAndWidthHeight100',
-      type: 'visitor',
       fn: () => {
         return {
           element: {
@@ -20,14 +20,16 @@ module.exports = {
           },
         }
       },
+      name: 'setFillToGreyAndWidthHeight100',
+      type: 'visitor',
     },
     {
       name: 'preset-default',
       params: {
         overrides: {
-          removeViewBox: false
+          removeViewBox: false,
         },
       },
     },
   ],
-};
+}

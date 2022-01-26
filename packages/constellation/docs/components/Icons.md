@@ -1,15 +1,11 @@
-# Tracking
+# Icons
 
-## Process to create new icons
+---
 
-1. Copy the SVG from Figma
+## Adding New Icons
 
-2. Pass it through [SVGOMG]('https://jakearchibald.github.io/svgomg/')
-
-3. Create a component for it on `/components/Icons`
-
-4. Create default props and spread the rest
-
-```js
-    { color = 'currentColor', height = 24, width = 24, ...props }
-```
+1. Copy the new `svg` icon file(s) to src/components/Icon/icons.
+   1. Follow the camel-cased naming convention
+   2. If an icon with the same name already exists, simply version the new file (e.g. myIconV2)
+2. From root of package, run the entire icon folder through the [SVGO](https://github.com/svg/svgo) optimizer via `svgo -f ./src/components/Icon/icons`.
+3. In `Icons/index.tsx`, import your new icon svg file(s) and update the `iconComponentMap` and type definitions.
