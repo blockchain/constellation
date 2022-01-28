@@ -306,7 +306,6 @@ const iconSizes = {
 
 const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentProps) => {
   const IconComponent = iconComponentMap[name]
-  console.log(iconSizes[size])
   return (
     <div style={{ height: iconSizes[size], width: iconSizes[size] }} {...props}>
       <IconComponent fill={colors[color]} />
