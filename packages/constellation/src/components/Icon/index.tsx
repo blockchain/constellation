@@ -150,7 +150,7 @@ import Wallet from './icons/wallet.svg'
 import Withdraw from './icons/withdraw.svg'
 
 // icon component map
-const iconComponentMap: {
+export const iconComponentMap: {
   [K in IconNameType]: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
 } = {
   activity: Activity,
@@ -306,6 +306,7 @@ const iconSizes = {
 
 const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentProps) => {
   const IconComponent = iconComponentMap[name]
+  console.log(iconSizes[size])
   return (
     <div style={{ height: iconSizes[size], width: iconSizes[size] }} {...props}>
       <IconComponent fill={colors[color]} />

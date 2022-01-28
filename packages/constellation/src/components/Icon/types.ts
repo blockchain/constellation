@@ -149,7 +149,6 @@ export type IconSizesType = 'sm' | 'md' | 'lg'
 
 export type IconComponentProps = {
   color?: ColorKeysType
-  fill?: string
   name: IconNameType
   size?: IconSizesType
 }
