@@ -313,4 +313,4 @@ const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentP
   )
 }
 
-export default Icon
+export default React.memo(Icon)
