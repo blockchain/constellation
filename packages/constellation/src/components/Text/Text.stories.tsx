@@ -54,11 +54,16 @@ export const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProp
 
   return (
     <>
-      {variants.map((variant) => (
+      {variants.map((variant, i) => (
         <>
           <div
-            key={variant}
-            style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}
+            key={i}
+            style={{
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              margin: '20px',
+            }}
           >
             <Text {...args} variant={variant}>
               The quick brown fox jumps over the lazy dog

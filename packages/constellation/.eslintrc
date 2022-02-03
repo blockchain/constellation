@@ -12,5 +12,8 @@
         "project": "./tsconfig.json"
       }
     }
+  },
+  "rules": {
+    "react/no-array-index-key": "off"
   }
 }
