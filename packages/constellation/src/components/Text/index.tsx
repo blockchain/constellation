@@ -3,7 +3,7 @@ import React from 'react'
 import { colors } from '../../colors'
 import { ColorKeysType } from '../../colors/types'
 import { styled } from '../../stitches.config'
-import { TextProps } from './types'
+import { TextComponentProps } from './types'
 
 /* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
 const BaseText = styled('span', {
@@ -102,10 +102,16 @@ const BaseText = styled('span', {
 })
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
-const Text = ({ as = 'span', children, color = 'grey800', css, variant, ...props }: TextProps) => (
-  <BaseText as={as} css={css} color={color} variant={variant} {...props}>
+const Text = ({
+  as = 'span',
+  children,
+  color = 'grey800',
+  variant,
+  ...props
+}: TextComponentProps) => (
+  <BaseText as={as} color={color} variant={variant} {...props}>
     {children}
   </BaseText>
 )
 
-export default Text
+export default React.memo(Text)

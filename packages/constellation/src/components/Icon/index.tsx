@@ -150,7 +150,7 @@ import Wallet from './icons/wallet.svg'
 import Withdraw from './icons/withdraw.svg'
 
 // icon component map
-const iconComponentMap: {
+export const iconComponentMap: {
   [K in IconNameType]: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
 } = {
   activity: Activity,
@@ -313,4 +313,4 @@ const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentP
   )
 }
 
-export default Icon
+export default React.memo(Icon)

@@ -1,4 +1,3 @@
-import type * as Stitches from '@stitches/react'
 import { ReactNode } from 'react'
 
 import { ColorKeysType } from '../../colors/types'
@@ -22,12 +21,11 @@ type VariantType =
 
 type HtmlFor = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
-type TextProps = {
+type TextComponentProps = {
   as?: HtmlFor
   children: ReactNode
   color?: ColorKeysType
-  css?: Stitches.CSS
   variant?: VariantType
 }
 
-export type { TextProps }
+export type { TextComponentProps }
