@@ -1,1 +1,0 @@
-{"version":3,"file":"types.d.ts","sourceRoot":"","sources":["../../../src/components/Switch/types.ts"],"names":[],"mappings":"AAAA,aAAK,oBAAoB,GAAG;IAC1B,OAAO,EAAE,OAAO,CAAA;IAChB,KAAK,CAAC,EAAE,MAAM,GAAG,OAAO,CAAA;IACxB,QAAQ,CAAC,EAAE,OAAO,CAAA;CACnB,CAAA;AAED,YAAY,EAAE,oBAAoB,EAAE,CAAA"}
