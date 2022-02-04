@@ -53,7 +53,7 @@ export const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProp
   ]
 
   return (
-    <>
+    <div style={{ padding: '20px 40px' }}>
       {variants.map((variant, i) => (
         <>
           <div
@@ -73,7 +73,7 @@ export const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProp
           <hr />
         </>
       ))}
-    </>
+    </div>
   )
 }
 

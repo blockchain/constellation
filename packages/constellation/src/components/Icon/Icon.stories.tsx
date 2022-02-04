@@ -19,9 +19,8 @@ export default {
       type: 'select',
     },
     size: {
+      control: { type: 'radio' },
       description: 'The size of the rendered the icon.',
-      options: ['sm', 'md', 'lg'],
-      type: 'select',
     },
   },
   component: Icon,
