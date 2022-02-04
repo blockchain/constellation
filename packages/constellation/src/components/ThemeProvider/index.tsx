@@ -1,9 +1,5 @@
 import React from 'react'
 
-import { setGlobalCss } from '../../stitches.config'
-
-setGlobalCss()
-
 const ThemeProvider = (props: Props): JSX.Element | null => {
   if (!props.children) {
     return null
