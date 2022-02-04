@@ -9,8 +9,8 @@ import { SeparatorComponentProps } from './types'
 
 /* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
 const StyledSeparator = styled(RadixSeparator.Root, {
-  '&[data-orientation=horizontal]': { height: 1, width: '100%' },
-  '&[data-orientation=vertical]': { height: '100%', width: 1 },
+  '&[data-orientation=horizontal]': { height: 1, width: '100%', margin: '24px 0' },
+  '&[data-orientation=vertical]': { height: '100%', width: 1, margin: '0 24px' },
   variants: {
     variant: {
       subtle: {
