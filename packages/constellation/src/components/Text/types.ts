@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 
 import { ColorKeysType } from '../../colors/types'
 
@@ -26,6 +26,6 @@ type TextComponentProps = {
   children: ReactNode
   color?: ColorKeysType
   variant?: VariantType
-}
+} & HTMLAttributes<never>
 
 export type { TextComponentProps }

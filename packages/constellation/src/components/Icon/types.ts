@@ -1,3 +1,5 @@
+import { HTMLAttributes } from 'react'
+
 import { ColorKeysType } from '../../colors/types'
 
 export type IconNameType =
@@ -151,4 +153,4 @@ export type IconComponentProps = {
   color?: ColorKeysType
   name: IconNameType
   size?: IconSizesType
-}
+} & HTMLAttributes<never>
