@@ -1,5 +1,5 @@
 const purple = {
-  purple0: '#EFECFE',
+  purple000: '#EFECFE',
   purple100: '#DED8FD',
   purple200: '#C6BBFC',
   purple300: '#ADA6FF',

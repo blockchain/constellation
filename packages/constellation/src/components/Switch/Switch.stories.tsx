@@ -1,7 +1,9 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
+import { useDarkMode } from 'storybook-dark-mode'
 
 import Text from '../Text'
+import ThemeProvider from '../ThemeProvider'
 import Switch from '.'
 import { SwitchComponentProps } from './types'
 
@@ -17,6 +19,13 @@ export default {
     },
   },
   component: Switch,
+  decorators: [
+    (Story: typeof React.Component) => (
+      <ThemeProvider theme={useDarkMode() ? 'dark' : 'light'}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
   title: 'Components/Switch',
 } as unknown as ComponentMeta<typeof Switch>
 

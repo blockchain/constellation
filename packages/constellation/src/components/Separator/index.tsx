@@ -2,7 +2,6 @@ import * as RadixSeparator from '@radix-ui/react-separator'
 import { styled } from '@stitches/react'
 import React from 'react'
 
-import { colors } from '../../colors'
 import { SeparatorComponentProps } from './types'
 
 // https://www.radix-ui.com/docs/primitives/components/separator
@@ -14,13 +13,13 @@ const StyledSeparator = styled(RadixSeparator.Root, {
   variants: {
     variant: {
       subtle: {
-        backgroundColor: colors.grey100,
+        backgroundColor: '$grey100',
       },
       medium: {
-        backgroundColor: colors.grey0,
+        backgroundColor: '$grey200',
       },
       distinct: {
-        backgroundColor: colors.grey300,
+        backgroundColor: '$grey300',
       },
     },
   },

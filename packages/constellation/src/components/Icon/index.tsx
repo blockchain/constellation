@@ -1,7 +1,7 @@
 /* eslint-disable simple-import-sort/imports */
 import React from 'react'
 
-import { colors } from '../../colors'
+import { theme } from '../../stitches.config'
 import { IconComponentProps, IconNameType } from './types'
 
 // icon imports
@@ -308,7 +308,9 @@ const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentP
   const IconComponent = iconComponentMap[name]
   return (
     <div style={{ height: iconSizes[size], width: iconSizes[size] }} {...props}>
-      <IconComponent fill={colors[color]} />
+      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+      {/* @ts-ignore */}
+      <IconComponent fill={theme.colors[color]} />
     </div>
   )
 }

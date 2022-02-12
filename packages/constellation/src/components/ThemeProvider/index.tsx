@@ -1,15 +1,25 @@
 import React from 'react'
+import { normalize } from 'stitches-normalize-css'
 
-const ThemeProvider = (props: Props): JSX.Element | null => {
-  if (!props.children) {
+import { darkTheme, globalCss } from '../../stitches.config'
+
+const globalStyles = globalCss(...normalize)
+
+const ThemeProvider = ({ children, theme }: Props): JSX.Element | null => {
+  if (!children) {
     return null
   }
 
-  return <>{props.children}</>
+  globalStyles()
+
+  console.log(theme === 'dark' ? darkTheme : '')
+
+  return <div className={theme === 'dark' ? darkTheme : ''}>{children}</div>
 }
 
 type Props = {
   children: React.ReactChild
+  theme: 'dark' | 'light'
 }
 
 export default ThemeProvider

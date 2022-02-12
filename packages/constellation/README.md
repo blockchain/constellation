@@ -1,15 +1,38 @@
 # Constellation
 Base component library for React based applications built and used by [Blockchain.com](blockchain.com).
 
-## Installation
-```sh
-yarn add @blockchain/constellation styled-components
+## Using the Library
+1) Install the library `yarn add @blockchain/constellation`
+2) Ensure your App loads Google's Inter font. There are two suggested ways:bundle and serve the font files locally
+   1) Bundle and serve the font files locally in your app
+   2) Include assets from CDN in your index.html file.
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet" />
 ```
+3) Import and wrap your entire App with the ThemeProvider component. Example below
+```js
+import { ThemeProvider } from '@blockchain/constellation'
 
-## TODO LIST
-- [ ] Configure an automated hook to re-run build after changes to components for local development
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 
-## Local Development Guide
+function App(): JSX.Element {
+  return (
+    <Store>
+       <ThemeProvider theme={theme}>
+           <Router>
+              ...
+           </Router>
+       </ThemeProvider>
+    <Store />
+  )
+}
+```
+4. Ensure to pass your desired theme to the Provider. This should be read first from users OS, then app state and finally a fallback. Currently, there is no support for custom themes other than 'light' or 'dark'
+5. That's it, happy hacking!
+
+## Local Hacking Guide
 If you would like to develop this library while consuming it via another application, follow these steps:
 
 ### Prerequisites

@@ -2,7 +2,6 @@ import * as RadixSwitch from '@radix-ui/react-switch'
 import { styled } from '@stitches/react'
 import React from 'react'
 
-import { colors } from '../../colors'
 import { SwitchComponentProps } from './types'
 
 // https://www.radix-ui.com/docs/primitives/components/switch
@@ -13,8 +12,11 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   height: 24,
   width: 48,
   position: 'relative',
-  backgroundColor: colors.grey300,
+  backgroundColor: '$grey300',
   borderRadius: '9999px',
+  '&:hover': {
+    cursor: 'pointer',
+  },
   '&[data-disabled]': {
     opacity: 0.4,
     '&:hover': {
@@ -24,10 +26,10 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   variants: {
     color: {
       blue: {
-        '&[data-state="checked"]': { backgroundColor: colors.blue600 },
+        '&[data-state="checked"]': { backgroundColor: '$blue600' },
       },
       green: {
-        '&[data-state="checked"]': { backgroundColor: colors.green600 },
+        '&[data-state="checked"]': { backgroundColor: '$green600' },
       },
     },
   },
@@ -40,7 +42,7 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
   display: 'block',
   height: 20,
   width: 20,
-  backgroundColor: 'white', // TODO: dark mode needs to be black
+  backgroundColor: '$white900',
   borderRadius: '9999px',
   transform: 'translateX(2px)',
   transition: 'transform 100ms',

@@ -1,8 +1,10 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
+import { useDarkMode } from 'storybook-dark-mode'
 
 import { colors } from '../../colors'
 import Text from '../Text'
+import ThemeProvider from '../ThemeProvider'
 import Icon, { iconComponentMap } from '.'
 import { IconComponentProps, IconNameType } from './types'
 
@@ -24,6 +26,13 @@ export default {
     },
   },
   component: Icon,
+  decorators: [
+    (Story: typeof React.Component) => (
+      <ThemeProvider theme={useDarkMode() ? 'dark' : 'light'}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
   title: 'Components/Icon',
 } as unknown as ComponentMeta<typeof Icon>
 
@@ -57,7 +66,7 @@ export const AllVariants: ComponentStory<typeof Icon> = (args: IconComponentProp
             width: '125px',
           }}
         >
-          <Icon name={name as IconNameType} color='blue500' size='lg' />
+          <Icon name={name as IconNameType} color='grey700' size='lg' />
           <Text color='grey700' variant='paragraph-2' css={{ marginTop: '16px' }}>
             {name}
           </Text>

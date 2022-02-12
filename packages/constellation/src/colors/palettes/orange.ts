@@ -1,5 +1,5 @@
 const orange = {
-  orange0: '#FFF6EB',
+  orange000: '#FFF6EB',
   orange100: '#FFECD6',
   orange200: '#FFE1BF',
   orange300: '#F6CEA1',
