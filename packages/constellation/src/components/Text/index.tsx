@@ -7,6 +7,9 @@ import { TextComponentProps } from './types'
 
 /* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
 const BaseText = styled('span', {
+  fontFamily:
+    "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+  fontFeatureSettings: '"zero", "ss01"',
   variants: {
     color: Object.assign(
       {},
