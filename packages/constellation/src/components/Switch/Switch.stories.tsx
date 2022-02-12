@@ -2,8 +2,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 import { useDarkMode } from 'storybook-dark-mode'
 
+import { ThemeProvider } from '../../providers'
 import Text from '../Text'
-import ThemeProvider from '../../providers/ThemeProvider'
 import Switch from '.'
 import { SwitchComponentProps } from './types'
 

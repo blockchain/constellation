@@ -3,8 +3,8 @@ import React from 'react'
 import { useDarkMode } from 'storybook-dark-mode'
 
 import { colors } from '../../colors'
+import { ThemeProvider } from '../../providers'
 import Text from '../Text'
-import ThemeProvider from '../../providers/ThemeProvider'
 import Icon, { iconComponentMap } from '.'
 import { IconComponentProps, IconNameType } from './types'
 
