@@ -4,7 +4,7 @@ import React from 'react'
 import { useDarkMode } from 'storybook-dark-mode'
 
 import Text from '../Text'
-import ThemeProvider from '../ThemeProvider'
+import ThemeProvider from '../../providers/ThemeProvider'
 import Separator from '.'
 import { SeparatorComponentProps, SeparatorVariants } from './types'
 

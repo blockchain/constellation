@@ -4,7 +4,7 @@ import { useDarkMode } from 'storybook-dark-mode'
 
 import { colors } from '../../colors'
 import Text from '../Text'
-import ThemeProvider from '../ThemeProvider'
+import ThemeProvider from '../../providers/ThemeProvider'
 import Icon, { iconComponentMap } from '.'
 import { IconComponentProps, IconNameType } from './types'
 

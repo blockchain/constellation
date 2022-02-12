@@ -3,7 +3,7 @@ import React from 'react'
 import { useDarkMode } from 'storybook-dark-mode'
 
 import { colors } from '../../colors'
-import ThemeProvider from '../ThemeProvider'
+import ThemeProvider from '../../providers/ThemeProvider'
 import Text from '.'
 import { TextComponentProps } from './types'
 
