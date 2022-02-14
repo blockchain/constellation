@@ -6,7 +6,7 @@ import { colors } from '../../colors'
 import { ThemeProvider } from '../../providers'
 import Text from '../Text'
 import Icon, { iconComponentMap } from '.'
-import { IconComponentProps, IconNameType } from './types'
+import { IconNameType } from './types'
 
 export default {
   argTypes: {
@@ -15,10 +15,14 @@ export default {
       options: Object.keys(colors),
       type: 'select',
     },
+    label: {
+      description: 'The name of the icon to render.',
+      type: 'string',
+    },
     name: {
       description: 'The name of the icon to render.',
       options: Object.keys(iconComponentMap),
-      type: 'select',
+      type: 'string',
     },
     size: {
       control: { type: 'radio' },
@@ -40,7 +44,7 @@ export const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
 Default.args = { color: 'grey800', name: 'blockchainCircle', size: 'lg' }
 
-export const AllVariants: ComponentStory<typeof Icon> = (args: IconComponentProps) => {
+export const AllVariants: ComponentStory<typeof Icon> = () => {
   const icons = Object.keys(iconComponentMap)
 
   return (

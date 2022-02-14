@@ -13,9 +13,13 @@ export default {
       description: 'Boolean indicating if the switch is activated/checked or not.',
       type: 'boolean',
     },
+    color: {
+      description: 'The rendering color of the switch.',
+      options: ['blue', 'green'],
+      type: 'select',
+    },
     disabled: {
       description: 'Boolean indicated if the switch is disabled in the context of a form',
-      type: 'boolean',
     },
   },
   component: Switch,

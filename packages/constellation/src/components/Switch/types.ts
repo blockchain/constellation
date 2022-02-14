@@ -1,9 +1,7 @@
-import { HTMLAttributes } from 'react'
+import { SwitchProps } from '@radix-ui/react-switch'
 
-type SwitchComponentProps = {
-  checked: boolean
+type SwitchComponentProps = SwitchProps & {
   color?: 'blue' | 'green'
-  disabled?: boolean
-} & HTMLAttributes<never>
+}
 
 export type { SwitchComponentProps }
