@@ -7,8 +7,6 @@ import { TextComponentProps } from './types'
 
 /* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
 const BaseText = styled('span', {
-  fontFamily:
-    "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
   fontFeatureSettings: '"zero", "ss01"',
   color: '$grey800',
   variants: {
@@ -100,9 +98,6 @@ const BaseText = styled('span', {
       },
     },
   },
-  defaultVariants: {
-    variant: 'body-1',
-  },
 })
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
@@ -110,7 +105,7 @@ const Text = ({
   as = 'span',
   children,
   color = 'grey800',
-  variant,
+  variant = 'body-1',
   ...props
 }: TextComponentProps) => (
   <BaseText as={as} color={color} variant={variant} {...props}>

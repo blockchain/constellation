@@ -6,7 +6,7 @@ import { colors } from '../../colors'
 import { ThemeProvider } from '../../providers'
 import Text from '../Text'
 import Icon, { iconComponentMap } from '.'
-import { IconComponentProps, IconNameType } from './types'
+import { IconNameType } from './types'
 
 export default {
   argTypes: {
@@ -40,7 +40,7 @@ export const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
 Default.args = { color: 'grey800', name: 'blockchainCircle', size: 'lg' }
 
-export const AllVariants: ComponentStory<typeof Icon> = (args: IconComponentProps) => {
+export const AllVariants: ComponentStory<typeof Icon> = () => {
   const icons = Object.keys(iconComponentMap)
 
   return (

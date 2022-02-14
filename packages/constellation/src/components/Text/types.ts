@@ -1,4 +1,4 @@
-import { HTMLAttributes, ReactNode } from 'react'
+import { HTMLProps } from 'react'
 
 import { ColorKeysType } from '../../colors/types'
 
@@ -21,11 +21,13 @@ type VariantType =
 
 type HtmlFor = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
-type TextComponentProps = {
+type TextComponentProps = Omit<
+  HTMLProps<HTMLHeadingElement | HTMLParagraphElement>,
+  'ref' | 'as' | 'css'
+> & {
   as?: HtmlFor
-  children: ReactNode
   color?: ColorKeysType
   variant?: VariantType
-} & HTMLAttributes<never>
+}
 
 export type { TextComponentProps }
