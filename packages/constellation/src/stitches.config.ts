@@ -1,10 +1,9 @@
-/* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix, import/no-unresolved */
-
-import type * as Stitches from '@stitches/react'
+import type * as StitchesTypes from '@stitches/react'
 import { createStitches } from '@stitches/react'
 
-import { colors } from './colors'
+import { colors, colorsDark } from './colors'
 
+/* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix, import/no-unresolved */
 export const { config, createTheme, css, getCssText, globalCss, keyframes, styled, theme } =
   createStitches({
     media: {
@@ -76,9 +75,9 @@ export const { config, createTheme, css, getCssText, globalCss, keyframes, style
   })
 
 export const darkTheme = createTheme('dark-theme', {
-  color: {
-    ...colors,
+  colors: {
+    ...colorsDark,
   },
 })
 
-export type CSS = Stitches.CSS<typeof config>
+export type CSS = StitchesTypes.CSS<typeof config>

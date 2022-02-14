@@ -1,5 +1,5 @@
 const grey = {
-  grey0: '#DFE3EB',
+  grey000: '#DFE3EB',
   grey100: '#F0F2F7',
   grey200: '#CCD2DE',
   grey300: '#B1B8C7',

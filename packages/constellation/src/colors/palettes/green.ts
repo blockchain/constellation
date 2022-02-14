@@ -1,5 +1,5 @@
 const green = {
-  green0: '#E6FAEC',
+  green000: '#E6FAEC',
   green100: '#D1F0DB',
   green200: '#AEE6CA',
   green300: '#8BDCB3',

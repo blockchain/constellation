@@ -1,6 +1,8 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
+import { useDarkMode } from 'storybook-dark-mode'
 
+import { ThemeProvider } from '../../providers'
 import Text from '../Text'
 import Switch from '.'
 import { SwitchComponentProps } from './types'
@@ -11,12 +13,23 @@ export default {
       description: 'Boolean indicating if the switch is activated/checked or not.',
       type: 'boolean',
     },
+    color: {
+      description: 'The rendering color of the switch.',
+      options: ['blue', 'green'],
+      type: 'select',
+    },
     disabled: {
       description: 'Boolean indicated if the switch is disabled in the context of a form',
-      type: 'boolean',
     },
   },
   component: Switch,
+  decorators: [
+    (Story: typeof React.Component) => (
+      <ThemeProvider theme={useDarkMode() ? 'dark' : 'light'}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
   title: 'Components/Switch',
 } as unknown as ComponentMeta<typeof Switch>
 

@@ -1,5 +1,5 @@
 const teal = {
-  teal0: '#E6F8FA',
+  teal000: '#E6F8FA',
   teal100: '#D1EDF0',
   teal200: '#AEE1E6',
   teal300: '#6CD0D9',

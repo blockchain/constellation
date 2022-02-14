@@ -1,7 +1,7 @@
-type SwitchComponentProps = {
-  checked: boolean
+import { SwitchProps } from '@radix-ui/react-switch'
+
+type SwitchComponentProps = SwitchProps & {
   color?: 'blue' | 'green'
-  disabled?: boolean
 }
 
 export type { SwitchComponentProps }

@@ -1,10 +1,12 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
+import { useDarkMode } from 'storybook-dark-mode'
 
 import { colors } from '../../colors'
+import { ThemeProvider } from '../../providers'
 import Text from '../Text'
 import Icon, { iconComponentMap } from '.'
-import { IconComponentProps, IconNameType } from './types'
+import { IconNameType } from './types'
 
 export default {
   argTypes: {
@@ -24,6 +26,13 @@ export default {
     },
   },
   component: Icon,
+  decorators: [
+    (Story: typeof React.Component) => (
+      <ThemeProvider theme={useDarkMode() ? 'dark' : 'light'}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
   title: 'Components/Icon',
 } as unknown as ComponentMeta<typeof Icon>
 
@@ -31,7 +40,7 @@ export const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
 Default.args = { color: 'grey800', name: 'blockchainCircle', size: 'lg' }
 
-export const AllVariants: ComponentStory<typeof Icon> = (args: IconComponentProps) => {
+export const AllVariants: ComponentStory<typeof Icon> = () => {
   const icons = Object.keys(iconComponentMap)
 
   return (
@@ -57,7 +66,7 @@ export const AllVariants: ComponentStory<typeof Icon> = (args: IconComponentProp
             width: '125px',
           }}
         >
-          <Icon name={name as IconNameType} color='blue500' size='lg' />
+          <Icon name={name as IconNameType} color='grey700' size='lg' />
           <Text color='grey700' variant='paragraph-2' css={{ marginTop: '16px' }}>
             {name}
           </Text>

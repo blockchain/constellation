@@ -1,7 +1,9 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
+import { useDarkMode } from 'storybook-dark-mode'
 
 import { colors } from '../../colors'
+import { ThemeProvider } from '../../providers'
 import Text from '.'
 import { TextComponentProps } from './types'
 
@@ -18,20 +20,24 @@ export default {
       options: Object.keys(colors),
       type: 'select',
     },
-    css: {
-      description: 'Custom CSS overrides passed in as a JS object.',
-    },
     variant: {
       description: 'The display variant of the component.',
     },
   },
   component: Text,
+  decorators: [
+    (Story: typeof React.Component) => (
+      <ThemeProvider theme={useDarkMode() ? 'dark' : 'light'}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
   title: 'Components/Text',
 } as unknown as ComponentMeta<typeof Text>
 
 export const Default: ComponentStory<typeof Text> = (args) => <Text {...args}>{args.children}</Text>
 
-Default.args = { children: 'The quick brown fox jumps over the lazy dog!' }
+Default.args = { children: 'The quick brown fox jumps over the lazy dog 0123456789' }
 
 export const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProps) => {
   const variants: TextComponentProps['variant'][] = [
@@ -66,7 +72,7 @@ export const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProp
             }}
           >
             <Text {...args} variant={variant}>
-              The quick brown fox jumps over the lazy dog
+              The quick brown fox jumps over the lazy dog 0123456789
             </Text>
             <Text>{variant}</Text>
           </div>

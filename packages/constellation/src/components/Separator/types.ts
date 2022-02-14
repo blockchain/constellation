@@ -1,7 +1,8 @@
+import { SeparatorProps } from '@radix-ui/react-separator'
+
 type SeparatorVariants = 'subtle' | 'medium' | 'distinct'
 
-type SeparatorComponentProps = {
-  orientation: 'horizontal' | 'vertical'
+type SeparatorComponentProps = SeparatorProps & {
   variant: SeparatorVariants
 }
 

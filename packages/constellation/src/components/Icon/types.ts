@@ -1,3 +1,5 @@
+import { HTMLProps } from 'react'
+
 import { ColorKeysType } from '../../colors/types'
 
 export type IconNameType =
@@ -147,7 +149,7 @@ export type IconNameType =
 
 export type IconSizesType = 'sm' | 'md' | 'lg'
 
-export type IconComponentProps = {
+export type IconComponentProps = Omit<HTMLProps<HTMLDivElement>, 'ref' | 'as' | 'css' | 'size'> & {
   color?: ColorKeysType
   name: IconNameType
   size?: IconSizesType
