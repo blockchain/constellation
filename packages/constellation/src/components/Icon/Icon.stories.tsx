@@ -15,14 +15,10 @@ export default {
       options: Object.keys(colors),
       type: 'select',
     },
-    label: {
-      description: 'The name of the icon to render.',
-      type: 'string',
-    },
     name: {
       description: 'The name of the icon to render.',
       options: Object.keys(iconComponentMap),
-      type: 'string',
+      type: 'select',
     },
     size: {
       control: { type: 'radio' },
