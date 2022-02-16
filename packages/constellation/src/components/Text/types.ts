@@ -1,33 +1,33 @@
-import { HTMLProps } from 'react'
+import { FC, ReactNode } from 'react'
 
-import { ColorKeysType } from '../../colors/types'
+export type TextHtmlFor = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
-type VariantType =
-  | 'display'
-  | 'title-1'
-  | 'title-2'
-  | 'title-3'
-  | 'subheading'
-  | 'body-mono'
-  | 'body-1'
-  | 'body-2'
-  | 'paragraph-mono'
-  | 'paragraph-1'
-  | 'paragraph-2'
-  | 'caption-1'
-  | 'caption-2'
-  | 'overline'
-  | 'micro'
+export const textColors = ['primary', 'secondary', 'success', 'warning', 'error', 'info'] as const
+export type TextColor = typeof textColors[number]
 
-type HtmlFor = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+export const textSizes = [40, 32, 24, 20, 16, 14, 12] as const
+export type TextSize = typeof textSizes[number]
 
-type TextComponentProps = Omit<
-  HTMLProps<HTMLHeadingElement | HTMLParagraphElement>,
-  'ref' | 'as' | 'css'
-> & {
-  as?: HtmlFor
-  color?: ColorKeysType
-  variant?: VariantType
+export const textWeigths = ['semibold', 'regular', 'medium'] as const
+export type TextWeigth = typeof textWeigths[number]
+
+export const textStyles = ['normal', 'italic', 'numeric'] as const
+export type TextStyle = typeof textStyles[number]
+
+export type TextEllipsisConfig = {
+  rows: number
+  symbol: string
 }
 
-export type { TextComponentProps }
+export type TextEllipsis = boolean | TextEllipsisConfig
+
+export type TextProps = {
+  as?: TextHtmlFor
+  color?: TextColor
+  ellipsis?: TextEllipsis
+  fontSize?: TextSize
+  fontStyle?: TextStyle
+  fontWeigth?: TextWeigth
+}
+
+export type TextComponent = FC<TextProps & { children?: ReactNode | string | string[] }>

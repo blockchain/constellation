@@ -4,7 +4,7 @@ import React from 'react'
 import { useDarkMode } from 'storybook-dark-mode'
 
 import { ThemeProvider } from '../../providers'
-import Text from '../Text'
+import { Text } from '../Text'
 import Separator from '.'
 import { SeparatorComponentProps, SeparatorVariants } from './types'
 
@@ -54,12 +54,6 @@ Default.args = { orientation: 'horizontal', variant: 'medium' }
 export const AllVariants: ComponentStory<typeof Separator> = () => {
   const Box = styled('div', {})
   const Flex = styled('div', { display: 'flex' })
-  const StyledText = styled(Text, {
-    color: 'white',
-    fontSize: 15,
-    lineHeight: '20px',
-  })
-
   const variants = ['subtle', 'medium', 'distinct'] as Array<SeparatorVariants>
 
   return (
@@ -75,20 +69,18 @@ export const AllVariants: ComponentStory<typeof Separator> = () => {
           }}
           key={i}
         >
-          <StyledText variant='title-2' css={{ fontWeight: 500 }}>
+          <Text size='head-3' weigth='bold'>
             {variant.charAt(0).toUpperCase() + variant.slice(1)} Variants
-          </StyledText>
+          </Text>
           <br />
-          <StyledText variant='body-1'>
-            Constellation: An open-source UI component library.
-          </StyledText>
+          <Text size='body-1'>Constellation: An open-source UI component library.</Text>
           <Separator orientation='horizontal' variant={variant} css={{ margin: '15px 0' }} />
           <Flex css={{ alignItems: 'center', height: 20 }}>
-            <StyledText>API Docs</StyledText>
+            <Text>API Docs</Text>
             <Separator orientation='vertical' variant={variant} css={{ margin: '0 15px' }} />
-            <StyledText>Examples</StyledText>
+            <Text>Examples</Text>
             <Separator orientation='vertical' variant={variant} css={{ margin: '0 15px' }} />
-            <StyledText>Source</StyledText>
+            <Text>Source</Text>
           </Flex>
         </Box>
       ))}

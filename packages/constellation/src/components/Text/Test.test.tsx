@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
 
-import Text from '.'
+import { Text } from '.'
 
 describe('Text Component', () => {
   test('Render with no errors', () => {
