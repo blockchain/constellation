@@ -75,6 +75,7 @@ module.exports = {
     "no-underscore-dangle": "off",
     "no-use-before-define": "off",
     "prefer-const": "error",
+    "react/button-has-type": "off",
     "react/destructuring-assignment": "off",
     "react/display-name": "off",
     "react/jsx-filename-extension": "off",
