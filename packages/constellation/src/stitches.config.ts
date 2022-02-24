@@ -1,10 +1,9 @@
 import type * as StitchesTypes from '@stitches/react'
 import { createStitches } from '@stitches/react'
 
-import { colors, colorsDark } from './colors'
+import { colors } from './colors'
 
-/* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix, import/no-unresolved */
-export const { config, createTheme, css, getCssText, globalCss, keyframes, styled, theme } =
+const { config, createTheme, css, getCssText, globalCss, keyframes, styled, theme } =
   createStitches({
     media: {
       dark: '(prefers-color-scheme: dark)',
@@ -41,43 +40,157 @@ export const { config, createTheme, css, getCssText, globalCss, keyframes, style
         round: '50%',
       },
       sizes: {
-        4: '4px',
-        8: '8px',
         16: '16px',
         24: '24px',
         32: '32px',
+        4: '4px',
         40: '40px',
         48: '48px',
         64: '64px',
         72: '64px',
+        8: '8px',
         80: '80px',
       },
       space: {
-        4: '4px',
-        8: '8px',
+        120: '120px',
         16: '16px',
         24: '24px',
         32: '32px',
+        4: '4px',
         40: '40px',
         48: '48px',
         64: '64px',
+        8: '8px',
         80: '80px',
-        120: '120px',
       },
       zIndices: {
         1: '100',
         2: '200',
         3: '300',
         4: '400',
-        max: '999',
+        5: '500',
+        6: '600',
+        7: '700',
+        8: '800',
+        9: '900',
+        max: '9999',
       },
     },
   })
 
-export const darkTheme = createTheme('dark-theme', {
+enum ColorMode {
+  DARK = 'dark',
+  LIGHT = 'light',
+}
+
+const darkTheme = createTheme(ColorMode.DARK, {
   colors: {
-    ...colorsDark,
+    ...colors,
+  },
+  common: { black: '', white: '' },
+  error: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  info: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  primary: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  secondary: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  success: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  text: { disabled: '', primary: '', secondary: '' },
+  warning: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
   },
 })
 
-export type CSS = StitchesTypes.CSS<typeof config>
+const lightTheme = createTheme(ColorMode.LIGHT, {
+  colors: {
+    ...colors,
+  },
+  common: { black: '', white: '' },
+  error: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  info: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  primary: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  secondary: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  success: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+  text: { disabled: '', primary: '', secondary: '' },
+  warning: {
+    contrastText: '',
+    dark: '',
+    light: '',
+    main: '',
+  },
+})
+
+const themes = {
+  [ColorMode.DARK]: darkTheme,
+  [ColorMode.LIGHT]: lightTheme,
+}
+
+type CSS = StitchesTypes.CSS<typeof config>
+
+export type { CSS }
+
+export {
+  ColorMode,
+  config,
+  createTheme,
+  css,
+  darkTheme,
+  getCssText,
+  globalCss,
+  keyframes,
+  lightTheme,
+  styled,
+  theme,
+  themes,
+}

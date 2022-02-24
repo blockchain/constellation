@@ -10,12 +10,10 @@ Base component library for React based applications built and used by [Blockchai
    ```js
    import { ThemeProvider } from '@blockchain/constellation'
 
-   const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-
    function App(): JSX.Element {
      return (
        <Store>
-         <ThemeProvider theme={theme}>
+         <ThemeProvider>
              <Router>
                  ...
              </Router>
@@ -25,8 +23,7 @@ Base component library for React based applications built and used by [Blockchai
    }
    ```
 
-3. Ensure to pass your desired theme to the Provider. This should be read first from users OS, then app state and finally a fallback. Currently, there is no support for custom themes other than 'light' or 'dark'
-4. That's it, happy hacking!
+3. That's it, happy hacking!
 
 ## Local Hacking Guide
 

@@ -1,8 +1,7 @@
-import { styled } from '@stitches/react'
-import React from 'react'
+import React, { createContext, ReactNode, useEffect, useMemo, useState } from 'react'
 import { normalize } from 'stitches-normalize-css'
 
-import { darkTheme, globalCss, theme } from '../stitches.config'
+import { ColorMode, globalCss, themes } from '../stitches.config'
 
 const normalizeStyles = globalCss(...normalize)
 
@@ -22,24 +21,50 @@ const fontStyles = globalCss({
 })
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
-// TODO: this might be a bad idea?
-const Wrapper = styled('div', { backgroundColor: theme.colors.white900 })
+type ThemeContextValue = {
+  setColorMode: (newValue: ColorMode) => void
+}
 
-const ThemeProvider = ({ children, theme }: Props): JSX.Element | null => {
-  if (!children) {
-    return null
-  }
+const ThemeContext = createContext<Partial<ThemeContextValue>>({})
+
+const ThemeProvider = ({ children }: Props) => {
+  const [colorMode, setColorMode] = useState<ColorMode>(ColorMode.LIGHT)
+
+  useEffect(() => {
+    const root = document.documentElement
+
+    const initialColorMode = root.classList.contains(themes[ColorMode.DARK])
+      ? ColorMode.DARK
+      : ColorMode.LIGHT
+
+    setColorMode(initialColorMode)
+  }, [])
+
+  const value = useMemo(() => {
+    const setColorMode = (newColorMode: ColorMode): void => {
+      document.documentElement.classList.remove(themes[colorMode])
+
+      document.documentElement.classList.add(themes[newColorMode])
+
+      setColorMode(newColorMode)
+    }
+
+    return {
+      setColorMode,
+    }
+  }, [colorMode])
 
   normalizeStyles()
 
   fontStyles()
 
-  return <Wrapper className={theme === 'dark' ? darkTheme : ''}>{children}</Wrapper>
+  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
 }
 
 type Props = {
-  children: React.ReactChild
-  theme: 'dark' | 'light'
+  children: ReactNode
 }
+
+export { ColorMode, ThemeContext }
 
 export default ThemeProvider
