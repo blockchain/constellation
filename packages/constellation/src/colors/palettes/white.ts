@@ -1,4 +1,4 @@
-const whiteDark = {
+const white = {
   white060: 'rgba(255, 255, 255, 0.06)',
   white100: 'rgba(255, 255, 255, 0.1)',
   white200: 'rgba(255, 255, 255, 0.2)',
@@ -8,4 +8,4 @@ const whiteDark = {
   white900: '#ffffff',
 } as const
 
-export default whiteDark
+export default white
