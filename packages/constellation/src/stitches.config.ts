@@ -40,28 +40,28 @@ const { config, createTheme, css, getCssText, globalCss, keyframes, styled, them
         round: '50%',
       },
       sizes: {
-        4: '4px',
-        8: '8px',
         16: '16px',
         24: '24px',
         32: '32px',
+        4: '4px',
         40: '40px',
         48: '48px',
         64: '64px',
         72: '64px',
+        8: '8px',
         80: '80px',
       },
       space: {
-        4: '4px',
-        8: '8px',
+        120: '120px',
         16: '16px',
         24: '24px',
         32: '32px',
+        4: '4px',
         40: '40px',
         48: '48px',
         64: '64px',
+        8: '8px',
         80: '80px',
-        120: '120px',
       },
       zIndices: {
         1: '100',
@@ -84,83 +84,83 @@ enum ColorMode {
 }
 
 const darkTheme = createTheme(ColorMode.DARK, {
+  background: {
+    distinct: colors.smoke600,
+    main: colors.smoke900,
+    medium: colors.smoke700,
+    subtle: colors.smoke800,
+  },
+  blue: { main: colors.blue400 },
+  border: {
+    blue: colors.blue400,
+    distinct: colors.smoke300,
+    green: colors.green400,
+    medium: colors.smoke500,
+    orange: colors.orange400,
+    red: colors.red400,
+    subtle: colors.smoke700,
+  },
   colors: {
     ...colors,
   },
-  background: {
-    main: colors.smoke900,
-    distinct: colors.smoke600,
-    medium: colors.smoke700,
-    subtle: colors.smoke800
-  },
-  border: {
-    subtle: colors.smoke700,
-    medium: colors.smoke500,
-    distinct: colors.smoke300,
-    blue: colors.blue400,
-    green: colors.green400,
-    orange: colors.orange400,
-    red: colors.red400
-  },
+  error: { main: colors.red400 },
+  green: { main: colors.green400 },
+  orange: { main: colors.orange400 },
   overlay: {
-    main: colors.overlay600,
+    dark: colors.overlay800,
     light: colors.overlay400,
-    dark: colors.overlay800
+    main: colors.overlay600,
   },
+  purple: { main: colors.purple400 },
+  red: { main: colors.red400 },
+  success: { main: colors.green400 },
+  teal: { main: colors.teal400 },
   text: {
     primary: colors.white900,
     secondary: colors.smoke200,
-    tertiary: colors.smoke400
+    tertiary: colors.smoke400,
   },
-  bluePrimary: colors.blue400,
-  greenPrimary: colors.green400,
-  orangePrimary: colors.orange400,
-  purplePrimary: colors.purple400,
-  redPrimary: colors.red400,
-  tealPrimary: colors.teal400,
-  success: colors.green400,
-  warning: colors.orange400,
-  error: colors.red400
+  warning: { main: colors.orange400 },
 })
 
 const lightTheme = createTheme(ColorMode.LIGHT, {
+  background: {
+    distinct: colors.grey300,
+    main: colors.white900,
+    medium: colors.grey100,
+    subtle: colors.grey000,
+  },
+  blue: { main: colors.blue600 },
+  border: {
+    blue: colors.blue600,
+    distinct: colors.grey300,
+    green: colors.green600,
+    medium: colors.grey100,
+    orange: colors.orange600,
+    red: colors.red600,
+    subtle: colors.grey000,
+  },
   colors: {
     ...colors,
   },
-  background: {
-    main: colors.white900,
-    distinct: colors.grey300,
-    medium: colors.grey100,
-    subtle: colors.grey000
-  },
-  border: {
-    subtle: colors.grey000,
-    medium: colors.grey100,
-    distinct: colors.grey300,
-    blue: colors.blue600,
-    green: colors.green600,
-    orange: colors.orange600,
-    red: colors.red600
-  },
+  error: { main: colors.red600 },
+  green: { main: colors.green600 },
+  orange: { main: colors.orange600 },
   overlay: {
-    main: colors.overlay600,
+    dark: colors.overlay800,
     light: colors.overlay400,
-    dark: colors.overlay800
+    main: colors.overlay600,
   },
+  purple: { main: colors.purple600 },
+  red: { main: colors.red600 },
+  success: { main: colors.green600 },
+  teal: { main: colors.teal600 },
   text: {
     primary: colors.grey900,
     secondary: colors.grey800,
-    tertiary: colors.grey400
+    tertiary: colors.grey400,
   },
-  bluePrimary: colors.blue600,
-  greenPrimary: colors.green600,
-  orangePrimary: colors.orange600,
-  purplePrimary: colors.purple600,
-  redPrimary: colors.red600,
-  tealPrimary: colors.teal600,
-  success: colors.green600,
-  warning: colors.orange600,
-  error: colors.red600
+  warning: { main: colors.orange600 },
 })
 
 const themes = {
