@@ -3,5 +3,14 @@
   "workspaces": [
     "packages/*"
   ],
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.1.1",
+  "scripts": {
+    "lint:commit": "commitlint -E $1",
+    "prepare": "husky install .config/husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4"
+  }
 }
