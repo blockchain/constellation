@@ -58,7 +58,7 @@ module.exports = {
     "import/no-extraneous-dependencies": [
       "error",
       {
-        devDependencies: ["**/*.stories.tsx", "**/*.test.tsx"],
+        devDependencies: ["**/*.stories.tsx", "**/*.test.@(ts|tsx)"],
       },
     ],
     "import/no-unresolved": "error",

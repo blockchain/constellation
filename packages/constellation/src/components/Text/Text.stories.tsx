@@ -1,9 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
-import { useDarkMode } from 'storybook-dark-mode'
 
 import { colors } from '../../colors'
-import { ThemeProvider } from '../../providers'
 import Text from '.'
 import { TextComponentProps } from './types'
 
@@ -25,13 +23,6 @@ export default {
     },
   },
   component: Text,
-  decorators: [
-    (Story: typeof React.Component) => (
-      <ThemeProvider theme={useDarkMode() ? 'dark' : 'light'}>
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
   title: 'Components/Text',
 } as unknown as ComponentMeta<typeof Text>
 
