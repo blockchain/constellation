@@ -25,7 +25,7 @@ type ThemeContextValue = {
   setColorMode: (newValue: ColorMode) => void
 }
 
-const ThemeContext = createContext<Partial<ThemeContextValue>>({})
+const ThemeContext = createContext<ThemeContextValue>({} as ThemeContextValue)
 
 const ThemeProvider = ({ children }: Props) => {
   const [colorMode, setColorMode] = useState<ColorMode>(ColorMode.LIGHT)
