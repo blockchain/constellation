@@ -10,33 +10,9 @@ Base component library for React based applications built and used by [Blockchai
    ```js
     import { useEffect } from 'react'
 
-    import { ThemeProvider, ColorMode } from '@blockchain/constellation'
-
-    const COLOR_MODE = 'CUSTOM_NAME_FOR_APP_THEME'
+    import { ThemeProvider } from '@blockchain/constellation'
 
     function App(): JSX.Element {
-      const { setColorMode } = useTheme()
-
-      const handleColorMode = (colorMode: ColorMode) => {
-        localStorage.setItem(COLOR_MODE, colorMode)
-
-        setColorMode(colorMode)
-      }
-
-      useEffect(() => {
-        const savedColorMode = localStorage.getItem(COLOR_MODE) as ColorMode | null
-
-        if (savedColorMode) {
-          setColorMode(savedColorMode)
-
-          return
-        }
-
-        const systemDarkColorMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-
-        setColorMode(systemDarkColorMode ? ColorMode.DARK : ColorMode.LIGHT)
-      }, [])
-
       return (
         <Store>
           <ThemeProvider>
@@ -49,43 +25,7 @@ Base component library for React based applications built and used by [Blockchai
     }
    ```
 
-3. Then you can use the persisted/preferred theme on a child component if you want to
-
-   ```js
-    import { useEffect } from 'react'
-
-    import { ColorMode } from '@blockchain/constellation'
-
-    const COLOR_MODE = 'CUSTOM_NAME_FOR_APP_THEME'
-
-    function Root(): JSX.Element {
-      const { setColorMode } = useTheme()
-
-      const handleColorMode = (colorMode: ColorMode) => {
-        localStorage.setItem(COLOR_MODE, colorMode)
-
-        setColorMode(colorMode)
-      }
-
-      useEffect(() => {
-        const savedColorMode = localStorage.getItem(COLOR_MODE) as ColorMode | null
-
-        if (savedColorMode) {
-          setColorMode(savedColorMode)
-
-          return
-        }
-
-        const systemDarkColorMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-
-        setColorMode(systemDarkColorMode ? ColorMode.DARK : ColorMode.LIGHT)
-      }, [])
-
-      return ...
-    }
-   ```
-
-4. That's it, happy hacking!
+3. That's it, happy hacking!
 
 ## Local Hacking Guide
 
