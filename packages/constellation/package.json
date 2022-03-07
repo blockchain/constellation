@@ -17,13 +17,15 @@
     "build": "rimraf dist && rollup -c",
     "lint:css": "stylelint --cache \"src/**\"",
     "lint:js": "eslint --cache \"src/**\"",
+    "lint:staged": "lint-staged",
     "build:storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "deploy:storybook": "yarn build:storybook && yarn deploy-storybook --existing-output-dir=./storybook-static",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
     "storybook": "start-storybook -p 9009",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "cd .. && husky install constellation/.husky"
   },
   "devDependencies": {
     "@babel/cli": "7.14.8",
@@ -73,6 +75,7 @@
     "eslint-plugin-sort-keys-fix": "1.1.1",
     "eslint-plugin-typescript-sort-keys": "1.5.0",
     "jest": "27.4.7",
+    "lint-staged": "^12.3.4",
     "prettier": "2.3.0",
     "prettier-config-constellation": "workspace:*",
     "react": "17.0.2",
@@ -112,5 +115,14 @@
     "@radix-ui/react-tooltip": "0.1.3",
     "@stitches/react": "1.2.6",
     "stitches-normalize-css": "1.2.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "eslint --fix",
+      "yarn test --bail --findRelatedTests"
+    ],
+    "src/**/*.{js,tsx}": [
+      "stylelint './src/**/*.{js,ts,tsx}'"
+    ]
   }
 }
