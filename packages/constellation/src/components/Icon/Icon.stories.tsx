@@ -1,10 +1,8 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { colors } from 'colors'
+import Icon, { iconComponentMap, IconNameType } from 'components/Icon'
+import Text from 'components/Text'
 import React from 'react'
-
-import { colors } from '../../colors'
-import Text from '../Text'
-import Icon, { iconComponentMap } from '.'
-import { IconNameType } from './types'
 
 export default {
   argTypes: {

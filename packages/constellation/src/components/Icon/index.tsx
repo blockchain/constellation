@@ -3,7 +3,6 @@ import React from 'react'
 
 import { theme } from '../../stitches.config'
 import { IconComponentProps, IconNameType } from './types'
-
 // icon imports
 import Activity from './icons/activity.svg'
 import Airdrop from './icons/airdrop.svg'
@@ -148,6 +147,8 @@ import VisibilityOff from './icons/visibilityOff.svg'
 import VisibilityOn from './icons/visibilityOn.svg'
 import Wallet from './icons/wallet.svg'
 import Withdraw from './icons/withdraw.svg'
+
+export type { IconNameType } from './types'
 
 // icon component map
 export const iconComponentMap: {
