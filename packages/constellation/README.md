@@ -10,12 +10,21 @@ Base component library for React based applications built and used by [Blockchai
    ```js
     import { useEffect } from 'react'
 
-    import { ThemeProvider } from '@blockchain/constellation'
+    import {
+      ThemeProvider,
+      useThemeMode,
+      useLocalStorage,
+      ThemeMode,
+    } from '@blockchain/constellation'
 
     function App(): JSX.Element {
+      const [themeMode] = useLocalStorage<ThemeMode>("themeMode", "light")
+
+      const theme = useThemeMode(themeMode);
+
       return (
         <Store>
-          <ThemeProvider>
+          <ThemeProvider theme={theme}>
               <Router>
                   ...
               </Router>
