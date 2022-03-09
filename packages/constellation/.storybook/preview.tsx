@@ -1,5 +1,5 @@
 import { themes } from '@storybook/theming'
-import { ThemeProvider } from '../src'
+import { ThemeProvider, ThemeMode, useThemeMode } from '../src'
 import { useDarkMode } from 'storybook-dark-mode'
 
 export const parameters = {
@@ -9,9 +9,15 @@ export const parameters = {
 }
 
 export const decorators = [
-  (Story) => (
-    <ThemeProvider theme={useDarkMode() ? 'dark' : 'light'}>
-      <Story />
-    </ThemeProvider>
-  ),
+  (Story) => {
+    const themeMode: ThemeMode = useDarkMode() ? 'dark' : 'light'
+
+    const theme = useThemeMode(themeMode)
+
+    return (
+      <ThemeProvider theme={theme}>
+        <Story />
+      </ThemeProvider>
+    )
+  },
 ]
