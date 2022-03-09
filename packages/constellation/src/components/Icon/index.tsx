@@ -1,8 +1,9 @@
 /* eslint-disable simple-import-sort/imports */
 import React from 'react'
 
-import { theme } from '../../stitches.config'
-import { IconComponentProps, IconNameType } from './types'
+import { styled } from 'theme'
+import { IconComponentProps, IconNameType, IconSize } from './types'
+
 // icon imports
 import Activity from './icons/activity.svg'
 import Airdrop from './icons/airdrop.svg'
@@ -148,7 +149,7 @@ import VisibilityOn from './icons/visibilityOn.svg'
 import Wallet from './icons/wallet.svg'
 import Withdraw from './icons/withdraw.svg'
 
-export type { IconNameType } from './types'
+export type { IconColors, IconNameType } from './types'
 
 // icon component map
 export const iconComponentMap: {
@@ -299,20 +300,46 @@ export const iconComponentMap: {
   withdraw: Withdraw,
 }
 
-const iconSizes = {
-  lg: '36px',
-  md: '24px',
-  sm: '16px',
+const iconSizes: Record<IconSize, number> = {
+  lg: 36,
+  md: 24,
+  sm: 16,
 }
 
-const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentProps) => {
+const IconBase = styled('div', {
+  variants: {
+    color: {
+      primary: {
+        color: '$colors.iconPrimary',
+      },
+      secondary: {
+        color: '$colors.iconSecondary',
+      },
+    },
+    size: {
+      lg: {
+        height: iconSizes.lg,
+        width: iconSizes.lg,
+      },
+      md: {
+        height: iconSizes.md,
+        width: iconSizes.md,
+      },
+      sm: {
+        height: iconSizes.sm,
+        width: iconSizes.sm,
+      },
+    },
+  },
+})
+
+const Icon = ({ color = 'primary', name, size = 'md', ...props }: IconComponentProps) => {
   const IconComponent = iconComponentMap[name]
+
   return (
-    <div style={{ height: iconSizes[size], width: iconSizes[size] }} {...props}>
-      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-      {/* @ts-ignore */}
-      <IconComponent fill={theme.colors[color]} />
-    </div>
+    <IconBase size={size} color={color}>
+      <IconComponent />
+    </IconBase>
   )
 }
 

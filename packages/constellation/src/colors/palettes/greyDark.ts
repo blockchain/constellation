@@ -1,4 +1,6 @@
-const greyDark = {
+import { GreyColorPallete } from 'colors/types'
+
+const greyDark: GreyColorPallete = {
   grey000: '#121D33',
   grey100: '#353F52',
   grey200: '#50596B',

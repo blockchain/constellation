@@ -1,7 +1,5 @@
 import { HTMLProps } from 'react'
 
-import { ColorKeysType } from '../../colors/types'
-
 export type IconNameType =
   | 'activity'
   | 'airdrop'
@@ -147,10 +145,11 @@ export type IconNameType =
   | 'wallet'
   | 'withdraw'
 
-export type IconSizesType = 'sm' | 'md' | 'lg'
+export type IconColors = 'primary' | 'secondary'
+export type IconSize = 'sm' | 'md' | 'lg'
 
 export type IconComponentProps = Omit<HTMLProps<HTMLDivElement>, 'ref' | 'as' | 'css' | 'size'> & {
-  color?: ColorKeysType
+  color?: IconColors
   name: IconNameType
-  size?: IconSizesType
+  size?: IconSize
 }

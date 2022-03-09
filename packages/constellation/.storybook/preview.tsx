@@ -1,5 +1,5 @@
 import { themes } from '@storybook/theming'
-import { ThemeProvider } from '../src'
+import { createDarkTheme, createLightTheme, ThemeProvider, InterFontLink } from '../src'
 import { useDarkMode } from 'storybook-dark-mode'
 
 export const parameters = {
@@ -10,8 +10,12 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={useDarkMode() ? 'dark' : 'light'}>
-      <Story />
-    </ThemeProvider>
+    <>
+      <InterFontLink />
+
+      <ThemeProvider theme={useDarkMode() ? createDarkTheme() : createLightTheme()}>
+        <Story />
+      </ThemeProvider>
+    </>
   ),
 ]

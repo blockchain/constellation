@@ -1,4 +1,6 @@
-const blue = {
+import { BlueColorPallete } from 'colors/types'
+
+const blue: BlueColorPallete = {
   blue000: '#ECF5FE',
   blue100: '#D8EBFD',
   blue200: '#BBDBFC',

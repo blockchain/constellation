@@ -1,4 +1,6 @@
-const whiteDark = {
+import { WhiteColorPallete } from 'colors/types'
+
+const whiteDark: WhiteColorPallete = {
   white060: 'rgba(255, 255, 255, 0.8)',
   white100: 'rgba(255, 255, 255, 0.6)',
   white200: 'rgba(255, 255, 255, 0.4)',

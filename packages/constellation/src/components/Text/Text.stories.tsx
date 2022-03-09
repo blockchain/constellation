@@ -3,7 +3,7 @@ import React from 'react'
 
 import { colors } from '../../colors'
 import Text from '.'
-import { TextComponentProps } from './types'
+import { TextComponent, TextProps } from './types'
 
 export default {
   argTypes: {
@@ -30,8 +30,8 @@ export const Default: ComponentStory<typeof Text> = (args) => <Text {...args}>{a
 
 Default.args = { children: 'The quick brown fox jumps over the lazy dog 0123456789' }
 
-export const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProps) => {
-  const variants: TextComponentProps['variant'][] = [
+export const AllVariants: ComponentStory<TextComponent> = (args) => {
+  const variants: TextProps['variant'][] = [
     'display',
     'title-1',
     'title-2',

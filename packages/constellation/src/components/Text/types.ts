@@ -1,6 +1,4 @@
-import { HTMLProps } from 'react'
-
-import { ColorKeysType } from '../../colors/types'
+import { FC } from 'react'
 
 type VariantType =
   | 'display'
@@ -21,13 +19,12 @@ type VariantType =
 
 type HtmlFor = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
-type TextComponentProps = Omit<
-  HTMLProps<HTMLHeadingElement | HTMLParagraphElement>,
-  'ref' | 'as' | 'css'
-> & {
+export type TextColors = 'title' | 'body' | 'muted'
+
+export type TextProps = {
   as?: HtmlFor
-  color?: ColorKeysType
+  color?: TextColors
   variant?: VariantType
 }
 
-export type { TextComponentProps }
+export type TextComponent = FC<TextProps>

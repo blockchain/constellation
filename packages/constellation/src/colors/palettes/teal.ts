@@ -1,4 +1,6 @@
-const teal = {
+import { TealColorPallete } from 'colors/types'
+
+const teal: TealColorPallete = {
   teal000: '#E6F8FA',
   teal100: '#D1EDF0',
   teal200: '#AEE1E6',

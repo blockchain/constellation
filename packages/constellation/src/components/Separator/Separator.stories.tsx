@@ -4,9 +4,9 @@ import React from 'react'
 
 import Text from '../Text'
 import Separator from '.'
-import { SeparatorComponentProps, SeparatorVariants } from './types'
+import { SeparatorComponent, SeparatorVariants } from './types'
 
-export default {
+const separatorStoriesMeta: ComponentMeta<SeparatorComponent> = {
   argTypes: {
     orientation: {
       control: { type: 'radio' },
@@ -19,9 +19,9 @@ export default {
   },
   component: Separator,
   title: 'Components/Separator',
-} as unknown as ComponentMeta<typeof Separator>
+}
 
-export const Default: ComponentStory<typeof Separator> = (args: SeparatorComponentProps) => {
+export const Default: ComponentStory<SeparatorComponent> = (args) => {
   if (args.orientation === 'vertical') {
     return (
       <div style={{ alignItems: 'center', display: 'flex', height: '20px' }}>
@@ -40,7 +40,7 @@ export const Default: ComponentStory<typeof Separator> = (args: SeparatorCompone
   )
 }
 
-Default.args = { orientation: 'horizontal', variant: 'medium' }
+Default.args = { orientation: 'horizontal' }
 
 export const AllVariants: ComponentStory<typeof Separator> = () => {
   const Box = styled('div', {})
@@ -86,3 +86,5 @@ export const AllVariants: ComponentStory<typeof Separator> = () => {
     </>
   )
 }
+
+export default separatorStoriesMeta

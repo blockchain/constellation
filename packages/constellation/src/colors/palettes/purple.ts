@@ -1,4 +1,6 @@
-const purple = {
+import { PurpleColorPallete } from 'colors/types'
+
+const purple: PurpleColorPallete = {
   purple000: '#EFECFE',
   purple100: '#DED8FD',
   purple200: '#C6BBFC',

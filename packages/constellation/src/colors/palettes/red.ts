@@ -1,4 +1,6 @@
-const red = {
+import { RedColorPallete } from 'colors/types'
+
+const red: RedColorPallete = {
   red000: '#FFD9D6',
   red100: '#FFECEB',
   red200: '#FFC3BF',

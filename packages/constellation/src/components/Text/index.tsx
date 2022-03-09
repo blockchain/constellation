@@ -1,23 +1,25 @@
 import { styled } from '@stitches/react'
 import React from 'react'
 
-import { ColorKeysType } from '../../colors/types'
-import { theme } from '../../stitches.config'
-import { TextComponentProps } from './types'
+import { TextComponent } from './types'
+
+export type { TextColors } from './types'
 
 /* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
 const BaseText = styled('span', {
   fontFeatureSettings: '"zero", "ss01"',
-  color: '$grey800',
   variants: {
-    color: Object.assign(
-      {},
-      ...Object.keys(theme.colors).map((color) => ({
-        [color]: {
-          color: theme.colors[color as ColorKeysType],
-        },
-      })),
-    ),
+    color: {
+      title: {
+        color: '$text.colors.title',
+      },
+      muted: {
+        color: '$text.colors.muted',
+      },
+      body: {
+        color: '$text.colors.body',
+      },
+    },
     variant: {
       display: {
         fontSize: '$40',
@@ -101,16 +103,10 @@ const BaseText = styled('span', {
 })
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
-const Text = ({
-  as = 'span',
-  children,
-  color = 'grey800',
-  variant = 'body-1',
-  ...props
-}: TextComponentProps) => (
-  <BaseText as={as} color={color} variant={variant} {...props}>
+const Text: TextComponent = ({ as = 'span', children, color = 'body', variant = 'body-1' }) => (
+  <BaseText as={as} color={color} variant={variant}>
     {children}
   </BaseText>
 )
 
-export default React.memo(Text)
+export default Text

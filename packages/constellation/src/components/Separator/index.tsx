@@ -1,36 +1,34 @@
-import * as RadixSeparator from '@radix-ui/react-separator'
+import { Root } from '@radix-ui/react-separator'
 import { styled } from '@stitches/react'
 import React from 'react'
 
-import { SeparatorComponentProps } from './types'
+import { SeparatorComponent } from './types'
 
 // https://www.radix-ui.com/docs/primitives/components/separator
 
-/* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
-const StyledSeparator = styled(RadixSeparator.Root, {
-  '&[data-orientation=horizontal]': { height: 1, width: '100%', margin: '24px 0' },
-  '&[data-orientation=vertical]': { height: '100%', width: 1, margin: '0 24px' },
+const StyledSeparator = styled(Root, {
+  '&[data-orientation=horizontal]': { height: 1, margin: '24px 0', width: '100%' },
+  '&[data-orientation=vertical]': { height: '100%', margin: '0 24px', width: 1 },
+  defaultVariants: {
+    variant: 'default',
+  },
   variants: {
     variant: {
-      subtle: {
-        backgroundColor: '$grey100',
-      },
-      medium: {
-        backgroundColor: '$grey200',
+      default: {
+        backgroundColor: '$separator.colors.medium',
       },
       distinct: {
-        backgroundColor: '$grey300',
+        backgroundColor: '$separator.colors.distict',
+      },
+      subtle: {
+        backgroundColor: '$separator.colors.subtle',
       },
     },
   },
-  defaultVariants: {
-    variant: 'medium',
-  },
 })
-/* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
-const Separator = ({ orientation = 'horizontal', ...props }: SeparatorComponentProps) => (
-  <StyledSeparator decorative orientation={orientation} {...props} />
+const Separator: SeparatorComponent = ({ orientation = 'horizontal', variant = 'default' }) => (
+  <StyledSeparator decorative orientation={orientation} variant={variant} />
 )
 
 export default React.memo(Separator)

@@ -27,7 +27,7 @@ export default {
 
 export const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
-Default.args = { color: 'grey800', name: 'blockchainCircle', size: 'lg' }
+Default.args = { color: 'primary', name: 'blockchainCircle', size: 'lg' }
 
 export const AllVariants: ComponentStory<typeof Icon> = () => {
   const icons = Object.keys(iconComponentMap)
@@ -55,8 +55,8 @@ export const AllVariants: ComponentStory<typeof Icon> = () => {
             width: '125px',
           }}
         >
-          <Icon name={name as IconNameType} color='grey700' size='lg' />
-          <Text color='grey700' variant='paragraph-2' css={{ marginTop: '16px' }}>
+          <Icon name={name as IconNameType} color='secondary' size='lg' />
+          <Text color='body' variant='paragraph-2' css={{ marginTop: '16px' }}>
             {name}
           </Text>
         </div>

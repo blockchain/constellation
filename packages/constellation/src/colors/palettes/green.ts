@@ -1,4 +1,6 @@
-const green = {
+import { GreenColorPallete } from 'colors/types'
+
+const green: GreenColorPallete = {
   green000: '#E6FAEC',
   green100: '#D1F0DB',
   green200: '#AEE6CA',
