@@ -20,7 +20,7 @@ describe('useThemeMode()', () => {
 
     describe('When mode is light', () => {
       it('Should return the light color', () => {
-        const { result } = renderHook(() => useThemeMode('light'))
+        const { result } = renderHook(() => useThemeMode(ColorMode.LIGHT))
 
         expect(result.current).toBe(lightTheme)
       })
@@ -28,7 +28,7 @@ describe('useThemeMode()', () => {
 
     describe('When mode is dark', () => {
       it('Should return the dark color', () => {
-        const { result } = renderHook(() => useThemeMode('dark'))
+        const { result } = renderHook(() => useThemeMode(ColorMode.DARK))
 
         expect(result.current).toBe(darkTheme)
       })
@@ -52,7 +52,7 @@ describe('useThemeMode()', () => {
 
     describe('When mode is light', () => {
       it('Should return the light color', () => {
-        const { result } = renderHook(() => useThemeMode('light'))
+        const { result } = renderHook(() => useThemeMode(ColorMode.LIGHT))
 
         expect(result.current).toBe(lightTheme)
       })
@@ -60,7 +60,7 @@ describe('useThemeMode()', () => {
 
     describe('When mode is dark', () => {
       it('Should return the dark color', () => {
-        const { result } = renderHook(() => useThemeMode('dark'))
+        const { result } = renderHook(() => useThemeMode(ColorMode.DARK))
 
         expect(result.current).toBe(darkTheme)
       })

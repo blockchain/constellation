@@ -1,5 +1,5 @@
-import { createTheme } from '../../stitches.config'
+import { ColorMode, createTheme } from '../../stitches.config'
 
-export type ThemeMode = 'auto' | 'light' | 'dark'
+export type ThemeMode = 'auto' | ColorMode.LIGHT | ColorMode.DARK
 
 export type UseThemeMode = (mode: ThemeMode) => ReturnType<typeof createTheme>
