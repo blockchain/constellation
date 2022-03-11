@@ -1,22 +1,23 @@
-var localStorageMock = (function() {
-    var store = {};
-    return {
-      getItem: function(key) {
-        return store[key];
-      },
-      setItem: function(key, value) {
-        store[key] = value.toString();
-      },
-      clear: function() {
-        store = {};
-      },
-      removeItem: function(key) {
-        delete store[key];
-      }
-    };
-})();
-Object.defineProperty(window, 'localStorage', { value: localStorageMock });
+const localStorageMock = (() => {
+  let store = {}
+
+  return {
+    clear: () => {
+      store = {}
+    },
+    getItem: (key) => {
+      return store[key]
+    },
+    removeItem: (key) => {
+      delete store[key]
+    },
+    setItem: (key, value) => {
+      store[key] = value.toString()
+    },
+  }
+})()
+Object.defineProperty(window, 'localStorage', { value: localStorageMock })
 
 beforeEach(() => {
-    localStorage.clear()
+  localStorage.clear()
 })

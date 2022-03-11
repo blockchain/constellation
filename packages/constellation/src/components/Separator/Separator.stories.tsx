@@ -6,7 +6,7 @@ import Text from '../Text'
 import Separator from '.'
 import { SeparatorComponentProps, SeparatorVariants } from './types'
 
-export default {
+const meta = {
   argTypes: {
     orientation: {
       control: { type: 'radio' },
@@ -21,7 +21,7 @@ export default {
   title: 'Components/Separator',
 } as unknown as ComponentMeta<typeof Separator>
 
-export const Default: ComponentStory<typeof Separator> = (args: SeparatorComponentProps) => {
+const Default: ComponentStory<typeof Separator> = (args: SeparatorComponentProps) => {
   if (args.orientation === 'vertical') {
     return (
       <div style={{ alignItems: 'center', display: 'flex', height: '20px' }}>
@@ -42,7 +42,7 @@ export const Default: ComponentStory<typeof Separator> = (args: SeparatorCompone
 
 Default.args = { orientation: 'horizontal', variant: 'medium' }
 
-export const AllVariants: ComponentStory<typeof Separator> = () => {
+const AllVariants: ComponentStory<typeof Separator> = () => {
   const Box = styled('div', {})
   const Flex = styled('div', { display: 'flex' })
   const StyledText = styled(Text, {
@@ -86,3 +86,7 @@ export const AllVariants: ComponentStory<typeof Separator> = () => {
     </>
   )
 }
+
+export { AllVariants, Default }
+
+export default meta

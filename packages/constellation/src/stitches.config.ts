@@ -78,12 +78,9 @@ const { config, createTheme, css, getCssText, globalCss, keyframes, styled, them
     },
   })
 
-enum ColorMode {
-  DARK = 'dark',
-  LIGHT = 'light',
-}
+type ColorMode = 'light' | 'dark'
 
-const darkTheme = createTheme(ColorMode.DARK, {
+const darkTheme = createTheme('dark', {
   background: {
     distinct: colors.smoke600,
     main: colors.smoke900,
@@ -123,7 +120,7 @@ const darkTheme = createTheme(ColorMode.DARK, {
   warning: { main: colors.orange400 },
 })
 
-const lightTheme = createTheme(ColorMode.LIGHT, {
+const lightTheme = createTheme('light', {
   background: {
     distinct: colors.grey300,
     main: colors.white900,
@@ -164,16 +161,15 @@ const lightTheme = createTheme(ColorMode.LIGHT, {
 })
 
 const themes = {
-  [ColorMode.DARK]: darkTheme,
-  [ColorMode.LIGHT]: lightTheme,
+  dark: darkTheme,
+  light: lightTheme,
 }
 
 type CSS = StitchesTypes.CSS<typeof config>
 
-export type { CSS }
+export type { ColorMode, CSS }
 
 export {
-  ColorMode,
   config,
   createTheme,
   css,

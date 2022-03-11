@@ -1,7 +1,7 @@
 import React from 'react'
 import { normalize } from 'stitches-normalize-css'
 
-import { darkTheme, globalCss, lightTheme } from '../../stitches.config'
+import { globalCss } from '../../stitches.config'
 import { ThemeProviderComponent } from './types'
 
 const normalizeStyles = globalCss(...normalize)
@@ -22,10 +22,12 @@ const fontStyles = globalCss({
 })
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
-export const ThemeProvider: ThemeProviderComponent = ({ children, theme }) => {
+const ThemeProvider: ThemeProviderComponent = ({ children, theme }) => {
   normalizeStyles()
 
   fontStyles()
 
   return <div className={theme}>{children}</div>
 }
+
+export { ThemeProvider }

@@ -5,7 +5,7 @@ import Text from '../Text'
 import Switch from '.'
 import { SwitchComponentProps } from './types'
 
-export default {
+const meta = {
   argTypes: {
     checked: {
       description: 'Boolean indicating if the switch is activated/checked or not.',
@@ -24,13 +24,11 @@ export default {
   title: 'Components/Switch',
 } as unknown as ComponentMeta<typeof Switch>
 
-export const Default: ComponentStory<typeof Switch> = (args: SwitchComponentProps) => (
-  <Switch {...args} />
-)
+const Default: ComponentStory<typeof Switch> = (args: SwitchComponentProps) => <Switch {...args} />
 
 Default.args = { checked: true, color: 'blue', disabled: false }
 
-export const AllVariants: ComponentStory<typeof Switch> = () => {
+const AllVariants: ComponentStory<typeof Switch> = () => {
   const buildColorVariants = (color?: 'blue' | 'green'): Array<SwitchComponentProps> => [
     {
       checked: true,
@@ -103,3 +101,7 @@ export const AllVariants: ComponentStory<typeof Switch> = () => {
     </div>
   )
 }
+
+export { AllVariants, Default }
+
+export default meta

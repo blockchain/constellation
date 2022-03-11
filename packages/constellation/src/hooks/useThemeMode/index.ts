@@ -1,2 +1,2 @@
 export type { ThemeMode } from './types'
-export { useThemeMode } from './useThemeMode'
+export { default as useThemeMode } from './useThemeMode'

@@ -5,7 +5,7 @@ import { colors } from '../../colors'
 import Text from '.'
 import { TextComponentProps } from './types'
 
-export default {
+const meta = {
   argTypes: {
     as: {
       description: 'The rendering element of the component.',
@@ -26,11 +26,11 @@ export default {
   title: 'Components/Text',
 } as unknown as ComponentMeta<typeof Text>
 
-export const Default: ComponentStory<typeof Text> = (args) => <Text {...args}>{args.children}</Text>
+const Default: ComponentStory<typeof Text> = (args) => <Text {...args}>{args.children}</Text>
 
 Default.args = { children: 'The quick brown fox jumps over the lazy dog 0123456789' }
 
-export const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProps) => {
+const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProps) => {
   const variants: TextComponentProps['variant'][] = [
     'display',
     'title-1',
@@ -77,3 +77,7 @@ export const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProp
 AllVariants.parameters = {
   controls: { exclude: 'variant' },
 }
+
+export { AllVariants, Default }
+
+export default meta

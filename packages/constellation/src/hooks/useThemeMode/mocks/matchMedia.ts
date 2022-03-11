@@ -1,4 +1,4 @@
-export const createMatchMediaMock = () => {
+const createMatchMediaMock = () => {
   const originalMatchMedia = window.matchMedia
 
   return {
@@ -17,3 +17,5 @@ export const createMatchMediaMock = () => {
     },
   }
 }
+
+export { createMatchMediaMock }
