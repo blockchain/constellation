@@ -1,10 +1,12 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { colors } from 'colors'
-import Icon, { iconComponentMap, IconNameType } from 'components/Icon'
-import Text from 'components/Text'
 import React from 'react'
 
-export default {
+import { colors } from '../../colors'
+import Text from '../Text'
+import Icon, { iconComponentMap } from '.'
+import { IconNameType } from './types'
+
+const meta = {
   argTypes: {
     color: {
       description: 'The rendering color of the icon.',
@@ -25,11 +27,11 @@ export default {
   title: 'Components/Icon',
 } as unknown as ComponentMeta<typeof Icon>
 
-export const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
+const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
 Default.args = { color: 'grey800', name: 'blockchainCircle', size: 'lg' }
 
-export const AllVariants: ComponentStory<typeof Icon> = () => {
+const AllVariants: ComponentStory<typeof Icon> = () => {
   const icons = Object.keys(iconComponentMap)
 
   return (
@@ -68,3 +70,7 @@ export const AllVariants: ComponentStory<typeof Icon> = () => {
 AllVariants.parameters = {
   controls: { exclude: 'variant' },
 }
+
+export default meta
+
+export { AllVariants, Default }

@@ -1,28 +1,25 @@
 import blue from './palettes/blue'
 import green from './palettes/green'
 import grey from './palettes/grey'
-import greyDark from './palettes/greyDark'
 import orange from './palettes/orange'
+import overlay from './palettes/overlay'
 import purple from './palettes/purple'
 import red from './palettes/red'
+import smoke from './palettes/smoke'
 import teal from './palettes/teal'
 import white from './palettes/white'
-import whiteDark from './palettes/whiteDark'
 
 const colors = {
   ...blue,
   ...green,
   ...grey,
+  ...smoke,
   ...orange,
   ...purple,
   ...red,
   ...teal,
   ...white,
-}
-const colorsDark = {
-  ...colors,
-  ...greyDark,
-  ...whiteDark,
+  ...overlay,
 }
 
-export { colors, colorsDark }
+export { colors }

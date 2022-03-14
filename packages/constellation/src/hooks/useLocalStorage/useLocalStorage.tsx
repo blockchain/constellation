@@ -2,11 +2,11 @@ import { useCallback, useState } from 'react'
 
 import useWindowEvent from '../useWindowEvent'
 import { SetStoreItemValue, StoreItem, UseLocalStorageReturn } from './types'
-import { dispatchLocalStoreEvent } from './utils/dispatchLocalStoreEvent'
-import { readStoreItem } from './utils/readStoreItem'
-import { saveStoreItem } from './utils/saveStoreItem'
+import dispatchLocalStoreEvent from './utils/dispatchLocalStoreEvent'
+import readStoreItem from './utils/readStoreItem'
+import saveStoreItem from './utils/saveStoreItem'
 
-export const useLocalStorage = <T extends unknown = unknown>(
+const useLocalStorage = <T extends unknown = unknown>(
   key: string,
   initialValue: T,
 ): UseLocalStorageReturn<T> => {
@@ -40,3 +40,5 @@ export const useLocalStorage = <T extends unknown = unknown>(
 }
 
 export type UseLocalStorage = typeof useLocalStorage
+
+export default useLocalStorage

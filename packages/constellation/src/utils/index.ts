@@ -1,8 +1,6 @@
-import debounce from './debounce'
-import parseSymbol from './parseSymbol'
-import parseUTM from './parseUTM'
-import queuevent from './queuevent'
-import screenSizes from './screenSizes'
-import utmCampaignBuilder from './utmCampaignBuilder'
-
-export { debounce, parseSymbol, parseUTM, queuevent, screenSizes, utmCampaignBuilder }
+export { default as debounce } from './debounce'
+export { default as parseSymbol } from './parseSymbol'
+export { default as parseUTM } from './parseUTM'
+export { default as queuevent } from './queuevent'
+export { default as screenSizes } from './screenSizes'
+export { default as utmCampaignBuilder } from './utmCampaignBuilder'

@@ -1,8 +1,8 @@
-import { styled } from '@stitches/react'
 import React from 'react'
 import { normalize } from 'stitches-normalize-css'
 
-import { darkTheme, globalCss, theme } from '../stitches.config'
+import { globalCss } from '../../stitches.config'
+import { ThemeProviderComponent } from './types'
 
 const normalizeStyles = globalCss(...normalize)
 
@@ -22,24 +22,12 @@ const fontStyles = globalCss({
 })
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
-// TODO: this might be a bad idea?
-const Wrapper = styled('div', { backgroundColor: theme.colors.white900 })
-
-const ThemeProvider = ({ children, theme }: Props): JSX.Element | null => {
-  if (!children) {
-    return null
-  }
-
+const ThemeProvider: ThemeProviderComponent = ({ children, theme }) => {
   normalizeStyles()
 
   fontStyles()
 
-  return <Wrapper className={theme === 'dark' ? darkTheme : ''}>{children}</Wrapper>
+  return <div className={theme}>{children}</div>
 }
 
-type Props = {
-  children: React.ReactChild
-  theme: 'dark' | 'light'
-}
-
-export default ThemeProvider
+export { ThemeProvider }

@@ -1,6 +1,6 @@
 import { StoreItem } from '../types'
 
-export const readStoreItem = <T>(key: string, initialValue: T): StoreItem<T> => {
+const readStoreItem = <T>(key: string, initialValue: T): StoreItem<T> => {
   const storedJson = window.localStorage.getItem(key)
 
   const initialStoreItem: StoreItem<T> = {
@@ -16,3 +16,5 @@ export const readStoreItem = <T>(key: string, initialValue: T): StoreItem<T> => 
     return initialStoreItem
   }
 }
+
+export default readStoreItem

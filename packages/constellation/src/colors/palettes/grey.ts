@@ -1,6 +1,7 @@
 const grey = {
-  grey000: '#DFE3EB',
-  grey100: '#F0F2F7',
+  black: '#000000',
+  grey000: '#F0F2F7',
+  grey100: '#DFE3EB',
   grey200: '#CCD2DE',
   grey300: '#B1B8C7',
   grey400: '#98A1B2',

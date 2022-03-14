@@ -12,7 +12,7 @@ const useLocalStorageStoriesMeta: ComponentMeta<FC> = {
  * The useLocalStorage hook value will be in sync with every other components that uses the same key
  * So if a new value is set in one component, that change will be reflected in other components.
  */
-export const UsageExample: FC = () => {
+const UsageExample = () => {
   const [themeMode, setThemeMode] = useLocalStorage<'auto' | 'light' | 'dark'>('themeMode', 'light')
 
   return (
@@ -35,7 +35,7 @@ export const UsageExample: FC = () => {
 /**
  * Persist the state with local storage so that it remains after a page refresh. This can be useful for a dark theme or to record session information. This hook is used in the same way as useState except that you must pass the storage key in the 1st parameter
  */
-export const MultipleSubscribers: FC = () => {
+const MultipleSubscribers = () => {
   return (
     <div style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>
       <UsageExample />
@@ -44,5 +44,7 @@ export const MultipleSubscribers: FC = () => {
     </div>
   )
 }
+
+export { MultipleSubscribers, UsageExample }
 
 export default useLocalStorageStoriesMeta

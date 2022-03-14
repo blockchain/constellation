@@ -148,10 +148,7 @@ import VisibilityOn from './icons/visibilityOn.svg'
 import Wallet from './icons/wallet.svg'
 import Withdraw from './icons/withdraw.svg'
 
-export type { IconNameType } from './types'
-
-// icon component map
-export const iconComponentMap: {
+const iconComponentMap: {
   [K in IconNameType]: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
 } = {
   activity: Activity,
@@ -315,5 +312,7 @@ const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentP
     </div>
   )
 }
+
+export { iconComponentMap }
 
 export default React.memo(Icon)

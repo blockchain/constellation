@@ -1,6 +1,5 @@
-import useClickOutside from './useClickOutside'
-import useCopyToClipboard from './useCopyToClipboard'
-import useViewportSize from './useViewportSize'
-import useWindowEvent from './useWindowEvent'
-
-export { useClickOutside, useCopyToClipboard, useViewportSize, useWindowEvent }
+export { default as useClickOutside } from './useClickOutside'
+export { default as useCopyToClipboard } from './useCopyToClipboard'
+export * from './useThemeMode'
+export { default as useViewportSize } from './useViewportSize'
+export { default as useWindowEvent } from './useWindowEvent'
