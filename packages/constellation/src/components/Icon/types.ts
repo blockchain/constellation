@@ -151,6 +151,7 @@ export type IconSizesType = 'sm' | 'md' | 'lg'
 
 export type IconComponentProps = Omit<HTMLProps<HTMLDivElement>, 'ref' | 'as' | 'css' | 'size'> & {
   color?: ColorKeysType
+  label: string
   name: IconNameType
   size?: IconSizesType
 }

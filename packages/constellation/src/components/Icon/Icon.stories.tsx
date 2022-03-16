@@ -13,6 +13,10 @@ const meta = {
       options: Object.keys(colors),
       type: 'select',
     },
+    label: {
+      description: 'The label of the icon.',
+      type: 'string',
+    },
     name: {
       description: 'The name of the icon to render.',
       options: Object.keys(iconComponentMap),
@@ -29,7 +33,7 @@ const meta = {
 
 const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
-Default.args = { color: 'grey800', name: 'blockchainCircle', size: 'lg' }
+Default.args = { color: 'grey800', label: 'label', name: 'blockchainCircle', size: 'lg' }
 
 const AllVariants: ComponentStory<typeof Icon> = () => {
   const icons = Object.keys(iconComponentMap)
@@ -57,7 +61,7 @@ const AllVariants: ComponentStory<typeof Icon> = () => {
             width: '125px',
           }}
         >
-          <Icon name={name as IconNameType} color='grey700' size='lg' />
+          <Icon label={name} name={name as IconNameType} color='grey700' size='lg' />
           <Text color='grey700' variant='paragraph-2' css={{ marginTop: '16px' }}>
             {name}
           </Text>

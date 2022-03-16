@@ -1,7 +1,8 @@
 /* eslint-disable simple-import-sort/imports */
-import React from 'react'
+import React, { FunctionComponent, SVGProps } from 'react'
+import * as AccessibleIcon from '@radix-ui/react-accessible-icon'
 
-import { theme } from '../../stitches.config'
+import { colors } from '../../colors'
 import { IconComponentProps, IconNameType } from './types'
 // icon imports
 import Activity from './icons/activity.svg'
@@ -147,9 +148,10 @@ import VisibilityOff from './icons/visibilityOff.svg'
 import VisibilityOn from './icons/visibilityOn.svg'
 import Wallet from './icons/wallet.svg'
 import Withdraw from './icons/withdraw.svg'
+import { theme } from '../../stitches.config'
 
 const iconComponentMap: {
-  [K in IconNameType]: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+  [K in IconNameType]: FunctionComponent<SVGProps<SVGSVGElement>>
 } = {
   activity: Activity,
   airdrop: Airdrop,
@@ -302,13 +304,16 @@ const iconSizes = {
   sm: '16px',
 }
 
-const Icon = ({ color = 'grey800', name, size = 'md', ...props }: IconComponentProps) => {
+const Icon = ({ color = 'grey800', label, name, size = 'md', ...props }: IconComponentProps) => {
   const IconComponent = iconComponentMap[name]
+
+  const fill = theme.colors[color] as unknown as string
+
   return (
-    <div style={{ height: iconSizes[size], width: iconSizes[size] }} {...props}>
-      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-      {/* @ts-ignore */}
-      <IconComponent fill={theme.colors[color]} />
+    <div style={{ boxSizing: 'border-box', height: iconSizes[size], width: iconSizes[size] }}>
+      <AccessibleIcon.Root label={label} {...props}>
+        <IconComponent fill={fill} />
+      </AccessibleIcon.Root>
     </div>
   )
 }
