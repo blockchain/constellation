@@ -9,6 +9,7 @@ import { TextComponentProps } from './types'
 const BaseText = styled('span', {
   fontFeatureSettings: '"zero", "ss01"',
   color: '$grey800',
+  fontFamily: '$inter',
   variants: {
     color: Object.assign(
       {},

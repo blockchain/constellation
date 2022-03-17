@@ -1,0 +1,9 @@
+# Inter Font
+
+## Install
+
+CSS link
+
+```html
+<link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css" />
+```
