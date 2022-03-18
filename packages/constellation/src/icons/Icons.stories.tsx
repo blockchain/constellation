@@ -17,7 +17,7 @@ const iconsStoriesMeta: ComponentMeta<typeof Icon> = {
     },
     size: {
       control: { type: 'radio' },
-      defaultValue: 'sm',
+      defaultValue: 'md',
       description: 'The size of the rendered the icon.',
     },
   },

@@ -6,7 +6,6 @@ export const createIconExportText = (svgPath: string): string => {
     const iconComponentName = createIconComponentName(svgName);
 
     return [
-        `import ${iconComponentName} from "./svgs/${svgPath}"`,
-        `export { ${iconComponentName} }`
+        `export { default as ${iconComponentName} } from "./svgs/${svgPath}"`,
     ].join("\n")
 }

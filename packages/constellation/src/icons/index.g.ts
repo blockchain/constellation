@@ -1,296 +1,150 @@
 // This is a genered file
 // DO NOT EDIT
 
-// To generate this file run 'yarn build:icons-export'
+// To generate this file run 'yarn build:icons' or 'yarn workspace @blockchain-com/constellation build:icons'
 
-import ActivityIcon from './svgs/activity.svg'
-import AirdropIcon from './svgs/airdrop.svg'
-import AlertIcon from './svgs/alert.svg'
-import AndroidIcon from './svgs/android.svg'
-import AppleIcon from './svgs/apple.svg'
-import ArrowDownIcon from './svgs/arrowDown.svg'
-import ArrowLeftIcon from './svgs/arrowLeft.svg'
-import ArrowRightIcon from './svgs/arrowRight.svg'
-import ArrowUpIcon from './svgs/arrowUp.svg'
-import BackspaceAndroidIcon from './svgs/backspaceAndroid.svg'
-import BackupIcon from './svgs/backup.svg'
-import BankIcon from './svgs/bank.svg'
-import BlockchainIcon from './svgs/blockchain.svg'
-import BlockchainCircleIcon from './svgs/blockchainCircle.svg'
-import CalendarIcon from './svgs/calendar.svg'
-import CallIcon from './svgs/call.svg'
-import CameraIcon from './svgs/camera.svg'
-import CartIcon from './svgs/cart.svg'
-import ChartBarIcon from './svgs/chartBar.svg'
-import ChartBubbleIcon from './svgs/chartBubble.svg'
-import ChartPieIcon from './svgs/chartPie.svg'
-import ChatIcon from './svgs/chat.svg'
-import CheckIcon from './svgs/check.svg'
-import CheckCircleIcon from './svgs/checkCircle.svg'
-import ChevronDownIcon from './svgs/chevronDown.svg'
-import ChevronDownV2Icon from './svgs/chevronDownV2.svg'
-import ChevronLeftIcon from './svgs/chevronLeft.svg'
-import ChevronLeftV2Icon from './svgs/chevronLeftV2.svg'
-import ChevronRightIcon from './svgs/chevronRight.svg'
-import ChevronRightV2Icon from './svgs/chevronRightV2.svg'
-import ChevronUpIcon from './svgs/chevronUp.svg'
-import ChevronUpV2Icon from './svgs/chevronUpV2.svg'
-import ClipboardIcon from './svgs/clipboard.svg'
-import CloseIcon from './svgs/close.svg'
-import CloseCircleIcon from './svgs/closeCircle.svg'
-import CloseCircleV2Icon from './svgs/closeCircleV2.svg'
-import CloseV2Icon from './svgs/closeV2.svg'
-import CloudIcon from './svgs/cloud.svg'
-import CloudDoneIcon from './svgs/cloudDone.svg'
-import CloudDownloadIcon from './svgs/cloudDownload.svg'
-import CloudUploadIcon from './svgs/cloudUpload.svg'
-import ColorPickerIcon from './svgs/colorPicker.svg'
-import ComponentsIcon from './svgs/components.svg'
-import ComputerIcon from './svgs/computer.svg'
-import CopyIcon from './svgs/copy.svg'
-import CreditCardIcon from './svgs/creditCard.svg'
-import DeleteIcon from './svgs/delete.svg'
-import DepositIcon from './svgs/deposit.svg'
-import DownloadIcon from './svgs/download.svg'
-import EditIcon from './svgs/edit.svg'
-import EducationIcon from './svgs/education.svg'
-import EmailIcon from './svgs/email.svg'
-import ErrorIcon from './svgs/error.svg'
-import ExchangeIcon from './svgs/exchange.svg'
-import ExpandLessIcon from './svgs/expandLess.svg'
-import ExpandMoreIcon from './svgs/expandMore.svg'
-import ExploreIcon from './svgs/explore.svg'
-import FaceIdIcon from './svgs/faceId.svg'
-import FavoriteFilledIcon from './svgs/favoriteFilled.svg'
-import FavoriteOutlineIcon from './svgs/favoriteOutline.svg'
-import FilterIcon from './svgs/filter.svg'
-import FingerprintIcon from './svgs/fingerprint.svg'
-import FlagIcon from './svgs/flag.svg'
-import FlashOffIcon from './svgs/flashOff.svg'
-import FlashOnIcon from './svgs/flashOn.svg'
-import FullscreenIcon from './svgs/fullscreen.svg'
-import FullscreenExitIcon from './svgs/fullscreenExit.svg'
-import GlobeIcon from './svgs/globe.svg'
-import GoogleTranslateIcon from './svgs/googleTranslate.svg'
-import HardwareIcon from './svgs/hardware.svg'
-import HistoryIcon from './svgs/history.svg'
-import HomeIcon from './svgs/home.svg'
-import IdentificationIcon from './svgs/identification.svg'
-import ImageIcon from './svgs/image.svg'
-import InformationIcon from './svgs/information.svg'
-import KeyIcon from './svgs/key.svg'
-import KeyboardIcon from './svgs/keyboard.svg'
-import LaptopIcon from './svgs/laptop.svg'
-import LegalIcon from './svgs/legal.svg'
-import LineChartUpIcon from './svgs/lineChartUp.svg'
-import LinkIcon from './svgs/link.svg'
-import ListBulletsIcon from './svgs/listBullets.svg'
-import LockClosedIcon from './svgs/lockClosed.svg'
-import LockOpenIcon from './svgs/lockOpen.svg'
-import LogoutIcon from './svgs/logout.svg'
-import MarketUpIcon from './svgs/marketUp.svg'
-import MenuIcon from './svgs/menu.svg'
-import MicrophoneIcon from './svgs/microphone.svg'
-import MinusCircleIcon from './svgs/minusCircle.svg'
-import MoneyUsdIcon from './svgs/moneyUsd.svg'
-import MoreHorizontalIcon from './svgs/moreHorizontal.svg'
-import MoreVerticalIcon from './svgs/moreVertical.svg'
-import NewWindowIcon from './svgs/newWindow.svg'
-import NftIcon from './svgs/nft.svg'
-import NotificationOffIcon from './svgs/notificationOff.svg'
-import NotificationOnIcon from './svgs/notificationOn.svg'
-import PendingIcon from './svgs/pending.svg'
-import PeopleIcon from './svgs/people.svg'
-import PhoneIcon from './svgs/phone.svg'
-import PinIcon from './svgs/pin.svg'
-import PlaceholderIcon from './svgs/placeholder.svg'
-import PlayCircleIcon from './svgs/playCircle.svg'
-import PlusIcon from './svgs/plus.svg'
-import PlusCircleIcon from './svgs/plusCircle.svg'
-import PortfolioIcon from './svgs/portfolio.svg'
-import PresentIcon from './svgs/present.svg'
-import PrintIcon from './svgs/print.svg'
-import PrivateIcon from './svgs/private.svg'
-import QrCodeIcon from './svgs/qrCode.svg'
-import QuestionIcon from './svgs/question.svg'
-import QuestionCircleIcon from './svgs/questionCircle.svg'
-import ReceiveIcon from './svgs/receive.svg'
-import ReceiveV2Icon from './svgs/receiveV2.svg'
-import RefreshIcon from './svgs/refresh.svg'
-import RepeatIcon from './svgs/repeat.svg'
-import RewardsIcon from './svgs/rewards.svg'
-import RewardsCircleIcon from './svgs/rewardsCircle.svg'
-import SearchIcon from './svgs/search.svg'
-import SellIcon from './svgs/sell.svg'
-import SendIcon from './svgs/send.svg'
-import SendV2Icon from './svgs/sendV2.svg'
-import SettingsIcon from './svgs/settings.svg'
-import ShareAndroidIcon from './svgs/shareAndroid.svg'
-import ShareIosIcon from './svgs/shareIos.svg'
-import ShieldIcon from './svgs/shield.svg'
-import SignoutIcon from './svgs/signout.svg'
-import SubdirectoryIcon from './svgs/subdirectory.svg'
-import SupportIcon from './svgs/support.svg'
-import SwapIcon from './svgs/swap.svg'
-import SyncIcon from './svgs/sync.svg'
-import TagIcon from './svgs/tag.svg'
-import TimeoutIcon from './svgs/timeout.svg'
-import TorIcon from './svgs/tor.svg'
-import TradeIcon from './svgs/trade.svg'
-import TriangleDownIcon from './svgs/triangleDown.svg'
-import TriangleUpIcon from './svgs/triangleUp.svg'
-import UnfoldLessIcon from './svgs/unfoldLess.svg'
-import UnfoldMoreIcon from './svgs/unfoldMore.svg'
-import UserIcon from './svgs/user.svg'
-import UserAddIcon from './svgs/userAdd.svg'
-import VerifiedIcon from './svgs/verified.svg'
-import VisibilityOffIcon from './svgs/visibilityOff.svg'
-import VisibilityOnIcon from './svgs/visibilityOn.svg'
-import WalletIcon from './svgs/wallet.svg'
-import WithdrawIcon from './svgs/withdraw.svg'
-
-export { ActivityIcon }
-export { AirdropIcon }
-export { AlertIcon }
-export { AndroidIcon }
-export { AppleIcon }
-export { ArrowDownIcon }
-export { ArrowLeftIcon }
-export { ArrowRightIcon }
-export { ArrowUpIcon }
-export { BackspaceAndroidIcon }
-export { BackupIcon }
-export { BankIcon }
-export { BlockchainIcon }
-export { BlockchainCircleIcon }
-export { CalendarIcon }
-export { CallIcon }
-export { CameraIcon }
-export { CartIcon }
-export { ChartBarIcon }
-export { ChartBubbleIcon }
-export { ChartPieIcon }
-export { ChatIcon }
-export { CheckIcon }
-export { CheckCircleIcon }
-export { ChevronDownIcon }
-export { ChevronDownV2Icon }
-export { ChevronLeftIcon }
-export { ChevronLeftV2Icon }
-export { ChevronRightIcon }
-export { ChevronRightV2Icon }
-export { ChevronUpIcon }
-export { ChevronUpV2Icon }
-export { ClipboardIcon }
-export { CloseIcon }
-export { CloseCircleIcon }
-export { CloseCircleV2Icon }
-export { CloseV2Icon }
-export { CloudIcon }
-export { CloudDoneIcon }
-export { CloudDownloadIcon }
-export { CloudUploadIcon }
-export { ColorPickerIcon }
-export { ComponentsIcon }
-export { ComputerIcon }
-export { CopyIcon }
-export { CreditCardIcon }
-export { DeleteIcon }
-export { DepositIcon }
-export { DownloadIcon }
-export { EditIcon }
-export { EducationIcon }
-export { EmailIcon }
-export { ErrorIcon }
-export { ExchangeIcon }
-export { ExpandLessIcon }
-export { ExpandMoreIcon }
-export { ExploreIcon }
-export { FaceIdIcon }
-export { FavoriteFilledIcon }
-export { FavoriteOutlineIcon }
-export { FilterIcon }
-export { FingerprintIcon }
-export { FlagIcon }
-export { FlashOffIcon }
-export { FlashOnIcon }
-export { FullscreenIcon }
-export { FullscreenExitIcon }
-export { GlobeIcon }
-export { GoogleTranslateIcon }
-export { HardwareIcon }
-export { HistoryIcon }
-export { HomeIcon }
-export { IdentificationIcon }
-export { ImageIcon }
-export { InformationIcon }
-export { KeyIcon }
-export { KeyboardIcon }
-export { LaptopIcon }
-export { LegalIcon }
-export { LineChartUpIcon }
-export { LinkIcon }
-export { ListBulletsIcon }
-export { LockClosedIcon }
-export { LockOpenIcon }
-export { LogoutIcon }
-export { MarketUpIcon }
-export { MenuIcon }
-export { MicrophoneIcon }
-export { MinusCircleIcon }
-export { MoneyUsdIcon }
-export { MoreHorizontalIcon }
-export { MoreVerticalIcon }
-export { NewWindowIcon }
-export { NftIcon }
-export { NotificationOffIcon }
-export { NotificationOnIcon }
-export { PendingIcon }
-export { PeopleIcon }
-export { PhoneIcon }
-export { PinIcon }
-export { PlaceholderIcon }
-export { PlayCircleIcon }
-export { PlusIcon }
-export { PlusCircleIcon }
-export { PortfolioIcon }
-export { PresentIcon }
-export { PrintIcon }
-export { PrivateIcon }
-export { QrCodeIcon }
-export { QuestionIcon }
-export { QuestionCircleIcon }
-export { ReceiveIcon }
-export { ReceiveV2Icon }
-export { RefreshIcon }
-export { RepeatIcon }
-export { RewardsIcon }
-export { RewardsCircleIcon }
-export { SearchIcon }
-export { SellIcon }
-export { SendIcon }
-export { SendV2Icon }
-export { SettingsIcon }
-export { ShareAndroidIcon }
-export { ShareIosIcon }
-export { ShieldIcon }
-export { SignoutIcon }
-export { SubdirectoryIcon }
-export { SupportIcon }
-export { SwapIcon }
-export { SyncIcon }
-export { TagIcon }
-export { TimeoutIcon }
-export { TorIcon }
-export { TradeIcon }
-export { TriangleDownIcon }
-export { TriangleUpIcon }
-export { UnfoldLessIcon }
-export { UnfoldMoreIcon }
-export { UserIcon }
-export { UserAddIcon }
-export { VerifiedIcon }
-export { VisibilityOffIcon }
-export { VisibilityOnIcon }
-export { WalletIcon }
-export { WithdrawIcon }
+export { default as ActivityIcon } from './svgs/activity.svg'
+export { default as AirdropIcon } from './svgs/airdrop.svg'
+export { default as AlertIcon } from './svgs/alert.svg'
+export { default as AndroidIcon } from './svgs/android.svg'
+export { default as AppleIcon } from './svgs/apple.svg'
+export { default as ArrowDownIcon } from './svgs/arrowDown.svg'
+export { default as ArrowLeftIcon } from './svgs/arrowLeft.svg'
+export { default as ArrowRightIcon } from './svgs/arrowRight.svg'
+export { default as ArrowUpIcon } from './svgs/arrowUp.svg'
+export { default as BackspaceAndroidIcon } from './svgs/backspaceAndroid.svg'
+export { default as BackupIcon } from './svgs/backup.svg'
+export { default as BankIcon } from './svgs/bank.svg'
+export { default as BlockchainIcon } from './svgs/blockchain.svg'
+export { default as BlockchainCircleIcon } from './svgs/blockchainCircle.svg'
+export { default as CalendarIcon } from './svgs/calendar.svg'
+export { default as CallIcon } from './svgs/call.svg'
+export { default as CameraIcon } from './svgs/camera.svg'
+export { default as CartIcon } from './svgs/cart.svg'
+export { default as ChartBarIcon } from './svgs/chartBar.svg'
+export { default as ChartBubbleIcon } from './svgs/chartBubble.svg'
+export { default as ChartPieIcon } from './svgs/chartPie.svg'
+export { default as ChatIcon } from './svgs/chat.svg'
+export { default as CheckIcon } from './svgs/check.svg'
+export { default as CheckCircleIcon } from './svgs/checkCircle.svg'
+export { default as ChevronDownIcon } from './svgs/chevronDown.svg'
+export { default as ChevronDownV2Icon } from './svgs/chevronDownV2.svg'
+export { default as ChevronLeftIcon } from './svgs/chevronLeft.svg'
+export { default as ChevronLeftV2Icon } from './svgs/chevronLeftV2.svg'
+export { default as ChevronRightIcon } from './svgs/chevronRight.svg'
+export { default as ChevronRightV2Icon } from './svgs/chevronRightV2.svg'
+export { default as ChevronUpIcon } from './svgs/chevronUp.svg'
+export { default as ChevronUpV2Icon } from './svgs/chevronUpV2.svg'
+export { default as ClipboardIcon } from './svgs/clipboard.svg'
+export { default as CloseIcon } from './svgs/close.svg'
+export { default as CloseCircleIcon } from './svgs/closeCircle.svg'
+export { default as CloseCircleV2Icon } from './svgs/closeCircleV2.svg'
+export { default as CloseV2Icon } from './svgs/closeV2.svg'
+export { default as CloudIcon } from './svgs/cloud.svg'
+export { default as CloudDoneIcon } from './svgs/cloudDone.svg'
+export { default as CloudDownloadIcon } from './svgs/cloudDownload.svg'
+export { default as CloudUploadIcon } from './svgs/cloudUpload.svg'
+export { default as ColorPickerIcon } from './svgs/colorPicker.svg'
+export { default as ComponentsIcon } from './svgs/components.svg'
+export { default as ComputerIcon } from './svgs/computer.svg'
+export { default as CopyIcon } from './svgs/copy.svg'
+export { default as CreditCardIcon } from './svgs/creditCard.svg'
+export { default as DeleteIcon } from './svgs/delete.svg'
+export { default as DepositIcon } from './svgs/deposit.svg'
+export { default as DownloadIcon } from './svgs/download.svg'
+export { default as EditIcon } from './svgs/edit.svg'
+export { default as EducationIcon } from './svgs/education.svg'
+export { default as EmailIcon } from './svgs/email.svg'
+export { default as ErrorIcon } from './svgs/error.svg'
+export { default as ExchangeIcon } from './svgs/exchange.svg'
+export { default as ExpandLessIcon } from './svgs/expandLess.svg'
+export { default as ExpandMoreIcon } from './svgs/expandMore.svg'
+export { default as ExploreIcon } from './svgs/explore.svg'
+export { default as FaceIdIcon } from './svgs/faceId.svg'
+export { default as FavoriteFilledIcon } from './svgs/favoriteFilled.svg'
+export { default as FavoriteOutlineIcon } from './svgs/favoriteOutline.svg'
+export { default as FilterIcon } from './svgs/filter.svg'
+export { default as FingerprintIcon } from './svgs/fingerprint.svg'
+export { default as FlagIcon } from './svgs/flag.svg'
+export { default as FlashOffIcon } from './svgs/flashOff.svg'
+export { default as FlashOnIcon } from './svgs/flashOn.svg'
+export { default as FullscreenIcon } from './svgs/fullscreen.svg'
+export { default as FullscreenExitIcon } from './svgs/fullscreenExit.svg'
+export { default as GlobeIcon } from './svgs/globe.svg'
+export { default as GoogleTranslateIcon } from './svgs/googleTranslate.svg'
+export { default as HardwareIcon } from './svgs/hardware.svg'
+export { default as HistoryIcon } from './svgs/history.svg'
+export { default as HomeIcon } from './svgs/home.svg'
+export { default as IdentificationIcon } from './svgs/identification.svg'
+export { default as ImageIcon } from './svgs/image.svg'
+export { default as InformationIcon } from './svgs/information.svg'
+export { default as KeyIcon } from './svgs/key.svg'
+export { default as KeyboardIcon } from './svgs/keyboard.svg'
+export { default as LaptopIcon } from './svgs/laptop.svg'
+export { default as LegalIcon } from './svgs/legal.svg'
+export { default as LineChartUpIcon } from './svgs/lineChartUp.svg'
+export { default as LinkIcon } from './svgs/link.svg'
+export { default as ListBulletsIcon } from './svgs/listBullets.svg'
+export { default as LockClosedIcon } from './svgs/lockClosed.svg'
+export { default as LockOpenIcon } from './svgs/lockOpen.svg'
+export { default as LogoutIcon } from './svgs/logout.svg'
+export { default as MarketUpIcon } from './svgs/marketUp.svg'
+export { default as MenuIcon } from './svgs/menu.svg'
+export { default as MicrophoneIcon } from './svgs/microphone.svg'
+export { default as MinusCircleIcon } from './svgs/minusCircle.svg'
+export { default as MoneyUsdIcon } from './svgs/moneyUsd.svg'
+export { default as MoreHorizontalIcon } from './svgs/moreHorizontal.svg'
+export { default as MoreVerticalIcon } from './svgs/moreVertical.svg'
+export { default as NewWindowIcon } from './svgs/newWindow.svg'
+export { default as NftIcon } from './svgs/nft.svg'
+export { default as NotificationOffIcon } from './svgs/notificationOff.svg'
+export { default as NotificationOnIcon } from './svgs/notificationOn.svg'
+export { default as PendingIcon } from './svgs/pending.svg'
+export { default as PeopleIcon } from './svgs/people.svg'
+export { default as PhoneIcon } from './svgs/phone.svg'
+export { default as PinIcon } from './svgs/pin.svg'
+export { default as PlaceholderIcon } from './svgs/placeholder.svg'
+export { default as PlayCircleIcon } from './svgs/playCircle.svg'
+export { default as PlusIcon } from './svgs/plus.svg'
+export { default as PlusCircleIcon } from './svgs/plusCircle.svg'
+export { default as PortfolioIcon } from './svgs/portfolio.svg'
+export { default as PresentIcon } from './svgs/present.svg'
+export { default as PrintIcon } from './svgs/print.svg'
+export { default as PrivateIcon } from './svgs/private.svg'
+export { default as QrCodeIcon } from './svgs/qrCode.svg'
+export { default as QuestionIcon } from './svgs/question.svg'
+export { default as QuestionCircleIcon } from './svgs/questionCircle.svg'
+export { default as ReceiveIcon } from './svgs/receive.svg'
+export { default as ReceiveV2Icon } from './svgs/receiveV2.svg'
+export { default as RefreshIcon } from './svgs/refresh.svg'
+export { default as RepeatIcon } from './svgs/repeat.svg'
+export { default as RewardsIcon } from './svgs/rewards.svg'
+export { default as RewardsCircleIcon } from './svgs/rewardsCircle.svg'
+export { default as SearchIcon } from './svgs/search.svg'
+export { default as SellIcon } from './svgs/sell.svg'
+export { default as SendIcon } from './svgs/send.svg'
+export { default as SendV2Icon } from './svgs/sendV2.svg'
+export { default as SettingsIcon } from './svgs/settings.svg'
+export { default as ShareAndroidIcon } from './svgs/shareAndroid.svg'
+export { default as ShareIosIcon } from './svgs/shareIos.svg'
+export { default as ShieldIcon } from './svgs/shield.svg'
+export { default as SignoutIcon } from './svgs/signout.svg'
+export { default as SubdirectoryIcon } from './svgs/subdirectory.svg'
+export { default as SupportIcon } from './svgs/support.svg'
+export { default as SwapIcon } from './svgs/swap.svg'
+export { default as SyncIcon } from './svgs/sync.svg'
+export { default as TagIcon } from './svgs/tag.svg'
+export { default as TimeoutIcon } from './svgs/timeout.svg'
+export { default as TorIcon } from './svgs/tor.svg'
+export { default as TradeIcon } from './svgs/trade.svg'
+export { default as TriangleDownIcon } from './svgs/triangleDown.svg'
+export { default as TriangleUpIcon } from './svgs/triangleUp.svg'
+export { default as UnfoldLessIcon } from './svgs/unfoldLess.svg'
+export { default as UnfoldMoreIcon } from './svgs/unfoldMore.svg'
+export { default as UserIcon } from './svgs/user.svg'
+export { default as UserAddIcon } from './svgs/userAdd.svg'
+export { default as VerifiedIcon } from './svgs/verified.svg'
+export { default as VisibilityOffIcon } from './svgs/visibilityOff.svg'
+export { default as VisibilityOnIcon } from './svgs/visibilityOn.svg'
+export { default as WalletIcon } from './svgs/wallet.svg'
+export { default as WithdrawIcon } from './svgs/withdraw.svg'
