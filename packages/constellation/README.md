@@ -5,7 +5,8 @@ Base component library for React based applications built and used by [Blockchai
 ## Using the Library
 
 1. Install the library `yarn add @blockchain/constellation`
-2. Import and wrap your entire App with the ThemeProvider component. Example below
+2. Import Inter font. [see](/docs/fonts/index.md)
+3. Import and wrap your entire App with the ThemeProvider component. Example below
 
    ```js
     import { useEffect } from 'react'
@@ -35,7 +36,7 @@ Base component library for React based applications built and used by [Blockchai
     }
    ```
 
-3. That's it, happy hacking!
+4. That's it, happy hacking!
 
 ## Local Hacking Guide
 
