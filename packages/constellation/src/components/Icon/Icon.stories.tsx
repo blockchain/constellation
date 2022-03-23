@@ -31,7 +31,6 @@ const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 Default.args = {
   color: 'grey800',
   label: 'label',
-  name: 'blockchainCircle',
   size: 'lg',
 }
 
