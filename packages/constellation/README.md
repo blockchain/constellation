@@ -15,14 +15,12 @@ Base component library for React based applications built and used by [Blockchai
       ThemeProvider,
       useThemeMode,
       useLocalStorage,
-      ThemeMode,
-      ColorMode,
+      ThemeMode
     } from '@blockchain/constellation'
 
     function App(): JSX.Element {
-      const [themeMode] = useLocalStorage<ThemeMode>("themeMode", 'light')
-
-      const theme = useThemeMode(themeMode);
+      const [themeMode] = useLocalStorage<ThemeMode>('themeMode', 'light')
+      const theme = useThemeMode(themeMode)
 
       return (
         <Store>
