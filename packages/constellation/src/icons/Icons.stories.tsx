@@ -1,9 +1,9 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { colors } from 'colors'
-import Icon from 'components/Icon'
-import Text from 'components/Text'
 import React, { FC } from 'react'
 
+import { colors } from '../colors'
+import Icon from '../components/Icon'
+import Text from '../components/Text'
 import * as Icons from '.'
 
 const iconsStoriesMeta: ComponentMeta<typeof Icon> = {

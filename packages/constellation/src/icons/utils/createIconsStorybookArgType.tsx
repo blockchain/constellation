@@ -1,5 +1,6 @@
-import * as Icons from 'icons'
 import React from 'react'
+
+import * as Icons from '..'
 
 const icons = Object.values(Icons)
 
