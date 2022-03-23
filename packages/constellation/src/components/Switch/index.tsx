@@ -52,6 +52,9 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
 const Switch = ({ checked = false, ...props }: SwitchComponentProps) => (
+  // TODO fix this
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   <StyledSwitch checked={checked} {...props}>
     <StyledThumb />
   </StyledSwitch>

@@ -10,37 +10,142 @@ import dts from 'rollup-plugin-dts'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
 
-const packageJson = require('./package.json')
+const plugins = [
+  peerDepsExternal(),
+  resolve(),
+  commonjs(),
+  svgr(),
+  typescript({ tsconfig: './tsconfig.json' }),
+  babel({ babelHelpers: 'runtime' }),
+  terser(),
+  //  dts(),
+]
+
+const external = ['react', 'react-dom', '@babel/runtime']
 
 export default [
   {
-    external: ['react', 'react-dom', '@babel/runtime'],
-    input: 'src/index.ts',
+    external,
+    input: 'src/colors/index.ts',
+    plugins,
     output: [
       {
-        file: packageJson.main,
+        file: 'dist/cjs/colors/index.js',
         format: 'cjs',
         sourcemap: true,
       },
       {
-        file: packageJson.module,
+        file: 'dist/esm/colors/index.js',
         format: 'esm',
         sourcemap: true,
       },
     ],
-    plugins: [
-      peerDepsExternal(),
-      resolve(),
-      commonjs(),
-      svgr(),
-      typescript({ tsconfig: './tsconfig.json' }),
-      babel({ babelHelpers: 'runtime' }),
-      terser(),
+  },
+  {
+    external,
+    input: 'src/components/index.ts',
+    plugins,
+    output: [
+      {
+        file: 'dist/cjs/components/index.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/esm/components/index.js',
+        format: 'esm',
+        sourcemap: true,
+      },
     ],
   },
   {
-    input: 'dist/esm/types/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts()],
+    external,
+    input: 'src/hooks/index.ts',
+    plugins,
+    output: [
+      {
+        file: 'dist/cjs/hooks/index.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/esm/hooks/index.js',
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
   },
+  {
+    external,
+    input: 'src/icons/index.ts',
+    plugins,
+    output: [
+      {
+        file: 'dist/cjs/icons/index.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/esm/icons/index.js',
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
+  },
+  {
+    external,
+    input: 'src/providers/index.ts',
+    plugins,
+    output: [
+      {
+        file: 'dist/cjs/providers/index.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/esm/providers/index.js',
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
+  },
+  {
+    external,
+    input: 'src/services/index.ts',
+    plugins,
+    output: [
+      {
+        file: 'dist/cjs/services/index.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/esm/services/index.js',
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
+  },
+  {
+    external,
+    input: 'src/utils/index.ts',
+    plugins,
+    output: [
+      {
+        file: 'dist/cjs/utils/index.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/esm/utils/index.js',
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
+  },
+  // {
+  //   input: 'dist/esm/types/index.d.ts',
+  //   output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+  //   plugins: [dts()],
+  // },
 ]

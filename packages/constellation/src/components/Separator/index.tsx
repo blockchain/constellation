@@ -30,6 +30,9 @@ const StyledSeparator = styled(RadixSeparator.Root, {
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
 const Separator = ({ orientation = 'horizontal', ...props }: SeparatorComponentProps) => (
+  // TODO fix this
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   <StyledSeparator decorative orientation={orientation} {...props} />
 )
 
