@@ -12,10 +12,21 @@ import { terser } from 'rollup-plugin-terser'
 
 const packageJson = require('./package.json')
 
+const plugins = [
+  peerDepsExternal(),
+  resolve(),
+  commonjs(),
+  svgr(),
+  typescript({ tsconfig: './tsconfig.json' }),
+  babel({ babelHelpers: 'runtime' }),
+  terser(),
+];
+
 export default [
   {
     external: ['react', 'react-dom', '@babel/runtime'],
     input: 'src/index.ts',
+    plugins,
     output: [
       {
         file: packageJson.main,
@@ -28,19 +39,28 @@ export default [
         sourcemap: true,
       },
     ],
-    plugins: [
-      peerDepsExternal(),
-      resolve(),
-      commonjs(),
-      svgr(),
-      typescript({ tsconfig: './tsconfig.json' }),
-      babel({ babelHelpers: 'runtime' }),
-      terser(),
-    ],
+    
   },
   {
     input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     plugins: [dts()],
+  },
+  {
+    external: ['react', 'react-dom', '@babel/runtime'],
+    input: 'src/icons/index.ts',
+    plugins,
+    output: [
+      {
+        file: "dist/cjs/icons/index.js",
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: "dist/esm/icons/index.js",
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
   },
 ]
