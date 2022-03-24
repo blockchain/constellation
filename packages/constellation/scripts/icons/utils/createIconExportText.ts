@@ -1,4 +1,4 @@
-const createIconComponentName = (svgName: string): string => svgName.charAt(0).toUpperCase() + svgName.substring(1) + "Icon"
+const createIconComponentName = (svgName: string): string => "Icon" + svgName.charAt(0).toUpperCase() + svgName.substring(1)
 
 export const createIconExportText = (svgPath: string): string => {
     const [svgName] = svgPath.split(".")
@@ -6,6 +6,6 @@ export const createIconExportText = (svgPath: string): string => {
     const iconComponentName = createIconComponentName(svgName);
 
     return [
-        `export { default as ${iconComponentName} } from "./svgs/${svgPath}"`,
+        `export { default as ${iconComponentName} } from './svgs/${svgPath}'`,
     ].join("\n")
 }
