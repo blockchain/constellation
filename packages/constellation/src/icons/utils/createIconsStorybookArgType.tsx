@@ -7,7 +7,7 @@ export const createIconsStorybookArgType = () => ({
   control: {
     type: 'select',
   },
-  defaultValue: 'ActivityIcon',
+  defaultValue: 'IconActivity',
   mapping: Object.keys(Icons).reduce((result, iconName, index) => {
     const IconSvg = icons[index]
 
