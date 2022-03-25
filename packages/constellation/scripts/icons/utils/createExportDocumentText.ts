@@ -5,6 +5,8 @@ export const createExportDocumentText = (body: string) => {
         "",
         "// To generate this file run 'yarn build:icons' or 'yarn workspace @blockchain-com/constellation build:icons'",
         "",
+        `import React from 'react'`,
+        `import { createIconFromSvg } from './utils'`,
         body,
         ""
     ].join("\n")

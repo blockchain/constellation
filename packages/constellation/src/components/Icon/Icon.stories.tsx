@@ -5,13 +5,15 @@ import React from 'react'
 import { colors } from '../../colors'
 import Icon from '.'
 
-const meta = {
+const meta: ComponentMeta<typeof Icon> = {
   argTypes: {
     children: createIconsStorybookArgType(),
     color: {
+      control: {
+        type: 'select',
+      },
       description: 'The rendering color of the icon.',
       options: Object.keys(colors),
-      type: 'select',
     },
     label: {
       description: 'The label of the icon.',
@@ -24,7 +26,7 @@ const meta = {
   },
   component: Icon,
   title: 'Components/Icon',
-} as unknown as ComponentMeta<typeof Icon>
+}
 
 const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
