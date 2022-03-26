@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "baseUrl": "src",
+      "declaration": true,
+      "declarationDir": "types",
+      "declarationMap": true,
+      "jsx": "react",
+      "module": "ESNext",
+      "outDir": "dist",
+      "rootDir": "src",
+      "target": "ES6"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
