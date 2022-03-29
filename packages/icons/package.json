@@ -11,7 +11,7 @@
     "prepublish": "yarn build",
     "clean": "rimraf src && rimraf dist",
     "build": "yarn clean && yarn build:assets && npx rollup -c",
-    "build:assets": "svgr -d src -- assets"
+    "build:assets": "svgr --svgo-config ./svgo.config.js -d src -- assets "
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
