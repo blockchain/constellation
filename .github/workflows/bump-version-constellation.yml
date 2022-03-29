@@ -1,4 +1,4 @@
-name: bump-version
+name: bump-version-constellation
 
 on:
   workflow_dispatch:

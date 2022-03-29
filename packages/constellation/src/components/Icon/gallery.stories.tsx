@@ -1,17 +1,17 @@
+import * as Icons from '@blockchain-com/icons'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import { colors } from 'colors'
 import Icon from 'components/Icon'
 import Text from 'components/Text'
 import React, { FC } from 'react'
 
-import * as Icons from '.'
-
-const iconsStoriesMeta: ComponentMeta<typeof Icon> = {
+const iconsGalleryStoriesMeta: ComponentMeta<typeof Icon> = {
   argTypes: {
     color: {
       control: {
         type: 'select',
       },
+      defaultValue: 'grey900',
       description: 'The rendering color of the icon.',
       options: Object.keys(colors),
     },
@@ -25,7 +25,7 @@ const iconsStoriesMeta: ComponentMeta<typeof Icon> = {
   title: 'Components/Icon',
 }
 
-export const All: ComponentStory<typeof Icon> = ({ color, size }) => {
+export const Gallery: ComponentStory<typeof Icon> = ({ color, size }) => {
   const iconNames: string[] = Object.keys(Icons)
   const icons: FC[] = Object.values(Icons)
 
@@ -71,8 +71,8 @@ export const All: ComponentStory<typeof Icon> = ({ color, size }) => {
   )
 }
 
-All.parameters = {
+Gallery.parameters = {
   controls: { exclude: 'variant' },
 }
 
-export default iconsStoriesMeta
+export default iconsGalleryStoriesMeta

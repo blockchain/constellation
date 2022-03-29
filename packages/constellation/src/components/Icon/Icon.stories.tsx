@@ -1,13 +1,36 @@
+import * as Icons from '@blockchain-com/icons'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { createIconsStorybookArgType } from 'icons/utils/createIconsStorybookArgType'
-import React from 'react'
+import React, { FC } from 'react'
 
 import { colors } from '../../colors'
 import Icon from '.'
 
+const iconNames: string[] = Object.keys(Icons)
+const icons: FC[] = Object.values(Icons)
+
+const iconsMapped = iconNames.reduce((mapped, iconName, index) => {
+  const IconItem = icons[index]
+
+  if (!IconItem) {
+    return mapped
+  }
+
+  return {
+    [iconName]: <IconItem />,
+    ...mapped,
+  }
+}, {})
+
 const meta = {
   argTypes: {
-    children: createIconsStorybookArgType(),
+    children: {
+      control: {
+        type: 'select',
+      },
+      defaultValue: 'Activity',
+      mapping: iconsMapped,
+      options: iconNames,
+    },
     color: {
       description: 'The rendering color of the icon.',
       options: Object.keys(colors),

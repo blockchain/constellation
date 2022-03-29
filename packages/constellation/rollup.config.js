@@ -5,7 +5,6 @@ import { babel } from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
-import svgr from '@svgr/rollup'
 import dts from 'rollup-plugin-dts'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
@@ -32,7 +31,6 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      svgr(),
       typescript({ tsconfig: './tsconfig.json' }),
       babel({ babelHelpers: 'runtime' }),
       terser(),
