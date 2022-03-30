@@ -11,17 +11,11 @@ const iconSizes = {
   sm: '16px',
 }
 
-const Icon = ({
-  children,
-  color = 'grey800',
-  label,
-  size = 'md',
-  ...props
-}: IconComponentProps) => {
+const Icon = ({ children, color = 'grey800', label, size = 'md' }: IconComponentProps) => {
   const fill = theme.colors[color] as unknown as string
 
   return (
-    <AccessibleIcon.Root label={label} {...props}>
+    <AccessibleIcon.Root label={label}>
       {React.cloneElement(children, {
         fill,
         style: { boxSizing: 'border-box', height: iconSizes[size], width: iconSizes[size] },
