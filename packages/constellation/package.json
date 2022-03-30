@@ -1,6 +1,6 @@
 {
   "name": "@blockchain-com/constellation",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
