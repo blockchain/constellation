@@ -27,7 +27,7 @@ const meta = {
       control: {
         type: 'select',
       },
-      defaultValue: 'Activity',
+      defaultValue: 'IconActivity',
       mapping: iconsMapped,
       options: iconNames,
     },
