@@ -13,7 +13,7 @@ It has the following interface:
 ```ts
 const tracking: ({
   api,
-  platform
+  platform,
 }: {
   api: string
   platform: 'WALLET' | 'EXCHANGE' | 'BLOCKCHAIN_COM' | 'EXPLORER'
@@ -22,7 +22,7 @@ const tracking: ({
   hasConsent: () => Promise<boolean>
   publish: ({
     context,
-    events
+    events,
   }: {
     context: {
       campaign?:
@@ -44,16 +44,14 @@ const tracking: ({
 }
 ```
 
-It usually is implemented inside the `TrackingProvider` of each app.
-
-The only part that is not implemented on the `TrackingProvider` is the `tracker.publish` function, that should be used like this:
+It usually is usually used like this
 
 ```ts
 tracker.publish({
   context: {
-    traits: { nabu_id: '123456789' }
+    traits: { nabu_id: '123456789' },
   },
   events: [],
-  platform: 'EXPLORER'
+  platform: 'EXPLORER',
 })
 ```
