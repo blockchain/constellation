@@ -12,7 +12,6 @@ module.exports = {
                 node.attributes.width != null &&
                 node.attributes.height != null
               ) {
-                node.attributes.fill = "currentColor";
                 node.attributes.height = "100%";
                 node.attributes.width = "100%";
               }
@@ -20,14 +19,23 @@ module.exports = {
           },
         };
       },
-      name: "setFillToCurrentColorAndWidthHeight100",
+      name: "setWidthAndHeight",
       type: "visitor",
     },
     {
-      name: "prefixIds",
-      params: {
-        prefix: "icon-",
+      fn: () => {
+        return {
+          element: {
+            enter: (node) => {
+              if (node.name === "svg") {
+                node.attributes.fill = "currentColor";
+              }
+            },
+          },
+        };
       },
+      name: "setCurrentColor",
+      type: "visitor",
     },
     {
       name: "preset-default",

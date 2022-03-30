@@ -10,8 +10,9 @@
   "scripts": {
     "prepublish": "yarn build",
     "clean": "rimraf src && rimraf dist",
-    "build": "yarn clean && yarn build:assets && npx rollup -c",
-    "build:assets": "svgr --svgo-config ./svgo.config.js -d src -- assets "
+    "build": "yarn clean && yarn optimize:assets && yarn build:assets && npx rollup -c",
+    "build:assets": "svgr --no-svgo -d src -- assets",
+    "optimize:assets": "svgo assets"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -26,6 +27,7 @@
     "rollup": "^2.70.1",
     "rollup-plugin-dts": "^4.2.0",
     "rollup-plugin-filesize": "^9.1.2",
+    "svgo": "^2.8.0",
     "tslib": "^2.3.1",
     "typescript": "^4.6.3"
   }
