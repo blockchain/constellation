@@ -1,6 +1,6 @@
 # @blockchain-com/icons
 
-This package is responsable for providing the blockchain.com icons as an npm package
+This package is responsible for providing the blockchain.com icons as an npm package
 
 ## Install
 
@@ -11,12 +11,12 @@ yarn add @blockchain-com/icons
 ## Usage
 
 ```ts
-import { Activity } from "@blockchain-com/icons";
+import { IconActivity } from "@blockchain-com/icons";
 
 export const App = () => {
   return (
     <div>
-      <Activity />
+      <IconActivity />
     </div>
   );
 };
@@ -24,7 +24,7 @@ export const App = () => {
 
 ## Add new icon
 
-- add icon named like this `{IconName}.svg` to `/assets` folder
+- add icon named like this `icon-{name}.svg` to `/assets` folder
 - Run `yarn build`
 
 Now your new icon is included in the `/dist` folder and you can publish a new version of this package

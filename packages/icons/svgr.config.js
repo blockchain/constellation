@@ -1,6 +1,5 @@
 module.exports = {
-    icon: true,
-    titleProp: true,
-    typescript: true,
-}
-  
+  icon: true,
+  titleProp: true,
+  typescript: true,
+};
