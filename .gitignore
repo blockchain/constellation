@@ -124,3 +124,5 @@ storybook-static
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+./coverage-summary.json

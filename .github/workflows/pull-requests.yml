@@ -26,6 +26,13 @@ jobs:
       - name: Build icons
         run: yarn workspace @blockchain-com/icons build
 
+      - name: TestCoverage
+        id: testCoverage
+        uses: anuraag016/Jest-Coverage-Diff@master
+        with:
+          runCommand: 'yarn workspace @blockchain-com/constellation test --coverage --coverageReporters="json-summary" && mv packages/constellation/coverage/coverage-summary.json ./'
+          delta: 0.5
+
       - name: Lint Constellation code
         run: yarn workspace @blockchain-com/constellation lint
 
