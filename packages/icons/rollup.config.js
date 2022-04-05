@@ -8,10 +8,18 @@ const packageJson = require('./package.json')
 const config = [
   {
     input: 'src/index.ts',
-    output: {
-      file: packageJson.module,
-      format: 'esm',
-    },
+    output: [
+      {
+        file: packageJson.main,
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        file: packageJson.module,
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
     external: [/@babel\/runtime/, 'react'],
     plugins: [
       typescript({ tsconfig: './tsconfig.json' }),
@@ -20,7 +28,7 @@ const config = [
     ],
   },
   {
-    input: 'dist/types/index.d.ts',
+    input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     plugins: [dts()],
   },

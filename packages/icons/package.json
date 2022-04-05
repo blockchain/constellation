@@ -2,8 +2,13 @@
   "name": "@blockchain-com/icons",
   "version": "0.0.2",
   "packageManager": "yarn@3.1.1",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  },
   "files": [
     "dist"
   ],
