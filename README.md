@@ -9,6 +9,18 @@ Constellation is [Blockchain.com](https://blockchain.com)'s open sourced compone
 
 ## Installation/Usage
 
+`@blockchain-com/icons` must be built before running repo's storybook, so first:
+
+```
+yarn && yarn workspace @blockchain-com/icons build
+```
+
+After building the icons run storybook with:
+
+```
+yarn storybook
+```
+
 Constellation is mono-repo of various open-sourced packages available on [NPM](https://www.npmjs.com/~blockchain-official/constellation).
 Find more details on each package below.
 
