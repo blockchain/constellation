@@ -1,11 +1,18 @@
 const UTM_REGEX = /(?!&)utm_[^=]*=[^&]*/g
 
-const parseUTM = (query: string): { [key: string]: string } => {
-  const matches = query.match(UTM_REGEX)
+const parseUTM = ({
+  hash,
+  queryString,
+}: {
+  hash: string
+  queryString: string
+}): { [key: string]: string } => {
+  const qsMatches = queryString.match(UTM_REGEX) || []
+  const hashMatches = hash.match(UTM_REGEX) || []
 
-  if (!matches) return {}
+  if (!qsMatches && !hashMatches) return {}
 
-  const values = matches.reduce((obj, param) => {
+  const parsedUTM = [...qsMatches, ...hashMatches].reduce((obj, param) => {
     const keyValue = param.split('=')
 
     let key = keyValue[0].slice(keyValue[0].indexOf('_') + 1)
@@ -19,7 +26,7 @@ const parseUTM = (query: string): { [key: string]: string } => {
     return { ...obj, [key]: value }
   }, {})
 
-  return values
+  return parsedUTM
 }
 
 export default parseUTM
