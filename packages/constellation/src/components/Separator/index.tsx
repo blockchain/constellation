@@ -1,6 +1,6 @@
 import * as RadixSeparator from '@radix-ui/react-separator'
-import { styled } from '@stitches/react'
 import React from 'react'
+import { styled } from 'stitches-nonce/packages/react'
 
 import { SeparatorComponentProps } from './types'
 
@@ -30,6 +30,8 @@ const StyledSeparator = styled(RadixSeparator.Root, {
 /* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
 const Separator = ({ orientation = 'horizontal', ...props }: SeparatorComponentProps) => (
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   <StyledSeparator decorative orientation={orientation} {...props} />
 )
 

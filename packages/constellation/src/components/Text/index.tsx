@@ -1,5 +1,5 @@
-import { styled } from '@stitches/react'
 import React from 'react'
+import { styled } from 'stitches-nonce/packages/react'
 
 import { ColorKeysType } from '../../colors/types'
 import { theme } from '../../stitches.config'

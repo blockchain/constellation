@@ -1,6 +1,6 @@
-import { styled } from '@stitches/react'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
+import { styled } from 'stitches-nonce/packages/react'
 
 import Text from '../Text'
 import Separator from '.'

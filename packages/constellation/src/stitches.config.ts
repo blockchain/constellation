@@ -1,5 +1,5 @@
-import type * as StitchesTypes from '@stitches/react'
-import { createStitches } from '@stitches/react'
+import type * as StitchesTypes from 'stitches-nonce/packages/react'
+import { createStitches } from 'stitches-nonce/packages/react'
 
 import { colors } from './colors'
 
