@@ -4,25 +4,24 @@ import { styled } from 'stitches-nonce/packages/react'
 
 import { SwitchComponentProps } from './types'
 
-// https://www.radix-ui.com/docs/primitives/components/switch
-
-/* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
 const StyledSwitch = styled(RadixSwitch.Root, {
-  all: 'unset',
-  height: 24,
-  width: 48,
-  position: 'relative',
-  backgroundColor: '$grey300',
-  borderRadius: '9999px',
   '&:hover': {
     cursor: 'pointer',
   },
   '&[data-disabled]': {
-    opacity: 0.4,
     '&:hover': {
       cursor: 'not-allowed',
     },
+    opacity: 0.4,
   },
+  all: 'unset',
+  backgroundColor: '$grey300',
+  borderRadius: '9999px',
+  defaultVariants: {
+    color: 'blue',
+  },
+  height: 24,
+  position: 'relative',
   variants: {
     color: {
       blue: {
@@ -33,23 +32,20 @@ const StyledSwitch = styled(RadixSwitch.Root, {
       },
     },
   },
-  defaultVariants: {
-    color: 'blue',
-  },
+  width: 48,
 })
 
 const StyledThumb = styled(RadixSwitch.Thumb, {
-  display: 'block',
-  height: 20,
-  width: 20,
+  '&[data-state="checked"]': { transform: 'translateX(26px)' },
   backgroundColor: '$white900',
   borderRadius: '9999px',
+  display: 'block',
+  height: 20,
   transform: 'translateX(2px)',
   transition: 'transform 100ms',
+  width: 20,
   willChange: 'transform',
-  '&[data-state="checked"]': { transform: 'translateX(26px)' },
 })
-/* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
 const Switch = ({ checked = false, ...props }: SwitchComponentProps) => (
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment

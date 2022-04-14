@@ -4,30 +4,26 @@ import { styled } from 'stitches-nonce/packages/react'
 
 import { SeparatorComponentProps } from './types'
 
-// https://www.radix-ui.com/docs/primitives/components/separator
-
-/* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
 const StyledSeparator = styled(RadixSeparator.Root, {
-  '&[data-orientation=horizontal]': { height: 1, width: '100%', margin: '24px 0' },
-  '&[data-orientation=vertical]': { height: '100%', width: 1, margin: '0 24px' },
+  '&[data-orientation=horizontal]': { height: 1, margin: '24px 0', width: '100%' },
+  '&[data-orientation=vertical]': { height: '100%', margin: '0 24px', width: 1 },
+  defaultVariants: {
+    variant: 'medium',
+  },
   variants: {
     variant: {
-      subtle: {
-        backgroundColor: '$grey100',
+      distinct: {
+        backgroundColor: '$grey300',
       },
       medium: {
         backgroundColor: '$grey200',
       },
-      distinct: {
-        backgroundColor: '$grey300',
+      subtle: {
+        backgroundColor: '$grey100',
       },
     },
   },
-  defaultVariants: {
-    variant: 'medium',
-  },
 })
-/* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
 const Separator = ({ orientation = 'horizontal', ...props }: SeparatorComponentProps) => (
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
