@@ -15,14 +15,13 @@
   "scripts": {
     "prepublish": "yarn build",
     "build": "rimraf dist && rollup -c",
-    "lint:css": "stylelint --cache \"src/**\"",
-    "lint:js": "eslint --cache \"src/**\"",
+    "lint:js": "eslint --cache \"./src/**/*.{ts,tsx}\"",
     "lint:staged": "lint-staged",
     "build:storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "deploy:storybook": "yarn build:storybook && yarn deploy-storybook --existing-output-dir=./storybook-static",
-    "lint": "yarn lint:js && yarn lint:css",
-    "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
+    "lint": "yarn lint:js",
+    "lint:fix": "yarn lint:js --fix",
     "storybook": "start-storybook -p 9009",
     "test": "jest",
     "prepare": "cd .. && husky install constellation/.husky"
@@ -117,9 +116,7 @@
   "lint-staged": {
     "src/**/*.{js,ts,tsx}": [
       "eslint --fix",
-      "yarn test --bail --findRelatedTests"
-    ],
-    "src/**/*.{js,tsx}": [
+      "yarn test --bail --findRelatedTests",
       "stylelint './src/**/*.{js,ts,tsx}'"
     ]
   }
