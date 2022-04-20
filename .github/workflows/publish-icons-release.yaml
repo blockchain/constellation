@@ -1,0 +1,29 @@
+name: Pusblish Icons to NPM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-icons:
+    if: github.event.pull_request.merged && startsWith(github.ref_name, 'release/icons-v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install node.js v14.16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.16
+          cache: "yarn"
+
+      - name: Build @blockchain-com/icons
+        run: yarn workspace @blockchain-com/icons build
+
+      - name: npm publish
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          package: packages/icons/package.json
+          token: ${{ secrets.NPM_TOKEN }}
