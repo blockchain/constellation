@@ -1,4 +1,5 @@
 undecided:
+  - "@blockchain-com/constellation"
   - eslint-config-constellation
-  - "@blockchain-com/icons"
   - prettier-config-constellation
+  - stylelint-config-constellation
