@@ -15,8 +15,8 @@
   "scripts": {
     "prepublish": "yarn build",
     "build": "rimraf dist && rollup -c",
-    "lint:css": "stylelint --cache \"src/**\"",
-    "lint:js": "eslint --cache \"src/**\"",
+    "lint:css": "stylelint --cache \"./src/**/*.{js,ts,tsx}\"",
+    "lint:js": "eslint --cache \"./src/**/*.{js,ts,tsx}\"",
     "lint:staged": "lint-staged",
     "build:storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
@@ -74,7 +74,7 @@
     "eslint-plugin-sort-keys-fix": "1.1.1",
     "eslint-plugin-typescript-sort-keys": "1.5.0",
     "jest": "27.4.7",
-    "lint-staged": "^12.3.4",
+    "lint-staged": "12.3.4",
     "prettier": "2.3.0",
     "prettier-config-constellation": "workspace:*",
     "react": "17.0.2",
@@ -117,9 +117,7 @@
   "lint-staged": {
     "src/**/*.{js,ts,tsx}": [
       "eslint --fix",
-      "yarn test --bail --findRelatedTests"
-    ],
-    "src/**/*.{js,tsx}": [
+      "yarn test --bail --findRelatedTests",
       "stylelint './src/**/*.{js,ts,tsx}'"
     ]
   }
