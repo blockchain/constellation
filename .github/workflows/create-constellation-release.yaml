@@ -1,0 +1,54 @@
+name: Start @blockchain-com/constellation release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Semver type of new version (major / minor / patch)"
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: "development"
+          fetch-depth: 0
+
+      - name: Install node.js v14.16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.16
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Bump version
+        run: yarn workspace @blockchain-com/constellation version ${{ github.event.inputs.version }}
+
+      - name: Get Constellation package version
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: "packages/constellation/package.json"
+          prop_path: "version"
+
+      - name: Adding changes from bump
+        run: git add .
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: release @blockchain-com/constellation@v${{ steps.version.outputs.prop }}
+          title: Release @blockchain-com/constellation@v${{ steps.version.outputs.prop }}"
+          branch: release/constellation-v${{ steps.version.outputs.prop }}
+          base: main
+          delete-branch: true
