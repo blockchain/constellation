@@ -5,11 +5,10 @@ import { ColorKeysType } from '../../colors/types'
 import { theme } from '../../stitches.config'
 import { TextComponentProps } from './types'
 
-/* eslint-disable sort-keys, sort-keys-fix/sort-keys-fix */
 const BaseText = styled('span', {
-  fontFeatureSettings: '"zero", "ss01"',
   color: '$grey800',
   fontFamily: '$inter',
+  fontFeatureSettings: '"zero", "ss01"',
   variants: {
     color: Object.assign(
       {},
@@ -20,87 +19,86 @@ const BaseText = styled('span', {
       })),
     ),
     variant: {
-      display: {
-        fontSize: '$40',
-        fontWeight: 600,
-        fontFeatureSettings: "'zero' on, 'ss01' on",
-      },
-      'title-1': {
-        fontSize: '$32',
-        fontWeight: 600,
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-      },
-      'title-2': {
-        fontSize: '$24',
-        fontWeight: 600,
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-      },
-      'title-3': {
-        fontSize: '$20',
-        fontWeight: 600,
-        fontFeatureSettings: "'zero' on, 'ss01' on",
-      },
-      subheading: {
-        fontSize: '$20',
-        fontWeight: 500,
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-      },
-      'body-mono': {
-        fontSize: '$16',
-        fontWeight: 500,
-        fontFeatureSettings: "'tnum' on, 'lnum' on, 'zero' on, 'ss01' on",
-      },
       'body-1': {
+        fontFeatureSettings: "'ss01' on, 'zero' on",
         fontSize: '$16',
         fontWeight: 500,
-        fontFeatureSettings: "'ss01' on, 'zero' on",
       },
       'body-2': {
+        fontFeatureSettings: "'ss01' on, 'zero' on",
         fontSize: '$16',
         fontWeight: 600,
-        fontFeatureSettings: "'ss01' on, 'zero' on",
       },
-      'paragraph-mono': {
-        fontSize: '$14',
-        fontWeight: 500,
+      'body-mono': {
         fontFeatureSettings: "'tnum' on, 'lnum' on, 'zero' on, 'ss01' on",
-      },
-      'paragraph-1': {
-        fontSize: '$14',
+        fontSize: '$16',
         fontWeight: 500,
-        fontFeatureSettings: "'zero' on, 'ordn' on",
-      },
-      'paragraph-2': {
-        fontSize: '$14',
-        fontWeight: 600,
-        fontFeatureSettings: "'zero' on, 'ss01' on",
       },
       'caption-1': {
+        fontFeatureSettings: "'ss01' on, 'zero' on",
         fontSize: '$12',
         fontWeight: 500,
-        fontFeatureSettings: "'ss01' on, 'zero' on",
       },
       'caption-2': {
+        fontFeatureSettings: "'zero' on, 'ss01' on",
         fontSize: '$12',
         fontWeight: 600,
-        fontFeatureSettings: "'zero' on, 'ss01' on",
       },
-      overline: {
-        fontSize: '$12',
-        fontWeight: 600,
+      display: {
         fontFeatureSettings: "'zero' on, 'ss01' on",
-        textTransform: 'uppercase',
-        letterSpacing: '0.1em',
+        fontSize: '$40',
+        fontWeight: 600,
       },
       micro: {
+        fontFeatureSettings: "'ss01' on, 'zero' on",
         fontSize: '$10',
         fontWeight: 500,
+      },
+      overline: {
+        fontFeatureSettings: "'zero' on, 'ss01' on",
+        fontSize: '$12',
+        fontWeight: 600,
+        letterSpacing: '0.1em',
+        textTransform: 'uppercase',
+      },
+      'paragraph-1': {
+        fontFeatureSettings: "'zero' on, 'ordn' on",
+        fontSize: '$14',
+        fontWeight: 500,
+      },
+      'paragraph-2': {
+        fontFeatureSettings: "'zero' on, 'ss01' on",
+        fontSize: '$14',
+        fontWeight: 600,
+      },
+      'paragraph-mono': {
+        fontFeatureSettings: "'tnum' on, 'lnum' on, 'zero' on, 'ss01' on",
+        fontSize: '$14',
+        fontWeight: 500,
+      },
+      subheading: {
         fontFeatureSettings: "'ss01' on, 'zero' on",
+        fontSize: '$20',
+        fontWeight: 500,
+      },
+      'title-1': {
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+        fontSize: '$32',
+        fontWeight: 600,
+      },
+      'title-2': {
+        fontFeatureSettings: "'ss01' on, 'zero' on",
+        fontSize: '$24',
+        fontWeight: 600,
+      },
+      'title-3': {
+        fontFeatureSettings: "'zero' on, 'ss01' on",
+        fontSize: '$20',
+        fontWeight: 600,
       },
     },
   },
 })
-/* eslint-enable sort-keys, sort-keys-fix/sort-keys-fix */
 
 const Text = ({
   as = 'span',

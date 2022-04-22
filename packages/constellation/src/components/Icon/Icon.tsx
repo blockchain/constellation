@@ -1,8 +1,7 @@
-/* eslint-disable simple-import-sort/imports */
-import React from 'react'
 import * as AccessibleIcon from '@radix-ui/react-accessible-icon'
-import { theme } from '../../stitches.config'
+import React from 'react'
 
+import { theme } from '../../stitches.config'
 import { IconComponentProps } from './types'
 
 const iconSizes = {
