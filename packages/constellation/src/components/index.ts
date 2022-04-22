@@ -1,6 +1,5 @@
 export { default as Button } from './Button'
 export { default as Icon } from './Icon'
-export { default as Popover } from './Popover'
 export { default as Separator } from './Separator'
 export { default as Switch } from './Switch'
 export { default as Text } from './Text'
