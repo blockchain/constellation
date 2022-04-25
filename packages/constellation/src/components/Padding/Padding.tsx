@@ -1,23 +1,7 @@
 import React, { useMemo } from 'react'
 
+import { useEdgeInsetResolver } from './hooks'
 import { PaddingComponent } from './types'
-
-const useEdgeInsetResolver = (
-  all: number | undefined,
-  axis: number | undefined,
-  edge: number,
-): number =>
-  useMemo(() => {
-    if (all !== undefined) {
-      return all
-    }
-
-    if (axis !== undefined) {
-      return axis
-    }
-
-    return edge
-  }, [all, axis, edge])
 
 export const Padding: PaddingComponent = ({
   all,
@@ -26,6 +10,7 @@ export const Padding: PaddingComponent = ({
   horizontal,
   left = 0,
   right = 0,
+  style,
   top = 0,
   vertical,
 }) => {
@@ -41,6 +26,7 @@ export const Padding: PaddingComponent = ({
         paddingLeft,
         paddingRight,
         paddingTop,
+        ...style,
       }}
     >
       {children}

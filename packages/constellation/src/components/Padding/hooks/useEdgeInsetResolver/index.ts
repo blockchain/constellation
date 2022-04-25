@@ -1,0 +1,1 @@
+export { useEdgeInsetResolver } from './useEdgeInsetResolver'
