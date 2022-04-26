@@ -1,0 +1,27 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks'
+import { SeparatedList } from './'
+
+<Meta title='Components/SeparatedList/Intro' component={SeparatedList} />
+
+# SeparatedList
+
+---
+
+This component is a helper to add any separator to a list automatically.
+So if you have a list of items that you want to add separators between them, you can use the SeparatedList component to automatically add the separator
+
+<Canvas>
+  <Story id='components-separatedlist--default' />
+</Canvas>
+
+You can use a custom separator by using the `separatorBuilder` props to pass a custom function that return the separator you want
+
+<Canvas>
+  <Story id='components-separatedlist--custom-separator' />
+</Canvas>
+
+And you can use this to add vertical separators
+
+<Canvas>
+  <Story id='components-separatedlist--add-separtor-to-row' />
+</Canvas>
