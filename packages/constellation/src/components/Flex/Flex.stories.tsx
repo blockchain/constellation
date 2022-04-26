@@ -1,5 +1,5 @@
 import { ComponentMeta } from '@storybook/react'
-import { Expanded } from 'components/Expanded'
+import { FlexGrow } from 'components/FlexGrow'
 import React, { FC } from 'react'
 
 import { Flex, FlexComponent } from '.'
@@ -22,13 +22,13 @@ export const IconListItemExample = () => {
         <GreyCircle />
       </Flex>
 
-      <Expanded>
+      <FlexGrow>
         <Flex gap={6} flexDirection='column'>
           <Text>Title</Text>
 
           <Text>Subtitle</Text>
         </Flex>
-      </Expanded>
+      </FlexGrow>
     </Flex>
   )
 }
