@@ -1,4 +1,4 @@
-name: Pusblish Icons to NPM
+name: Publish Icons to NPM
 
 on:
   push:

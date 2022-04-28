@@ -1,6 +1,6 @@
 import { CSSProperties, FC } from 'react'
 
-export type FlexAlignItems =
+type FlexAlignItems =
   | 'stretch'
   | 'flex-start'
   | 'flex-end'
@@ -9,7 +9,7 @@ export type FlexAlignItems =
   | 'start'
   | 'end'
 
-export type FlexJustifyContent =
+type FlexJustifyContent =
   | 'flex-start'
   | 'flex-end'
   | 'center'
@@ -17,9 +17,9 @@ export type FlexJustifyContent =
   | 'space-around'
   | 'space-evenly'
 
-export type FlexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
+type FlexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
 
-export type FlexProps = {
+type FlexProps = {
   alignItems?: FlexAlignItems
   flexDirection?: FlexDirection
   gap?: number
@@ -27,4 +27,6 @@ export type FlexProps = {
   style?: Omit<CSSProperties, 'alignItems' | 'display' | 'flexDirection' | 'gap' | 'justifyContent'>
 }
 
-export type FlexComponent = FC<FlexProps>
+type FlexComponent = FC<FlexProps>
+
+export type { FlexAlignItems, FlexComponent, FlexDirection, FlexJustifyContent, FlexProps }

@@ -1,7 +1,7 @@
 import { ComponentMeta } from '@storybook/react'
-import { FlexGrow } from 'components/FlexGrow'
 import React, { FC } from 'react'
 
+import { FlexGrow } from '../FlexGrow'
 import { Flex, FlexComponent } from '.'
 
 const flexStory: ComponentMeta<FlexComponent> = {

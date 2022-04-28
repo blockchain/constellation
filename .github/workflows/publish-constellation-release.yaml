@@ -1,4 +1,4 @@
-name: Pusblish Constellation to NPM
+name: Publish Constellation to NPM
 
 on:
   push:
