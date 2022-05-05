@@ -1,9 +1,7 @@
 import * as Icons from '@blockchain-com/icons'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Icon } from 'components'
 import React, { FC } from 'react'
-
-import { colors } from '../../colors'
-import Icon from '.'
 
 const iconNames: string[] = Object.keys(Icons)
 const icons: FC[] = Object.values(Icons)
@@ -32,9 +30,8 @@ const meta = {
       options: iconNames,
     },
     color: {
+      control: { type: 'color' },
       description: 'The rendering color of the icon.',
-      options: Object.keys(colors),
-      type: 'select',
     },
     label: {
       description: 'The label of the icon.',
@@ -47,14 +44,13 @@ const meta = {
   },
   component: Icon,
   title: 'Components/Icon',
-} as unknown as ComponentMeta<typeof Icon>
+} as ComponentMeta<typeof Icon>
 
 const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
 
 Default.args = {
-  color: 'grey800',
   label: 'label',
-  size: 'lg',
+  size: 'large',
 }
 
 export default meta

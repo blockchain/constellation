@@ -1,0 +1,1 @@
+export { isIconColor } from './isIconColor'

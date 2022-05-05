@@ -1,4 +1,5 @@
 const createAlias = require("./utils/createAlias");
+const path = require("path");
 
 module.exports = {
   stories: ['../src/**/*.stories.@(tsx|mdx)'],
@@ -7,5 +8,5 @@ module.exports = {
     config.resolve.alias = createAlias()
     
     return config;
-  }
+  },
 }

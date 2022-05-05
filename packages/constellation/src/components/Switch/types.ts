@@ -1,7 +1,7 @@
-import { SwitchProps } from '@radix-ui/react-switch'
+import { FC } from 'react'
 
-type SwitchComponentProps = SwitchProps & {
-  color?: 'blue' | 'green'
-}
+type SwitchProps = {}
 
-export type { SwitchComponentProps }
+type SwitchComponent = FC<SwitchProps>
+
+export type { SwitchComponent, SwitchProps }

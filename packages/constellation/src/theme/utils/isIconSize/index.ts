@@ -1,0 +1,1 @@
+export { isIconSize } from './isIconSize'

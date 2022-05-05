@@ -1,10 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { Flex } from 'components/Flex'
-import Separator from 'components/Separator'
+import { Flex, SeparatedList, SeparatedListComponent } from 'components'
 import React from 'react'
-
-import { SeparatedList } from './SeparatedList'
-import { SeparatedListComponent } from './types'
 
 const separatedListStoriesMeta: ComponentMeta<SeparatedListComponent> = {
   component: SeparatedList,

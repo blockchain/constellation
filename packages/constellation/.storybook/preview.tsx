@@ -1,6 +1,7 @@
 import { themes } from '@storybook/theming'
-import { ThemeProvider, ThemeMode, useThemeMode } from '../src'
+import { ThemeProvider, ThemeMode, useThemeMode, InterFontProvider } from '../src'
 import { useDarkMode } from 'storybook-dark-mode'
+import React from 'react'
 
 const parameters = {
   darkMode: {
@@ -16,7 +17,9 @@ const decorators = [
 
     return (
       <ThemeProvider theme={theme}>
-        <Story />
+        <InterFontProvider>
+          <Story />
+        </InterFontProvider>
       </ThemeProvider>
     )
   },

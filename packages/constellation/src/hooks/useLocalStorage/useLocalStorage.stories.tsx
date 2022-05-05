@@ -1,7 +1,7 @@
 import { ComponentMeta } from '@storybook/react'
+import { Text } from 'components/Text'
 import React, { FC } from 'react'
 
-import Text from '../../components/Text'
 import { useLocalStorage } from '.'
 
 const useLocalStorageStoriesMeta: ComponentMeta<FC> = {
@@ -17,7 +17,7 @@ const UsageExample = () => {
 
   return (
     <div>
-      <Text color='grey900'>Current theme mode: {themeMode}</Text>
+      <Text color='primary'>Current theme mode: {themeMode}</Text>
       <br />
       <button type='button' onClick={() => setThemeMode('dark')}>
         Dark

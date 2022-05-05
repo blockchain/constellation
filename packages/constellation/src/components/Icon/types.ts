@@ -1,10 +1,14 @@
-import { ColorKeysType } from '../../colors/types'
+import { FC } from 'react'
+import { IconColors } from 'theme'
+import { LiteralStringUnion } from 'utils/LiteralUnion'
 
-export type IconSizesType = 'sm' | 'md' | 'lg'
+export type IconSizesType = 'small' | 'medium' | 'large'
 
-export type IconComponentProps = {
+export type IconProps = {
   children: JSX.Element
-  color?: ColorKeysType
+  color?: LiteralStringUnion<IconColors>
   label: string
-  size?: IconSizesType
+  size?: IconSizesType | number
 }
+
+export type IconComponent = FC<IconProps>

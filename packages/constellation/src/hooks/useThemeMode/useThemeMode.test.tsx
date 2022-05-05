@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks'
+import { darkTheme, theme } from 'theme'
 
-import { darkTheme, lightTheme } from '../../stitches.config'
 import { useThemeMode } from '.'
 import { createMatchMediaMock } from './mocks/matchMedia'
 
@@ -22,7 +22,7 @@ describe('useThemeMode()', () => {
       it('Should return the light color', () => {
         const { result } = renderHook(() => useThemeMode('light'))
 
-        expect(result.current).toBe(lightTheme)
+        expect(result.current).toBe(theme)
       })
     })
 
@@ -38,7 +38,7 @@ describe('useThemeMode()', () => {
       it('Should return the light mode', () => {
         const { result } = renderHook(() => useThemeMode('auto'))
 
-        expect(result.current).toBe(lightTheme)
+        expect(result.current).toBe(theme)
       })
     })
   })
@@ -54,7 +54,7 @@ describe('useThemeMode()', () => {
       it('Should return the light color', () => {
         const { result } = renderHook(() => useThemeMode('light'))
 
-        expect(result.current).toBe(lightTheme)
+        expect(result.current).toBe(theme)
       })
     })
 

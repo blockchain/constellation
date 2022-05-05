@@ -1,4 +1,5 @@
 import blue from './palettes/blue'
+import dark from './palettes/dark'
 import green from './palettes/green'
 import grey from './palettes/grey'
 import orange from './palettes/orange'
@@ -20,6 +21,7 @@ const colors = {
   ...teal,
   ...white,
   ...overlay,
+  ...dark,
 }
 
 export { colors }

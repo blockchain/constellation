@@ -1,7 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Padding, PaddingComponent } from 'components'
 import React from 'react'
-
-import { Padding, PaddingComponent } from '.'
 
 const paddingStoriesMeta: ComponentMeta<PaddingComponent> = {
   argTypes: {
@@ -23,21 +22,21 @@ const Template: ComponentStory<PaddingComponent> = ({ children, ...props }) => (
 
 export const PaddingEdgeInset = Template.bind({})
 PaddingEdgeInset.args = {
-  bottom: 40,
-  left: 20,
-  right: 30,
-  top: 10,
+  bottom: 4,
+  left: 2,
+  right: 3,
+  top: 1,
 }
 
 export const PaddingSymetric = Template.bind({})
 PaddingSymetric.args = {
-  horizontal: 20,
-  vertical: 10,
+  horizontal: 1,
+  vertical: 0.5,
 }
 
 export const PaddingAll = Template.bind({})
 PaddingAll.args = {
-  all: 10,
+  all: 1,
 }
 
 export default paddingStoriesMeta

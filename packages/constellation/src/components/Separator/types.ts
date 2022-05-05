@@ -1,9 +1,10 @@
-import { SeparatorProps } from '@radix-ui/react-separator'
+import { FC } from 'react'
 
-type SeparatorVariants = 'subtle' | 'medium' | 'distinct'
-
-type SeparatorComponentProps = SeparatorProps & {
-  variant: SeparatorVariants
+type SeparatorProps = {
+  decorative?: boolean
+  orientation?: 'vertical' | 'horizontal'
 }
 
-export type { SeparatorComponentProps, SeparatorVariants }
+type SeparatorComponent = FC<SeparatorProps>
+
+export type { SeparatorComponent, SeparatorProps }

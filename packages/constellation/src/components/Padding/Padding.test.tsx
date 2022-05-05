@@ -13,7 +13,7 @@ describe('Padding', () => {
 
     const style = element.getAttribute('style')
 
-    expect(style).toEqual('padding: 0px 0px 0px 0px;')
+    expect(style).toEqual('padding: 0rem 0rem 0rem 0rem;')
   })
 
   it('Should use the all prop  to apply the same padding to all sides', () => {
@@ -25,7 +25,7 @@ describe('Padding', () => {
 
     const style = element.getAttribute('style')
 
-    expect(style).toEqual('padding: 10px 10px 10px 10px;')
+    expect(style).toEqual('padding: 10rem 10rem 10rem 10rem;')
   })
 
   it('Should allow to apply padding only vertically', () => {
@@ -37,7 +37,7 @@ describe('Padding', () => {
 
     const style = element.getAttribute('style')
 
-    expect(style).toEqual('padding: 10px 0px 10px 0px;')
+    expect(style).toEqual('padding: 10rem 0rem 10rem 0rem;')
   })
 
   it('Should allow to apply padding vertically and left', () => {
@@ -49,7 +49,7 @@ describe('Padding', () => {
 
     const style = element.getAttribute('style')
 
-    expect(style).toEqual('padding: 10px 0px 10px 16px;')
+    expect(style).toEqual('padding: 10rem 0rem 10rem 16rem;')
   })
 
   it('Should allow to apply padding horizontal', () => {
@@ -61,7 +61,7 @@ describe('Padding', () => {
 
     const style = element.getAttribute('style')
 
-    expect(style).toEqual('padding: 0px 10px 0px 10px;')
+    expect(style).toEqual('padding: 0rem 10rem 0rem 10rem;')
   })
 
   it('Should allow to apply padding horizontal and top', () => {
@@ -73,7 +73,7 @@ describe('Padding', () => {
 
     const style = element.getAttribute('style')
 
-    expect(style).toEqual('padding: 16px 10px 0px 10px;')
+    expect(style).toEqual('padding: 16rem 10rem 0rem 10rem;')
   })
 
   it('Should allow to apply padding manually to all sides', () => {
@@ -85,6 +85,6 @@ describe('Padding', () => {
 
     const style = element.getAttribute('style')
 
-    expect(style).toEqual('padding: 16px 2px 10px 5px;')
+    expect(style).toEqual('padding: 16rem 2rem 10rem 5rem;')
   })
 })

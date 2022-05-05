@@ -9,7 +9,10 @@
     "module": "ESNext",
     "outDir": "dist",
     "rootDir": "src",
-    "target": "ES6"
+    "target": "ES6",
+    "paths": {
+      "src/*": ["src/*"]
+    }
   },
   "include": ["src", "components/stories"],
   "exclude": ["node_modules", "dist"]

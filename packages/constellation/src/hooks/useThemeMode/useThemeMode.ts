@@ -1,18 +1,19 @@
-import { darkTheme, lightTheme } from '../../stitches.config'
-import { UseThemeMode } from './types'
+import { darkTheme, theme } from 'theme'
 
-const useThemeMode: UseThemeMode = (mode) => {
+import { ThemeModeHook } from './types'
+
+const useThemeMode: ThemeModeHook = (mode) => {
   if (mode === 'auto') {
     const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
 
-    return isDarkMode ? darkTheme : lightTheme
+    return isDarkMode ? darkTheme : theme
   }
 
   if (mode === 'dark') {
     return darkTheme
   }
 
-  return lightTheme
+  return theme
 }
 
 export default useThemeMode

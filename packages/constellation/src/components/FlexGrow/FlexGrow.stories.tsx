@@ -1,33 +1,25 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { Flex } from 'components/Flex'
-import { Padding } from 'components/Padding'
-import React, { FC } from 'react'
-
-import { FlexGrow, FlexGrowComponent } from '.'
+import { ComponentMeta } from '@storybook/react'
+import { Flex, FlexGrow, FlexGrowComponent, Padding } from 'components'
+import React from 'react'
+import { PXToRem } from 'utils'
 
 export default {
   component: FlexGrow,
   title: 'Components/FlexGrow',
 } as ComponentMeta<FlexGrowComponent>
 
-const Box: FC<{ color: string }> = ({ children, color }) => (
-  <div style={{ background: color, color: 'white' }}>
-    <Padding all={16}>{children}</Padding>
-  </div>
-)
-
 export const GrowElementVertically = () => {
   return (
     <Flex flexDirection='column' style={{ height: 600, width: 300 }}>
-      <Padding all={16} style={{ background: 'red', color: 'white' }}>
+      <Padding all={PXToRem(16)} style={{ background: 'red', color: 'white' }}>
         Header
       </Padding>
 
       <FlexGrow style={{ background: 'green', color: 'white' }}>
-        <Padding all={16}>Content</Padding>
+        <Padding all={PXToRem(16)}>Content</Padding>
       </FlexGrow>
 
-      <Padding all={16} style={{ background: 'blue', color: 'white' }}>
+      <Padding all={PXToRem(16)} style={{ background: 'blue', color: 'white' }}>
         Footer
       </Padding>
     </Flex>
