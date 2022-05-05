@@ -2,7 +2,7 @@ import React from 'react'
 
 import { FlexComponent } from './types'
 
-export const Flex: FlexComponent = ({
+const Flex: FlexComponent = ({
   alignItems,
   children,
   flexDirection,
@@ -14,3 +14,5 @@ export const Flex: FlexComponent = ({
     {children}
   </div>
 )
+
+export default Flex

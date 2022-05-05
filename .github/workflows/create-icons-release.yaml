@@ -48,7 +48,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: release @blockchain-com/icons@v${{ steps.version.outputs.prop }}
-          title: Release @blockchain-com/icons@v${{ steps.version.outputs.prop }}"
+          title: Release @blockchain-com/icons@v${{ steps.version.outputs.prop }}
           body: Credit new contributors by updating AUTHORS
           branch: release/icons-v${{ steps.version.outputs.prop }}
           base: main
