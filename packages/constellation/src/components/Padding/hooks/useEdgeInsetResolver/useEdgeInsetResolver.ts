@@ -4,15 +4,15 @@ export const useEdgeInsetResolver = (
   all: number | undefined,
   axis: number | undefined,
   edge: number,
-): number =>
+): string =>
   useMemo(() => {
     if (all !== undefined) {
-      return all
+      return `${all}rem`
     }
 
     if (axis !== undefined) {
-      return axis
+      return `${axis}rem`
     }
 
-    return edge
+    return `${edge}rem`
   }, [all, axis, edge])
