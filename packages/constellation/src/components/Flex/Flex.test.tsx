@@ -18,7 +18,7 @@ describe('Flex', () => {
     const style = container.firstElementChild?.getAttribute('style')
 
     expect(style).toEqual(
-      'align-items: center; display: flex; flex-direction: column; gap: 12px; justify-content: space-between;',
+      'align-items: center; display: flex; flex-direction: column; gap: 12rem; justify-content: space-between;',
     )
   })
 })

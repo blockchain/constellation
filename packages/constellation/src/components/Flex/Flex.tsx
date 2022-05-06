@@ -10,7 +10,16 @@ const Flex: FlexComponent = ({
   justifyContent,
   style,
 }) => (
-  <div style={{ alignItems, display: 'flex', flexDirection, gap, justifyContent, ...style }}>
+  <div
+    style={{
+      alignItems,
+      display: 'flex',
+      flexDirection,
+      gap: `${gap}rem`,
+      justifyContent,
+      ...style,
+    }}
+  >
     {children}
   </div>
 )
