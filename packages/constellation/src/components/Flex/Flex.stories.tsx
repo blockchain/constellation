@@ -1,13 +1,12 @@
 import { ComponentMeta } from '@storybook/react'
+import { Flex, FlexComponent, FlexGrow } from 'components'
 import React, { FC } from 'react'
+import { PXToRem } from 'utils'
 
-import { FlexGrow } from '../FlexGrow'
-import { Flex, FlexComponent } from '.'
-
-const flexStory: ComponentMeta<FlexComponent> = {
+export default {
   component: Flex,
   title: 'Components/Flex',
-}
+} as ComponentMeta<FlexComponent>
 
 const GreyCircle = () => (
   <div style={{ background: 'grey', borderRadius: 12, height: 24, width: 24 }} />
@@ -17,13 +16,13 @@ const Text: FC = ({ children }) => <span style={{ background: 'grey' }}>{childre
 
 export const IconListItemExample = () => {
   return (
-    <Flex gap={6}>
+    <Flex gap={PXToRem(6)}>
       <Flex alignItems='center' justifyContent='center'>
         <GreyCircle />
       </Flex>
 
       <FlexGrow>
-        <Flex gap={6} flexDirection='column'>
+        <Flex gap={PXToRem(6)} flexDirection='column'>
           <Text>Title</Text>
 
           <Text>Subtitle</Text>
@@ -36,13 +35,13 @@ export const IconListItemExample = () => {
 export const AppBarExample = () => {
   return (
     <Flex justifyContent='space-between'>
-      <Flex gap={6} alignItems='center'>
+      <Flex gap={PXToRem(6)} alignItems='center'>
         <GreyCircle />
 
         <span>Title</span>
       </Flex>
 
-      <Flex gap={4}>
+      <Flex gap={PXToRem(4)}>
         <GreyCircle />
         <GreyCircle />
         <GreyCircle />
@@ -51,5 +50,3 @@ export const AppBarExample = () => {
     </Flex>
   )
 }
-
-export default flexStory
