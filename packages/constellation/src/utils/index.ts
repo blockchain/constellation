@@ -1,3 +1,4 @@
+export * from './convertHexToRGBA'
 export { default as debounce } from './debounce'
 export * from './LiteralUnion'
 export { default as parseSymbol } from './parseSymbol'
