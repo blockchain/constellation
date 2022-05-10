@@ -1,4 +1,5 @@
-import { darkTheme, lightTheme } from '../../stitches.config'
+import { darkTheme, lightTheme } from 'themes'
+
 import { UseThemeMode } from './types'
 
 const useThemeMode: UseThemeMode = (mode) => {

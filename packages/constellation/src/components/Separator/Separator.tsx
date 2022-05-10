@@ -1,34 +1,21 @@
-import * as RadixSeparator from '@radix-ui/react-separator'
-import React from 'react'
-import { styled } from 'stitches-nonce/packages/react'
+import { Root } from '@radix-ui/react-separator'
+import React, { CSSProperties, useMemo } from 'react'
+import { useTheme } from 'theme'
 
-import { SeparatorComponentProps } from './types'
+import { SeparatorComponent } from './Separator.types'
 
-const StyledSeparator = styled(RadixSeparator.Root, {
-  '&[data-orientation=horizontal]': { height: 1, margin: '24px 0', width: '100%' },
-  '&[data-orientation=vertical]': { height: '100%', margin: '0 24px', width: 1 },
-  defaultVariants: {
-    variant: 'medium',
-  },
-  variants: {
-    variant: {
-      distinct: {
-        backgroundColor: '$grey300',
-      },
-      medium: {
-        backgroundColor: '$grey200',
-      },
-      subtle: {
-        backgroundColor: '$grey100',
-      },
-    },
-  },
-})
+const Separator: SeparatorComponent = ({ decorative, orientation = 'horizontal', ...props }) => {
+  const theme = useTheme()
 
-const Separator = ({ orientation = 'horizontal', ...props }: SeparatorComponentProps) => (
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  <StyledSeparator decorative orientation={orientation} {...props} />
-)
+  const style: CSSProperties = useMemo(() => {
+    if (orientation === 'vertical') {
+      return { backgroundColor: theme.separator.colors.default, height: '100%', width: 1 }
+    }
+
+    return { backgroundColor: theme.separator.colors.default, height: 1, width: '100%' }
+  }, [orientation, theme])
+
+  return <Root decorative={decorative} orientation={orientation} style={style} {...props} />
+}
 
 export default React.memo(Separator)

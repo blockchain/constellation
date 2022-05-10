@@ -1,83 +1,35 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Text, TextComponent } from 'components'
 import React from 'react'
 
-import { colors } from '../../colors'
-import Text from '.'
-import { TextComponentProps } from './types'
-
-const meta = {
+export default {
   argTypes: {
-    as: {
-      description: 'The rendering element of the component.',
-    },
-    children: {
-      description: 'The text to display.',
-    },
     color: {
-      description: 'The color of the text.',
-      options: Object.keys(colors),
-      type: 'select',
+      defaultValue: 'secondary',
+      options: ['error', 'info', 'primary', 'secondary', 'success', 'warning'],
     },
-    variant: {
-      description: 'The display variant of the component.',
+    ellipsis: {
+      control: { type: 'boolean' },
+      defaultValue: false,
+    },
+    fontSize: {
+      control: { type: 'number' },
+      defaultValue: 1,
     },
   },
   component: Text,
   title: 'Components/Text',
-} as unknown as ComponentMeta<typeof Text>
+} as ComponentMeta<TextComponent>
 
-const Default: ComponentStory<typeof Text> = (args) => <Text {...args}>{args.children}</Text>
+const Template: ComponentStory<TextComponent> = (args) => <Text {...args} data-e2e='w' />
 
-Default.args = { children: 'The quick brown fox jumps over the lazy dog 0123456789' }
-
-const AllVariants: ComponentStory<typeof Text> = (args: TextComponentProps) => {
-  const variants: TextComponentProps['variant'][] = [
-    'display',
-    'title-1',
-    'title-2',
-    'title-3',
-    'subheading',
-    'body-mono',
-    'body-1',
-    'body-2',
-    'paragraph-mono',
-    'paragraph-1',
-    'paragraph-2',
-    'caption-1',
-    'caption-2',
-    'overline',
-    'micro',
-  ]
-
-  return (
-    <div style={{ padding: '20px 40px' }}>
-      {variants.map((variant, i) => (
-        <>
-          <div
-            key={i}
-            style={{
-              alignItems: 'center',
-              display: 'flex',
-              justifyContent: 'space-between',
-              margin: '20px',
-            }}
-          >
-            <Text {...args} variant={variant}>
-              The quick brown fox jumps over the lazy dog 0123456789
-            </Text>
-            <Text>{variant}</Text>
-          </div>
-          <hr />
-        </>
-      ))}
-    </div>
-  )
+export const Default = Template.bind({})
+Default.args = {
+  children: 'The quick brown fox jumps over the lazy dog 0123456789',
 }
 
-AllVariants.parameters = {
-  controls: { exclude: 'variant' },
+export const Ellipses = Template.bind({})
+Ellipses.args = {
+  children: 'The quick brown fox jumps over the lazy dog 0123456789',
+  ellipsis: true,
 }
-
-export { AllVariants, Default }
-
-export default meta

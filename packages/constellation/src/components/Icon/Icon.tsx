@@ -1,26 +1,24 @@
-import * as AccessibleIcon from '@radix-ui/react-accessible-icon'
+import { Root } from '@radix-ui/react-accessible-icon'
 import React from 'react'
+import { useTheme } from 'theme'
 
-import { theme } from '../../stitches.config'
-import { IconComponentProps } from './types'
+import { IconComponent } from './Icon.types'
+import { isIconColor, isIconSize } from './utils'
 
-const iconSizes = {
-  lg: '36px',
-  md: '24px',
-  sm: '16px',
-}
+const Icon: IconComponent = ({ children, color = 'primary', label, size = 'medium' }) => {
+  const theme = useTheme()
 
-const Icon = ({ children, color = 'grey800', label, size = 'md' }: IconComponentProps) => {
-  const fill = theme.colors[color] as unknown as string
+  const fill = isIconColor(theme, color) ? theme.icon.colors[color] : color
+  const sizeNumber = isIconSize(theme, size) ? theme.icon.sizes[size] : size
 
   return (
-    <AccessibleIcon.Root label={label}>
+    <Root label={label}>
       {React.cloneElement(children, {
         fill,
-        style: { boxSizing: 'border-box', height: iconSizes[size], width: iconSizes[size] },
+        style: { boxSizing: 'border-box', height: `${sizeNumber}rem`, width: `${sizeNumber}rem` },
       })}
-    </AccessibleIcon.Root>
+    </Root>
   )
 }
 
-export default React.memo(Icon)
+export default Icon

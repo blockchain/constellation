@@ -1,9 +1,7 @@
 import * as Icons from '@blockchain-com/icons'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Icon, IconComponent } from 'components'
 import React, { FC } from 'react'
-
-import { colors } from '../../colors'
-import Icon from '.'
 
 const iconNames: string[] = Object.keys(Icons)
 const icons: FC[] = Object.values(Icons)
@@ -16,12 +14,12 @@ const iconsMapped = iconNames.reduce((mapped, iconName, index) => {
   }
 
   return {
-    [iconName]: <IconItem />,
     ...mapped,
+    [iconName]: <IconItem />,
   }
 }, {})
 
-const meta = {
+export default {
   argTypes: {
     children: {
       control: {
@@ -32,9 +30,8 @@ const meta = {
       options: iconNames,
     },
     color: {
+      control: { type: 'color' },
       description: 'The rendering color of the icon.',
-      options: Object.keys(colors),
-      type: 'select',
     },
     label: {
       description: 'The label of the icon.',
@@ -42,21 +39,18 @@ const meta = {
     },
     size: {
       control: { type: 'radio' },
+      defaultValue: 'large',
       description: 'The size of the rendered the icon.',
+      options: ['small', 'medium', 'large'],
     },
   },
   component: Icon,
   title: 'Components/Icon',
-} as unknown as ComponentMeta<typeof Icon>
+} as ComponentMeta<IconComponent>
 
-const Default: ComponentStory<typeof Icon> = (args) => <Icon {...args} />
+export const Default: ComponentStory<IconComponent> = (args) => <Icon {...args} />
 
 Default.args = {
-  color: 'grey800',
   label: 'label',
-  size: 'lg',
+  size: 'large',
 }
-
-export default meta
-
-export { Default }

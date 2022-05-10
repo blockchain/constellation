@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks'
+import { darkTheme, lightTheme } from 'themes'
 
-import { darkTheme, lightTheme } from '../../stitches.config'
 import { useThemeMode } from '.'
 import { createMatchMediaMock } from './mocks/matchMedia'
 
