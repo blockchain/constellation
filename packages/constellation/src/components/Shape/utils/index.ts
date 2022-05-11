@@ -1,0 +1,5 @@
+export * from './isShapeBackgroundColor'
+export * from './isShapeBorderColor'
+export * from './isShapeBorderRadius'
+export * from './isShapeBorderWidth'
+export * from './isShapeBoxShadow'

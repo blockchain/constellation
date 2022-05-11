@@ -17,7 +17,8 @@ const UsageExample = () => {
 
   return (
     <div>
-      <Text color='grey900'>Current theme mode: {themeMode}</Text>
+      <Text color='primary'>Current theme mode: {themeMode}</Text>
+
       <br />
       <button type='button' onClick={() => setThemeMode('dark')}>
         Dark
