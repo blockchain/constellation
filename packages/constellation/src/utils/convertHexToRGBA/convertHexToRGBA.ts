@@ -1,15 +1,20 @@
-const convertHexToRGBA = (hexColor: string, opacity = 1): string => {
-  let hex = hexColor.replace('#', '')
+import memoize from 'lodash/memoize'
 
-  if (hex.length === 3) {
-    hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`
-  }
+const convertHexToRGBA = memoize(
+  (hexColor: string, opacity = 1): string => {
+    let hex = hexColor.replace('#', '')
 
-  const r = parseInt(hex.substring(0, 2), 16)
-  const g = parseInt(hex.substring(2, 4), 16)
-  const b = parseInt(hex.substring(4, 6), 16)
+    if (hex.length === 3) {
+      hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`
+    }
 
-  return `rgba(${r}, ${g}, ${b}, ${opacity})`
-}
+    const r = parseInt(hex.substring(0, 2), 16)
+    const g = parseInt(hex.substring(2, 4), 16)
+    const b = parseInt(hex.substring(4, 6), 16)
+
+    return `rgba(${r}, ${g}, ${b}, ${opacity})`
+  },
+  (hexColor: string, opacity) => [hexColor, opacity].join('/'),
+)
 
 export default convertHexToRGBA

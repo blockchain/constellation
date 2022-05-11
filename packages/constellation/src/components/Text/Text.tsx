@@ -1,115 +1,55 @@
+import { useFont } from 'components/Font'
 import React from 'react'
-import { styled } from 'stitches-nonce/packages/react'
 
-import { ColorKeysType } from '../../colors/types'
-import { theme } from '../../stitches.config'
-import { TextComponentProps } from './types'
+import { BaseText, BaseTextProps, Ellipsis, LoadingText } from './components'
+import { TextComponent } from './Text.types'
 
-const BaseText = styled('span', {
-  color: '$grey800',
-  fontFamily: '$inter',
-  fontFeatureSettings: '"zero", "ss01"',
-  variants: {
-    color: Object.assign(
-      {},
-      ...Object.keys(theme.colors).map((color) => ({
-        [color]: {
-          color: theme.colors[color as ColorKeysType],
-        },
-      })),
-    ),
-    variant: {
-      'body-1': {
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-        fontSize: '$16',
-        fontWeight: 500,
-      },
-      'body-2': {
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-        fontSize: '$16',
-        fontWeight: 600,
-      },
-      'body-mono': {
-        fontFeatureSettings: "'tnum' on, 'lnum' on, 'zero' on, 'ss01' on",
-        fontSize: '$16',
-        fontWeight: 500,
-      },
-      'caption-1': {
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-        fontSize: '$12',
-        fontWeight: 500,
-      },
-      'caption-2': {
-        fontFeatureSettings: "'zero' on, 'ss01' on",
-        fontSize: '$12',
-        fontWeight: 600,
-      },
-      display: {
-        fontFeatureSettings: "'zero' on, 'ss01' on",
-        fontSize: '$40',
-        fontWeight: 600,
-      },
-      micro: {
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-        fontSize: '$10',
-        fontWeight: 500,
-      },
-      overline: {
-        fontFeatureSettings: "'zero' on, 'ss01' on",
-        fontSize: '$12',
-        fontWeight: 600,
-        letterSpacing: '0.1em',
-        textTransform: 'uppercase',
-      },
-      'paragraph-1': {
-        fontFeatureSettings: "'zero' on, 'ordn' on",
-        fontSize: '$14',
-        fontWeight: 500,
-      },
-      'paragraph-2': {
-        fontFeatureSettings: "'zero' on, 'ss01' on",
-        fontSize: '$14',
-        fontWeight: 600,
-      },
-      'paragraph-mono': {
-        fontFeatureSettings: "'tnum' on, 'lnum' on, 'zero' on, 'ss01' on",
-        fontSize: '$14',
-        fontWeight: 500,
-      },
-      subheading: {
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-        fontSize: '$20',
-        fontWeight: 500,
-      },
-      'title-1': {
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-        fontSize: '$32',
-        fontWeight: 600,
-      },
-      'title-2': {
-        fontFeatureSettings: "'ss01' on, 'zero' on",
-        fontSize: '$24',
-        fontWeight: 600,
-      },
-      'title-3': {
-        fontFeatureSettings: "'zero' on, 'ss01' on",
-        fontSize: '$20',
-        fontWeight: 600,
-      },
-    },
-  },
-})
-
-const Text = ({
-  as = 'span',
+const Text: TextComponent = ({
   children,
-  color = 'grey800',
-  variant = 'body-1',
+  color = 'primary',
+  ellipsis,
+  fontSize = 1,
+  fontStyle = 'regular',
+  fontWeigth = 'regular',
+  isLoading,
+  lineHeight,
+  textAlign,
   ...props
-}: TextComponentProps) => (
-  <BaseText as={as} color={color} variant={variant} {...props}>
-    {children}
-  </BaseText>
-)
+}) => {
+  const { fontStyles, style } = useFont()
 
-export default React.memo(Text)
+  const textProps: BaseTextProps = {
+    color,
+    fontSize,
+    fontWeigth,
+    lineHeight,
+    textAlign,
+  }
+
+  const finalFontStyle = {
+    ...style,
+    ...fontStyles[fontStyle],
+  }
+
+  if (isLoading) {
+    return (
+      <BaseText {...textProps} {...props} style={finalFontStyle}>
+        <LoadingText />
+      </BaseText>
+    )
+  }
+
+  const text = (
+    <BaseText {...textProps} {...props} style={finalFontStyle}>
+      {children}
+    </BaseText>
+  )
+
+  if (ellipsis) {
+    return <Ellipsis>{text}</Ellipsis>
+  }
+
+  return text
+}
+
+export default Text

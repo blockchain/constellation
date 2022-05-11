@@ -1,7 +1,7 @@
 import { ComponentMeta } from '@storybook/react'
 import React, { FC } from 'react'
 
-import Text from '../../components/Text'
+import { Text } from '../../components/Text'
 import { useLocalStorage } from '.'
 
 const useLocalStorageStoriesMeta: ComponentMeta<FC> = {

@@ -1,0 +1,52 @@
+import { Meta } from '@storybook/addon-docs'
+
+<Meta title='Components/Intro' />
+
+# Components
+
+## File structure
+
+All shared components should be under `/src/components` and they should be exported in the `/src/components/index.ts` file.
+
+Components should follow this file structure
+
+```
+{ComponentName}/
+    index.ts // File to export the components, hooks, theme, utils...
+
+    {ComponentName}.types.ts // Typescript types
+    {ComponentName}.tsx // React component
+    {ComponentName}.styles.ts // Styled components
+    {ComponentName}.stories.tsx // Component story definition
+    {ComponentName}.stories.mdx // Component markdown documentation
+    {ComponentName}.test.tsx // Unit tests
+    {ComponentName}.context.ts // Context
+
+    /utils // Utilities
+    /components // Subset of components
+    /hooks // Component hooks
+
+    /theme
+        index.ts // File to export light/dark/type theme
+        {ComponentName}.theme.ts // Component theme type
+        {ComponentName}.light.ts // Light theme
+        {ComponentName}.dark.ts // Dark theme
+```
+
+## Component Theme
+
+In Constellation the theme is a combination of small independent component themes.
+So, to add a new component theme to Constellation, you need to follow the steps below:
+
+- Create the `theme` folder inside your component folder
+- Add to `{ComponentName}.theme.ts`
+
+```
+type ${ComponentName}Theme = {
+    ... theme properties
+}
+```
+
+- Implement the light and dark themes in the `{ComponentName}.light.ts` and `{ComponentName}.dark.ts`
+- Add the component theme key to `./src/styled.d.ts`
+- Import the component theme in the `./src/themes/theme.light.ts` and `./src/themes/theme.dark.ts`
