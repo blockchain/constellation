@@ -1,10 +1,10 @@
 import { themes } from '@storybook/theming'
-import { ThemeProvider, ThemeMode, useThemeMode } from '../src'
+import { ThemeProvider, ThemeMode, useThemeMode, colors } from '../src'
 import { useDarkMode } from 'storybook-dark-mode'
 
 const parameters = {
   darkMode: {
-    dark: { ...themes.dark, appBg: '#121212' },
+    dark: { ...themes.dark, appBg: colors.dark900 },
   },
 }
 

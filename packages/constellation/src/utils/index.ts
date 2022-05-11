@@ -1,5 +1,6 @@
 export * from './convertHexToRGBA'
 export { default as debounce } from './debounce'
+export * from './elevationShadow'
 export * from './LiteralUnion'
 export { default as parseSymbol } from './parseSymbol'
 export { default as parseUTM } from './parseUTM'
