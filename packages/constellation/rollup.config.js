@@ -8,37 +8,72 @@ import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
+import { visualizer } from "rollup-plugin-visualizer";
 
 const packageJson = require('./package.json')
 
-export default [
-  {
-    external: ['react', 'react-dom', '@babel/runtime'],
-    input: 'src/index.ts',
-    output: [
-      {
-        file: packageJson.main,
-        format: 'cjs',
+export default (args) => {
+  const analyzeBundle = args.analize_bundle ?? false
+  const analyzeBundleJson = args.analize_bundle_json ?? false
+
+  delete args.analize_bundle
+  delete args.analize_bundle_json
+  
+  const plugins = [
+    peerDepsExternal(),
+    resolve(),
+    commonjs(),
+    typescript({ tsconfig: './tsconfig.json' }),
+    babel({ babelHelpers: 'runtime' }),
+    terser(),
+    visualizer({
+      sourcemap: true,
+      json: true
+    }),
+    visualizer({
+      sourcemap: true,
+    }),
+  ]
+
+  if (analyzeBundle) {
+    plugins.push(
+      visualizer({
         sourcemap: true,
-      },
-      {
-        file: packageJson.module,
-        format: 'esm',
+        open: true
+      })
+    )
+  }
+
+  if (analyzeBundleJson) {
+    plugins.push(
+      visualizer({
         sourcemap: true,
-      },
-    ],
-    plugins: [
-      peerDepsExternal(),
-      resolve(),
-      commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
-      babel({ babelHelpers: 'runtime' }),
-      terser(),
-    ],
-  },
-  {
-    input: 'dist/esm/types/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts()],
-  },
-]
+        json: true
+      })
+    )
+  }
+  return [
+    {
+      external: ['react', 'react-dom', '@babel/runtime'],
+      input: 'src/index.ts',
+      output: [
+        {
+          file: packageJson.main,
+          format: 'cjs',
+          sourcemap: true,
+        },
+        {
+          file: packageJson.module,
+          format: 'esm',
+          sourcemap: true,
+        },
+      ],
+      plugins,
+    },
+    {
+      input: 'dist/esm/types/index.d.ts',
+      output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+      plugins: [dts()],
+    },
+  ]
+}

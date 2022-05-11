@@ -58,3 +58,12 @@ If you would like to develop this library while consuming it via another applica
 4. You can now make changes to Constellation components and use them directly in the consuming app!
 
 NOTE: For now you will have to manually rebuild (rerun step 1) after every change to a Constellation component.
+
+### Scripts
+
+- `yarn storybook` - Start and open storybook in the browser
+- `yarn build` - Builds the package
+- `yarn test` - Run all tests
+- `yarn test --watch` - Run jest in watch mode
+- `yarn analize_bundle:open` - Create an bundle report and open in the browser
+- `yarn analize_bundle:json` - Create an bundle report json in `./stats.json`
