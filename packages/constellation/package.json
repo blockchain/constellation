@@ -26,8 +26,8 @@
     "storybook": "start-storybook -p 9009",
     "test": "jest",
     "prepare": "cd .. && husky install constellation/.husky",
-    "analize_bundle:open": "yarn build --analize_bundle",
-    "analize_bundle:json": "yarn build --analize_bundle_json"
+    "analyze_bundle:open": "yarn build --analyze_bundle",
+    "analyze_bundle:json": "yarn build --analyze_bundle_json"
   },
   "devDependencies": {
     "@babel/cli": "7.14.8",

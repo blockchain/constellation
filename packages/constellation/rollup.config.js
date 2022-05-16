@@ -13,11 +13,11 @@ import { visualizer } from "rollup-plugin-visualizer";
 const packageJson = require('./package.json')
 
 export default (args) => {
-  const analyzeBundle = args.analize_bundle ?? false
-  const analyzeBundleJson = args.analize_bundle_json ?? false
+  const analyzeBundle = args.analyze_bundle ?? false
+  const analyzeBundleJson = args.analyze_bundle_json ?? false
 
-  delete args.analize_bundle
-  delete args.analize_bundle_json
+  delete args.analyze_bundle
+  delete args.analyze_bundle_json
   
   const plugins = [
     peerDepsExternal(),
@@ -26,13 +26,6 @@ export default (args) => {
     typescript({ tsconfig: './tsconfig.json' }),
     babel({ babelHelpers: 'runtime' }),
     terser(),
-    visualizer({
-      sourcemap: true,
-      json: true
-    }),
-    visualizer({
-      sourcemap: true,
-    }),
   ]
 
   if (analyzeBundle) {
