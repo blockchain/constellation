@@ -22,7 +22,7 @@ jobs:
       - name: Build @blockchain-com/constellation
         run: yarn workspace @blockchain-com/constellation build
 
-      - name: npm publish
+      - name: NPM publish
         uses: JS-DevTools/npm-publish@v1
         with:
           package: packages/constellation/package.json

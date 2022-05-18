@@ -22,7 +22,7 @@ jobs:
       - name: Build @blockchain-com/icons
         run: yarn workspace @blockchain-com/icons build
 
-      - name: npm publish
+      - name: NPM publish
         uses: JS-DevTools/npm-publish@v1
         with:
           package: packages/icons/package.json
