@@ -31,6 +31,9 @@ jobs:
       - name: Install dependencies
         run: yarn
 
+      - name: Build optimized icons
+        run: yarn workspace @blockchain-com/icons build
+
       - name: Bump version
         run: yarn workspace @blockchain-com/icons version ${{ github.event.inputs.version }}
 
