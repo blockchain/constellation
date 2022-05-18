@@ -3642,6 +3642,7 @@ __metadata:
     eslint-plugin-sort-keys-fix: 1.1.1
     eslint-plugin-typescript-sort-keys: 1.5.0
     jest: 27.4.7
+    jest-styled-components: ^6.3.4
     lint-staged: 12.3.4
     lodash: ^4.17.21
     prettier: 2.3.0
@@ -10532,6 +10533,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "css@npm:2.2.4"
+  dependencies:
+    inherits: ^2.0.3
+    source-map: ^0.6.1
+    source-map-resolve: ^0.5.2
+    urix: ^0.1.0
+  checksum: a35d483c5ccc04bcde3b1e7393d58ad3eee1dd6956df0f152de38e46a17c0ee193c30eec6b1e59831ad0e74599385732000e95987fcc9cb2b16c6d951bae49e1
+  languageName: node
+  linkType: hard
+
 "css@npm:^3.0.0":
   version: 3.0.0
   resolution: "css@npm:3.0.0"
@@ -15268,6 +15281,17 @@ fsevents@^1.2.7:
     pretty-format: ^27.5.1
     semver: ^7.3.2
   checksum: a5cfadf0d21cd76063925d1434bc076443ed6d87847d0e248f0b245f11db3d98ff13e45cc03b15404027dabecd712d925f47b6eae4f64986f688640a7d362514
+  languageName: node
+  linkType: hard
+
+"jest-styled-components@npm:^6.3.4":
+  version: 6.3.4
+  resolution: "jest-styled-components@npm:6.3.4"
+  dependencies:
+    css: ^2.2.4
+  peerDependencies:
+    styled-components: ^2 || ^3 || ^4
+  checksum: ea3c526c44665fa6e5329618d096584422e1e9cda7b033629f36a645a3f549c3688fa86251fa5650c4afacd6492728d6368e27a76d47ca67d3737d019eeceebd
   languageName: node
   linkType: hard
 
@@ -20362,7 +20386,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"source-map-resolve@npm:^0.5.0":
+"source-map-resolve@npm:^0.5.0, source-map-resolve@npm:^0.5.2":
   version: 0.5.3
   resolution: "source-map-resolve@npm:0.5.3"
   dependencies:

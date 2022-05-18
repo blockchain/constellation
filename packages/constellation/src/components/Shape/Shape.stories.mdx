@@ -1,0 +1,41 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+
+<Meta title='Components/Shape/Intro' />
+
+# Shapes
+
+Here we have the Box and Circle components that should help you define a region in your UI with background color, border curve, and elevation styles.
+
+These components work by giving you a set of values that come from the theme to style your region, like background color that you can choose from the default and light backgrounds, and they will follow the light/dark theme colors
+
+## Box example
+
+This is how you can style outline and elevated cards
+
+<Canvas>
+  <Story id='components-shape-box--outlined-card' />
+</Canvas>
+
+<Canvas>
+  <Story id='components-shape-box--elevated-card' />
+</Canvas>
+
+[Box documentation](/docs/components-shape-box--default)
+
+## Circle example
+
+This is how you can style an outlined, elevated with custom background color
+
+<Canvas>
+  <Story id='components-shape-circle--circular-icon-shape' />
+</Canvas>
+
+<Canvas>
+  <Story id='components-shape-circle--outlined-circular-icon-shape' />
+</Canvas>
+
+<Canvas>
+  <Story id='components-shape-circle--elevated-circular-icon-shape' />
+</Canvas>
+
+[Circle documentation](/docs/components-shape-circle--default)
