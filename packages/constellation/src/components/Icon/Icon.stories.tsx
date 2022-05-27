@@ -3,32 +3,13 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import { Icon, IconComponent } from 'components'
 import React, { FC } from 'react'
 
-const iconNames: string[] = Object.keys(Icons)
-const icons: FC[] = Object.values(Icons)
-
-const iconsMapped = iconNames.reduce((mapped, iconName, index) => {
-  const IconItem = icons[index]
-
-  if (!IconItem) {
-    return mapped
-  }
-
-  return {
-    ...mapped,
-    [iconName]: <IconItem />,
-  }
-}, {})
+import { createIconStorybookSelect } from './utils/createIconStorybookSelect'
 
 export default {
   argTypes: {
-    children: {
-      control: {
-        type: 'select',
-      },
+    children: createIconStorybookSelect({
       defaultValue: 'IconActivity',
-      mapping: iconsMapped,
-      options: iconNames,
-    },
+    }),
     color: {
       control: { type: 'color' },
       description: 'The rendering color of the icon.',
@@ -48,6 +29,11 @@ export default {
   title: 'Components/Icon',
 } as ComponentMeta<IconComponent>
 
+const args: ComponentMeta<IconComponent> = {
+  argTypes: {
+    color: {},
+  },
+}
 export const Default: ComponentStory<IconComponent> = (args) => <Icon {...args} />
 
 Default.args = {
