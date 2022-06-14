@@ -10,18 +10,16 @@ import smoke from './palettes/smoke'
 import teal from './palettes/teal'
 import white from './palettes/white'
 
-const colors = {
-  ...blue,
-  ...dark,
-  ...green,
-  ...grey,
-  ...smoke,
-  ...orange,
-  ...purple,
-  ...red,
-  ...teal,
-  ...white,
-  ...overlay,
+export const colors = {
+  blue,
+  dark,
+  green,
+  grey,
+  orange,
+  overlay,
+  purple,
+  red,
+  smoke,
+  teal,
+  white,
 }
-
-export { colors }
