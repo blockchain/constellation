@@ -4520,8 +4520,8 @@ __metadata:
     "@babel/preset-react": 7.14.5
     "@babel/runtime": 7.16.7
     "@blockchain-com/icons": "workspace:*"
-    "@luigiminardim/storybook-addon-globals-controls": ^0.1.3
-    "@mdx-js/react": ^1.6.22
+    "@luigiminardim/storybook-addon-globals-controls": 0.1.3
+    "@mdx-js/react": 1.6.22
     "@radix-ui/colors": 0.1.8
     "@radix-ui/react-accessible-icon": 0.1.4
     "@radix-ui/react-avatar": 0.1.3
@@ -4539,16 +4539,16 @@ __metadata:
     "@rollup/plugin-commonjs": 21.0.1
     "@rollup/plugin-node-resolve": 13.1.2
     "@rollup/plugin-typescript": 8.3.0
-    "@storybook/addon-actions": ^6.5.9
-    "@storybook/addon-docs": ^6.5.9
-    "@storybook/addon-essentials": ^6.5.9
-    "@storybook/addon-interactions": ^6.5.9
-    "@storybook/addon-links": ^6.5.9
-    "@storybook/addon-postcss": ^2.0.0
-    "@storybook/builder-webpack4": ^6.5.9
-    "@storybook/manager-webpack4": ^6.5.9
-    "@storybook/react": ^6.5.9
-    "@storybook/testing-library": ^0.0.13
+    "@storybook/addon-actions": 6.5.9
+    "@storybook/addon-docs": 6.5.9
+    "@storybook/addon-essentials": 6.5.9
+    "@storybook/addon-interactions": 6.5.9
+    "@storybook/addon-links": 6.5.9
+    "@storybook/addon-postcss": 2.0.0
+    "@storybook/builder-webpack4": 6.5.9
+    "@storybook/manager-webpack4": 6.5.9
+    "@storybook/react": 6.5.9
+    "@storybook/testing-library": 0.0.13
     "@testing-library/jest-dom": 5.16.1
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
@@ -4559,10 +4559,10 @@ __metadata:
     "@types/styled-components": 4.4.1
     "@typescript-eslint/eslint-plugin": 4.17.0
     "@typescript-eslint/parser": 4.22.0
-    autoprefixer: ^10.4.7
-    babel-loader: ^8.2.5
+    autoprefixer: 10.4.7
+    babel-loader: 8.2.5
     babel-plugin-module-resolver: 4.1.0
-    cssnano: ^5.1.12
+    cssnano: 5.1.12
     eslint: 7.21.0
     eslint-config-airbnb: 18.2.1
     eslint-config-constellation: "workspace:*"
@@ -4582,7 +4582,7 @@ __metadata:
     eslint-plugin-typescript-sort-keys: 1.5.0
     jest: 27.4.7
     lint-staged: 12.3.4
-    postcss: ^8.4.14
+    postcss: 8.4.14
     prettier: 2.3.0
     prettier-config-constellation: "workspace:*"
     react: 17.0.2
@@ -4591,16 +4591,16 @@ __metadata:
     rollup: 2.63.0
     rollup-plugin-dts: 4.1.0
     rollup-plugin-peer-deps-external: 2.2.4
-    rollup-plugin-postcss: ^4.0.2
+    rollup-plugin-postcss: 4.0.2
     rollup-plugin-terser: 7.0.2
-    rollup-plugin-visualizer: ^5.6.0
+    rollup-plugin-visualizer: 5.6.0
     stylelint: 13.12.0
     stylelint-config-constellation: "workspace:*"
     stylelint-config-prettier: 8.0.2
     stylelint-config-recommended: 4.0.0
     stylelint-prettier: 1.2.0
-    tailwindcss: ^3.1.4
-    tailwindcss-radix: ^2.3.1
+    tailwindcss: 3.1.4
+    tailwindcss-radix: 2.3.1
     ts-jest: 27.1.3
     ts-node: 10.4.0
     typescript: 4.2.4
@@ -5284,7 +5284,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@luigiminardim/storybook-addon-globals-controls@npm:^0.1.3":
+"@luigiminardim/storybook-addon-globals-controls@npm:0.1.3":
   version: 0.1.3
   resolution: "@luigiminardim/storybook-addon-globals-controls@npm:0.1.3"
   peerDependencies:
@@ -5331,7 +5331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:^1.6.22":
+"@mdx-js/react@npm:1.6.22, @mdx-js/react@npm:^1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/react@npm:1.6.22"
   peerDependencies:
@@ -6287,7 +6287,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-actions@npm:6.5.9, @storybook/addon-actions@npm:^6.5.9":
+"@storybook/addon-actions@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/addon-actions@npm:6.5.9"
   dependencies:
@@ -6379,7 +6379,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:6.5.9, @storybook/addon-docs@npm:^6.5.9":
+"@storybook/addon-docs@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/addon-docs@npm:6.5.9"
   dependencies:
@@ -6426,7 +6426,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-essentials@npm:^6.5.9":
+"@storybook/addon-essentials@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/addon-essentials@npm:6.5.9"
   dependencies:
@@ -6486,7 +6486,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-interactions@npm:^6.5.9":
+"@storybook/addon-interactions@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/addon-interactions@npm:6.5.9"
   dependencies:
@@ -6517,7 +6517,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^6.5.9":
+"@storybook/addon-links@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/addon-links@npm:6.5.9"
   dependencies:
@@ -6595,7 +6595,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-postcss@npm:^2.0.0":
+"@storybook/addon-postcss@npm:2.0.0":
   version: 2.0.0
   resolution: "@storybook/addon-postcss@npm:2.0.0"
   dependencies:
@@ -6708,7 +6708,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-webpack4@npm:6.5.9, @storybook/builder-webpack4@npm:^6.5.9":
+"@storybook/builder-webpack4@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/builder-webpack4@npm:6.5.9"
   dependencies:
@@ -7126,7 +7126,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-webpack4@npm:6.5.9, @storybook/manager-webpack4@npm:^6.5.9":
+"@storybook/manager-webpack4@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/manager-webpack4@npm:6.5.9"
   dependencies:
@@ -7261,7 +7261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:^6.5.9":
+"@storybook/react@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/react@npm:6.5.9"
   dependencies:
@@ -7421,7 +7421,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/testing-library@npm:^0.0.13":
+"@storybook/testing-library@npm:0.0.13":
   version: 0.0.13
   resolution: "@storybook/testing-library@npm:0.0.13"
   dependencies:
@@ -9659,7 +9659,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.7":
+"autoprefixer@npm:10.4.7":
   version: 10.4.7
   resolution: "autoprefixer@npm:10.4.7"
   dependencies:
@@ -9740,7 +9740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.0.0, babel-loader@npm:^8.2.5":
+"babel-loader@npm:8.2.5, babel-loader@npm:^8.0.0":
   version: 8.2.5
   resolution: "babel-loader@npm:8.2.5"
   dependencies:
@@ -11723,7 +11723,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano@npm:^5.0.1, cssnano@npm:^5.1.12":
+"cssnano@npm:5.1.12, cssnano@npm:^5.0.1":
   version: 5.1.12
   resolution: "cssnano@npm:5.1.12"
   dependencies:
@@ -20006,6 +20006,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:8.4.14, postcss@npm:^8.4.14":
+  version: 8.4.14
+  resolution: "postcss@npm:8.4.14"
+  dependencies:
+    nanoid: ^3.3.4
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: fe58766ff32e4becf65a7d57678995cfd239df6deed2fe0557f038b47c94e4132e7e5f68b5aa820c13adfec32e523b693efaeb65798efb995ce49ccd83953816
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^7.0.14, postcss@npm:^7.0.26, postcss@npm:^7.0.32, postcss@npm:^7.0.6":
   version: 7.0.35
   resolution: "postcss@npm:7.0.35"
@@ -20024,17 +20035,6 @@ __metadata:
     picocolors: ^0.2.1
     source-map: ^0.6.1
   checksum: 4ac793f506c23259189064bdc921260d869a115a82b5e713973c5af8e94fbb5721a5cc3e1e26840500d7e1f1fa42a209747c5b1a151918a9bc11f0d7ed9048e3
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.4.14":
-  version: 8.4.14
-  resolution: "postcss@npm:8.4.14"
-  dependencies:
-    nanoid: ^3.3.4
-    picocolors: ^1.0.0
-    source-map-js: ^1.0.2
-  checksum: fe58766ff32e4becf65a7d57678995cfd239df6deed2fe0557f038b47c94e4132e7e5f68b5aa820c13adfec32e523b693efaeb65798efb995ce49ccd83953816
   languageName: node
   linkType: hard
 
@@ -21501,7 +21501,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-postcss@npm:^4.0.2":
+"rollup-plugin-postcss@npm:4.0.2":
   version: 4.0.2
   resolution: "rollup-plugin-postcss@npm:4.0.2"
   dependencies:
@@ -21538,7 +21538,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-visualizer@npm:^5.6.0":
+"rollup-plugin-visualizer@npm:5.6.0":
   version: 5.6.0
   resolution: "rollup-plugin-visualizer@npm:5.6.0"
   dependencies:
@@ -23062,14 +23062,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss-radix@npm:^2.3.1":
+"tailwindcss-radix@npm:2.3.1":
   version: 2.3.1
   resolution: "tailwindcss-radix@npm:2.3.1"
   checksum: 79082edfaf64461d97c382c0de541b2506d20f207a910292f84862f2e7a1eb6f024e466b7f4027e05282fc01a8c92154de3c96fa8f3ee81aeea39e3318aa064d
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.1.4":
+"tailwindcss@npm:3.1.4":
   version: 3.1.4
   resolution: "tailwindcss@npm:3.1.4"
   dependencies:
