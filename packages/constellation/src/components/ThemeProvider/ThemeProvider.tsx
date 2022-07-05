@@ -18,6 +18,7 @@ const ThemeProvider = ({
   useEffect(() => {
     let newColorOverrideStyles = {}
 
+    // eslint-disable-next-line array-callback-return
     Object.keys(colorOverride).map((color) => {
       newColorOverrideStyles = {
         ...newColorOverrideStyles,

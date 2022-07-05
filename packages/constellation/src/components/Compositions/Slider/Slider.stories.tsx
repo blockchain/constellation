@@ -14,7 +14,7 @@ export default {
   title: 'Compositions/Slider',
 } as ComponentMeta<SliderComponent>
 
-const Template: ComponentStory<SliderComponent> = ({ value: defaultValue = 0, ...args }) => {
+const Template: ComponentStory<SliderComponent> = () => {
   return <Slider min={0} max={100} step={1} />
 }
 
