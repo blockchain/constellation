@@ -8,7 +8,8 @@ import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
-import { visualizer } from "rollup-plugin-visualizer";
+import { visualizer } from 'rollup-plugin-visualizer'
+import postcss from 'rollup-plugin-postcss'
 
 const packageJson = require('./package.json')
 
@@ -18,11 +19,17 @@ export default (args) => {
 
   delete args.analyze_bundle
   delete args.analyze_bundle_json
-  
+
   const plugins = [
     peerDepsExternal(),
-    resolve(),
+    postcss({
+      config: {
+        path: './postcss.config.js',
+      },
+      extensions: ['.css'],
+    }),
     commonjs(),
+    resolve(),
     typescript({ tsconfig: './tsconfig.json' }),
     babel({ babelHelpers: 'runtime' }),
     terser(),
@@ -32,8 +39,8 @@ export default (args) => {
     plugins.push(
       visualizer({
         sourcemap: true,
-        open: true
-      })
+        open: true,
+      }),
     )
   }
 
@@ -41,8 +48,8 @@ export default (args) => {
     plugins.push(
       visualizer({
         sourcemap: true,
-        json: true
-      })
+        json: true,
+      }),
     )
   }
   return [
@@ -62,6 +69,38 @@ export default (args) => {
         },
       ],
       plugins,
+    },
+    {
+      input: 'src/components/styles.css',
+      output: [
+        {
+          file: `dist/esm/types/components/styles.css`,
+        },
+      ],
+      plugins: [
+        postcss({
+          config: {
+            path: './postcss.config.js',
+          },
+        }),
+        ,
+      ],
+    },
+    {
+      input: 'src/components/styles.css',
+      output: [
+        {
+          file: `dist/cjs/types/components/styles.css`,
+        },
+      ],
+      plugins: [
+        postcss({
+          config: {
+            path: './postcss.config.js',
+          },
+        }),
+        ,
+      ],
     },
     {
       input: 'dist/esm/types/index.d.ts',

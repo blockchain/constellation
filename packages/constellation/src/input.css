@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Overlay */
+        --color-overlay-dark-000: rgba(13, 53, 120, 0.06);
+        --color-overlay-dark-100: rgba(5, 24, 61, 0.1);
+        --color-overlay-dark-200: rgba(5, 24, 61, 0.2);
+        --color-overlay-dark-400: rgba(5, 24, 61, 0.4);
+        --color-overlay-dark-600: rgba(3, 17, 47, 0.6);
+        --color-overlay-dark-800: rgba(18, 29, 51, 0.8);
+
+        --color-overlay-light-060: rgba(255, 255, 255, 0.06);
+        --color-overlay-light-100: rgba(255, 255, 255, 0.1);
+        --color-overlay-light-200: rgba(255, 255, 255, 0.2);
+        --color-overlay-light-400: rgba(255, 255, 255, 0.4);
+        --color-overlay-light-600: rgba(255, 255, 255, 0.6);
+        --color-overlay-light-800: rgba(255, 255, 255, 0.8);
+        --color-overlay-light-900: #ffffff;
+
+        /* Blue */
+        --color-blue-000: #ECF5FE;
+        --color-blue-100: #D8EBFD;
+        --color-blue-200: #BBDBFC;
+        --color-blue-300: #85B5F8;
+        --color-blue-400: #619FF7;
+        --color-blue-500: #3D89F5;
+        --color-blue-600: #0C6CF2;
+        --color-blue-700: #1656B9;
+        --color-blue-800: #144699;
+        --color-blue-900: #0D3578;
+
+        /* Green */
+        --color-green-000: #E6FAEC;
+        --color-green-100: #D1F0DB;
+        --color-green-200: #AEE6CA;
+        --color-green-300: #8BDCB3;
+        --color-green-400: #17CE73;
+        --color-green-500: #00B26B;
+        --color-green-600: #00994C;
+        --color-green-700: #006633;
+        --color-green-800: #004C26;
+        --color-green-900: #003319;
+
+        /* Red */
+        --color-red-000: #FFD9D6;
+        --color-red-100: #FFECEB;
+        --color-red-200: #FFC3BF;
+        --color-red-300: #F6A7A1;
+        --color-red-400: #FF3344;
+        --color-red-500: #EA1F30;
+        --color-red-600: #CF1726;
+        --color-red-700: #A50D0D;
+        --color-red-800: #8D0B0B;
+        --color-red-900: #790606;
+
+        /* Orange */
+        --color-orange-000: #FFF6EB;
+        --color-orange-100: #FFECD6;
+        --color-orange-200: #FFE1BF;
+        --color-orange-300: #F6CEA1;
+        --color-orange-400: #FFA133;
+        --color-orange-500: #EA8D1F;
+        --color-orange-600: #D46A00;
+        --color-orange-700: #AF5200;
+        --color-orange-800: #8C4100;
+        --color-orange-900: #6A2E00;
+
+        /* Purple */
+        --color-purple-000: #EFECFE;
+        --color-purple-100: #DED8FD;
+        --color-purple-200: #C6BBFC;
+        --color-purple-300: #ADA6FF;
+        --color-purple-400: #9080FF;
+        --color-purple-500: #7349F2;
+        --color-purple-600: #5322E5;
+        --color-purple-700: #451DBF;
+        --color-purple-800: #371799;
+        --color-purple-900: #250B73;
+
+        /* Teal */
+        --color-teal-000: #E6F8FA;
+        --color-teal-100: #D1EDF0;
+        --color-teal-200: #AEE1E6;
+        --color-teal-300: #6CD0D9;
+        --color-teal-400: #00B6C7;
+        --color-teal-500: #12A5B2;
+        --color-teal-600: #0E828C;
+        --color-teal-700: #055E66;
+        --color-teal-800: #08474C;
+        --color-teal-900: #052F33;
+
+        /* Grey */
+        --color-grey-000: #F0F2F7;
+        --color-grey-100: #DFE3EB;
+        --color-grey-200: #CCD2DE;
+        --color-grey-300: #B1B8C7;
+        --color-grey-400: #98A1B2;
+        --color-grey-500: #828B9E;
+        --color-grey-600: #677184;
+        --color-grey-700: #50596B;
+        --color-grey-800: #353F52;
+        --color-grey-900: #121D33;
+
+        /* Darkmode */
+        --color-dark-000: #D2D4D6;
+        --color-dark-100: #B8B9BD;
+        --color-dark-200: #989BA1;
+        --color-dark-300: #797D84;
+        --color-dark-400: #63676F;
+        --color-dark-500: #4D515B;
+        --color-dark-600: #3B3E46;
+        --color-dark-700: #2C3038;
+        --color-dark-800: #20242C;
+        --color-dark-900: #0E121B;
+
+        /* Tiers */
+        --color-tier-silver: #C2C9D6;
+        --color-tier-gold: #F5B73D;
+
+        /* Black and White */
+        --color-black: #000000;
+        --color-white: #FFFFFF;
+    }
+
+    .theme-light {
+        --color-title: var(--color-grey-900);
+        --color-body: var(--color-grey-800);
+        --color-overlay: var(--color-overlay-dark-600);
+        --color-muted: var(--color-grey-600);
+        --color-dark: var(--color-grey-300);
+        --color-medium: var(--color-grey-100);
+        --color-primary: var(--color-blue-600);
+        --color-success: var(--color-green-600);
+        --color-warning: var(--color-orange-600);
+        --color-error: var(--color-red-600);
+        --color-background-light: var(--color-grey-000);
+        --color-background: var(--color-white);
+        --color-background-blue: var(--color-blue-000);
+        --color-background-green: var(--color-green-100);
+        --color-background-red: var(--color-red-100);
+        --color-background-orange: var(--color-orange-100);
+
+        --shadow-control: 0px 3px 8px rgba(0, 0, 0, 0.15);
+        --shadow-control-sm: 0px 3px 1px rgba(0, 0, 0, 0.06);
+    }
+
+    .theme-dark {
+        --color-title: var(--color-white);
+        --color-body: var(--color-dark-200);
+        --color-overlay: var(--color-overlay-dark-800);
+        --color-muted: var(--color-dark-400);
+        --color-dark: var(--color-dark-700);
+        --color-medium: var(--color-dark-600);
+        --color-primary: var(--color-blue-400);
+        --color-success: var(--color-green-400);
+        --color-warning: var(--color-orange-400);
+        --color-error: var(--color-red-700);
+        --color-background-light: var(--color-dark-800);
+        --color-background: var(--color-dark-900);
+        --color-background-blue: var(--color-dark-600);
+        --color-background-green: var(--color-green-100);
+        --color-background-red: var(--color-red-100);
+        --color-background-orange: var(--color-orange-100);
+
+        --shadow-control: 0px 3px 8px rgba(0, 0, 0, 0.12);
+        --shadow-control-sm: 0px 3px 1px rgba(0, 0, 0, 0.12);
+    }
+}  

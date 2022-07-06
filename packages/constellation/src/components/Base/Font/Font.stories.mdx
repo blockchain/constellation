@@ -1,0 +1,33 @@
+import { Meta } from '@storybook/addon-docs'
+
+<Meta title='Base/Font/Intro' />
+
+# Font
+
+Constellation is built to use Inter font and uses it by default.
+
+## Custom font
+
+To use a custom font, you need to load the font in any way that is best for your project. Then you can create a new font context by using the `createFont` utility.
+See the example below to create a custom font provider:
+
+```
+const { Provider: RobotoFontProvider } = createFont({
+  fontStyles: {
+    italic: {
+      fontStyle: 'italic',
+    },
+    numeric: {
+      fontStyle: 'normal',
+    },
+    regular: {
+      fontStyle: 'normal',
+    },
+  },
+  style: {
+    fontFamily: "Roboto, sans-serif",
+  },
+})
+```
+
+Then you use the `RobotoFontProvider` to wrap the application section you want to use your new font. And now all text/typography components below the provider will consume your new font

@@ -1,25 +1,29 @@
-import { themes } from '@storybook/theming'
-import { ThemeProvider, ThemeMode, useThemeMode, colors } from '../src'
-import { useDarkMode } from 'storybook-dark-mode'
+import { withGlobals } from '@luigiminardim/storybook-addon-globals-controls'
+import React from 'react'
+import { ThemeProvider } from '../src'
 
-const parameters = {
+export const globalTypes = {
   darkMode: {
-    dark: { ...themes.dark, appBg: colors.dark900 },
+    name: 'Dark Mode',
+    description: 'Sets the dark mode.',
+    defaultValue: false,
+    control: { type: 'boolean' },
+  },
+  colorOverride: {
+    name: 'Color Override',
+    description: 'Sets the color override.',
+    defaultValue: {},
+    control: { type: 'object' },
   },
 }
 
-const decorators = [
-  (Story) => {
-    const themeMode: ThemeMode = useDarkMode() ? 'dark' : 'light'
+const withDisplayGlobals = withGlobals((Story, globalValues) => (
+  <ThemeProvider
+    theme={globalValues.darkMode ? 'dark' : 'light'}
+    colorOverride={globalValues.colorOverride}
+  >
+    <Story />
+  </ThemeProvider>
+))
 
-    const theme = useThemeMode(themeMode)
-
-    return (
-      <ThemeProvider theme={theme}>
-        <Story />
-      </ThemeProvider>
-    )
-  },
-]
-
-export { parameters, decorators }
+export const decorators = [withDisplayGlobals]
