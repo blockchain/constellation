@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import '../styles.css'
 
 import React, { useEffect, useState } from 'react'
