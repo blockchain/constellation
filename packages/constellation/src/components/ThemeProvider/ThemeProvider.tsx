@@ -1,33 +1,19 @@
 /* eslint-disable import/no-unresolved */
 import '../styles.css'
 
-import React, { useEffect, useState } from 'react'
+import React, { CSSProperties, useMemo } from 'react'
 
-const ThemeProvider = ({
-  children,
-  theme,
-  colorOverride = {},
-}: {
-  children: React.ReactNode
-  colorOverride: {
-    primary?: string
-  }
-  theme: string
-}) => {
-  const [colorOverrideStyles, setColorOverrideStyles] = useState({})
+import { ThemeProviderComponent } from './ThemeProvider.types'
 
-  useEffect(() => {
-    let newColorOverrideStyles = {}
-
-    // eslint-disable-next-line array-callback-return
-    Object.keys(colorOverride).map((color) => {
-      newColorOverrideStyles = {
-        ...newColorOverrideStyles,
+const ThemeProvider: ThemeProviderComponent = ({ children, theme, colorOverride = {} }) => {
+  const colorOverrideStyles = useMemo((): CSSProperties => {
+    return Object.keys(colorOverride).reduce(
+      (newColorOverride, color) => ({
+        ...newColorOverride,
         [`--color-${color}`]: colorOverride[color as keyof typeof colorOverride],
-      }
-    })
-
-    setColorOverrideStyles(newColorOverrideStyles)
+      }),
+      {},
+    )
   }, [colorOverride])
 
   return (
