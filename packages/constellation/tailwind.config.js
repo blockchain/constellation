@@ -163,6 +163,13 @@ module.exports = {
       dropShadow: {
         control: ['var(--shadow-control)', 'var(--shadow-control-sm)'],
       },
+      font: {
+        italic: ['font-feature-settings: "zero" on, "ss01" on', 'font-style: italic'],
+        numeric: [
+          'font-feature-settings: "tnum" on, "lnum:" on, "zero" on, "ss01" on',
+          'font-style: normal',
+        ],
+      },
       animation: {
         'spin-fast': 'spin 1.25s linear infinite',
       },
