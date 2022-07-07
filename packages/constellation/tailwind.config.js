@@ -168,6 +168,9 @@ module.exports = {
           'font-style: normal',
         ],
       },
+      animation: {
+        'spin-fast': 'spin 1.25s linear infinite',
+      },
     },
   },
 }

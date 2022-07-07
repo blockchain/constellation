@@ -120,11 +120,20 @@
         --color-dark-800: #20242C;
         --color-dark-900: #0E121B;
 
+        /* White */
+        --color-white: #FFFFFF;
+        --color-white-060: rgba(255, 255, 255, 0.06);
+        --color-white-100: rgba(255, 255, 255, 0.1);
+        --color-white-200: rgba(255, 255, 255, 0.2);
+        --color-white-400: rgba(255, 255, 255, 0.4);
+        --color-white-600: rgba(255, 255, 255, 0.6);
+        --color-white-800: rgba(255, 255, 255, 0.8);
+
         /* Tiers */
         --color-tier-silver: #C2C9D6;
         --color-tier-gold: #F5B73D;
 
-        /* Black and White */
+        /* Black */
         --color-black: #000000;
         --color-white: #FFFFFF;
         --color-transparent: transparent;
