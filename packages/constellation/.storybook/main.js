@@ -5,6 +5,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@luigiminardim/storybook-addon-globals-controls',
+    'storybook-dark-mode',
     {
       name: '@storybook/addon-postcss',
       options: {
