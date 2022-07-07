@@ -4,22 +4,6 @@
 
 @layer base {
     :root {
-        /* Overlay */
-        --color-overlay-dark-000: rgba(13, 53, 120, 0.06);
-        --color-overlay-dark-100: rgba(5, 24, 61, 0.1);
-        --color-overlay-dark-200: rgba(5, 24, 61, 0.2);
-        --color-overlay-dark-400: rgba(5, 24, 61, 0.4);
-        --color-overlay-dark-600: rgba(3, 17, 47, 0.6);
-        --color-overlay-dark-800: rgba(18, 29, 51, 0.8);
-
-        --color-overlay-light-060: rgba(255, 255, 255, 0.06);
-        --color-overlay-light-100: rgba(255, 255, 255, 0.1);
-        --color-overlay-light-200: rgba(255, 255, 255, 0.2);
-        --color-overlay-light-400: rgba(255, 255, 255, 0.4);
-        --color-overlay-light-600: rgba(255, 255, 255, 0.6);
-        --color-overlay-light-800: rgba(255, 255, 255, 0.8);
-        --color-overlay-light-900: #ffffff;
-
         /* Blue */
         --color-blue-000: #ECF5FE;
         --color-blue-100: #D8EBFD;
@@ -116,13 +100,37 @@
         --color-dark-800: #20242C;
         --color-dark-900: #0E121B;
 
+        /* White */
+        --color-white: #FFFFFF;
+        --color-white-060: rgba(255, 255, 255, 0.06);
+        --color-white-100: rgba(255, 255, 255, 0.1);
+        --color-white-200: rgba(255, 255, 255, 0.2);
+        --color-white-400: rgba(255, 255, 255, 0.4);
+        --color-white-600: rgba(255, 255, 255, 0.6);
+        --color-white-800: rgba(255, 255, 255, 0.8);
+
         /* Tiers */
         --color-tier-silver: #C2C9D6;
         --color-tier-gold: #F5B73D;
 
-        /* Black and White */
+        /* Black */
         --color-black: #000000;
-        --color-white: #FFFFFF;
+
+        /* Overlay */
+        --color-overlay-dark-000: rgba(13, 53, 120, 0.06);
+        --color-overlay-dark-100: rgba(5, 24, 61, 0.1);
+        --color-overlay-dark-200: rgba(5, 24, 61, 0.2);
+        --color-overlay-dark-400: rgba(5, 24, 61, 0.4);
+        --color-overlay-dark-600: rgba(3, 17, 47, 0.6);
+        --color-overlay-dark-800: rgba(18, 29, 51, 0.8);
+
+        --color-overlay-light-060: var(--color-white-060);
+        --color-overlay-light-100: var(--color-white-100);
+        --color-overlay-light-200: var(--color-white-200);
+        --color-overlay-light-400: var(--color-white-400);
+        --color-overlay-light-600: var(--color-white-600);
+        --color-overlay-light-800: var(--color-white-800);
+        --color-overlay-light-900: var(--color-white);
     }
 
     .theme-light {
