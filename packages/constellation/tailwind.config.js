@@ -8,6 +8,9 @@ const plugin = require('tailwindcss/plugin')
 const radix = require('tailwindcss-radix')()
 
 module.exports = {
+  corePlugins: {
+    preflight: false,
+  },
   content: ['./src/**/*.{ts,js,tsx,jsx}'],
   plugins: [
     radix,
