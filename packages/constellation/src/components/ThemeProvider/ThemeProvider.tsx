@@ -3,7 +3,6 @@ import '../styles.css'
 
 import React, { useEffect } from 'react'
 
-import { DarkModeContext } from './themeContext'
 import { ThemeProviderComponent } from './ThemeProvider.types'
 
 const ThemeProvider: ThemeProviderComponent = ({ children, theme, colorOverride = {} }) => {
@@ -27,7 +26,7 @@ const ThemeProvider: ThemeProviderComponent = ({ children, theme, colorOverride 
     document.body.style.cssText = colorOverrideStyles
   }, [colorOverride, theme])
 
-  return <DarkModeContext.Provider value={theme === 'dark'}>{children}</DarkModeContext.Provider>
+  return <>{children}</>
 }
 
 export default ThemeProvider
