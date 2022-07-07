@@ -11,8 +11,6 @@ export const parameters = {
   },
 }
 
-console.log(themes.normal)
-
 export const globalTypes = {
   colorOverride: {
     name: 'Color Override',
