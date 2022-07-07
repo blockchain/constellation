@@ -24,7 +24,7 @@
     "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
     "storybook": "start-storybook -p 9009",
     "tailwind:build": "npx tailwindcss -i ./src/input.css -o ./src/components/styles.css",
-    "tailwind:watch": "yarn build --watch",
+    "tailwind:watch": "yarn tailwind:build --watch",
     "test": "jest --passWithNoTests",
     "prepare": "cd .. && husky install constellation/.husky",
     "analyze_bundle:open": "yarn build --analyze_bundle",
