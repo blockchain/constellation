@@ -9,8 +9,8 @@ import {
 } from './SpinningLoader.types'
 
 const variantClasses: Record<SpinningLoaderVariants, string> = {
-  default: 'border-t-overlay-light-900 border-overlay-light-200',
-  minimal: 'border-t-primary border-blue-100 dark:border-white-200',
+  color: 'border-t-primary border-blue-100 dark:border-white-200',
+  monotone: 'border-t-overlay-light-900 border-overlay-light-200',
 }
 
 const sizeClasses: Record<SpinningLoaderSizes, string> = {
@@ -29,7 +29,7 @@ const borderWidthClasses: Record<SpinningLoaderWidths, string> = {
 const SpinningLoader: SpinningLoaderComponent = ({
   borderWidth = 'default',
   size = 'default',
-  variant = 'default',
+  variant = 'monotone',
 }) => {
   return (
     <div
@@ -37,7 +37,7 @@ const SpinningLoader: SpinningLoaderComponent = ({
         sizeClasses[size],
         variantClasses[variant],
         borderWidthClasses[borderWidth],
-        'relative overflow-hidden rounded-[50%] animate-spin-fast',
+        'relative overflow-hidden rounded-full animate-spin-fast',
       ])}
     />
   )

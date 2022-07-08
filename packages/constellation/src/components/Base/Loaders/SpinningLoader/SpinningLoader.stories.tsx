@@ -15,7 +15,7 @@ export default {
     },
     variant: {
       control: { type: 'radio' },
-      options: ['default', 'minimal'],
+      options: ['monotone', 'color'],
     },
   },
   component: SpinningLoader,
