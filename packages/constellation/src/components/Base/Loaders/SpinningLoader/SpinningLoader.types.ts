@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-export type SpinningLoaderVariants = 'default' | 'minimal'
+export type SpinningLoaderVariants = 'monotone' | 'color'
 export type SpinningLoaderSizes = 'default' | 'full' | 'large' | 'small'
 export type SpinningLoaderWidths = 'default' | 'large' | 'small'
 
