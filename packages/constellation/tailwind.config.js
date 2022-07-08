@@ -15,8 +15,8 @@ module.exports = {
   plugins: [
     radix,
     plugin(({ addVariant }) => {
-      addVariant('theme-dark', '.theme-dark &')
-      addVariant('theme-light', '.theme-light &')
+      addVariant('mode-dark', '.mode-dark &')
+      addVariant('mode-light', '.mode-light &')
     }),
   ],
   theme: {
