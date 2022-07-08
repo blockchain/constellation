@@ -2,10 +2,8 @@ import { FC } from 'react'
 
 interface ThemeProviderProps {
   children: React.ReactNode
-  colorOverride: {
-    primary?: string
-  }
-  theme: string
+  darkMode: boolean
+  theme?: object
 }
 
 export type ThemeProviderComponent = FC<ThemeProviderProps>

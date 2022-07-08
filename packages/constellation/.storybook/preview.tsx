@@ -12,9 +12,9 @@ export const parameters = {
 }
 
 export const globalTypes = {
-  colorOverride: {
-    name: 'Color Override',
-    description: 'Sets the color override.',
+  theme: {
+    name: 'Theme',
+    description: 'Sets the custom theme colors.',
     defaultValue: {},
     control: { type: 'object' },
   },
@@ -24,7 +24,7 @@ const withDisplayGlobals = withGlobals((Story, globalValues) => {
   const darkMode = useDarkMode()
 
   return (
-    <ThemeProvider theme={darkMode ? 'dark' : 'light'} colorOverride={globalValues.colorOverride}>
+    <ThemeProvider darkMode={darkMode} theme={globalValues.theme}>
       <Story />
     </ThemeProvider>
   )
