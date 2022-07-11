@@ -1,8 +1,8 @@
+/* eslint-disable import/no-unresolved */
 import '../styles.css'
 
 import React, { useEffect } from 'react'
 
-import { DarkModeContext } from './themeContext'
 import { ThemeProviderComponent } from './ThemeProvider.types'
 
 const ThemeProvider: ThemeProviderComponent = ({ children, darkMode = false, theme = {} }) => {
@@ -18,7 +18,7 @@ const ThemeProvider: ThemeProviderComponent = ({ children, darkMode = false, the
     document.body.style.cssText = themeStyles
   }, [theme, darkMode])
 
-  return <DarkModeContext.Provider value={darkMode}>{children}</DarkModeContext.Provider>
+  return <>{children}</>
 }
 
 export default ThemeProvider
