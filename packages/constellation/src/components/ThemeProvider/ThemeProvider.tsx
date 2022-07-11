@@ -1,8 +1,9 @@
+/* eslint-disable import/no-unresolved */
 import '../styles.css'
 
 import React, { useEffect } from 'react'
 
-simport { ThemeProviderComponent } from './ThemeProvider.types'
+import { ThemeProviderComponent } from './ThemeProvider.types'
 
 const ThemeProvider: ThemeProviderComponent = ({ children, darkMode = false, theme = {} }) => {
   useEffect(() => {
