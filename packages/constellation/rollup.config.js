@@ -10,6 +10,8 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
 import { visualizer } from 'rollup-plugin-visualizer'
 import postcss from 'rollup-plugin-postcss'
+import svgr from '@svgr/rollup'
+import svgo from 'rollup-plugin-svgo'
 
 const packageJson = require('./package.json')
 
@@ -27,6 +29,58 @@ export default (args) => {
         path: './postcss.config.js',
       },
       extensions: ['.css'],
+    }),
+    svgr({
+      icon: true,
+      titleProp: true,
+      typescript: true,
+    }),
+    svgo({
+      plugins: [
+        {
+          fn: () => {
+            return {
+              element: {
+                enter: (node) => {
+                  if (
+                    node.name === 'svg' &&
+                    node.attributes.width != null &&
+                    node.attributes.height != null
+                  ) {
+                    node.attributes.height = '100%'
+                    node.attributes.width = '100%'
+                  }
+                },
+              },
+            }
+          },
+          name: 'setWidthAndHeight',
+          type: 'visitor',
+        },
+        {
+          fn: () => {
+            return {
+              element: {
+                enter: (node) => {
+                  if (node.name === 'svg') {
+                    node.attributes.fill = 'currentColor'
+                  }
+                },
+              },
+            }
+          },
+          name: 'setCurrentColor',
+          type: 'visitor',
+        },
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              removeViewBox: false,
+            },
+          },
+        },
+      ],
     }),
     commonjs(),
     resolve(),
