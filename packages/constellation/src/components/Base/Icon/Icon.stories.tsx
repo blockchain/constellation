@@ -34,7 +34,7 @@ export default {
       control: { type: 'select' },
       options: Object.keys(Icons),
     },
-    size: { control: { type: 'number' } },
+    size: { control: { type: 'number' }, description: 'Size of the icon in `em` units' },
   },
   args: {},
   component: Icons.IconPlus,

@@ -164,7 +164,7 @@ import iconYubiKey from './icons/icon-yubi-key.svg'
 
 const createIconComponent =
   (Icon: React.ElementType): React.FC<Props> =>
-  ({ color, titleId, ...otherProps }) =>
+  ({ color, size = 1, titleId, ...otherProps }) =>
     (
       <Icon
         {...{
@@ -172,8 +172,8 @@ const createIconComponent =
         }}
         xmlns='http://www.w3.org/2000/svg'
         fill='currentColor'
-        width='1em'
-        height='1em'
+        width={`${size}em`}
+        height={`${size}em`}
         aria-labelledby={titleId}
         focusable='false'
         {...otherProps}
