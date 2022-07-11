@@ -158,6 +158,9 @@ module.exports = {
       dropShadow: {
         control: ['var(--shadow-control)', 'var(--shadow-control-sm)'],
       },
+      animation: {
+        'spin-fast': 'spin 1.25s linear infinite',
+      },
     },
   },
 }
