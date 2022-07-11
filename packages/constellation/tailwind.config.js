@@ -167,6 +167,9 @@ module.exports = {
           'font-feature-settings: "tnum" on, "lnum:" on, "zero" on, "ss01" on',
           'font-style: normal',
         ],
+        animation: {
+          'spin-fast': 'spin 1.25s linear infinite',
+        },
       },
     },
   },
