@@ -21,11 +21,11 @@ const Color = ({ colorVar }: { colorVar: string }) => {
   }, [colorRef, colorVar, isDark])
 
   return (
-    <div className='drop-shadow-control bg-background w-48 overflow-hidden'>
+    <div className='drop-shadow-control bg-background-light w-48 overflow-hidden'>
       <div className='w-full h-24' style={{ backgroundColor: `var(${colorVar})` }} ref={colorRef} />
-      <p className='capitalize text-title py-1 ml-2'>{color.title}</p>
-      <p className='text-body pb-1.5 ml-2 text-sm'>ID: {color.id}</p>
-      <p className='text-body pb-1.5 ml-2 text-sm'>{color.value}</p>
+      <p className='capitalize text-title ml-2 my-0 mt-2'>{color.title}</p>
+      <p className='text-body ml-2 text-sm my-2'>ID: {color.id}</p>
+      <p className='text-body ml-2 text-sm my-0 pb-2'>{color.value}</p>
     </div>
   )
 }
