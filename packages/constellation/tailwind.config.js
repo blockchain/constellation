@@ -15,8 +15,8 @@ module.exports = {
   plugins: [
     radix,
     plugin(({ addVariant }) => {
-      addVariant('theme-dark', '.theme-dark &')
-      addVariant('theme-light', '.theme-light &')
+      addVariant('mode-dark', '.mode-dark &')
+      addVariant('mode-light', '.mode-light &')
     }),
   ],
   theme: {
@@ -167,9 +167,9 @@ module.exports = {
           'font-feature-settings: "tnum" on, "lnum:" on, "zero" on, "ss01" on',
           'font-style: normal',
         ],
-        animation: {
-          'spin-fast': 'spin 1.25s linear infinite',
-        },
+      },
+      animation: {
+        'spin-fast': 'spin 1.25s linear infinite',
       },
     },
   },

@@ -5,6 +5,7 @@ module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
+    //'postcss-prefixer': { prefix: 'constellation-' },
     ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}),
   },
 }

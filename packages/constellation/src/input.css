@@ -129,17 +129,17 @@
         --color-white-600: rgba(255, 255, 255, 0.6);
         --color-white-800: rgba(255, 255, 255, 0.8);
 
-        /* Tiers */
-        --color-tier-silver: #C2C9D6;
-        --color-tier-gold: #F5B73D;
-
         /* Black */
         --color-black: #000000;
         --color-white: #FFFFFF;
         --color-transparent: transparent;
+
+        /* Tiers */
+        --color-tier-silver: #C2C9D6;
+        --color-tier-gold: #F5B73D;
     }
 
-    .theme-light {
+    .mode-light {
         --color-title: var(--color-grey-900);
         --color-body: var(--color-grey-800);
         --color-overlay: var(--color-overlay-dark-600);
@@ -161,7 +161,7 @@
         --shadow-control-sm: 0px 3px 1px rgba(0, 0, 0, 0.06);
     }
 
-    .theme-dark {
+    .mode-dark {
         --color-title: var(--color-white);
         --color-body: var(--color-dark-200);
         --color-overlay: var(--color-overlay-dark-800);

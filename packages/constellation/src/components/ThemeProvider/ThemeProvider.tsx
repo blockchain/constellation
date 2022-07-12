@@ -5,26 +5,18 @@ import React, { useEffect } from 'react'
 
 import { ThemeProviderComponent } from './ThemeProvider.types'
 
-const ThemeProvider: ThemeProviderComponent = ({ children, theme, colorOverride = {} }) => {
+const ThemeProvider: ThemeProviderComponent = ({ children, darkMode = false, theme = {} }) => {
   useEffect(() => {
-    if (theme === 'dark') {
-      document.body.classList.add('theme-dark')
-      document.body.classList.remove('theme-light')
-    } else {
-      document.body.classList.add('theme-light')
-      document.body.classList.remove('theme-dark')
-    }
+    document.body.classList.add(darkMode ? 'mode-dark' : 'mode-light')
+    document.body.classList.remove(darkMode ? 'mode-light' : 'mode-dark')
 
-    const colorOverrideStyles = Object.keys(colorOverride).reduce(
-      (newColorOverride, color) =>
-        `${newColorOverride} --color-${color}: ${
-          colorOverride[color as keyof typeof colorOverride]
-        };`,
+    const themeStyles = Object.keys(theme).reduce(
+      (newTheme, color) => `${newTheme} --color-${color}: ${theme[color as keyof typeof theme]};`,
       '',
     )
 
-    document.body.style.cssText = colorOverrideStyles
-  }, [colorOverride, theme])
+    document.body.style.cssText = themeStyles
+  }, [theme, darkMode])
 
   return <>{children}</>
 }
