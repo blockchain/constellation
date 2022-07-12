@@ -12,7 +12,7 @@ const Slider: SliderComponent = ({ max, min, step = 1, value, ...props }) => {
       max={max}
       {...props}
       aria-label='value'
-      className='relative flex h-5 w-64 touch-none items-center'
+      className='constellation relative flex h-5 w-64 touch-none items-center'
     >
       <Track className='relative h-1 w-full grow rounded-full bg-medium'>
         <Range className='absolute h-full rounded-full bg-primary' />
