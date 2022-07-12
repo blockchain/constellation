@@ -24,7 +24,7 @@ export default {
 
 const Template: ComponentStory<SpinningLoaderComponent> = ({ borderWidth, size, variant }) => {
   return (
-    <div className='bg-body w-72 h-72 p-4 grid place-items-center'>
+    <div className='constellation bg-body w-72 h-72 p-4 grid place-items-center'>
       <SpinningLoader variant={variant} size={size} borderWidth={borderWidth} />
     </div>
   )

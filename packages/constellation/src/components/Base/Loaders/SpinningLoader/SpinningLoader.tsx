@@ -9,7 +9,7 @@ import {
 } from './SpinningLoader.types'
 
 const variantClasses: Record<SpinningLoaderVariants, string> = {
-  color: 'border-t-primary border-blue-100 dark:border-white-200',
+  color: 'border-t-primary border-blue-100 mode-dark:border-white-200',
   monotone: 'border-t-overlay-light-900 border-overlay-light-200',
 }
 
@@ -37,7 +37,7 @@ const SpinningLoader: SpinningLoaderComponent = ({
         sizeClasses[size],
         variantClasses[variant],
         borderWidthClasses[borderWidth],
-        'relative overflow-hidden rounded-full animate-spin-fast',
+        'constellation relative overflow-hidden rounded-full animate-spin-fast border-solid',
       ])}
     />
   )

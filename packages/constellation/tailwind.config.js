@@ -8,12 +8,16 @@ const plugin = require('tailwindcss/plugin')
 const radix = require('tailwindcss-radix')()
 
 module.exports = {
+  important: '.constellation',
+  corePlugins: {
+    preflight: false,
+  },
   content: ['./src/**/*.{ts,js,tsx,jsx}'],
   plugins: [
     radix,
     plugin(({ addVariant }) => {
-      addVariant('theme-dark', '.theme-dark &')
-      addVariant('theme-light', '.theme-light &')
+      addVariant('mode-dark', '.mode-dark &')
+      addVariant('mode-light', '.mode-light &')
     }),
   ],
   theme: {
@@ -157,6 +161,13 @@ module.exports = {
     extend: {
       dropShadow: {
         control: ['var(--shadow-control)', 'var(--shadow-control-sm)'],
+      },
+      font: {
+        italic: ['font-feature-settings: "zero" on, "ss01" on', 'font-style: italic'],
+        numeric: [
+          'font-feature-settings: "tnum" on, "lnum:" on, "zero" on, "ss01" on',
+          'font-style: normal',
+        ],
       },
       animation: {
         'spin-fast': 'spin 1.25s linear infinite',
