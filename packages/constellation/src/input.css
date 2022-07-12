@@ -137,6 +137,11 @@
         /* Tiers */
         --color-tier-silver: #C2C9D6;
         --color-tier-gold: #F5B73D;
+
+        /* Black */
+        --color-black: #000000;
+        --color-white: #FFFFFF;
+        --color-transparent: transparent;
     }
 
     .mode-light {
