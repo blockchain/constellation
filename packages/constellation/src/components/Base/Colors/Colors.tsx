@@ -1,49 +1,49 @@
 import React, { useEffect, useState } from 'react'
 
-import { ColorsComponent } from './Slider.types'
 import { getCSSVars } from './Colors.util'
 import ColorSection from './ColorSection'
+import { ColorsComponent } from './Slider.types'
 
 const Colors: ColorsComponent = () => {
-  const [colorsState, setColorsState] = useState<{ title: string; colors: [string] }[]>()
+  const [colorsState, setColorsState] = useState<{ colors: [string]; title: string }[]>()
 
   useEffect(() => {
-    const semanticColors = getCSSVars('.theme-dark')
+    const semanticColors = getCSSVars('.mode-dark')
     const colors = getCSSVars(':root')
 
     setColorsState([
-      { title: 'Semantic Colors', colors: semanticColors },
+      { colors: semanticColors, title: 'Semantic Colors' },
       {
-        title: 'Overlay',
         colors: colors.filter(color => color.includes('--color-overlay')) as [string],
+        title: 'Overlay',
       },
       {
-        title: 'Blue',
         colors: colors.filter(color => color.includes('--color-blue')) as [string],
+        title: 'Blue',
       },
       {
-        title: 'Green',
         colors: colors.filter(color => color.includes('--color-green')) as [string],
+        title: 'Green',
       },
       {
-        title: 'Red',
         colors: colors.filter(color => color.includes('--color-red')) as [string],
+        title: 'Red',
       },
       {
-        title: 'Orange',
         colors: colors.filter(color => color.includes('--color-orange')) as [string],
+        title: 'Orange',
       },
       {
-        title: 'Purple',
         colors: colors.filter(color => color.includes('--color-purple')) as [string],
+        title: 'Purple',
       },
       {
-        title: 'Teal',
         colors: colors.filter(color => color.includes('--color-teal')) as [string],
+        title: 'Teal',
       },
       {
-        title: 'Grey',
         colors: colors.filter(color => color.includes('--color-grey')) as [string],
+        title: 'Grey',
       },
     ])
   }, [])
