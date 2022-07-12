@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as Icons from './Icon'
+import * as Icons from '.'
 import type { Props } from './Icon.types'
 
 export const Icon = ({ icon = 'IconPlus', ...args }: Props & { icon: keyof typeof Icons }) => {
@@ -28,7 +28,7 @@ export default {
   argTypes: {
     color: {
       control: { type: 'select' },
-      options: ['#999999'],
+      options: ['#999999'], // TODO: update with colors enum,
     },
     icon: {
       control: { type: 'select' },
