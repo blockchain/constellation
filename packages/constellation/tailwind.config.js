@@ -8,6 +8,7 @@ const plugin = require('tailwindcss/plugin')
 const radix = require('tailwindcss-radix')()
 
 module.exports = {
+  important: '.constellation',
   corePlugins: {
     preflight: false,
   },
