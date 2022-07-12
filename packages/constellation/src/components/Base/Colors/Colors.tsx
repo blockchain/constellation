@@ -49,7 +49,7 @@ const Colors: ColorsComponent = () => {
   }, [])
 
   return (
-    <div className='flex flex-row flex-nowrap'>
+    <div className='constellation flex flex-row flex-nowrap'>
       {colorsState?.map((colors, index) => (
         <ColorSection colors={colors.colors} title={colors.title} key={index} />
       ))}
