@@ -7,7 +7,7 @@ export default {
   argTypes: {
     borderWidth: {
       control: { type: 'radio' },
-      options: ['default', 'large', 'small'],
+      options: ['default', 'large', 'small', 'xsmall'],
     },
     size: {
       control: { type: 'radio' },

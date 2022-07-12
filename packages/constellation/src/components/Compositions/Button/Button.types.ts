@@ -1,7 +1,7 @@
 export type ButtonVariants = 'primary' | 'secondary' | 'minimal'
 export type ButtonWidths = 'flex' | 'percent'
 export type Sizes = 'default' | 'large' | 'small'
-export type ButtonState = 'default' | 'loading' | 'success'
+export type ButtonState = 'initial' | 'loading' | 'success'
 
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
   T,

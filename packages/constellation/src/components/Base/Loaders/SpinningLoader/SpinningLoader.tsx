@@ -15,7 +15,7 @@ const variantClasses: Record<SpinningLoaderVariants, string> = {
 
 const sizeClasses: Record<SpinningLoaderSizes, string> = {
   default: 'h-16 w-16',
-  full: 'h-full w-full',
+  full: 'h-full w-full aspect-square',
   large: 'h-32 w-32',
   small: 'h-6 w-6',
 }
@@ -24,6 +24,7 @@ const borderWidthClasses: Record<SpinningLoaderWidths, string> = {
   default: 'border-8',
   large: 'border-[12px]',
   small: 'border-4',
+  xsmall: 'border-[3px]',
 }
 
 const SpinningLoader: SpinningLoaderComponent = ({

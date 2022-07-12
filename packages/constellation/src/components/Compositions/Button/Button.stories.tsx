@@ -16,6 +16,10 @@ export default {
       control: { type: 'radio' },
       options: ['default', 'large', 'small'],
     },
+    state: {
+      control: { type: 'radio' },
+      options: ['initial', 'loading', 'success'],
+    },
     type: {
       control: { type: 'select' },
       options: ['button', 'reset', 'submit'],
@@ -24,17 +28,17 @@ export default {
       control: { type: 'radio' },
       options: ['primary', 'secondary', 'minimal'],
     },
-    width: {
-      control: { type: 'select' },
-      options: ['none', 'flex', 'percent'],
-    },
   },
   component: ButtonComponent,
   title: 'Primitives/Buttons',
 } as ComponentMeta<Component>
 
-const Template: ComponentStory<Component> = ({ children = 'Large', ...args }) => {
-  return <ButtonComponent {...args}>{children}</ButtonComponent>
+const Template: ComponentStory<Component> = ({ children = 'Large', size = 'default', ...args }) => {
+  return (
+    <ButtonComponent size={size} {...args}>{`${size[0].toUpperCase()}${size.slice(
+      1,
+    )}`}</ButtonComponent>
+  )
 }
 
 export const Button = Template.bind({})
