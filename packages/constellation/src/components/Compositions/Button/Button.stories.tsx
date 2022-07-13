@@ -38,7 +38,7 @@ export default {
   title: 'Primitives/Buttons',
 } as ComponentMeta<Component>
 
-const Template: ComponentStory<Component> = ({ children = 'Large', size = 'default', ...args }) => {
+const Template: ComponentStory<Component> = ({ size = 'default', ...args }) => {
   return (
     <ButtonComponent size={size} {...args}>{`${size[0].toUpperCase()}${size.slice(
       1,
