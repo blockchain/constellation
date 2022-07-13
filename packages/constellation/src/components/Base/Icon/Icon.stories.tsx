@@ -12,12 +12,12 @@ export const Icon = ({ icon = 'IconPlus', ...args }: Props & { icon: keyof typeo
 export const AllIcons = () => (
   <div className='constellation flex flex-wrap items-start gap-4'>
     {Object.keys(Icons).map((name) => {
-      const Component = Icons[name as keyof typeof Icons] as React.ComponentType
+      const Component = Icons[name as keyof typeof Icons]
 
       return (
         <div className='flex items-center gap-1 w-40' key={name}>
-          <Component />
-          <p className='text-xs'>{name}</p>
+          <Component color='var(--color-primary)' />
+          <p className='text-xs text-body'>{name}</p>
         </div>
       )
     })}
@@ -28,7 +28,9 @@ export default {
   argTypes: {
     color: {
       control: { type: 'select' },
-      options: ['#999999'], // TODO: update with colors enum,
+      // TODO: update with colors enum,
+      defaultValue: 'var(--color-primary)',
+      options: ['#999999', 'var(--color-primary)'],
     },
     icon: {
       control: { type: 'select' },

@@ -7,25 +7,30 @@ export default {
   argTypes: {
     as: {
       control: { type: 'select' },
+      defaultValue: 'button',
       options: ['button', 'div', 'a'],
     },
     children: { control: { type: 'text' } },
-    disabled: { control: { type: 'boolean' } },
+    disabled: { control: { type: 'boolean' }, defaultValue: false },
     onClick: { action: 'click' },
     size: {
       control: { type: 'radio' },
+      defaultValue: 'large',
       options: ['default', 'large', 'small'],
     },
     state: {
       control: { type: 'radio' },
+      defaultValue: 'initial',
       options: ['initial', 'loading', 'success'],
     },
     type: {
       control: { type: 'select' },
+      defaultValue: 'button',
       options: ['button', 'reset', 'submit'],
     },
     variant: {
       control: { type: 'radio' },
+      defaultValue: 'primary',
       options: ['primary', 'secondary', 'minimal'],
     },
   },
