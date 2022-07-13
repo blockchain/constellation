@@ -10,7 +10,7 @@ export const Icon = ({ icon = 'IconPlus', ...args }: Props & { icon: keyof typeo
 }
 
 export const AllIcons = () => (
-  <div className='flex flex-wrap items-start gap-4'>
+  <div className='constellation flex flex-wrap items-start gap-4'>
     {Object.keys(Icons).map((name) => {
       const Component = Icons[name as keyof typeof Icons] as React.ComponentType
 
