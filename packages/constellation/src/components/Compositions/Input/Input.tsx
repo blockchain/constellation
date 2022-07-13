@@ -13,6 +13,7 @@ const Input: InputComponent = ({
   placeholder,
   prefix,
   state,
+  ...args
 }) => {
   const [showPassword, setShowPassword] = useState(false)
 
@@ -36,6 +37,7 @@ const Input: InputComponent = ({
           <span className='text-muted mr-4 text-sm select-none'>{prefix}</span>
         ) : null}
         <input
+          {...args}
           id={label}
           className={classnames(
             'text-title placeholder:text-muted h-full flex-grow bg-transparent outline-none border-none',

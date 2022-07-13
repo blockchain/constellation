@@ -1,6 +1,8 @@
 import { FC } from 'react'
 
-type InputProps = {
+type ReactInputComponent = React.HTMLAttributes<HTMLInputElement>
+
+type InputProps = ReactInputComponent & {
   disabled?: boolean
   helperText?: string
   id: string
