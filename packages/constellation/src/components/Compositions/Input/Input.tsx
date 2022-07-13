@@ -29,7 +29,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         </label>
         <div
           className={classnames(
-            'h-12 pl-4 rounded-lg flex border border-solid items-center focus-within:border-primary', // TODO remove border-solid when preflight workaround is in
+            'h-12 rounded-lg flex border border-solid items-center focus-within:border-primary', // TODO remove border-solid when preflight workaround is in
             {
               'bg-background-light border-background-light': !disabled,
               'bg-medium border-medium': disabled,
@@ -39,14 +39,16 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
         >
           {prefix?.length ? (
-            <span className='text-muted mr-4 text-sm select-none'>{prefix}</span>
+            <label className='text-muted text-sm select-none pl-4' htmlFor={id}>
+              {prefix}
+            </label>
           ) : null}
           <input
             ref={ref}
             {...args}
-            id={label}
+            id={id}
             className={classnames(
-              'text-title placeholder:text-muted h-full flex-grow bg-transparent outline-none border-none',
+              'text-title placeholder:text-muted h-full pl-4 flex-grow bg-transparent outline-none border-none',
               { 'text-muted': disabled },
             )}
             placeholder={placeholder}
