@@ -16,6 +16,7 @@ export const AllIcons = () => (
 
       return (
         <div className='flex items-center gap-1 w-40' key={name}>
+          {/* TODO: update with colors enum */}
           <Component color='var(--color-primary)' />
           <p className='text-xs text-body'>{name}</p>
         </div>
@@ -28,7 +29,7 @@ export default {
   argTypes: {
     color: {
       control: { type: 'select' },
-      // TODO: update with colors enum,
+      // TODO: update with colors enum
       defaultValue: 'var(--color-primary)',
       options: ['#999999', 'var(--color-primary)'],
     },
