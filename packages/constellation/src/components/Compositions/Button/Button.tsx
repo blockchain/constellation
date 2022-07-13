@@ -75,7 +75,7 @@ const Button: ComponentType = forwardRef(
           variantStyles[variant],
           sizeStyles[size],
           stateStyles[state][size],
-          'rounded-lg font-semibold box-border',
+          'constellation rounded-lg font-semibold box-border',
         )}
         ref={ref}
         type={type || fallbackType}
