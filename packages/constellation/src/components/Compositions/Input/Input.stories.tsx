@@ -40,46 +40,16 @@ export default {
   title: 'Compositions/Input',
 } as ComponentMeta<InputComponent>
 
-const PrimaryComponent: ComponentStory<InputComponent> = ({
-  disabled,
-  helperText,
-  label,
-  placeholder,
-  prefix,
-  state,
-}) => {
-  return (
-    <Input
-      id='test'
-      placeholder={placeholder}
-      prefix={prefix}
-      state={state}
-      disabled={disabled}
-      label={label}
-      helperText={helperText}
-    />
-  )
+const Template: ComponentStory<InputComponent> = args => <Input {...args} />
+
+export const PrimaryComponent = Template.bind({})
+PrimaryComponent.args = {
+  id: 'test',
 }
 
-const PasswordComponent: ComponentStory<InputComponent> = ({
-  disabled,
-  helperText,
-  label,
-  placeholder,
-  state,
-}) => {
-  return (
-    <Input
-      id='password'
-      placeholder={placeholder}
-      state={state}
-      disabled={disabled}
-      label={label}
-      helperText={helperText}
-      password
-    />
-  )
+export const PasswordComponent = Template.bind({})
+PasswordComponent.args = {
+  id: 'password',
+  password: true,
+  prefix: '',
 }
-
-export const Primary = PrimaryComponent.bind({})
-export const Password = PasswordComponent.bind({})
