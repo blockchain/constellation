@@ -40,7 +40,7 @@ export default {
   title: 'Compositions/Input',
 } as ComponentMeta<InputComponent>
 
-const Template: ComponentStory<InputComponent> = args => <Input {...args} />
+const Template: ComponentStory<InputComponent> = (args) => <Input {...args} />
 
 export const PrimaryComponent = Template.bind({})
 PrimaryComponent.args = {

@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 type ReactInputComponent = React.HTMLAttributes<HTMLInputElement>
 
