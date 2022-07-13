@@ -17,12 +17,12 @@ export const createIconComponent =
     (
       <Icon
         {...{
-          color: color ? `${color}` : undefined,
+          color: color ? `${color}` : 'inherit',
         }}
         xmlns='http://www.w3.org/2000/svg'
         fill='currentColor'
-        width={`${size}em`}
-        height={`${size}em`}
+        width={`${size}rem`}
+        height={`${size}rem`}
         aria-labelledby={titleId}
         focusable='false'
         {...otherProps}
