@@ -53,7 +53,7 @@ const Input: InputComponent = ({
             onClick={() => setShowPassword(!showPassword)}
           >
             {showPassword ? (
-              <IconVisibilityOn height={20} width={24} color='#98A1B2' />
+              <IconVisibilityOn height={20} width={24} color='#98A1B2' /> // TODO: Replace with icon buttons
             ) : (
               <IconVisibilityOff height={20} width={24} color='#98A1B2' />
             )}
