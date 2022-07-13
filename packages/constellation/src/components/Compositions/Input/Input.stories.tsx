@@ -33,7 +33,7 @@ export default {
     state: {
       control: { options: ['default', 'success', 'error'], type: 'radio' },
       defaultValue: 'default',
-      description: 'Error state of the input',
+      description: 'State of the input',
     },
   },
   component: Input,
