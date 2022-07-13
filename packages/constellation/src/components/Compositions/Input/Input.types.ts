@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 type ReactInputComponent = React.HTMLAttributes<HTMLInputElement>
 
@@ -7,12 +7,10 @@ type InputProps = ReactInputComponent & {
   helperText?: string
   id: string
   label?: string
-  password?: boolean
   placeholder?: string
-  prefix?: string
+  prefix?: string | ReactNode
   state?: 'error' | 'success' | 'default'
+  type: 'text' | 'password'
 }
 
-type InputComponent = FC<InputProps>
-
-export type { InputComponent, InputProps }
+export type { InputProps }

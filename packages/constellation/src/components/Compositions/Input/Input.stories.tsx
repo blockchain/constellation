@@ -45,11 +45,11 @@ const Template: ComponentStory<InputComponent> = args => <Input {...args} />
 export const PrimaryComponent = Template.bind({})
 PrimaryComponent.args = {
   id: 'test',
+  type: 'text',
 }
 
 export const PasswordComponent = Template.bind({})
 PasswordComponent.args = {
   id: 'password',
-  password: true,
-  prefix: '',
+  type: 'password',
 }
