@@ -49,7 +49,7 @@ const Input: InputComponent = ({
         />
         {password && (
           <button
-            className='mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center'
+            className='mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center cursor-pointer'
             onClick={() => setShowPassword(!showPassword)}
           >
             {showPassword ? (
