@@ -21,7 +21,7 @@ import {
 
 const variantStyles: Record<ButtonVariants, string> = {
   minimal:
-    'bg-background text-primary theme-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 theme-dark:hover:border-dark-400 theme-dark:hover:bg-dark-800 hover:bg-blue-000 hover:border-blue-400 theme-dark:border-dark-500 theme-dark:active:bg-dark-700 theme-dark:active:border-blue-400 theme-dark:focus:bg-dark-700 theme-dark:focus:border-blue-400  theme-dark:disabled:text-grey-600 theme-dark:disabled:bg-background theme-dark:disabled:border-grey-700',
+    'bg-background text-primary mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 hover:bg-blue-000 hover:border-blue-400 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400  mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700',
   primary:
     'text-white-000 bg-blue-600 hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900  disabled:bg-blue-300 disabled:text-overlay-light-600',
   secondary:
