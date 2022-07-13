@@ -50,6 +50,7 @@ const PrimaryComponent: ComponentStory<InputComponent> = ({
 }) => {
   return (
     <Input
+      id='test'
       placeholder={placeholder}
       prefix={prefix}
       state={state}
@@ -69,6 +70,7 @@ const PasswordComponent: ComponentStory<InputComponent> = ({
 }) => {
   return (
     <Input
+      id='password'
       placeholder={placeholder}
       state={state}
       disabled={disabled}

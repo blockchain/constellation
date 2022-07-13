@@ -1,11 +1,13 @@
 import classnames from 'classnames'
 import React, { useState } from 'react'
 
+import { IconVisibilityOff, IconVisibilityOn } from '../..'
 import { InputComponent } from './Input.types'
 
 const Input: InputComponent = ({
   disabled,
   helperText = '',
+  id,
   label = '',
   password,
   placeholder,
@@ -16,7 +18,9 @@ const Input: InputComponent = ({
 
   return (
     <div className='constellation'>
-      <label className='text-sm text-title select-none'>{label}</label>
+      <label className='text-sm text-title select-none' htmlFor={id}>
+        {label}
+      </label>
       <div
         className={classnames(
           'h-12 pl-4 rounded-lg flex border items-center focus-within:border-primary',
@@ -32,6 +36,7 @@ const Input: InputComponent = ({
           <span className='text-muted mr-4 text-sm select-none'>{prefix}</span>
         ) : null}
         <input
+          id={label}
           className={classnames(
             'text-title placeholder:text-muted h-full flex-grow bg-transparent outline-none border-none',
             { 'text-muted': disabled },
@@ -41,8 +46,15 @@ const Input: InputComponent = ({
           type={password && !showPassword ? 'password' : 'text'}
         />
         {password && (
-          <button className='mr-4 pl-2' onClick={() => setShowPassword(!showPassword)}>
-            👁️
+          <button
+            className='mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center'
+            onClick={() => setShowPassword(!showPassword)}
+          >
+            {showPassword ? (
+              <IconVisibilityOn height={20} width={24} color='#98A1B2' />
+            ) : (
+              <IconVisibilityOff height={20} width={24} color='#98A1B2' />
+            )}
           </button>
         )}
       </div>
