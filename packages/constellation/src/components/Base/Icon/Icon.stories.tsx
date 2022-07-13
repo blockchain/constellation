@@ -32,9 +32,14 @@ export default {
     },
     icon: {
       control: { type: 'select' },
+      defaultValue: 'IconApple',
       options: Object.keys(Icons),
     },
-    size: { control: { type: 'number' }, description: 'Size of the icon in `em` units' },
+    size: {
+      control: { type: 'number' },
+      defaultValue: 2,
+      description: 'Size of the icon in `rem` units',
+    },
   },
   args: {},
   component: Icons.IconPlus,
