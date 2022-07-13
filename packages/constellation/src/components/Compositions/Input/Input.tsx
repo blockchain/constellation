@@ -29,7 +29,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         </label>
         <div
           className={classnames(
-            'h-12 pl-4 rounded-lg flex border items-center focus-within:border-primary',
+            'h-12 pl-4 rounded-lg flex border border-solid items-center focus-within:border-primary', // TODO remove border-solid when preflight workaround is in
             {
               'bg-background-light border-background-light': !disabled,
               'bg-medium border-medium': disabled,
