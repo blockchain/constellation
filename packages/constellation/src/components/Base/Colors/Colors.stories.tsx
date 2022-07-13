@@ -4,12 +4,6 @@ import React from 'react'
 import { Colors, ColorsComponent } from '.'
 
 export default {
-  argTypes: {
-    value: {
-      control: { type: 'number' },
-      description: 'Number indicating the value of the slider',
-    },
-  },
   component: Colors,
   title: 'Base/Colors',
 } as ComponentMeta<ColorsComponent>

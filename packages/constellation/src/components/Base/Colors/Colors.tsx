@@ -14,35 +14,35 @@ const Colors: ColorsComponent = () => {
     setColorsState([
       { colors: semanticColors, title: 'Semantic Colors' },
       {
-        colors: colors.filter(color => color.includes('--color-overlay')) as [string],
+        colors: colors.filter((color) => color.includes('--color-overlay')) as [string],
         title: 'Overlay',
       },
       {
-        colors: colors.filter(color => color.includes('--color-blue')) as [string],
+        colors: colors.filter((color) => color.includes('--color-blue')) as [string],
         title: 'Blue',
       },
       {
-        colors: colors.filter(color => color.includes('--color-green')) as [string],
+        colors: colors.filter((color) => color.includes('--color-green')) as [string],
         title: 'Green',
       },
       {
-        colors: colors.filter(color => color.includes('--color-red')) as [string],
+        colors: colors.filter((color) => color.includes('--color-red')) as [string],
         title: 'Red',
       },
       {
-        colors: colors.filter(color => color.includes('--color-orange')) as [string],
+        colors: colors.filter((color) => color.includes('--color-orange')) as [string],
         title: 'Orange',
       },
       {
-        colors: colors.filter(color => color.includes('--color-purple')) as [string],
+        colors: colors.filter((color) => color.includes('--color-purple')) as [string],
         title: 'Purple',
       },
       {
-        colors: colors.filter(color => color.includes('--color-teal')) as [string],
+        colors: colors.filter((color) => color.includes('--color-teal')) as [string],
         title: 'Teal',
       },
       {
-        colors: colors.filter(color => color.includes('--color-grey')) as [string],
+        colors: colors.filter((color) => color.includes('--color-grey')) as [string],
         title: 'Grey',
       },
     ])
