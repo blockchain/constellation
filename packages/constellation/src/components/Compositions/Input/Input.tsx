@@ -15,7 +15,7 @@ const Input: InputComponent = ({
   const [showPassword, setShowPassword] = useState(false)
 
   return (
-    <div className='theme-light'>
+    <div className='constellation'>
       <label className='text-sm text-title select-none'>{label}</label>
       <div
         className={classnames(
@@ -33,7 +33,7 @@ const Input: InputComponent = ({
         ) : null}
         <input
           className={classnames(
-            'text-title placeholder:text-muted h-full flex-grow bg-transparent outline-none',
+            'text-title placeholder:text-muted h-full flex-grow bg-transparent outline-none border-none',
             { 'text-muted': disabled },
           )}
           placeholder={placeholder}
