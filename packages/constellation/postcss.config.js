@@ -7,7 +7,9 @@ module.exports = {
     autoprefixer: {},
     'postcss-prefix-selector': {
       transform: (prefix, selector) => {
-        if (selector.startsWith('.constellation')) {
+        if (selector.includes('.mode-')) {
+          return selector.replace('.constellation ', '').replace(' .', ' .constellation .')
+        } else if (selector.startsWith('.constellation')) {
           return `${selector}, \n .constellation${selector.replace('.constellation ', '')}`
         }
 
