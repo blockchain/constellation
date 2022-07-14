@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 interface ThemeProviderProps {
   children: React.ReactNode
-  darkMode: boolean
+  colorMode: 'light' | 'dark'
   theme?: object
 }
 
