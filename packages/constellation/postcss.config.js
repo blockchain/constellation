@@ -7,10 +7,12 @@ module.exports = {
     autoprefixer: {},
     'postcss-prefix-selector': {
       transform: (prefix, selector) => {
-        if (selector.includes('.mode-')) {
-          return selector.replace('.constellation ', '').replace(' .', ' .constellation .')
+        if (selector.startsWith('.constellation .mode-')) {
+          const selectorParts = selector.split(' ')
+
+          return `${selectorParts[1]} ${selectorParts[0]} ${selectorParts[2]},\n${selectorParts[1]} ${selectorParts[0]}${selectorParts[2]}`
         } else if (selector.startsWith('.constellation')) {
-          return `${selector}, \n .constellation${selector.replace('.constellation ', '')}`
+          return `${selector},\n.constellation${selector.replace('.constellation ', '')}`
         }
 
         return selector
