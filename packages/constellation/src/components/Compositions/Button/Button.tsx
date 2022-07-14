@@ -74,12 +74,13 @@ const Button: ComponentType = forwardRef(
     return (
       <Component
         className={cx(
-          'constellation rounded-lg font-semibold cursor-pointer disabled:cursor-not-allowed transition-all flex items-center gap-2',
+          'constellation rounded-lg font-semibold cursor-pointer disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2',
           variantStyles[variant],
           sizeStyles[size],
           stateStyles[state][size],
           {
-            'w-full justify-center': width === 'full',
+            'w-fit': width === 'auto',
+            'w-full': width === 'full',
           },
         )}
         ref={ref}

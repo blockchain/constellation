@@ -26,8 +26,6 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
     text: string
     /**
      * The stylistic variant to use when rendering.
-     *
-     * @default "primary"
      */
     variant?: ButtonVariants
     /**

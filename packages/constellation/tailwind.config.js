@@ -166,6 +166,7 @@ module.exports = {
         silver: 'var(--color-tiers-silver)',
         gold: 'var(--color-tiers-gold)',
       },
+      transparent: 'transparent',
     },
     extend: {
       dropShadow: {
