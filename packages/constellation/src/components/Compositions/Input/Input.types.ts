@@ -10,7 +10,7 @@ type InputProps = ReactInputComponent & {
   placeholder?: string
   prefix?: string | ReactNode
   state?: 'error' | 'success' | 'warning' | 'default'
-  type: 'text' | 'password'
+  type: 'text' | 'password' | 'number' | 'email'
 }
 
 export type { InputProps }
