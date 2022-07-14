@@ -5,10 +5,10 @@ import React, { useEffect } from 'react'
 
 import { ThemeProviderComponent } from './ThemeProvider.types'
 
-const ThemeProvider: ThemeProviderComponent = ({ children, darkMode = false, theme = {} }) => {
+const ThemeProvider: ThemeProviderComponent = ({ children, colorMode = 'light', theme = {} }) => {
   useEffect(() => {
-    document.body.classList.add(darkMode ? 'mode-dark' : 'mode-light')
-    document.body.classList.remove(darkMode ? 'mode-light' : 'mode-dark')
+    document.body.classList.add(`mode-${colorMode}`)
+    document.body.classList.remove(colorMode === 'dark' ? 'mode-light' : 'mode-dark')
 
     const themeStyles = Object.keys(theme).reduce(
       (newTheme, color) => `${newTheme} --color-${color}: ${theme[color as keyof typeof theme]};`,
@@ -16,7 +16,7 @@ const ThemeProvider: ThemeProviderComponent = ({ children, darkMode = false, the
     )
 
     document.body.style.cssText = themeStyles
-  }, [theme, darkMode])
+  }, [theme, colorMode])
 
   return <>{children}</>
 }

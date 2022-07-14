@@ -1,0 +1,62 @@
+import { Meta } from '@storybook/addon-docs'
+
+<Meta title='Base/ThemeProvider/Intro' />
+
+# ThemeProvider
+
+The `ThemeProvider` is a required component that provides styling and theming to components imported from the Constellation UI Component Library.
+
+## Usage
+
+Set up the `ThemeProvider` component importing it and wrapping the root of your App:
+
+```tsx
+import * as React from 'react'
+
+// 1. import `ThemeProvider` component
+import { ThemeProvider } from '@blockchain-com/constellation'
+
+function App() {
+  // 2. Wrap ThemeProvider at the root of your app
+  return (
+    <ThemeProvider colorMode={true} theme={theme}>
+      <App />
+    </ThemeProvider>
+  )
+}
+```
+
+## Customizing Theme
+
+The theme can be customized by passing in an object containing color overrides:
+
+```tsx
+  ...
+  const customTheme: Theme = { primary: '#e33b94' }
+
+  return (
+    <ThemeProvider colorMode={true} theme={customTheme}>
+      <App />
+    </ThemeProvider>
+  )
+}
+```
+
+[See all colors that can be overridden](?path=/story/base-colors--primary&globals=backgrounds.grid:false)
+
+## Color Mode
+
+The color mode is determined by the consuming app and passed to the `colorMode` prop as a boolean:
+
+```tsx
+  ...
+  // 1. Consuming app determines the color mode
+  const colorMode = useColorMode();
+
+ // 2. Color mode is passed to the colorMode prop
+  <ThemeProvider colorMode={colorMode} theme={}>
+    <App />
+  </ThemeProvider>
+  )
+}
+```
