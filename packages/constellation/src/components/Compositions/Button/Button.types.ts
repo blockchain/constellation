@@ -1,11 +1,17 @@
+import React from 'react'
+
 export type ButtonVariants = 'primary' | 'secondary' | 'minimal'
-export type ButtonWidths = 'flex' | 'percent'
+export type ButtonWidths = 'auto' | 'full'
 export type Sizes = 'default' | 'large' | 'small'
 export type ButtonState = 'initial' | 'loading' | 'success'
 
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
   T,
   {
+    /**
+     * An optional Icon displayed inline with button text
+     */
+    icon?: React.ReactNode
     /**
      * The size of the button, from a range of variants.
      */
@@ -14,6 +20,10 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      * An optional visual progress indication of a tiggered button action
      */
     state?: ButtonState
+    /**
+     * Text content of button
+     */
+    text: string
     /**
      * The stylistic variant to use when rendering.
      *

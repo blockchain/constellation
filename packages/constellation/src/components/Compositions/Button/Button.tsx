@@ -21,11 +21,11 @@ import {
 
 const variantStyles: Record<ButtonVariants, string> = {
   minimal:
-    'bg-background mode-dark:bg-dark-900 text-primary mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400  mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700',
+    'bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700',
   primary:
-    'text-white-000 bg-blue-600 hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900  disabled:bg-blue-300 disabled:text-overlay-light-600',
+    'text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600',
   secondary:
-    'text-white-000 bg-grey-800 hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500  disabled:text-overlay-light-600',
+    'text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600',
 }
 
 const sizeStyles: Record<Sizes, string> = {
@@ -56,12 +56,14 @@ const Button: ComponentType = forwardRef(
   <T extends React.ElementType = 'button'>(
     {
       as,
-      children,
       disabled = false,
+      icon,
       size = 'default',
       state = 'initial',
+      text,
       type,
       variant = 'primary',
+      width = 'auto',
       ...otherProps
     }: Props<T>,
     ref?: PolymorphicRef<T>,
@@ -72,17 +74,25 @@ const Button: ComponentType = forwardRef(
     return (
       <Component
         className={cx(
+          'constellation rounded-lg font-semibold cursor-pointer disabled:cursor-not-allowed transition-all flex items-center gap-2',
           variantStyles[variant],
           sizeStyles[size],
           stateStyles[state][size],
-          'constellation rounded-lg font-semibold box-border cursor-pointer disabled:cursor-default transition-all',
+          {
+            'w-full justify-center': width === 'full',
+          },
         )}
         ref={ref}
         type={type || fallbackType}
         disabled={disabled}
         {...otherProps}
       >
-        {state === 'initial' && children}
+        {state === 'initial' && (
+          <>
+            {icon && icon}
+            {text}
+          </>
+        )}
         {state === 'loading' && (
           <SpinningLoader
             size='full'

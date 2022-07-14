@@ -1,6 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
+import { IconActivity } from '../../Base'
 import { Button as ButtonComponent, Component } from '.'
 
 export default {
@@ -10,7 +11,6 @@ export default {
       defaultValue: 'button',
       options: ['button', 'div', 'a'],
     },
-    children: { control: { type: 'text' } },
     disabled: { control: { type: 'boolean' }, defaultValue: false },
     onClick: { action: 'click' },
     size: {
@@ -23,6 +23,7 @@ export default {
       defaultValue: 'initial',
       options: ['initial', 'loading', 'success'],
     },
+    text: { control: { type: 'text' } },
     type: {
       control: { type: 'select' },
       defaultValue: 'button',
@@ -33,6 +34,11 @@ export default {
       defaultValue: 'primary',
       options: ['primary', 'secondary', 'minimal'],
     },
+    width: {
+      control: { type: 'radio' },
+      defaultValue: 'auto',
+      options: ['auto', 'full'],
+    },
   },
   component: ButtonComponent,
   title: 'Primitives/Buttons',
@@ -40,9 +46,12 @@ export default {
 
 const Template: ComponentStory<Component> = ({ size = 'default', ...args }) => {
   return (
-    <ButtonComponent size={size} {...args}>{`${size[0].toUpperCase()}${size.slice(
-      1,
-    )}`}</ButtonComponent>
+    <ButtonComponent
+      {...args}
+      size={size}
+      icon={<IconActivity />}
+      text={`${size[0].toUpperCase()}${size.slice(1)}`}
+    />
   )
 }
 
