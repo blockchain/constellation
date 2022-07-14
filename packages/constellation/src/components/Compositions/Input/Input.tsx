@@ -50,7 +50,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             id={id}
             className={classnames(
               'text-title placeholder:text-muted h-full pl-4 flex-grow bg-transparent outline-none border-none',
-              { 'text-muted': disabled },
+              { 'text-muted cursor-not-allowed': disabled },
             )}
             placeholder={placeholder}
             disabled={disabled}
@@ -58,8 +58,12 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           />
           {isPassword && ( // TODO: replace with postfix prop
             <button
-              className='mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center cursor-pointer'
+              className={classnames(
+                'mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center cursor-pointer',
+                { '!cursor-not-allowed': disabled },
+              )}
               onClick={() => setShowPassword(!showPassword)}
+              disabled={disabled}
             >
               {showPassword ? (
                 <IconVisibilityOn height={20} width={24} color='#98A1B2' /> // TODO: Replace with icon buttons and update colours
