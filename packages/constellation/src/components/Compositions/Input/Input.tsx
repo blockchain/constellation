@@ -29,7 +29,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         </label>
         <div
           className={classnames(
-            'h-12 rounded-lg flex border border-solid items-center focus-within:border-primary', // TODO remove border-solid when preflight workaround is in
+            'h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1', // TODO remove border-solid when preflight workaround is in
             {
               'bg-background-light border-background-light': !disabled,
               'bg-medium border-medium': disabled,
@@ -62,7 +62,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                 'mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center cursor-pointer',
                 { '!cursor-not-allowed': disabled },
               )}
-              onClick={() => setShowPassword(showPassword => !showPassword)}
+              onClick={() => setShowPassword((showPassword) => !showPassword)}
               disabled={disabled}
             >
               {showPassword ? (
