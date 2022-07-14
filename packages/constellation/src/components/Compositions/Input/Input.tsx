@@ -35,6 +35,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               'bg-medium border-medium': disabled,
               'border-error': state === 'error',
               'border-success': state === 'success',
+              'border-warning': state === 'warning',
             },
           )}
         >
@@ -72,6 +73,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           className={classnames('text-xs text-body mt-1 select-none', {
             'text-error': state === 'error',
             'text-success': state === 'success',
+            'text-warning': state === 'warning',
           })}
         >
           {helperText}

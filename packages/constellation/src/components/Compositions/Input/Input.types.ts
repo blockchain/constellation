@@ -9,7 +9,7 @@ type InputProps = ReactInputComponent & {
   label?: string
   placeholder?: string
   prefix?: string | ReactNode
-  state?: 'error' | 'success' | 'default'
+  state?: 'error' | 'success' | 'warning' | 'default'
   type: 'text' | 'password'
 }
 

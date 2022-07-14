@@ -31,7 +31,7 @@ export default {
       description: 'Prefix text',
     },
     state: {
-      control: { options: ['default', 'success', 'error'], type: 'radio' },
+      control: { options: ['default', 'success', 'error', 'warning'], type: 'radio' },
       defaultValue: 'default',
       description: 'State of the input',
     },
