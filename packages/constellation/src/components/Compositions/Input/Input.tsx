@@ -20,7 +20,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     ref,
   ) => {
     const [showPassword, setShowPassword] = useState(false)
-    const password = type === 'password'
+    const isPassword = type === 'password'
 
     return (
       <div className='constellation'>
@@ -54,9 +54,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             )}
             placeholder={placeholder}
             disabled={disabled}
-            type={password && !showPassword ? 'password' : 'text'}
+            type={isPassword && !showPassword ? 'password' : 'text'}
           />
-          {password && ( // TODO: replace with postfix prop
+          {isPassword && ( // TODO: replace with postfix prop
             <button
               className='mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center cursor-pointer'
               onClick={() => setShowPassword(!showPassword)}
