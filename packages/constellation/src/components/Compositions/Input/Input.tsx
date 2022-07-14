@@ -62,7 +62,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                 'mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center cursor-pointer',
                 { '!cursor-not-allowed': disabled },
               )}
-              onClick={() => setShowPassword(!showPassword)}
+              onClick={() => setShowPassword(showPassword => !showPassword)}
               disabled={disabled}
             >
               {showPassword ? (
