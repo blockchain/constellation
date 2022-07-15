@@ -56,6 +56,7 @@ const Button: ComponentType = forwardRef(
   <T extends React.ElementType = 'button'>(
     {
       as,
+      className,
       disabled = false,
       icon,
       size = 'default',
@@ -75,6 +76,7 @@ const Button: ComponentType = forwardRef(
       <Component
         className={cx(
           'constellation rounded-lg font-semibold cursor-pointer disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2',
+          className,
           variantStyles[variant],
           sizeStyles[size],
           stateStyles[state][size],
