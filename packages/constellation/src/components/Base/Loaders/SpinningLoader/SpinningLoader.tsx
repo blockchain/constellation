@@ -9,7 +9,7 @@ import {
 } from './SpinningLoader.types'
 
 const variantClasses: Record<SpinningLoaderVariants, string> = {
-  color: 'border-t-primary border-blue-100 mode-dark:border-white-200',
+  color: 'border-t-primary border-blue-100 mode-dark:border-white-200 mode-dark:border-t-primary',
   monotone: 'border-t-overlay-light-900 border-overlay-light-200',
 }
 

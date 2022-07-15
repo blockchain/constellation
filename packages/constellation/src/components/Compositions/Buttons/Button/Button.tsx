@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
-import { IconCheck, SpinningLoader } from '../../Base'
+import { IconCheck, SpinningLoader } from '../../../Base'
 import {
   ButtonState,
   ButtonVariants,
