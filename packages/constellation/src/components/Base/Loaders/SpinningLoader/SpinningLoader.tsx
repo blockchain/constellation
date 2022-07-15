@@ -38,7 +38,7 @@ const SpinningLoader: SpinningLoaderComponent = ({
         sizeClasses[size],
         variantClasses[variant],
         borderWidthClasses[borderWidth],
-        'constellation relative overflow-hidden rounded-full animate-spin-fast border-solid',
+        'constellation relative overflow-hidden rounded-full animate-spin-fast',
       ])}
     />
   )
