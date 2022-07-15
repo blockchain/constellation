@@ -1,2 +1,2 @@
 export { default as Link } from './Link'
-export type { Component, Props } from './Link.types'
+export type { Component as LinkComponentType, Props as LinkProps } from './Link.types'

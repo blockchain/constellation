@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
 import { IconApple } from '../../../Base'
-import { Component, Link as LinkComponent } from '.'
+import { Link as LinkComponent, LinkComponentType } from '.'
 
 export default {
   argTypes: {
@@ -34,9 +34,9 @@ export default {
   },
   component: LinkComponent,
   title: 'Primitives/Buttons/Link',
-} as ComponentMeta<Component>
+} as ComponentMeta<LinkComponentType>
 
-const Template: ComponentStory<Component> = ({ icon, size = 'default', text, ...args }) => {
+const Template: ComponentStory<LinkComponentType> = ({ icon, size = 'default', text, ...args }) => {
   return (
     <LinkComponent
       {...args}

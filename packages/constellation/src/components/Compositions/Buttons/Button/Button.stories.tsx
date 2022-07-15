@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
 import { IconApple } from '../../../Base'
-import { Button as ButtonComponent, Component } from '.'
+import { Button as ButtonComponent, ButtonComponentType } from '.'
 
 export default {
   argTypes: {
@@ -50,9 +50,14 @@ export default {
   },
   component: ButtonComponent,
   title: 'Primitives/Buttons/Button',
-} as ComponentMeta<Component>
+} as ComponentMeta<ButtonComponentType>
 
-const Template: ComponentStory<Component> = ({ icon, size = 'default', text, ...args }) => {
+const Template: ComponentStory<ButtonComponentType> = ({
+  icon,
+  size = 'default',
+  text,
+  ...args
+}) => {
   return (
     <ButtonComponent
       {...args}
