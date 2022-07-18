@@ -5,7 +5,7 @@ import { Button } from '../Button'
 import { Component as ComponentType, Props } from './Alert.types'
 
 /**
- * Alert Buttons extend of off the Button component, and provide a consistent way
+ * Alert Buttons extend off of the Button component, and provide a consistent way
  * to alert users while giving them an appropriate action to take
  *
  * When a `ref` prop is provided, it will be forwarded to the root element. Any

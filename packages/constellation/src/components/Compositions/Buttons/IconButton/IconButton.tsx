@@ -5,7 +5,7 @@ import { Button } from '../Button'
 import { Component as ComponentType, Props, Sizes } from './IconButton.types'
 
 /**
- * Icon Buttons extend of off the Button component, and enable a button-like click interaction
+ * Icon Buttons extend off of the Button component, and enable a button-like click interaction
  * while maintaining the visual aspects of a provided Icon.
  *
  * When a `ref` prop is provided, it will be forwarded to the root element. Any
