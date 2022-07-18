@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { SpinningLoaderProps } from '../../../Base'
+
 export type ButtonVariants = 'primary' | 'secondary' | 'minimal'
 export type ButtonWidths = 'auto' | 'full'
 export type Sizes = 'default' | 'large' | 'small'
@@ -12,6 +14,10 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      * An optional Icon displayed inline with button text
      */
     icon?: React.ReactNode
+    /**
+     * Optional override for the button's inline loader stylistic variant
+     */
+    loaderVariant?: SpinningLoaderProps['variant']
     /**
      * The size of the button, from a range of variants.
      */

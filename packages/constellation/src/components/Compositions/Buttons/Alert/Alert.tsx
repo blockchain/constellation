@@ -1,4 +1,3 @@
-import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { IconAlert } from '../../../Base'
@@ -19,9 +18,7 @@ const AlertButton: ComponentType = forwardRef(
   <T extends React.ElementType = 'button'>(props: Props<T>, ref?: PolymorphicRef<T>) => {
     return (
       <Button
-        className={cx(
-          'constellation rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500',
-        )}
+        className='constellation rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500'
         ref={ref}
         icon={
           <IconAlert color={props.disabled ? 'var(--color-orange-300)' : 'var(--color-warning)'} />
