@@ -3,19 +3,22 @@ import '../styles.css'
 
 import React, { useEffect } from 'react'
 
-import { ThemeProviderComponent } from './ThemeProvider.types'
+import { ThemeOverrides, ThemeProviderComponent } from './ThemeProvider.types'
 
-const ThemeProvider: ThemeProviderComponent = ({ children, colorMode = 'light', theme = {} }) => {
+const ThemeProvider: ThemeProviderComponent = ({ children, colorMode = 'light', theme }) => {
   useEffect(() => {
     document.body.classList.add(`mode-${colorMode}`)
     document.body.classList.remove(colorMode === 'dark' ? 'mode-light' : 'mode-dark')
 
-    const themeStyles = Object.keys(theme).reduce(
-      (newTheme, color) => `${newTheme} --color-${color}: ${theme[color as keyof typeof theme]};`,
-      '',
-    )
+    if (theme) {
+      const themeStyles = Object.keys(theme).reduce(
+        (newTheme, color) =>
+          `${newTheme} --color-${color}: ${theme[color as keyof ThemeOverrides]};`,
+        '',
+      )
 
-    document.body.style.cssText = themeStyles
+      document.body.style.cssText = themeStyles
+    }
   }, [theme, colorMode])
 
   return <>{children}</>

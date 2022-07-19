@@ -1,0 +1,43 @@
+import { Meta } from '@storybook/addon-docs'
+
+<Meta title='Base/Colors/Intro' />
+
+# Colors
+
+The `ThemeProvider` is a required component that provides styling and theming to components imported from the Constellation UI Component Library.
+
+[View Color Gallery](?path=/story/base-colors--primary&globals=backgrounds.grid:false)
+
+## Usage
+
+Set up the `ThemeProvider` component importing it and wrapping the root of your App:
+
+```tsx
+import { SemanticColors } from '@blockchain-com/constellation'
+
+function WarningDiv() {
+  return (
+    <div>
+      <Icon color={SemanticColors.warning} />
+    </div>
+}
+```
+
+## Types
+
+The theme can be customized by passing in an object containing color overrides:
+
+```tsx
+  import type { Colors } from '@blockchain-com/constellation'
+
+  interface Props {
+    color: Colors
+  }
+}
+```
+
+## Adding a Color
+
+TODO
+
+[View Color Gallery](?path=/story/base-colors--primary&globals=backgrounds.grid:false)
