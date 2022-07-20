@@ -4,13 +4,16 @@ import { Meta } from '@storybook/addon-docs'
 
 # Colors
 
-The `ThemeProvider` is a required component that provides styling and theming to components imported from the Constellation UI Component Library.
+Some components, like icons, have a `color` prop, which allows them to take a color from Constellation. To maintain consistency, these colors are exported as:
+
+- `SemanticColors`: for semantic use-cases like when displaying a warning
+- `PaletteColors`: for more fine-grained control when a specific color is needed (e.g. `blue-200`)
 
 [View Color Gallery](?path=/story/base-colors--primary&globals=backgrounds.grid:false)
 
 ## Usage
 
-Set up the `ThemeProvider` component importing it and wrapping the root of your App:
+Import `SemanticColors` or `PaletteColors` it and pass a specific color:
 
 ```tsx
 import { SemanticColors } from '@blockchain-com/constellation'
@@ -25,7 +28,7 @@ function WarningDiv() {
 
 ## Types
 
-The theme can be customized by passing in an object containing color overrides:
+Create a component interface that can accept a valid Constellation color:
 
 ```tsx
   import type { Colors } from '@blockchain-com/constellation'
