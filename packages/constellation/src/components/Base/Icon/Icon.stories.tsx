@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { SemanticColors } from '../Colors'
 import * as Icons from '.'
 import type { Props } from './Icon.types'
 
@@ -16,8 +17,7 @@ export const AllIcons = () => (
 
       return (
         <li className='flex items-center gap-1 w-40 flex-col border border-primary p-2' key={name}>
-          {/* TODO: update with colors enum */}
-          <Component color='var(--color-primary)' size={2} />
+          <Component color={SemanticColors.primary} size={2} />
           <p className='text-base text-body'>{name}</p>
         </li>
       )
@@ -29,9 +29,8 @@ export default {
   argTypes: {
     color: {
       control: { type: 'select' },
-      // TODO: update with colors enum
-      defaultValue: 'var(--color-primary)',
-      options: ['#999999', 'var(--color-primary)'],
+      defaultValue: SemanticColors.primary,
+      options: Object.values(SemanticColors),
     },
     icon: {
       control: { type: 'select' },

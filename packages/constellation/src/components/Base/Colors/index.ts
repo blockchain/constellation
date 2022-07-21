@@ -1,2 +1,2 @@
-export { default as Colors } from './Colors'
-export type { ColorsComponent } from './Slider.types'
+export type { Colors, ColorsComponent } from './Colors.types'
+export { PaletteColors, SemanticColors } from './Colors.types'

@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 
-import { IconAlert } from '../../../Base'
+import { IconAlert, PaletteColors, SemanticColors } from '../../../Base'
 import { Button } from '../Button'
 import { Component as ComponentType, Props } from './Alert.types'
 
@@ -21,8 +21,10 @@ const AlertButton: ComponentType = forwardRef(
         className='constellation rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500'
         ref={ref}
         icon={
-          <IconAlert color={props.disabled ? 'var(--color-orange-300)' : 'var(--color-warning)'} />
-        } // TODO: Update with color enum
+          <IconAlert
+            color={props.disabled ? PaletteColors['orange-300'] : SemanticColors.warning}
+          />
+        }
         {...props}
       />
     )

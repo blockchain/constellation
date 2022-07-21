@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
+import { ColorsComponent } from './Colors.types'
 import { getCSSVars } from './Colors.util'
 import ColorSection from './ColorSection'
-import { ColorsComponent } from './Slider.types'
 
 const Colors: ColorsComponent = () => {
   const [colorsState, setColorsState] = useState<{ colors: [string]; title: string }[]>()
