@@ -153,11 +153,20 @@ module.exports = {
         800: 'var(--color-dark-800)',
         900: 'var(--color-dark-900)',
       },
+      white: {
+        '000': 'var(--color-white)',
+        '060': 'var(--color-white-060)',
+        100: 'var(--color-white-100)',
+        200: 'var(--color-white-200)',
+        400: 'var(--color-white-400)',
+        600: 'var(--color-white-600)',
+        800: 'var(--color-white-800)',
+      },
       tiers: {
         silver: 'var(--color-tiers-silver)',
         gold: 'var(--color-tiers-gold)',
       },
-      white: 'var(--color-white)',
+
       black: 'var(--color-black)',
       transparent: 'var(--color-transparent)',
     },

@@ -1,0 +1,46 @@
+import { Meta } from '@storybook/addon-docs'
+
+<Meta title='Base/Colors/Intro' />
+
+# Colors
+
+Some components, like icons, have a `color` prop, which allows them to take a color from Constellation. To maintain consistency, these colors are exported as:
+
+- `SemanticColors`: for semantic use-cases like when displaying a warning
+- `PaletteColors`: for more fine-grained control when a specific color is needed (e.g. `blue-200`)
+
+[View Color Gallery](?path=/story/base-colors--primary&globals=backgrounds.grid:false)
+
+## Usage
+
+Import `SemanticColors` or `PaletteColors` it and pass a specific color:
+
+```tsx
+import { SemanticColors } from '@blockchain-com/constellation'
+
+function WarningDiv() {
+  return (
+    <div>
+      <Icon color={SemanticColors.warning} />
+    </div>
+}
+```
+
+## Types
+
+Create a component interface that can accept a valid Constellation color:
+
+```tsx
+  import type { Colors } from '@blockchain-com/constellation'
+
+  interface Props {
+    color: Colors
+  }
+}
+```
+
+## Adding a Color
+
+TODO
+
+[View Color Gallery](?path=/story/base-colors--primary&globals=backgrounds.grid:false)

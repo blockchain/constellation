@@ -24,7 +24,7 @@ const withDisplayGlobals = withGlobals((Story, globalValues) => {
   const darkMode = useDarkMode()
 
   return (
-    <ThemeProvider darkMode={darkMode} theme={globalValues.theme}>
+    <ThemeProvider colorMode={darkMode ? 'dark' : 'light'} theme={globalValues.theme}>
       <Story />
     </ThemeProvider>
   )

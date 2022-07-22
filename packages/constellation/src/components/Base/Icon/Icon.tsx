@@ -1,6 +1,12 @@
 import React from 'react'
 
-import { Props } from './Icon.types'
+import { IconSizes, Props } from './Icon.types'
+
+const sizeMap: Record<IconSizes, number> = {
+  large: 2.25,
+  medium: 1.5,
+  small: 1,
+}
 
 /**
  * Icons are used to represent common actions, such as "Add/Remove",
@@ -13,18 +19,21 @@ import { Props } from './Icon.types'
  */
 export const createIconComponent =
   (Icon: React.ElementType): React.FC<Props> =>
-  ({ color, size = 1, titleId, ...otherProps }) =>
-    (
+  ({ color, size = 'small', titleId, ...otherProps }) => {
+    const remSize = typeof size === 'number' ? `${size}rem` : `${sizeMap[size]}rem`
+
+    return (
       <Icon
         {...{
           color: color ? `${color}` : 'inherit',
         }}
         xmlns='http://www.w3.org/2000/svg'
         fill='currentColor'
-        width={`${size}rem`}
-        height={`${size}rem`}
+        width={remSize}
+        height={remSize}
         aria-labelledby={titleId}
         focusable='false'
         {...otherProps}
       />
     )
+  }
