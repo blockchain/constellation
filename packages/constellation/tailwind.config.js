@@ -154,19 +154,21 @@ module.exports = {
         900: 'var(--color-dark-900)',
       },
       white: {
-        '000': '#FFFFFF',
-        '060': 'rgba(255, 255, 255, 0.06)',
-        100: 'rgba(255, 255, 255, 0.1)',
-        200: 'rgba(255, 255, 255, 0.2)',
-        400: 'rgba(255, 255, 255, 0.4)',
-        600: 'rgba(255, 255, 255, 0.6)',
-        800: 'rgba(255, 255, 255, 0.8)',
+        '000': 'var(--color-white)',
+        '060': 'var(--color-white-060)',
+        100: 'var(--color-white-100)',
+        200: 'var(--color-white-200)',
+        400: 'var(--color-white-400)',
+        600: 'var(--color-white-600)',
+        800: 'var(--color-white-800)',
       },
       tiers: {
         silver: 'var(--color-tiers-silver)',
         gold: 'var(--color-tiers-gold)',
       },
-      transparent: 'transparent',
+
+      black: 'var(--color-black)',
+      transparent: 'var(--color-transparent)',
     },
     extend: {
       dropShadow: {
