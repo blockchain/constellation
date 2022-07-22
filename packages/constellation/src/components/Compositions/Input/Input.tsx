@@ -1,7 +1,7 @@
 import classnames from 'classnames'
 import React, { forwardRef, useState } from 'react'
 
-import { IconVisibilityOff, IconVisibilityOn } from '../..'
+import { IconVisibilityOff, IconVisibilityOn, PaletteColors } from '../../Base'
 import { InputProps } from './Input.types'
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
@@ -66,9 +66,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               disabled={disabled}
             >
               {showPassword ? (
-                <IconVisibilityOn height={20} width={24} color='#98A1B2' /> // TODO: Replace with icon buttons and update colours
+                <IconVisibilityOn height={20} width={24} color={PaletteColors['grey-400']} />
               ) : (
-                <IconVisibilityOff height={20} width={24} color='#98A1B2' />
+                <IconVisibilityOff height={20} width={24} color={PaletteColors['grey-400']} />
               )}
             </button>
           )}
