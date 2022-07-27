@@ -6,46 +6,39 @@ import { FlexGrow, FlexGrowComponent } from '.'
 
 export default {
   argTypes: {
-    as: {
-      control: { type: 'select' },
-      defaultValue: 'button',
-      description: 'Allows for overriding the underlying DOM element ',
-      options: ['button', 'div', 'a'],
+    grow: {
+      control: false,
     },
-    disabled: { control: { type: 'boolean' }, defaultValue: false },
-    icon: {
-      control: { type: 'boolean' },
-      defaultValue: true,
-      description: 'An optional Icon displayed inline with button text',
+    shrink: {
+      control: false,
     },
-    onClick: { action: 'click' },
-    size: {
-      control: { type: 'radio' },
-      defaultValue: 'large',
-      options: ['default', 'large', 'small'],
+    column1Grow: {
+      control: { type: 'number' },
+      description: 'Number indicating the flex-grow value of the first column (only for storybook)',
     },
-    state: {
-      control: { type: 'radio' },
-      defaultValue: 'initial',
-      description: 'An optional visual progress indication of a tiggered button action',
-      options: ['initial', 'loading', 'success'],
+    column1Shrink: {
+      control: { type: 'number' },
+      description:
+        'Number indicating the flex-shrink value of the first column (only for storybook)',
     },
-    text: { control: { type: 'text' }, description: 'Text content of button' },
-    type: {
-      control: { type: 'select' },
-      defaultValue: 'button',
-      options: ['button', 'reset', 'submit'],
+    column2Grow: {
+      control: { type: 'number' },
+      description:
+        'Number indicating the flex-grow value of the second column (only for storybook)',
     },
-    variant: {
-      control: { type: 'radio' },
-      defaultValue: 'primary',
-      description: 'The stylistic variant to use when rendering.',
-      options: ['primary', 'secondary', 'minimal'],
+    column2Shrink: {
+      control: { type: 'number' },
+      description:
+        'Number indicating the flex-shrink value of the second column (only for storybook)',
     },
-    width: {
-      control: { type: 'radio' },
-      defaultValue: 'auto',
-      options: ['auto', 'full'],
+    column3Grow: {
+      control: { type: 'number' },
+      description: 'Number indicating the flex-grow value of the third column (only for storybook)',
+    },
+    column3Shrink: {
+      control: { type: 'number' },
+      description:
+        'Number indicating the flex-shrink value of the third column (only for storybook)',
     },
   },
   component: FlexGrow,
@@ -139,6 +132,52 @@ export const ShrinkElementHorizontally = () => (
         culpa, voluptate corrupti atque facere perspiciatis rerum ipsum. Temporibus nihil ipsa
         nostrum adipisci perspiciatis consectetur ipsam.
       </Padding>
+    </FlexGrow>
+  </Flex>
+)
+
+type testProps = {
+  column1Grow?: number
+  column1Shrink?: number
+  column2Grow?: number
+  column2Shrink?: number
+  column3Grow?: number
+  column3Shrink?: number
+}
+
+export type TestComponent = FC<testProps>
+
+export const InteractiveFlexGrowAndShrink: ComponentStory<TestComponent> = ({
+  column1Grow,
+  column1Shrink,
+  column2Grow,
+  column2Shrink,
+  column3Grow,
+  column3Shrink,
+}) => (
+  <Flex style={{ height: 600, width: 800 }}>
+    <FlexGrow
+      grow={column1Grow}
+      shrink={column1Shrink}
+      style={{ background: 'red', color: 'white' }}
+    >
+      <Padding all={1}>Column 1</Padding>
+    </FlexGrow>
+
+    <FlexGrow
+      grow={column2Grow}
+      shrink={column2Shrink}
+      style={{ background: 'green', color: 'white' }}
+    >
+      <Padding all={1}>Column 2</Padding>
+    </FlexGrow>
+
+    <FlexGrow
+      grow={column3Grow}
+      shrink={column3Shrink}
+      style={{ background: 'blue', color: 'white' }}
+    >
+      <Padding all={1}>Column 3</Padding>
     </FlexGrow>
   </Flex>
 )
