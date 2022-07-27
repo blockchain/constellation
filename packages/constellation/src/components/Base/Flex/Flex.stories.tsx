@@ -1,4 +1,4 @@
-import { ComponentMeta } from '@storybook/react'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { FC } from 'react'
 
 import { Flex, FlexComponent } from '.'
@@ -8,8 +8,14 @@ export default {
   title: 'Base/Flex',
 } as ComponentMeta<FlexComponent>
 
-const GreyCircle = () => (
-  <div style={{ background: 'grey', borderRadius: 12, height: 24, width: 24 }} />
+const GreyCircle: FC = ({ children }) => (
+  <Flex
+    style={{ background: 'grey', borderRadius: 12, color: '#fff', height: 24, width: 24 }}
+    justifyContent='center'
+    alignItems='center'
+  >
+    {children}
+  </Flex>
 )
 
 const Text: FC = ({ children }) => <span style={{ background: 'grey' }}>{children}</span>
@@ -42,5 +48,14 @@ export const AppBarExample = () => (
       <GreyCircle />
       <GreyCircle />
     </Flex>
+  </Flex>
+)
+
+export const InteractiveFlex: ComponentStory<FlexComponent> = (args) => (
+  <Flex {...args}>
+    <GreyCircle>1</GreyCircle>
+    <GreyCircle>2</GreyCircle>
+    <GreyCircle>3</GreyCircle>
+    <GreyCircle>4</GreyCircle>
   </Flex>
 )
