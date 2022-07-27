@@ -14,37 +14,33 @@ const GreyCircle = () => (
 
 const Text: FC = ({ children }) => <span style={{ background: 'grey' }}>{children}</span>
 
-export const IconListItemExample = () => {
-  return (
-    <Flex gap={6}>
-      <Flex alignItems='center' justifyContent='center'>
-        <GreyCircle />
-      </Flex>
-
-      <Flex gap={6} flexDirection='column'>
-        <Text>Title</Text>
-
-        <Text>Subtitle</Text>
-      </Flex>
+export const IconListItemExample = () => (
+  <Flex gap={6}>
+    <Flex alignItems='center' justifyContent='center'>
+      <GreyCircle />
     </Flex>
-  )
-}
 
-export const AppBarExample = () => {
-  return (
-    <Flex justifyContent='space-between'>
-      <Flex gap={6} alignItems='center'>
-        <GreyCircle />
+    <Flex gap={6} flexDirection='column'>
+      <Text>Title</Text>
 
-        <span>Title</span>
-      </Flex>
-
-      <Flex gap={4}>
-        <GreyCircle />
-        <GreyCircle />
-        <GreyCircle />
-        <GreyCircle />
-      </Flex>
+      <Text>Subtitle</Text>
     </Flex>
-  )
-}
+  </Flex>
+)
+
+export const AppBarExample = () => (
+  <Flex justifyContent='space-between'>
+    <Flex gap={6} alignItems='center'>
+      <GreyCircle />
+
+      <span>Title</span>
+    </Flex>
+
+    <Flex gap={4}>
+      <GreyCircle />
+      <GreyCircle />
+      <GreyCircle />
+      <GreyCircle />
+    </Flex>
+  </Flex>
+)

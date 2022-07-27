@@ -44,7 +44,7 @@ const Flex: FlexComponent = ({
       justifyContent && flexJustfiyStyles[justifyContent],
       alignItems && flexAlignItemsStyles[alignItems],
       flexDirection && flexDirectionStyles[flexDirection],
-      { 'flex-grow-1': grow },
+      { 'flex-grow': grow },
     )}
     style={{
       gap: gap && `${gap}px`,

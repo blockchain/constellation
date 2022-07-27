@@ -1,6 +1,6 @@
 export * from './Colors'
 export * from './Flex'
-// export * from './FlexGrow'
+export * from './FlexGrow'
 export * from './Font'
 export * from './Icon'
 export * from './Loaders'
