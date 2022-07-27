@@ -115,3 +115,30 @@ export const GrowMultipleElementsHorizontally = () => (
     </FlexGrow>
   </Flex>
 )
+
+export const ShrinkElementHorizontally = () => (
+  <Flex style={{ height: 600, width: 800 }}>
+    <FlexGrow shrink={0} style={{ background: 'red', color: 'white' }}>
+      <Padding all={1}>
+        <b>This will not shrink at all.</b>
+      </Padding>
+    </FlexGrow>
+
+    <FlexGrow shrink={2} style={{ background: 'green', color: 'white' }}>
+      <Padding all={1}>
+        <b>This will shrink.</b> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nemo, exercitationem non, iste cum cumque sed expedita suscipit consectetur pariatur
+        laudantium eum sit consequatur? Incidunt natus quia at doloribus minus repudiandae!
+      </Padding>
+    </FlexGrow>
+
+    <FlexGrow grow style={{ background: 'blue', color: 'white' }}>
+      <Padding all={1}>
+        <b>This will grow.</b> <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi, vel quos hic sit
+        culpa, voluptate corrupti atque facere perspiciatis rerum ipsum. Temporibus nihil ipsa
+        nostrum adipisci perspiciatis consectetur ipsam.
+      </Padding>
+    </FlexGrow>
+  </Flex>
+)
