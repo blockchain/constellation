@@ -17,11 +17,6 @@ export type Props = {
   size?: TagSizes
 
   /**
-   * Style object to be applied to the tag.
-   */
-  style?: CSSProperties
-
-  /**
    * The stylistic variant to use when rendering.
    */
   variant?: TagVariants
