@@ -49,7 +49,7 @@ export default {
     },
   },
   component: ButtonComponent,
-  title: 'Primitives/Buttons/Button',
+  title: 'Compositions/Buttons/Button',
 } as ComponentMeta<ButtonComponentType>
 
 const Template: ComponentStory<ButtonComponentType> = ({
