@@ -1,17 +1,11 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { FC } from 'react'
 
-import { Flex, Padding } from '../'
+import { Flex, Padding } from '..'
 import { FlexGrow, FlexGrowComponent } from '.'
 
 export default {
   argTypes: {
-    grow: {
-      control: false,
-    },
-    shrink: {
-      control: false,
-    },
     column1Grow: {
       control: { type: 'number' },
       description: 'Number indicating the flex-grow value of the first column (only for storybook)',
@@ -39,6 +33,12 @@ export default {
       control: { type: 'number' },
       description:
         'Number indicating the flex-shrink value of the third column (only for storybook)',
+    },
+    grow: {
+      control: false,
+    },
+    shrink: {
+      control: false,
     },
   },
   component: FlexGrow,
