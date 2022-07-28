@@ -1,7 +1,9 @@
-import React from 'react'
 import cx from 'classnames'
+import React from 'react'
 
-const Tag = ({ as, variant, size, content }) => {
+import { TagComponentType } from '.'
+
+const Tag: TagComponentType = ({ as, content, size, variant }) => {
   const Component = as || 'div'
 
   const variantStyles = {
@@ -24,8 +26,8 @@ const Tag = ({ as, variant, size, content }) => {
     <Component
       className={cx(
         'constellation w-fit rounded font-semibold align-middle border',
-        sizeStyles[size],
-        variantStyles[variant],
+        size && sizeStyles[size],
+        variant && variantStyles[variant],
       )}
     >
       {content}

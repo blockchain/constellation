@@ -1,28 +1,25 @@
-import React from 'react'
+import { FC } from 'react'
 
 export type TagVariants = 'default' | 'alt' | 'success' | 'warning' | 'error'
 export type TagSizes = 'default' | 'large'
 
-export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
-  T,
-  {
-    /**
-     * Text content of tag
-     */
-    content: string
+export type Props = {
+  as: 'div' | 'button' | 'a'
 
-    /**
-     * The size of the tag, from a range of variants.
-     */
-    size?: TagSizes
+  /**
+   * Text content of tag
+   */
+  content: string
 
-    /**
-     * The stylistic variant to use when rendering.
-     */
-    variant?: TagVariants
-  }
->
+  /**
+   * The size of the tag, from a range of variants.
+   */
+  size?: TagSizes
 
-export type Component = <T extends React.ElementType = 'div'>(
-  props: Props<T>,
-) => React.ReactElement | null
+  /**
+   * The stylistic variant to use when rendering.
+   */
+  variant?: TagVariants
+}
+
+export type Component = FC<Props>
