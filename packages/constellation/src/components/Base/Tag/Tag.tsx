@@ -3,18 +3,24 @@ import React from 'react'
 
 import { TagComponentType } from '.'
 
-const Tag: TagComponentType = ({ as, content, size, variant }) => {
+const Tag: TagComponentType = ({
+  as,
+  content,
+  size = 'default',
+  variant = 'default',
+  className,
+}) => {
   const Component = as || 'div'
 
   const variantStyles = {
     alt: 'bg-transparent border-background-light text-body',
     default: 'bg-background-light border-background-light text-title',
     error:
-      'bg-background-red border-background-red text-error mode-dark:bg-error mode-dark:text-dark-900',
+      'bg-background-red border-background-red text-error mode-dark:bg-error mode-dark:border-error mode-dark:text-dark-900',
     success:
-      'bg-background-green border-background-green text-success mode-dark:bg-success mode-dark:text-dark-900',
+      'bg-background-green border-background-green text-success mode-dark:bg-success mode-dark:border-success mode-dark:text-dark-900',
     warning:
-      'bg-background-orange border-background-orange text-warning mode-dark:bg-warning mode-dark:text-dark-900',
+      'bg-background-orange border-background-orange text-warning mode-dark:bg-warning mode-dark:border-warning mode-dark:text-dark-900',
   }
 
   const sizeStyles = {

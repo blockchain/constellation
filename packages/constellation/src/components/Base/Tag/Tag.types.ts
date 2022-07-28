@@ -1,10 +1,10 @@
-import { FC } from 'react'
+import { CSSProperties, FC } from 'react'
 
 export type TagVariants = 'default' | 'alt' | 'success' | 'warning' | 'error'
 export type TagSizes = 'default' | 'large'
 
 export type Props = {
-  as: 'div' | 'button' | 'a'
+  as?: 'div' | 'button' | 'a'
 
   /**
    * Text content of tag
@@ -15,6 +15,11 @@ export type Props = {
    * The size of the tag, from a range of variants.
    */
   size?: TagSizes
+
+  /**
+   * Style object to be applied to the tag.
+   */
+  style?: CSSProperties
 
   /**
    * The stylistic variant to use when rendering.

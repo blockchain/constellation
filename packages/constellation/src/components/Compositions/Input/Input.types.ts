@@ -8,9 +8,16 @@ type InputProps = ReactInputComponent & {
   id: string
   label?: string
   placeholder?: string
+  postfix?: ReactNode
   prefix?: string | ReactNode
   state?: 'error' | 'success' | 'warning' | 'default'
   type: 'text' | 'password' | 'number' | 'email'
 }
 
-export type { InputProps }
+type ShowPasswordProps = {
+  disabled?: boolean
+  onClick: () => void
+  showPassword: boolean
+}
+
+export type { InputProps, ShowPasswordProps }
