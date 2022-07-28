@@ -1,8 +1,9 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
+import { SemanticColors } from '../../Colors'
 import { TextComponentType } from '.'
-import { Props, TextVariants } from './Text.types'
+import { Props, TextAlignments, TextTransforms, TextVariants } from './Text.types'
 
 /**
  * The Text component is used to present text content with specific,
@@ -35,16 +36,68 @@ const variantClasses: Record<TextVariants, string> = {
   title3: 'text-xl font-semibold my-4',
 }
 
+const colorClasses: Record<SemanticColors, string> = {
+  'var(--color-background)': 'text-background',
+  'var(--color-background-blue)': 'text-background-blue',
+  'var(--color-background-green)': 'text-background-green',
+  'var(--color-background-light)': 'text-background-light',
+  'var(--color-background-orange)': 'text-background-orange',
+  'var(--color-background-red)': 'text-background-red',
+  'var(--color-body)': 'text-body',
+  'var(--color-dark)': 'text-dark',
+  'var(--color-error)': 'text-error',
+  'var(--color-medium)': 'text-medium',
+  'var(--color-muted)': 'text-muted',
+  'var(--color-overlay)': 'text-overlay',
+  'var(--color-primary)': 'text-primary',
+  'var(--color-success)': 'text-success',
+  'var(--color-title)': 'text-title',
+  'var(--color-warning)': 'text-warning',
+}
+
+const textAlignClasses: Record<TextAlignments, string> = {
+  center: 'text-center',
+  end: 'text-end',
+  justify: 'text-justify',
+  left: 'text-left',
+  right: 'text-right',
+  start: 'text-start',
+}
+
+const transformClasses: Record<TextTransforms, string> = {
+  capitalize: 'capitalize',
+  lowercase: 'lowercase',
+  normalcase: 'normal-case',
+  uppercase: 'uppercase',
+}
+
 const Text: TextComponentType = forwardRef(
   <T extends React.ElementType = 'span'>(
-    { as, color, fontWeight, textAlign, truncate, variant = 'body1', ...otherProps }: Props<T>,
+    {
+      as,
+      color = SemanticColors.body,
+      textAlign = 'start',
+      transform,
+      truncate,
+      variant = 'body1',
+      ...otherProps
+    }: Props<T>,
     ref?: PolymorphicRef<T>,
   ) => {
     const Component = as || 'span'
 
+    const transformClass = transform ? transformClasses[transform] : ''
+
     return (
       <Component
-        className={cx('constellation', variantClasses[variant], { truncate })}
+        className={cx(
+          'constellation',
+          variantClasses[variant],
+          colorClasses[color],
+          textAlignClasses[textAlign],
+          transformClass,
+          { truncate },
+        )}
         ref={ref}
         {...otherProps}
       />

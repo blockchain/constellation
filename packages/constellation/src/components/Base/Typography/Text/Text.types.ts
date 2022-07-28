@@ -1,4 +1,4 @@
-import { Colors } from '../../Colors'
+import { SemanticColors } from '../../Colors'
 
 export const textVariants = [
   'display',
@@ -20,15 +20,32 @@ export const textVariants = [
 
 export type TextVariants = typeof textVariants[number]
 
+export type TextAlignments = 'center' | 'end' | 'justify' | 'start' | 'right' | 'left'
+
+export type TextTransforms = 'capitalize' | 'lowercase' | 'uppercase' | 'normalcase'
+
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
   T,
   {
-    className?: string
-    color?: Colors
-    fontWeight?: 'bold' | 'regular'
-    textAlign?: 'center' | 'end' | 'justify' | 'start' | 'right' | 'left'
-    transform?: 'capitalize' | 'lowercase' | 'uppercase'
+    /**
+     * The semantic color of the text
+     */
+    color?: SemanticColors
+    /**
+     * The alignment of the text, which is applicable when underlying DOM element is block type (like `p` element)
+     */
+    textAlign?: TextAlignments
+    /**
+     * Changes the casing of the text
+     */
+    transform?: TextTransforms
+    /**
+     * Hides the overflow of a text and adds ellipses
+     */
     truncate?: boolean
+    /**
+     * The stylistic variant to use when rendering.
+     */
     variant?: TextVariants
   }
 >

@@ -15,11 +15,7 @@ export default {
     color: {
       control: { type: 'select' },
       defaultValue: SemanticColors.body,
-      options: Object.keys(SemanticColors),
-    },
-    fontWeight: {
-      control: { type: 'select' },
-      options: ['bold', 'regular'],
+      options: Object.values(SemanticColors),
     },
     textAlign: {
       control: { type: 'select' },
@@ -27,7 +23,7 @@ export default {
     },
     transform: {
       control: { type: 'select' },
-      options: ['capitalize', 'lowercase', 'uppercase'],
+      options: ['capitalize', 'lowercase', 'uppercase', 'normalcase'],
     },
     truncate: { control: { type: 'boolean' } },
     variant: {
@@ -41,11 +37,12 @@ export default {
 
 const Template: ComponentStory<TextComponentType> = ({
   children = 'The quick brown fox jumps over the lazy dog',
+  color,
   variant,
   ...args
 }) => {
   return (
-    <TextComponent variant={variant} {...args}>
+    <TextComponent variant={variant} color={color} {...args}>
       {children}
     </TextComponent>
   )
