@@ -18,21 +18,21 @@ import { Props, TextVariants } from './Text.types'
  */
 
 const variantClasses: Record<TextVariants, string> = {
-  'body-mono': 'text-base font-medium font-mono',
-  body1: 'text-base font-medium',
-  body2: 'text-base font-semibold',
-  caption1: 'text-xs font-medium',
-  caption2: 'text-xs font-semibold',
-  display: 'text-[2.5rem] font-semibold',
-  micro: 'text-[0.625rem] font-medium',
-  overline: 'text-xs font-bold uppercase tracking-widest',
-  'paragraph-mono': 'text-sm font-medium font-mono',
-  paragraph1: 'text-sm font-medium',
-  paragraph2: 'text-sm font-semibold',
-  subheading: 'text-xl font-medium',
-  title1: 'text-[2rem] font-semibold',
-  title2: 'text-2xl font-semibold',
-  title3: 'text-xl font-semibold',
+  'body-mono': 'text-base font-medium font-mono my-3',
+  body1: 'text-base font-medium my-3',
+  body2: 'text-base font-semibold my-3',
+  caption1: 'text-xs font-medium my-2',
+  caption2: 'text-xs font-semibold my-2',
+  display: 'text-[2.5rem] font-semibold my-6',
+  micro: 'text-[0.625rem] font-medium my-2',
+  overline: 'text-xs font-bold uppercase tracking-widest my-2',
+  'paragraph-mono': 'text-sm font-medium font-mono my-2.5',
+  paragraph1: 'text-sm font-medium my-2.5',
+  paragraph2: 'text-sm font-semibold my-2.5',
+  subheading: 'text-xl font-medium my-4',
+  title1: 'text-[2rem] font-semibold my-5',
+  title2: 'text-2xl font-semibold my-5',
+  title3: 'text-xl font-semibold my-4',
 }
 
 const Text: TextComponentType = forwardRef(
