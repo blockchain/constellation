@@ -6,6 +6,7 @@ export const Padding: PaddingComponent = ({
   all,
   bottom,
   children,
+  className,
   horizontal: horizontalNum,
   left,
   right,
@@ -18,6 +19,7 @@ export const Padding: PaddingComponent = ({
 
   return (
     <div
+      className={className}
       style={{
         paddingBottom: `${bottom?.toString() || vertical || all}rem`,
         paddingLeft: `${left?.toString() || horizontal || all}rem`,

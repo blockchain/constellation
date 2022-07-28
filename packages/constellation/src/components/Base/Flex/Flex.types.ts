@@ -21,6 +21,7 @@ type FlexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
 
 type FlexProps = {
   alignItems?: FlexAlignItems
+  className?: string
   flexDirection?: FlexDirection
   gap?: number
   grow?: boolean

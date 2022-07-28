@@ -41,6 +41,7 @@ export type PaddingHorizontal =
     }
 
 export type PaddingBaseProps = {
+  className?: string
   style?: Omit<
     CSSProperties,
     'padding' | 'paddingTop' | 'paddingBottom' | 'paddingLeft' | 'paddingRight'
