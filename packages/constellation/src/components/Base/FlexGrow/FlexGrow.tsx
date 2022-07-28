@@ -3,7 +3,7 @@ import React from 'react'
 
 import { FlexGrowComponent } from './FlexGrow.types'
 
-const FlexGrow: FlexGrowComponent = ({ children, grow, shrink, style, className }) => {
+const FlexGrow: FlexGrowComponent = ({ children, className, grow, shrink, style }) => {
   const componentStyle = style || {}
 
   if (grow && grow > 1) {
