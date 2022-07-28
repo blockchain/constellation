@@ -3,13 +3,7 @@ import React from 'react'
 
 import { TagComponentType } from '.'
 
-const Tag: TagComponentType = ({
-  as,
-  content,
-  size = 'default',
-  variant = 'default',
-  className,
-}) => {
+const Tag: TagComponentType = ({ as, content, size = 'default', style, variant = 'default' }) => {
   const Component = as || 'div'
 
   const variantStyles = {
@@ -35,6 +29,7 @@ const Tag: TagComponentType = ({
         size && sizeStyles[size],
         variant && variantStyles[variant],
       )}
+      style={style}
     >
       {content}
     </Component>
