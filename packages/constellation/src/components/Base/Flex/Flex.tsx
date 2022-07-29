@@ -32,12 +32,10 @@ const flexDirectionStyles = {
 const Flex: FlexComponent = ({
   alignItems,
   children,
-  className,
   flexDirection,
   gap,
   grow,
   justifyContent,
-  style,
 }) => (
   <div
     className={cx(
@@ -46,11 +44,9 @@ const Flex: FlexComponent = ({
       alignItems && flexAlignItemsStyles[alignItems],
       flexDirection && flexDirectionStyles[flexDirection],
       { 'flex-grow': grow },
-      className,
     )}
     style={{
       gap: gap && `${gap}px`,
-      ...style,
     }}
   >
     {children}

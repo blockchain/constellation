@@ -1,4 +1,4 @@
-import { CSSProperties, FC } from 'react'
+import { FC } from 'react'
 
 export type PaddingVertical =
   | {
@@ -40,14 +40,6 @@ export type PaddingHorizontal =
       right?: never
     }
 
-export type PaddingBaseProps = {
-  className?: string
-  style?: Omit<
-    CSSProperties,
-    'padding' | 'paddingTop' | 'paddingBottom' | 'paddingLeft' | 'paddingRight'
-  >
-}
-
-export type PaddingProps = PaddingHorizontal & PaddingVertical & PaddingBaseProps
+export type PaddingProps = PaddingHorizontal & PaddingVertical
 
 export type PaddingComponent = FC<PaddingProps>

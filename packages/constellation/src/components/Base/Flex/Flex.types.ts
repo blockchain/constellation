@@ -1,4 +1,4 @@
-import { CSSProperties, FC } from 'react'
+import { FC } from 'react'
 
 type FlexAlignItems =
   | 'stretch'
@@ -21,12 +21,10 @@ type FlexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
 
 type FlexProps = {
   alignItems?: FlexAlignItems
-  className?: string
   flexDirection?: FlexDirection
   gap?: number
   grow?: boolean
   justifyContent?: FlexJustifyContent
-  style?: Omit<CSSProperties, 'alignItems' | 'display' | 'flexDirection' | 'gap' | 'justifyContent'>
 }
 
 type FlexComponent = FC<FlexProps>
