@@ -3,8 +3,8 @@ import React from 'react'
 
 import { FlexGrowComponent } from './FlexGrow.types'
 
-const FlexGrow: FlexGrowComponent = ({ children, grow, shrink, style }) => {
-  const componentStyle = style || {}
+const FlexGrow: FlexGrowComponent = ({ children, grow, shrink }) => {
+  const componentStyle = {} as React.CSSProperties
 
   if (grow && grow > 1) {
     componentStyle.flexGrow = grow as number

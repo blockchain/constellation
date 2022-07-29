@@ -9,13 +9,9 @@ export default {
 } as ComponentMeta<FlexComponent>
 
 const GreyCircle: FC = ({ children }) => (
-  <Flex
-    style={{ background: 'grey', borderRadius: 12, color: '#fff', height: 24, width: 24 }}
-    justifyContent='center'
-    alignItems='center'
-  >
+  <div className='bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center'>
     {children}
-  </Flex>
+  </div>
 )
 
 const Text: FC = ({ children }) => <span style={{ background: 'grey' }}>{children}</span>
