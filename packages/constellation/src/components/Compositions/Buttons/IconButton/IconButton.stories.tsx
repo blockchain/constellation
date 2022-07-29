@@ -32,7 +32,7 @@ export default {
     },
   },
   component: IconButtonComponent,
-  title: 'Primitives/Buttons/IconButton',
+  title: 'Compositions/Buttons/IconButton',
 } as ComponentMeta<IconButtonComponentType>
 
 const Template: ComponentStory<IconButtonComponentType> = ({ icon, size = 'default', ...args }) => {

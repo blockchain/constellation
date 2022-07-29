@@ -1,6 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
+import { Tag } from '../../Base'
 import { Input, InputComponent } from '.'
 
 export default {
@@ -42,14 +43,21 @@ export default {
 
 const Template: ComponentStory<InputComponent> = (args) => <Input {...args} />
 
-export const PrimaryComponent = Template.bind({})
-PrimaryComponent.args = {
-  id: 'test',
+export const PrimaryInput = Template.bind({})
+PrimaryInput.args = {
+  id: 'primary',
   type: 'text',
 }
 
-export const PasswordComponent = Template.bind({})
-PasswordComponent.args = {
+export const PasswordInput = Template.bind({})
+PasswordInput.args = {
   id: 'password',
   type: 'password',
+}
+
+export const TagInput = Template.bind({})
+TagInput.args = {
+  id: 'tag',
+  postfix: <Tag content='Success' variant='success' />,
+  type: 'text',
 }

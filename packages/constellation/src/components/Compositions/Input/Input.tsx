@@ -1,8 +1,8 @@
 import classnames from 'classnames'
 import React, { forwardRef, useState } from 'react'
 
-import { IconVisibilityOff, IconVisibilityOn, PaletteColors } from '../../Base'
 import { InputProps } from './Input.types'
+import ShowPasswordToggle from './showPasswordToggle'
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
   (
@@ -12,6 +12,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       id,
       label = '',
       placeholder,
+      postfix,
       prefix,
       state,
       type = 'text',
@@ -56,21 +57,17 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             disabled={disabled}
             type={isPassword && !showPassword ? 'password' : 'text'}
           />
-          {isPassword && ( // TODO: replace with postfix prop
-            <button
-              className={classnames(
-                'mr-4 pl-2 outline-none border-none bg-transparent flex items-center justify-center cursor-pointer',
-                { '!cursor-not-allowed': disabled },
+          {(isPassword || postfix) && (
+            <div className='mr-4 pl-2'>
+              {isPassword && (
+                <ShowPasswordToggle
+                  onClick={() => setShowPassword((showPassword) => !showPassword)}
+                  disabled={disabled}
+                  showPassword={showPassword}
+                />
               )}
-              onClick={() => setShowPassword((showPassword) => !showPassword)}
-              disabled={disabled}
-            >
-              {showPassword ? (
-                <IconVisibilityOn height={20} width={24} color={PaletteColors['grey-400']} />
-              ) : (
-                <IconVisibilityOff height={20} width={24} color={PaletteColors['grey-400']} />
-              )}
-            </button>
+              {postfix}
+            </div>
           )}
         </div>
         <span
