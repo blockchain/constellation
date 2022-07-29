@@ -32,7 +32,7 @@ export default {
     },
   },
   component: AlertButtonComponent,
-  title: 'Primitives/Buttons/Alert',
+  title: 'Compositions/Buttons/Alert',
 } as ComponentMeta<AlertButtonComponentType>
 
 const Template: ComponentStory<AlertButtonComponentType> = ({

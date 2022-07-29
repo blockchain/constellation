@@ -33,7 +33,7 @@ export default {
     text: { control: { type: 'text' }, description: 'Text content of link' },
   },
   component: LinkComponent,
-  title: 'Primitives/Buttons/Link',
+  title: 'Compositions/Buttons/Link',
 } as ComponentMeta<LinkComponentType>
 
 const Template: ComponentStory<LinkComponentType> = ({ icon, size = 'default', text, ...args }) => {
