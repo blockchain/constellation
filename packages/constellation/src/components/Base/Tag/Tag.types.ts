@@ -1,4 +1,4 @@
-import { CSSProperties, FC } from 'react'
+import { FC } from 'react'
 
 export type TagVariants = 'default' | 'alt' | 'success' | 'warning' | 'error'
 export type TagSizes = 'default' | 'large'
