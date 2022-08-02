@@ -2,6 +2,7 @@ import React from 'react'
 
 import { SemanticColors } from '../Colors'
 import * as Icons from '.'
+import IconComponent from './Icon'
 import type { Props } from './Icon.types'
 
 export const Icon = ({ icon = 'IconPlus', ...args }: Props & { icon: keyof typeof Icons }) => {
@@ -45,6 +46,6 @@ export default {
     },
   },
   args: {},
-  component: Icons.IconPlus,
+  component: IconComponent,
   title: 'Base/Icon',
 }
