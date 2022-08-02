@@ -8,6 +8,7 @@ export type ButtonState = 'initial' | 'loading' | 'success'
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
   T,
   {
+    disabled?: boolean
     /**
      * An optional Icon displayed inline with button text
      */

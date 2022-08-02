@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
-import { Button } from '../Button'
+import { Button, ButtonComponentType } from '../Button'
 import { Component as ComponentType, Props, Sizes } from './IconButton.types'
 
 /**
@@ -21,10 +21,7 @@ const sizeClasses: Record<Sizes, string> = {
 }
 
 const IconButton: ComponentType = forwardRef(
-  <T extends React.ElementType = 'button'>(
-    { size, ...otherProps }: Props<T>,
-    ref?: PolymorphicRef<T>,
-  ) => {
+  <T extends ButtonComponentType>({ size, ...otherProps }: Props<T>, ref?: PolymorphicRef<T>) => {
     return (
       <Button
         className={cx(
