@@ -83,7 +83,7 @@ export default {
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '^#(.*)$': '<rootDir>/src/$1',
-    '^.+.(gif|jpeg|jpg|png|svg|ttf|webp|woff2|woff)$': 'jest-transform-stub',
+    '^.+.(mdx|css|gif|jpeg|jpg|png|ttf|webp|woff2|woff)$': 'jest-transform-stub',
   },
 
   modulePaths: ['src'],
@@ -135,8 +135,8 @@ export default {
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   setupFilesAfterEnv: [
     './src/setupTests.ts',
-    './mocks/localStorage.js',
-    './mocks/dispatchEvent.js',
+    // './mocks/localStorage.js',
+    // './mocks/dispatchEvent.js',
   ],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
@@ -179,7 +179,9 @@ export default {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': ['ts-jest'],
+    '\\.svg$': '<rootDir>/fileTransformer.ts',
+    '^.+\\.(ts|tsx)$': ['ts-jest'],
+    '^.+\\.mdx?$': '@storybook/addon-docs/jest-transform-mdx',
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation

@@ -585,6 +585,2744 @@ exports[`Storyshots Base/FlexGrow Shrink Element Horizontally 1`] = `
 </div>
 `;
 
+exports[`Storyshots Base/Icon All Icons 1`] = `
+<ul
+  className="constellation flex flex-wrap justify-center gap-5 p-1"
+>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-activity.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconActivity
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-airdrop.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconAirdrop
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-alert.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconAlert
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-android.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconAndroid
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-apple.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconApple
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-arrow-down.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconArrowDown
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-arrow-down-left.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconArrowDownLeft
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-arrow-left.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconArrowLeft
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-arrow-right.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconArrowRight
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-arrow-up.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconArrowUp
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-arrow-up-right.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconArrowUpRight
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-backspace-android.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconBackspaceAndroid
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-backup.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconBackup
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-bank.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconBank
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-blockchain.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconBlockchain
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-blockchain-circle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconBlockchainCircle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-calendar.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCalendar
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-call.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCall
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-camera.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCamera
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-cart.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCart
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chart-bar.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChartBar
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chart-bubble.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChartBubble
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chart-pie.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChartPie
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chat.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChat
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-check.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCheck
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-check-circle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCheckCircle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chevron-down.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChevronDown
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chevron-down-v2.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChevronDownV2
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chevron-left.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChevronLeft
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chevron-left-v2.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChevronLeftV2
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chevron-right.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChevronRight
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chevron-right-v2.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChevronRightV2
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chevron-up.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChevronUp
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-chevron-up-v2.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconChevronUpV2
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-clipboard.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconClipboard
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-close.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconClose
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-close-circle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCloseCircle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-close-circle-v2.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCloseCircleV2
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-close-v2.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCloseV2
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-cloud.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCloud
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-cloud-done.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCloudDone
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-cloud-download.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCloudDownload
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-cloud-upload.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCloudUpload
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-color-picker.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconColorPicker
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-components.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconComponents
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-computer.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconComputer
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-copy.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCopy
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-credit-card.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconCreditCard
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-delete.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconDelete
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-deposit.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconDeposit
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-download.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconDownload
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-edit.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconEdit
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-education.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconEducation
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-email.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconEmail
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-error.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconError
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-exchange.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconExchange
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-expand-less.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconExpandLess
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-expand-more.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconExpandMore
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-explore.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconExplore
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-facebook.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFacebook
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-faceId.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFaceId
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-favorite-filled.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFavoriteFilled
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-filter.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFilter
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-fingerprint.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFingerprint
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-flag.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFlag
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-flash-off.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFlashOff
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-flash-on.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFlashOn
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-fullscreen.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFullscreen
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-fullscreen-exit.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconFullscreenExit
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-github.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconGithub
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-globe.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconGlobe
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-google-authenticator.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconGoogleAuthenticator
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-google-translate.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconGoogleTranslate
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-hardware.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconHardware
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-history.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconHistory
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-home.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconHome
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-identification.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconIdentification
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-image.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconImage
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-information.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconInformation
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-instagram.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconInstagram
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-key.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconKey
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-keyboard.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconKeyboard
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-laptop.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLaptop
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-legal.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLegal
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-line-chart-up.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLineChartUp
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-link.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLink
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-linked-in.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLinkedIn
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-list-bullets.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconListBullets
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-loading.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLoading
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-lock-closed.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLockClosed
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-lock-open.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLockOpen
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-logout.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconLogout
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-market-up.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMarketUp
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-medium.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMedium
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-menu.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMenu
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-microphone.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMicrophone
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-minus.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMinus
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-minus-circle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMinusCircle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-money-usd.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMoneyUsd
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-more-horizontal.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMoreHorizontal
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-more-vertical.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconMoreVertical
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-new-window.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconNewWindow
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-nft.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconNft
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-notification-off.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconNotificationOff
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-notification-on.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconNotificationOn
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-pending.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPending
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-people.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPeople
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-percent.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPercent
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-phone.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPhone
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-pin.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPin
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-placeholder.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPlaceholder
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-play-circle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPlayCircle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-plus.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPlus
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-plus-circle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPlusCircle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-portfolio.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPortfolio
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-present.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPresent
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-print.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPrint
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-private.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconPrivate
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-qr-code.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconQrCode
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-question.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconQuestion
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-question-circle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconQuestionCircle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-receive.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconReceive
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-receive-v2.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconReceiveV2
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-reddit.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconReddit
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-refresh.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconRefresh
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-repeat.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconRepeat
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-rewards.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconRewards
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-rewards-circle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconRewardsCircle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-search.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSearch
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-sell.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSell
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-send.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSend
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-send-v2.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSendV2
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-settings.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSettings
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-share-android.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconShareAndroid
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-share-ios.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconShareIos
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-shield.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconShield
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-signout.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSignout
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-slack.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSlack
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-subdirectory.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSubdirectory
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-support.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSupport
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-swap.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSwap
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-sync.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconSync
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-tag.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconTag
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-timeout.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconTimeout
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-tor.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconTor
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-trade.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconTrade
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-triangle-down.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconTriangleDown
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-triangle-up.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconTriangleUp
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-twitter.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconTwitter
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-unfold-less.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconUnfoldLess
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-unfold-more.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconUnfoldMore
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-user.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconUser
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-user-add.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconUserAdd
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-verified.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconVerified
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-visibility-off.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconVisibilityOff
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-visibility-on.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconVisibilityOn
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-wallet.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconWallet
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-warning-triangle.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconWarningTriangle
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-withdraw.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconWithdraw
+    </p>
+  </li>
+  <li
+    className="flex items-center gap-1 w-40 flex-col border border-primary p-2"
+  >
+    <icon-yubi-key.svg
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height="2rem"
+      width="2rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <p
+      className="text-base text-body"
+    >
+      IconYubiKey
+    </p>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Base/Icon Icon 1`] = `
+<icon-apple.svg
+  color="var(--color-primary)"
+  fill="currentColor"
+  focusable="false"
+  height="1rem"
+  width="1rem"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
 exports[`Storyshots Base/Loaders Spinning Loader 1`] = `
 <div
   className="constellation w-72 h-72 p-4 grid place-items-center"
@@ -1001,6 +3739,130 @@ exports[`Storyshots Base/Typography/Text Text 1`] = `
 >
   The quick brown fox jumps over the lazy dog
 </span>
+`;
+
+exports[`Storyshots Compositions/Buttons/Alert Alert 1`] = `
+<button
+  className="constellation rounded-lg font-semibold cursor-pointer disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 constellation rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500 text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-10 py-4 text-xl h-16 w-fit"
+  disabled={false}
+  type="button"
+>
+  <icon-alert.svg
+    color="var(--color-warning)"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  Large
+</button>
+`;
+
+exports[`Storyshots Compositions/Buttons/Button Button 1`] = `
+<button
+  className="constellation rounded-lg font-semibold cursor-pointer disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-10 py-4 text-xl h-16 w-fit"
+  disabled={false}
+  type="button"
+>
+  <icon-apple.svg
+    color="inherit"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  Large
+</button>
+`;
+
+exports[`Storyshots Compositions/Buttons/IconButton Icon Button 1`] = `
+<button
+  className="constellation rounded-lg font-semibold cursor-pointer disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 constellation p- bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-4 py-4 text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-6 py-3 text-base h-12 w-fit"
+  disabled={false}
+  type="button"
+>
+  <icon-apple.svg
+    color="inherit"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  
+</button>
+`;
+
+exports[`Storyshots Compositions/Buttons/Link Link 1`] = `
+<a
+  aria-disabled="true"
+  className="constellation w-fit text-primary hover:underline hover:underline-offset-[3px] hover:text-blue-700 focus:text-blue-700 font-semibold cursor-pointer transition-all flex items-center justify-center gap-2 mode-dark:hover:text-blue-300 mode-dark:focus:text-blue-300 px-10 py-4 text-xl h-16"
+>
+  <icon-apple.svg
+    color="inherit"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  Large
+</a>
+`;
+
+exports[`Storyshots Compositions/Input Password Input 1`] = `
+<div
+  className="constellation"
+>
+  <label
+    className="text-sm text-title select-none"
+    htmlFor="password"
+  >
+    Label
+  </label>
+  <div
+    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-background-light"
+  >
+    <label
+      className="text-muted text-sm select-none pl-4"
+      htmlFor="password"
+    >
+      Prefix
+    </label>
+    <input
+      className="text-title placeholder:text-muted h-full pl-4 flex-grow bg-transparent outline-none border-none"
+      disabled={false}
+      id="password"
+      placeholder="Placeholder"
+      type="password"
+    />
+    <div
+      className="mr-4 pl-2"
+    >
+      <button
+        className="outline-none border-none bg-transparent flex items-center justify-center cursor-pointer"
+        disabled={false}
+        onClick={[Function]}
+      >
+        <icon-visibility-off.svg
+          color="var(--color-grey-400)"
+          fill="currentColor"
+          focusable="false"
+          height={20}
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        />
+      </button>
+    </div>
+  </div>
+  <span
+    className="text-xs text-body mt-1 select-none"
+  >
+    Helper text
+  </span>
+</div>
 `;
 
 exports[`Storyshots Compositions/Input Primary Input 1`] = `
