@@ -1,8 +1,8 @@
 import cx from 'classnames'
 import React from 'react'
+import { Textfit } from 'react-textfit'
 
 import { LogoComponent } from './Logo.types'
-import { Textfit } from 'react-textfit'
 
 const Logo: LogoComponent = ({ className, value }) => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { LogoComponent, Logo } from '.'
+import { Logo, LogoComponent } from '.'
 
 const DoubleLogo: LogoComponent = ({}) => {
   return (
