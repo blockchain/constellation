@@ -1,0 +1,1153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Base/Colors Gallery 1`] = `
+<div
+  className="constellation flex flex-row flex-nowrap"
+/>
+`;
+
+exports[`Storyshots Base/Flex App Bar Example 1`] = `
+<div
+  className="constellation flex justify-between"
+  style={
+    Object {
+      "gap": undefined,
+    }
+  }
+>
+  <div
+    className="constellation flex items-center"
+    style={
+      Object {
+        "gap": "6px",
+      }
+    }
+  >
+    <div
+      className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+    />
+    <span>
+      Title
+    </span>
+  </div>
+  <div
+    className="constellation flex"
+    style={
+      Object {
+        "gap": "4px",
+      }
+    }
+  >
+    <div
+      className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+    />
+    <div
+      className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+    />
+    <div
+      className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+    />
+    <div
+      className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/Flex Icon List Item Example 1`] = `
+<div
+  className="constellation flex"
+  style={
+    Object {
+      "gap": "6px",
+    }
+  }
+>
+  <div
+    className="constellation flex justify-center items-center"
+    style={
+      Object {
+        "gap": undefined,
+      }
+    }
+  >
+    <div
+      className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+    />
+  </div>
+  <div
+    className="constellation flex flex-col"
+    style={
+      Object {
+        "gap": "6px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "background": "grey",
+        }
+      }
+    >
+      Title
+    </span>
+    <span
+      style={
+        Object {
+          "background": "grey",
+        }
+      }
+    >
+      Subtitle
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/Flex Interactive Flex 1`] = `
+<div
+  className="constellation flex"
+  style={
+    Object {
+      "gap": undefined,
+    }
+  }
+>
+  <div
+    className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+  >
+    1
+  </div>
+  <div
+    className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+  >
+    2
+  </div>
+  <div
+    className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+  >
+    3
+  </div>
+  <div
+    className="bg-grey-500 rounded-full text-white-000 w-6 h-6 flex justify-center items-center"
+  >
+    4
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/FlexGrow Grow Element Horizontally 1`] = `
+<div
+  className="constellation w-96 h-72 flex"
+>
+  <div
+    className="constellation flex flex-row flex-grow"
+    style={
+      Object {
+        "gap": undefined,
+      }
+    }
+  >
+    <div
+      className="bg-red-500"
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        Header
+      </div>
+    </div>
+    <div
+      className="constellation flex-grow"
+      style={Object {}}
+    >
+      <div
+        className="bg-green-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Content
+        </div>
+      </div>
+    </div>
+    <div
+      className="bg-blue-500 h-full"
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        Footer
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/FlexGrow Grow Element Vertically 1`] = `
+<div
+  className="constellation w-96 h-72 flex"
+>
+  <div
+    className="constellation flex flex-col"
+    style={
+      Object {
+        "gap": undefined,
+      }
+    }
+  >
+    <div
+      className="bg-red-500"
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        Header
+      </div>
+    </div>
+    <div
+      className="constellation flex-grow"
+      style={Object {}}
+    >
+      <div
+        className="bg-green-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Content
+        </div>
+      </div>
+    </div>
+    <div
+      className="bg-blue-500"
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        Footer
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/FlexGrow Grow Multiple Elements Horizontally 1`] = `
+<div
+  className="constellation w-96 h-72 flex"
+>
+  <div
+    className="constellation flex flex-row flex-grow"
+    style={
+      Object {
+        "gap": undefined,
+      }
+    }
+  >
+    <div
+      className="bg-red-500"
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        Header
+      </div>
+    </div>
+    <div
+      className="constellation flex-grow"
+      style={Object {}}
+    >
+      <div
+        className="bg-green-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Content
+        </div>
+      </div>
+    </div>
+    <div
+      className="constellation flex-grow"
+      style={Object {}}
+    >
+      <div
+        className="bg-blue-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Footer
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/FlexGrow Grow Multiple Elements Vertically 1`] = `
+<div
+  className="constellation w-96 h-72 flex"
+>
+  <div
+    className="constellation flex flex-col"
+    style={
+      Object {
+        "gap": undefined,
+      }
+    }
+  >
+    <div
+      className="bg-red-500"
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        Header
+      </div>
+    </div>
+    <div
+      className="constellation flex-grow"
+      style={Object {}}
+    >
+      <div
+        className="bg-green-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Content
+        </div>
+      </div>
+    </div>
+    <div
+      className="constellation flex-grow"
+      style={Object {}}
+    >
+      <div
+        className="bg-blue-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Footer
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/FlexGrow Interactive Flex Grow And Shrink 1`] = `
+<div
+  className="constellation w-[1000px] h-72 flex"
+>
+  <div
+    className="constellation flex flex-grow"
+    style={
+      Object {
+        "gap": undefined,
+      }
+    }
+  >
+    <div
+      className="constellation"
+      style={Object {}}
+    >
+      <div
+        className="bg-blue-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Column 1
+        </div>
+      </div>
+    </div>
+    <div
+      className="constellation"
+      style={Object {}}
+    >
+      <div
+        className="bg-red-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Column 2
+        </div>
+      </div>
+    </div>
+    <div
+      className="constellation"
+      style={Object {}}
+    >
+      <div
+        className="bg-green-500 h-full"
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "1rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "1rem",
+            }
+          }
+        >
+          Column 3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/FlexGrow Shrink Element Horizontally 1`] = `
+<div
+  className="constellation w-[1000px] h-72 flex"
+>
+  <div
+    className="constellation flex flex-grow"
+    style={
+      Object {
+        "gap": undefined,
+      }
+    }
+  >
+    <div
+      className="constellation flex-shrink-0"
+      style={Object {}}
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        <b>
+          This will not shrink at all.
+        </b>
+      </div>
+    </div>
+    <div
+      className="constellation"
+      style={
+        Object {
+          "flexShrink": 2,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        <b>
+          This will shrink.
+        </b>
+         
+        <br />
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem non, iste cum cumque sed expedita suscipit consectetur pariatur laudantium eum sit consequatur? Incidunt natus quia at doloribus minus repudiandae!
+      </div>
+    </div>
+    <div
+      className="constellation flex-grow"
+      style={Object {}}
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "1rem",
+            "paddingLeft": "1rem",
+            "paddingRight": "1rem",
+            "paddingTop": "1rem",
+          }
+        }
+      >
+        <b>
+          This will grow.
+        </b>
+         
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi, vel quos hic sit culpa, voluptate corrupti atque facere perspiciatis rerum ipsum. Temporibus nihil ipsa nostrum adipisci perspiciatis consectetur ipsam.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/Loaders Spinning Loader 1`] = `
+<div
+  className="constellation w-72 h-72 p-4 grid place-items-center"
+>
+  <div
+    className="h-16 w-16 border-t-primary border-blue-100 mode-dark:border-white-200 mode-dark:border-t-primary border-8 constellation relative overflow-hidden rounded-full animate-spin-fast"
+  />
+</div>
+`;
+
+exports[`Storyshots Base/Padding Padding All 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "color": "white",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "paddingBottom": "1rem",
+        "paddingLeft": "1rem",
+        "paddingRight": "1rem",
+        "paddingTop": "1rem",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "red",
+        }
+      }
+    >
+      <span>
+        Padding content
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/Padding Padding Edge Inset 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "color": "white",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "paddingBottom": "4rem",
+        "paddingLeft": "2rem",
+        "paddingRight": "3rem",
+        "paddingTop": "1rem",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "red",
+        }
+      }
+    >
+      <span>
+        Padding content
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/Padding Padding Symetric 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "color": "white",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "paddingBottom": "0.5rem",
+        "paddingLeft": "1rem",
+        "paddingRight": "1rem",
+        "paddingTop": "0.5rem",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "red",
+        }
+      }
+    >
+      <span>
+        Padding content
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Base/Tag Tag 1`] = `
+<div
+  className="constellation w-fit rounded font-semibold align-middle border py-0.5 px-[7px] text-xs bg-background-light border-background-light text-title"
+>
+  Tag
+</div>
+`;
+
+exports[`Storyshots Base/Typography/Preview Preview 1`] = `
+<div
+  className="constellation px-12"
+>
+  <div
+    className="constellation border-b border-b-medium flex p-4 mb-12"
+  >
+    <span
+      className="constellation text-[2rem] font-semibold my-5 text-body text-start"
+    >
+      Typography
+    </span>
+  </div>
+  <ul
+    className="constellation p-0"
+  >
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-[2.5rem] font-semibold my-6 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          display
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-[2rem] font-semibold my-5 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          title1
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-2xl font-semibold my-5 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          title2
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-xl font-semibold my-4 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          title3
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-xl font-medium my-4 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          subheading
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-base font-medium font-mono my-3 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          body-mono
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-base font-medium my-3 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          body1
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-base font-semibold my-3 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          body2
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-sm font-medium font-mono my-2.5 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          paragraph-mono
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-sm font-medium my-2.5 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          paragraph1
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-sm font-semibold my-2.5 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          paragraph2
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-xs font-medium my-2 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          caption1
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-xs font-semibold my-2 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          caption2
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-xs font-bold uppercase tracking-widest my-2 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          overline
+        </span>
+      </div>
+    </li>
+    <li
+      className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
+    >
+      <span
+        className="constellation text-[0.625rem] font-medium my-2 text-body text-start truncate"
+      >
+        The quick brown fox jumps over the lazy dog
+      </span>
+      <div
+        className="capitalize"
+      >
+        <span
+          className="constellation text-xs font-medium my-2 text-body text-start"
+        >
+          micro
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Base/Typography/Text Text 1`] = `
+<span
+  className="constellation text-base font-medium my-3 text-body text-start"
+>
+  The quick brown fox jumps over the lazy dog
+</span>
+`;
+
+exports[`Storyshots Compositions/Input Primary Input 1`] = `
+<div
+  className="constellation"
+>
+  <label
+    className="text-sm text-title select-none"
+    htmlFor="primary"
+  >
+    Label
+  </label>
+  <div
+    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-background-light"
+  >
+    <label
+      className="text-muted text-sm select-none pl-4"
+      htmlFor="primary"
+    >
+      Prefix
+    </label>
+    <input
+      className="text-title placeholder:text-muted h-full pl-4 flex-grow bg-transparent outline-none border-none"
+      disabled={false}
+      id="primary"
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+  <span
+    className="text-xs text-body mt-1 select-none"
+  >
+    Helper text
+  </span>
+</div>
+`;
+
+exports[`Storyshots Compositions/Input Tag Input 1`] = `
+<div
+  className="constellation"
+>
+  <label
+    className="text-sm text-title select-none"
+    htmlFor="tag"
+  >
+    Label
+  </label>
+  <div
+    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-background-light"
+  >
+    <label
+      className="text-muted text-sm select-none pl-4"
+      htmlFor="tag"
+    >
+      Prefix
+    </label>
+    <input
+      className="text-title placeholder:text-muted h-full pl-4 flex-grow bg-transparent outline-none border-none"
+      disabled={false}
+      id="tag"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <div
+      className="mr-4 pl-2"
+    >
+      <div
+        className="constellation w-fit rounded font-semibold align-middle border py-0.5 px-[7px] text-xs bg-background-green border-background-green text-success mode-dark:bg-success mode-dark:border-success mode-dark:text-dark-900"
+      >
+        Success
+      </div>
+    </div>
+  </div>
+  <span
+    className="text-xs text-body mt-1 select-none"
+  >
+    Helper text
+  </span>
+</div>
+`;
+
+exports[`Storyshots Compositions/Slider Primary 1`] = `
+Array [
+  <span
+    aria-disabled={false}
+    aria-label="value"
+    className="constellation relative flex h-5 w-64 touch-none items-center"
+    data-orientation="horizontal"
+    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerMove={[Function]}
+    onPointerUp={[Function]}
+    style={
+      Object {
+        "--radix-slider-thumb-transform": "translateX(-50%)",
+      }
+    }
+  >
+    <span
+      className="relative h-1 w-full grow rounded-full bg-medium"
+      data-orientation="horizontal"
+    >
+      <span
+        className="absolute h-full rounded-full bg-primary"
+        data-orientation="horizontal"
+        style={
+          Object {
+            "left": "0%",
+            "right": "100%",
+          }
+        }
+      />
+    </span>
+    <span
+      style={
+        Object {
+          "left": "calc(0% + 0px)",
+          "position": "absolute",
+          "transform": "var(--radix-slider-thumb-transform)",
+        }
+      }
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax={100}
+        aria-valuemin={0}
+        className="block h-5 w-5 rounded-full bg-background border border-solid border-background-light focus:outline-none drop-shadow-control mode-dark:bg-dark-500"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        onFocus={[Function]}
+        role="slider"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        tabIndex={0}
+      />
+    </span>
+  </span>,
+  <input
+    defaultValue={0}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />,
+]
+`;

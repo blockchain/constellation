@@ -81,7 +81,11 @@ export default {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    '^#(.*)$': '<rootDir>/src/$1',
+    '^.+.(gif|jpeg|jpg|png|svg|ttf|webp|woff2|woff)$': 'jest-transform-stub',
+  },
+
   modulePaths: ['src'],
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -126,7 +130,7 @@ export default {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  // setupFiles: [],
+  setupFiles: ['./jest.setup.ts'],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   setupFilesAfterEnv: [
@@ -174,7 +178,9 @@ export default {
   // timers: "real",
 
   // A map from regular expressions to paths to transformers
-  // transform: undefined,
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx)$': ['ts-jest'],
+  },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
