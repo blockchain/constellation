@@ -8,34 +8,36 @@ export default {
   argTypes: {
     disabled: {
       control: { type: 'boolean' },
-      defaultValue: false,
       description: 'Disable the input',
     },
     helperText: {
       control: { type: 'text' },
-      defaultValue: 'Helper text',
       description: 'Helper text',
     },
     label: {
       control: { type: 'text' },
-      defaultValue: 'Label',
       description: 'Label text',
     },
     placeholder: {
       control: { type: 'text' },
-      defaultValue: 'Placeholder',
       description: 'Placeholder text',
     },
     prefix: {
       control: { type: 'text' },
-      defaultValue: 'Prefix',
       description: 'Prefix text',
     },
     state: {
       control: { options: ['default', 'success', 'error', 'warning'], type: 'radio' },
-      defaultValue: 'default',
       description: 'State of the input',
     },
+  },
+  args: {
+    disabled: false,
+    helperText: 'Helper text',
+    label: 'Label',
+    placeholder: 'Placeholder',
+    prefix: 'Prefix',
+    state: 'default',
   },
   component: Input,
   title: 'Compositions/Input',

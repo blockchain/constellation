@@ -30,22 +30,23 @@ export default {
   argTypes: {
     color: {
       control: { type: 'select' },
-      defaultValue: SemanticColors.primary,
       options: Object.values(SemanticColors),
     },
     icon: {
       control: { type: 'select' },
-      defaultValue: 'IconApple',
       options: Object.keys(Icons),
     },
     size: {
       control: { type: 'radio' },
-      defaultValue: 'small',
       description: 'Size of the icon. This prop also accepts a number for custom `rem` values.',
       options: ['small', 'medium', 'large'],
     },
   },
-  args: {},
+  args: {
+    color: SemanticColors.primary,
+    icon: 'IconApple',
+    size: 'small',
+  },
   component: IconComponent,
   title: 'Base/Icon',
 }
