@@ -26,6 +26,7 @@
     "tailwind:build": "npx tailwindcss -i ./src/input.css -o ./src/components/styles.css",
     "tailwind:watch": "yarn tailwind:build --watch",
     "test": "jest --passWithNoTests",
+    "test:tsc": "yarn tsc --noEmit",
     "prepare": "cd .. && husky install constellation/.husky",
     "analyze_bundle:open": "yarn build --analyze_bundle",
     "analyze_bundle:json": "yarn build --analyze_bundle_json"
@@ -51,6 +52,7 @@
     "@storybook/addon-interactions": "6.5.9",
     "@storybook/addon-links": "6.5.9",
     "@storybook/addon-postcss": "2.0.0",
+    "@storybook/addon-storyshots": "^6.5.9",
     "@storybook/builder-webpack4": "6.5.9",
     "@storybook/builder-webpack5": "^6.5.9",
     "@storybook/manager-webpack4": "6.5.9",
