@@ -28,9 +28,10 @@ const IconButton: ComponentType = forwardRef(
     return (
       <Button
         className={cx(
-          'constellation p- bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500',
+          'constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2',
           sizeClasses[size],
         )}
+        variant='icon'
         ref={ref}
         text=''
         loaderVariant='color'

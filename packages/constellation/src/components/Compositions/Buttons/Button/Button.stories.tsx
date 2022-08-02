@@ -18,6 +18,7 @@ export default {
       defaultValue: true,
       description: 'An optional Icon displayed inline with button text',
     },
+    inline: { control: { type: 'boolean' }, defaultValue: false },
     onClick: { action: 'click' },
     size: {
       control: { type: 'radio' },

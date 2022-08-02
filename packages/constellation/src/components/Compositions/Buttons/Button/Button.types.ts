@@ -2,7 +2,7 @@ import React from 'react'
 
 import { SpinningLoaderProps } from '../../../Base'
 
-export type ButtonVariants = 'primary' | 'secondary' | 'minimal'
+export type ButtonVariants = 'primary' | 'secondary' | 'minimal' | 'alert' | 'icon'
 export type ButtonWidths = 'auto' | 'full'
 export type Sizes = 'default' | 'large' | 'small'
 export type ButtonState = 'initial' | 'loading' | 'success'
@@ -14,6 +14,10 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      * An optional Icon displayed inline with button text
      */
     icon?: React.ReactNode
+    /**
+     * Display the button inline with its sibling content
+     */
+    inline?: boolean
     /**
      * Optional override for the button's inline loader stylistic variant
      */
