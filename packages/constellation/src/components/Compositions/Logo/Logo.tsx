@@ -4,7 +4,7 @@ import React from 'react'
 import { LogoComponent } from './Logo.types'
 import { Textfit } from 'react-textfit'
 
-const Logo: LogoComponent = ({ className }) => {
+const Logo: LogoComponent = ({ className, value }) => {
   return (
     <div
       className={cx(
@@ -12,9 +12,11 @@ const Logo: LogoComponent = ({ className }) => {
         className,
       )}
     >
-      <Textfit mode='single' className='text-white-000 w-[80%]'>
-        CATE
-      </Textfit>
+      <div className='w-[80%]'>
+        <Textfit mode='single' className='text-white-000' forceSingleModeWidth={false}>
+          {value}
+        </Textfit>
+      </div>
     </div>
   )
 }

@@ -1,11 +1,8 @@
 import { FC } from 'react'
 
 type LogoProps = {
-  defaultValue?: number
-  max: number
-  min: number
-  step: number
-  value?: number
+  className?: string
+  value: string
 }
 
 type LogoComponent = FC<LogoProps>

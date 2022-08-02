@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
-import { SingleLogo, LogoComponent, DoubleLogo } from '.'
+import { SingleLogo, LogoComponent, DoubleLogo, BadgeLogo } from '.'
 
 export default {
   argTypes: {},
@@ -17,4 +17,8 @@ export const Primary = Template.bind({})
 
 export const Double = () => {
   return <DoubleLogo />
+}
+
+export const Badge = () => {
+  return <BadgeLogo />
 }

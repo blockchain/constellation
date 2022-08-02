@@ -5,7 +5,7 @@ import { Logo, LogoComponent } from '.'
 const SingleLogo: LogoComponent = ({}) => {
   return (
     <div className='constellation w-8 h-10 relative flex justify-center items-center'>
-      <Logo />
+      <Logo value='TEST' />
     </div>
   )
 }
