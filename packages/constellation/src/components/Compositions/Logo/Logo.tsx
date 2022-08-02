@@ -1,15 +1,22 @@
+import cx from 'classnames'
 import React from 'react'
 
 import { LogoComponent } from './Logo.types'
+import { Textfit } from 'react-textfit'
 
-const Slider: LogoComponent = ({}) => {
+const Logo: LogoComponent = ({ className }) => {
   return (
-    <div className='constellation w-8 h-10 relative flex justify-center items-center'>
-      <div className='w-8 h-8 rounded-full flex justify-center items-center bg-primary'>
-        <span className='text-white-000 text-[10px]'>CATE</span>
-      </div>
+    <div
+      className={cx(
+        'w-8 h-8 rounded-full flex justify-center items-center bg-primary relative',
+        className,
+      )}
+    >
+      <Textfit mode='single' className='text-white-000 w-[80%]'>
+        CATE
+      </Textfit>
     </div>
   )
 }
 
-export default Slider
+export default Logo

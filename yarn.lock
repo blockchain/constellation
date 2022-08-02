@@ -4604,6 +4604,7 @@ __metadata:
     prettier-config-constellation: "workspace:*"
     react: 17.0.2
     react-dom: 17.0.2
+    react-textfit: ^1.1.1
     rimraf: 3.0.2
     rollup: 2.63.0
     rollup-plugin-dts: 4.1.0
@@ -20973,6 +20974,19 @@ __metadata:
   peerDependencies:
     react: ">= 0.14.0"
   checksum: c082b48f30f8ba8d0c55ed1d761910630860077c7ff5793c4c912adcb5760df06436ed0ad62be0de28113aac9ad2af55eccd995f8eee98df53382e4ced2072fb
+  languageName: node
+  linkType: hard
+
+"react-textfit@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "react-textfit@npm:1.1.1"
+  dependencies:
+    process: ^0.11.10
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0
+    react-dom: ^15.0.0 || ^16.0.0
+  checksum: 938d0530ab269cd5f832ee7c659aecbe3685ea27c88635f53bc4ab60df4b6c43dd0ce3f54dfcaafacbfc65379490fbecd04a3f9c6bbc3481038f45f62e2f7c88
   languageName: node
   linkType: hard
 
