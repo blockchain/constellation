@@ -1,10 +1,20 @@
-import { FC } from 'react'
+import React, { FC, ReactNode } from 'react'
+
+type InternalLogoProps = {
+  circle: boolean
+  className?: string
+  value: string | ReactNode
+}
+
+type InternalLogoComponent = FC<InternalLogoProps>
 
 type LogoProps = {
-  className?: string
-  value: string
+  circle?: boolean
+  primary: string | ReactNode
+  secondary?: string | ReactNode
+  secondaryVariant?: 'primary' | 'badge'
 }
 
 type LogoComponent = FC<LogoProps>
 
-export type { LogoComponent, LogoProps }
+export type { InternalLogoComponent, InternalLogoProps, LogoComponent, LogoProps }

@@ -1,24 +1,48 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
-import { SingleLogo, LogoComponent, DoubleLogo, BadgeLogo } from '.'
+import { Logo, LogoComponent } from '.'
 
 export default {
-  argTypes: {},
-  component: SingleLogo,
+  argTypes: {
+    circle: {
+      control: { type: 'boolean' },
+    },
+    primary: {
+      control: { type: 'text' },
+    },
+    secondary: {
+      control: { type: 'text' },
+    },
+    secondaryVariant: {
+      control: { options: ['primary', 'badge'], type: 'radio' },
+    },
+  },
+  args: {
+    circle: true,
+    primary: 'TEST',
+    secondaryVariant: 'primary',
+  },
+  component: Logo,
   title: 'Compositions/Logo',
 } as ComponentMeta<LogoComponent>
 
-const Template: ComponentStory<LogoComponent> = () => {
-  return <SingleLogo />
+const Template: ComponentStory<LogoComponent> = (args) => {
+  return <Logo {...args} />
 }
 
 export const Primary = Template.bind({})
 
-export const Double = () => {
-  return <DoubleLogo />
+const Image: ComponentStory<LogoComponent> = (args) => {
+  const image = (
+    <img
+      src='https://upload.wikimedia.org/wikipedia/commons/6/66/SMPTE_Color_Bars.svg'
+      alt='placeholder'
+      className='object-cover w-full h-full'
+    />
+  )
+
+  return <Logo {...args} primary={image} />
 }
 
-export const Badge = () => {
-  return <BadgeLogo />
-}
+export const ImageLogo = Image.bind({})
