@@ -19,6 +19,7 @@ export default {
     },
   },
   args: {
+    backgroundColor: 'var(--color-primary)',
     circle: true,
     primary: 'TEST',
     secondaryVariant: 'primary',

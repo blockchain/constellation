@@ -1,14 +1,18 @@
 import { FC, ReactNode } from 'react'
 
+import { Colors } from '../../Base/Colors'
+
 type InternalLogoProps = {
   circle: boolean
   className?: string
+  color?: Colors
   value: string | ReactNode
 }
 
 type InternalLogoComponent = FC<InternalLogoProps>
 
 type LogoProps = {
+  backgroundColor?: Colors
   /**
    * Displays the logo as either a circle or rounded square. Defaults to true.
    */

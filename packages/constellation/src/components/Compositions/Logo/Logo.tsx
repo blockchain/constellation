@@ -4,7 +4,7 @@ import { Textfit } from 'react-textfit'
 
 import { InternalLogoComponent, LogoComponent } from './Logo.types'
 
-const InternalLogo: InternalLogoComponent = ({ circle, className, value }) => {
+const InternalLogo: InternalLogoComponent = ({ circle, className, color, value }) => {
   return (
     <div
       className={cx(
@@ -12,10 +12,11 @@ const InternalLogo: InternalLogoComponent = ({ circle, className, value }) => {
         'w-8 h-8 rounded flex justify-center items-center bg-primary relative overflow-hidden',
         className,
       )}
+      style={color && { backgroundColor: color }}
     >
       {typeof value === 'string' ? (
         <div className='w-[80%]'>
-          <Textfit mode='single' className='text-white-000' forceSingleModeWidth={false}>
+          <Textfit mode='single' className='text-white-000'>
             {value}
           </Textfit>
         </div>
@@ -27,6 +28,7 @@ const InternalLogo: InternalLogoComponent = ({ circle, className, value }) => {
 }
 
 const Logo: LogoComponent = ({
+  backgroundColor,
   circle = true,
   primary,
   secondary,
@@ -38,6 +40,7 @@ const Logo: LogoComponent = ({
     <div className='constellation w-8 h-10 relative flex justify-center items-center'>
       {secondary && (
         <InternalLogo
+          color={backgroundColor}
           circle={circle}
           value={secondary}
           className={cx('!absolute !w-6 !h-6 bottom-0 right-0', {
@@ -46,6 +49,7 @@ const Logo: LogoComponent = ({
         />
       )}
       <InternalLogo
+        color={backgroundColor}
         circle={circle}
         value={primary}
         className={cx({
