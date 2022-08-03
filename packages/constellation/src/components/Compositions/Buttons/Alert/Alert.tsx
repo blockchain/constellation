@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
 
 import { IconAlert, PaletteColors, SemanticColors } from '../../../Base'
-import { Button } from '../Button'
+import { Button, ButtonComponentType, ButtonProps } from '../Button'
 import { Component as ComponentType, Props } from './Alert.types'
 
 /**
@@ -15,7 +15,7 @@ import { Component as ComponentType, Props } from './Alert.types'
  */
 
 const AlertButton: ComponentType = forwardRef(
-  <T extends React.ElementType = 'button'>(props: Props<T>, ref?: PolymorphicRef<T>) => {
+  <T extends ButtonComponentType>(props: Props<T> & ButtonProps<T>, ref?: PolymorphicRef<T>) => {
     return (
       <Button
         {...props}

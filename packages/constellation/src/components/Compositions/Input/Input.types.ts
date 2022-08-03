@@ -20,4 +20,6 @@ type ShowPasswordProps = {
   showPassword: boolean
 }
 
-export type { InputProps, ShowPasswordProps }
+type InputComponent = (props: InputProps) => React.ReactElement | null
+
+export type { InputComponent, InputProps, ShowPasswordProps }
