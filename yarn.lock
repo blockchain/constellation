@@ -4550,7 +4550,7 @@ __metadata:
     "@rollup/plugin-commonjs": 21.0.1
     "@rollup/plugin-node-resolve": 13.1.2
     "@rollup/plugin-typescript": 8.3.0
-    "@storybook/addon-a11y": ^6.5.9
+    "@storybook/addon-a11y": 6.5.9
     "@storybook/addon-actions": 6.5.9
     "@storybook/addon-docs": 6.5.9
     "@storybook/addon-essentials": 6.5.9
@@ -6307,7 +6307,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:^6.5.9":
+"@storybook/addon-a11y@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/addon-a11y@npm:6.5.9"
   dependencies:
