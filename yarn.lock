@@ -4557,7 +4557,7 @@ __metadata:
     "@storybook/addon-interactions": 6.5.9
     "@storybook/addon-links": 6.5.9
     "@storybook/addon-postcss": 2.0.0
-    "@storybook/addon-storyshots": ^6.5.9
+    "@storybook/addon-storyshots": 6.5.9
     "@storybook/builder-webpack4": 6.5.9
     "@storybook/builder-webpack5": ^6.5.9
     "@storybook/manager-webpack4": 6.5.9
@@ -4599,7 +4599,7 @@ __metadata:
     eslint-plugin-sort-keys-fix: 1.1.1
     eslint-plugin-typescript-sort-keys: 1.5.0
     jest: 27.4.7
-    jest-transform-stub: ^2.0.0
+    jest-transform-stub: 2.0.0
     lint-staged: 12.3.4
     postcss: 8.4.14
     postcss-prefix-selector: ^1.16.0
@@ -4607,7 +4607,7 @@ __metadata:
     prettier-config-constellation: "workspace:*"
     react: 17.0.2
     react-dom: 17.0.2
-    react-test-renderer: ^18.2.0
+    react-test-renderer: 18.2.0
     rimraf: 3.0.2
     rollup: 2.63.0
     rollup-plugin-dts: 4.1.0
@@ -6663,7 +6663,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-storyshots@npm:^6.5.9":
+"@storybook/addon-storyshots@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/addon-storyshots@npm:6.5.9"
   dependencies:
@@ -17136,7 +17136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-transform-stub@npm:^2.0.0":
+"jest-transform-stub@npm:2.0.0":
   version: 2.0.0
   resolution: "jest-transform-stub@npm:2.0.0"
   checksum: c46134257e5fb047f5952e4a4a1339925dd009da15aa8d3310ba1d3e4d22266ed6c675cd18e58c9d5ca2246718d6cc8ff00ea6a4b6f3b2a6b285b6426f6ae8fe
@@ -21321,6 +21321,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-test-renderer@npm:18.2.0":
+  version: 18.2.0
+  resolution: "react-test-renderer@npm:18.2.0"
+  dependencies:
+    react-is: ^18.2.0
+    react-shallow-renderer: ^16.15.0
+    scheduler: ^0.23.0
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 6b6980ced93fa2b72662d5e4ab3b4896833586940047ce52ca9aca801e5432adf05fcbe28289b0af3ce6a2a7c590974e25dcc8aa43d0de658bfe8bbcd686f958
+  languageName: node
+  linkType: hard
+
 "react-test-renderer@npm:^16.8.0 || ^17.0.0":
   version: 17.0.2
   resolution: "react-test-renderer@npm:17.0.2"
@@ -21332,19 +21345,6 @@ __metadata:
   peerDependencies:
     react: 17.0.2
   checksum: e6b5c6ed2a0bde2c34f1ab9523ff9bc4c141a271daf730d6b852374e83acc0155d58ab71a318251e953ebfa65b8bebb9c5dce3eba1ccfcbef7cc4e1e8261c401
-  languageName: node
-  linkType: hard
-
-"react-test-renderer@npm:^18.2.0":
-  version: 18.2.0
-  resolution: "react-test-renderer@npm:18.2.0"
-  dependencies:
-    react-is: ^18.2.0
-    react-shallow-renderer: ^16.15.0
-    scheduler: ^0.23.0
-  peerDependencies:
-    react: ^18.2.0
-  checksum: 6b6980ced93fa2b72662d5e4ab3b4896833586940047ce52ca9aca801e5432adf05fcbe28289b0af3ce6a2a7c590974e25dcc8aa43d0de658bfe8bbcd686f958
   languageName: node
   linkType: hard
 
