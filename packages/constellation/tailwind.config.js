@@ -18,6 +18,7 @@ module.exports = {
     plugin(({ addVariant }) => {
       addVariant('mode-dark', '.mode-dark &')
       addVariant('mode-light', '.mode-light &')
+      addVariant('children', '& > *')
     }),
   ],
   theme: {
@@ -35,6 +36,7 @@ module.exports = {
       background: 'var(--color-background)',
       'background-dark': 'var(--color-dark)',
       'background-light': 'var(--color-background-light)',
+      'background-ultra-light': 'var(--color-background-ultra-light)',
       'background-blue': 'var(--color-background-blue)',
       'background-green': 'var(--color-background-green)',
       'background-red': 'var(--color-background-red)',

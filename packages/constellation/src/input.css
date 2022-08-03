@@ -568,7 +568,8 @@
         --color-success: var(--color-green-600);
         --color-warning: var(--color-orange-600);
         --color-error: var(--color-red-600);
-        --color-background-light: var(--color-grey-000);
+        --color-background-light: #FAFBFF;
+        --color-background-ultra-light: var(--color-grey-000);
         --color-background: var(--color-white);
         --color-background-blue: var(--color-blue-000);
         --color-background-green: var(--color-green-000);
@@ -591,6 +592,7 @@
         --color-warning: var(--color-orange-400);
         --color-error: var(--color-red-400);
         --color-background-light: var(--color-dark-800);
+        --color-background-ultra-light: var(--color-dark-800);
         --color-background: var(--color-dark-900);
         --color-background-blue: var(--color-dark-600);
         --color-background-green: var(--color-green-000);
