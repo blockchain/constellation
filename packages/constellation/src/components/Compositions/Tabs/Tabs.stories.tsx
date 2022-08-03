@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
-import { Tabs, TabsComponent } from '.'
+import { Tabs as RenderedTabs, TabsComponent } from '.'
 
 export default {
   argTypes: {
@@ -27,16 +27,16 @@ export default {
       { title: 'Tab 4', value: 'tab4' },
     ],
   },
-  component: Tabs,
+  component: RenderedTabs,
   title: 'Compositions/Tabs',
 } as ComponentMeta<TabsComponent>
 
 const Template: ComponentStory<TabsComponent> = (args) => {
   return (
     <div className='constellation py-2 px-6'>
-      <Tabs {...args} />
+      <RenderedTabs {...args} />
     </div>
   )
 }
 
-export const TabsStory = Template.bind({})
+export const Tabs = Template.bind({})
