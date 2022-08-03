@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
+import * as Icons from '../../Base/Icon'
 import { Logo, LogoComponent } from '.'
 
 export default {
@@ -8,10 +10,18 @@ export default {
     circle: {
       control: { type: 'boolean' },
     },
-    primary: {
+    primaryIcon: {
+      control: { type: 'select' },
+      options: Object.keys(Icons),
+    },
+    primaryText: {
       control: { type: 'text' },
     },
-    secondary: {
+    secondaryIcon: {
+      control: { type: 'select' },
+      options: Object.keys(Icons),
+    },
+    secondaryText: {
       control: { type: 'text' },
     },
     secondaryVariant: {
@@ -21,29 +31,38 @@ export default {
   args: {
     backgroundColor: 'var(--color-primary)',
     circle: true,
-    primary: 'TEST',
+    iconColor: '#FFFFFF',
+    primaryText: 'TEST',
     secondaryVariant: 'primary',
   },
   component: Logo,
   title: 'Compositions/Logo',
 } as ComponentMeta<LogoComponent>
 
-const Template: ComponentStory<LogoComponent> = (args) => {
-  return <Logo {...args} />
+const Template: ComponentStory<LogoComponent> = ({
+  iconColor,
+  primaryIcon,
+  secondaryIcon,
+  ...args
+}) => {
+  const PrimaryIcon =
+    primaryIcon && (Icons[primaryIcon as keyof typeof Icons] as React.FC<Icons.IconProps>)
+  const SecondaryIcon =
+    secondaryIcon && (Icons[secondaryIcon as keyof typeof Icons] as React.FC<Icons.IconProps>)
+
+  // We have to ignore some TS errors here because storybook is able to add all props that usually cant be used together.
+  return (
+    <>
+      {/* @ts-ignore */}
+      <Logo
+        /* @ts-ignore */
+        primaryIcon={primaryIcon && <PrimaryIcon color={iconColor} />}
+        /* @ts-ignore */
+        secondaryIcon={secondaryIcon && <SecondaryIcon color={iconColor} />}
+        {...args}
+      />
+    </>
+  )
 }
 
 export const Primary = Template.bind({})
-
-const Image: ComponentStory<LogoComponent> = (args) => {
-  const image = (
-    <img
-      src='https://upload.wikimedia.org/wikipedia/commons/6/66/SMPTE_Color_Bars.svg'
-      alt='placeholder'
-      className='object-cover w-full h-full'
-    />
-  )
-
-  return <Logo {...args} primary={image} />
-}
-
-export const ImageLogo = Image.bind({})

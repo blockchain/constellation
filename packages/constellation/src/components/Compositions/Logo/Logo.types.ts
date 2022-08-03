@@ -6,38 +6,73 @@ type InternalLogoProps = {
   circle: boolean
   className?: string
   color?: Colors
-  value: string | ReactNode
+  icon: ReactNode
+  iconColor?: Colors
+  imgAlt?: string
+  imgSrc?: string
+  text?: string
 }
 
 type InternalLogoComponent = FC<InternalLogoProps>
 
+interface PrimaryImage {
+  primaryIcon?: never
+  primaryImgAlt: string
+  primaryImgSrc: string
+  primaryText?: never
+}
+
+interface PrimaryIcon {
+  primaryIcon: ReactNode
+  primaryImgAlt?: never
+  primaryImgSrc?: never
+  primaryText?: never
+}
+
+interface PrimaryText {
+  primaryIcon?: never
+  primaryImgAlt?: never
+  primaryImgSrc?: never
+  primaryText: string
+}
+
+interface SecondaryImage {
+  secondaryIcon?: never
+  secondaryImgAlt: string
+  secondaryImgSrc: string
+  secondaryText?: never
+}
+
+interface SecondaryIcon {
+  iconColor?: Colors
+  secondaryIcon: ReactNode
+  secondaryImgAlt?: never
+  secondaryImgSrc?: never
+  secondaryText?: never
+}
+
+interface SecondaryText {
+  secondaryIcon?: never
+  secondaryImgAlt?: never
+  secondaryImgSrc?: never
+  secondaryText: string
+}
+
+interface SecondaryOptional {
+  secondaryIcon?: never
+  secondaryImgAlt?: never
+  secondaryImgSrc?: never
+  secondaryText?: never
+}
+
+// the extra interfaces here are used to make impossible to have both more than value in each logo
 type LogoProps = {
   backgroundColor?: Colors
-  /**
-   * Displays the logo as either a circle or rounded square. Defaults to true.
-   */
   circle?: boolean
-  /**
-   * The content of the primary logo.
-   * If a string is provided, it will be rendered as text in the primary logo.
-   * If a React node is provided, it will be rendered at full width and height.
-   * in the primary logo.
-   */
-  primary: string | ReactNode
-  /**
-   * The content of the secondary logo.
-   * If a string is provided, it will be rendered as text in the secondary logo.
-   * If a React node is provided, it will be rendered at full width and height.
-   * in the secondary logo.
-   */
-  secondary?: string | ReactNode
-  /**
-   * The style of the secondary logo. Defaults to "primary". If primary then both
-   * logos will be rendered at 24px slightly overlapping. If badge the secondary logo
-   * will be rendered at 16px in the bottom right corner and the primary logo at full size.
-   */
+  iconColor?: Colors
   secondaryVariant?: 'primary' | 'badge'
-}
+} & (PrimaryImage | PrimaryIcon | PrimaryText) &
+  (SecondaryImage | SecondaryIcon | SecondaryText | SecondaryOptional)
 
 type LogoComponent = FC<LogoProps>
 
