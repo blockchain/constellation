@@ -9,7 +9,8 @@
     "module": "ESNext",
     "outDir": "dist",
     "rootDir": "src",
-    "target": "ES6"
+    "target": "ES6",
+    "skipLibCheck": true
   },
   "include": ["src", "components/stories", "svg.d.ts"],
   "exclude": ["node_modules", "dist"]

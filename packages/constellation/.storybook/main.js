@@ -8,6 +8,7 @@ module.exports = {
     '@storybook/addon-interactions',
     '@luigiminardim/storybook-addon-globals-controls',
     'storybook-dark-mode',
+    '@storybook/addon-a11y',
     {
       name: '@storybook/addon-postcss',
       options: {

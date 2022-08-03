@@ -2,6 +2,7 @@ import React from 'react'
 
 import { SemanticColors } from '../Colors'
 import * as Icons from '.'
+import IconComponent from './Icon'
 import type { Props } from './Icon.types'
 
 export const Icon = ({ icon = 'IconPlus', ...args }: Props & { icon: keyof typeof Icons }) => {
@@ -29,22 +30,23 @@ export default {
   argTypes: {
     color: {
       control: { type: 'select' },
-      defaultValue: SemanticColors.primary,
       options: Object.values(SemanticColors),
     },
     icon: {
       control: { type: 'select' },
-      defaultValue: 'IconApple',
       options: Object.keys(Icons),
     },
     size: {
       control: { type: 'radio' },
-      defaultValue: 'small',
       description: 'Size of the icon. This prop also accepts a number for custom `rem` values.',
       options: ['small', 'medium', 'large'],
     },
   },
-  args: {},
-  component: Icons.IconPlus,
+  args: {
+    color: SemanticColors.primary,
+    icon: 'IconApple',
+    size: 'small',
+  },
+  component: IconComponent,
   title: 'Base/Icon',
 }

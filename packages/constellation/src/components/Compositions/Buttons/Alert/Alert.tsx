@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
 
 import { IconAlert, PaletteColors, SemanticColors } from '../../../Base'
-import { Button } from '../Button'
+import { Button, ButtonComponentType, ButtonProps } from '../Button'
 import { Component as ComponentType, Props } from './Alert.types'
 
 /**
@@ -15,17 +15,17 @@ import { Component as ComponentType, Props } from './Alert.types'
  */
 
 const AlertButton: ComponentType = forwardRef(
-  <T extends React.ElementType = 'button'>(props: Props<T>, ref?: PolymorphicRef<T>) => {
+  <T extends ButtonComponentType>(props: Props<T> & ButtonProps<T>, ref?: PolymorphicRef<T>) => {
     return (
       <Button
-        className='constellation rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500'
+        {...props}
         ref={ref}
+        variant='alert'
         icon={
           <IconAlert
             color={props.disabled ? PaletteColors['orange-300'] : SemanticColors.warning}
           />
         }
-        {...props}
       />
     )
   },

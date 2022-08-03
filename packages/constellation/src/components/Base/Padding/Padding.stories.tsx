@@ -5,9 +5,10 @@ import { Padding, PaddingComponent } from '.'
 
 export default {
   argTypes: {
-    children: {
-      defaultValue: <span>Padding content</span>,
-    },
+    children: {},
+  },
+  args: {
+    children: <span>Padding content</span>,
   },
   component: Padding,
   title: 'Base/Padding',

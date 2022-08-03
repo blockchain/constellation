@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
-import { Button } from '../Button'
+import { Button, ButtonComponentType } from '../Button'
 import { Component as ComponentType, Props, Sizes } from './IconButton.types'
 
 /**
@@ -21,16 +21,14 @@ const sizeClasses: Record<Sizes, string> = {
 }
 
 const IconButton: ComponentType = forwardRef(
-  <T extends React.ElementType = 'button'>(
-    { size, ...otherProps }: Props<T>,
-    ref?: PolymorphicRef<T>,
-  ) => {
+  <T extends ButtonComponentType>({ size, ...otherProps }: Props<T>, ref?: PolymorphicRef<T>) => {
     return (
       <Button
         className={cx(
-          'constellation p- bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500',
+          'constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2',
           sizeClasses[size],
         )}
+        variant='icon'
         ref={ref}
         text=''
         loaderVariant='color'

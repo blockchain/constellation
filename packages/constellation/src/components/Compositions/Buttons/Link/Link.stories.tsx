@@ -8,29 +8,32 @@ export default {
   argTypes: {
     as: {
       control: { type: 'select' },
-      defaultValue: 'a',
       description: 'Allows for overriding the underlying DOM element ',
       options: ['button', 'div', 'a'],
     },
-    disabled: { control: { type: 'boolean' }, defaultValue: false },
+    disabled: { control: { type: 'boolean' } },
     href: { action: 'click' },
     icon: {
       control: { type: 'boolean' },
-      defaultValue: true,
       description: 'An optional Icon displayed inline with link text',
     },
     size: {
       control: { type: 'radio' },
-      defaultValue: 'large',
       options: ['default', 'large', 'small'],
     },
     state: {
       control: { type: 'radio' },
-      defaultValue: 'initial',
       description: 'An optional visual progress indication of a tiggered link action',
       options: ['initial', 'loading', 'success'],
     },
     text: { control: { type: 'text' }, description: 'Text content of link' },
+  },
+  args: {
+    as: 'a',
+    disabled: false,
+    icon: true,
+    size: 'large',
+    state: 'initial',
   },
   component: LinkComponent,
   title: 'Compositions/Buttons/Link',

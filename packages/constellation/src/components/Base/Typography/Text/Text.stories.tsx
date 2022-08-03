@@ -14,7 +14,6 @@ export default {
     children: { control: { type: 'text' } },
     color: {
       control: { type: 'select' },
-      defaultValue: SemanticColors.body,
       options: Object.values(SemanticColors),
     },
     textAlign: {
@@ -30,6 +29,9 @@ export default {
       control: { type: 'select' },
       options: textVariants,
     },
+  },
+  args: {
+    color: SemanticColors.body,
   },
   component: TextComponent,
   title: 'Base/Typography/Text',
