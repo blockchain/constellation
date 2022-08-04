@@ -4040,7 +4040,7 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
       <button
         aria-controls="radix-0-content-tab1"
         aria-selected={false}
-        className="constellation group py-2.5 rounded-[10px] text-body focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary children:radix-state-active:border-none flex flex-1"
+        className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -4054,7 +4054,7 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         type="button"
       >
         <span
-          className="constellation text-sm font-medium text-gray-700 dark:text-gray-100 px-3 border-r border-r-medium w-full"
+          className="constellation text-sm font-medium px-3 border-r border-r-transparent border-r-medium w-full"
         >
           Tab 1
         </span>
@@ -4062,7 +4062,7 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
       <button
         aria-controls="radix-0-content-tab2"
         aria-selected={true}
-        className="constellation group py-2.5 rounded-[10px] text-body focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary children:radix-state-active:border-none flex flex-1"
+        className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -4076,7 +4076,7 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         type="button"
       >
         <span
-          className="constellation text-sm font-medium text-gray-700 dark:text-gray-100 px-3 border-r border-r-medium w-full"
+          className="constellation text-sm font-medium px-3 border-r border-r-transparent border-r-medium w-full"
         >
           Tab 2
         </span>
@@ -4084,7 +4084,7 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
       <button
         aria-controls="radix-0-content-tab3"
         aria-selected={false}
-        className="constellation group py-2.5 rounded-[10px] text-body focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary children:radix-state-active:border-none flex flex-1"
+        className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -4098,7 +4098,7 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         type="button"
       >
         <span
-          className="constellation text-sm font-medium text-gray-700 dark:text-gray-100 px-3 border-r border-r-medium w-full"
+          className="constellation text-sm font-medium px-3 border-r border-r-transparent border-r-medium w-full"
         >
           Tab 3
         </span>
@@ -4106,7 +4106,7 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
       <button
         aria-controls="radix-0-content-tab4"
         aria-selected={false}
-        className="constellation group py-2.5 rounded-[10px] text-body focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary children:radix-state-active:border-none flex flex-1"
+        className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -4120,7 +4120,7 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         type="button"
       >
         <span
-          className="constellation text-sm font-medium text-gray-700 dark:text-gray-100 px-3 w-full"
+          className="constellation text-sm font-medium px-3 border-r border-r-transparent w-full"
         >
           Tab 4
         </span>

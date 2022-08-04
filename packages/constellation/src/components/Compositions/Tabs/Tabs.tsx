@@ -13,16 +13,16 @@ const Tabs = ({ defaultActiveTab, onTabChange, size, tabs }: TabsProps) => {
           'bg-transparent gap-4 justify-start': size === 'small',
         })}
       >
-        {tabs.map(({ title, value }, i) => (
+        {tabs.map(({ key, titleContent }, i) => (
           <Trigger
-            key={`tab-trigger-${value}`}
-            value={value}
+            key={`tab-trigger-${key}`}
+            value={key}
             className={cx(
-              'constellation group py-2.5 rounded-[10px] text-body',
+              'constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400',
               'focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75',
-              'radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary children:radix-state-active:border-none',
+              'radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent',
               {
-                'border border-transparent radix-state-active:border-background-light radix-state-active:mode-dark:bg-dark-700':
+                'border border-transparent radix-state-active:border-background-light radix-state-active:mode-dark:bg-dark-800':
                   size === 'small',
                 'flex flex-1': size === 'large',
               },
@@ -30,14 +30,14 @@ const Tabs = ({ defaultActiveTab, onTabChange, size, tabs }: TabsProps) => {
           >
             <span
               className={cx(
-                'constellation text-sm font-medium text-gray-700 dark:text-gray-100 px-3',
+                'constellation text-sm font-medium px-3 border-r border-r-transparent',
                 {
-                  'border-r border-r-medium': i < tabs.length - 1 && size === 'large',
+                  'border-r-medium': i < tabs.length - 1 && size === 'large',
                   'w-full': size === 'large',
                 },
               )}
             >
-              {title}
+              {titleContent}
             </span>
           </Trigger>
         ))}

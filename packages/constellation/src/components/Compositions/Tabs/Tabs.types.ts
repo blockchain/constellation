@@ -1,13 +1,13 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 
 interface Tab {
-  title: string
-  value: string
+  key: string
+  titleContent: React.ReactNode
 }
 
 export interface TabsProps {
-  defaultActiveTab: Tab['value']
-  onTabChange?: (value: Tab['value']) => void
+  defaultActiveTab: Tab['key']
+  onTabChange?: (value: Tab['key']) => void
   size: 'large' | 'small'
   tabs: Tab[]
 }

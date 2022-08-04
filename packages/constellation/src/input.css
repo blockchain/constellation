@@ -568,8 +568,8 @@
         --color-success: var(--color-green-600);
         --color-warning: var(--color-orange-600);
         --color-error: var(--color-red-600);
-        --color-background-light: #FAFBFF;
-        --color-background-ultra-light: var(--color-grey-000);
+        --color-background-light: var(--color-grey-000);
+        --color-background-ultra-light: #FAFBFF;
         --color-background: var(--color-white);
         --color-background-blue: var(--color-blue-000);
         --color-background-green: var(--color-green-000);
