@@ -4,9 +4,9 @@ import React from 'react'
 
 import { TabsProps } from './Tabs.types'
 
-const Tabs = ({ onTabChange, size, tabs }: TabsProps) => {
+const Tabs = ({ defaultActiveTab, onTabChange, size, tabs }: TabsProps) => {
   return (
-    <Root onValueChange={onTabChange} defaultValue='tab1'>
+    <Root onValueChange={onTabChange} defaultValue={defaultActiveTab}>
       <List
         className={cx('constellation flex w-full rounded-[10px] p-[2px]', {
           'bg-background-ultra-light': size === 'large',

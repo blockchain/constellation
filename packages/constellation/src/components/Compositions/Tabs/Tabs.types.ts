@@ -6,6 +6,7 @@ interface Tab {
 }
 
 export interface TabsProps {
+  defaultActiveTab: Tab['value']
   onTabChange?: (value: Tab['value']) => void
   size: 'large' | 'small'
   tabs: Tab[]

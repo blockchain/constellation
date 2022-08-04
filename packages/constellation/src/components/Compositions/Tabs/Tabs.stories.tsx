@@ -5,6 +5,7 @@ import { Tabs as RenderedTabs, TabsComponent } from '.'
 
 export default {
   argTypes: {
+    defaultActiveTab: { control: 'text', description: 'The default active tab' },
     onTabChange: {
       action: 'click',
       description: 'An optional callback that is fired when active tab is changed.',
@@ -19,6 +20,7 @@ export default {
     },
   },
   args: {
+    defaultActiveTab: 'tab2',
     size: 'large',
     tabs: [
       { title: 'Tab 1', value: 'tab1' },
