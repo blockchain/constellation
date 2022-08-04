@@ -8,28 +8,31 @@ export default {
   argTypes: {
     as: {
       control: { type: 'select' },
-      defaultValue: 'button',
       description: 'Allows for overriding the underlying DOM element ',
       options: ['button', 'div', 'a'],
     },
-    disabled: { control: { type: 'boolean' }, defaultValue: false },
+    disabled: { control: { type: 'boolean' } },
     icon: {
       control: { type: 'select' },
-      defaultValue: 'IconApple',
       options: Object.keys(Icons),
     },
     onClick: { action: 'click' },
     size: {
       control: { type: 'radio' },
-      defaultValue: 'large',
       options: ['default', 'large', 'small'],
     },
     state: {
       control: { type: 'radio' },
-      defaultValue: 'initial',
       description: 'An optional visual progress indication of a tiggered button action',
       options: ['initial', 'loading', 'success'],
     },
+  },
+  args: {
+    as: 'button',
+    disabled: false,
+    icon: 'IconApple',
+    size: 'large',
+    state: 'initial',
   },
   component: IconButtonComponent,
   title: 'Compositions/Buttons/IconButton',

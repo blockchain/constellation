@@ -15,7 +15,6 @@ export const globalTypes = {
   theme: {
     name: 'Theme',
     description: 'Sets the custom theme colors.',
-    defaultValue: {},
     control: { type: 'object' },
   },
 }

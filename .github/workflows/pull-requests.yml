@@ -29,6 +29,9 @@ jobs:
       - name: Lint Constellation code
         run: yarn workspace @blockchain-com/constellation lint
 
+      - name: Test Constellation types
+        run: yarn workspace @blockchain-com/constellation test:tsc
+
       - name: Test Constellation code
         run: yarn workspace @blockchain-com/constellation test
 

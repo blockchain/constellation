@@ -7,29 +7,32 @@ export default {
   argTypes: {
     as: {
       control: { type: 'select' },
-      defaultValue: 'button',
       description: 'Allows for overriding the underlying DOM element ',
       options: ['button', 'div', 'a'],
     },
-    disabled: { control: { type: 'boolean' }, defaultValue: false },
+    disabled: { control: { type: 'boolean' } },
     onClick: { action: 'click' },
     size: {
       control: { type: 'radio' },
-      defaultValue: 'large',
       options: ['default', 'large', 'small'],
     },
     state: {
       control: { type: 'radio' },
-      defaultValue: 'initial',
       description: 'An optional visual progress indication of a tiggered button action',
       options: ['initial', 'loading', 'success'],
     },
     text: { control: { type: 'text' }, description: 'Text content of button' },
     type: {
       control: { type: 'select' },
-      defaultValue: 'button',
       options: ['button', 'reset', 'submit'],
     },
+  },
+  args: {
+    as: 'button',
+    disabled: false,
+    size: 'large',
+    state: 'initial',
+    type: 'button',
   },
   component: AlertButtonComponent,
   title: 'Compositions/Buttons/Alert',

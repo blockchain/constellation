@@ -8,19 +8,21 @@ export default {
   argTypes: {
     borderWidth: {
       control: { type: 'radio' },
-      defaultValue: 'default',
       options: ['default', 'large', 'small', 'xsmall'],
     },
     size: {
       control: { type: 'radio' },
-      defaultValue: 'default',
       options: ['default', 'full', 'large', 'small'],
     },
     variant: {
       control: { type: 'radio' },
-      defaultValue: 'color',
       options: ['monotone', 'color'],
     },
+  },
+  args: {
+    borderWidth: 'default',
+    size: 'default',
+    variant: 'color',
   },
   component: SpinningLoader,
   title: 'Base/Loaders',
