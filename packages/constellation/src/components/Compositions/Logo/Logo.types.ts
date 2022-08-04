@@ -58,7 +58,7 @@ interface SecondaryText {
   secondaryText: string
 }
 
-// allow the logo component to now have any secondary props
+// allow the logo component to not have any secondary props
 interface SecondaryOptional {
   secondaryIcon?: never
   secondaryImgAlt?: never
