@@ -15,6 +15,9 @@ export default {
       control: { type: 'select' },
       options: Object.keys(Icons),
     },
+    primaryIconColor: {
+      control: { type: 'color' },
+    },
     primaryImgSrc: {
       control: { type: 'text' },
     },
@@ -26,6 +29,9 @@ export default {
       control: { type: 'select' },
       options: Object.keys(Icons),
     },
+    secondaryIconColor: {
+      control: { type: 'color' },
+    },
     secondaryImgSrc: {
       control: { type: 'text' },
     },
@@ -35,7 +41,9 @@ export default {
   },
   args: {
     circle: true,
+    primaryIconColor: '#fff',
     primaryText: 'TEST',
+    secondaryIconColor: '#fff',
   },
   component: Logo,
   title: 'Compositions/Logo',
@@ -44,9 +52,11 @@ export default {
 interface StoryType {
   circle: boolean
   primaryIcon: keyof typeof Icons
+  primaryIconColor: string
   primaryImgSrc: string
   primaryText: string
   secondaryIcon: keyof typeof Icons
+  secondaryIconColor: string
   secondaryImgSrc: string
   secondaryText: string
 }
@@ -57,9 +67,11 @@ const Template: ComponentStory<StoryComponent> = ({
   circle,
   doubleVariant,
   primaryIcon,
+  primaryIconColor,
   primaryImgSrc,
   primaryText,
   secondaryIcon,
+  secondaryIconColor,
   secondaryImgSrc,
   secondaryText,
 }) => {
@@ -73,11 +85,19 @@ const Template: ComponentStory<StoryComponent> = ({
       circle={circle}
       doubleVariant={doubleVariant}
       /* @ts-ignore */
-      primaryContent={{ icon: PrimaryIcon, imgSrc: primaryImgSrc, text: primaryText }}
+      primaryContent={{
+        icon: PrimaryIcon,
+        /* @ts-ignore */
+        iconColor: primaryIconColor,
+        imgSrc: primaryImgSrc,
+        text: primaryText,
+      }}
       /* @ts-ignore */
       secondaryContent={
         (secondaryText || secondaryIcon || secondaryImgSrc) && {
           icon: SecondaryIcon,
+          /* @ts-ignore */
+          iconColor: secondaryIconColor,
           imgSrc: secondaryImgSrc,
           text: secondaryText,
         }

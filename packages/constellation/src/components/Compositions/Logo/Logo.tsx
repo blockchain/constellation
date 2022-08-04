@@ -49,11 +49,10 @@ const Logo: LogoComponent = ({
   secondaryContent,
 }) => {
   const badge = doubleVariant === 'badge'
-  const hasSecondary = secondaryContent !== undefined
 
   return (
     <div className='constellation w-8 h-10 relative flex justify-center items-center'>
-      {hasSecondary && (
+      {secondaryContent && (
         <InternalLogo
           backgroundColor={secondaryContent.backgroundColor}
           circle={circle}
@@ -75,7 +74,7 @@ const Logo: LogoComponent = ({
         imgSrc={primaryContent.imgSrc}
         className={cx({
           '!absolute !w-6 !h-6 top-0 left-0 border-2 border-background border-solid -ml-[2px] -mt-[2px]':
-            hasSecondary && !badge,
+            secondaryContent && !badge,
         })}
       />
     </div>
