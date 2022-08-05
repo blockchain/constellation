@@ -1,10 +1,16 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 
-type Props = {
-  primaryOnClick: () => void
-  primaryText: string
-  secondaryOnClick?: () => void
-  secondaryText?: string
+interface ButtonProps {
+  onClick: () => void
+  text: string
+  variant?: 'primary' | 'secondary' | 'minimal'
+}
+
+interface Props {
+  footer?: boolean
+  header?: boolean
+  primaryButton: ButtonProps
+  secondaryButton?: ButtonProps
 }
 type Component = FC<Props>
 

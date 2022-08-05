@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { FC } from 'react'
 
-import { TextCell, ButtonCell } from '../'
+import { ButtonCell, TextCell } from '../'
 import { TableContainer as TableContainerComponent } from '.'
 
 export default {
@@ -27,20 +27,33 @@ const Template: ComponentStory<FC> = () => {
             <TextCell text='Bitcoin' subtext='BTC' />
             <TextCell text='$32,000' subtext='1 BTC' />
             <ButtonCell
-              primaryText='Buy'
-              primaryOnClick={() => {}}
-              secondaryText='Sell'
-              secondaryOnClick={() => {}}
+              primaryButton={{
+                text: 'Buy',
+                onClick: () => {},
+                variant: 'primary',
+              }}
+              secondaryButton={{
+                text: 'Sell',
+                onClick: () => {},
+                variant: 'secondary',
+              }}
             />
           </tr>
           <tr>
-            <TextCell text='Bitcoin' subtext='BTC' />
-            <TextCell text='$32,000' subtext='1 BTC' />
+            <TextCell text='Bitcoin' subtext='BTC' footer />
+            <TextCell text='$32,000' subtext='1 BTC' footer />
             <ButtonCell
-              primaryText='Buy'
-              primaryOnClick={() => {}}
-              secondaryText='Sell'
-              secondaryOnClick={() => {}}
+              primaryButton={{
+                text: 'Buy',
+                onClick: () => {},
+                variant: 'primary',
+              }}
+              secondaryButton={{
+                text: 'Sell',
+                onClick: () => {},
+                variant: 'secondary',
+              }}
+              footer
             />
           </tr>
         </tbody>

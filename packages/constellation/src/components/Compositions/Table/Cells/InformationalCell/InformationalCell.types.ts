@@ -1,6 +1,8 @@
 import { FC } from 'react'
 
-type Props = {
+interface Props {
+  footer?: boolean
+  header?: boolean
   text: string
 }
 type Component = FC<Props>

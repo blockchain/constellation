@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react'
 
-type Props = {
+interface Props {
+  footer?: boolean
   header?: boolean
   icon?: ReactNode
   iconPosition?: 'left' | 'right'

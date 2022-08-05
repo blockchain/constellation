@@ -5,16 +5,26 @@ import { BaseCell } from '../'
 import { ButtonCellComponentType } from '.'
 
 const ButtonCell: ButtonCellComponentType = ({
-  primaryOnClick,
-  primaryText,
-  secondaryOnClick,
-  secondaryText,
+  footer,
+  header,
+  primaryButton,
+  secondaryButton,
 }) => {
   return (
-    <BaseCell>
-      <Button text={primaryText} onClick={primaryOnClick} variant='minimal' size='small' />
-      {secondaryText && (
-        <Button text={secondaryText} onClick={secondaryOnClick} variant='minimal' size='small' />
+    <BaseCell header={header} footer={footer}>
+      <Button
+        text={primaryButton.text}
+        onClick={primaryButton.onClick}
+        variant={primaryButton.variant || 'minimal'}
+        size='small'
+      />
+      {secondaryButton && (
+        <Button
+          text={secondaryButton.text}
+          onClick={secondaryButton.onClick}
+          variant={secondaryButton.variant || 'minimal'}
+          size='small'
+        />
       )}
     </BaseCell>
   )
