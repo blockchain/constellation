@@ -4,19 +4,20 @@ import React from 'react'
 import { BaseCellComponent } from '.'
 
 const BaseCell: BaseCellComponent = ({ children, header, postfix, prefix }) => {
+  const Component = header ? 'th' : 'td'
+
   return (
-    <div
-      className={cx(
-        'constellation flex items-center h-16 pl-4 gap-2 border-b border-background-light',
-        {
-          'bg-background-light': header,
-        },
-      )}
+    <Component
+      className={cx('constellation h-16 px-4 border-b border-background-light min-w-[204px]', {
+        'bg-background-light !h-12': header,
+      })}
     >
-      {prefix}
-      {children}
-      {postfix}
-    </div>
+      <div className='flex flex-row items-center h-full gap-2'>
+        {prefix}
+        {children}
+        {postfix}
+      </div>
+    </Component>
   )
 }
 

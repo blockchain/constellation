@@ -11,8 +11,8 @@ const TextCell: TextCellComponentType = ({ header, icon, iconPosition, subtext, 
       postfix={iconPosition === 'right' && icon}
     >
       <div className='flex flex-col justify-center'>
-        <span className='text-title'>{text}</span>
-        <span className='text-body mode-light:text-dark'>{subtext}</span>
+        <span className='text-title text-sm'>{text}</span>
+        <span className='text-body mode-light:text-background-dark text-sm'>{subtext}</span>
       </div>
     </BaseCell>
   )

@@ -4013,3 +4013,79 @@ Array [
   />,
 ]
 `;
+
+exports[`Storyshots Compositions/Table/Cells/ButtonCell Button Cell 1`] = `
+<div
+  className="constellation flex items-center h-16 pl-4 gap-2 border-b border-background-light"
+>
+  <button
+    className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+    disabled={false}
+    type="button"
+  >
+    Text
+  </button>
+</div>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/CheckboxCell Checkbox Cell 1`] = `
+<div
+  className="constellation flex items-center h-16 pl-4 gap-2 border-b border-background-light"
+>
+  <input
+    type="checkbox"
+  />
+   
+  <span>
+    Text
+  </span>
+</div>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/IconCell Icon Cell 1`] = `
+<div
+  className="constellation flex items-center h-16 pl-4 gap-2 border-b border-background-light"
+>
+  <icon-apple.svg
+    color="inherit"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+</div>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/InformationalCell Informational Cell 1`] = `
+<div
+  className="constellation flex items-center h-16 pl-4 gap-2 border-b border-background-light"
+>
+  <div
+    className="constellation w-fit rounded font-semibold align-middle border py-0.5 px-[7px] text-xs bg-background-light border-background-light text-title"
+  >
+    Text
+  </div>
+</div>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/TextCell Text Cell 1`] = `
+<div
+  className="constellation flex items-center h-16 pl-4 gap-2 border-b border-background-light"
+>
+  <div
+    className="flex flex-col justify-center"
+  >
+    <span
+      className="text-title text-sm"
+    >
+      Text
+    </span>
+    <span
+      className="text-body mode-light:text-background-dark text-sm"
+    >
+      Subtext
+    </span>
+  </div>
+</div>
+`;
