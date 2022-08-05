@@ -1,8 +1,8 @@
 import { FC, ReactNode } from 'react'
 
 type Props = {
-  footer?: boolean
-  header?: boolean
+  isFooter?: boolean
+  isHeader?: boolean
   postfix?: ReactNode
   prefix?: ReactNode
 }

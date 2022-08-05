@@ -5,13 +5,13 @@ import { BaseCell } from '../'
 import { ButtonCellComponentType } from '.'
 
 const ButtonCell: ButtonCellComponentType = ({
-  footer,
-  header,
+  isFooter,
+  isHeader,
   primaryButton,
   secondaryButton,
 }) => {
   return (
-    <BaseCell header={header} footer={footer}>
+    <BaseCell isHeader={isHeader} isFooter={isFooter}>
       <Button
         text={primaryButton.text}
         onClick={primaryButton.onClick}

@@ -1,8 +1,8 @@
 import { FC, ReactNode } from 'react'
 
 interface Props {
-  footer?: boolean
-  header?: boolean
+  isFooter?: boolean
+  isHeader?: boolean
   icon?: ReactNode
   iconPosition?: 'left' | 'right'
   subtext?: string

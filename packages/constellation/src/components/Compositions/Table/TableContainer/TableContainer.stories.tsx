@@ -17,9 +17,9 @@ const Template: ComponentStory<FC> = () => {
       <table className='table-auto'>
         <thead>
           <tr>
-            <TextCell text='Asset' header />
-            <TextCell text='Amount' header />
-            <TextCell text='Actions' header />
+            <TextCell text='Asset' isHeader />
+            <TextCell text='Amount' isHeader />
+            <TextCell text='Actions' isHeader />
           </tr>
         </thead>
         <tbody>
@@ -40,8 +40,8 @@ const Template: ComponentStory<FC> = () => {
             />
           </tr>
           <tr>
-            <TextCell text='Bitcoin' subtext='BTC' footer />
-            <TextCell text='$32,000' subtext='1 BTC' footer />
+            <TextCell text='Bitcoin' subtext='BTC' isFooter />
+            <TextCell text='$32,000' subtext='1 BTC' isFooter />
             <ButtonCell
               primaryButton={{
                 text: 'Buy',
@@ -53,7 +53,7 @@ const Template: ComponentStory<FC> = () => {
                 onClick: () => {},
                 variant: 'secondary',
               }}
-              footer
+              isFooter
             />
           </tr>
         </tbody>

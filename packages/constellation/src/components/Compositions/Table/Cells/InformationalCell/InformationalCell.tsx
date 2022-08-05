@@ -4,9 +4,9 @@ import { Tag } from '../../../../Base'
 import { BaseCell } from '../'
 import { InformationalCellComponentType } from '.'
 
-const InformationalCell: InformationalCellComponentType = ({ footer, header, text }) => {
+const InformationalCell: InformationalCellComponentType = ({ isFooter, isHeader, text }) => {
   return (
-    <BaseCell footer={footer} header={header}>
+    <BaseCell isFooter={isFooter} isHeader={isHeader}>
       <Tag content={text} />
     </BaseCell>
   )

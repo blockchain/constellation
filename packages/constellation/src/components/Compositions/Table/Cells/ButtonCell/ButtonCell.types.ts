@@ -7,8 +7,8 @@ interface ButtonProps {
 }
 
 interface Props {
-  footer?: boolean
-  header?: boolean
+  isFooter?: boolean
+  isHeader?: boolean
   primaryButton: ButtonProps
   secondaryButton?: ButtonProps
 }

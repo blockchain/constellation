@@ -3,11 +3,18 @@ import React from 'react'
 import { BaseCell } from '../'
 import { TextCellComponentType } from '.'
 
-const TextCell: TextCellComponentType = ({ footer, header, icon, iconPosition, subtext, text }) => {
+const TextCell: TextCellComponentType = ({
+  isFooter,
+  isHeader,
+  icon,
+  iconPosition,
+  subtext,
+  text,
+}) => {
   return (
     <BaseCell
-      footer={footer}
-      header={header}
+      isFooter={isFooter}
+      isHeader={isHeader}
       prefix={iconPosition === 'left' && icon}
       postfix={iconPosition === 'right' && icon}
     >
