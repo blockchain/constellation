@@ -15,7 +15,15 @@ type InformationalCell = { cellType: 'informational' } & InformationalCellProps
 type TextCell = { cellType: 'text' } & TextCellProps
 
 type CellProps = ButtonCell | CheckboxCell | IconCell | InformationalCell | TextCell
-type RowProps = CellProps[]
+
+export type RowProps = CellProps[]
+
+export type BaseCellProps =
+  | ButtonCellProps
+  | CheckboxCellProps
+  | IconCellProps
+  | InformationalCellProps
+  | TextCellProps
 
 export interface Props {
   header?: RowProps

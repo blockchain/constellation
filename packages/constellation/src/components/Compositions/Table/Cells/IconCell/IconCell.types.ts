@@ -1,9 +1,9 @@
 import { FC, ReactNode } from 'react'
 
 interface Props {
+  icon?: ReactNode
   isFooter?: boolean
   isHeader?: boolean
-  icon?: ReactNode
 }
 type Component = FC<Props>
 

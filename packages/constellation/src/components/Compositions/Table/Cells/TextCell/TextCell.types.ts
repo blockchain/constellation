@@ -1,10 +1,10 @@
 import { FC, ReactNode } from 'react'
 
 interface Props {
-  isFooter?: boolean
-  isHeader?: boolean
   icon?: ReactNode
   iconPosition?: 'left' | 'right'
+  isFooter?: boolean
+  isHeader?: boolean
   subtext?: string
   text?: string
 }

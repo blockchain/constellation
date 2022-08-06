@@ -1,44 +1,66 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import {
   ButtonCell,
+  ButtonCellProps,
   CheckboxCell,
+  CheckboxCellProps,
   IconCell,
+  IconCellProps,
   InformationalCell,
+  InformationalCellProps,
   SimpleTableComponent,
   TableContainer,
   TextCell,
+  TextCellProps,
 } from '../'
+import { BaseCellProps, RowProps } from './SimpleTable.types'
 
-const getCellComponent = (cellType: string) => {
+const Cell = ({ cellProps, cellType }: { cellProps: BaseCellProps; cellType: string }) => {
   switch (cellType) {
     case 'button':
-      return ButtonCell
+      const buttonCellProps = cellProps as ButtonCellProps
+      return <ButtonCell {...buttonCellProps} />
     case 'checkbox':
-      return CheckboxCell
+      const checkboxCellProps = cellProps as CheckboxCellProps
+      return <CheckboxCell {...checkboxCellProps} />
     case 'icon':
-      return IconCell
+      const iconCellProps = cellProps as IconCellProps
+      return <IconCell {...iconCellProps} />
     case 'informational':
-      return InformationalCell
+      const informationalCellProps = cellProps as InformationalCellProps
+      return <InformationalCell {...informationalCellProps} />
     case 'text':
-      return TextCell
     default:
-      return TextCell
+      const textCellProps = cellProps as TextCellProps
+      return <TextCell {...textCellProps} />
   }
 }
+
+const Row = ({
+  cells,
+  isFooter,
+  isHeader,
+}: {
+  cells: RowProps
+  isFooter?: boolean
+  isHeader?: boolean
+}) => (
+  <tr>
+    {cells.map(({ cellType, ...props }, index) => {
+      const cellProps = { ...props, isFooter, isHeader }
+
+      return <Cell cellType={cellType} cellProps={cellProps} key={index} />
+    })}
+  </tr>
+)
 
 const SimpleTable: SimpleTableComponent = ({ header, rows }) => {
   return (
     <TableContainer>
       <table className='table-auto'>
         <thead>
-          <tr>
-            {header?.map(({ cellType, ...props }, index) => {
-              const CellComponent = getCellComponent(cellType)
-
-              return <CellComponent {...props} key={index} isHeader />
-            })}
-          </tr>
+          <tr>{header && <Row cells={header} isHeader />}</tr>
         </thead>
         <tbody>
           {rows.map((cells, index) => {
@@ -46,11 +68,7 @@ const SimpleTable: SimpleTableComponent = ({ header, rows }) => {
 
             return (
               <tr key={index}>
-                {cells?.map(({ cellType, ...props }, index) => {
-                  const CellComponent = getCellComponent(cellType)
-
-                  return <CellComponent {...props} key={index} isFooter={isFooter} />
-                })}
+                <Row cells={cells} isFooter={isFooter} />
               </tr>
             )
           })}
