@@ -14,50 +14,9 @@ export default {
 const Template: ComponentStory<FC> = () => {
   return (
     <TableContainerComponent>
-      <table className='table-auto'>
-        <thead>
-          <tr>
-            <TextCell text='Asset' isHeader />
-            <TextCell text='Amount' isHeader />
-            <TextCell text='Actions' isHeader />
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <TextCell text='Bitcoin' subtext='BTC' />
-            <TextCell text='$32,000' subtext='1 BTC' />
-            <ButtonCell
-              primaryButton={{
-                text: 'Buy',
-                onClick: () => {},
-                variant: 'primary',
-              }}
-              secondaryButton={{
-                text: 'Sell',
-                onClick: () => {},
-                variant: 'secondary',
-              }}
-            />
-          </tr>
-          <tr>
-            <TextCell text='Bitcoin' subtext='BTC' isFooter />
-            <TextCell text='$32,000' subtext='1 BTC' isFooter />
-            <ButtonCell
-              primaryButton={{
-                text: 'Buy',
-                onClick: () => {},
-                variant: 'primary',
-              }}
-              secondaryButton={{
-                text: 'Sell',
-                onClick: () => {},
-                variant: 'secondary',
-              }}
-              isFooter
-            />
-          </tr>
-        </tbody>
-      </table>
+      <div className='p-20'>
+        <p className='w-48'>This is a styled container with a border and rounded corners.</p>
+      </div>
     </TableContainerComponent>
   )
 }

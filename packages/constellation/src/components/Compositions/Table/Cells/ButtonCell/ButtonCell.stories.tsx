@@ -6,7 +6,10 @@ import { ButtonCell as ButtonCellComponent, ButtonCellComponentType } from '.'
 export default {
   argTypes: {},
   args: {
-    primaryText: 'Text',
+    primaryButton: {
+      text: 'test',
+      variant: 'minimal',
+    },
   },
   component: ButtonCellComponent,
   title: 'Compositions/Table/Cells/ButtonCell',
