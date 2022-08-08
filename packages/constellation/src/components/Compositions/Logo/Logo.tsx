@@ -1,7 +1,6 @@
 import * as Avatar from '@radix-ui/react-avatar'
 import cx from 'classnames'
-import React, { FC } from 'react'
-import { Textfit } from 'react-textfit'
+import React, { FC, useMemo } from 'react'
 
 import { IconProps } from '../../Base/Icon'
 import { InternalLogoComponent, LogoComponent } from './Logo.types'
@@ -13,15 +12,35 @@ const InternalLogo: InternalLogoComponent = ({
   icon,
   iconColor,
   imgSrc,
+  size = 'base',
   text,
 }) => {
   const Icon = icon as FC<IconProps>
+
+  const genFontSizes = (text?: string): { badge: string; base: string; double: string } => {
+    const length = text?.length || 4
+
+    return {
+      badge: length <= 4 ? 'text-[3.5px]' : 'text-[2.5px]',
+      base: length <= 4 ? 'text-[10px]' : 'text-[7px]',
+      double: length <= 4 ? 'text-[8px]' : 'text-[6px]',
+    }
+  }
+
+  const fontSizes = useMemo(() => genFontSizes(text), [text])
+
+  const sizes = {
+    badge: 'w-3 h-3',
+    base: 'w-8 h-8',
+    double: 'w-6 h-6',
+  }
 
   return (
     <Avatar.Root
       className={cx(
         { '!rounded-full': circle },
-        'w-8 h-8 rounded flex justify-center items-center bg-primary relative overflow-hidden',
+        'rounded flex justify-center items-center bg-primary relative overflow-hidden',
+        sizes[size],
         className,
       )}
       style={backgroundColor && { backgroundColor }}
@@ -30,11 +49,7 @@ const InternalLogo: InternalLogoComponent = ({
         <Avatar.Image src={imgSrc} className='w-full h-full object-cover' />
         <Avatar.Fallback>
           {(icon && <Icon color={iconColor} />) || (
-            <div className='w-[80%]'>
-              <Textfit mode='single' className='text-white-000'>
-                {text}
-              </Textfit>
-            </div>
+            <div className={cx('text-white-000', fontSizes[size])}>{text}</div>
           )}
         </Avatar.Fallback>
       </>
@@ -60,7 +75,8 @@ const Logo: LogoComponent = ({
           icon={secondaryContent.icon}
           iconColor={secondaryContent.iconColor}
           imgSrc={secondaryContent.imgSrc}
-          className={cx('!absolute !w-6 !h-6 bottom-0 right-0', {
+          size={badge ? 'badge' : 'double'}
+          className={cx('!absolute bottom-0 right-0', {
             '!w-3 !h-3 border-2 border-background border-solid -mr-[2px] mb-[2px] z-10': badge,
           })}
         />
@@ -72,8 +88,9 @@ const Logo: LogoComponent = ({
         icon={primaryContent.icon}
         iconColor={primaryContent.iconColor}
         imgSrc={primaryContent.imgSrc}
+        size={badge || !secondaryContent ? 'base' : 'double'}
         className={cx({
-          '!absolute !w-6 !h-6 top-0 left-0 border-2 border-background border-solid -ml-[2px] -mt-[2px]':
+          '!absolute top-0 left-0 border-2 border-background border-solid -ml-[2px] -mt-[2px]':
             secondaryContent && !badge,
         })}
       />

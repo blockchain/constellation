@@ -9,6 +9,7 @@ type InternalLogoProps = {
   icon: ReactNode
   iconColor?: Colors
   imgSrc?: string
+  size?: 'base' | 'double' | 'badge'
   text?: string
 }
 

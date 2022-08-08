@@ -3,14 +3,18 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
 import * as Icons from '../../Base/Icon'
-import { Logo, LogoComponent, LogoProps } from '.'
+import { Logo as LogoComponent, LogoComponent as LogoComponentProps, LogoProps } from '.'
 
 export default {
   argTypes: {
     circle: {
       control: { type: 'boolean' },
     },
-    primaryContent: { control: { disable: true } },
+    primaryContent: {
+      control: { disable: true },
+      description:
+        'All the primary content props have been split out so that storybook can edit them separately.',
+    },
     primaryIcon: {
       control: { type: 'select' },
       options: Object.keys(Icons),
@@ -24,7 +28,11 @@ export default {
     primaryText: {
       control: { type: 'text' },
     },
-    secondaryContent: { control: { disable: true } },
+    secondaryContent: {
+      control: { disable: true },
+      description:
+        'All the secondary content props have been split out so that storybook can edit them separately.',
+    },
     secondaryIcon: {
       control: { type: 'select' },
       options: Object.keys(Icons),
@@ -45,9 +53,9 @@ export default {
     primaryText: 'TEST',
     secondaryIconColor: '#fff',
   },
-  component: Logo,
+  component: LogoComponent,
   title: 'Compositions/Logo',
-} as ComponentMeta<LogoComponent>
+} as ComponentMeta<LogoComponentProps>
 
 interface StoryType {
   circle: boolean
@@ -63,7 +71,7 @@ interface StoryType {
 
 type StoryComponent = React.FC<StoryType & LogoProps>
 
-const Template: ComponentStory<StoryComponent> = ({
+const Template: StoryComponent = ({
   circle,
   doubleVariant,
   primaryIcon,
@@ -81,7 +89,7 @@ const Template: ComponentStory<StoryComponent> = ({
     secondaryIcon && (Icons[secondaryIcon as keyof typeof Icons] as React.FC<Icons.IconProps>)
   return (
     // We have to ignore some TS errors here because storybook is able to add all props that usually cant be used together.
-    <Logo
+    <LogoComponent
       circle={circle}
       doubleVariant={doubleVariant}
       /* @ts-ignore */
@@ -106,4 +114,4 @@ const Template: ComponentStory<StoryComponent> = ({
   )
 }
 
-export const Primary = Template.bind({})
+export const Logo = Template.bind({})

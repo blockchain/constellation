@@ -3944,6 +3944,24 @@ exports[`Storyshots Compositions/Input Tag Input 1`] = `
 </div>
 `;
 
+exports[`Storyshots Compositions/Logo Logo 1`] = `
+<div
+  className="constellation w-8 h-10 relative flex justify-center items-center"
+>
+  <span
+    className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
+  >
+    <span>
+      <div
+        className="text-white-000 text-[10px]"
+      >
+        TEST
+      </div>
+    </span>
+  </span>
+</div>
+`;
+
 exports[`Storyshots Compositions/Slider Primary 1`] = `
 Array [
   <span
