@@ -1,4 +1,5 @@
 import { Root } from '@radix-ui/react-radio-group'
+import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { Props } from './RadioGroup.types'
@@ -14,12 +15,15 @@ import { Props } from './RadioGroup.types'
  */
 
 export const RadioGroup = forwardRef<HTMLDivElement, Props>(
-  ({ children, onChange, ...otherProps }, ref) => {
+  ({ children, onChange, orientation, ...otherProps }, ref) => {
     const fallbackId = `${otherProps.name ? otherProps.name : 'radio'}-group`
 
     return (
       <Root
-        className='constellation flex gap-2'
+        className={cx('constellation flex gap-3', {
+          'flex-col': orientation === 'vertical',
+          'flex-row': orientation === 'horizontal',
+        })}
         id={fallbackId}
         ref={ref}
         onValueChange={onChange}

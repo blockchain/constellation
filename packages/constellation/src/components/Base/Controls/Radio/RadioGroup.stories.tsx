@@ -1,8 +1,8 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import cx from 'classnames'
 import React from 'react'
 
-import { Radio, RadioGroup as RenderedRadioGroup, RadioGroupComponent } from '.'
+import { RadioGroup as RenderedRadioGroup, RadioGroupComponent } from '.'
+import Radio from './Radio'
 
 export default {
   argTypes: {
@@ -22,7 +22,7 @@ export default {
     },
   },
   args: {
-    defaultValue: 'hello',
+    defaultValue: 'Option2',
     orientation: 'vertical',
   },
   component: RenderedRadioGroup,
@@ -31,17 +31,10 @@ export default {
 
 const Template: ComponentStory<RadioGroupComponent> = ({ orientation, ...args }) => {
   return (
-    <RenderedRadioGroup
-      className={cx('constellation flex gap-1', {
-        'flex-col': orientation === 'vertical',
-        'flex-row': orientation === 'horizontal',
-      })}
-      orientation={orientation}
-      {...args}
-    >
-      <Radio label='Hello' value='hello' id='hello' />
-      <Radio label='Good Morning' value='goodMorning' id='goodMorning' />
-      <Radio label='Goodbye' value='Goodbye' id='Goodbye' />
+    <RenderedRadioGroup orientation={orientation} {...args}>
+      <Radio label='Option 1' value='Option1' id='Option1' />
+      <Radio label='Option 2' value='Option2' id='Option2' />
+      <Radio label='Option 3' value='Option3' id='Option3' />
     </RenderedRadioGroup>
   )
 }
