@@ -18,5 +18,5 @@ export type Props = RadioGroupItemProps & {
 }
 
 export type Component = React.ForwardRefExoticComponent<
-  RadioGroupItemProps & React.RefAttributes<HTMLButtonElement>
+  Props & React.RefAttributes<HTMLButtonElement>
 >

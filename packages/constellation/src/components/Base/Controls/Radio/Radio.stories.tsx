@@ -15,7 +15,7 @@ export default {
     },
   },
   args: {
-    error: 'false',
+    error: false,
     id: 'option1',
     label: 'Option 1',
   },
