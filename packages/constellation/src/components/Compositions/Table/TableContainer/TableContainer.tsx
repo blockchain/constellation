@@ -1,10 +1,16 @@
+import cx from 'classnames'
 import React, { FC } from 'react'
 
-const TableContainer: FC = ({ children }) => {
+const TableContainer: FC<{ className?: string }> = ({ children, className }) => {
   return (
-    <div className='constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit'>
+    <table
+      className={cx(
+        'constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0',
+        className,
+      )}
+    >
       {children}
-    </div>
+    </table>
   )
 }
 

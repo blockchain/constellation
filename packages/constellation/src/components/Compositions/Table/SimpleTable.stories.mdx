@@ -1,0 +1,46 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import { Flex } from './'
+import { ButtonCell, Row, TableContainer, TextCell } from '.'
+
+<Meta title='Compositions/Table/SimpleTable' />
+
+# Simple Table
+
+---
+
+This is a thing
+
+### Example:
+
+export const SimpleTable = (args) => (
+    <TableContainer className='table-auto'>
+      <Row header>
+        <TextCell text='Asset' />
+        <TextCell subtext='Amount' />
+        <TextCell subtext='Actions' />
+      </Row>
+      <Row>
+        <TextCell subtext='BTC' text='Bitcoin' />
+        <TextCell subtext='1 BTC' text='$32,000' />
+        <ButtonCell
+          primaryButton={{ onClick: () => {}, text: 'Buy', variant: 'primary' }}
+          secondaryButton={{ onClick: () => {}, text: 'Sell', variant: 'secondary' }}
+        />
+      </Row>
+      <Row>
+        <TextCell subtext='BTC' text='Bitcoin' />
+        <TextCell subtext='1 BTC' text='$32,000' />
+        <ButtonCell
+          primaryButton={{ onClick: () => {}, text: 'Buy', variant: 'primary' }}
+          secondaryButton={{ onClick: () => {}, text: 'Sell', variant: 'secondary' }}
+        />
+      </Row>
+    </TableContainer>
+  )
+
+<Canvas>
+    <Story name='Simple Table'>
+        {SimpleTable.bind({})}
+    </Story>
+</Canvas>
+

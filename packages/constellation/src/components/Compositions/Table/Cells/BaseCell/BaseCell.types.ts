@@ -1,7 +1,6 @@
 import { FC, ReactNode } from 'react'
 
 type Props = {
-  isFooter?: boolean
   isHeader?: boolean
   postfix?: ReactNode
   prefix?: ReactNode

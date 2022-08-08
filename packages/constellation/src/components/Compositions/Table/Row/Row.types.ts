@@ -6,7 +6,7 @@ import {
   IconCellProps,
   InformationalCellProps,
   TextCellProps,
-} from '../'
+} from '..'
 
 type ButtonCell = { cellType: 'button' } & ButtonCellProps
 type CheckboxCell = { cellType: 'checkbox' } & CheckboxCellProps

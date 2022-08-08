@@ -1,3 +1,3 @@
 export * from './Cells'
-export * from './SimpleTable'
+export * from './Row'
 export * from './TableContainer'

@@ -4,22 +4,14 @@ import React from 'react'
 import { BaseCell } from '../'
 import { TextCellComponentType } from '.'
 
-const TextCell: TextCellComponentType = ({
-  icon,
-  iconPosition,
-  isFooter,
-  isHeader,
-  subtext,
-  text,
-}) => {
+const TextCell: TextCellComponentType = ({ icon, iconPosition, isHeader, subtext, text }) => {
   return (
     <BaseCell
-      isFooter={isFooter}
       isHeader={isHeader}
       prefix={iconPosition === 'left' && icon}
       postfix={iconPosition === 'right' && icon}
     >
-      <div className='flex flex-col justify-center'>
+      <div className='flex flex-col justify-center items-start h-full'>
         <span className='text-title text-sm'>{text}</span>
         <span
           className={cx('text-body mode-light:text-background-dark text-sm', {
