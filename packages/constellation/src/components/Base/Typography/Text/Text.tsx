@@ -2,6 +2,7 @@ import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { SemanticColors } from '../../Colors'
+import { getTextColorClass } from '../util'
 import { TextComponentType } from '.'
 import { Props, TextAlignments, TextTransforms, TextVariants } from './Text.types'
 
@@ -34,25 +35,6 @@ const variantClasses: Record<TextVariants, string> = {
   title1: 'text-[2rem] font-semibold my-5',
   title2: 'text-2xl font-semibold my-5',
   title3: 'text-xl font-semibold my-4',
-}
-
-const colorClasses: Record<SemanticColors, string> = {
-  'var(--color-background)': 'text-background',
-  'var(--color-background-blue)': 'text-background-blue',
-  'var(--color-background-green)': 'text-background-green',
-  'var(--color-background-light)': 'text-background-light',
-  'var(--color-background-orange)': 'text-background-orange',
-  'var(--color-background-red)': 'text-background-red',
-  'var(--color-body)': 'text-body',
-  'var(--color-dark)': 'text-dark',
-  'var(--color-error)': 'text-error',
-  'var(--color-medium)': 'text-medium',
-  'var(--color-muted)': 'text-muted',
-  'var(--color-overlay)': 'text-overlay',
-  'var(--color-primary)': 'text-primary',
-  'var(--color-success)': 'text-success',
-  'var(--color-title)': 'text-title',
-  'var(--color-warning)': 'text-warning',
 }
 
 const textAlignClasses: Record<TextAlignments, string> = {
@@ -93,7 +75,7 @@ const Text: TextComponentType = forwardRef(
         className={cx(
           'constellation',
           variantClasses[variant],
-          colorClasses[color],
+          getTextColorClass(color),
           textAlignClasses[textAlign],
           transformClass,
           { truncate },
