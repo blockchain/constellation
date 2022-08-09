@@ -4327,32 +4327,34 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
 <table
   className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
 >
-  <tr
-    className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
-  >
-    <th
-      className="constellation relative h-full px-4 min-w-[204px]"
+  <thead>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
     >
-      <div
-        className="flex flex-row items-center h-full gap-2"
+      <th
+        className="constellation relative h-full px-4 min-w-[204px]"
       >
         <div
-          className="flex flex-col justify-center items-start h-full"
+          className="flex flex-row items-center h-full gap-2"
         >
-          <span
-            className="text-title text-sm"
+          <div
+            className="flex flex-col justify-center items-start h-full"
           >
-            First Row
-          </span>
-          <span
-            className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
-          >
-            The header prop on this is controlled below
-          </span>
+            <span
+              className="text-title text-sm"
+            >
+              First Row
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            >
+              The header prop on this is controlled below
+            </span>
+          </div>
         </div>
-      </div>
-    </th>
-  </tr>
+      </th>
+    </tr>
+  </thead>
   <tr
     className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
   >
@@ -4402,222 +4404,6 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
             This row has no bottom border so it works with the container 
           </span>
         </div>
-      </div>
-    </td>
-  </tr>
-</table>
-`;
-
-exports[`Storyshots Compositions/Table/SimpleTableComponent Simple Table 1`] = `
-<table
-  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0 table-auto"
->
-  <tr
-    className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
-  >
-    <th
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <div
-          className="flex flex-col justify-center items-start h-full"
-        >
-          <span
-            className="text-title text-sm"
-          >
-            Asset
-          </span>
-          <span
-            className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
-          />
-        </div>
-      </div>
-    </th>
-    <th
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <div
-          className="flex flex-col justify-center items-start h-full"
-        >
-          <span
-            className="text-title text-sm"
-          />
-          <span
-            className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
-          >
-            Amount
-          </span>
-        </div>
-      </div>
-    </th>
-    <th
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <div
-          className="flex flex-col justify-center items-start h-full"
-        >
-          <span
-            className="text-title text-sm"
-          />
-          <span
-            className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
-          >
-            Actions
-          </span>
-        </div>
-      </div>
-    </th>
-  </tr>
-  <tr
-    className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
-  >
-    <td
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <div
-          className="flex flex-col justify-center items-start h-full"
-        >
-          <span
-            className="text-title text-sm"
-          >
-            Bitcoin
-          </span>
-          <span
-            className="text-body mode-light:text-background-dark text-sm"
-          >
-            BTC
-          </span>
-        </div>
-      </div>
-    </td>
-    <td
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <div
-          className="flex flex-col justify-center items-start h-full"
-        >
-          <span
-            className="text-title text-sm"
-          >
-            $32,000
-          </span>
-          <span
-            className="text-body mode-light:text-background-dark text-sm"
-          >
-            1 BTC
-          </span>
-        </div>
-      </div>
-    </td>
-    <td
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <button
-          className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Buy
-        </button>
-        <button
-          className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Sell
-        </button>
-      </div>
-    </td>
-  </tr>
-   
-  <tr
-    className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
-  >
-    <td
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <div
-          className="flex flex-col justify-center items-start h-full"
-        >
-          <span
-            className="text-title text-sm"
-          >
-            Bitcoin
-          </span>
-          <span
-            className="text-body mode-light:text-background-dark text-sm"
-          >
-            BTC
-          </span>
-        </div>
-      </div>
-    </td>
-    <td
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <div
-          className="flex flex-col justify-center items-start h-full"
-        >
-          <span
-            className="text-title text-sm"
-          >
-            $32,000
-          </span>
-          <span
-            className="text-body mode-light:text-background-dark text-sm"
-          >
-            1 BTC
-          </span>
-        </div>
-      </div>
-    </td>
-    <td
-      className="constellation relative h-full px-4 min-w-[204px]"
-    >
-      <div
-        className="flex flex-row items-center h-full gap-2"
-      >
-        <button
-          className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Buy
-        </button>
-        <button
-          className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Sell
-        </button>
       </div>
     </td>
   </tr>
