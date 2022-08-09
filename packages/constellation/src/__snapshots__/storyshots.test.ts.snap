@@ -3812,6 +3812,46 @@ exports[`Storyshots Compositions/Buttons/Link Link 1`] = `
 </a>
 `;
 
+exports[`Storyshots Compositions/Controls/Checkbox Checkbox 1`] = `
+<span
+  className="constellation inline-flex gap-2 items-center text-body"
+  id="radix-0"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  role="label"
+>
+  <button
+    aria-checked={false}
+    aria-labelledby="radix-0"
+    className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+    data-state="unchecked"
+    id="option1"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="checkbox"
+    type="button"
+    value="on"
+  />
+  <input
+    aria-hidden={true}
+    defaultChecked={false}
+    style={
+      Object {
+        "margin": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "transform": "translateX(-100%)",
+      }
+    }
+    tabIndex={-1}
+    type="checkbox"
+    value="on"
+  />
+  Option 1
+</span>
+`;
+
 exports[`Storyshots Compositions/Controls/Radio Radio 1`] = `
 <div
   aria-required={false}
@@ -3831,7 +3871,7 @@ exports[`Storyshots Compositions/Controls/Radio Radio 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-0"
+    id="radix-1"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
@@ -3893,14 +3933,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-1"
+    id="radix-2"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-1"
+      aria-labelledby="radix-2"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -3935,14 +3975,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-2"
+    id="radix-3"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={true}
-      aria-labelledby="radix-2"
+      aria-labelledby="radix-3"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="checked"
@@ -3982,14 +4022,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-3"
+    id="radix-4"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-3"
+      aria-labelledby="radix-4"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
