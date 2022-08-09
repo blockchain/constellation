@@ -3878,7 +3878,7 @@ exports[`Storyshots Compositions/Controls/Radio Radio 1`] = `
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-0"
+      aria-labelledby="radix-1"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -4068,7 +4068,7 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 exports[`Storyshots Compositions/Controls/Switch Switch 1`] = `
 <span
   className="constellation flex gap-3 text-body flex-row items-center"
-  id="radix-4"
+  id="radix-5"
   onClick={[Function]}
   onMouseDown={[Function]}
   role="label"
