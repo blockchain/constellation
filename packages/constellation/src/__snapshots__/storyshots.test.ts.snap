@@ -3823,7 +3823,7 @@ exports[`Storyshots Compositions/Controls/Checkbox Checkbox 1`] = `
   <button
     aria-checked={false}
     aria-labelledby="radix-0"
-    className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+    className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none"
     data-state="unchecked"
     id="option1"
     onClick={[Function]}
