@@ -14,6 +14,9 @@ export default {
       control: { type: 'text' },
       description: 'The content of the Switch button label',
     },
+    onCheckedChange: {
+      action: 'clicked',
+    },
     orientation: {
       control: { type: 'radio' },
       options: ['vertical', 'horizontal'],

@@ -13,6 +13,7 @@ export type Props = SwitchProps & {
    * The semantic color of the text
    */
   labelColor?: SemanticColors
+  onCheckedChange?: (checked: boolean) => void
   /**
    * Orientation of the label and switch when the label is present
    */
