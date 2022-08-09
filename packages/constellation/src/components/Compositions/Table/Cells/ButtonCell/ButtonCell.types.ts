@@ -1,31 +1,17 @@
 import { FC } from 'react'
 
+import { ButtonProps } from '../../../index'
 import { BaseCellProps } from '../..'
-
-interface ButtonProps {
-  /**
-   * The function that will be run on button click.
-   */
-  onClick: () => void
-  /**
-   * The text content of the button.
-   */
-  text: string
-  /**
-   * The stylistic variant to use when rendering the button.
-   */
-  variant?: 'primary' | 'secondary' | 'minimal'
-}
 
 interface Props extends BaseCellProps {
   /**
    * The content for the first button in the cell.
    */
-  primaryButton: ButtonProps
+  primaryButton: ButtonProps<'button'>
   /**
    * Optional content for the second button in the cell.
    */
-  secondaryButton?: ButtonProps
+  secondaryButton?: ButtonProps<'button'>
 }
 type Component = FC<Props>
 
