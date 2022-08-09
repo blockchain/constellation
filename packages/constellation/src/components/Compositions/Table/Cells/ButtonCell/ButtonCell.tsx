@@ -4,14 +4,15 @@ import { Button } from '../../..'
 import { BaseCell } from '../'
 import { ButtonCellComponentType } from '.'
 
-const ButtonCell: ButtonCellComponentType = ({
-  isFooter,
-  isHeader,
-  primaryButton,
-  secondaryButton,
-}) => {
+/**
+ * ButtonCell allows users to take actions in a table.
+ * The ButtonCell can display up to two buttons that support
+ * primary, secondary, and minimal variants.
+ */
+
+const ButtonCell: ButtonCellComponentType = ({ isHeader, primaryButton, secondaryButton }) => {
   return (
-    <BaseCell isHeader={isHeader} isFooter={isFooter}>
+    <BaseCell isHeader={isHeader}>
       <Button
         text={primaryButton.text}
         onClick={primaryButton.onClick}

@@ -1,6 +1,10 @@
 import cx from 'classnames'
 import React, { FC } from 'react'
 
+/**
+ * The TableContainer is just a wrapper for the table. It provides the border and required <table> tag
+ */
+
 const TableContainer: FC<{ className?: string }> = ({ children, className }) => {
   return (
     <table

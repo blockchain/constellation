@@ -3,9 +3,9 @@ import React from 'react'
 import { BaseCell } from '../'
 import { CheckboxCellComponentType } from '.'
 
-const CheckboxCell: CheckboxCellComponentType = ({ isFooter, isHeader, text }) => {
+const CheckboxCell: CheckboxCellComponentType = ({ isHeader, text }) => {
   return (
-    <BaseCell isHeader={isHeader} isFooter={isFooter}>
+    <BaseCell isHeader={isHeader}>
       <input type='checkbox' /> {/* TODO: Update this to the checkbox component when it is done */}
       <span>{text}</span>
     </BaseCell>

@@ -3,8 +3,12 @@ import React from 'react'
 import { BaseCell } from '../'
 import { IconCellComponentType } from '.'
 
-const IconCell: IconCellComponentType = ({ isFooter, isHeader, icon }) => {
-  return <BaseCell isHeader={isHeader} isFooter={isFooter} prefix={icon} />
+/**
+ * IconCell extends the BaseCell component and displays an icon in a table.
+ */
+
+const IconCell: IconCellComponentType = ({ icon, isHeader }) => {
+  return <BaseCell isHeader={isHeader}>{icon}</BaseCell>
 }
 
 export default IconCell

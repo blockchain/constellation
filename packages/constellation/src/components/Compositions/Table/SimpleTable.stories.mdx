@@ -8,7 +8,7 @@ import { ButtonCell, Row, TableContainer, TextCell } from '.'
 
 ---
 
-This is a simple table build using the table components. Hit "Show Code" to see the full example.
+This is a simple example table built using the table components. Hit "Show Code" to see the full example.
 
 ### Example:
 
@@ -19,22 +19,24 @@ export const SimpleTable = (args) => (
         <TextCell subtext='Amount' />
         <TextCell subtext='Actions' />
       </Row>
-      <Row>
-        <TextCell subtext='BTC' text='Bitcoin' />
-        <TextCell subtext='1 BTC' text='$32,000' />
-        <ButtonCell
-          primaryButton={{ onClick: () => {}, text: 'Buy', variant: 'primary' }}
-          secondaryButton={{ onClick: () => {}, text: 'Sell', variant: 'secondary' }}
-        />
-      </Row>
-      <Row>
-        <TextCell subtext='BTC' text='Bitcoin' />
-        <TextCell subtext='1 BTC' text='$32,000' />
-        <ButtonCell
-          primaryButton={{ onClick: () => {}, text: 'Buy', variant: 'primary' }}
-          secondaryButton={{ onClick: () => {}, text: 'Sell', variant: 'secondary' }}
-        />
-      </Row>
+      <tbody>
+        <Row>
+          <TextCell subtext='BTC' text='Bitcoin' />
+          <TextCell subtext='1 BTC' text='$32,000' />
+          <ButtonCell
+            primaryButton={{ onClick: () => {}, text: 'Buy', variant: 'primary' }}
+            secondaryButton={{ onClick: () => {}, text: 'Sell', variant: 'secondary' }}
+          />
+        </Row>
+        <Row>
+          <TextCell subtext='BTC' text='Bitcoin' />
+          <TextCell subtext='1 BTC' text='$32,000' />
+          <ButtonCell
+            primaryButton={{ onClick: () => {}, text: 'Buy', variant: 'primary' }}
+            secondaryButton={{ onClick: () => {}, text: 'Sell', variant: 'secondary' }}
+          />
+        </Row>
+      </tbody>
     </TableContainer>
   )
 

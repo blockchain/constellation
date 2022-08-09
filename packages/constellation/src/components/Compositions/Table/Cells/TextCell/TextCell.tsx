@@ -4,13 +4,15 @@ import React from 'react'
 import { BaseCell } from '../'
 import { TextCellComponentType } from '.'
 
+/**
+ * TextCell extends the BaseCell component and displays one or two lines text in a table.
+ * TextCell can also display and icon alongside the text.
+ */
+
 const TextCell: TextCellComponentType = ({ icon, iconPosition, isHeader, subtext, text }) => {
   return (
-    <BaseCell
-      isHeader={isHeader}
-      prefix={iconPosition === 'left' && icon}
-      postfix={iconPosition === 'right' && icon}
-    >
+    <BaseCell isHeader={isHeader}>
+      {iconPosition === 'left' && icon}
       <div className='flex flex-col justify-center items-start h-full'>
         <span className='text-title text-sm'>{text}</span>
         <span
@@ -21,6 +23,7 @@ const TextCell: TextCellComponentType = ({ icon, iconPosition, isHeader, subtext
           {subtext}
         </span>
       </div>
+      {iconPosition === 'right' && icon}
     </BaseCell>
   )
 }
