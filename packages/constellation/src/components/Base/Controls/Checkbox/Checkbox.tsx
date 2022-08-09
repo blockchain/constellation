@@ -37,7 +37,7 @@ const Checkbox = forwardRef<HTMLButtonElement, Props>(
           className={cx(
             'flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light',
             'radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900',
-            'focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75',
+            'focus:outline-none',
             {
               'radix-state-unchecked:border-error radix-state-checked:border-error radix-state-unchecked:bg-red-100 mode-dark:bg-red-900':
                 error,
