@@ -5654,6 +5654,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-checkbox@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/react-checkbox@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/primitive": 1.0.0
+    "@radix-ui/react-compose-refs": 1.0.0
+    "@radix-ui/react-context": 1.0.0
+    "@radix-ui/react-label": 1.0.0
+    "@radix-ui/react-presence": 1.0.0
+    "@radix-ui/react-primitive": 1.0.0
+    "@radix-ui/react-use-controllable-state": 1.0.0
+    "@radix-ui/react-use-previous": 1.0.0
+    "@radix-ui/react-use-size": 1.0.0
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: 33f1f57f19632f50dae4514f5149669b22874c0629e21a472275fb4bf48984018fc1fbb17412c5fc1f6238a71ae2f5d969773b19844fdfca3b122f527d57f76b
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-collection@npm:0.1.2":
   version: 0.1.2
   resolution: "@radix-ui/react-collection@npm:0.1.2"
@@ -22538,6 +22559,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 16.2.1
     "@commitlint/config-conventional": 16.2.1
+    "@radix-ui/react-checkbox": 1.0.0
     husky: 7.0.4
   languageName: unknown
   linkType: soft
