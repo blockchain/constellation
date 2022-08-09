@@ -13,9 +13,13 @@ export default {
 const Template: ComponentStory<FC> = () => {
   return (
     <TableContainerComponent>
-      <div className='p-20'>
-        <p className='w-48'>This is a styled container with a border and rounded corners.</p>
-      </div>
+      <tbody>
+        <tr>
+          <td className='p-20 w-48'>
+            <p>This is a styled container with a border and rounded corners.</p>
+          </td>
+        </tr>
+      </tbody>
     </TableContainerComponent>
   )
 }

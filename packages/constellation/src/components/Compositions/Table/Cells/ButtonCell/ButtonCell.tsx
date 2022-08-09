@@ -10,9 +10,9 @@ import { ButtonCellComponentType } from '.'
  * primary, secondary, and minimal variants.
  */
 
-const ButtonCell: ButtonCellComponentType = ({ isHeader, primaryButton, secondaryButton }) => {
+const ButtonCell: ButtonCellComponentType = ({ primaryButton, secondaryButton, ...baseProps }) => {
   return (
-    <BaseCell isHeader={isHeader}>
+    <BaseCell {...baseProps}>
       <Button
         text={primaryButton.text}
         onClick={primaryButton.onClick}

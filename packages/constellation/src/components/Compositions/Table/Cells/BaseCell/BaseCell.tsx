@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { IconTriangleDown, IconTriangleUp, SemanticColors } from '../../../../Base'
+import { IconButton } from '../../..'
 import { BaseCellComponent } from '.'
 
 /**
@@ -8,12 +10,21 @@ import { BaseCellComponent } from '.'
  * be used on its own to make custom cells down the line.
  */
 
-const BaseCell: BaseCellComponent = ({ children, isHeader }) => {
+const BaseCell: BaseCellComponent = ({ children, isHeader, sort, toggleSort }) => {
   const Component = isHeader ? 'th' : 'td'
+  const SortArrow =
+    sort === 'up' ? (
+      <IconTriangleUp color={SemanticColors.primary} />
+    ) : (
+      <IconTriangleDown color={SemanticColors.primary} />
+    )
 
   return (
-    <Component className='constellation relative h-full px-4 min-w-[204px]'>
-      <div className='flex flex-row items-center h-full gap-2'>{children}</div>
+    <Component className='constellation relative h-full px-4 min-w-[204px] font-medium'>
+      <div className='flex flex-row items-center h-full gap-2'>
+        {children}
+        {sort && <IconButton icon={SortArrow} size='small' onClick={toggleSort} />}
+      </div>
     </Component>
   )
 }

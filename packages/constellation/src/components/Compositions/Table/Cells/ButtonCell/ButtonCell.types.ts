@@ -1,5 +1,7 @@
 import { FC } from 'react'
 
+import { BaseCellProps } from '../..'
+
 interface ButtonProps {
   /**
    * The function that will be run on button click.
@@ -15,11 +17,7 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'minimal'
 }
 
-interface Props {
-  /**
-   * Controlled by the row component isHeader is passed down to the BaseCell component.
-   */
-  isHeader?: boolean
+interface Props extends BaseCellProps {
   /**
    * The content for the first button in the cell.
    */

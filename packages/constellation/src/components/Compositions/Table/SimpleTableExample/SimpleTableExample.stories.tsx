@@ -1,21 +1,25 @@
-import { Canvas, Meta, Story } from '@storybook/addon-docs'
-import { Flex } from './'
-import { ButtonCell, Row, TableContainer, TextCell } from '.'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import React, { FC, useState } from 'react'
 
-<Meta title='Compositions/Table/SimpleTable' />
+import { ButtonCell, Row, TableContainer, TextCell } from '../'
 
-# Simple Table
+export default {
+  argTypes: {},
+  args: {},
+  title: 'Compositions/Table/SimpleTableExample',
+} as ComponentMeta<FC>
 
----
+const Template: ComponentStory<FC> = () => {
+  const [sort, setSort] = useState<'up' | 'down'>('down')
 
-This is a simple example table built using the table components. Hit "Show Code" to see the full example.
-
-### Example:
-
-export const SimpleTable = (args) => (
+  return (
     <TableContainer className='table-auto'>
       <Row header>
-        <TextCell text='Asset' />
+        <TextCell
+          text='Asset'
+          sort={sort}
+          toggleSort={() => setSort(sort === 'up' ? 'down' : 'up')}
+        />
         <TextCell subtext='Amount' />
         <TextCell subtext='Actions' />
       </Row>
@@ -39,9 +43,5 @@ export const SimpleTable = (args) => (
       </tbody>
     </TableContainer>
   )
-
-<Canvas>
-    <Story name='Simple Table'>
-        {SimpleTable.bind({})}
-    </Story>
-</Canvas>
+}
+export const SimpleTableExample = Template.bind({})

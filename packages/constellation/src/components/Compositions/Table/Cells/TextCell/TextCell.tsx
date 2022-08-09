@@ -9,9 +9,16 @@ import { TextCellComponentType } from '.'
  * TextCell can also display and icon alongside the text.
  */
 
-const TextCell: TextCellComponentType = ({ icon, iconPosition, isHeader, subtext, text }) => {
+const TextCell: TextCellComponentType = ({
+  icon,
+  iconPosition,
+  isHeader,
+  subtext,
+  text,
+  ...baseProps
+}) => {
   return (
-    <BaseCell isHeader={isHeader}>
+    <BaseCell isHeader={isHeader} {...baseProps}>
       {iconPosition === 'left' && icon}
       <div className='flex flex-col justify-center items-start h-full'>
         <span className='text-title text-sm'>{text}</span>

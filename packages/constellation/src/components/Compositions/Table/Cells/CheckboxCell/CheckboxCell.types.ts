@@ -1,10 +1,8 @@
 import { FC } from 'react'
 
-interface Props {
-  /**
-   * Controlled by the row component isHeader is passed down to the BaseCell component.
-   */
-  isHeader?: boolean
+import { BaseCellProps } from '../..'
+
+interface Props extends BaseCellProps {
   /**
    * The text content displayed next to the checkbox.
    */
