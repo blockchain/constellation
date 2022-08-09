@@ -20,11 +20,9 @@ const BaseCell: BaseCellComponent = ({ children, isHeader, sort, toggleSort }) =
     )
 
   return (
-    <Component className='constellation relative h-full px-4 min-w-[204px] font-medium'>
-      <div className='flex flex-row items-center h-full gap-2'>
-        {children}
-        {sort && <IconButton icon={SortArrow} size='small' onClick={toggleSort} />}
-      </div>
+    <Component className='constellation relative h-full px-4 min-w-[204px] font-medium flex items-center'>
+      <div className='flex flex-row items-center h-full gap-2'>{children}</div>
+      {sort && <IconButton icon={SortArrow} size='small' onClick={toggleSort} />}
     </Component>
   )
 }

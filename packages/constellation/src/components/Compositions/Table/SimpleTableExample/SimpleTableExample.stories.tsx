@@ -1,15 +1,15 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { FC, useState } from 'react'
 
-import { ButtonCell, Row, TableContainer, TextCell } from '../'
+import { ButtonCell, Row, TableContainer, TextCell } from '../index'
 
 export default {
-  argTypes: {},
+  argTypes: { onClick: { action: 'clicked' } },
   args: {},
   title: 'Compositions/Table/SimpleTableExample',
 } as ComponentMeta<FC>
 
-const Template: ComponentStory<FC> = () => {
+const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
   const [sort, setSort] = useState<'up' | 'down'>('down')
 
   return (
@@ -28,16 +28,16 @@ const Template: ComponentStory<FC> = () => {
           <TextCell subtext='BTC' text='Bitcoin' />
           <TextCell subtext='1 BTC' text='$32,000' />
           <ButtonCell
-            primaryButton={{ onClick: () => {}, text: 'Buy', variant: 'primary' }}
-            secondaryButton={{ onClick: () => {}, text: 'Sell', variant: 'secondary' }}
+            primaryButton={{ onClick, text: 'Buy', variant: 'primary' }}
+            secondaryButton={{ onClick, text: 'Sell', variant: 'secondary' }}
           />
         </Row>
         <Row>
           <TextCell subtext='BTC' text='Bitcoin' />
           <TextCell subtext='1 BTC' text='$32,000' />
           <ButtonCell
-            primaryButton={{ onClick: () => {}, text: 'Buy', variant: 'primary' }}
-            secondaryButton={{ onClick: () => {}, text: 'Sell', variant: 'secondary' }}
+            primaryButton={{ onClick, text: 'Buy', variant: 'primary' }}
+            secondaryButton={{ onClick, text: 'Sell', variant: 'secondary' }}
           />
         </Row>
       </tbody>

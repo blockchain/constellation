@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { FC } from 'react'
 
-import { TableContainer, TextCell } from '../'
+import { TableContainer, TextCell } from '../index'
 import { Row as RowComponent } from '.'
 
 export default {
