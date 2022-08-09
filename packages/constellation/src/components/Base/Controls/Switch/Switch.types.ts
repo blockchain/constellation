@@ -14,6 +14,10 @@ export type Props = SwitchProps & {
    */
   labelColor?: SemanticColors
   /**
+   * Orientation of the label and switch when the label is present
+   */
+  orientation?: 'horizontal' | 'vertical'
+  /**
    * Stylistic variants for the component
    */
   variant?: Variants

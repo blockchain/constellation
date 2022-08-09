@@ -9,13 +9,14 @@ export default {
       control: { type: 'boolean' },
       description: 'Disabled state of the switch',
     },
-    error: {
-      control: { type: 'boolean' },
-    },
     id: { control: { type: 'text' } },
     label: {
       control: { type: 'text' },
       description: 'The content of the Switch button label',
+    },
+    orientation: {
+      control: { type: 'radio' },
+      options: ['vertical', 'horizontal'],
     },
     variant: {
       control: { type: 'radio' },
@@ -24,9 +25,9 @@ export default {
   },
   args: {
     disabled: false,
-    error: false,
     id: 'option1',
-    label: 'Option 1',
+    label: '',
+    orientation: 'horizontal',
     variant: 'primary',
   },
   component: RenderedSwitch,
