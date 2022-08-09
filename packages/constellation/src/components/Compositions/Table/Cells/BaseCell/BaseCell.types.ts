@@ -10,7 +10,7 @@ type Props = {
    * If sort exists ans isHeader is true, the cell will render a small arrow button
    * that will run the toggleSort function.
    */
-  sort?: 'up' | 'down' | false
+  sort?: 'up' | 'down' | undefined
   /**
    * toggleSort is run every time the sort button is clicked.
    */
