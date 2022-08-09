@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BaseCell } from '../'
+import { BaseCell } from '../..'
 import { CheckboxCellComponentType } from '.'
 
 const CheckboxCell: CheckboxCellComponentType = ({ isHeader, text }) => {

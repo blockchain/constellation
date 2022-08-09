@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Button } from '../../..'
-import { BaseCell } from '../'
+import { BaseCell } from '../..'
 import { ButtonCellComponentType } from '.'
 
 /**
