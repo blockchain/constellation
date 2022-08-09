@@ -3839,7 +3839,7 @@ exports[`Storyshots Compositions/Controls/Radio Radio 1`] = `
     <button
       aria-checked={false}
       aria-labelledby="radix-0"
-      className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted radix-state-unchecked:border-error radix-state-checked:border-error mode-dark:bg-red-900"
+      className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
       id="option1"
@@ -4023,6 +4023,51 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
     Option 3
   </span>
 </div>
+`;
+
+exports[`Storyshots Compositions/Controls/Switch Switch 1`] = `
+<span
+  className="constellation flex gap-3 text-body flex-row items-center"
+  id="radix-4"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  role="label"
+>
+  
+  <button
+    aria-checked={false}
+    className="constellation group radix-state-unchecked:bg-background-dark mode-dark:radix-state-unchecked:bg-medium p-0 relative inline-flex h-[24px] w-[48px] flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-all focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-checked:bg-primary"
+    data-state="unchecked"
+    disabled={false}
+    id="option1"
+    onClick={[Function]}
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      className="constellation group-radix-state-checked:translate-x-6 group-radix-state-unchecked:translate-x-0 pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-background ring-0 transition-all"
+      data-state="unchecked"
+    />
+  </button>
+  <input
+    aria-hidden={true}
+    defaultChecked={false}
+    disabled={false}
+    style={
+      Object {
+        "margin": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "transform": "translateX(-100%)",
+      }
+    }
+    tabIndex={-1}
+    type="checkbox"
+    value="on"
+  />
+</span>
 `;
 
 exports[`Storyshots Compositions/Input Password Input 1`] = `
@@ -4225,120 +4270,4 @@ Array [
     }
   />,
 ]
-`;
-
-exports[`Storyshots Compositions/Tabs Tabs 1`] = `
-<div
-  className="constellation py-2 px-6"
->
-  <div
-    data-orientation="horizontal"
-    dir="ltr"
-  >
-    <div
-      aria-orientation="horizontal"
-      className="constellation flex w-full rounded-[10px] p-[2px] bg-background-ultra-light"
-      data-orientation="horizontal"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onMouseDown={[Function]}
-      role="tablist"
-      style={
-        Object {
-          "outline": "none",
-        }
-      }
-      tabIndex={0}
-    >
-      <button
-        aria-controls="radix-0-content-tab1"
-        aria-selected={false}
-        className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="inactive"
-        disabled={false}
-        id="radix-0-trigger-tab1"
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onMouseDown={[Function]}
-        role="tab"
-        tabIndex={-1}
-        type="button"
-      >
-        <span
-          className="constellation text-sm font-medium px-3 border-r border-r-transparent border-r-medium w-full"
-        >
-          Tab 1
-        </span>
-      </button>
-      <button
-        aria-controls="radix-0-content-tab2"
-        aria-selected={true}
-        className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="active"
-        disabled={false}
-        id="radix-0-trigger-tab2"
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onMouseDown={[Function]}
-        role="tab"
-        tabIndex={-1}
-        type="button"
-      >
-        <span
-          className="constellation text-sm font-medium px-3 border-r border-r-transparent border-r-medium w-full"
-        >
-          Tab 2
-        </span>
-      </button>
-      <button
-        aria-controls="radix-0-content-tab3"
-        aria-selected={false}
-        className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="inactive"
-        disabled={false}
-        id="radix-0-trigger-tab3"
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onMouseDown={[Function]}
-        role="tab"
-        tabIndex={-1}
-        type="button"
-      >
-        <span
-          className="constellation text-sm font-medium px-3 border-r border-r-transparent border-r-medium w-full"
-        >
-          Tab 3
-        </span>
-      </button>
-      <button
-        aria-controls="radix-0-content-tab4"
-        aria-selected={false}
-        className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="inactive"
-        disabled={false}
-        id="radix-0-trigger-tab4"
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onMouseDown={[Function]}
-        role="tab"
-        tabIndex={-1}
-        type="button"
-      >
-        <span
-          className="constellation text-sm font-medium px-3 border-r border-r-transparent w-full"
-        >
-          Tab 4
-        </span>
-      </button>
-    </div>
-  </div>
-</div>
 `;
