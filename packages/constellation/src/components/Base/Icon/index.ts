@@ -323,3 +323,5 @@ export const IconWallet = createIconComponent(iconWallet)
 export const IconWarningTriangle = createIconComponent(iconWarningTriangle)
 export const IconWithdraw = createIconComponent(iconWithdraw)
 export const IconYubiKey = createIconComponent(iconYubiKey)
+
+export type { Props as IconProps } from './Icon.types'
