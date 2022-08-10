@@ -8,10 +8,12 @@ const Tabs = ({ defaultActiveTab, onTabChange, size, tabs }: TabsProps) => {
   return (
     <Root onValueChange={onTabChange} defaultValue={defaultActiveTab}>
       <List
-        className={cx('constellation flex w-full rounded-[10px] p-[2px]', {
-          'bg-background-ultra-light': size === 'large',
-          'bg-transparent gap-4 justify-start': size === 'small',
-        })}
+        className={cx(
+          'constellation flex w-full rounded-[10px] p-[2px] bg-background-ultra-light',
+          {
+            'bg-transparent gap-4 justify-start': size === 'small',
+          },
+        )}
       >
         {tabs.map(({ key, titleContent }, i) => (
           <Trigger
