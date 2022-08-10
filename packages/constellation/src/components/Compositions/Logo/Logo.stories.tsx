@@ -15,17 +15,17 @@ export default {
       description:
         'All the primary content props have been split out so that storybook can edit them separately.',
     },
-    primaryIcon: {
+    'primaryContent.icon': {
       control: { type: 'select' },
       options: Object.keys(Icons),
     },
-    primaryIconColor: {
+    'primaryContent.iconColor': {
       control: { type: 'color' },
     },
-    primaryImgSrc: {
+    'primaryContent.imgSrc': {
       control: { type: 'text' },
     },
-    primaryText: {
+    'primaryContent.text': {
       control: { type: 'text' },
     },
     secondaryContent: {
@@ -33,25 +33,25 @@ export default {
       description:
         'All the secondary content props have been split out so that storybook can edit them separately.',
     },
-    secondaryIcon: {
+    'secondaryContent.icon': {
       control: { type: 'select' },
       options: Object.keys(Icons),
     },
-    secondaryIconColor: {
+    'secondaryContent.iconColor': {
       control: { type: 'color' },
     },
-    secondaryImgSrc: {
+    'secondaryContent.imgSrc': {
       control: { type: 'text' },
     },
-    secondaryText: {
+    'secondaryContent.text': {
       control: { type: 'text' },
     },
   },
   args: {
     circle: true,
-    primaryIconColor: '#fff',
-    primaryText: 'TEST',
-    secondaryIconColor: '#fff',
+    'primaryContent.iconColor': '#fff',
+    'primaryContent.text': 'TEST',
+    'secondaryContent.iconColor': '#fff',
   },
   component: LogoComponent,
   title: 'Compositions/Logo',
@@ -59,14 +59,14 @@ export default {
 
 interface StoryType {
   circle: boolean
-  primaryIcon: keyof typeof Icons
-  primaryIconColor: string
-  primaryImgSrc: string
-  primaryText: string
-  secondaryIcon: keyof typeof Icons
-  secondaryIconColor: string
-  secondaryImgSrc: string
-  secondaryText: string
+  'primaryContent.icon': keyof typeof Icons
+  'primaryContent.iconColor': string
+  'primaryContent.imgSrc': string
+  'primaryContent.text': string
+  'secondaryContent.icon': keyof typeof Icons
+  'secondaryContent.iconColor': string
+  'secondaryContent.imgSrc': string
+  'secondaryContent.text': string
 }
 
 type StoryComponent = React.FC<StoryType & LogoProps>
@@ -74,19 +74,17 @@ type StoryComponent = React.FC<StoryType & LogoProps>
 const Template: StoryComponent = ({
   circle,
   doubleVariant,
-  primaryIcon,
-  primaryIconColor,
-  primaryImgSrc,
-  primaryText,
-  secondaryIcon,
-  secondaryIconColor,
-  secondaryImgSrc,
-  secondaryText,
+  'primaryContent.icon': primaryIcon,
+  'primaryContent.iconColor': primaryIconColor,
+  'primaryContent.imgSrc': primaryImgSrc,
+  'primaryContent.text': primaryText,
+  'secondaryContent.icon': secondaryIcon,
+  'secondaryContent.iconColor': secondaryIconColor,
+  'secondaryContent.imgSrc': secondaryImgSrc,
+  'secondaryContent.text': secondaryText,
 }) => {
-  const PrimaryIcon =
-    primaryIcon && (Icons[primaryIcon as keyof typeof Icons] as React.FC<Icons.IconProps>)
-  const SecondaryIcon =
-    secondaryIcon && (Icons[secondaryIcon as keyof typeof Icons] as React.FC<Icons.IconProps>)
+  const PrimaryIcon = primaryIcon && (Icons[primaryIcon as keyof typeof Icons] as React.FC)
+  const SecondaryIcon = secondaryIcon && (Icons[secondaryIcon as keyof typeof Icons] as React.FC)
   return (
     // We have to ignore some TS errors here because storybook is able to add all props that usually cant be used together.
     <LogoComponent
