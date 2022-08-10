@@ -3812,6 +3812,304 @@ exports[`Storyshots Compositions/Buttons/Link Link 1`] = `
 </a>
 `;
 
+exports[`Storyshots Compositions/Controls/Checkbox Checkbox 1`] = `
+<span
+  className="constellation inline-flex gap-2 items-center text-body"
+  id="radix-0"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  role="label"
+>
+  <button
+    aria-checked={false}
+    aria-labelledby="radix-0"
+    className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none"
+    data-state="unchecked"
+    id="option1"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="checkbox"
+    type="button"
+    value="on"
+  />
+  <input
+    aria-hidden={true}
+    defaultChecked={false}
+    style={
+      Object {
+        "margin": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "transform": "translateX(-100%)",
+      }
+    }
+    tabIndex={-1}
+    type="checkbox"
+    value="on"
+  />
+  Option 1
+</span>
+`;
+
+exports[`Storyshots Compositions/Controls/Radio Radio 1`] = `
+<div
+  aria-required={false}
+  className="constellation flex gap-3 flex-col"
+  dir="ltr"
+  id="radio-group"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="radiogroup"
+  style={
+    Object {
+      "outline": "none",
+    }
+  }
+  tabIndex={0}
+>
+  <span
+    className="constellation inline-flex gap-2 items-center text-body"
+    id="radix-1"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    role="label"
+  >
+    <button
+      aria-checked={false}
+      aria-labelledby="radix-1"
+      className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
+      data-radix-collection-item=""
+      data-state="unchecked"
+      id="option1"
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="radio"
+      tabIndex={-1}
+      type="button"
+      value="on"
+    />
+    <input
+      aria-hidden={true}
+      defaultChecked={false}
+      required={false}
+      style={
+        Object {
+          "margin": 0,
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "transform": "translateX(-100%)",
+        }
+      }
+      tabIndex={-1}
+      type="radio"
+      value="on"
+    />
+    Option 1
+  </span>
+</div>
+`;
+
+exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
+<div
+  aria-required={false}
+  className="constellation flex gap-3 flex-col"
+  dir="ltr"
+  id="radio-group"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="radiogroup"
+  style={
+    Object {
+      "outline": "none",
+    }
+  }
+  tabIndex={0}
+>
+  <span
+    className="constellation inline-flex gap-2 items-center text-body"
+    id="radix-2"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    role="label"
+  >
+    <button
+      aria-checked={false}
+      aria-labelledby="radix-2"
+      className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
+      data-radix-collection-item=""
+      data-state="unchecked"
+      id="Option1"
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="radio"
+      tabIndex={-1}
+      type="button"
+      value="Option1"
+    />
+    <input
+      aria-hidden={true}
+      defaultChecked={false}
+      required={false}
+      style={
+        Object {
+          "margin": 0,
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "transform": "translateX(-100%)",
+        }
+      }
+      tabIndex={-1}
+      type="radio"
+      value="Option1"
+    />
+    Option 1
+  </span>
+  <span
+    className="constellation inline-flex gap-2 items-center text-body"
+    id="radix-3"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    role="label"
+  >
+    <button
+      aria-checked={true}
+      aria-labelledby="radix-3"
+      className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
+      data-radix-collection-item=""
+      data-state="checked"
+      id="Option2"
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="radio"
+      tabIndex={-1}
+      type="button"
+      value="Option2"
+    >
+      <span
+        className="constellation flex justify-center items-center before:content-[\\"\\"] before:block before:w-3.5 before:h-3.5 before:rounded-full before:bg-primary"
+        data-state="checked"
+      />
+    </button>
+    <input
+      aria-hidden={true}
+      defaultChecked={true}
+      required={false}
+      style={
+        Object {
+          "margin": 0,
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "transform": "translateX(-100%)",
+        }
+      }
+      tabIndex={-1}
+      type="radio"
+      value="Option2"
+    />
+    Option 2
+  </span>
+  <span
+    className="constellation inline-flex gap-2 items-center text-body"
+    id="radix-4"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    role="label"
+  >
+    <button
+      aria-checked={false}
+      aria-labelledby="radix-4"
+      className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
+      data-radix-collection-item=""
+      data-state="unchecked"
+      id="Option3"
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="radio"
+      tabIndex={-1}
+      type="button"
+      value="Option3"
+    />
+    <input
+      aria-hidden={true}
+      defaultChecked={false}
+      required={false}
+      style={
+        Object {
+          "margin": 0,
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "transform": "translateX(-100%)",
+        }
+      }
+      tabIndex={-1}
+      type="radio"
+      value="Option3"
+    />
+    Option 3
+  </span>
+</div>
+`;
+
+exports[`Storyshots Compositions/Controls/Switch Switch 1`] = `
+<span
+  className="constellation flex gap-3 text-body flex-row items-center"
+  id="radix-5"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  role="label"
+>
+  
+  <button
+    aria-checked={false}
+    className="constellation group radix-state-unchecked:bg-background-dark mode-dark:radix-state-unchecked:bg-medium p-0 relative inline-flex h-[24px] w-[48px] flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-all focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-checked:bg-primary"
+    data-state="unchecked"
+    disabled={false}
+    id="option1"
+    onClick={[Function]}
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      className="constellation group-radix-state-checked:translate-x-6 group-radix-state-unchecked:translate-x-0 pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-background ring-0 transition-all"
+      data-state="unchecked"
+    />
+  </button>
+  <input
+    aria-hidden={true}
+    defaultChecked={false}
+    disabled={false}
+    style={
+      Object {
+        "margin": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "transform": "translateX(-100%)",
+      }
+    }
+    tabIndex={-1}
+    type="checkbox"
+    value="on"
+  />
+</span>
+`;
+
 exports[`Storyshots Compositions/Input Password Input 1`] = `
 <div
   className="constellation"
