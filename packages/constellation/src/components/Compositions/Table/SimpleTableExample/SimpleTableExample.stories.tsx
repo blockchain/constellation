@@ -1,25 +1,19 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 
 import { ButtonCell, Row, TableContainer, TextCell } from '../index'
 
 export default {
   argTypes: { onClick: { action: 'clicked' } },
   args: {},
-  title: 'Compositions/Table/SimpleTableExample',
+  title: 'Compositions/Table/Examples/SimpleTable',
 } as ComponentMeta<FC>
 
 const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
-  const [sort, setSort] = useState<'up' | 'down'>('down')
-
   return (
     <TableContainer className='table-auto'>
       <Row header>
-        <TextCell
-          text='Asset'
-          sort={sort}
-          toggleSort={() => setSort(sort === 'up' ? 'down' : 'up')}
-        />
+        <TextCell text='Asset' />
         <TextCell subtext='Amount' />
         <TextCell subtext='Actions' />
       </Row>
@@ -44,4 +38,4 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
     </TableContainer>
   )
 }
-export const SimpleTableExample = Template.bind({})
+export const SimpleTable = Template.bind({})
