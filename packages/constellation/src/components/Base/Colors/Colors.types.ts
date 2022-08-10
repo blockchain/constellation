@@ -15,6 +15,7 @@ export enum SemanticColors {
   'background-light' = 'var(--color-background-light)',
   'background-orange' = 'var(--color-background-orange)',
   'background-red' = 'var(--color-background-red)',
+  'background-ultra-light' = 'var(--color-background-ultra-light)',
   body = 'var(--color-body)',
   error = 'var(--color-error)',
   medium = 'var(--color-medium)',
