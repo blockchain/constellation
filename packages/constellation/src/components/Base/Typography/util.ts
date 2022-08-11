@@ -7,6 +7,7 @@ const colorClasses: Record<SemanticColors, string> = {
   'var(--color-background-light)': 'text-background-light',
   'var(--color-background-orange)': 'text-background-orange',
   'var(--color-background-red)': 'text-background-red',
+  'var(--color-background-ultra-light)': 'text-background-ultra-light',
   'var(--color-body)': 'text-body',
   'var(--color-dark)': 'text-dark',
   'var(--color-error)': 'text-error',

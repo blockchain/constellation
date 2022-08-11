@@ -6,7 +6,7 @@ import { themes } from '@storybook/theming'
 
 export const parameters = {
   darkMode: {
-    dark: { ...themes.dark, appContentBg: '#0E121B' },
+    dark: { ...themes.dark, appContentBg: '#2f2f2f' },
     light: { ...themes.normal, appContentBg: '#FFFFFF' },
   },
 }
