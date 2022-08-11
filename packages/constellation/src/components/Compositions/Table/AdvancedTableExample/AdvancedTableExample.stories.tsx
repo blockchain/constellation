@@ -9,16 +9,8 @@ import {
 } from '@tanstack/react-table'
 import React, { FC } from 'react'
 
-import {
-  ButtonCell,
-  ButtonCellProps,
-  Row,
-  RowType,
-  sortTextCells,
-  TableContainer,
-  TextCell,
-  TextCellProps,
-} from '../index'
+import { ButtonCell, ButtonCellProps, Row, TableContainer, TextCell, TextCellProps } from '../index'
+import { RowType, sortTextCells } from './utils'
 
 export default {
   argTypes: { onClick: { action: 'clicked' } },
