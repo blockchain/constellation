@@ -7,9 +7,9 @@ import { IconCloseCircle, SemanticColors } from '../../Base'
 import { Button } from '../../Compositions'
 import { Props } from './Modal.types'
 
-const ModalHeader = () => (
+const ModalHeader = ({ title }: { title: Props['title'] }) => (
   <>
-    <Title className='constellation text-base font-medium text-title'>Modal Title</Title>
+    <Title className='constellation text-base font-medium text-title'>{title}</Title>
     <Close
       className={cx(
         'constellation absolute top-6 right-6 inline-flex items-center justify-center rounded-full',
@@ -21,21 +21,32 @@ const ModalHeader = () => (
   </>
 )
 
-const ModalBody = () => (
+const ModalBody = ({ description }: { description: string }) => (
   <Description className='constellation my-6 text-sm font-normal text-body'>
-    Make changes to your profile here. Click save when you&apos;re done.
+    {description}
   </Description>
 )
 
-const ModalFooter = () => (
+const ModalFooter = ({
+  primaryCta,
+  secondaryCta,
+}: {
+  primaryCta: Props['primaryCta']
+  secondaryCta: Props['secondaryCta']
+}) => (
   <div className='constellation mt-4 flex justify-end gap-4'>
-    <Button width='full' text='Secondary' variant='secondary' />
-    <Button width='full' text='Primary' />
+    <Button width='full' variant='secondary' text={primaryCta.text} onClick={primaryCta.onClick} />
+    {secondaryCta && (
+      <Button width='full' text={secondaryCta.text} onClick={secondaryCta.onClick} />
+    )}
   </div>
 )
 
 const Modal = forwardRef<HTMLDivElement, Props>(
-  ({ isOpen, setIsOpen, trigger, ...otherProps }, ref) => {
+  (
+    { description, isOpen, primaryCta, secondaryCta, setIsOpen, title, trigger, ...otherProps },
+    ref,
+  ) => {
     return (
       <Root open={isOpen} onOpenChange={setIsOpen} {...otherProps}>
         <Trigger asChild>{trigger}</Trigger>
@@ -64,16 +75,14 @@ const Modal = forwardRef<HTMLDivElement, Props>(
               ref={ref}
               forceMount
               className={cx(
-                'constellation fixed z-50',
-                'w-[95vw] max-w-md rounded-lg p-6 md:w-full',
+                'constellation fixed z-50 w-[95vw] max-w-md rounded-lg p-6 md:w-full',
                 'top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]',
                 'bg-background',
-                'focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75',
               )}
             >
-              <ModalHeader />
-              <ModalBody />
-              <ModalFooter />
+              <ModalHeader {...{ title }} />
+              {description && <ModalBody {...{ description }} />}
+              <ModalFooter {...{ primaryCta, secondaryCta }} />
             </Content>
           </Transition.Child>
         </Transition.Root>
