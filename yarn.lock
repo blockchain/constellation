@@ -4569,6 +4569,7 @@ __metadata:
     "@storybook/testing-library": 0.0.13
     "@svgr/rollup": ^6.2.1
     "@svgr/webpack": ^6.2.1
+    "@tanstack/react-table": 8.5.11
     "@testing-library/jest-dom": 5.16.1
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
@@ -8311,6 +8312,25 @@ __metadata:
     "@svgr/plugin-jsx": ^6.2.1
     "@svgr/plugin-svgo": ^6.2.0
   checksum: 3da7e61942d7fc3c5cdd0ffd2fbc5520168bc75bf783920e843e920bdc462f9869d47a16ca37be9f3435c90eb89c0d4acd044a0f2e1ad478ff2bc90d65e6c2dd
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-table@npm:8.5.11":
+  version: 8.5.11
+  resolution: "@tanstack/react-table@npm:8.5.11"
+  dependencies:
+    "@tanstack/table-core": 8.5.11
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 7ab4bfb6c6f2ea3d7a17332297cf77cdd3ca231fde8cb61be94dec603e3e7316bd7661c08c4430b02fd4cb7e7b42f733d854e8a872bb094529dc5d32f9dd2acc
+  languageName: node
+  linkType: hard
+
+"@tanstack/table-core@npm:8.5.11":
+  version: 8.5.11
+  resolution: "@tanstack/table-core@npm:8.5.11"
+  checksum: f518ba072f0098e9cc2e609bb9da060e2c94c3aed09484effd9e2acb26a512e9566a00fabebb3fe5300763c715132464c4494307774d9a2e5ffc8ea3b7aa3f49
   languageName: node
   linkType: hard
 
