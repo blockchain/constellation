@@ -30,6 +30,11 @@ const Arrow = ({ direction, disabled, onChange, selectedPage }: ArrowProps) => (
   />
 )
 
+/**
+ * Pager is a component that displays a set of page indicators and arrows to
+ * navigate between pages.
+ */
+
 const Pager: PagerComponent = ({ onChange, selectedPage = 0, totalPages = 5 }) => {
   return (
     <div className='constellation flex items-center justify-between max-w-[375px]'>
