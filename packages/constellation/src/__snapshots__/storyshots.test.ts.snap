@@ -3871,14 +3871,14 @@ exports[`Storyshots Compositions/Controls/Radio Radio 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-1"
+    id="radix-2"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-1"
+      aria-labelledby="radix-2"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -3933,14 +3933,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-2"
+    id="radix-4"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-2"
+      aria-labelledby="radix-4"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -3975,14 +3975,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-3"
+    id="radix-6"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={true}
-      aria-labelledby="radix-3"
+      aria-labelledby="radix-6"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="checked"
@@ -4022,14 +4022,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-4"
+    id="radix-8"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-4"
+      aria-labelledby="radix-8"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -4068,7 +4068,7 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 exports[`Storyshots Compositions/Controls/Switch Switch 1`] = `
 <span
   className="constellation flex gap-3 text-body flex-row items-center"
-  id="radix-5"
+  id="radix-9"
   onClick={[Function]}
   onMouseDown={[Function]}
   role="label"
@@ -4395,6 +4395,740 @@ Array [
 ]
 `;
 
+exports[`Storyshots Compositions/Table/Cells/BaseCell Base Cell 1`] = `
+<td
+  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+>
+  <div
+    className="flex flex-row items-center h-full gap-2"
+  >
+    <span>
+      This is some content for the BaseCell
+    </span>
+  </div>
+</td>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/ButtonCell Button Cell 1`] = `
+<td
+  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+>
+  <div
+    className="flex flex-row items-center h-full gap-2"
+  >
+    <button
+      className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+      disabled={false}
+      type="button"
+    >
+      test
+    </button>
+  </div>
+</td>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/CheckboxCell Checkbox Cell 1`] = `
+<td
+  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+>
+  <div
+    className="flex flex-row items-center h-full gap-2"
+  >
+    <input
+      type="checkbox"
+    />
+     
+    <span>
+      Text
+    </span>
+  </div>
+</td>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/IconCell Icon Cell 1`] = `
+<td
+  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+>
+  <div
+    className="flex flex-row items-center h-full gap-2"
+  >
+    <icon-apple.svg
+      color="inherit"
+      fill="currentColor"
+      focusable="false"
+      height="1rem"
+      width="1rem"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+  </div>
+</td>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/InformationalCell Informational Cell 1`] = `
+<td
+  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+>
+  <div
+    className="flex flex-row items-center h-full gap-2"
+  >
+    <div
+      className="constellation w-fit rounded font-semibold align-middle border py-0.5 px-[7px] text-xs bg-background-light border-background-light text-title"
+    >
+      Text
+    </div>
+  </div>
+</td>
+`;
+
+exports[`Storyshots Compositions/Table/Cells/TextCell Text Cell 1`] = `
+<td
+  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+>
+  <div
+    className="flex flex-row items-center h-full gap-2"
+  >
+    <div
+      className="flex flex-col justify-center items-start h-full"
+    >
+      <span
+        className="text-title text-sm"
+      >
+        Text
+      </span>
+      <span
+        className="text-body mode-light:text-background-dark text-sm"
+      >
+        Subtext
+      </span>
+    </div>
+  </div>
+</td>
+`;
+
+exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`] = `
+<table
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
+>
+  <thead>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
+    >
+      <th
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center cursor-pointer select-none"
+        onClick={[Function]}
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              Asset
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            />
+          </div>
+          <icon-minus.svg
+            className="ml-1"
+            color="var(--color-primary)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="9px"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+        </div>
+      </th>
+      <th
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center cursor-pointer select-none"
+        onClick={[Function]}
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            />
+            <span
+              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            >
+              Amount
+            </span>
+          </div>
+          <icon-triangle-down.svg
+            color="var(--color-primary)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+        </div>
+      </th>
+      <th
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            />
+            <span
+              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            >
+              Actions
+            </span>
+          </div>
+        </div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+    >
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              Bitcoin
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              BTC
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              $32,000
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              1 BTC
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Buy
+          </button>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Sell
+          </button>
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+    >
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              Ethereum
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              ETH
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              $1,900
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              1 ETH
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Buy
+          </button>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Sell
+          </button>
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+    >
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              Ethereum
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              ETH
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              $1,800
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              1 ETH
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Buy
+          </button>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Sell
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
+<table
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0 table-auto"
+>
+  <thead>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
+    >
+      <th
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              Asset
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            />
+          </div>
+        </div>
+      </th>
+      <th
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            />
+            <span
+              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            >
+              Amount
+            </span>
+          </div>
+        </div>
+      </th>
+      <th
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            />
+            <span
+              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            >
+              Actions
+            </span>
+          </div>
+        </div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+    >
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              Bitcoin
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              BTC
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              $32,000
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              1 BTC
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Buy
+          </button>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Sell
+          </button>
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+    >
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              Bitcoin
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              BTC
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              $32,000
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm"
+            >
+              1 BTC
+            </span>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Buy
+          </button>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Sell
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Compositions/Table/Row Row 1`] = `
+<table
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
+>
+  <thead>
+    <tr
+      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
+    >
+      <th
+        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2"
+        >
+          <div
+            className="flex flex-col justify-center items-start h-full"
+          >
+            <span
+              className="text-title text-sm"
+            >
+              First Row
+            </span>
+            <span
+              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            >
+              The header prop on this is controlled below
+            </span>
+          </div>
+        </div>
+      </th>
+    </tr>
+  </thead>
+  <tr
+    className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+  >
+    <td
+      className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+    >
+      <div
+        className="flex flex-row items-center h-full gap-2"
+      >
+        <div
+          className="flex flex-col justify-center items-start h-full"
+        >
+          <span
+            className="text-title text-sm"
+          >
+            Second Row
+          </span>
+          <span
+            className="text-body mode-light:text-background-dark text-sm"
+          >
+            This row is not affected by the controlls below
+          </span>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr
+    className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+  >
+    <td
+      className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+    >
+      <div
+        className="flex flex-row items-center h-full gap-2"
+      >
+        <div
+          className="flex flex-col justify-center items-start h-full"
+        >
+          <span
+            className="text-title text-sm"
+          >
+            Third Row
+          </span>
+          <span
+            className="text-body mode-light:text-background-dark text-sm"
+          >
+            This row has no bottom border so it works with the container 
+          </span>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+`;
+
+exports[`Storyshots Compositions/Table/TableContainer Table Container 1`] = `
+<table
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
+>
+  <tbody>
+    <tr>
+      <td
+        className="p-20 w-48"
+      >
+        <p>
+          This is a styled container with a border and rounded corners.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
 exports[`Storyshots Compositions/Tabs Tabs 1`] = `
 <div
   className="constellation py-2 px-6"
@@ -4419,14 +5153,14 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
       tabIndex={0}
     >
       <button
-        aria-controls="radix-0-content-tab1"
+        aria-controls="radix-14-content-tab1"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-0-trigger-tab1"
+        id="radix-14-trigger-tab1"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -4441,14 +5175,14 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-0-content-tab2"
+        aria-controls="radix-14-content-tab2"
         aria-selected={true}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
         disabled={false}
-        id="radix-0-trigger-tab2"
+        id="radix-14-trigger-tab2"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -4463,14 +5197,14 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-0-content-tab3"
+        aria-controls="radix-14-content-tab3"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-0-trigger-tab3"
+        id="radix-14-trigger-tab3"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -4485,14 +5219,14 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-0-content-tab4"
+        aria-controls="radix-14-content-tab4"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-0-trigger-tab4"
+        id="radix-14-trigger-tab4"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -4509,4 +5243,25 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots Compositions/Tooltip Tooltip 1`] = `
+<button
+  className="constellation border-none outline-none bg-transparent p-0"
+  data-state="closed"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onPointerDown={[Function]}
+  onPointerLeave={[Function]}
+  onPointerMove={[Function]}
+>
+  <button
+    className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+    disabled={false}
+    type="button"
+  >
+    Hover me!
+  </button>
+</button>
 `;
