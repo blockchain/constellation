@@ -6,11 +6,23 @@ import { Tooltip as TooltipComponent, TooltipComponent as TooltipComponentProps 
 
 export default {
   argTypes: {
+    delay: {
+      control: 'number',
+    },
     text: {
       control: 'text',
     },
+    trigger: {
+      control: {
+        disable: true,
+      },
+    },
   },
   args: {
+    allowCollision: false,
+    delay: 700,
+    offset: 0,
+    side: 'top',
     text: 'This is a cool tooltip!',
   },
   component: TooltipComponent,
@@ -19,12 +31,8 @@ export default {
 
 type StoryComponent = TooltipComponentProps
 
-const Template: StoryComponent = ({ text }) => {
-  return (
-    <TooltipComponent text={text}>
-      <Button text='Hover me!' />
-    </TooltipComponent>
-  )
+const Template: StoryComponent = (args) => {
+  return <TooltipComponent trigger={<Button text='Hover me!' />} {...args} />
 }
 
 export const Tooltip = Template.bind({})
