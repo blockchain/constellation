@@ -8,7 +8,8 @@ import { TooltipComponent } from '.'
  * The Tooltip component allows users to get more info about an element by
  * hovering over it.
  *
- * For extra info on the tooltip content props see the [Contenxt section of the Radix tooltip docs](https://www.radix-ui.com/docs/primitives/components/tooltip#content)
+ * For extra info and the full list of tooltip content props see the
+ * [Contenxt section of the Radix tooltip docs](https://www.radix-ui.com/docs/primitives/components/tooltip#content)
  */
 
 const Tooltip: TooltipComponent = ({ children, delay, text, trigger, ...tooltipContentProps }) => {
