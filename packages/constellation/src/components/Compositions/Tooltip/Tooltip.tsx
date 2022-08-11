@@ -7,17 +7,11 @@ import { TooltipComponent } from '.'
 /**
  * The Tooltip component allows users to get more info about an element by
  * hovering over it.
+ *
+ * For extra info on the tooltip content props see the [Contenxt section of the Radix tooltip docs](https://www.radix-ui.com/docs/primitives/components/tooltip#content)
  */
 
-const Tooltip: TooltipComponent = ({
-  allowCollision = false,
-  children,
-  delay = 700,
-  offset = 0,
-  side = 'top',
-  text,
-  trigger,
-}) => {
+const Tooltip: TooltipComponent = ({ children, delay, text, trigger, ...tooltipContentProps }) => {
   return (
     <RadixTooltip.Provider>
       <RadixTooltip.Root delayDuration={delay}>
@@ -27,11 +21,10 @@ const Tooltip: TooltipComponent = ({
         <RadixTooltip.Portal>
           <RadixTooltip.Content
             className='constellation bg-grey-800 p-3 rounded-lg'
-            side={side}
-            sideOffset={offset}
-            avoidCollisions={!allowCollision}
+            {...tooltipContentProps}
+            asChild={false}
           >
-            <RadixTooltip.Arrow fill={PaletteColors['grey-800']} />
+            <RadixTooltip.Arrow fill={PaletteColors['grey-800']} width={16} height={8} />
             {children}
             {text && <p className='text-xs font-medium text-white-000'>{text}</p>}
           </RadixTooltip.Content>

@@ -6,8 +6,17 @@ import { Tooltip as TooltipComponent, TooltipComponent as TooltipComponentProps 
 
 export default {
   argTypes: {
+    asChild: {
+      table: {
+        disable: true,
+      },
+    },
     delay: {
       control: 'number',
+    },
+    side: {
+      control: 'select',
+      options: ['top', 'right', 'bottom', 'left'],
     },
     text: {
       control: 'text',
@@ -19,9 +28,9 @@ export default {
     },
   },
   args: {
-    allowCollision: false,
+    alignOffset: 0,
+    avoidCollisions: true,
     delay: 700,
-    offset: 0,
     side: 'top',
     text: 'This is a cool tooltip!',
   },
