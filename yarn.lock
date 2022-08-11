@@ -4569,7 +4569,7 @@ __metadata:
     "@storybook/testing-library": 0.0.13
     "@svgr/rollup": ^6.2.1
     "@svgr/webpack": ^6.2.1
-    "@tanstack/react-table": ^8.5.11
+    "@tanstack/react-table": 8.5.11
     "@testing-library/jest-dom": 5.16.1
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
@@ -8190,7 +8190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-table@npm:^8.5.11":
+"@tanstack/react-table@npm:8.5.11":
   version: 8.5.11
   resolution: "@tanstack/react-table@npm:8.5.11"
   dependencies:
