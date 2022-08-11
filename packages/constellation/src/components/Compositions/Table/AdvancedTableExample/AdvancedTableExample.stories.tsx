@@ -4,13 +4,21 @@ import {
   flexRender,
   getCoreRowModel,
   getSortedRowModel,
-  Row as ReactTableRowType,
   SortingState,
   useReactTable,
 } from '@tanstack/react-table'
 import React, { FC } from 'react'
 
-import { ButtonCell, ButtonCellProps, Row, TableContainer, TextCell, TextCellProps } from '../index'
+import {
+  ButtonCell,
+  ButtonCellProps,
+  Row,
+  RowType,
+  sortTextCells,
+  TableContainer,
+  TextCell,
+  TextCellProps,
+} from '../index'
 
 export default {
   argTypes: { onClick: { action: 'clicked' } },
@@ -20,26 +28,6 @@ export default {
 
 const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
   const [sorting, setSorting] = React.useState<SortingState>([{ desc: true, id: 'amount' }])
-
-  type RowType = {
-    actions: ButtonCellProps | TextCellProps
-    amount: TextCellProps
-    asset: TextCellProps
-  }
-
-  // sort table cells alphabetically by text and then subtext
-  const sortTextCells = (
-    rowA: ReactTableRowType<RowType>,
-    rowB: ReactTableRowType<RowType>,
-    id: 'amount' | 'asset',
-  ) => {
-    const rowAData = rowA.original[id]
-    const rowBData = rowB.original[id]
-
-    return `${rowAData.text}${rowAData.subtext}`.localeCompare(
-      `${rowBData.text}${rowBData.subtext}`,
-    )
-  }
 
   const columns = React.useMemo<ColumnDef<RowType>[]>(
     () => [
