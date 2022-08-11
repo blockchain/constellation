@@ -4260,6 +4260,71 @@ exports[`Storyshots Compositions/Logo Logo 1`] = `
 </div>
 `;
 
+exports[`Storyshots Compositions/Pager Pager 1`] = `
+<div
+  className="constellation flex items-center justify-between max-w-[375px]"
+>
+  <button
+    className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-2 py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    <icon-arrow-left.svg
+      className=""
+      color="var(--color-grey-400)"
+      fill="currentColor"
+      focusable="false"
+      height={24}
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    
+  </button>
+  <div
+    className="flex gap-[10px]"
+  >
+    <button
+      className="w-2 h-2 bg-medium rounded-full outline-none border-none bg-primary"
+      onClick={[Function]}
+    />
+    <button
+      className="w-2 h-2 bg-medium rounded-full outline-none border-none"
+      onClick={[Function]}
+    />
+    <button
+      className="w-2 h-2 bg-medium rounded-full outline-none border-none"
+      onClick={[Function]}
+    />
+    <button
+      className="w-2 h-2 bg-medium rounded-full outline-none border-none"
+      onClick={[Function]}
+    />
+    <button
+      className="w-2 h-2 bg-medium rounded-full outline-none border-none"
+      onClick={[Function]}
+    />
+  </div>
+  <button
+    className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-2 py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    <icon-arrow-left.svg
+      className="rotate-180"
+      color="var(--color-primary)"
+      fill="currentColor"
+      focusable="false"
+      height={24}
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    
+  </button>
+</div>
+`;
+
 exports[`Storyshots Compositions/Slider Primary 1`] = `
 Array [
   <span
