@@ -10,11 +10,11 @@ export type RowType = {
 }
 
 // sort table cells alphabetically by text and then subtext
-export const sortTextCells = (
-  rowA: ReactTableRowType<RowType>,
-  rowB: ReactTableRowType<RowType>,
+export const sortTextCells = <T,>(
+  rowA: ReactTableRowType<T>,
+  rowB: ReactTableRowType<T>,
   id: string,
-) => {
+): T => {
   const rowAData = rowA.original[id as 'amount' | 'asset']
   const rowBData = rowB.original[id as 'amount' | 'asset']
 
