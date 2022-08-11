@@ -1,7 +1,7 @@
 import cx from 'classnames'
-import React from 'react'
+import React, { useMemo } from 'react'
 
-import { IconTriangleDown, IconTriangleUp, SemanticColors } from '../../../../Base'
+import { IconMinus, IconTriangleDown, IconTriangleUp, SemanticColors } from '../../../../Base'
 import { BaseCellComponent } from '.'
 
 /**
@@ -12,12 +12,16 @@ import { BaseCellComponent } from '.'
 
 const BaseCell: BaseCellComponent = ({ children, isHeader, sort, toggleSort }) => {
   const Component = isHeader ? 'th' : 'td'
-  const SortArrow =
-    sort === 'asc' ? (
-      <IconTriangleUp color={SemanticColors.primary} />
-    ) : (
-      <IconTriangleDown color={SemanticColors.primary} />
-    )
+  const SortArrow = useMemo(() => {
+    switch (sort) {
+      case 'desc':
+        return <IconTriangleDown color={SemanticColors.primary} />
+      case 'asc':
+        return <IconTriangleUp color={SemanticColors.primary} />
+      default:
+        return <IconMinus color={SemanticColors.primary} width='9px' className='ml-1' />
+    }
+  }, [sort])
 
   return (
     <Component
@@ -31,7 +35,7 @@ const BaseCell: BaseCellComponent = ({ children, isHeader, sort, toggleSort }) =
     >
       <div className='flex flex-row items-center h-full gap-2'>
         {children}
-        {sort && SortArrow}
+        {toggleSort && SortArrow}
       </div>
     </Component>
   )
