@@ -23,8 +23,10 @@
     "lint": "yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
     "storybook": "start-storybook -p 9009",
+    "sb": "yarn storybook",
     "tailwind:build": "npx tailwindcss -i ./src/input.css -o ./src/components/styles.css",
     "tailwind:watch": "yarn tailwind:build --watch",
+    "tw": "yarn tailwind:watch",
     "test": "jest",
     "test:update": "jest -u",
     "test:tsc": "yarn tsc --noEmit",
@@ -144,6 +146,7 @@
     "@radix-ui/react-toggle": "0.1.3",
     "@radix-ui/react-toggle-group": "0.1.3",
     "@radix-ui/react-tooltip": "0.1.3",
+    "@tanstack/react-table": "8.5.11",
     "tailwindcss-radix": "2.3.1"
   },
   "lint-staged": {
