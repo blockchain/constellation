@@ -13,7 +13,6 @@ export type Props = DialogProps & {
    * Toggle the display of the modal
    */
   setIsOpen: (open: boolean) => void
-
   /**
    * An optional title to be rendered in the modal header
    */

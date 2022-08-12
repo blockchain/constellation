@@ -6,20 +6,9 @@ import React, { forwardRef, Fragment } from 'react'
 import { IconCloseCircle, SemanticColors } from '../../Base'
 import { Props } from './Modal.types'
 
-const ModalHeader = ({ title }: { title: Props['title'] }) => (
-  <>
-    <Title className='constellation text-base font-medium text-title'>{title}</Title>
-    <Close
-      className={cx(
-        'constellation absolute top-6 right-6 inline-flex items-center justify-center rounded-full',
-        'focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75',
-      )}
-    >
-      <IconCloseCircle size='medium' color={SemanticColors.medium} />
-    </Close>
-  </>
-)
-
+/**
+ * Internal component for the optional accessible description
+ */
 const ModalDescription = ({ description }: { description: string }) => (
   <Description className='constellation my-6 text-sm font-normal text-body'>
     {description}
@@ -67,7 +56,15 @@ const Modal = forwardRef<HTMLDivElement, Props>(
                 'bg-background',
               )}
             >
-              <ModalHeader {...{ title }} />
+              <Title className='constellation text-base font-medium text-title'>{title}</Title>
+              <Close
+                className={cx(
+                  'constellation absolute top-6 right-6 inline-flex items-center justify-center rounded-full',
+                  'focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75',
+                )}
+              >
+                <IconCloseCircle size='medium' color={SemanticColors.medium} />
+              </Close>
               {description && <ModalDescription {...{ description }} />}
               {children}
             </Content>
