@@ -36,7 +36,10 @@ const Modal = forwardRef<HTMLDivElement, Props>(
             leaveFrom='opacity-100'
             leaveTo='opacity-0'
           >
-            <Overlay forceMount className='constellation fixed inset-0 z-20 bg-overlay-dark-400' />
+            <Overlay
+              forceMount
+              className='constellation fixed inset-0 z-20 backdrop-blur-[2px] bg-overlay-dark-400'
+            />
           </Transition.Child>
           <Transition.Child
             as={Fragment}
