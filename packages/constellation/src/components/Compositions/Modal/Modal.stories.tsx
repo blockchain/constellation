@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { useState } from 'react'
 
 import { Text } from '../../Base'
-import { Button } from '../../Compositions'
+import { Button } from '..'
 import { Modal as RenderedModal, ModalComponent } from '.'
 import ModalFooter from './ModalFooter'
 

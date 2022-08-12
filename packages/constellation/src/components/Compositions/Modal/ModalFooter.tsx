@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button } from '../../Compositions'
+import { Button } from '..'
 import { ModalFooterProps } from './Modal.types'
 
 /**
