@@ -35,10 +35,19 @@ const ModalFooter = ({
   secondaryCta: Props['secondaryCta']
 }) => (
   <div className='constellation mt-4 flex justify-end gap-4'>
-    <Button width='full' variant='secondary' text={primaryCta.text} onClick={primaryCta.onClick} />
     {secondaryCta && (
-      <Button width='full' text={secondaryCta.text} onClick={secondaryCta.onClick} />
+      <Button
+        width='full'
+        variant='secondary'
+        text={secondaryCta.text}
+        onClick={secondaryCta.onClick}
+      />
     )}
+    <Button
+      width={secondaryCta ? 'full' : 'auto'}
+      text={primaryCta.text}
+      onClick={primaryCta.onClick}
+    />
   </div>
 )
 
