@@ -62,6 +62,7 @@ const Text: TextComponentType = forwardRef(
       transform,
       truncate,
       variant = 'body1',
+      className,
       ...otherProps
     }: Props<T>,
     ref?: PolymorphicRef<T>,
@@ -79,6 +80,7 @@ const Text: TextComponentType = forwardRef(
           textAlignClasses[textAlign],
           transformClass,
           { truncate },
+          className,
         )}
         ref={ref}
         {...otherProps}

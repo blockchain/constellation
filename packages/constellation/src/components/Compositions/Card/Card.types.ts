@@ -1,9 +1,14 @@
 import { FC } from 'react'
 
+import { LogoContentProps } from '../index'
+
 type CardProps = {
   border?: boolean
-  size?: 'default' | 'announcements' | 'callout'
-  variant?: 'default' | 'CTAS'
+  content: string
+  ctas?: boolean
+  logoContent: LogoContentProps
+  title: string
+  variant?: 'default' | 'announcements' | 'callout'
 }
 
 type CardComponent = FC<CardProps>
