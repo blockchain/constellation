@@ -2,7 +2,6 @@
 import { ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import * as Icons from '../../Base/Icon'
 import { Card as CardComponent, CardComponent as CardComponentProps } from '.'
 
 export default {

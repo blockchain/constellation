@@ -1,6 +1,10 @@
 import { FC } from 'react'
 
-type CardProps = {}
+type CardProps = {
+  border?: boolean
+  size?: 'default' | 'announcements' | 'callout'
+  variant?: 'default' | 'CTAS'
+}
 
 type CardComponent = FC<CardProps>
 

@@ -175,6 +175,7 @@ module.exports = {
     extend: {
       dropShadow: {
         control: ['var(--shadow-control)', 'var(--shadow-control-sm)'],
+        cards: ['var(--shadow-cards)', 'var(--shadow-cards-sm)'],
       },
       font: {
         italic: ['font-feature-settings: "zero" on, "ss01" on', 'font-style: italic'],
