@@ -4,7 +4,6 @@ import cx from 'classnames'
 import React, { forwardRef, Fragment } from 'react'
 
 import { IconCloseCircle, SemanticColors } from '../../Base'
-import { Button } from '../../Compositions'
 import { Props } from './Modal.types'
 
 const ModalHeader = ({ title }: { title: Props['title'] }) => (
@@ -21,41 +20,20 @@ const ModalHeader = ({ title }: { title: Props['title'] }) => (
   </>
 )
 
-const ModalBody = ({ description }: { description: string }) => (
+const ModalDescription = ({ description }: { description: string }) => (
   <Description className='constellation my-6 text-sm font-normal text-body'>
     {description}
   </Description>
 )
 
-const ModalFooter = ({
-  primaryCta,
-  secondaryCta,
-}: {
-  primaryCta: Props['primaryCta']
-  secondaryCta: Props['secondaryCta']
-}) => (
-  <div className='constellation mt-4 flex justify-end gap-4'>
-    {secondaryCta && (
-      <Button
-        width='full'
-        variant='secondary'
-        text={secondaryCta.text}
-        onClick={secondaryCta.onClick}
-      />
-    )}
-    <Button
-      width={secondaryCta ? 'full' : 'auto'}
-      text={primaryCta.text}
-      onClick={primaryCta.onClick}
-    />
-  </div>
-)
-
+/**
+ * A dialog overlaid on either the primary window or another dialog window, rendering the content underneath inert.
+ * It can be passed a ModalFooter as well as any other type of children.
+ *
+ * When a `ref` prop is provided, it will be forwarded to the Modal's Content div element.
+ */
 const Modal = forwardRef<HTMLDivElement, Props>(
-  (
-    { description, isOpen, primaryCta, secondaryCta, setIsOpen, title, trigger, ...otherProps },
-    ref,
-  ) => {
+  ({ children, description, isOpen, setIsOpen, title, trigger, ...otherProps }, ref) => {
     return (
       <Root open={isOpen} onOpenChange={setIsOpen} {...otherProps}>
         <Trigger asChild>{trigger}</Trigger>
@@ -90,8 +68,8 @@ const Modal = forwardRef<HTMLDivElement, Props>(
               )}
             >
               <ModalHeader {...{ title }} />
-              {description && <ModalBody {...{ description }} />}
-              <ModalFooter {...{ primaryCta, secondaryCta }} />
+              {description && <ModalDescription {...{ description }} />}
+              {children}
             </Content>
           </Transition.Child>
         </Transition.Root>

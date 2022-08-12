@@ -1,10 +1,5 @@
 import { DialogProps } from '@radix-ui/react-dialog'
 
-export type FooterCta = {
-  onClick: () => void
-  text: string
-}
-
 export type Props = DialogProps & {
   /**
    * An optional accessible description to be rendered and announced when the dialog is opened.
@@ -14,14 +9,6 @@ export type Props = DialogProps & {
    * Display the modal
    */
   isOpen: boolean
-  /**
-   * The primary call to action button of the modal footer
-   */
-  primaryCta: FooterCta
-  /**
-   * The optional secondary call to action button of the modal footer
-   */
-  secondaryCta?: FooterCta
   /**
    * Toggle the display of the modal
    */
@@ -38,3 +25,19 @@ export type Props = DialogProps & {
 }
 
 export type Component = React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLDivElement>>
+
+export type FooterCta = {
+  onClick: () => void
+  text: string
+}
+
+export interface ModalFooterProps {
+  /**
+   * The primary call to action button of the modal footer
+   */
+  primaryCta: FooterCta
+  /**
+   * The optional secondary call to action button of the modal footer
+   */
+  secondaryCta?: FooterCta
+}
