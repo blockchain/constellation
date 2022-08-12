@@ -32,7 +32,7 @@ export default {
     variant: 'default',
   },
   component: TagComponent,
-  title: 'Base/Tag',
+  title: 'Primitives/Tag',
 } as ComponentMeta<TagComponentType>
 
 const Template: ComponentStory<TagComponentType> = ({ ...args }) => {

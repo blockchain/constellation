@@ -20,7 +20,7 @@ export default {
     label: 'Option 1',
   },
   component: RenderedRadio,
-  title: 'Compositions/Controls/Radio',
+  title: 'Primitives/Controls/Radio',
 } as ComponentMeta<RadioComponent>
 
 const Template: ComponentStory<RadioComponent> = ({ ...args }) => {

@@ -23,7 +23,7 @@ export default {
     label: 'Option 1',
   },
   component: RenderedCheckbox,
-  title: 'Compositions/Controls/Checkbox',
+  title: 'Primitives/Controls/Checkbox',
 } as ComponentMeta<CheckboxComponent>
 
 const Template: ComponentStory<CheckboxComponent> = ({ ...args }) => {

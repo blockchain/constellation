@@ -3,8 +3,8 @@ import { Root, Thumb } from '@radix-ui/react-switch'
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
-import { SemanticColors } from '../../Colors'
-import { getTextColorClass } from '../../Typography/util'
+import { SemanticColors } from '../../../Base/Colors'
+import { getTextColorClass } from '../../../Base/Typography/util'
 import { Props, Variants } from './Switch.types'
 
 /**

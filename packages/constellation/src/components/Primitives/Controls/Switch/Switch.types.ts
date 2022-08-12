@@ -1,6 +1,6 @@
 import { SwitchProps } from '@radix-ui/react-switch'
 
-import { SemanticColors } from '../../Colors'
+import { SemanticColors } from '../../../Base/Colors'
 
 export type Variants = 'primary' | 'success'
 

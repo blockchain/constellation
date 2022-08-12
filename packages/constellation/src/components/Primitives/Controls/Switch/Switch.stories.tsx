@@ -34,7 +34,7 @@ export default {
     variant: 'primary',
   },
   component: RenderedSwitch,
-  title: 'Compositions/Controls/Switch',
+  title: 'Primitives/Controls/Switch',
 } as ComponentMeta<SwitchComponent>
 
 const Template: ComponentStory<SwitchComponent> = ({ ...args }) => {

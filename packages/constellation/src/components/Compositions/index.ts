@@ -1,2 +1,6 @@
 export * from './Buttons'
-export * from './Slider'
+export * from './Input'
+export * from './Logo'
+export * from './Modal'
+export * from './Pager'
+export * from './Table'

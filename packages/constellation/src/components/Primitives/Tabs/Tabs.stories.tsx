@@ -30,7 +30,7 @@ export default {
     ],
   },
   component: RenderedTabs,
-  title: 'Compositions/Tabs',
+  title: 'Primitives/Tabs',
 } as ComponentMeta<TabsComponent>
 
 const Template: ComponentStory<TabsComponent> = (args) => {

@@ -1,1 +1,6 @@
-export * from './Modal'
+export * from './Controls'
+export * from './Loaders'
+export * from './Slider'
+export * from './Tabs'
+export * from './Tag'
+export * from './Tooltip'

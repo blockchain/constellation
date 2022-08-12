@@ -3,9 +3,9 @@ import { Label } from '@radix-ui/react-label'
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
-import { SemanticColors } from '../../Colors'
-import { IconCheck } from '../../Icon'
-import { getTextColorClass } from '../../Typography/util'
+import { SemanticColors } from '../../../Base/Colors'
+import { IconCheck } from '../../../Base/Icon'
+import { getTextColorClass } from '../../../Base/Typography/util'
 import { Props } from './Checkbox.types'
 
 /**

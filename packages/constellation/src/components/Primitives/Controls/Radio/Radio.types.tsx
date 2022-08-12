@@ -1,6 +1,6 @@
 import { RadioGroupItemProps } from '@radix-ui/react-radio-group'
 
-import { SemanticColors } from '../../Colors'
+import { SemanticColors } from '../../../Base/Colors'
 
 export type Props = RadioGroupItemProps & {
   /**

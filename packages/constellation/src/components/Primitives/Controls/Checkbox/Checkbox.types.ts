@@ -1,6 +1,6 @@
 import { CheckboxProps } from '@radix-ui/react-checkbox'
 
-import { SemanticColors } from '../../Colors'
+import { SemanticColors } from '../../../Base/Colors'
 
 export type Props = CheckboxProps & {
   /**

@@ -26,7 +26,7 @@ export default {
     orientation: 'vertical',
   },
   component: RenderedRadioGroup,
-  title: 'Compositions/Controls/RadioGroup',
+  title: 'Primitives/Controls/RadioGroup',
 } as ComponentMeta<RadioGroupComponent>
 
 const Template: ComponentStory<RadioGroupComponent> = ({ orientation, ...args }) => {

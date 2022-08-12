@@ -25,7 +25,7 @@ export default {
     variant: 'color',
   },
   component: SpinningLoader,
-  title: 'Base/Loaders',
+  title: 'Primitives/Loaders',
 } as ComponentMeta<SpinningLoaderComponent>
 
 const Template: ComponentStory<SpinningLoaderComponent> = ({ borderWidth, size, variant }) => {

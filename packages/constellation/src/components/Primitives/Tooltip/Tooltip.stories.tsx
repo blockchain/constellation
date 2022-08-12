@@ -48,7 +48,7 @@ export default {
     text: 'This is a cool tooltip!',
   },
   component: TooltipComponent,
-  title: 'Compositions/Tooltip',
+  title: 'Primitives/Tooltip',
 } as ComponentMeta<TooltipComponentProps>
 
 type StoryComponent = TooltipComponentProps
