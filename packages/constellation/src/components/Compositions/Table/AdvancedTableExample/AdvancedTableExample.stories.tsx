@@ -9,7 +9,7 @@ import {
 } from '@tanstack/react-table'
 import React, { FC } from 'react'
 
-import { ButtonCell, ButtonCellProps, Row, TableContainer, TextCell, TextCellProps } from '..'
+import { ButtonCell, ButtonCellProps, Row, TableContainer, TextCell, TextCellProps } from '../index'
 import { RowType, sortTextCells } from './utils'
 
 export default {

@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { FC } from 'react'
 
-import { ButtonCell, Row, TableContainer, TextCell } from '..'
+import { ButtonCell, Row, TableContainer, TextCell } from '../index'
 
 export default {
   argTypes: { onClick: { action: 'clicked' } },

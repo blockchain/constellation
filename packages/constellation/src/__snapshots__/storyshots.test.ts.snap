@@ -3742,14 +3742,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-4"
+    id="radix-7"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-4"
+      aria-labelledby="radix-7"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -3784,14 +3784,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-6"
+    id="radix-9"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={true}
-      aria-labelledby="radix-6"
+      aria-labelledby="radix-9"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="checked"
@@ -3831,14 +3831,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-8"
+    id="radix-11"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-8"
+      aria-labelledby="radix-11"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -4026,7 +4026,7 @@ exports[`Storyshots Compositions/Logo Logo 1`] = `
 
 exports[`Storyshots Compositions/Modal Modal 1`] = `
 <button
-  aria-controls="radix-16"
+  aria-controls="radix-0"
   aria-expanded={false}
   aria-haspopup="dialog"
   className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
@@ -4912,14 +4912,14 @@ exports[`Storyshots Primitives/Buttons/Link Link 1`] = `
 exports[`Storyshots Primitives/Controls/Checkbox Checkbox 1`] = `
 <span
   className="constellation inline-flex gap-2 items-center text-body"
-  id="radix-0"
+  id="radix-3"
   onClick={[Function]}
   onMouseDown={[Function]}
   role="label"
 >
   <button
     aria-checked={false}
-    aria-labelledby="radix-0"
+    aria-labelledby="radix-3"
     className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none"
     data-state="unchecked"
     id="option1"
@@ -4968,14 +4968,14 @@ exports[`Storyshots Primitives/Controls/Radio Radio 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-2"
+    id="radix-5"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-2"
+      aria-labelledby="radix-5"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -5014,7 +5014,7 @@ exports[`Storyshots Primitives/Controls/Radio Radio 1`] = `
 exports[`Storyshots Primitives/Controls/Switch Switch 1`] = `
 <span
   className="constellation flex gap-3 text-body flex-row items-center"
-  id="radix-9"
+  id="radix-12"
   onClick={[Function]}
   onMouseDown={[Function]}
   role="label"
@@ -5160,14 +5160,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
       tabIndex={0}
     >
       <button
-        aria-controls="radix-14-content-tab1"
+        aria-controls="radix-17-content-tab1"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-14-trigger-tab1"
+        id="radix-17-trigger-tab1"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5182,14 +5182,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-14-content-tab2"
+        aria-controls="radix-17-content-tab2"
         aria-selected={true}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
         disabled={false}
-        id="radix-14-trigger-tab2"
+        id="radix-17-trigger-tab2"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5204,14 +5204,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-14-content-tab3"
+        aria-controls="radix-17-content-tab3"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-14-trigger-tab3"
+        id="radix-17-trigger-tab3"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5226,14 +5226,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-14-content-tab4"
+        aria-controls="radix-17-content-tab4"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-14-trigger-tab4"
+        id="radix-17-trigger-tab4"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
