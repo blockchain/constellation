@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SpinningLoaderProps } from '../../../Base'
+import { SpinningLoaderProps } from '../..'
 
 export type ButtonVariants = 'primary' | 'secondary' | 'minimal' | 'alert' | 'icon'
 export type ButtonWidths = 'auto' | 'full'
