@@ -8,7 +8,11 @@ import { Card } from '../'
 const CtaCard: CtaCardComponent = ({ variant, ...cardProps }) => {
   const isAnnouncement = variant === 'announcement'
 
-  return <Card {...cardProps} button />
+  const Header = () => {
+    return <div>Test</div>
+  }
+
+  return <Card {...cardProps} button header={<Header />} />
 }
 
 export default CtaCard

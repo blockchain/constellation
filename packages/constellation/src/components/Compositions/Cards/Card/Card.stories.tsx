@@ -7,6 +7,8 @@ import { Card as CardComponent, CardComponent as CardComponentProps } from '.'
 export default {
   argTypes: {
     accentColor: { control: 'color' },
+    buttonOnClick: { action: 'click' },
+    onClose: { action: 'close' },
   },
   args: {
     border: false,

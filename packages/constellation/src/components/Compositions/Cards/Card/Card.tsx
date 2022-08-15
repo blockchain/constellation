@@ -45,19 +45,24 @@ const Card: CardComponent = ({
       )}
       style={accentColor ? { borderColor: accentColor } : {}}
     >
-      <IconButton
-        icon={<IconCloseV2 color={PaletteColors['grey-400']} width={12} height={12} />}
-        size='small'
-        onClick={onClose}
-        className={cx(
-          'absolute top-4 right-4 border-none !bg-background-light mode-dark:!bg-grey-800 !w-6 !h-6 rounded-full !p-0 flex justify-center items-center',
-          { 'top-3 right-3': !isDefault },
-        )}
-      />
-      {logoContent && (
-        <Logo primaryContent={logoContent} singleVariant={isDefault ? 'base' : 'large'} />
+      {onClose && (
+        <IconButton
+          icon={<IconCloseV2 color={PaletteColors['grey-400']} width={12} height={12} />}
+          size='small'
+          onClick={onClose}
+          className={cx(
+            'absolute top-4 right-4 border-none !bg-background-light mode-dark:!bg-grey-800 !w-6 !h-6 rounded-full !p-0 flex justify-center items-center',
+            { 'top-3 right-3': !isDefault },
+          )}
+        />
       )}
-      {header}
+      <div className='flex flex-row items-center gap-2'>
+        {logoContent && (
+          <Logo primaryContent={logoContent} singleVariant={isDefault ? 'base' : 'large'} />
+        )}
+        {header}
+      </div>
+
       <div className='flex flex-col'>
         <Text
           variant={isDefault ? 'title3' : 'caption1'}
