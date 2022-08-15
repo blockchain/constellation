@@ -1,5 +1,6 @@
 export * from './Buttons'
 export * from './Controls'
+export * from './Dropdown'
 export * from './Loaders'
 export * from './Slider'
 export * from './Tabs'
