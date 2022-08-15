@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
-import { Tag } from '../../Base'
+import { Tag } from '../../Primitives'
 import { Input, InputComponent } from '.'
 
 export default {

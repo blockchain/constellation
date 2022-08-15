@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Tag } from '../../../../Base'
+import { Tag } from '../../../../Primitives'
 import { BaseCell } from '../..'
 import { InformationalCellComponentType } from '.'
 
