@@ -9,6 +9,7 @@ type CardProps = {
   button?: boolean
   buttonContent?: string
   buttonOnClick?: () => void
+  className?: string
   content: string
   footer?: ReactNode
   header?: ReactNode
@@ -16,7 +17,7 @@ type CardProps = {
   logoContent?: LogoContentProps
   onClose?: () => void
   title: string
-  variant?: 'default' | 'announcement' | 'callout'
+  variant?: 'default' | 'announcement' | 'callout' | 'cta'
 }
 
 type CardComponent = FC<CardProps>

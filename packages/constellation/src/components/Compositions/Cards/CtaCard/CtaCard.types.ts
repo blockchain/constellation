@@ -13,7 +13,12 @@ type CtaCardProps = {
   header?: ReactNode
   logoContent?: LogoContentProps
   onClose?: () => void
+  price?: string
+  priceChange?: string
+  ticker: string
+  timeframe?: string
   title: string
+  tokenName: string
   variant?: 'default' | 'announcement'
 }
 

@@ -11,6 +11,7 @@ const Card: CardComponent = ({
   button,
   buttonContent = 'GO',
   buttonOnClick,
+  className,
   content,
   footer,
   header,
@@ -22,16 +23,26 @@ const Card: CardComponent = ({
   const variantStyles = {
     announcement: 'flex-row items-center pt-3',
     callout: 'flex-row items-center',
+    cta: 'flex-col items-start',
     default: 'flex-col',
   }
 
   const bodyVariantStyles = {
     announcement: 'body2',
     callout: 'paragraph2',
+    cta: 'paragraph1',
     default: 'paragraph1',
   }
 
+  const titleVariantStyles = {
+    announcement: 'caption1',
+    callout: 'caption1',
+    cta: 'body2',
+    default: 'title3',
+  }
+
   const isDefault = variant === 'default'
+  const isCta = variant === 'cta'
 
   return (
     <div
@@ -42,6 +53,7 @@ const Card: CardComponent = ({
           'border border-medium': border,
         },
         { 'border-blue-400': variant === 'callout' },
+        className,
       )}
       style={accentColor ? { borderColor: accentColor } : {}}
     >
@@ -58,14 +70,17 @@ const Card: CardComponent = ({
       )}
       <div className='flex flex-row items-center gap-2'>
         {logoContent && (
-          <Logo primaryContent={logoContent} singleVariant={isDefault ? 'base' : 'large'} />
+          <Logo
+            primaryContent={logoContent}
+            singleVariant={isDefault || isCta ? 'base' : 'large'}
+          />
         )}
         {header}
       </div>
 
       <div className='flex flex-col'>
         <Text
-          variant={isDefault ? 'title3' : 'caption1'}
+          variant={titleVariantStyles[variant] as 'caption1' | 'body2' | 'title3'}
           className={cx('!m-0')}
           color={variant === 'announcement' ? SemanticColors.medium : SemanticColors.title}
         >
