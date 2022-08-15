@@ -70,8 +70,6 @@ const Logo: LogoComponent = ({
 }) => {
   const badge = doubleVariant === 'badge'
 
-  console.log(singleVariant)
-
   return (
     <div
       className={cx('constellation w-8 h-10 relative flex justify-center items-center', {

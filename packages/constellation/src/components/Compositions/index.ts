@@ -1,5 +1,5 @@
 export * from './Buttons'
-export * from './Card'
+export * from './Cards'
 export * from './Input'
 export * from './Logo'
 export * from './Pager'

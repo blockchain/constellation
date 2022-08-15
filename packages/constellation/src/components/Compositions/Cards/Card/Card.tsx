@@ -1,26 +1,32 @@
 import cx from 'classnames'
 import React from 'react'
 
-import { IconCloseV2, PaletteColors, SemanticColors, Text } from '../../Base'
-import { Button, IconButton, Logo } from '../index'
+import { IconCloseV2, PaletteColors, SemanticColors, Text } from '../../../Base'
+import { Button, IconButton, Logo } from '../../index'
 import { CardComponent } from './Card.types'
 
 const Card: CardComponent = ({
+  accentColor,
   border,
+  button,
+  buttonContent = 'GO',
+  buttonOnClick,
   content,
-  ctas,
+  footer,
+  header,
   logoContent,
+  onClose,
   title,
   variant = 'default',
 }) => {
   const variantStyles = {
-    announcements: 'flex-row items-center pt-3',
+    announcement: 'flex-row items-center pt-3',
     callout: 'flex-row items-center',
     default: 'flex-col',
   }
 
   const bodyVariantStyles = {
-    announcements: 'body2',
+    announcement: 'body2',
     callout: 'paragraph2',
     default: 'paragraph1',
   }
@@ -37,21 +43,26 @@ const Card: CardComponent = ({
         },
         { 'border-blue-400': variant === 'callout' },
       )}
+      style={accentColor ? { borderColor: accentColor } : {}}
     >
       <IconButton
         icon={<IconCloseV2 color={PaletteColors['grey-400']} width={12} height={12} />}
         size='small'
+        onClick={onClose}
         className={cx(
           'absolute top-4 right-4 border-none !bg-background-light mode-dark:!bg-grey-800 !w-6 !h-6 rounded-full !p-0 flex justify-center items-center',
           { 'top-3 right-3': !isDefault },
         )}
       />
-      <Logo primaryContent={logoContent} singleVariant={isDefault ? 'base' : 'large'} />
+      {logoContent && (
+        <Logo primaryContent={logoContent} singleVariant={isDefault ? 'base' : 'large'} />
+      )}
+      {header}
       <div className='flex flex-col'>
         <Text
           variant={isDefault ? 'title3' : 'caption1'}
           className={cx('!m-0')}
-          color={variant === 'announcements' ? SemanticColors.medium : SemanticColors.title}
+          color={variant === 'announcement' ? SemanticColors.medium : SemanticColors.title}
         >
           {title}
         </Text>
@@ -62,13 +73,16 @@ const Card: CardComponent = ({
           {content}
         </Text>
       </div>
-      {(ctas || variant === 'callout') && (
+      {(variant === 'callout' || button) && (
         <Button
-          text='Notify Me'
+          text={buttonContent}
+          onClick={buttonOnClick}
           variant='primary'
           size={variant === 'callout' ? 'small' : 'default'}
+          style={accentColor ? { backgroundColor: accentColor } : {}}
         />
       )}
+      {footer}
     </div>
   )
 }
