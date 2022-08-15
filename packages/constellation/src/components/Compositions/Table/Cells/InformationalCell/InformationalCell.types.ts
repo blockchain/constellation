@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { TagProps } from '../../../../Base'
+import { TagProps } from '../../../../Primitives'
 import { BaseCellProps } from '../..'
 
 interface Props extends BaseCellProps, TagProps {

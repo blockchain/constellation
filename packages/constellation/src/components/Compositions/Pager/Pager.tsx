@@ -2,7 +2,7 @@ import cx from 'classnames'
 import React from 'react'
 
 import { IconArrowLeft, PaletteColors, SemanticColors } from '../../Base'
-import { IconButton } from '../Buttons'
+import { IconButton } from '../../Primitives/Buttons'
 import { ArrowProps, IndicatorProps, PagerComponent } from './Pager.types'
 
 const Indicator = ({ index, onChange, selected }: IndicatorProps) => (
