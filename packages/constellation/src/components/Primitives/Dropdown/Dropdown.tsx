@@ -29,6 +29,7 @@ const Dropdown = forwardRef<HTMLButtonElement, Props>(
             className={cx(
               'constellation flex justify-between items-center px-4 py-3.5 w-72 cursor-pointer transition-all truncate',
               variantStyles.minimal,
+              '!bg-background-light',
               {
                 '!text-muted font-normal': !currentValue,
                 '!text-title font-semibold': currentValue,
