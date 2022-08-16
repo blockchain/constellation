@@ -3323,16 +3323,6 @@ exports[`Storyshots Base/Icon Icon 1`] = `
 />
 `;
 
-exports[`Storyshots Base/Loaders Spinning Loader 1`] = `
-<div
-  className="constellation w-72 h-72 p-4 grid place-items-center"
->
-  <div
-    className="h-16 w-16 border-t-primary border-blue-100 mode-dark:border-white-200 mode-dark:border-t-primary border-8 constellation relative overflow-hidden rounded-full animate-spin-fast"
-  />
-</div>
-`;
-
 exports[`Storyshots Base/Padding Padding All 1`] = `
 <div
   style={
@@ -3432,14 +3422,6 @@ exports[`Storyshots Base/Padding Padding Symetric 1`] = `
       </span>
     </div>
   </div>
-</div>
-`;
-
-exports[`Storyshots Base/Tag Tag 1`] = `
-<div
-  className="constellation w-fit rounded font-semibold align-middle border py-0.5 px-[7px] text-xs bg-background-light border-background-light text-title"
->
-  Tag
 </div>
 `;
 
@@ -3741,179 +3723,6 @@ exports[`Storyshots Base/Typography/Text Text 1`] = `
 </span>
 `;
 
-exports[`Storyshots Compositions/Buttons/Alert Alert 1`] = `
-<button
-  className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
-  disabled={false}
-  type="button"
->
-  <icon-alert.svg
-    color="var(--color-warning)"
-    fill="currentColor"
-    focusable="false"
-    height="1rem"
-    width="1rem"
-    xmlns="http://www.w3.org/2000/svg"
-  />
-  Large
-</button>
-`;
-
-exports[`Storyshots Compositions/Buttons/Button Button 1`] = `
-<button
-  className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
-  disabled={false}
-  type="button"
->
-  <icon-apple.svg
-    color="inherit"
-    fill="currentColor"
-    focusable="false"
-    height="1rem"
-    width="1rem"
-    xmlns="http://www.w3.org/2000/svg"
-  />
-  Large
-</button>
-`;
-
-exports[`Storyshots Compositions/Buttons/IconButton Icon Button 1`] = `
-<button
-  className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-4 py-4 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
-  disabled={false}
-  type="button"
->
-  <icon-apple.svg
-    color="inherit"
-    fill="currentColor"
-    focusable="false"
-    height="1rem"
-    width="1rem"
-    xmlns="http://www.w3.org/2000/svg"
-  />
-  
-</button>
-`;
-
-exports[`Storyshots Compositions/Buttons/Link Link 1`] = `
-<a
-  aria-disabled="true"
-  className="constellation w-fit text-primary hover:underline hover:underline-offset-[3px] hover:text-blue-700 focus:text-blue-700 font-semibold cursor-pointer transition-all flex items-center justify-center gap-2 mode-dark:hover:text-blue-300 mode-dark:focus:text-blue-300 px-10 py-4 text-xl h-16"
->
-  <icon-apple.svg
-    color="inherit"
-    fill="currentColor"
-    focusable="false"
-    height="1rem"
-    width="1rem"
-    xmlns="http://www.w3.org/2000/svg"
-  />
-  Large
-</a>
-`;
-
-exports[`Storyshots Compositions/Controls/Checkbox Checkbox 1`] = `
-<span
-  className="constellation inline-flex gap-2 items-center text-body"
-  id="radix-0"
-  onClick={[Function]}
-  onMouseDown={[Function]}
-  role="label"
->
-  <button
-    aria-checked={false}
-    aria-labelledby="radix-0"
-    className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none"
-    data-state="unchecked"
-    id="option1"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="checkbox"
-    type="button"
-    value="on"
-  />
-  <input
-    aria-hidden={true}
-    defaultChecked={false}
-    style={
-      Object {
-        "margin": 0,
-        "opacity": 0,
-        "pointerEvents": "none",
-        "position": "absolute",
-        "transform": "translateX(-100%)",
-      }
-    }
-    tabIndex={-1}
-    type="checkbox"
-    value="on"
-  />
-  Option 1
-</span>
-`;
-
-exports[`Storyshots Compositions/Controls/Radio Radio 1`] = `
-<div
-  aria-required={false}
-  className="constellation flex gap-3 flex-col"
-  dir="ltr"
-  id="radio-group"
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onMouseDown={[Function]}
-  role="radiogroup"
-  style={
-    Object {
-      "outline": "none",
-    }
-  }
-  tabIndex={0}
->
-  <span
-    className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-2"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    role="label"
-  >
-    <button
-      aria-checked={false}
-      aria-labelledby="radix-2"
-      className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
-      data-radix-collection-item=""
-      data-state="unchecked"
-      id="option1"
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      role="radio"
-      tabIndex={-1}
-      type="button"
-      value="on"
-    />
-    <input
-      aria-hidden={true}
-      defaultChecked={false}
-      required={false}
-      style={
-        Object {
-          "margin": 0,
-          "opacity": 0,
-          "pointerEvents": "none",
-          "position": "absolute",
-          "transform": "translateX(-100%)",
-        }
-      }
-      tabIndex={-1}
-      type="radio"
-      value="on"
-    />
-    Option 1
-  </span>
-</div>
-`;
-
 exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 <div
   aria-required={false}
@@ -3933,14 +3742,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-4"
+    id="radix-7"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-4"
+      aria-labelledby="radix-7"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -3975,14 +3784,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-6"
+    id="radix-9"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={true}
-      aria-labelledby="radix-6"
+      aria-labelledby="radix-9"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="checked"
@@ -4022,14 +3831,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-8"
+    id="radix-11"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-8"
+      aria-labelledby="radix-11"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -4063,51 +3872,6 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
     Option 3
   </span>
 </div>
-`;
-
-exports[`Storyshots Compositions/Controls/Switch Switch 1`] = `
-<span
-  className="constellation flex gap-3 text-body flex-row items-center"
-  id="radix-9"
-  onClick={[Function]}
-  onMouseDown={[Function]}
-  role="label"
->
-  
-  <button
-    aria-checked={false}
-    className="constellation group radix-state-unchecked:bg-background-dark mode-dark:radix-state-unchecked:bg-medium p-0 relative inline-flex h-[24px] w-[48px] flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-all focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-checked:bg-primary"
-    data-state="unchecked"
-    disabled={false}
-    id="option1"
-    onClick={[Function]}
-    role="switch"
-    type="button"
-    value="on"
-  >
-    <span
-      className="constellation group-radix-state-checked:translate-x-6 group-radix-state-unchecked:translate-x-0 pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-background ring-0 transition-all"
-      data-state="unchecked"
-    />
-  </button>
-  <input
-    aria-hidden={true}
-    defaultChecked={false}
-    disabled={false}
-    style={
-      Object {
-        "margin": 0,
-        "opacity": 0,
-        "pointerEvents": "none",
-        "position": "absolute",
-        "transform": "translateX(-100%)",
-      }
-    }
-    tabIndex={-1}
-    type="checkbox"
-    value="on"
-  />
-</span>
 `;
 
 exports[`Storyshots Compositions/Input Password Input 1`] = `
@@ -4262,7 +4026,7 @@ exports[`Storyshots Compositions/Logo Logo 1`] = `
 
 exports[`Storyshots Compositions/Modal Modal 1`] = `
 <button
-  aria-controls="radix-16"
+  aria-controls="radix-0"
   aria-expanded={false}
   aria-haspopup="dialog"
   className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
@@ -4338,76 +4102,6 @@ exports[`Storyshots Compositions/Pager Pager 1`] = `
     
   </button>
 </div>
-`;
-
-exports[`Storyshots Compositions/Slider Primary 1`] = `
-Array [
-  <span
-    aria-disabled={false}
-    aria-label="value"
-    className="constellation relative flex h-5 w-64 touch-none items-center"
-    data-orientation="horizontal"
-    onKeyDown={[Function]}
-    onPointerDown={[Function]}
-    onPointerMove={[Function]}
-    onPointerUp={[Function]}
-    style={
-      Object {
-        "--radix-slider-thumb-transform": "translateX(-50%)",
-      }
-    }
-  >
-    <span
-      className="relative h-[2px] w-full grow rounded-full bg-medium"
-      data-orientation="horizontal"
-    >
-      <span
-        className="absolute h-full rounded-full bg-primary"
-        data-orientation="horizontal"
-        style={
-          Object {
-            "left": "0%",
-            "right": "100%",
-          }
-        }
-      />
-    </span>
-    <span
-      style={
-        Object {
-          "left": "calc(0% + 0px)",
-          "position": "absolute",
-          "transform": "var(--radix-slider-thumb-transform)",
-        }
-      }
-    >
-      <span
-        aria-orientation="horizontal"
-        aria-valuemax={100}
-        aria-valuemin={0}
-        className="block h-6 w-6 rounded-full bg-background border border-solid border-grey-000 mode-dark:border-dark-900 focus:outline-none drop-shadow-control mode-dark:bg-dark-500"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        onFocus={[Function]}
-        role="slider"
-        style={
-          Object {
-            "display": "none",
-          }
-        }
-        tabIndex={0}
-      />
-    </span>
-  </span>,
-  <input
-    defaultValue={0}
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-  />,
-]
 `;
 
 exports[`Storyshots Compositions/Table/Cells/BaseCell Base Cell 1`] = `
@@ -5144,7 +4838,508 @@ exports[`Storyshots Compositions/Table/TableContainer Table Container 1`] = `
 </table>
 `;
 
-exports[`Storyshots Compositions/Tabs Tabs 1`] = `
+exports[`Storyshots Primitives/Buttons/Alert Alert 1`] = `
+<button
+  className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+  disabled={false}
+  type="button"
+>
+  <icon-alert.svg
+    color="var(--color-warning)"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  Large
+</button>
+`;
+
+exports[`Storyshots Primitives/Buttons/Button Button 1`] = `
+<button
+  className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+  disabled={false}
+  type="button"
+>
+  <icon-apple.svg
+    color="inherit"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  Large
+</button>
+`;
+
+exports[`Storyshots Primitives/Buttons/IconButton Icon Button 1`] = `
+<button
+  className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-4 py-4 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+  disabled={false}
+  type="button"
+>
+  <icon-apple.svg
+    color="inherit"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  
+</button>
+`;
+
+exports[`Storyshots Primitives/Buttons/Link Link 1`] = `
+<a
+  aria-disabled="true"
+  className="constellation w-fit text-primary hover:underline hover:underline-offset-[3px] hover:text-blue-700 focus:text-blue-700 font-semibold cursor-pointer transition-all flex items-center justify-center gap-2 mode-dark:hover:text-blue-300 mode-dark:focus:text-blue-300 px-10 py-4 text-xl h-16"
+>
+  <icon-apple.svg
+    color="inherit"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  Large
+</a>
+`;
+
+exports[`Storyshots Primitives/Controls/Checkbox Checkbox 1`] = `
+<span
+  className="constellation inline-flex gap-2 items-center text-body"
+  id="radix-3"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  role="label"
+>
+  <button
+    aria-checked={false}
+    aria-labelledby="radix-3"
+    className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none"
+    data-state="unchecked"
+    id="option1"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="checkbox"
+    type="button"
+    value="on"
+  />
+  <input
+    aria-hidden={true}
+    defaultChecked={false}
+    style={
+      Object {
+        "margin": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "transform": "translateX(-100%)",
+      }
+    }
+    tabIndex={-1}
+    type="checkbox"
+    value="on"
+  />
+  Option 1
+</span>
+`;
+
+exports[`Storyshots Primitives/Controls/Radio Radio 1`] = `
+<div
+  aria-required={false}
+  className="constellation flex gap-3 flex-col"
+  dir="ltr"
+  id="radio-group"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  role="radiogroup"
+  style={
+    Object {
+      "outline": "none",
+    }
+  }
+  tabIndex={0}
+>
+  <span
+    className="constellation inline-flex gap-2 items-center text-body"
+    id="radix-5"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    role="label"
+  >
+    <button
+      aria-checked={false}
+      aria-labelledby="radix-5"
+      className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
+      data-radix-collection-item=""
+      data-state="unchecked"
+      id="option1"
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="radio"
+      tabIndex={-1}
+      type="button"
+      value="on"
+    />
+    <input
+      aria-hidden={true}
+      defaultChecked={false}
+      required={false}
+      style={
+        Object {
+          "margin": 0,
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "transform": "translateX(-100%)",
+        }
+      }
+      tabIndex={-1}
+      type="radio"
+      value="on"
+    />
+    Option 1
+  </span>
+</div>
+`;
+
+exports[`Storyshots Primitives/Controls/Switch Switch 1`] = `
+<span
+  className="constellation flex gap-3 text-body flex-row items-center"
+  id="radix-12"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  role="label"
+>
+  
+  <button
+    aria-checked={false}
+    className="constellation group radix-state-unchecked:bg-background-dark mode-dark:radix-state-unchecked:bg-medium p-0 relative inline-flex h-[24px] w-[48px] flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-all focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-checked:bg-primary"
+    data-state="unchecked"
+    disabled={false}
+    id="option1"
+    onClick={[Function]}
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      className="constellation group-radix-state-checked:translate-x-6 group-radix-state-unchecked:translate-x-0 pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-background ring-0 transition-all"
+      data-state="unchecked"
+    />
+  </button>
+  <input
+    aria-hidden={true}
+    defaultChecked={false}
+    disabled={false}
+    style={
+      Object {
+        "margin": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "transform": "translateX(-100%)",
+      }
+    }
+    tabIndex={-1}
+    type="checkbox"
+    value="on"
+  />
+</span>
+`;
+
+exports[`Storyshots Primitives/Divider Divider 1`] = `
+<div
+  className="constellation w-full h-40"
+>
+  <div
+    className="constellation bg-background-light mode-dark:bg-dark-300 h-px"
+    data-orientation="horizontal"
+    role="separator"
+  />
+</div>
+`;
+
+exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
+<div
+  className="constellation p-6"
+>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-13"
+    aria-expanded={false}
+    className="constellation flex justify-between items-center px-4 py-3.5 w-72 cursor-pointer transition-all truncate rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 !bg-background-light !text-muted font-normal"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    disabled={false}
+    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    role="combobox"
+    type="button"
+  >
+    <span
+      style={
+        Object {
+          "pointerEvents": "none",
+        }
+      }
+    >
+      Select option
+    </span>
+    <span
+      aria-hidden={true}
+      className="constellation ml-2"
+    >
+      <icon-triangle-down.svg
+        color="var(--color-muted)"
+        fill="currentColor"
+        focusable="false"
+        height="1rem"
+        width="1rem"
+        xmlns="http://www.w3.org/2000/svg"
+      />
+    </span>
+  </button>
+  <div>
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "[data-radix-select-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-select-viewport]::-webkit-scrollbar{display:none}",
+        }
+      }
+    />
+    <div
+      className="constellation bg-background p-2 rounded-lg shadow-lg"
+      data-radix-select-viewport=""
+      onScroll={[Function]}
+      role="presentation"
+      style={
+        Object {
+          "flex": 1,
+          "overflow": "auto",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        aria-labelledby="radix-17"
+        role="group"
+      >
+        <div
+          aria-labelledby="radix-14"
+          aria-selected={false}
+          className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
+          data-radix-collection-item=""
+          data-state="unchecked"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onPointerLeave={[Function]}
+          onPointerMove={[Function]}
+          onPointerUp={[Function]}
+          role="option"
+          tabIndex={-1}
+        >
+          <icon-wallet.svg
+            color="var(--color-primary)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <span
+            id="radix-14"
+          >
+            All Wallets
+          </span>
+        </div>
+        <div
+          aria-labelledby="radix-15"
+          aria-selected={false}
+          className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
+          data-radix-collection-item=""
+          data-state="unchecked"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onPointerLeave={[Function]}
+          onPointerMove={[Function]}
+          onPointerUp={[Function]}
+          role="option"
+          tabIndex={-1}
+        >
+          <icon-money-usd.svg
+            color="inherit"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <span
+            id="radix-15"
+          >
+            Second
+          </span>
+        </div>
+        <div
+          aria-labelledby="radix-16"
+          aria-selected={false}
+          className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
+          data-radix-collection-item=""
+          data-state="unchecked"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onPointerLeave={[Function]}
+          onPointerMove={[Function]}
+          onPointerUp={[Function]}
+          role="option"
+          tabIndex={-1}
+        >
+          <icon-money-usd.svg
+            color="var(--color-success)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <span
+            id="radix-16"
+          >
+            Third
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <select
+    aria-hidden={true}
+    onChange={[Function]}
+    style={
+      Object {
+        "border": 0,
+        "clip": "rect(0, 0, 0, 0)",
+        "height": 1,
+        "margin": -1,
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "absolute",
+        "whiteSpace": "nowrap",
+        "width": 1,
+        "wordWrap": "normal",
+      }
+    }
+    tabIndex={-1}
+  >
+    <option
+      disabled={false}
+      value="allwallets"
+    />
+    <option
+      disabled={false}
+      value="second"
+    />
+    <option
+      disabled={false}
+      value="third"
+    />
+  </select>
+</div>
+`;
+
+exports[`Storyshots Primitives/Loaders Spinning Loader 1`] = `
+<div
+  className="constellation w-72 h-72 p-4 grid place-items-center"
+>
+  <div
+    className="h-16 w-16 border-t-primary border-blue-100 mode-dark:border-white-200 mode-dark:border-t-primary border-8 constellation relative overflow-hidden rounded-full animate-spin-fast"
+  />
+</div>
+`;
+
+exports[`Storyshots Primitives/Slider Primary 1`] = `
+Array [
+  <span
+    aria-disabled={false}
+    aria-label="value"
+    className="constellation relative flex h-5 w-64 touch-none items-center"
+    data-orientation="horizontal"
+    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerMove={[Function]}
+    onPointerUp={[Function]}
+    style={
+      Object {
+        "--radix-slider-thumb-transform": "translateX(-50%)",
+      }
+    }
+  >
+    <span
+      className="relative h-[2px] w-full grow rounded-full bg-medium"
+      data-orientation="horizontal"
+    >
+      <span
+        className="absolute h-full rounded-full bg-primary"
+        data-orientation="horizontal"
+        style={
+          Object {
+            "left": "0%",
+            "right": "100%",
+          }
+        }
+      />
+    </span>
+    <span
+      style={
+        Object {
+          "left": "calc(0% + 0px)",
+          "position": "absolute",
+          "transform": "var(--radix-slider-thumb-transform)",
+        }
+      }
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax={100}
+        aria-valuemin={0}
+        className="block h-6 w-6 rounded-full bg-background border border-solid border-grey-000 mode-dark:border-dark-900 focus:outline-none drop-shadow-control mode-dark:bg-dark-500"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        onFocus={[Function]}
+        role="slider"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        tabIndex={0}
+      />
+    </span>
+  </span>,
+  <input
+    defaultValue={0}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />,
+]
+`;
+
+exports[`Storyshots Primitives/Tabs Tabs 1`] = `
 <div
   className="constellation py-2 px-6"
 >
@@ -5168,14 +5363,14 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
       tabIndex={0}
     >
       <button
-        aria-controls="radix-14-content-tab1"
+        aria-controls="radix-22-content-tab1"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-14-trigger-tab1"
+        id="radix-22-trigger-tab1"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5190,14 +5385,14 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-14-content-tab2"
+        aria-controls="radix-22-content-tab2"
         aria-selected={true}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
         disabled={false}
-        id="radix-14-trigger-tab2"
+        id="radix-22-trigger-tab2"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5212,14 +5407,14 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-14-content-tab3"
+        aria-controls="radix-22-content-tab3"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-14-trigger-tab3"
+        id="radix-22-trigger-tab3"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5234,14 +5429,14 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-14-content-tab4"
+        aria-controls="radix-22-content-tab4"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-14-trigger-tab4"
+        id="radix-22-trigger-tab4"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5260,7 +5455,15 @@ exports[`Storyshots Compositions/Tabs Tabs 1`] = `
 </div>
 `;
 
-exports[`Storyshots Compositions/Tooltip Tooltip 1`] = `
+exports[`Storyshots Primitives/Tag Tag 1`] = `
+<div
+  className="constellation w-fit rounded font-semibold align-middle border py-0.5 px-[7px] text-xs bg-background-light border-background-light text-title"
+>
+  Tag
+</div>
+`;
+
+exports[`Storyshots Primitives/Tooltip Tooltip 1`] = `
 <button
   className="constellation border-none outline-none bg-transparent p-0"
   data-state="closed"

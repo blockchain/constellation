@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { ButtonProps } from '../../../index'
+import { ButtonProps } from '../../../../Primitives'
 import { BaseCellProps } from '../..'
 
 interface Props extends BaseCellProps {
