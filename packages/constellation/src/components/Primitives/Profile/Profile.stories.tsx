@@ -27,3 +27,7 @@ const Template: ComponentStory<ProfileComponentTypes> = (args) => {
 }
 
 export const Profile = Template.bind({})
+
+Profile.parameters = {
+  storyshots: { disable: true }, // because of the random gradient the snapshot will always be different.
+}
