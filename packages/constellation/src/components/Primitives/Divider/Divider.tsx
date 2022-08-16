@@ -11,13 +11,13 @@ import { DividerOrientations, DividerVariants, Props } from './Divider.types'
  */
 
 const variantClasses: Record<DividerVariants, string> = {
-  distinct: 'bg-background-light',
-  medium: 'bg-medium',
-  subtle: 'bg-grey-300',
+  distinct: 'bg-background-light mode-dark:bg-dark-300',
+  medium: 'bg-medium mode-dark:bg-dark-500',
+  subtle: 'bg-grey-300 mode-dark:bg-dark-700',
 }
 const orientationClasses: Record<DividerOrientations, string> = {
-  horizontal: 'h-[1px]',
-  vertical: 'h-full w-[1px]',
+  horizontal: 'h-px',
+  vertical: 'h-full w-px',
 }
 
 const Divider = forwardRef<HTMLDivElement, Props>(
