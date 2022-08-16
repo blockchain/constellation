@@ -1,3 +1,4 @@
+import { SelectProps } from '@radix-ui/react-select'
 import { FC } from 'react'
 
 export interface DropdownItem {
@@ -6,10 +7,10 @@ export interface DropdownItem {
   value: string
 }
 
-export interface Props {
+export type Props = {
   currentValue: DropdownItem['value']
   items: DropdownItem[]
   setValue: (value: string) => void
-}
+} & SelectProps
 
 export type Component = FC<Props>
