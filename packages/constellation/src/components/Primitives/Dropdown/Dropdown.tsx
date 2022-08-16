@@ -20,7 +20,7 @@ const Dropdown = ({ currentValue, items, setValue }: Props) => {
         >
           <SelectPrimitive.Value placeholder='Make a selection...'>
             {currentItem && (
-              <div className='constellation flex gap-2'>
+              <div className='constellation flex gap-2 items-center'>
                 {currentItem.icon && currentItem.icon}
                 {currentItem.label}
               </div>
