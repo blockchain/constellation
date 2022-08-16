@@ -7,7 +7,7 @@ export default {
   argTypes: {},
   args: {
     imgSrc: 'https://avatars.githubusercontent.com/u/11708259?v=4',
-    name: 'John Doe',
+    name: 'Lorenzo Von Matterhorn',
     size: 'large',
   },
   component: ProfileComponent,
