@@ -5057,13 +5057,15 @@ exports[`Storyshots Primitives/Controls/Switch Switch 1`] = `
 `;
 
 exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
-Array [
+<div
+  className="constellation p-6"
+>
   <button
     aria-autocomplete="none"
     aria-controls="radix-13"
     aria-expanded={false}
     aria-label="Food"
-    className="constellation flex justify-between px-2 py-2.5 w-40 cursor-pointer rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 !text-title font-semibold"
+    className="constellation flex justify-between items-center px-2 py-2.5 w-40 cursor-pointer rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 !text-title font-semibold"
     data-state="closed"
     dir="ltr"
     disabled={false}
@@ -5106,7 +5108,7 @@ Array [
         xmlns="http://www.w3.org/2000/svg"
       />
     </span>
-  </button>,
+  </button>
   <div>
     <style
       dangerouslySetInnerHTML={
@@ -5234,7 +5236,7 @@ Array [
         </div>
       </div>
     </div>
-  </div>,
+  </div>
   <select
     aria-hidden={true}
     defaultValue="allwallets"
@@ -5267,8 +5269,8 @@ Array [
       disabled={false}
       value="third"
     />
-  </select>,
-]
+  </select>
+</div>
 `;
 
 exports[`Storyshots Primitives/Loaders Spinning Loader 1`] = `

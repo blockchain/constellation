@@ -13,7 +13,7 @@ const Dropdown = ({ currentValue, items, setValue }: Props) => {
       <SelectPrimitive.Trigger asChild aria-label='Food'>
         <button
           className={cx(
-            'constellation flex justify-between px-2 py-2.5 w-40 cursor-pointer',
+            'constellation flex justify-between items-center px-2 py-2.5 w-40 cursor-pointer',
             variantStyles.minimal,
             '!text-title font-semibold',
           )}
