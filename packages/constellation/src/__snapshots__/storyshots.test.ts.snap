@@ -5056,6 +5056,197 @@ exports[`Storyshots Primitives/Controls/Switch Switch 1`] = `
 </span>
 `;
 
+exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
+<div
+  className="constellation p-6"
+>
+  <button
+    aria-autocomplete="none"
+    aria-controls="radix-13"
+    aria-expanded={false}
+    className="constellation flex justify-between items-center px-4 py-3.5 w-72 cursor-pointer transition-all truncate rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 !bg-background-light !text-muted font-normal"
+    data-placeholder=""
+    data-state="closed"
+    dir="ltr"
+    disabled={false}
+    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    role="combobox"
+    type="button"
+  >
+    <span
+      style={
+        Object {
+          "pointerEvents": "none",
+        }
+      }
+    >
+      Select option
+    </span>
+    <span
+      aria-hidden={true}
+      className="constellation ml-2"
+    >
+      <icon-triangle-down.svg
+        color="var(--color-muted)"
+        fill="currentColor"
+        focusable="false"
+        height="1rem"
+        width="1rem"
+        xmlns="http://www.w3.org/2000/svg"
+      />
+    </span>
+  </button>
+  <div>
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "[data-radix-select-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-select-viewport]::-webkit-scrollbar{display:none}",
+        }
+      }
+    />
+    <div
+      className="constellation bg-background p-2 rounded-lg shadow-lg"
+      data-radix-select-viewport=""
+      onScroll={[Function]}
+      role="presentation"
+      style={
+        Object {
+          "flex": 1,
+          "overflow": "auto",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        aria-labelledby="radix-17"
+        role="group"
+      >
+        <div
+          aria-labelledby="radix-14"
+          aria-selected={false}
+          className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
+          data-radix-collection-item=""
+          data-state="unchecked"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onPointerLeave={[Function]}
+          onPointerMove={[Function]}
+          onPointerUp={[Function]}
+          role="option"
+          tabIndex={-1}
+        >
+          <icon-wallet.svg
+            color="var(--color-primary)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <span
+            id="radix-14"
+          >
+            All Wallets
+          </span>
+        </div>
+        <div
+          aria-labelledby="radix-15"
+          aria-selected={false}
+          className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
+          data-radix-collection-item=""
+          data-state="unchecked"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onPointerLeave={[Function]}
+          onPointerMove={[Function]}
+          onPointerUp={[Function]}
+          role="option"
+          tabIndex={-1}
+        >
+          <icon-money-usd.svg
+            color="inherit"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <span
+            id="radix-15"
+          >
+            Second
+          </span>
+        </div>
+        <div
+          aria-labelledby="radix-16"
+          aria-selected={false}
+          className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
+          data-radix-collection-item=""
+          data-state="unchecked"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onPointerLeave={[Function]}
+          onPointerMove={[Function]}
+          onPointerUp={[Function]}
+          role="option"
+          tabIndex={-1}
+        >
+          <icon-money-usd.svg
+            color="var(--color-success)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <span
+            id="radix-16"
+          >
+            Third
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <select
+    aria-hidden={true}
+    onChange={[Function]}
+    style={
+      Object {
+        "border": 0,
+        "clip": "rect(0, 0, 0, 0)",
+        "height": 1,
+        "margin": -1,
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "absolute",
+        "whiteSpace": "nowrap",
+        "width": 1,
+        "wordWrap": "normal",
+      }
+    }
+    tabIndex={-1}
+  >
+    <option
+      disabled={false}
+      value="allwallets"
+    />
+    <option
+      disabled={false}
+      value="second"
+    />
+    <option
+      disabled={false}
+      value="third"
+    />
+  </select>
+</div>
+`;
+
 exports[`Storyshots Primitives/Loaders Spinning Loader 1`] = `
 <div
   className="constellation w-72 h-72 p-4 grid place-items-center"
@@ -5160,14 +5351,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
       tabIndex={0}
     >
       <button
-        aria-controls="radix-17-content-tab1"
+        aria-controls="radix-22-content-tab1"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-17-trigger-tab1"
+        id="radix-22-trigger-tab1"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5182,14 +5373,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-17-content-tab2"
+        aria-controls="radix-22-content-tab2"
         aria-selected={true}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
         disabled={false}
-        id="radix-17-trigger-tab2"
+        id="radix-22-trigger-tab2"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5204,14 +5395,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-17-content-tab3"
+        aria-controls="radix-22-content-tab3"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-17-trigger-tab3"
+        id="radix-22-trigger-tab3"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5226,14 +5417,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-17-content-tab4"
+        aria-controls="radix-22-content-tab4"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:bg-background radix-state-active:drop-shadow-control radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-17-trigger-tab4"
+        id="radix-22-trigger-tab4"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}

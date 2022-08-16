@@ -4544,6 +4544,7 @@ __metadata:
     "@radix-ui/react-popover": 0.1.3
     "@radix-ui/react-progress": 0.1.3
     "@radix-ui/react-radio-group": 1.0.0
+    "@radix-ui/react-select": 1.0.0
     "@radix-ui/react-separator": 0.1.3
     "@radix-ui/react-slider": 0.1.3
     "@radix-ui/react-switch": 0.1.3
@@ -5609,6 +5610,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/number@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/number@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+  checksum: 517ac0790e05cceb41401154d1bc55d4738accd51095e2a918ef9bcedac6a455cd7179201e88e76121bedec19cd93a37b2c20288b084fb224b69c74e67935457
+  languageName: node
+  linkType: hard
+
 "@radix-ui/popper@npm:0.1.0":
   version: 0.1.0
   resolution: "@radix-ui/popper@npm:0.1.0"
@@ -6229,6 +6239,39 @@ __metadata:
     react: ^16.8 || ^17.0 || ^18.0
     react-dom: ^16.8 || ^17.0 || ^18.0
   checksum: 163df73f858ce5888294d03a888d05e6fdec178936b21b5fabd661a3b797b4495e11b570ab365a2fb24494d08631ac094b1b7272b9a72bfd0cf743d6c121483d
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-select@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/react-select@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/number": 1.0.0
+    "@radix-ui/primitive": 1.0.0
+    "@radix-ui/react-collection": 1.0.0
+    "@radix-ui/react-compose-refs": 1.0.0
+    "@radix-ui/react-context": 1.0.0
+    "@radix-ui/react-direction": 1.0.0
+    "@radix-ui/react-dismissable-layer": 1.0.0
+    "@radix-ui/react-focus-guards": 1.0.0
+    "@radix-ui/react-focus-scope": 1.0.0
+    "@radix-ui/react-id": 1.0.0
+    "@radix-ui/react-label": 1.0.0
+    "@radix-ui/react-portal": 1.0.0
+    "@radix-ui/react-primitive": 1.0.0
+    "@radix-ui/react-slot": 1.0.0
+    "@radix-ui/react-use-callback-ref": 1.0.0
+    "@radix-ui/react-use-controllable-state": 1.0.0
+    "@radix-ui/react-use-layout-effect": 1.0.0
+    "@radix-ui/react-use-previous": 1.0.0
+    "@radix-ui/react-visually-hidden": 1.0.0
+    aria-hidden: ^1.1.1
+    react-remove-scroll: 2.5.4
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: 5b91585d20967cee68f0ff1b2a3ef6e1abccc05fb61adc584562524f147cec5888e5b981798789ee1229811e97ac588670863f5a8fbeea5aa08158963424091a
   languageName: node
   linkType: hard
 
