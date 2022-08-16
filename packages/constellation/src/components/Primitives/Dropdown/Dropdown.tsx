@@ -7,7 +7,7 @@ import { variantStyles } from '../Buttons/Button/Button'
 import { Props } from './Dropdown.types'
 
 /**
- * The Dropdown component isplays a list of options for the user to pick from—triggered by a button.
+ * The Dropdown component displays a list of options for the user to pick from—triggered by a button.
  *
  * `ref`s are forwarded to the Dropdown trigger element.
  */
