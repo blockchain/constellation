@@ -2,7 +2,14 @@ import * as SelectPrimitive from '@radix-ui/react-select'
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
-import { IconCheckCircle, IconChevronDown, IconChevronUp, SemanticColors } from '../../Base'
+import {
+  IconArrowDown,
+  IconCheckCircle,
+  IconChevronDown,
+  IconChevronUp,
+  IconTriangleDown,
+  SemanticColors,
+} from '../../Base'
 import { variantStyles } from '../Buttons/Button/Button'
 import { Props } from './Dropdown.types'
 
@@ -20,21 +27,28 @@ const Dropdown = forwardRef<HTMLButtonElement, Props>(
         <SelectPrimitive.Trigger asChild ref={ref}>
           <button
             className={cx(
-              'constellation flex justify-between items-center px-2 py-2.5 w-40 cursor-pointer',
+              'constellation flex justify-between items-center px-4 py-3.5 w-72 cursor-pointer transition-all truncate',
               variantStyles.minimal,
-              '!text-title font-semibold',
+              {
+                '!text-muted font-normal': !currentValue,
+                '!text-title font-semibold': currentValue,
+              },
             )}
           >
-            <SelectPrimitive.Value placeholder='Make a selection...'>
-              {currentItem && (
-                <div className='constellation flex gap-2 items-center'>
-                  {currentItem.icon && currentItem.icon}
-                  {currentItem.label}
-                </div>
-              )}
-            </SelectPrimitive.Value>
+            {currentValue ? (
+              <SelectPrimitive.Value placeholder='Select option'>
+                {currentItem && (
+                  <div className='constellation flex gap-2 items-center wrap'>
+                    {currentItem.icon && currentItem.icon}
+                    <span className='constellation truncate'>{currentItem.label}</span>
+                  </div>
+                )}
+              </SelectPrimitive.Value>
+            ) : (
+              <SelectPrimitive.Value placeholder='Select option' />
+            )}
             <SelectPrimitive.Icon className='constellation ml-2'>
-              <IconCheckCircle color={SemanticColors.primary} />
+              <IconTriangleDown color={SemanticColors.muted} />
             </SelectPrimitive.Icon>
           </button>
         </SelectPrimitive.Trigger>

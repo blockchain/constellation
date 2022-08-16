@@ -8,8 +8,17 @@ export interface DropdownItem {
 }
 
 export type Props = {
-  currentValue: DropdownItem['value']
+  /**
+   * Set the current selected value of the dropdown. If undefined, will fall back to placeholder text.
+   */
+  currentValue?: DropdownItem['value']
+  /**
+   * List of selectable dropdown that are rendered by the component.
+   */
   items: DropdownItem[]
+  /**
+   * Change handler fired when new selection is made.
+   */
   setValue: (value: string) => void
 } & SelectProps
 

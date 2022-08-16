@@ -13,7 +13,6 @@ export default {
     },
   },
   args: {
-    currentValue: 'allwallets',
     items: [
       {
         icon: <IconWallet color={SemanticColors.primary} />,
