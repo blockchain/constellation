@@ -18,3 +18,8 @@ export default Object.defineProperty(window, 'matchMedia', {
   })),
   writable: true,
 })
+
+jest.mock('react-dom', () => {
+  const original = jest.requireActual('react-dom')
+  return { ...original, createPortal: (node: unknown) => node }
+})
