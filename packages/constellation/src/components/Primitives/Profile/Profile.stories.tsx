@@ -23,7 +23,7 @@ export default {
 } as ComponentMeta<ProfileComponentTypes>
 
 const Template: ComponentStory<ProfileComponentTypes> = (args) => {
-  return <ProfileComponent {...args} target='_blank' />
+  return <ProfileComponent {...args} />
 }
 
 export const Profile = Template.bind({})
