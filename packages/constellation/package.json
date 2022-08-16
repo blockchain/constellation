@@ -105,7 +105,7 @@
     "prettier-config-constellation": "workspace:*",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-test-renderer": "18.2.0",
+    "react-test-renderer": "17.0.2",
     "rimraf": "3.0.2",
     "rollup": "2.63.0",
     "rollup-plugin-dts": "4.1.0",
