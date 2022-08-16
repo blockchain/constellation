@@ -4,7 +4,15 @@ import React from 'react'
 import { Profile as ProfileComponent, ProfileComponent as ProfileComponentTypes } from '.'
 
 export default {
-  argTypes: {},
+  argTypes: {
+    onClick: { action: 'clicked' },
+    size: {
+      control: {
+        options: ['small', 'large'],
+        type: 'radio',
+      },
+    },
+  },
   args: {
     imgSrc: 'https://picsum.photos/200',
     name: 'Lorenzo Von Matterhorn',
@@ -15,7 +23,7 @@ export default {
 } as ComponentMeta<ProfileComponentTypes>
 
 const Template: ComponentStory<ProfileComponentTypes> = (args) => {
-  return <ProfileComponent {...args} />
+  return <ProfileComponent {...args} target='_blank' />
 }
 
 export const Profile = Template.bind({})

@@ -6,6 +6,12 @@ import React, { useMemo } from 'react'
 
 import { FallbackComponent } from './Profile.types'
 
+/**
+ * The Fallback component is used to display a user's initials when no profile picture is available.
+ * It uses the `randomColor` library to generate two background color based on the user's name and uses
+ * those to create a gradient.
+ */
+
 const Fallback: FallbackComponent = ({ name, size }) => {
   const textSizeStyles = {
     large: 'text-5xl',
@@ -47,7 +53,7 @@ const Fallback: FallbackComponent = ({ name, size }) => {
       className='flex justify-center items-center w-full h-full'
       style={{ background: gradient }}
     >
-      <span className={cx('font-semibold', textSizeStyles[size])}>{initials}</span>
+      <span className={cx('font-semibold text-black', textSizeStyles[size])}>{initials}</span>
     </Avatar.Fallback>
   )
 }
