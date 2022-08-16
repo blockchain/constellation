@@ -1,6 +1,7 @@
 import * as Avatar from '@radix-ui/react-avatar'
 import cx from 'classnames'
 import _ from 'lodash'
+import randomColor from 'randomcolor'
 import React, { useMemo } from 'react'
 
 import { PaletteColors } from '../../Base'
@@ -25,14 +26,15 @@ const Fallback: FallbackComponent = ({ name, size }) => {
     const firstPercent = Math.random() * 30 + 10
     const secondPercent = Math.random() * 30 + 60
 
-    const regex = new RegExp('white|overlay|dark|grey|transparent|800|900|000|tiers|gold')
-    const colors = Object.keys(PaletteColors).filter((color) => !regex.test(color))
+    const [firstColor, secondColor] = randomColor({
+      count: 2,
+      format: 'rgb',
+      luminosity: 'light',
+      seed: name,
+    })
 
-    const firstColorKey = _.sample(colors) as keyof typeof PaletteColors
-    const secondColorKey = _.sample(colors) as keyof typeof PaletteColors
-
-    return `linear-gradient(${angle}deg, ${PaletteColors[firstColorKey]} ${firstPercent}%, ${PaletteColors[secondColorKey]} ${secondPercent}%)`
-  }, [])
+    return `linear-gradient(${angle}deg, ${firstColor} ${firstPercent}%, ${secondColor} ${secondPercent}%)`
+  }, [name])
 
   return (
     <Avatar.Fallback
