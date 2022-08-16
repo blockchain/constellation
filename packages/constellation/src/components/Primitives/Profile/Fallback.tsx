@@ -1,6 +1,5 @@
 import * as Avatar from '@radix-ui/react-avatar'
 import cx from 'classnames'
-import _ from 'lodash'
 import randomColor from 'randomcolor'
 import React, { useMemo } from 'react'
 
