@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Button } from '../../../../Primitives/Buttons'
-import { BaseCell } from '../index'
+import { BaseCell } from '../BaseCell'
 import { ButtonCellComponentType } from '.'
 
 /**
