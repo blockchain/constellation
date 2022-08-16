@@ -5061,7 +5061,7 @@ exports[`Storyshots Primitives/Divider Divider 1`] = `
   className="constellation w-full h-40"
 >
   <div
-    className="constellation bg-background-light mode-dark:bg-dark-300 h-px"
+    className="constellation bg-grey-300 mode-dark:bg-dark-300 h-px"
     data-orientation="horizontal"
     role="separator"
   />
