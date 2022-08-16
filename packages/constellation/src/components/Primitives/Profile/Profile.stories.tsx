@@ -6,7 +6,7 @@ import { Profile as ProfileComponent, ProfileComponent as ProfileComponentTypes 
 export default {
   argTypes: {},
   args: {
-    imgSrc: 'https://avatars.githubusercontent.com/u/11708259?v=4',
+    imgSrc: 'https://picsum.photos/200',
     name: 'Lorenzo Von Matterhorn',
     size: 'large',
   },
