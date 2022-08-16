@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BaseCell } from '../..'
+import { BaseCell } from '../BaseCell'
 import { CheckboxCellComponentType } from '.'
 
 const CheckboxCell: CheckboxCellComponentType = ({ text, ...baseProps }) => {
