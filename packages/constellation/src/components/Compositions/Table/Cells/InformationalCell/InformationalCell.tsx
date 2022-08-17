@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Tag } from '../../../../Primitives'
-import { BaseCell } from '../..'
+import { BaseCell } from '../BaseCell'
 import { InformationalCellComponentType } from '.'
 
 /**

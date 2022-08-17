@@ -2,7 +2,7 @@ import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { IconCheck } from '../../../Base'
-import { SpinningLoader } from '../../index'
+import { SpinningLoader } from '../../Loaders'
 import {
   ButtonState,
   ButtonVariants,
@@ -20,7 +20,7 @@ import {
  * component may have its underlying DOM customized via the 'as' prop.
  */
 
-const variantStyles: Record<ButtonVariants, string> = {
+export const variantStyles: Record<ButtonVariants, string> = {
   alert:
     'text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500 ',
   icon: 'bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500',
