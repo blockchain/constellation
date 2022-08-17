@@ -27,12 +27,12 @@ export default {
   title: 'Compositions/Cards/Card',
 } as ComponentMeta<CardComponentProps>
 
-const Template: CardComponentProps = ({ onClose, variant, ...args }) => {
+const Template: CardComponentProps = ({ onCloseClick, variant, ...args }) => {
   return (
     <CardComponent
       {...args}
       variant={variant}
-      onClose={variant !== 'callout' ? onClose : undefined}
+      onCloseClick={variant !== 'callout' ? onCloseClick : undefined}
     />
   )
 }
