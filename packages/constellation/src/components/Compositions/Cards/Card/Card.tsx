@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import React from 'react'
 
-import { IconCloseV2, PaletteColors, SemanticColors, Text } from '../../../Base'
+import { SemanticColors, Text } from '../../../Base'
 import { Button, CloseButton } from '../../../Primitives'
 import { Logo } from '../../Logo'
 import { CardComponent } from './Card.types'
@@ -17,6 +17,7 @@ const Card: CardComponent = ({
   footer,
   header,
   logoContent,
+  onCardClick,
   onClose,
   title,
   variant = 'default',
@@ -45,8 +46,11 @@ const Card: CardComponent = ({
   const isDefault = variant === 'default'
   const isCta = variant === 'cta'
 
+  const Component = onCardClick ? 'button' : 'div'
+
   return (
-    <div
+    <Component
+      onClick={onCardClick}
       className={cx(
         'constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative',
         variantStyles[variant],
@@ -58,7 +62,9 @@ const Card: CardComponent = ({
       )}
       style={accentColor ? { borderColor: accentColor } : {}}
     >
-      {onClose && <CloseButton onClick={onClose} className='absolute top-4 right-4' />}
+      {onClose && variant !== 'callout' && (
+        <CloseButton onClick={onClose} className='absolute top-4 right-4' />
+      )}
       <div className='flex flex-row items-center gap-2'>
         {logoContent && (
           <Logo
@@ -69,17 +75,24 @@ const Card: CardComponent = ({
         {header}
       </div>
 
-      <div className='flex flex-col'>
+      <div
+        className={cx('flex flex-col', {
+          'w-44': variant === 'announcement' || variant === 'callout',
+        })}
+      >
         <Text
           variant={titleVariantStyles[variant] as 'caption1' | 'body2' | 'title3'}
-          className={cx('!m-0')}
+          className='!m-0 w-full'
+          truncate={variant === 'announcement' || variant === 'callout'}
           color={variant === 'announcement' ? SemanticColors.medium : SemanticColors.title}
         >
           {title}
         </Text>
         <Text
           variant={bodyVariantStyles[variant] as 'body2' | 'paragraph2' | 'paragraph1'}
-          className='!m-0 !mt-1'
+          truncate={variant === 'callout'}
+          lineClamp={variant === 'announcement' ? 2 : 0}
+          className='!m-0 !mt-1 w-full'
         >
           {content}
         </Text>
@@ -90,11 +103,12 @@ const Card: CardComponent = ({
           onClick={buttonOnClick}
           variant='primary'
           size={variant === 'callout' ? 'small' : 'default'}
+          className={cx({ 'ml-auto': variant === 'callout' })}
           style={accentColor ? { backgroundColor: accentColor } : {}}
         />
       )}
       {footer}
-    </div>
+    </Component>
   )
 }
 

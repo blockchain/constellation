@@ -8,6 +8,7 @@ export default {
   argTypes: {
     accentColor: { control: 'color' },
     buttonOnClick: { action: 'click' },
+    onCardClick: { action: 'clickCard' },
     onClose: { action: 'close' },
   },
   args: {
@@ -26,8 +27,14 @@ export default {
   title: 'Compositions/Cards/Card',
 } as ComponentMeta<CardComponentProps>
 
-const Template: CardComponentProps = (args) => {
-  return <CardComponent {...args} />
+const Template: CardComponentProps = ({ onClose, variant, ...args }) => {
+  return (
+    <CardComponent
+      {...args}
+      variant={variant}
+      onClose={variant !== 'callout' ? onClose : undefined}
+    />
+  )
 }
 
 export const Card = Template.bind({})

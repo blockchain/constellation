@@ -15,6 +15,7 @@ type CardProps = {
   header?: ReactNode
   logoBackground?: Colors
   logoContent?: LogoContentProps
+  onCardClick?: () => void
   onClose?: () => void
   title: string
   variant?: 'default' | 'announcement' | 'callout' | 'cta'
