@@ -6,6 +6,7 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
 const radix = require('tailwindcss-radix')()
+const lineClamp = require('@tailwindcss/line-clamp')
 
 module.exports = {
   important: '.constellation',
@@ -15,6 +16,7 @@ module.exports = {
   content: ['./src/**/*.{ts,js,tsx,jsx}'],
   plugins: [
     radix,
+    lineClamp,
     plugin(({ addVariant }) => {
       addVariant('mode-dark', '.mode-dark &')
       addVariant('mode-light', '.mode-light &')
