@@ -2,7 +2,8 @@ import cx from 'classnames'
 import React from 'react'
 
 import { IconCloseV2, PaletteColors, SemanticColors, Text } from '../../../Base'
-import { Button, IconButton, Logo } from '../../index'
+import { Button, IconButton } from '../../../Primitives'
+import { Logo } from '../../Logo'
 import { CardComponent } from './Card.types'
 
 const Card: CardComponent = ({
