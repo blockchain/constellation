@@ -1,5 +1,4 @@
-import { convertHexToRGBA } from 'utils/convertHexToRGBA'
-
+import { convertHexToRGBA } from '../../convertHexToRGBA'
 import { CreateElevationShadowFromHexColorUtility } from './createElevationShadowFromHexColor.types'
 
 const createElevationShadowFromHexColor: CreateElevationShadowFromHexColorUtility = ({ color }) => {

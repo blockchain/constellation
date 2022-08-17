@@ -5581,3 +5581,100 @@ exports[`Storyshots Primitives/Tooltip Tooltip 1`] = `
   </button>
 </button>
 `;
+
+exports[`Storyshots hooks/useLocalStorage Multiple Subscribers 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <div>
+    <span
+      className="constellation text-base font-medium my-3 text-primary text-start"
+    >
+      Current theme mode: 
+      light
+    </span>
+    <br />
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Dark
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Light
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Sync with system
+    </button>
+  </div>
+  <div>
+    <span
+      className="constellation text-base font-medium my-3 text-primary text-start"
+    >
+      Current theme mode: 
+      light
+    </span>
+    <br />
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Dark
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Light
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Sync with system
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots hooks/useLocalStorage Usage Example 1`] = `
+<div>
+  <span
+    className="constellation text-base font-medium my-3 text-primary text-start"
+  >
+    Current theme mode: 
+    light
+  </span>
+  <br />
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Dark
+  </button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Light
+  </button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Sync with system
+  </button>
+</div>
+`;
