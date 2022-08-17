@@ -2,7 +2,7 @@ import cx from 'classnames'
 import React from 'react'
 
 import { IconCloseV2, PaletteColors, SemanticColors, Text } from '../../../Base'
-import { Button, IconButton } from '../../../Primitives'
+import { Button, CloseButton } from '../../../Primitives'
 import { Logo } from '../../Logo'
 import { CardComponent } from './Card.types'
 
@@ -48,7 +48,7 @@ const Card: CardComponent = ({
   return (
     <div
       className={cx(
-        'constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4',
+        'constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative',
         variantStyles[variant],
         {
           'border border-medium': border,
@@ -58,17 +58,7 @@ const Card: CardComponent = ({
       )}
       style={accentColor ? { borderColor: accentColor } : {}}
     >
-      {onClose && (
-        <IconButton
-          icon={<IconCloseV2 color={PaletteColors['grey-400']} width={12} height={12} />}
-          size='small'
-          onClick={onClose}
-          className={cx(
-            'absolute top-4 right-4 border-none !bg-background-light mode-dark:!bg-grey-800 !w-6 !h-6 rounded-full !p-0 flex justify-center items-center',
-            { 'top-3 right-3': !isDefault },
-          )}
-        />
-      )}
+      {onClose && <CloseButton onClick={onClose} className='absolute top-4 right-4' />}
       <div className='flex flex-row items-center gap-2'>
         {logoContent && (
           <Logo
