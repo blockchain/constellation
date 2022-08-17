@@ -11,14 +11,13 @@ const Card: CardComponent = ({
   border,
   button,
   buttonContent = 'GO',
-  buttonOnClick,
   className,
   content,
-  footer,
   header,
   logoContent,
+  onButtonClick,
   onCardClick,
-  onClose,
+  onCloseClick,
   title,
   variant = 'default',
 }) => {
@@ -48,6 +47,16 @@ const Card: CardComponent = ({
 
   const Component = onCardClick ? 'button' : 'div'
 
+  const handleButtonClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    e.stopPropagation()
+    onButtonClick?.()
+  }
+
+  const handleCloseClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    e.stopPropagation()
+    onCloseClick?.()
+  }
+
   return (
     <Component
       onClick={onCardClick}
@@ -62,8 +71,8 @@ const Card: CardComponent = ({
       )}
       style={accentColor ? { borderColor: accentColor } : {}}
     >
-      {onClose && variant !== 'callout' && (
-        <CloseButton onClick={onClose} className='absolute top-4 right-4' />
+      {onCloseClick && variant !== 'callout' && (
+        <CloseButton onClick={handleCloseClick} className='absolute top-4 right-4' />
       )}
       <div className='flex flex-row items-center gap-2'>
         {logoContent && (
@@ -100,14 +109,13 @@ const Card: CardComponent = ({
       {(variant === 'callout' || button) && (
         <Button
           text={buttonContent}
-          onClick={buttonOnClick}
+          onClick={handleButtonClick}
           variant='primary'
           size={variant === 'callout' ? 'small' : 'default'}
           className={cx({ 'ml-auto': variant === 'callout' })}
           style={accentColor ? { backgroundColor: accentColor } : {}}
         />
       )}
-      {footer}
     </Component>
   )
 }

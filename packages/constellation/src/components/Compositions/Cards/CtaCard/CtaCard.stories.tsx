@@ -8,7 +8,9 @@ import { CtaCard as CtaCardComponent, CtaCardComponent as CtaCardComponentProps 
 export default {
   argTypes: {
     accentColor: { control: 'color' },
-    onClose: { action: 'close' },
+    onButtonClick: { action: 'click button' },
+    onCardClick: { action: 'click card' },
+    onCloseClick: { action: 'click close' },
   },
   args: {
     border: false,

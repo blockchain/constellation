@@ -1,22 +1,12 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 
-import { LogoContentProps } from '../../Logo'
+import { CardProps } from '../Card'
 
-type CtaCardProps = {
-  accentColor?: string
-  border?: boolean
-  buttonContent?: string
-  buttonOnClick?: () => void
-  content: string
-  footer?: ReactNode
-  header?: ReactNode
-  logoContent?: LogoContentProps
-  onClose?: () => void
+type CtaCardProps = CardProps & {
   price?: string
   priceChange?: string
   ticker: string
   timeframe?: string
-  title: string
   tokenName: string
   variant?: 'default' | 'announcement'
 }
