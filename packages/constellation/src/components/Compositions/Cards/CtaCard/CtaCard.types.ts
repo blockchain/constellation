@@ -1,7 +1,6 @@
 import { FC, ReactNode } from 'react'
 
-import { Colors } from '../../../Base/Colors'
-import { LogoContentProps } from '../../index'
+import { LogoContentProps } from '../../Logo'
 
 type CtaCardProps = {
   accentColor?: string
