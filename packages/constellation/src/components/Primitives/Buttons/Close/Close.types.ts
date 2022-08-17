@@ -6,6 +6,10 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
   T,
   {
     /**
+     * Allows some styling overrides when needed
+     */
+    className?: stirng
+    /**
      * The size of the button, from a range of variants.
      */
     size?: Sizes

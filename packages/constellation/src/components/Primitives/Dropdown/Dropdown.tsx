@@ -3,7 +3,6 @@ import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import {
-  IconArrowDown,
   IconCheckCircle,
   IconChevronDown,
   IconChevronUp,

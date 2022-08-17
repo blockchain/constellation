@@ -17,7 +17,7 @@ import { Component as ComponentType, Props } from './Close.types'
 
 const CloseButton: ComponentType = forwardRef(
   <T extends ButtonComponentType>(
-    { size = 'default', className, ...props }: Props<T> & ButtonProps<T>,
+    { className, size = 'default', ...props }: Props<T> & ButtonProps<T>,
     ref?: PolymorphicRef<T>,
   ) => {
     const sizeStyles = {
