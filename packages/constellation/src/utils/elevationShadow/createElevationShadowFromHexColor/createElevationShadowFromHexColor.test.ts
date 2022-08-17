@@ -1,4 +1,4 @@
-import { createElevationShadowFromHexColor } from 'utils'
+import { createElevationShadowFromHexColor } from '..'
 
 describe('createElevationShadowFromHexColor()', () => {
   it('Should return the black elevation 1 shadow', () => {
