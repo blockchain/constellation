@@ -4,6 +4,17 @@ import React, { forwardRef } from 'react'
 import { SemanticColors, Text } from '../../../Base'
 import { AlertBannerComponentType, AlertBannerProps } from '.'
 
+/**
+ * The Banner shows the user important info and allows them to take an action.
+ *
+ * With the as prop the banner can be used as a button or a link.
+ *
+ * When a `ref` prop is provided, it will be forwarded to the root element. Any
+ * other properties supplied will be provided to the root element (ie, the `as`
+ * prop value). This includes all appropriate HTML attributes or aria tags. This
+ * component may have its underlying DOM customized via the 'as' prop.
+ */
+
 const Banner: AlertBannerComponentType = forwardRef(
   <T extends React.ElementType = 'button'>(
     {

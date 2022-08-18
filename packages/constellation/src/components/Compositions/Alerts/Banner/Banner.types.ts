@@ -12,6 +12,10 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      */
     content: string
     /**
+     * The icon displayed after content and before bold content.
+     */
+    icon?: React.ReactNode
+    /**
      * The color of the banner.
      */
     variant: 'default' | 'warning' | 'error'
