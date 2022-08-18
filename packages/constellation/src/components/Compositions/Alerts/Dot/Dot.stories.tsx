@@ -5,7 +5,9 @@ import { AlertDot, AlertDotComponentType } from '.'
 
 export default {
   argTypes: {},
-  args: {},
+  args: {
+    variant: 'default',
+  },
   component: AlertDot,
   title: 'Compositions/Alert/Dot',
 } as ComponentMeta<AlertDotComponentType>
