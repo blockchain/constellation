@@ -33,10 +33,6 @@ type CardProps = {
    */
   header?: ReactNode
   /**
-   * The background colour of the logo when using text or an icon
-   */
-  logoBackground?: Colors
-  /**
    * The content of the Logo, could be an image, icon, or text.
    */
   logoContent?: LogoContentProps

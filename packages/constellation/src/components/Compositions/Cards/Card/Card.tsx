@@ -1,17 +1,17 @@
 import cx from 'classnames'
 import React from 'react'
 
-import { SemanticColors, Text } from '../../../Base'
-import { Button, CloseButton } from '../../../Primitives'
+import { PaletteColors, SemanticColors, Text } from '../../../Base'
+import { Button } from '../../../Primitives'
 import { Logo } from '../../Logo'
-import { CardComponent } from './Card.types'
+import { BaseCard } from '../BaseCard'
+import { CardComponent } from '.'
 
 const Card: CardComponent = ({
   accentColor,
-  border,
+  border = false,
   button,
   buttonContent = 'GO',
-  className,
   content,
   header,
   logoContent,
@@ -45,35 +45,22 @@ const Card: CardComponent = ({
   const isDefault = variant === 'default'
   const isCta = variant === 'cta'
 
-  const Component = onCardClick ? 'button' : 'div'
-
   const handleButtonClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
     e.stopPropagation()
     onButtonClick?.()
   }
 
-  const handleCloseClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
-    e.stopPropagation()
-    onCloseClick?.()
-  }
+  const isCallout = variant === 'callout'
+  const isAnnouncement = variant === 'announcement'
 
   return (
-    <Component
-      onClick={onCardClick}
-      className={cx(
-        'constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative',
-        variantStyles[variant],
-        {
-          'border border-medium': border,
-        },
-        { 'border-blue-400': variant === 'callout' },
-        className,
-      )}
-      style={accentColor ? { borderColor: accentColor } : {}}
+    <BaseCard
+      accentColor={accentColor || (isCallout ? PaletteColors['blue-400'] : undefined)}
+      border={border}
+      className={variantStyles[variant]}
+      onCloseClick={!isCallout ? onCloseClick : undefined}
+      onCardClick={onCardClick}
     >
-      {onCloseClick && variant !== 'callout' && (
-        <CloseButton onClick={handleCloseClick} className='absolute top-4 right-4' />
-      )}
       <div className='flex flex-row items-center gap-2'>
         {logoContent && (
           <Logo
@@ -86,37 +73,37 @@ const Card: CardComponent = ({
 
       <div
         className={cx('flex flex-col', {
-          'w-44': variant === 'announcement' || variant === 'callout',
+          'w-44': isAnnouncement || isCallout,
         })}
       >
         <Text
           variant={titleVariantStyles[variant] as 'caption1' | 'body2' | 'title3'}
           className='!m-0 w-full'
-          truncate={variant === 'announcement' || variant === 'callout'}
-          color={variant === 'announcement' ? SemanticColors.medium : SemanticColors.title}
+          truncate={isAnnouncement || isCallout}
+          color={isAnnouncement ? SemanticColors.medium : SemanticColors.title}
         >
           {title}
         </Text>
         <Text
           variant={bodyVariantStyles[variant] as 'body2' | 'paragraph2' | 'paragraph1'}
-          truncate={variant === 'callout'}
-          lineClamp={variant === 'announcement' ? 2 : 0}
+          truncate={isCallout}
+          lineClamp={isAnnouncement ? 2 : 0}
           className='!m-0 !mt-1 w-full'
         >
           {content}
         </Text>
       </div>
-      {(variant === 'callout' || button) && (
+      {(isCallout || button) && (
         <Button
           text={buttonContent}
           onClick={handleButtonClick}
           variant='primary'
-          size={variant === 'callout' ? 'small' : 'default'}
-          className={cx({ 'ml-auto': variant === 'callout' })}
-          style={accentColor ? { backgroundColor: accentColor } : {}}
+          size={isCallout ? 'small' : 'default'}
+          className={cx({ 'ml-auto': isCallout })}
+          style={accentColor ? { backgroundColor: accentColor } : undefined}
         />
       )}
-    </Component>
+    </BaseCard>
   )
 }
 
