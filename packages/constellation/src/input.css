@@ -555,6 +555,17 @@
         --color-black: #000000;
         --color-white: #FFFFFF;
         --color-transparent: transparent;
+
+        /* Pink */
+        --color-pink-300: #FF51BE;
+        --color-pink-400: #F00699;
+        --color-pink-500: #DE0082;
+
+        /* New Green */
+
+        --color-new-green-300: #2AEFBC;
+        --color-new-green-400: #06D6A0;
+        --color-new-green-500: #00B083;
     }
 
     .mode-light {

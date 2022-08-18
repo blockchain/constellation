@@ -3723,6 +3723,56 @@ exports[`Storyshots Base/Typography/Text Text 1`] = `
 </span>
 `;
 
+exports[`Storyshots Compositions/Alert/Banner Banner 1`] = `
+<button
+  className="constellation w-full h-[29px] mode-light:text-white-000 mode-dark:text-dark-900 cursor-pointer flex flex-row gap-1 items-center justify-center bg-primary"
+  type="button"
+>
+  <span
+    className="constellation text-sm font-medium my-2.5 text-background text-start"
+  >
+    Check that the URL is correct.
+  </span>
+  <icon-lock-closed.svg
+    color="inherit"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width="1rem"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  <span
+    className="constellation text-sm font-medium my-2.5 text-background text-start"
+  >
+    https://login.blockchain.com
+  </span>
+</button>
+`;
+
+exports[`Storyshots Compositions/Alert/Card Card 1`] = `
+<div
+  className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative border border-medium flex flex-col !gap-2"
+  style={Object {}}
+>
+  <span
+    className="constellation text-sm font-semibold my-2.5 text-body text-start !m-0 !text-title"
+  >
+    Card Alert Title
+  </span>
+  <span
+    className="constellation text-xs font-medium my-2 text-body text-start !m-0 !text-title"
+  >
+    Card alert copy that directs the user to take an action or let’s them know what happened.
+  </span>
+</div>
+`;
+
+exports[`Storyshots Compositions/Alert/Dot Dot 1`] = `
+<div
+  className="constellation w-2 h-2 rounded-full outline-1 outline outline-background mode-light:bg-pink-500 mode-dark:bg-pink-400"
+/>
+`;
+
 exports[`Storyshots Compositions/Cards/BaseCard Base Card 1`] = `
 <div
   className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative"

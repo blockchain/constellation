@@ -171,6 +171,18 @@ module.exports = {
         gold: 'var(--color-tiers-gold)',
       },
 
+      pink: {
+        300: 'var(--color-pink-300)',
+        400: 'var(--color-pink-400)',
+        500: 'var(--color-pink-500)',
+      },
+
+      'new-green': {
+        300: 'var(--color-new-green-300)',
+        400: 'var(--color-new-green-400)',
+        500: 'var(--color-new-green-500)',
+      },
+
       black: 'var(--color-black)',
       transparent: 'var(--color-transparent)',
     },

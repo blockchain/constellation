@@ -9,6 +9,7 @@ const BaseCard: BaseCardComponent = ({
   border,
   children,
   className,
+  closeButtonClassName,
   onCardClick,
   onCloseClick,
 }) => {
@@ -32,7 +33,10 @@ const BaseCard: BaseCardComponent = ({
       style={accentColor ? { borderColor: accentColor } : {}}
     >
       {onCloseClick && (
-        <CloseButton onClick={handleCloseClick} className='absolute top-4 right-4' />
+        <CloseButton
+          onClick={handleCloseClick}
+          className={cx('absolute top-4 right-4', closeButtonClassName)}
+        />
       )}
 
       {children}

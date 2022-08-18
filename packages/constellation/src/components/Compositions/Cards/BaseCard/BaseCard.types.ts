@@ -14,6 +14,10 @@ type BaseCardProps = {
    */
   className?: string
   /**
+   * The className for the close button, used to override default spacing.
+   */
+  closeButtonClassName?: string
+  /**
    * The function called when the card iteself is clicked.
    */
   onCardClick?: MouseEventHandler<HTMLButtonElement> & MouseEventHandler<HTMLDivElement>
