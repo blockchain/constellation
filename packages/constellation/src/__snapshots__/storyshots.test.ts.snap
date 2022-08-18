@@ -3723,9 +3723,63 @@ exports[`Storyshots Base/Typography/Text Text 1`] = `
 </span>
 `;
 
+exports[`Storyshots Compositions/Cards/BaseCard Base Card 1`] = `
+<div
+  className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative"
+  style={Object {}}
+>
+  <div
+    className="py-5"
+  >
+    Your card content goes in here
+  </div>
+</div>
+`;
+
+exports[`Storyshots Compositions/Cards/Card Card 1`] = `
+<div
+  className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative flex-col"
+  style={Object {}}
+>
+  <div
+    className="flex flex-row items-center gap-2"
+  >
+    <div
+      className="constellation w-8 h-10 relative flex justify-center items-center"
+    >
+      <span
+        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
+      >
+        <span>
+          <div
+            className="text-white-000 text-[10px]"
+          >
+            CAT
+          </div>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="flex flex-col"
+  >
+    <span
+      className="constellation text-xl font-semibold my-4 text-title text-start !m-0 w-full"
+    >
+      Welcome to Blockchain!
+    </span>
+    <span
+      className="constellation text-sm font-medium my-2.5 text-body text-start !m-0 !mt-1 w-full"
+    >
+      This is your Portfolio view. Once you own and hold crypto, the balances display here.
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Compositions/Cards/CtaCard Cta Card 1`] = `
 <div
-  className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative flex-col flex-col !items-start"
+  className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative flex-col"
   style={Object {}}
 >
   <div
@@ -3773,7 +3827,6 @@ exports[`Storyshots Compositions/Cards/CtaCard Cta Card 1`] = `
     className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
     type="button"
   >
     Notify Me

@@ -1,6 +1,5 @@
 import { FC, ReactNode } from 'react'
 
-import { Colors } from '../../../Base/Colors'
 import { LogoContentProps } from '../../index'
 
 type CardProps = {
