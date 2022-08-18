@@ -4,8 +4,16 @@ import React from 'react'
 import { AlertCard, AlertCardComponentType } from '.'
 
 export default {
-  argTypes: {},
-  args: {},
+  argTypes: {
+    onCloseClick: {
+      action: 'onCloseClick',
+    },
+  },
+  args: {
+    content:
+      'Card alert copy that directs the user to take an action or let’s them know what happened.',
+    title: 'Card Alert Title',
+  },
   component: AlertCard,
   title: 'Compositions/Alert/Card',
 } as ComponentMeta<AlertCardComponentType>
