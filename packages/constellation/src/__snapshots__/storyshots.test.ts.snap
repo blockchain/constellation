@@ -3723,6 +3723,117 @@ exports[`Storyshots Base/Typography/Text Text 1`] = `
 </span>
 `;
 
+exports[`Storyshots Compositions/Cards/BaseCard Base Card 1`] = `
+<div
+  className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative"
+  style={Object {}}
+>
+  <div
+    className="py-5"
+  >
+    Your card content goes in here
+  </div>
+</div>
+`;
+
+exports[`Storyshots Compositions/Cards/Card Card 1`] = `
+<div
+  className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative flex-col"
+  style={Object {}}
+>
+  <div
+    className="flex flex-row items-center gap-2"
+  >
+    <div
+      className="constellation w-8 h-10 relative flex justify-center items-center"
+    >
+      <span
+        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
+      >
+        <span>
+          <div
+            className="text-white-000 text-[10px]"
+          >
+            CAT
+          </div>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="flex flex-col"
+  >
+    <span
+      className="constellation text-xl font-semibold my-4 text-title text-start !m-0 w-full"
+    >
+      Welcome to Blockchain!
+    </span>
+    <span
+      className="constellation text-sm font-medium my-2.5 text-body text-start !m-0 !mt-1 w-full"
+    >
+      This is your Portfolio view. Once you own and hold crypto, the balances display here.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Compositions/Cards/CtaCard Cta Card 1`] = `
+<div
+  className="constellation drop-shadow-cards bg-background-ultra-light mode-light:bg-white-000 w-[327px] rounded-2xl p-4 flex gap-4 relative flex-col"
+  style={Object {}}
+>
+  <div
+    className="flex flex-row items-center gap-2"
+  >
+    <div
+      className="constellation w-8 h-10 relative flex justify-center items-center"
+    >
+      <span
+        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
+        style={
+          Object {
+            "backgroundColor": "var(--color-blue-000)",
+          }
+        }
+      >
+        <span>
+          <icon-notification-on.svg
+            color="var(--color-primary)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="flex flex-col"
+  >
+    <span
+      className="constellation text-xl font-semibold my-4 text-title text-start !m-0 w-full"
+    >
+      Notify Me
+    </span>
+    <span
+      className="constellation text-sm font-medium my-2.5 text-body text-start !m-0 !mt-1 w-full"
+    >
+      Get a notification when Uniswap is available to trade on Blockchain.com.
+    </span>
+  </div>
+  <button
+    className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Notify Me
+  </button>
+</div>
+`;
+
 exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 <div
   aria-required={false}
@@ -4871,6 +4982,23 @@ exports[`Storyshots Primitives/Buttons/Button Button 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   />
   Large
+</button>
+`;
+
+exports[`Storyshots Primitives/Buttons/Close Close 1`] = `
+<button
+  className="constellation !bg-background-light mode-dark:!bg-grey-800 rounded-full !p-0 flex justify-center items-center !w-6 !h-6 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 p-0 flex w-fit"
+  disabled={false}
+  type="button"
+>
+  <icon-close-v2.svg
+    color="var(--color-grey-400)"
+    fill="currentColor"
+    focusable="false"
+    height="1rem"
+    width={12}
+    xmlns="http://www.w3.org/2000/svg"
+  />
 </button>
 `;
 

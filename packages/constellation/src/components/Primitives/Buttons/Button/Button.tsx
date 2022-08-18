@@ -35,6 +35,7 @@ export const variantStyles: Record<ButtonVariants, string> = {
 const sizeStyles: Record<Sizes, string> = {
   default: 'px-6 py-3 text-base h-12',
   large: 'px-10 py-4 text-xl h-16',
+  noPadding: 'p-0',
   small: 'px-3 py-1.5 text-sm h-8',
 }
 
@@ -42,16 +43,19 @@ const stateStyles: Record<ButtonState, Record<Sizes, string>> = {
   initial: {
     default: '',
     large: '',
+    noPadding: '',
     small: '',
   },
   loading: {
     default: 'px-14 py-3',
     large: 'px-16 py-5',
+    noPadding: '',
     small: 'px-8 py-2',
   },
   success: {
     default: 'px-14 py-3',
     large: 'px-16 py-5',
+    noPadding: '',
     small: 'px-8 py-2',
   },
 }

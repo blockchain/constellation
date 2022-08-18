@@ -32,6 +32,11 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      */
     color?: SemanticColors
     /**
+     * Hodes the overflow text ofter the specified number of lines
+     * 0 is no line clamp
+     */
+    lineClamp?: 0 | 2 | 3 | 4 | 5 | 6
+    /**
      * The alignment of the text, which is applicable when underlying DOM element is block type (like `p` element)
      */
     textAlign?: TextAlignments
