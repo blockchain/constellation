@@ -8,7 +8,7 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
     /**
      * Allows some styling overrides when needed
      */
-    className?: stirng
+    className?: string
     /**
      * The size of the button, from a range of variants.
      */
