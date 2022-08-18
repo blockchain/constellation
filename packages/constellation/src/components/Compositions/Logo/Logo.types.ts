@@ -9,7 +9,7 @@ type InternalLogoProps = {
   icon: ReactNode
   iconColor?: Colors
   imgSrc?: string
-  size?: 'base' | 'double' | 'badge'
+  size?: 'base' | 'double' | 'badge' | 'large'
   text?: string
 }
 
@@ -38,8 +38,15 @@ type LogoProps = {
   doubleVariant?: 'primary' | 'badge'
   primaryContent: Content
   secondaryContent?: Content
+  singleVariant?: 'base' | 'large'
 }
 
 type LogoComponent = FC<LogoProps>
 
-export type { InternalLogoComponent, InternalLogoProps, LogoComponent, LogoProps }
+export type {
+  InternalLogoComponent,
+  InternalLogoProps,
+  LogoComponent,
+  Content as LogoContentProps,
+  LogoProps,
+}

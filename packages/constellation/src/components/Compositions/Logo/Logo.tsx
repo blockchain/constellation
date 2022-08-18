@@ -17,13 +17,16 @@ const InternalLogo: InternalLogoComponent = ({
 }) => {
   const Icon = icon as FC<IconProps>
 
-  const genFontSizes = (text?: string): { badge: string; base: string; double: string } => {
+  const genFontSizes = (
+    text?: string,
+  ): { badge: string; base: string; double: string; large: string } => {
     const length = text?.length || 4
 
     return {
       badge: length <= 4 ? 'text-[3.5px]' : 'text-[2.5px]',
       base: length <= 4 ? 'text-[10px]' : 'text-[7px]',
       double: length <= 4 ? 'text-[8px]' : 'text-[6px]',
+      large: length <= 4 ? 'text-[12px]' : 'text-[9px]',
     }
   }
 
@@ -33,6 +36,7 @@ const InternalLogo: InternalLogoComponent = ({
     badge: 'w-3 h-3',
     base: 'w-8 h-8',
     double: 'w-6 h-6',
+    large: 'w-10 h-10',
   }
 
   return (
@@ -62,11 +66,16 @@ const Logo: LogoComponent = ({
   doubleVariant = 'primary',
   primaryContent,
   secondaryContent,
+  singleVariant = 'base',
 }) => {
   const badge = doubleVariant === 'badge'
 
   return (
-    <div className='constellation w-8 h-10 relative flex justify-center items-center'>
+    <div
+      className={cx('constellation w-8 h-10 relative flex justify-center items-center', {
+        '!w-10': singleVariant === 'large' && !secondaryContent,
+      })}
+    >
       {secondaryContent && (
         <InternalLogo
           backgroundColor={secondaryContent.backgroundColor}
@@ -88,7 +97,7 @@ const Logo: LogoComponent = ({
         icon={primaryContent.icon}
         iconColor={primaryContent.iconColor}
         imgSrc={primaryContent.imgSrc}
-        size={badge || !secondaryContent ? 'base' : 'double'}
+        size={!secondaryContent ? singleVariant : badge ? 'base' : 'double'}
         className={cx({
           '!absolute top-0 left-0 border-2 border-background border-solid -ml-[2px] -mt-[2px]':
             secondaryContent && !badge,

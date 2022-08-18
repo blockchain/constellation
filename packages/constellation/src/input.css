@@ -578,6 +578,8 @@
 
         --shadow-control: 0px 3px 8px rgba(0, 0, 0, 0.15);
         --shadow-control-sm: 0px 3px 1px rgba(0, 0, 0, 0.06);
+        --shadow-cards: 0px 3px 8px rgba(0, 0, 0, 0.12);
+        --shadow-cards-sm: 0px 3px 1px rgba(0, 0, 0, 0.04);
     }
 
     .mode-dark {
@@ -601,5 +603,7 @@
 
         --shadow-control: 0px 3px 8px rgba(0, 0, 0, 0.12);
         --shadow-control-sm: 0px 3px 1px rgba(0, 0, 0, 0.12);
+        --shadow-cards: 0px 3px 8px rgba(0, 0, 0, 0.12);
+        --shadow-cards-sm: 0px 3px 1px rgba(0, 0, 0, 0.04);
     }
 }
