@@ -1,7 +1,7 @@
 import { DialogProps } from '@radix-ui/react-dialog'
 import React from 'react'
 
-import CheckboxProps from '../../Primitives'
+import { CheckboxProps } from '../../Primitives'
 
 export interface FlyoutHeaderProps {
   /**
