@@ -44,14 +44,14 @@ const Template: ComponentStory<FlyoutComponent> = ({ icon, ...args }) => {
       icon={<StoryIcon />}
       footer={
         <FlyoutFooter
-          primaryCta={{ disabled: true, onClick: () => {}, text: 'Primary Button' }}
+          primaryCta={{ disabled: true, onClick: () => setIsOpen(false), text: 'Primary Button' }}
           secondaryCta={{ onClick: () => setIsOpen(false), text: 'Dismiss' }}
           primaryCheckbox={{
-            onChange: () => {},
+            onChange: () => setIsOpen(false),
             text: 'I Agree To Blockchain.com’s Terms of Service',
           }}
           secondaryCheckbox={{
-            onChange: () => {},
+            onChange: () => setIsOpen(false),
             text: 'By clicking ‘Create Card’ you accept the terms of Blockchain.com’s Cardholder Agreement',
           }}
         />
