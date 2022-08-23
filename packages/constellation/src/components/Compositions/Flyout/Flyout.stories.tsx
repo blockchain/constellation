@@ -1,11 +1,9 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { useState } from 'react'
 
-import { Text } from '../../Base'
 import * as Icons from '../../Base/Icon'
 import { Button } from '../../Primitives/Buttons'
 import { Flyout as RenderedFlyout, FlyoutComponent } from '.'
-import FlyoutFooter from './FlyoutFooter'
 
 export default {
   argTypes: {
@@ -22,7 +20,9 @@ export default {
   args: {
     byline:
       'An optional accessible description to be rendered and announced when the dialog is opened.',
+    exiteType: 'close',
     icon: 'IconApple',
+    iconPos: 'left',
     title: 'Flyout Title',
   },
   component: RenderedFlyout,

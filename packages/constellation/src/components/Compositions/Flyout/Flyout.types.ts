@@ -1,8 +1,6 @@
 import { DialogProps } from '@radix-ui/react-dialog'
 import React from 'react'
 
-import { IconProps } from '../../Base/Icon'
-
 export interface FlyoutHeaderProps {
   /**
    * An optional accessible description to be rendered and announced when the dialog is opened.
@@ -10,6 +8,7 @@ export interface FlyoutHeaderProps {
   byline?: string
   exiteType: 'close' | 'back'
   icon?: React.ReactNode
+  iconPos?: 'left' | 'right'
   onExit: () => void
   /**
    * An optional title to be rendered in the modal header

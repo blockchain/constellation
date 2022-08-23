@@ -1,17 +1,24 @@
 import { Transition } from '@headlessui/react'
 import { Close, Content, Description, Overlay, Root, Title, Trigger } from '@radix-ui/react-dialog'
 import cx from 'classnames'
-import React, { forwardRef, Fragment } from 'react'
+import React, { forwardRef, Fragment, ReactElement } from 'react'
 
-import { IconArrowLeft, PaletteColors, SemanticColors, Text } from '../../Base'
+import { IconArrowLeft, IconProps, SemanticColors, Text } from '../../Base'
 import { CloseButton, IconButton } from '../../Primitives'
 import { HeaderComponent, Props } from './Flyout.types'
 
 /**
  * Internal component for the optional accessible description
  */
-const FlyoutHeader: HeaderComponent = ({ byline, exiteType = 'close', icon, onExit, title }) => {
-  const hasByline = !!byline
+const FlyoutHeader: HeaderComponent = ({
+  byline,
+  exiteType = 'close',
+  icon,
+  iconPos = 'left',
+  onExit,
+  title,
+}) => {
+  const hasByline = !!byline && exiteType === 'close'
 
   return (
     <div className='flex gap-5 items-center'>
@@ -32,24 +39,37 @@ const FlyoutHeader: HeaderComponent = ({ byline, exiteType = 'close', icon, onEx
           <CloseButton as='div' size='large' />
         </Close>
       )}
-      <div className={cx('flex', { 'flex-col': hasByline })}>
-        <div className={cx('mr-4', { 'mb-4': hasByline })}>
+      <div
+        className={cx(
+          'flex',
+          { 'flex-col': hasByline },
+          {
+            '!flex-row-reverse justify-between w-full': iconPos === 'right' && exiteType === 'back',
+          },
+        )}
+      >
+        <div className={cx({ 'mr-4': iconPos === 'left' }, { 'mb-4': hasByline })}>
           {icon &&
-            React.cloneElement(icon, {
-              color: SemanticColors.muted,
-              height: hasByline ? 32 : 24,
-              width: hasByline ? 32 : 24,
-            })}
+            React.cloneElement(
+              icon as ReactElement<IconProps>,
+              {
+                color: SemanticColors.muted,
+                height: hasByline ? 32 : 24,
+                width: hasByline ? 32 : 24,
+              } as IconProps,
+            )}
         </div>
 
-        <Title className='constellation text-base font-medium text-title'>{title}</Title>
-        {byline && (
-          <Description className='constellation mt-1 text-sm font-normal text-body'>
-            <Text variant='paragraph1' color={SemanticColors.body}>
-              {byline}
-            </Text>
-          </Description>
-        )}
+        <div>
+          <Title className='constellation text-base font-medium text-title'>{title}</Title>
+          {byline && (
+            <Description className='constellation mt-1 text-sm font-normal text-body'>
+              <Text variant='paragraph1' color={SemanticColors.body}>
+                {byline}
+              </Text>
+            </Description>
+          )}
+        </div>
       </div>
     </div>
   )
@@ -63,7 +83,19 @@ const FlyoutHeader: HeaderComponent = ({ byline, exiteType = 'close', icon, onEx
  */
 const Flyout = forwardRef<HTMLDivElement, Props>(
   (
-    { byline, children, exiteType, icon, isOpen, onExit, setIsOpen, title, trigger, ...otherProps },
+    {
+      byline,
+      children,
+      exiteType,
+      icon,
+      iconPos,
+      isOpen,
+      onExit,
+      setIsOpen,
+      title,
+      trigger,
+      ...otherProps
+    },
     ref,
   ) => {
     return (
@@ -107,6 +139,7 @@ const Flyout = forwardRef<HTMLDivElement, Props>(
                 exiteType={exiteType}
                 onExit={onExit}
                 icon={icon}
+                iconPos={iconPos}
               />
               {children}
             </Content>
