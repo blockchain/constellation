@@ -39,10 +39,12 @@ const TitleByline = ({
   ) : null
 
 /**
- * List Row is a component
+ * List Row is a component that allows information to be
+ * displayed and for the user to take actions on that information.
  */
 
 const ListRow: ListRowComponent = ({
+  as,
   description,
   icon,
   imgAlt,
@@ -59,7 +61,7 @@ const ListRow: ListRowComponent = ({
   tagVariant = 'default',
   titleIcon,
 }) => {
-  const Component = onClick ? 'button' : 'div'
+  const Component = as || onClick ? 'button' : 'div'
 
   // stop onClick being called when toggling the switch
   const handleToggleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
