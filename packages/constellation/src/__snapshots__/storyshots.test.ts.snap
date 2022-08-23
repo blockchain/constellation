@@ -4167,6 +4167,84 @@ exports[`Storyshots Compositions/Input Tag Input 1`] = `
 </div>
 `;
 
+exports[`Storyshots Compositions/ListRow List Row 1`] = `
+<div
+  className="constellation flex flex-row gap-4 p-4 bg-background w-full items-center !items-start"
+>
+  <div
+    className="flex flex-row items-center gap-4 !h-[47px]"
+  >
+    <div
+      className="constellation w-8 h-10 relative flex justify-center items-center"
+    >
+      <span
+        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
+      >
+        <span>
+          <div
+            className="text-white-000 text-[10px]"
+          >
+            CATE
+          </div>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="flex flex-grow flex-col"
+  >
+    <div
+      className="flex flex-grow justify-between items-center"
+    >
+      <div
+        className="flex flex-col justify-center gap-[3px]"
+      >
+        <div
+          className="flex items-center gap-1 text-grey-400"
+        >
+          <span
+            className="constellation text-base font-semibold my-3 text-title text-start !m-0"
+          >
+            Left Title
+          </span>
+        </div>
+        <span
+          className="constellation text-sm font-medium my-2.5 text-body text-start !m-0"
+        >
+          Left Byline
+        </span>
+      </div>
+      <div
+        className="flex flex-col justify-center gap-[3px]"
+      >
+        <div
+          className="flex items-center gap-1 text-grey-400"
+        >
+          <span
+            className="constellation text-base font-semibold my-3 text-title text-start !m-0"
+          >
+            Right Title
+          </span>
+        </div>
+        <span
+          className="constellation text-sm font-medium my-2.5 text-body text-start !m-0"
+        >
+          Right Byline
+        </span>
+      </div>
+    </div>
+    <span
+      className="constellation text-xs font-medium my-2 text-body text-start"
+    >
+      Securely link a bank to buy crypto, deposit cash and withdraw back to your bank at anytime.
+    </span>
+  </div>
+  <div
+    className="flex flex-row items-center gap-4 !h-[47px]"
+  />
+</div>
+`;
+
 exports[`Storyshots Compositions/Logo Logo 1`] = `
 <div
   className="constellation w-8 h-10 relative flex justify-center items-center"
