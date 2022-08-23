@@ -17,7 +17,7 @@ const Flyout = forwardRef<HTMLDivElement, Props>(
     {
       byline,
       children,
-      exiteType,
+      exitType,
       footer,
       icon,
       iconPos,
@@ -70,7 +70,7 @@ const Flyout = forwardRef<HTMLDivElement, Props>(
                 <FlyoutHeader
                   title={title}
                   byline={byline}
-                  exiteType={exiteType}
+                  exitType={exitType}
                   onExit={onExit}
                   icon={icon}
                   iconPos={iconPos}

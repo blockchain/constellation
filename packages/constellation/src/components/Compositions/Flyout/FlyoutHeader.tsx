@@ -47,7 +47,12 @@ const FlyoutHeader: HeaderComponent = ({
           },
         )}
       >
-        <div className={cx({ 'mr-4': iconPos === 'left' }, { 'mb-4': hasByline })}>
+        <div
+          className={cx(
+            { 'mr-4': iconPos === 'left' || (iconPos === 'right' && exitType === 'close') },
+            { 'mb-4': hasByline },
+          )}
+        >
           {icon &&
             React.cloneElement(
               icon as ReactElement<IconProps>,
