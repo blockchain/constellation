@@ -22,7 +22,7 @@ export default {
   args: {
     byline:
       'An optional accessible description to be rendered and announced when the dialog is opened.',
-    exiteType: 'close',
+    exitType: 'close',
     icon: 'IconApple',
     iconPos: 'left',
     title: 'Flyout Title',

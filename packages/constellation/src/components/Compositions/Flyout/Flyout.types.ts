@@ -1,7 +1,7 @@
 import { DialogProps } from '@radix-ui/react-dialog'
 import React from 'react'
 
-import CheckboxProps from '../../Primitives/Controls/Checkbox/Checkbox.types'
+import CheckboxProps from '../../Primitives'
 
 export interface FlyoutHeaderProps {
   /**
@@ -10,7 +10,8 @@ export interface FlyoutHeaderProps {
   byline?: string
   /**
    * Determins weather the flyout used a close 'X' button or a back arrow
-  exiteType: 'close' | 'back'
+   */
+  exitType: 'close' | 'back'
   icon?: React.ReactNode
   /**
    * The position of the icon, Icon can only be on the right when exitType is 'back'
@@ -62,6 +63,10 @@ export interface FlyoutFooterProps {
 
 export type Props = DialogProps &
   FlyoutHeaderProps & {
+    /**
+     * The content to be rendered at the bottom of the flyout
+     * usually this will be the FlyoutFooter component
+     */
     footer?: React.ReactNode
     /**
      * Display the modal

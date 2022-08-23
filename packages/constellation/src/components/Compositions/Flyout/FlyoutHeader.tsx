@@ -11,17 +11,17 @@ import { HeaderComponent } from './Flyout.types'
  */
 const FlyoutHeader: HeaderComponent = ({
   byline,
-  exiteType = 'close',
+  exitType = 'close',
   icon,
   iconPos = 'left',
   onExit,
   title,
 }) => {
-  const hasByline = !!byline && exiteType === 'close'
+  const hasByline = !!byline && exitType === 'close'
 
   return (
     <div className='flex gap-5 items-center mb-4'>
-      {exiteType === 'back' ? (
+      {exitType === 'back' ? (
         <IconButton
           icon={<IconArrowLeft color={SemanticColors.muted} width={16} height={16} />}
           size='small'
@@ -43,7 +43,7 @@ const FlyoutHeader: HeaderComponent = ({
           'flex',
           { 'flex-col': hasByline },
           {
-            '!flex-row-reverse justify-between w-full': iconPos === 'right' && exiteType === 'back',
+            '!flex-row-reverse justify-between w-full': iconPos === 'right' && exitType === 'back',
           },
         )}
       >
