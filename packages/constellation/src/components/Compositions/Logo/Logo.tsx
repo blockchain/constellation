@@ -114,7 +114,7 @@ const Logo: LogoComponent = ({
           '!w-10 h-[52px]': size === 'large',
         },
         {
-          '!w-6 !h-8': size === 'small',
+          '!w-5 !h-8': size === 'small',
         },
       )}
     >

@@ -6,7 +6,15 @@ import { Switcher as SwitcherComponent, SwitcherComponentType } from '.'
 export default {
   argTypes: {},
   args: {
+    logoContent: {
+      primaryContent: {
+        imgSrc:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png',
+        text: 'Bitcoin',
+      },
+    },
     title: 'BTC',
+    byline: 'Bitcoin',
   },
   component: SwitcherComponent,
   title: 'Compositions/Switcher',

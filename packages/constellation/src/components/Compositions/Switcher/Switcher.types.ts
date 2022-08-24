@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { LogoProps } from '../Logo/Logo.types'
+
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
   T,
   {
@@ -7,6 +9,7 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      * Secondary text content of switcher
      */
     byline?: string
+    logoContent: LogoProps
     /**
      * Text content of switcher
      */
