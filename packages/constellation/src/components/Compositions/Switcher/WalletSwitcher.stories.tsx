@@ -4,7 +4,17 @@ import React from 'react'
 import { WalletSwitcher as WalletSwitcherComponent, WalletSwitcherComponentType } from '.'
 
 export default {
-  argTypes: {},
+  argTypes: {
+    onClick: {
+      action: 'clicked',
+    },
+    status: {
+      control: {
+        options: ['error', 'success', 'warning'],
+        type: 'radio',
+      },
+    },
+  },
   args: {
     id: '14qViLJfdGaP4EeHnDyJbEGQysnCpwk3gd',
     status: 'success',

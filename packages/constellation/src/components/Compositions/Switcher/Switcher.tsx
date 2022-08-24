@@ -29,7 +29,7 @@ const Switcher: ComponentType = forwardRef(
         disabled={disabled}
         {...otherProps}
         className={cx(
-          'constellation bg-background-light outline-none flex items-center rounded-full p-2 gap-2 h-8',
+          'constellation bg-background-light outline-none flex items-center rounded-full p-2 pr-3 gap-2 h-8 cursor-pointer',
           {
             '!h-12 !rounded-lg': byline,
           },

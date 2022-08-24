@@ -4,7 +4,11 @@ import React from 'react'
 import { Switcher as SwitcherComponent, SwitcherComponentType } from '.'
 
 export default {
-  argTypes: {},
+  argTypes: {
+    onClick: {
+      action: 'clicked',
+    },
+  },
   args: {
     byline: 'Bitcoin',
     logoContent: {

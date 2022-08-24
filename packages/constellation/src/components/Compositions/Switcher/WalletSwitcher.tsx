@@ -1,8 +1,7 @@
 import cx from 'classnames'
-import React, { forwardRef } from 'react'
+import React, { forwardRef, useMemo } from 'react'
 
-import { IconChevronRightV2, PaletteColors, SemanticColors, Text } from '../../Base'
-import { Logo } from '../index'
+import { Text } from '../../Base'
 import { WalletComponent as ComponentType, WalletProps } from './Switcher.types'
 
 /**
@@ -28,17 +27,25 @@ const Switcher: ComponentType = forwardRef(
       warning: 'bg-warning',
     }
 
+    const truncatedId = useMemo(() => {
+      return id.length > 8 ? `${id.slice(0, 4)}...${id.slice(-4)}` : id
+    }, [id])
+
     return (
       <Component
         ref={ref}
         type={type || fallbackType}
         disabled={disabled}
         {...otherProps}
-        className='constellation'
+        className='constellation flex items-center rounded-lg bg-background-light gap-2 p-[3px] pl-2 cursor-pointer'
       >
-        <Text>{id}</Text>
-        <div>
-          <Text>{ticker}</Text>
+        <Text variant='caption1' className='!m-0 text-body'>
+          {truncatedId}
+        </Text>
+        <div className='flex flex-row items-center gap-1 bg-medium px-2 rounded-md'>
+          <Text variant='caption1' className='!m-0'>
+            {ticker}
+          </Text>
           <div className={cx('w-[6px] h-[6px] rounded-full', statusColor[status])} />
         </div>
       </Component>
