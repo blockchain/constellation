@@ -22,12 +22,14 @@ const FlyoutHeader: HeaderComponent = ({
   return (
     <div className='flex gap-5 items-center mb-4'>
       {exitType === 'back' ? (
-        <IconButton
-          icon={<IconArrowLeft color={SemanticColors.muted} width={16} height={16} />}
-          size='small'
-          onClick={onExit}
-          className='!h-4 !p-0 border-none'
-        />
+        <Close className='border-none'>
+          <IconButton
+            icon={<IconArrowLeft color={SemanticColors.muted} width={16} height={16} />}
+            size='small'
+            onClick={onExit}
+            className='!h-4 !p-0 border-none'
+          />
+        </Close>
       ) : (
         <Close
           className={cx(
@@ -35,7 +37,7 @@ const FlyoutHeader: HeaderComponent = ({
             'focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75',
           )}
         >
-          <CloseButton as='div' size='large' />
+          <CloseButton as='div' size='large' onClick={onExit} />
         </Close>
       )}
       <div

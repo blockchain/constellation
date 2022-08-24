@@ -63,3 +63,41 @@ const Template: ComponentStory<FlyoutComponent> = ({ icon, ...args }) => {
 }
 
 export const Flyout = Template.bind({})
+
+const MultiTemplate: ComponentStory<FlyoutComponent> = ({ ...args }) => {
+  const [openIndex, setOpenIndex] = useState(-1)
+
+  return (
+    <>
+      <button onClick={() => setOpenIndex(0)}>open</button>
+      <RenderedFlyout
+        {...args}
+        isOpen={openIndex === 0}
+        footer={
+          <FlyoutFooter
+            primaryCta={{ disabled: false, onClick: () => setOpenIndex(1), text: 'Next' }}
+          />
+        }
+      >
+        <Text>Step 1</Text>
+      </RenderedFlyout>
+      <RenderedFlyout
+        {...args}
+        isOpen={openIndex === 1}
+        footer={
+          <FlyoutFooter
+            primaryCta={{
+              disabled: false,
+              onClick: () => setOpenIndex(-1),
+              text: 'Close',
+            }}
+          />
+        }
+      >
+        <Text>Step 2</Text>
+      </RenderedFlyout>
+    </>
+  )
+}
+
+export const Multi = MultiTemplate.bind({})
