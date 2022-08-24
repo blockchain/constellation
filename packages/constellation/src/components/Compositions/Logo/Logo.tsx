@@ -19,7 +19,7 @@ const InternalLogo: InternalLogoComponent = ({
 
   const genFontSizes = (
     text?: string,
-  ): { badge: string; base: string; double: string; large: string } => {
+  ): { badge: string; base: string; double: string; large: string; small: string } => {
     const length = text?.length || 4
 
     return {
@@ -27,6 +27,7 @@ const InternalLogo: InternalLogoComponent = ({
       base: length <= 4 ? 'text-[10px]' : 'text-[7px]',
       double: length <= 4 ? 'text-[8px]' : 'text-[6px]',
       large: length <= 4 ? 'text-[12px]' : 'text-[9px]',
+      small: length <= 4 ? 'text-[8px]' : 'text-[6px]',
     }
   }
 
@@ -37,6 +38,7 @@ const InternalLogo: InternalLogoComponent = ({
     base: 'w-8 h-8',
     double: 'w-6 h-6',
     large: 'w-10 h-10',
+    small: 'w-5 h-5',
   }
 
   return (
@@ -72,9 +74,15 @@ const Logo: LogoComponent = ({
 
   return (
     <div
-      className={cx('constellation w-8 h-10 relative flex justify-center items-center', {
-        '!w-10': singleVariant === 'large' && !secondaryContent,
-      })}
+      className={cx(
+        'constellation w-8 h-10 relative flex justify-center items-center',
+        {
+          '!w-10': singleVariant === 'large' && !secondaryContent,
+        },
+        {
+          '!w-5 !h-5': singleVariant === 'small' && !secondaryContent,
+        },
+      )}
     >
       {secondaryContent && (
         <InternalLogo
