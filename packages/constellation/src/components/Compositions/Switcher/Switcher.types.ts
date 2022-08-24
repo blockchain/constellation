@@ -20,3 +20,16 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
 export type Component = <T extends React.ElementType = 'button'>(
   props: Props<T>,
 ) => React.ReactElement | null
+
+export type WalletProps<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
+  T,
+  {
+    id: string
+    status: 'success' | 'warning' | 'error'
+    ticker: string
+  }
+>
+
+export type WalletComponent = <T extends React.ElementType = 'button'>(
+  props: WalletProps<T>,
+) => React.ReactElement | null

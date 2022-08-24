@@ -6,6 +6,7 @@ import { Switcher as SwitcherComponent, SwitcherComponentType } from '.'
 export default {
   argTypes: {},
   args: {
+    byline: 'Bitcoin',
     logoContent: {
       primaryContent: {
         imgSrc:
@@ -14,10 +15,9 @@ export default {
       },
     },
     title: 'BTC',
-    byline: 'Bitcoin',
   },
   component: SwitcherComponent,
-  title: 'Compositions/Switcher',
+  title: 'Compositions/Switcher/Switcher',
 } as ComponentMeta<SwitcherComponentType>
 
 const Template: ComponentStory<SwitcherComponentType> = ({ ...args }) => {
