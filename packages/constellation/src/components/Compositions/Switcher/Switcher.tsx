@@ -6,12 +6,7 @@ import { Logo } from '../index'
 import { Component as ComponentType, Props } from './Switcher.types'
 
 /**
- * Switchers allow users to take actions, and make choices, with a single tap.
- *
- * When a `ref` prop is provided, it will be forwarded to the root element. Any
- * other properties supplied will be provided to the root element (ie, the `as`
- * prop value). This includes all appropriate HTML attributes or aria tags. This
- * component may have its underlying DOM customized via the 'as' prop.
+ * Switchers act as a button with basic info. They also be used to trigger a modal or flyout.
  */
 
 const Switcher: ComponentType = forwardRef(

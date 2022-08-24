@@ -9,6 +9,9 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      * Secondary text content of switcher
      */
     byline?: string
+    /**
+     * The logo to display in the switcher.
+     */
     logoContent: LogoProps
     /**
      * Text content of switcher
@@ -24,8 +27,20 @@ export type Component = <T extends React.ElementType = 'button'>(
 export type WalletProps<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
   T,
   {
+    /**
+     * The primary content to be displayed in the switcher.
+     * if the id is longer than 8 characters, it will be truncated
+     * in the middle with 4 characters either side otherwise
+     * the full id will be displayed.
+     */
     id: string
+    /**
+     * Changes the colour of the dot
+     */
     status: 'success' | 'warning' | 'error'
+    /**
+     * The the secondary content of the switcher.
+     */
     ticker: string
   }
 >

@@ -4,15 +4,6 @@ import React, { forwardRef, useMemo } from 'react'
 import { Text } from '../../Base'
 import { WalletComponent as ComponentType, WalletProps } from './Switcher.types'
 
-/**
- * Switchers allow users to take actions, and make choices, with a single tap.
- *
- * When a `ref` prop is provided, it will be forwarded to the root element. Any
- * other properties supplied will be provided to the root element (ie, the `as`
- * prop value). This includes all appropriate HTML attributes or aria tags. This
- * component may have its underlying DOM customized via the 'as' prop.
- */
-
 const Switcher: ComponentType = forwardRef(
   <T extends React.ElementType = 'button'>(
     { as, disabled = false, id, status, ticker, type, ...otherProps }: WalletProps<T>,
