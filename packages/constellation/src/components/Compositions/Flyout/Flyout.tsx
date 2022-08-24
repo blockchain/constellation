@@ -23,6 +23,7 @@ const Flyout = forwardRef<HTMLDivElement, Props>(
       iconPos,
       isOpen,
       onExit,
+      overlayOverride,
       setIsOpen,
       title,
       trigger,
@@ -45,8 +46,12 @@ const Flyout = forwardRef<HTMLDivElement, Props>(
           >
             <Overlay
               forceMount
-              className='constellation fixed inset-0 z-20 backdrop-blur-[2px] bg-overlay-dark-400'
-            />
+              className={cx('constellation fixed inset-0 z-20', {
+                'backdrop-blur-[2px] bg-overlay-dark-400': overlayOverride === undefined,
+              })}
+            >
+              {overlayOverride}
+            </Overlay>
           </Transition.Child>
           <Transition.Child
             as={Fragment}
@@ -58,11 +63,12 @@ const Flyout = forwardRef<HTMLDivElement, Props>(
             leaveTo='opacity-0 scale-95 sm:translate-x-1/2'
           >
             <Content
+              {...otherProps}
               ref={ref}
               forceMount
               className={cx(
                 'constellation fixed z-50 w-full top-0 bottom-0 left-0 right-0 p-6 sm:max-w-[480px] sm:rounded-3xl sm:top-6 sm:right-6 sm:bottom-6 sm:left-auto',
-                'bg-background mode-dark:bg-dark-800',
+                'bg-background mode-dark:bg-dark-800 !drop-shadow-cards',
                 'flex flex-col justify-between',
               )}
             >

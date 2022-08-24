@@ -1,4 +1,4 @@
-import { DialogProps } from '@radix-ui/react-dialog'
+import { DialogContentProps, DialogProps } from '@radix-ui/react-dialog'
 import React from 'react'
 
 import { CheckboxProps } from '../../Primitives'
@@ -62,7 +62,8 @@ export interface FlyoutFooterProps {
 }
 
 export type Props = DialogProps &
-  FlyoutHeaderProps & {
+  FlyoutHeaderProps &
+  DialogContentProps & {
     /**
      * The content to be rendered at the bottom of the flyout
      * usually this will be the FlyoutFooter component
@@ -72,6 +73,12 @@ export type Props = DialogProps &
      * Display the modal
      */
     isOpen: boolean
+    /**
+     * When given a ReactNode this will replace the default background blur and tint
+     * with the given ReactNode. overlayOverride can also be set to null to remove the
+     * overlay completely.
+     */
+    overlayOverride: React.ReactNode
     /**
      * Toggle the display of the modal
      */

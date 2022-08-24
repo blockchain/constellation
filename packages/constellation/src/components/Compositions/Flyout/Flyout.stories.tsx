@@ -65,36 +65,44 @@ const Template: ComponentStory<FlyoutComponent> = ({ icon, ...args }) => {
 export const Flyout = Template.bind({})
 
 const MultiTemplate: ComponentStory<FlyoutComponent> = ({ ...args }) => {
-  const [openIndex, setOpenIndex] = useState(-1)
+  const [mainOpen, setMainOpen] = useState(false)
+  const [secondaryOpen, setSecondaryOpen] = useState(false)
 
   return (
     <>
-      <button onClick={() => setOpenIndex(0)}>open</button>
       <RenderedFlyout
         {...args}
-        isOpen={openIndex === 0}
-        footer={
-          <FlyoutFooter
-            primaryCta={{ disabled: false, onClick: () => setOpenIndex(1), text: 'Next' }}
-          />
-        }
-      >
-        <Text>Step 1</Text>
-      </RenderedFlyout>
-      <RenderedFlyout
-        {...args}
-        isOpen={openIndex === 1}
+        isOpen={mainOpen}
+        icon={null}
+        setIsOpen={setMainOpen}
+        trigger={<Button variant='minimal' text='Click' />}
         footer={
           <FlyoutFooter
             primaryCta={{
-              disabled: false,
-              onClick: () => setOpenIndex(-1),
-              text: 'Close',
+              onClick: () => setSecondaryOpen(true),
+              text: 'Open secondary flyout',
             }}
           />
         }
       >
-        <Text>Step 2</Text>
+        <Text>This is the primary flyout</Text>
+      </RenderedFlyout>
+      <RenderedFlyout
+        {...args}
+        isOpen={secondaryOpen}
+        icon={null}
+        overlayOverride={false}
+        setIsOpen={setSecondaryOpen}
+        footer={
+          <FlyoutFooter
+            primaryCta={{
+              onClick: () => setSecondaryOpen(false),
+              text: 'Close secondary',
+            }}
+          />
+        }
+      >
+        <Text>This is the secondary flyout. It also has a custom overlay.</Text>
       </RenderedFlyout>
     </>
   )
