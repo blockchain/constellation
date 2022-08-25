@@ -21,7 +21,7 @@ export default {
     title: 'BTC',
   },
   component: SwitcherComponent,
-  title: 'Compositions/Switcher/Switcher',
+  title: 'Primitives/Switcher/Switcher',
 } as ComponentMeta<SwitcherComponentType>
 
 const Template: ComponentStory<SwitcherComponentType> = ({ ...args }) => {

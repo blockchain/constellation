@@ -1,6 +1,7 @@
 import cx from 'classnames'
 import React, { forwardRef, useMemo } from 'react'
 
+import { truncateId } from '../../../utils'
 import { Text } from '../../Base'
 import { WalletComponent as ComponentType, WalletProps } from './Switcher.types'
 
@@ -18,9 +19,7 @@ const Switcher: ComponentType = forwardRef(
       warning: 'bg-warning',
     }
 
-    const truncatedId = useMemo(() => {
-      return id.length > 8 ? `${id.slice(0, 4)}...${id.slice(-4)}` : id
-    }, [id])
+    const truncatedId = useMemo(() => truncateId(id, 11), [id])
 
     return (
       <Component

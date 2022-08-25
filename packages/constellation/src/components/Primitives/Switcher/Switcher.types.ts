@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { LogoProps } from '../Logo/Logo.types'
+import { LogoProps } from '../../Compositions/Logo/Logo.types'
 
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
   T,

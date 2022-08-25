@@ -2,7 +2,7 @@ import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { IconChevronRightV2, PaletteColors, SemanticColors, Text } from '../../Base'
-import { Logo } from '../index'
+import { Logo } from '../../Compositions/index'
 import { Component as ComponentType, Props } from './Switcher.types'
 
 /**

@@ -21,7 +21,7 @@ export default {
     ticker: 'BTC',
   },
   component: WalletSwitcherComponent,
-  title: 'Compositions/Switcher/WalletSwitcher',
+  title: 'Primitives/Switcher/WalletSwitcher',
 } as ComponentMeta<WalletSwitcherComponentType>
 
 const Template: ComponentStory<WalletSwitcherComponentType> = ({ ...args }) => {
