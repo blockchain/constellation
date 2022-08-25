@@ -7,7 +7,7 @@ import { TabsProps } from './Tabs.types'
 const variantStyles = {
   default: 'radix-state-active:drop-shadow-control radix-state-active:bg-background',
   minimal:
-    'radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000',
+    'radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors',
 }
 
 const Tabs = ({ defaultActiveTab, onTabChange, size, tabs, variant = 'default' }: TabsProps) => {
