@@ -4,7 +4,7 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
   T,
   {
     /**
-     * An optional Icon displayed inline with button text
+     * Children content rendered in two column format by the Section header
      */
     children: React.ReactNode
   }

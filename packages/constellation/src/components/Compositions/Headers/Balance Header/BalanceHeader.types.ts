@@ -6,7 +6,15 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
     /**
      * An optional Icon displayed inline with button text
      */
-    children: React.ReactNode
+    balanceTotalCents: number
+    /**
+     * An optional Icon displayed inline with button text
+     */
+    subtitle: string
+    /**
+     * An optional Icon displayed inline with button text
+     */
+    title?: string
   }
 >
 

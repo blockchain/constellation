@@ -20,7 +20,13 @@ const SectionHeader: ComponentType = forwardRef(
     const Component = as || 'header'
 
     return (
-      <Component className={cx('constellation')} ref={ref} {...otherProps}>
+      <Component
+        className={cx(
+          'constellation flex justify-between items-center p-4 md:p-8 w-full text-title bg-background',
+        )}
+        ref={ref}
+        {...otherProps}
+      >
         {children}
       </Component>
     )

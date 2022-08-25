@@ -1,6 +1,8 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
+import { centsToDollarString } from '../../../../utils'
+import { SemanticColors, Text } from '../../../Base'
 import { Component as ComponentType, Props } from './BalanceHeader.types'
 
 /**
@@ -14,14 +16,35 @@ import { Component as ComponentType, Props } from './BalanceHeader.types'
 
 const BalanceHeader: ComponentType = forwardRef(
   <T extends React.ElementType = 'header'>(
-    { as, children, ...otherProps }: Props<T>,
+    { as, balanceTotalCents = 0, subtitle, title, ...otherProps }: Props<T>,
     ref?: PolymorphicRef<T>,
   ) => {
     const Component = as || 'header'
 
     return (
-      <Component className={cx('constellation')} ref={ref} {...otherProps}>
-        {children}
+      <Component
+        className={cx(
+          'constellation flex justify-between items-center p-4 md:p-8 w-full text-title bg-background',
+        )}
+        ref={ref}
+        {...otherProps}
+      >
+        <div className={cx('constellation flex flex-col')}>
+          <Text variant='micro' color={SemanticColors.title}>
+            Your Total |TICKER|
+          </Text>
+          <Text variant='paragraph1' className='mt-0 mb-0' color={SemanticColors.title}>
+            {centsToDollarString(balanceTotalCents)}
+          </Text>
+          <Text variant='micro' color={SemanticColors.overlay}>
+            0.1393819 BTC
+          </Text>
+        </div>
+        <div>
+          <span aria-label='star' role='img'>
+            ⭐️
+          </span>
+        </div>
       </Component>
     )
   },

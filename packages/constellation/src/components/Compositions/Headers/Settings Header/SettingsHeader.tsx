@@ -2,7 +2,7 @@ import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { Text } from '../../../Base'
-import { Button } from '../../../Primitives'
+import { Button, buttonSizeStyles, rootButtonStyles } from '../../../Primitives'
 import { Component as ComponentType, Props } from './SettingsHeader.types'
 
 /**
@@ -32,19 +32,47 @@ const SettingsHeader: ComponentType = forwardRef(
     return (
       <Component
         className={cx(
-          'constellation flex justify-between items-center p-8 w-full text-title bg-background',
+          'constellation flex justify-between items-center p-4 md:p-8 w-full text-title bg-background',
         )}
         ref={ref}
         {...otherProps}
       >
-        <Text variant='title2' className='mt-0 mb-0'>
+        <Text variant='title2' className='mt-0 mb-0 text-xl md:text-2xl'>
           {title}
         </Text>
-        {mode === 'initial' && <Button onClick={onEditClick} text='Edit' variant='secondary' />}
+        {mode === 'initial' && (
+          <Button
+            className={cx(
+              rootButtonStyles,
+              buttonSizeStyles.small,
+              'md:px-6 md:py-3 md:text-base md:h-12',
+            )}
+            onClick={onEditClick}
+            text='Edit'
+            variant='secondary'
+          />
+        )}
         {mode === 'unsaved' && (
-          <div className='constellation flex gap-8'>
-            <Button onClick={onSave} text='Save' />
-            <Button onClick={onCancel} text='Cancel' variant='minimal' />
+          <div className='constellation flex gap-2 md:gap-8'>
+            <Button
+              className={cx(
+                rootButtonStyles,
+                buttonSizeStyles.small,
+                'md:px-6 md:py-3 md:text-base md:h-12',
+              )}
+              onClick={onSave}
+              text='Save'
+            />
+            <Button
+              className={cx(
+                rootButtonStyles,
+                buttonSizeStyles.small,
+                'md:px-6 md:py-3 md:text-base md:h-12',
+              )}
+              onClick={onCancel}
+              text='Cancel'
+              variant='minimal'
+            />
           </div>
         )}
       </Component>
