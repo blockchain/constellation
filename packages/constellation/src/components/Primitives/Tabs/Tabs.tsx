@@ -7,7 +7,7 @@ import { TabsProps } from './Tabs.types'
 const variantStyles = {
   default: 'radix-state-active:drop-shadow-control radix-state-active:bg-background',
   minimal:
-    'radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors',
+    'radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors  focus-visible:!ring-0',
 }
 
 const Tabs = ({ defaultActiveTab, onTabChange, size, tabs, variant = 'default' }: TabsProps) => {
@@ -39,7 +39,7 @@ const Tabs = ({ defaultActiveTab, onTabChange, size, tabs, variant = 'default' }
           >
             <span
               className={cx(
-                'constellation text-sm font-medium px-3 border-r border-r-transparent text',
+                'constellation text-sm font-medium px-3 border-r border-r-transparent text relative',
                 {
                   'border-r-medium': i < tabs.length - 1 && size === 'large',
                   'w-full': size === 'large',
