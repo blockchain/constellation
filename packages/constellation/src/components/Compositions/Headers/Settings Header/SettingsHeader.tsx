@@ -1,6 +1,8 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
+import { Text } from '../../../Base'
+import { Button } from '../../../Primitives'
 import { Component as ComponentType, Props } from './SettingsHeader.types'
 
 /**
@@ -14,14 +16,37 @@ import { Component as ComponentType, Props } from './SettingsHeader.types'
 
 const SettingsHeader: ComponentType = forwardRef(
   <T extends React.ElementType = 'header'>(
-    { as, children, ...otherProps }: Props<T>,
+    {
+      as,
+      mode = 'initial',
+      onCancel,
+      onEditClick,
+      onSave,
+      title = 'Account',
+      ...otherProps
+    }: Props<T>,
     ref?: PolymorphicRef<T>,
   ) => {
     const Component = as || 'header'
 
     return (
-      <Component className={cx('constellation')} ref={ref} {...otherProps}>
-        {children}
+      <Component
+        className={cx(
+          'constellation flex justify-between items-center p-8 w-full text-title bg-background',
+        )}
+        ref={ref}
+        {...otherProps}
+      >
+        <Text variant='title2' className='mt-0 mb-0'>
+          {title}
+        </Text>
+        {mode === 'initial' && <Button onClick={onEditClick} text='Edit' variant='secondary' />}
+        {mode === 'unsaved' && (
+          <div className='constellation flex gap-8'>
+            <Button onClick={onSave} text='Save' />
+            <Button onClick={onCancel} text='Cancel' variant='minimal' />
+          </div>
+        )}
       </Component>
     )
   },
