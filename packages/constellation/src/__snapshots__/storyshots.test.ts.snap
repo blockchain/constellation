@@ -4218,7 +4218,7 @@ exports[`Storyshots Compositions/Modal Modal 1`] = `
 `;
 
 exports[`Storyshots Compositions/Navigation Navigation 1`] = `
-<div>
+Array [
   <div
     aria-haspopup="menu"
     className="constellation flex flex-row items-center justify-between h-14 pl-6 pr-4 w-full bg-background border-b border-background-light mode-dark:border-dark-700"
@@ -4440,7 +4440,7 @@ exports[`Storyshots Compositions/Navigation Navigation 1`] = `
         
       </button>
     </div>
-  </div>
+  </div>,
   <div
     data-radix-popper-content-wrapper=""
     style={
@@ -4488,8 +4488,8 @@ exports[`Storyshots Compositions/Navigation Navigation 1`] = `
       }
       tabIndex={-1}
     />
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Compositions/Pager Pager 1`] = `

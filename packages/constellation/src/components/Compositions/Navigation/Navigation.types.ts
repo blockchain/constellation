@@ -59,7 +59,7 @@ interface NavigationProps {
    * The function called when clicking on the referral button. This function
    * existing also shows the referral button, otherwise it is hidden.
    */
-  onRefferalClick?: () => void
+  onReferralClick?: () => void
   /**
    * The function called when switching tabs or clicking an option in the dropdown.
    */

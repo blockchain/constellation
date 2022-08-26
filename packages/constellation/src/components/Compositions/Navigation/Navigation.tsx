@@ -15,9 +15,9 @@ import Dropdown from './NavigationDropdown'
 import NavigationTab from './NavigationTab'
 
 /**
- * Navigation a full header component that will allow for naivgation around the site.
- * Navigation featuers a logo with title, navigation tabs, two editable CTA buttons,
- * a referals buttons, a notification button, a profile, and a dropdown menu for
+ * Navigation a full header component that will allow for navigation around the site.
+ * Navigation features a logo with title, navigation tabs, two editable CTA buttons,
+ * referrals buttons, a notification button, a profile, and a dropdown menu for
  * mobile and table screen sizes.
  */
 
@@ -28,7 +28,7 @@ const Navigation: NavigationComponent = ({
   dropdownSecondSectionSeparator,
   navigationTabs,
   onNotificationClick,
-  onRefferalClick,
+  onReferralClick,
   onSelectedChange,
   primaryButton,
   secondaryButton,
@@ -48,7 +48,7 @@ const Navigation: NavigationComponent = ({
     if (onNotificationClick) {
       items.push({ key: 'notifications', label: 'Notifications' })
     }
-    if (onRefferalClick) {
+    if (onReferralClick) {
       items.push({ key: 'referrals', label: 'Referrals' })
     }
     if (dropdownSecondSectionSeparator) {
@@ -62,7 +62,7 @@ const Navigation: NavigationComponent = ({
   }, [
     navigationTabs,
     onNotificationClick,
-    onRefferalClick,
+    onReferralClick,
     dropdownSecondSectionSeparator,
     dropdownSecondSectionItems,
   ])
@@ -130,9 +130,9 @@ const Navigation: NavigationComponent = ({
                 className='!bg-background-light border-none rounded-full !h-fit !p-2 text-grey-400 ml-4 hover:text-grey-600 transition-colors'
               />
             )}
-            {onRefferalClick && (
+            {onReferralClick && (
               <IconButton
-                onClick={onRefferalClick}
+                onClick={onReferralClick}
                 icon={<IconPresent />}
                 size='default'
                 className='!bg-background-light border-none rounded-full !h-fit !p-2 text-grey-400 hover:text-grey-600 transition-colors'

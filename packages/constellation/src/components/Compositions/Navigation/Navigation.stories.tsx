@@ -10,7 +10,7 @@ import {
 export default {
   argTypes: {
     onNotificationClick: { action: 'onNotificationClick' },
-    onRefferalClick: { action: 'onRefferalClick' },
+    onReferralClick: { action: 'onReferralClick' },
   },
   args: {
     defaultSelected: 'home',
