@@ -17,7 +17,17 @@ import { Component as ComponentType, Props } from './SettingsHeader.types'
 
 const SettingsHeader: ComponentType = forwardRef(
   <T extends SectionHeaderComponent>(
-    { mode = 'initial', onCancel, onEditClick, onSave, title = 'Account', ...otherProps }: Props<T>,
+    {
+      cancelLabel = 'Cancel',
+      editLabel = 'Edit',
+      mode = 'initial',
+      onCancel,
+      onEditClick,
+      onSave,
+      saveLabel = 'Save',
+      title = 'Account',
+      ...otherProps
+    }: Props<T>,
     ref?: PolymorphicRef<T>,
   ) => {
     return (
@@ -33,7 +43,7 @@ const SettingsHeader: ComponentType = forwardRef(
               'md:px-6 md:py-3 md:text-base md:h-12',
             )}
             onClick={onEditClick}
-            text='Edit'
+            text={editLabel}
             variant='secondary'
           />
         )}
@@ -46,7 +56,7 @@ const SettingsHeader: ComponentType = forwardRef(
                 'md:px-6 md:py-3 md:text-base md:h-12',
               )}
               onClick={onSave}
-              text='Save'
+              text={saveLabel}
             />
             <Button
               className={cx(
@@ -55,7 +65,7 @@ const SettingsHeader: ComponentType = forwardRef(
                 'md:px-6 md:py-3 md:text-base md:h-12',
               )}
               onClick={onCancel}
-              text='Cancel'
+              text={cancelLabel}
               variant='minimal'
             />
           </div>

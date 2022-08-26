@@ -6,6 +6,14 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
   T,
   {
     /**
+     * Optionally override the label text for the cancel button
+     */
+    cancelLabel?: string
+    /**
+     * Optionally override the label text for the edit button
+     */
+    editLabel?: string
+    /**
      * The mode controls whether the edit or save/cancel are displayed
      */
     mode: SettingsHeaderModes
@@ -21,6 +29,10 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      * Triggered when the save button is clicked
      */
     onSave: () => void
+    /**
+     * Optionally override the label text for the save button
+     */
+    saveLabel?: string
     /**
      * An optional title to display on the lefthand side of the Header
      */
