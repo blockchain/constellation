@@ -10,7 +10,7 @@ import {
   Text,
 } from '../../Base'
 import { Button, Divider, IconButton, Tabs } from '../../Primitives'
-import { NavigationComponent, DropdownItem } from './Navigation.types'
+import { DropdownItem, NavigationComponent } from './Navigation.types'
 import Dropdown from './NavigationDropdown'
 import NavigationTab from './NavigationTab'
 
@@ -26,8 +26,10 @@ const Navigation: NavigationComponent = ({
   navigationTabs,
   onNotificationClick,
   onRefferalClick,
+  onSelectedChange,
   primaryButton,
   secondaryButton,
+  selected,
   title,
 }) => {
   const tabs = useMemo(() => {
@@ -36,9 +38,6 @@ const Navigation: NavigationComponent = ({
       titleContent: <NavigationTab text={label} dot={dot} />,
     }))
   }, [navigationTabs])
-
-  const [menuIsOpen, setMenuIsOpen] = useState(true)
-  const selected = 'home'
 
   const dropdownItems: DropdownItem[] = useMemo(() => {
     const items = navigationTabs
@@ -65,6 +64,8 @@ const Navigation: NavigationComponent = ({
     dropdownSecondSectionItems,
   ])
 
+  const [menuIsOpen, setMenuIsOpen] = useState(false)
+
   return (
     <Dropdown
       open={menuIsOpen}
@@ -72,6 +73,7 @@ const Navigation: NavigationComponent = ({
       items={dropdownItems}
       selected={selected}
       ctaButton={dropdownCtaButton}
+      onSelectedChange={onSelectedChange}
     >
       <div className='constellation flex flex-row items-center justify-between h-14 pl-6 pr-4 w-full bg-background border-b border-background-light mode-dark:border-dark-700'>
         <div className='flex flex-row items-center'>
@@ -80,7 +82,14 @@ const Navigation: NavigationComponent = ({
             {title}
           </Text>
           <div className='hidden lg:block'>
-            <Tabs tabs={tabs} defaultActiveTab='home' size='small' variant='minimal' />
+            <Tabs
+              defaultActiveTab={selected}
+              tabs={tabs}
+              value={navigationTabs.find((tab) => tab.key === selected)?.key}
+              size='small'
+              variant='minimal'
+              onTabChange={onSelectedChange}
+            />
           </div>
         </div>
         <div className='flex-shrink-0 flex flex-row items-center'>
@@ -111,6 +120,7 @@ const Navigation: NavigationComponent = ({
             <div className='w-8 h-8 bg-medium rounded-full flex justify-center items-center'>
               EM
             </div>
+            {/* REPLACE THIS WITH PROFILE WHEN MERGED */}
           </div>
           <IconButton
             onClick={() => setMenuIsOpen(!menuIsOpen)}

@@ -10,9 +10,16 @@ const variantStyles = {
     'radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors  focus-visible:!ring-0',
 }
 
-const Tabs = ({ defaultActiveTab, onTabChange, size, tabs, variant = 'default' }: TabsProps) => {
+const Tabs = ({
+  defaultActiveTab,
+  onTabChange,
+  size,
+  tabs,
+  value,
+  variant = 'default',
+}: TabsProps) => {
   return (
-    <Root onValueChange={onTabChange} defaultValue={defaultActiveTab}>
+    <Root onValueChange={onTabChange} defaultValue={defaultActiveTab} value={value}>
       <List
         className={cx(
           'constellation flex w-full rounded-[10px] p-[2px] bg-background-ultra-light',

@@ -10,6 +10,7 @@ export interface TabsProps {
   onTabChange?: (value: Tab['key']) => void
   size: 'large' | 'small'
   tabs: Tab[]
+  value?: Tab['key']
   variant: 'default' | 'minimal'
 }
 

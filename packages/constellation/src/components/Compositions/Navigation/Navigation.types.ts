@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 
 interface Button {
   onClick: () => void
@@ -25,8 +25,10 @@ interface NavigationProps {
   navigationTabs: tab[]
   onNotificationClick?: () => void
   onRefferalClick?: () => void
+  onSelectedChange: (key: string) => void
   primaryButton?: Button
   secondaryButton?: Button
+  selected: string
   title: string
 }
 
@@ -43,6 +45,7 @@ interface DropdownProps {
   ctaButton?: ctaButton
   items: DropdownItem[]
   onOpenChange: (open: boolean) => void
+  onSelectedChange: (key: string) => void
   open: boolean
   selected: string
 }

@@ -1,6 +1,7 @@
+import { Transition } from '@headlessui/react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import cx from 'classnames'
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import { SemanticColors, Text } from '../../Base'
 import { Button } from '../../Primitives'
@@ -17,6 +18,7 @@ const Dropdown: DropdownComponent = ({
   ctaButton,
   items,
   onOpenChange,
+  onSelectedChange,
   open,
   selected,
 }) => {
@@ -25,15 +27,27 @@ const Dropdown: DropdownComponent = ({
       <DropdownMenu.Trigger disabled asChild>
         {children}
       </DropdownMenu.Trigger>
-
-      <DropdownMenu.Content
-        asChild
-        className='constellation w-screen h-[calc(100vh-56px)] bg-background pt-4 px-6 pb-6 relative box-border overflow-auto'
-      >
-        <div className='flex flex-col justify-between'>
+      <DropdownMenu.Content forceMount className='constellation overflow-hidden'>
+        <Transition
+          show={open}
+          className='constellation flex flex-col justify-between w-screen h-[calc(100vh-56px)] bg-background pt-4 px-6 pb-6 relative box-border overflow-auto'
+          enter='ease-out duration-300'
+          enterFrom='opacity-0 scale-95 -translate-y-1/2'
+          enterTo='opacity-100 scale-100 translate-y-0'
+          leave='ease-in duration-200'
+          leaveFrom='opacity-100 scale-100 translate-y-0'
+          leaveTo='opacity-0 scale-95 -translate-y-1/2'
+        >
           <div>
-            {items.map((item) =>
-              item.separator ? (
+            {items.map((item) => {
+              const onClick = () => {
+                onSelectedChange(item.key)
+                if (item.onClick) {
+                  item.onClick()
+                }
+              }
+
+              return item.separator ? (
                 <DropdownMenu.Separator key={item.key} className='!pl-4 !pb-2 !pt-6'>
                   <Text variant='body1' color={SemanticColors.body}>
                     {item.label}
@@ -42,17 +56,23 @@ const Dropdown: DropdownComponent = ({
               ) : (
                 <DropdownMenu.Item asChild key={item.key}>
                   <button
+                    onClick={onClick}
                     className={cx('border-none p-4 w-full text-left rounded-2xl', {
-                      'bg-blue-000 mode-dark:bg-dark-700': item.key === selected,
+                      'bg-blue-000 mode-dark:bg-dark-700 text-primary': item.key === selected,
                     })}
                   >
-                    <Text variant='title3' color={SemanticColors.title}>
+                    <Text
+                      variant='title3'
+                      className={cx('text-title hover:text-primary', {
+                        'text-primary': item.key === selected,
+                      })}
+                    >
                       {item.label}
                     </Text>
                   </button>
                 </DropdownMenu.Item>
-              ),
-            )}
+              )
+            })}
           </div>
           {ctaButton && (
             <DropdownMenu.Item>
@@ -67,7 +87,7 @@ const Dropdown: DropdownComponent = ({
               />
             </DropdownMenu.Item>
           )}
-        </div>
+        </Transition>
       </DropdownMenu.Content>
     </DropdownMenu.Root>
   )
