@@ -3,6 +3,7 @@ import React, { forwardRef } from 'react'
 
 import { Text } from '../../../Base'
 import { Button, buttonSizeStyles, rootButtonStyles } from '../../../Primitives'
+import { SectionHeader, SectionHeaderComponent } from '../Section Header'
 import { Component as ComponentType, Props } from './SettingsHeader.types'
 
 /**
@@ -15,28 +16,12 @@ import { Component as ComponentType, Props } from './SettingsHeader.types'
  */
 
 const SettingsHeader: ComponentType = forwardRef(
-  <T extends React.ElementType = 'header'>(
-    {
-      as,
-      mode = 'initial',
-      onCancel,
-      onEditClick,
-      onSave,
-      title = 'Account',
-      ...otherProps
-    }: Props<T>,
+  <T extends SectionHeaderComponent>(
+    { mode = 'initial', onCancel, onEditClick, onSave, title = 'Account', ...otherProps }: Props<T>,
     ref?: PolymorphicRef<T>,
   ) => {
-    const Component = as || 'header'
-
     return (
-      <Component
-        className={cx(
-          'constellation flex justify-between items-center p-4 md:p-8 w-full text-title bg-background',
-        )}
-        ref={ref}
-        {...otherProps}
-      >
+      <SectionHeader ref={ref} {...otherProps}>
         <Text variant='title2' className='mt-0 mb-0 text-xl md:text-2xl'>
           {title}
         </Text>
@@ -75,7 +60,7 @@ const SettingsHeader: ComponentType = forwardRef(
             />
           </div>
         )}
-      </Component>
+      </SectionHeader>
     )
   },
 )

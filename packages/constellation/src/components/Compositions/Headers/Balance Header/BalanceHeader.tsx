@@ -3,6 +3,8 @@ import React, { forwardRef } from 'react'
 
 import { centsToDollarString } from '../../../../utils'
 import { SemanticColors, Text } from '../../../Base'
+import { IconButton } from '../../../Primitives'
+import { SectionHeader, SectionHeaderComponent } from '../Section Header'
 import { Component as ComponentType, Props } from './BalanceHeader.types'
 
 /**
@@ -15,37 +17,25 @@ import { Component as ComponentType, Props } from './BalanceHeader.types'
  */
 
 const BalanceHeader: ComponentType = forwardRef(
-  <T extends React.ElementType = 'header'>(
-    { as, balanceTotalCents = 0, subtitle, title, ...otherProps }: Props<T>,
+  <T extends SectionHeaderComponent>(
+    { balanceTotalCents = 0, icon, onIconClick, subtitle, title, ...otherProps }: Props<T>,
     ref?: PolymorphicRef<T>,
   ) => {
-    const Component = as || 'header'
-
     return (
-      <Component
-        className={cx(
-          'constellation flex justify-between items-center p-4 md:p-8 w-full text-title bg-background',
-        )}
-        ref={ref}
-        {...otherProps}
-      >
+      <SectionHeader ref={ref} {...otherProps}>
         <div className={cx('constellation flex flex-col')}>
-          <Text variant='micro' color={SemanticColors.title}>
-            Your Total |TICKER|
+          <Text variant='caption2' color={SemanticColors.title}>
+            {title}
           </Text>
-          <Text variant='paragraph1' className='mt-0 mb-0' color={SemanticColors.title}>
-            {centsToDollarString(balanceTotalCents)}
+          <Text variant='subheading' className='mt-0 mb-0' color={SemanticColors.title}>
+            {centsToDollarString(balanceTotalCents, 2)}
           </Text>
-          <Text variant='micro' color={SemanticColors.overlay}>
-            0.1393819 BTC
+          <Text variant='paragraph-mono' color={SemanticColors.overlay}>
+            {subtitle}
           </Text>
         </div>
-        <div>
-          <span aria-label='star' role='img'>
-            ⭐️
-          </span>
-        </div>
-      </Component>
+        <IconButton size='default' icon={icon} onClick={onIconClick} />
+      </SectionHeader>
     )
   },
 )
