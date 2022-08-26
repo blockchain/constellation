@@ -10,6 +10,10 @@ export interface TabsProps {
   onTabChange?: (value: Tab['key']) => void
   size: 'large' | 'small'
   tabs: Tab[]
+  /**
+   * Vlaue overrides the default selected behavior so the tabs can be controlled
+   * from outside the component.
+   */
   value?: Tab['key']
   variant: 'default' | 'minimal'
 }

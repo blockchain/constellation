@@ -15,8 +15,10 @@ import Dropdown from './NavigationDropdown'
 import NavigationTab from './NavigationTab'
 
 /**
- * Navigation is a component that displays a set of page indicators and arrows to
- * navigate between pages.
+ * Navigation a full header component that will allow for naivgation around the site.
+ * Navigation featuers a logo with title, navigation tabs, two editable CTA buttons,
+ * a referals buttons, a notification button, a profile, and a dropdown menu for
+ * mobile and table screen sizes.
  */
 
 const Navigation: NavigationComponent = ({
@@ -94,7 +96,11 @@ const Navigation: NavigationComponent = ({
         </div>
         <div className='flex-shrink-0 flex flex-row items-center'>
           <div className='hidden sm:flex flex-row items-center gap-2'>
-            {primaryButton?.text && <Button {...primaryButton} size='small' />}
+            {
+              primaryButton?.text && (
+                <Button {...primaryButton} size='small' />
+              ) /* TODO: add the wallet switcher when merged */
+            }
             {secondaryButton?.text && (
               <Button variant='minimal' size='small' {...secondaryButton} />
             )}
@@ -120,7 +126,7 @@ const Navigation: NavigationComponent = ({
             <div className='w-8 h-8 bg-medium rounded-full flex justify-center items-center'>
               EM
             </div>
-            {/* REPLACE THIS WITH PROFILE WHEN MERGED */}
+            {/* TODO: replace this with the profile component when merged */}
           </div>
           <IconButton
             onClick={() => setMenuIsOpen(!menuIsOpen)}
