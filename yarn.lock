@@ -4574,7 +4574,7 @@ __metadata:
     "@storybook/testing-library": 0.0.13
     "@svgr/rollup": ^6.2.1
     "@svgr/webpack": ^6.2.1
-    "@tailwindcss/line-clamp": ^0.4.0
+    "@tailwindcss/line-clamp": 0.4.0
     "@tanstack/react-table": 8.5.11
     "@testing-library/jest-dom": 5.16.1
     "@testing-library/react": 12.1.2
@@ -8490,7 +8490,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/line-clamp@npm:^0.4.0":
+"@tailwindcss/line-clamp@npm:0.4.0":
   version: 0.4.0
   resolution: "@tailwindcss/line-clamp@npm:0.4.0"
   peerDependencies:

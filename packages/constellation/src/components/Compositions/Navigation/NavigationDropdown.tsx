@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import cx from 'classnames'
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import { SemanticColors, Text } from '../../Base'
 import { Button } from '../../Primitives'

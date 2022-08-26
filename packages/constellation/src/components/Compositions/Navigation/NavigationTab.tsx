@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Text } from '../../Base'
 import { AlertDot } from '../index'
 
 const NavigationTab = ({ dot, text }: { dot?: boolean; text: string }) => {
