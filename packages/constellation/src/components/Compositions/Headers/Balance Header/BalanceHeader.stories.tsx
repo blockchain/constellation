@@ -7,7 +7,6 @@ import { BalanceHeader as RenderedBalanceHeader, BalanceHeaderComponent } from '
 export default {
   argTypes: {
     balanceTotalCents: { control: { type: 'number' } },
-    children: {},
     subtitle: { control: { type: 'text' } },
     title: { control: { type: 'text' } },
   },

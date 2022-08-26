@@ -30,7 +30,7 @@ const BalanceHeader: ComponentType = forwardRef(
           <Text variant='subheading' className='mt-0 mb-0' color={SemanticColors.title}>
             {centsToDollarString(balanceTotalCents, 2)}
           </Text>
-          <Text variant='paragraph-mono' color={SemanticColors.overlay}>
+          <Text variant='paragraph-mono' color={SemanticColors.muted}>
             {subtitle}
           </Text>
         </div>

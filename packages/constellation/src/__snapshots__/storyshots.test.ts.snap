@@ -4056,7 +4056,7 @@ exports[`Storyshots Compositions/Headers/BalanceHeader Balance Header 1`] = `
         $12,293.21
       </span>
       <span
-        className="constellation text-sm font-medium font-mono my-2.5 text-overlay text-start"
+        className="constellation text-sm font-medium font-mono my-2.5 text-muted text-start"
       >
         0.1393819 BTC
       </span>
