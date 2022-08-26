@@ -31,11 +31,18 @@ export default {
     title: 'Wallet',
   },
   component: NavigationComponent,
+  parameters: {
+    layout: 'fullscreen',
+  },
   title: 'Compositions/Navigation',
 } as ComponentMeta<NavigationComponentType>
 
 const Template: ComponentStory<NavigationComponentType> = (args) => {
-  return <NavigationComponent {...args} />
+  return (
+    <div>
+      <NavigationComponent {...args} />
+    </div>
+  )
 }
 
 export const Navigation = Template.bind({})
