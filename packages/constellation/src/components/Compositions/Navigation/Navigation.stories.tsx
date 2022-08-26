@@ -13,6 +13,20 @@ export default {
     onRefferalClick: { action: 'onRefferalClick' },
   },
   args: {
+    dropdownCtaButton: {
+      onClick: () => action('dropdownCtaButton.onClick')(),
+    },
+    dropdownSecondSectionItems: [
+      { key: 'general', label: 'General' },
+      { key: 'security', label: 'Security' },
+      { key: 'trading limits', label: 'Trading Limits' },
+      { key: 'preferences', label: 'Preferences' },
+      { key: 'wallets&addresses', label: 'Wallets & Addresses' },
+    ],
+    dropdownSecondSectionSeparator: {
+      key: 'account',
+      label: 'Account',
+    },
     navigationTabs: [
       { key: 'home', label: 'Home' },
       { key: 'prices', label: 'Prices' },

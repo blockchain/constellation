@@ -1,6 +1,3 @@
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
-import { useEffect } from '@storybook/addons'
-import cx from 'classnames'
 import React, { useMemo, useState } from 'react'
 
 import {
@@ -13,7 +10,8 @@ import {
   Text,
 } from '../../Base'
 import { Button, Divider, IconButton, Tabs } from '../../Primitives'
-import { NavigationComponent } from './Navigation.types'
+import { NavigationComponent, DropdownItem } from './Navigation.types'
+import Dropdown from './NavigationDropdown'
 import NavigationTab from './NavigationTab'
 
 /**
@@ -21,31 +19,10 @@ import NavigationTab from './NavigationTab'
  * navigate between pages.
  */
 
-const Dropdown: React.FC<{
-  onOpenChange: (open: boolean) => void
-  open: boolean
-}> = ({ children, onOpenChange, open }) => {
-  return (
-    <DropdownMenu.Root onOpenChange={onOpenChange} open={open}>
-      <DropdownMenu.Trigger disabled asChild>
-        {children}
-      </DropdownMenu.Trigger>
-
-      <DropdownMenu.Content
-        asChild
-        className='constellation w-screen h-[calc(100vh-56px)] bg-red-200 pt-4 px-6 pb-6 relative box-border'
-      >
-        <div>
-          <DropdownMenu.Item>
-            <Text>Item 1</Text>
-          </DropdownMenu.Item>
-        </div>
-      </DropdownMenu.Content>
-    </DropdownMenu.Root>
-  )
-}
-
 const Navigation: NavigationComponent = ({
+  dropdownCtaButton,
+  dropdownSecondSectionItems,
+  dropdownSecondSectionSeparator,
   navigationTabs,
   onNotificationClick,
   onRefferalClick,
@@ -60,10 +37,42 @@ const Navigation: NavigationComponent = ({
     }))
   }, [navigationTabs])
 
-  const [menuIsOpen, setMenuIsOpen] = useState(false)
+  const [menuIsOpen, setMenuIsOpen] = useState(true)
+  const selected = 'home'
+
+  const dropdownItems: DropdownItem[] = useMemo(() => {
+    const items = navigationTabs
+
+    if (onNotificationClick) {
+      items.push({ key: 'notifications', label: 'Notifications' })
+    }
+    if (onRefferalClick) {
+      items.push({ key: 'referrals', label: 'Referrals' })
+    }
+    if (dropdownSecondSectionSeparator) {
+      items.push({ ...dropdownSecondSectionSeparator, separator: true } as DropdownItem)
+    }
+    if (dropdownSecondSectionItems) {
+      items.push(...dropdownSecondSectionItems)
+    }
+
+    return items
+  }, [
+    navigationTabs,
+    onNotificationClick,
+    onRefferalClick,
+    dropdownSecondSectionSeparator,
+    dropdownSecondSectionItems,
+  ])
 
   return (
-    <Dropdown open={menuIsOpen} onOpenChange={setMenuIsOpen}>
+    <Dropdown
+      open={menuIsOpen}
+      onOpenChange={setMenuIsOpen}
+      items={dropdownItems}
+      selected={selected}
+      ctaButton={dropdownCtaButton}
+    >
       <div className='constellation flex flex-row items-center justify-between h-14 pl-6 pr-4 w-full bg-background border-b border-background-light mode-dark:border-dark-700'>
         <div className='flex flex-row items-center'>
           <IconBlockchainLogo size='medium' />
