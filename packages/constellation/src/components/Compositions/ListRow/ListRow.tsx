@@ -7,7 +7,7 @@ import { Logo } from '../index'
 import { ListRowComponent } from './ListRow.types'
 
 /**
- * TitleByline is an internarl component that handles the title and
+ * TitleByline is an internal component that handles the title and
  * byline on both the left and right side of the ListRow.
  */
 
