@@ -13,6 +13,7 @@ export default {
     onRefferalClick: { action: 'onRefferalClick' },
   },
   args: {
+    defaultSelected: 'home',
     dropdownCtaButton: {
       onClick: () => action('dropdownCtaButton.onClick')(),
     },
@@ -34,6 +35,7 @@ export default {
       { key: 'dex', label: 'DEX' },
       { key: 'card', label: 'Card' },
     ],
+    onSelectedChange: (selected: string) => action('onSelectedChange')(selected),
     primaryButton: {
       onClick: () => action('primaryButton.onClick')(),
       text: 'Buy / Sell',
@@ -42,7 +44,6 @@ export default {
       onClick: () => action('secondaryButton.onClick')(),
       text: 'Send / Receive',
     },
-    selected: 'home',
     title: 'Wallet',
   },
   component: NavigationComponent,
@@ -53,17 +54,7 @@ export default {
 } as ComponentMeta<NavigationComponentType>
 
 const Template: ComponentStory<NavigationComponentType> = (args) => {
-  const [selected, setSelected] = React.useState(args.selected)
-
-  return (
-    <div>
-      <NavigationComponent
-        {...args}
-        selected={selected}
-        onSelectedChange={(key) => setSelected(key)}
-      />
-    </div>
-  )
+  return <NavigationComponent {...args} />
 }
 
 export const Navigation = Template.bind({})

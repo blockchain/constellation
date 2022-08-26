@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 import {
   IconBlockchainLogo,
@@ -22,6 +22,7 @@ import NavigationTab from './NavigationTab'
  */
 
 const Navigation: NavigationComponent = ({
+  defaultSelected,
   dropdownCtaButton,
   dropdownSecondSectionItems,
   dropdownSecondSectionSeparator,
@@ -31,7 +32,7 @@ const Navigation: NavigationComponent = ({
   onSelectedChange,
   primaryButton,
   secondaryButton,
-  selected,
+  selected: selectedOverride,
   title,
 }) => {
   const tabs = useMemo(() => {
@@ -67,6 +68,21 @@ const Navigation: NavigationComponent = ({
   ])
 
   const [menuIsOpen, setMenuIsOpen] = useState(false)
+  const [selected, setSelected] = useState(selectedOverride || defaultSelected)
+
+  const handleSelectedChange = (selected: string) => {
+    if (onSelectedChange) {
+      onSelectedChange(selected)
+    }
+
+    setSelected(selected)
+  }
+
+  useEffect(() => {
+    if (selectedOverride) {
+      setSelected(selectedOverride)
+    }
+  }, [selectedOverride])
 
   return (
     <Dropdown
@@ -75,7 +91,7 @@ const Navigation: NavigationComponent = ({
       items={dropdownItems}
       selected={selected}
       ctaButton={dropdownCtaButton}
-      onSelectedChange={onSelectedChange}
+      onSelectedChange={handleSelectedChange}
     >
       <div className='constellation flex flex-row items-center justify-between h-14 pl-6 pr-4 w-full bg-background border-b border-background-light mode-dark:border-dark-700'>
         <div className='flex flex-row items-center'>
@@ -90,7 +106,7 @@ const Navigation: NavigationComponent = ({
               value={navigationTabs.find((tab) => tab.key === selected)?.key}
               size='small'
               variant='minimal'
-              onTabChange={onSelectedChange}
+              onTabChange={handleSelectedChange}
             />
           </div>
         </div>

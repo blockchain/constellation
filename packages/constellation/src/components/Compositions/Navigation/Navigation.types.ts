@@ -29,6 +29,10 @@ interface ctaButton {
 
 interface NavigationProps {
   /**
+   * The key for the default selected tab
+   */
+  defaultSelected: string
+  /**
    * The primary button displayed at the bottom of the dropdown.
    * This is usually a Sign Out button but does support other variants.
    */
@@ -69,9 +73,9 @@ interface NavigationProps {
    */
   secondaryButton?: Button
   /**
-   * A required key to identify the currently selected tab.
+   * Optional key to override the selected tab.
    */
-  selected: string
+  selected?: string
   /**
    * The title rendered right after the logo at the start of the header.
    */
