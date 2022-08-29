@@ -1,5 +1,5 @@
 import cx from 'classnames'
-import React, { ReactElement } from 'react'
+import React, { ReactNode } from 'react'
 
 import { IconChevronRightV2, IconProps, PaletteColors, SemanticColors, Text } from '../../Base'
 import { Switch, Tag } from '../../Primitives'
@@ -16,9 +16,9 @@ const TitleByline = ({
   icon,
   title,
 }: {
-  byline?: string
-  icon?: React.ReactNode
-  title?: string
+  byline?: string | ReactNode
+  icon?: ReactNode
+  title?: string | ReactNode
 }) =>
   title || byline ? (
     <div className='flex flex-col justify-center gap-[3px]'>
@@ -38,6 +38,17 @@ const TitleByline = ({
     </div>
   ) : null
 
+const borderStyles = {
+  all: 'border',
+  bottom: 'border-b',
+  horizontal: 'border-x',
+  left: 'border-l',
+  none: 'border-none',
+  right: 'border-r',
+  top: 'border-t',
+  vertical: 'border-y',
+}
+
 /**
  * List Row is a component that allows information to be
  * displayed and for the user to take actions on that information.
@@ -45,6 +56,7 @@ const TitleByline = ({
 
 const ListRow: ListRowComponent = ({
   as,
+  border = 'none',
   description,
   icon,
   imgAlt,
@@ -74,11 +86,13 @@ const ListRow: ListRowComponent = ({
   return (
     <Component
       className={cx(
-        'constellation flex flex-row gap-4 p-4 bg-background w-full items-center',
+        'constellation flex flex-row gap-4 p-4 bg-background w-full items-center border-background-light',
         {
           'cursor-pointer': onClick,
         },
         { '!items-start': hasDescription },
+        borderStyles[border],
+        { 'rounded-lg': border === 'all' },
       )}
       onClick={onClick}
     >

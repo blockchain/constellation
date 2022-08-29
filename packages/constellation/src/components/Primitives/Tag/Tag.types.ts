@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 export type TagVariants = 'default' | 'alt' | 'success' | 'warning' | 'error'
 export type TagSizes = 'default' | 'large'
@@ -9,7 +9,7 @@ export type Props = {
   /**
    * Text content of tag
    */
-  content: string
+  content: string | ReactNode
 
   /**
    * The size of the tag, from a range of variants.

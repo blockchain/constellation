@@ -1,5 +1,5 @@
 import { SwitchProps } from '@radix-ui/react-switch'
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 import { TagVariants } from '../../Primitives/Tag/Tag.types'
 import { LogoProps } from '../Logo'
@@ -29,24 +29,25 @@ type ListRowProps = imgProps & {
    * cannot be the child of a button.
    */
   as: 'button' | 'div'
+  border?: 'top' | 'bottom' | 'left' | 'right' | 'all' | 'vertical' | 'horizontal' | 'none'
   /**
    * Description is the main content of a Large list row
    * weather of not a list row has a "large" layout is
    * based on if description exists.
    */
-  description?: string
+  description?: string | ReactNode
   /**
    * The icon displayed before the left title and byline
    */
-  icon?: React.ReactNode
+  icon?: ReactNode
   /**
    * The main byline on the left side fo the row
    */
-  leftByline?: string
+  leftByline?: string | ReactNode
   /**
    * The left title is the main title of the row, it is required
    */
-  leftTitle: string
+  leftTitle: string | ReactNode
   /**
    * Props passed on to the Logo component displayed on the left
    * side of the row
@@ -65,11 +66,15 @@ type ListRowProps = imgProps & {
   /**
    * The secondary byline displated on the right side of the row
    */
-  rightByline?: string
+  rightByline?: string | ReactNode
   /**
    * The secondary title displayed on the right side of the row
    */
-  rightTitle?: string
+  rightTitle?: string | ReactNode
+  /**
+   * Makes the border rounded
+   */
+  rounded?: boolean
   /**
    * By default the arrow is displated when the onClick prop exists.
    * However showArrow and override this.
@@ -78,7 +83,7 @@ type ListRowProps = imgProps & {
   /**
    * The text to be displayed in the tag. This prop existing displays the tag.
    */
-  tagText?: string
+  tagText?: string | ReactNode
   /**
    * The color variant of the tag.
    */
