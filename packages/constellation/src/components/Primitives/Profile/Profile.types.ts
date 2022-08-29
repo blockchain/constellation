@@ -8,7 +8,7 @@ interface FallbackProps {
   /**
    * The size of the profile component.
    */
-  size: 'small' | 'large'
+  size?: 'small' | 'large'
 }
 
 type ProfileProps<T extends React.ElementType> = PolymorphicComponentPropsWithRef<

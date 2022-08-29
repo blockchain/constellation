@@ -19,7 +19,7 @@ import { ProfileComponent, ProfileProps } from './Profile.types'
 
 const Profile: ProfileComponent = forwardRef(
   <T extends React.ElementType = 'button'>(
-    { as, imgSrc, name, size, ...otherProps }: ProfileProps<T>,
+    { as, imgSrc, name, size = 'small', ...otherProps }: ProfileProps<T>,
     ref?: PolymorphicRef<T>,
   ) => {
     const sizeStyles = {

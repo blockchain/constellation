@@ -35,7 +35,7 @@ export type WalletProps<T extends React.ElementType> = PolymorphicComponentProps
      */
     id: string
     /**
-     * Changes the colour of the dot
+     * Changes the color of the dot
      */
     status: 'success' | 'warning' | 'error'
     /**
