@@ -1,13 +1,13 @@
 import randomColor from 'randomcolor'
 
-const genGradient = (name: string) => {
+const genGradient = (name: string, storyshotOverride?: boolean) => {
   const fullName = name.split(' ')
 
   const rand = Math.random()
 
-  const angle = rand * 360
-  const firstPercent = rand * 30 + 10 // between 10-40%
-  const secondPercent = rand * 30 + 60 // between 70-90%
+  const angle = storyshotOverride ? 42 : rand * 360
+  const firstPercent = storyshotOverride ? 30 : rand * 30 + 10 // between 10-40%
+  const secondPercent = storyshotOverride ? 70 : rand * 30 + 60 // between 70-90%
 
   const firstColor = randomColor({
     format: 'hex',

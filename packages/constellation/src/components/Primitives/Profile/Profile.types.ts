@@ -6,9 +6,14 @@ interface FallbackProps {
    */
   name: string
   /**
-   * The size of the priofile component.
+   * The size of the profile component.
    */
-  size: 'small' | 'large'
+  size?: 'small' | 'large'
+  /**
+   * Allows the angle of the gradient to be overridden. This is
+   * allows the classNames to be consistent across for storyshot tests.
+   */
+  storyshotOverride?: boolean
 }
 
 type ProfileProps<T extends React.ElementType> = PolymorphicComponentPropsWithRef<

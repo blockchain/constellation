@@ -79,7 +79,7 @@ const InternalLogo: InternalLogoComponent = ({
     <Avatar.Root
       className={cx(
         { '!rounded-full': circle },
-        'rounded flex justify-center items-center bg-primary relative overflow-hidden w-',
+        'rounded flex justify-center items-center bg-primary relative overflow-hidden',
         variantStyles[variant],
         className,
       )}
