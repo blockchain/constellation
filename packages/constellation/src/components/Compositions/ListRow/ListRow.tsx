@@ -69,6 +69,7 @@ const ListRow: ListRowComponent = ({
   }
 
   const hasDescription = description
+  const Icon = icon as React.FC<IconProps>
 
   return (
     <Component
@@ -82,14 +83,7 @@ const ListRow: ListRowComponent = ({
       onClick={onClick}
     >
       <div className={cx('flex flex-row items-center gap-4', { '!h-[47px]': hasDescription })}>
-        {icon &&
-          React.cloneElement(
-            icon as ReactElement<IconProps>,
-            {
-              color: PaletteColors['grey-400'],
-              size: 'medium',
-            } as IconProps,
-          )}
+        {icon && <Icon color={PaletteColors['grey-400']} size='medium' />}
         {logoProps && <Logo {...logoProps} />}
         {imgSrc && imgAlt && <Logo circle={false} primaryContent={{ imgSrc, text: imgAlt }} />}
       </div>

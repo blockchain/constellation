@@ -60,7 +60,7 @@ const Template: ComponentStory<ListRowComponentType> = ({
     <ListRowComponent
       {...args}
       onToggleChange={showToggle ? onToggleChange : undefined}
-      icon={icon && <Icon />}
+      icon={Icon}
       titleIcon={titleIcon && <TitleIcon />}
     />
   )
