@@ -3920,14 +3920,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-7"
+    id="radix-15"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-7"
+      aria-labelledby="radix-15"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -3962,14 +3962,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-9"
+    id="radix-17"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={true}
-      aria-labelledby="radix-9"
+      aria-labelledby="radix-17"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="checked"
@@ -4009,14 +4009,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-11"
+    id="radix-19"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-11"
+      aria-labelledby="radix-19"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -4215,6 +4215,323 @@ exports[`Storyshots Compositions/Modal Modal 1`] = `
 >
   Click
 </button>
+`;
+
+exports[`Storyshots Compositions/Navigation Navigation 1`] = `
+Array [
+  <div
+    aria-haspopup="menu"
+    className="constellation flex flex-row items-center justify-between h-14 pl-6 pr-4 w-full bg-background border-b border-background-light mode-dark:border-dark-700"
+    data-disabled=""
+    data-state="closed"
+    disabled={true}
+    id="radix-9"
+    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    type="button"
+  >
+    <div
+      className="flex flex-row items-center"
+    >
+      <icon-blockchain-logo.svg
+        color="inherit"
+        fill="currentColor"
+        focusable="false"
+        height="1.5rem"
+        width="1.5rem"
+        xmlns="http://www.w3.org/2000/svg"
+      />
+      <span
+        className="constellation text-xl font-semibold my-4 text-title text-start ml-2 mr-8"
+      >
+        Wallet
+      </span>
+      <div
+        className="hidden lg:block"
+      >
+        <div
+          data-orientation="horizontal"
+          dir="ltr"
+        >
+          <div
+            aria-orientation="horizontal"
+            className="constellation flex w-full rounded-[10px] p-[2px] bg-background-ultra-light bg-transparent gap-4 justify-start"
+            data-orientation="horizontal"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="tablist"
+            style={
+              Object {
+                "outline": "none",
+              }
+            }
+            tabIndex={0}
+          >
+            <button
+              aria-controls="radix-8-content-home"
+              aria-selected={true}
+              className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent border border-transparent radix-state-active:border-background-light radix-state-active:mode-dark:bg-dark-800 radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors  focus-visible:!ring-0"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-state="active"
+              disabled={false}
+              id="radix-8-trigger-home"
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="tab"
+              tabIndex={-1}
+              type="button"
+            >
+              <span
+                className="constellation text-sm font-medium px-3 border-r border-r-transparent text relative"
+              >
+                Home
+              </span>
+            </button>
+            <button
+              aria-controls="radix-8-content-prices"
+              aria-selected={false}
+              className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent border border-transparent radix-state-active:border-background-light radix-state-active:mode-dark:bg-dark-800 radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors  focus-visible:!ring-0"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-state="inactive"
+              disabled={false}
+              id="radix-8-trigger-prices"
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="tab"
+              tabIndex={-1}
+              type="button"
+            >
+              <span
+                className="constellation text-sm font-medium px-3 border-r border-r-transparent text relative"
+              >
+                Prices
+              </span>
+            </button>
+            <button
+              aria-controls="radix-8-content-rewards"
+              aria-selected={false}
+              className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent border border-transparent radix-state-active:border-background-light radix-state-active:mode-dark:bg-dark-800 radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors  focus-visible:!ring-0"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-state="inactive"
+              disabled={false}
+              id="radix-8-trigger-rewards"
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="tab"
+              tabIndex={-1}
+              type="button"
+            >
+              <span
+                className="constellation text-sm font-medium px-3 border-r border-r-transparent text relative"
+              >
+                Rewards
+                <div
+                  className="constellation w-2 h-2 rounded-full outline-1 outline outline-background mode-light:bg-pink-500 mode-dark:bg-pink-400 absolute left-1/2 -translate-x-1/2"
+                />
+              </span>
+            </button>
+            <button
+              aria-controls="radix-8-content-dex"
+              aria-selected={false}
+              className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent border border-transparent radix-state-active:border-background-light radix-state-active:mode-dark:bg-dark-800 radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors  focus-visible:!ring-0"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-state="inactive"
+              disabled={false}
+              id="radix-8-trigger-dex"
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="tab"
+              tabIndex={-1}
+              type="button"
+            >
+              <span
+                className="constellation text-sm font-medium px-3 border-r border-r-transparent text relative"
+              >
+                DEX
+              </span>
+            </button>
+            <button
+              aria-controls="radix-8-content-card"
+              aria-selected={false}
+              className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent border border-transparent radix-state-active:border-background-light radix-state-active:mode-dark:bg-dark-800 radix-state-active:!border-blue-000 radix-state-active:bg-blue-000 mode-dark:radix-state-active:!bg-dark-800 mode-dark:radix-state-active:!border-dark-800 mode-dark:radix-state-active:!text-white-000 hover:text-primary mode-dark:hover:text-white-000 transition-colors  focus-visible:!ring-0"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-state="inactive"
+              disabled={false}
+              id="radix-8-trigger-card"
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="tab"
+              tabIndex={-1}
+              type="button"
+            >
+              <span
+                className="constellation text-sm font-medium px-3 border-r border-r-transparent text relative"
+              >
+                Card
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex-shrink-0 flex flex-row items-center"
+    >
+      <div
+        className="hidden sm:flex flex-row items-center gap-2"
+      >
+        <button
+          className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "var(--color-title)",
+            }
+          }
+          type="button"
+        >
+          <div
+            className="constellation w-8 h-10 relative flex justify-center items-center !w-5 !h-8"
+          >
+            <span
+              className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-5 h-5"
+            >
+              <span>
+                <div
+                  className="text-white-000 text-[6px]"
+                >
+                  ETH
+                </div>
+              </span>
+            </span>
+          </div>
+          14qV...k3gd
+        </button>
+        <button
+          className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Buy / Sell
+        </button>
+        <button
+          className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Send / Receive
+        </button>
+      </div>
+      <div
+        className="flex-row items-center gap-2 hidden lg:flex"
+      >
+        <div
+          aria-orientation="vertical"
+          className="constellation bg-background-light mode-dark:bg-dark-700 h-full w-px !h-4 mx-2"
+          data-orientation="vertical"
+          role="separator"
+        />
+        <button
+          className="constellation flex relative rounded-full overflow-hidden outline outline-0 outline-overlay-dark-200 hover:outline-2 active:outline-2 p-0 no-underline cursor-pointer w-6 h-6"
+          onClick={[Function]}
+        >
+          <span
+            className="flex justify-center items-center w-full h-full"
+            style={
+              Object {
+                "background": "linear-gradient(46.81054903641028deg, #fce8b5 13.900879086367524%, #7aef97 63.900879086367524%)",
+              }
+            }
+          >
+            <span
+              className="font-semibold text-black text-[10px]"
+            >
+              JD
+            </span>
+          </span>
+        </button>
+      </div>
+      <button
+        className="!text-grey-300 hover:!text-grey-400 transition-colors border-none !p-0 !h-fit ml-3 lg:hidden bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <icon-menu.svg
+          color="inherit"
+          fill="currentColor"
+          focusable="false"
+          height="1.5rem"
+          width="1.5rem"
+          xmlns="http://www.w3.org/2000/svg"
+        />
+        
+      </button>
+    </div>
+  </div>,
+  <div
+    data-radix-popper-content-wrapper=""
+    style={
+      Object {
+        "--radix-popper-transform-origin": " ",
+        "left": 0,
+        "minWidth": "max-content",
+        "position": "fixed",
+        "top": 0,
+        "transform": "translate3d(0, -200%, 0)",
+        "zIndex": undefined,
+      }
+    }
+  >
+    <div
+      aria-labelledby="radix-9"
+      aria-orientation="vertical"
+      className="constellation overflow-hidden"
+      data-align="center"
+      data-orientation="vertical"
+      data-side="bottom"
+      data-state="closed"
+      dir="ltr"
+      id="radix-10"
+      onBlur={[Function]}
+      onBlurCapture={[Function]}
+      onFocus={[Function]}
+      onFocusCapture={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onPointerDownCapture={[Function]}
+      onPointerMove={[Function]}
+      onScrollCapture={[Function]}
+      onTouchMoveCapture={[Function]}
+      onWheelCapture={[Function]}
+      role="menu"
+      style={
+        Object {
+          "--radix-dropdown-menu-content-transform-origin": "var(--radix-popper-transform-origin)",
+          "animation": "none",
+          "opacity": undefined,
+          "outline": "none",
+          "pointerEvents": undefined,
+        }
+      }
+      tabIndex={-1}
+    />
+  </div>,
+]
 `;
 
 exports[`Storyshots Compositions/Pager Pager 1`] = `
@@ -5107,14 +5424,14 @@ exports[`Storyshots Primitives/Buttons/Link Link 1`] = `
 exports[`Storyshots Primitives/Controls/Checkbox Checkbox 1`] = `
 <span
   className="constellation inline-flex gap-2 items-center text-body"
-  id="radix-3"
+  id="radix-11"
   onClick={[Function]}
   onMouseDown={[Function]}
   role="label"
 >
   <button
     aria-checked={false}
-    aria-labelledby="radix-3"
+    aria-labelledby="radix-11"
     className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none"
     data-state="unchecked"
     id="option1"
@@ -5163,14 +5480,14 @@ exports[`Storyshots Primitives/Controls/Radio Radio 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-5"
+    id="radix-13"
     onClick={[Function]}
     onMouseDown={[Function]}
     role="label"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-5"
+      aria-labelledby="radix-13"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -5209,7 +5526,7 @@ exports[`Storyshots Primitives/Controls/Radio Radio 1`] = `
 exports[`Storyshots Primitives/Controls/Switch Switch 1`] = `
 <span
   className="constellation flex gap-3 text-body flex-row items-center"
-  id="radix-12"
+  id="radix-20"
   onClick={[Function]}
   onMouseDown={[Function]}
   role="label"
@@ -5269,7 +5586,7 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
 >
   <button
     aria-autocomplete="none"
-    aria-controls="radix-13"
+    aria-controls="radix-21"
     aria-expanded={false}
     className="constellation flex justify-between items-center px-4 py-3.5 w-72 cursor-pointer transition-all truncate rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 !bg-background-light !text-muted font-normal"
     data-placeholder=""
@@ -5326,11 +5643,11 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
       }
     >
       <div
-        aria-labelledby="radix-17"
+        aria-labelledby="radix-25"
         role="group"
       >
         <div
-          aria-labelledby="radix-14"
+          aria-labelledby="radix-22"
           aria-selected={false}
           className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
           data-radix-collection-item=""
@@ -5353,13 +5670,13 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           />
           <span
-            id="radix-14"
+            id="radix-22"
           >
             All Wallets
           </span>
         </div>
         <div
-          aria-labelledby="radix-15"
+          aria-labelledby="radix-23"
           aria-selected={false}
           className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
           data-radix-collection-item=""
@@ -5382,13 +5699,13 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           />
           <span
-            id="radix-15"
+            id="radix-23"
           >
             Second
           </span>
         </div>
         <div
-          aria-labelledby="radix-16"
+          aria-labelledby="radix-24"
           aria-selected={false}
           className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
           data-radix-collection-item=""
@@ -5411,7 +5728,7 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           />
           <span
-            id="radix-16"
+            id="radix-24"
           >
             Third
           </span>
@@ -5631,14 +5948,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
       tabIndex={0}
     >
       <button
-        aria-controls="radix-22-content-tab1"
+        aria-controls="radix-30-content-tab1"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1 radix-state-active:drop-shadow-control radix-state-active:bg-background"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-22-trigger-tab1"
+        id="radix-30-trigger-tab1"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5653,14 +5970,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-22-content-tab2"
+        aria-controls="radix-30-content-tab2"
         aria-selected={true}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1 radix-state-active:drop-shadow-control radix-state-active:bg-background"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
         disabled={false}
-        id="radix-22-trigger-tab2"
+        id="radix-30-trigger-tab2"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5675,14 +5992,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-22-content-tab3"
+        aria-controls="radix-30-content-tab3"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1 radix-state-active:drop-shadow-control radix-state-active:bg-background"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-22-trigger-tab3"
+        id="radix-30-trigger-tab3"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -5697,14 +6014,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-22-content-tab4"
+        aria-controls="radix-30-content-tab4"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1 radix-state-active:drop-shadow-control radix-state-active:bg-background"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-22-trigger-tab4"
+        id="radix-30-trigger-tab4"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}

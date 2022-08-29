@@ -49,6 +49,13 @@ export default {
       name: 'John Doe',
       onClick: () => action('user.onClick')(),
     },
+    walletButton: {
+      id: '14qViLJfdGaP4EeHnDyJbEGQysnCpwk3gd',
+      imgAlt: 'ETH',
+      imgSrc:
+        'https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/ZJZZK5B2ZNF25LYQHMUTBTOMLU.png',
+      onClick: () => action('walletButton.onClick')(),
+    },
   },
   component: NavigationComponent,
   parameters: {

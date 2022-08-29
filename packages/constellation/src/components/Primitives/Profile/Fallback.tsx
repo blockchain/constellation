@@ -12,7 +12,7 @@ import { FallbackComponent } from './Profile.types'
  * those to create a gradient.
  */
 
-const Fallback: FallbackComponent = ({ name, size }) => {
+const Fallback: FallbackComponent = ({ name, size = 'small' }) => {
   const textSizeStyles = {
     large: 'text-5xl',
     small: 'text-[10px]',

@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 
+import { truncateId } from '../../../utils'
 import {
   IconBlockchainLogo,
   IconClose,
@@ -10,6 +11,7 @@ import {
   Text,
 } from '../../Base'
 import { Button, Divider, IconButton, Profile, Tabs } from '../../Primitives'
+import { Logo } from '../index'
 import { DropdownItem, NavigationComponent } from './Navigation.types'
 import Dropdown from './NavigationDropdown'
 import NavigationTab from './NavigationTab'
@@ -35,6 +37,7 @@ const Navigation: NavigationComponent = ({
   selected: selectedOverride,
   title,
   user,
+  walletButton,
 }) => {
   const tabs = useMemo(() => {
     return navigationTabs.map(({ dot, key, label }) => ({
@@ -85,6 +88,11 @@ const Navigation: NavigationComponent = ({
     }
   }, [selectedOverride])
 
+  const truncatedWalletId = useMemo(
+    () => (walletButton?.id ? truncateId(walletButton.id, 11) : ''),
+    [walletButton?.id],
+  )
+
   return (
     <Dropdown
       open={menuIsOpen}
@@ -113,11 +121,25 @@ const Navigation: NavigationComponent = ({
         </div>
         <div className='flex-shrink-0 flex flex-row items-center'>
           <div className='hidden sm:flex flex-row items-center gap-2'>
-            {
-              primaryButton?.text && (
-                <Button {...primaryButton} size='small' />
-              ) /* TODO: add the wallet switcher when merged */
-            }
+            {walletButton && (
+              <Button
+                variant='minimal'
+                size='small'
+                text={truncatedWalletId}
+                onClick={walletButton.onClick}
+                style={{ color: SemanticColors.title }}
+                prefix={
+                  <Logo
+                    size='small'
+                    primaryContent={{
+                      imgSrc: walletButton.imgSrc,
+                      text: walletButton.imgAlt,
+                    }}
+                  />
+                }
+              />
+            )}
+            {primaryButton?.text && <Button {...primaryButton} size='small' />}
             {secondaryButton?.text && (
               <Button variant='minimal' size='small' {...secondaryButton} />
             )}
