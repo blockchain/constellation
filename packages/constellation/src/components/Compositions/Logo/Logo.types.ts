@@ -9,8 +9,9 @@ type InternalLogoProps = {
   icon: ReactNode
   iconColor?: Colors
   imgSrc?: string
-  size?: 'base' | 'double' | 'badge' | 'large'
+  size?: 'small' | 'base' | 'large'
   text?: string
+  variant?: 'base' | 'double' | 'badge'
 }
 
 type InternalLogoComponent = FC<InternalLogoProps>
@@ -38,7 +39,7 @@ type LogoProps = {
   doubleVariant?: 'primary' | 'badge'
   primaryContent: Content
   secondaryContent?: Content
-  singleVariant?: 'base' | 'large'
+  size?: 'base' | 'large' | 'small'
 }
 
 type LogoComponent = FC<LogoProps>

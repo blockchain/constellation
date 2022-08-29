@@ -52,7 +52,7 @@ export default {
     'primaryContent.iconColor': '#fff',
     'primaryContent.text': 'TEST',
     'secondaryContent.iconColor': '#fff',
-    singleVariant: 'base',
+    size: 'base',
   },
   component: LogoComponent,
   title: 'Compositions/Logo',
@@ -83,7 +83,7 @@ const Template: StoryComponent = ({
   'secondaryContent.iconColor': secondaryIconColor,
   'secondaryContent.imgSrc': secondaryImgSrc,
   'secondaryContent.text': secondaryText,
-  singleVariant,
+  size,
 }) => {
   const PrimaryIcon = primaryIcon && (Icons[primaryIcon as keyof typeof Icons] as React.FC)
   const SecondaryIcon = secondaryIcon && (Icons[secondaryIcon as keyof typeof Icons] as React.FC)
@@ -110,7 +110,7 @@ const Template: StoryComponent = ({
           text: secondaryText,
         }
       }
-      singleVariant={singleVariant}
+      size={size}
     />
   )
 }
