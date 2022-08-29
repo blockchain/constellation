@@ -3798,7 +3798,7 @@ exports[`Storyshots Compositions/Cards/Card Card 1`] = `
       className="constellation w-8 h-10 relative flex justify-center items-center"
     >
       <span
-        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
+        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-8 h-8"
       >
         <span>
           <div
@@ -3839,7 +3839,7 @@ exports[`Storyshots Compositions/Cards/CtaCard Cta Card 1`] = `
       className="constellation w-8 h-10 relative flex justify-center items-center"
     >
       <span
-        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
+        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-8 h-8"
         style={
           Object {
             "backgroundColor": "var(--color-blue-000)",
@@ -4250,7 +4250,7 @@ exports[`Storyshots Compositions/Logo Logo 1`] = `
   className="constellation w-8 h-10 relative flex justify-center items-center"
 >
   <span
-    className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
+    className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-8 h-8"
   >
     <span>
       <div
@@ -5593,6 +5593,79 @@ Array [
     }
   />,
 ]
+`;
+
+exports[`Storyshots Primitives/Switcher/Switcher Switcher 1`] = `
+<button
+  className="constellation bg-background-light outline-none flex items-center rounded-full p-2 pr-3 gap-2 h-8 cursor-pointer !h-12 !rounded-lg"
+  disabled={false}
+  type="button"
+>
+  <div
+    className="constellation w-8 h-10 relative flex justify-center items-center !w-5 !h-8"
+  >
+    <span
+      className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-5 h-5"
+    >
+      <span>
+        <div
+          className="text-white-000 text-[4px]"
+        >
+          Bitcoin
+        </div>
+      </span>
+    </span>
+  </div>
+  <div
+    className="flex flex-col"
+  >
+    <span
+      className="constellation text-base font-medium my-3 text-title text-start !m-0"
+    >
+      BTC
+    </span>
+    <span
+      className="constellation text-xs font-medium my-2 text-body text-start !m-0"
+    >
+      Bitcoin
+    </span>
+  </div>
+  <icon-chevron-right-v2.svg
+    className="-ml-2"
+    color="var(--color-grey-400)"
+    fill="currentColor"
+    focusable="false"
+    height={20}
+    width={20}
+    xmlns="http://www.w3.org/2000/svg"
+  />
+</button>
+`;
+
+exports[`Storyshots Primitives/Switcher/WalletSwitcher Wallet Switcher 1`] = `
+<button
+  className="constellation flex items-center rounded-lg bg-background-light gap-2 p-[3px] pl-2 cursor-pointer"
+  disabled={false}
+  type="button"
+>
+  <span
+    className="constellation text-xs font-medium my-2 text-body text-start !m-0 text-body"
+  >
+    14qV...k3gd
+  </span>
+  <div
+    className="flex flex-row items-center gap-1 bg-medium px-2 rounded-md"
+  >
+    <span
+      className="constellation text-xs font-medium my-2 text-body text-start !m-0"
+    >
+      BTC
+    </span>
+    <div
+      className="w-[6px] h-[6px] rounded-full bg-success"
+    />
+  </div>
+</button>
 `;
 
 exports[`Storyshots Primitives/Tabs Tabs 1`] = `

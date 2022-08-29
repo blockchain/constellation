@@ -63,10 +63,7 @@ const Card: CardComponent = ({
     >
       <div className='flex flex-row items-center gap-2'>
         {logoContent && (
-          <Logo
-            primaryContent={logoContent}
-            singleVariant={isDefault || isCta ? 'base' : 'large'}
-          />
+          <Logo primaryContent={logoContent} size={isDefault || isCta ? 'base' : 'large'} />
         )}
         {header}
       </div>
