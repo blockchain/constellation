@@ -12,11 +12,19 @@ export default {
         type: 'radio',
       },
     },
+    storyshotOverride: {
+      control: {
+        type: 'boolean',
+      },
+      description:
+        'Used to override the gradient angle. This allows the storyshot tests to pass. Disable this to see the randomized gradient angle.',
+    },
   },
   args: {
     imgSrc: 'https://picsum.photos/200',
     name: 'Lorenzo Von Matterhorn',
     size: 'large',
+    storyshotOverride: true,
   },
   component: ProfileComponent,
   title: 'Primitives/Profile',
@@ -27,7 +35,3 @@ const Template: ComponentStory<ProfileComponentTypes> = (args) => {
 }
 
 export const Profile = Template.bind({})
-
-Profile.parameters = {
-  storyshots: { disable: true }, // because of the random gradient the snapshot will always be different.
-}

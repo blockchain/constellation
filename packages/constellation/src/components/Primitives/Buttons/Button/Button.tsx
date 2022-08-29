@@ -71,6 +71,7 @@ const Button: ComponentType = forwardRef(
       icon,
       inline = false,
       loaderVariant,
+      prefix,
       size = 'default',
       state = 'initial',
       text,
@@ -107,6 +108,7 @@ const Button: ComponentType = forwardRef(
       >
         {state === 'initial' && (
           <>
+            {prefix && prefix}
             {icon && icon}
             {text}
           </>

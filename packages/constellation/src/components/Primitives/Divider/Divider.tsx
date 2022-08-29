@@ -21,12 +21,12 @@ const orientationClasses: Record<DividerOrientations, string> = {
 }
 
 const Divider = forwardRef<HTMLDivElement, Props>(
-  ({ orientation = 'horizontal', variant = 'subtle', ...otherProps }, ref) => {
+  ({ className, orientation = 'horizontal', variant = 'subtle', ...otherProps }, ref) => {
     const variantClass = variantClasses[variant]
     const orientationClass = orientationClasses[orientation]
     return (
       <Root
-        className={cx('constellation', variantClass, orientationClass)}
+        className={cx('constellation', variantClass, orientationClass, className)}
         ref={ref}
         orientation={orientation}
         {...otherProps}

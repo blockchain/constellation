@@ -23,17 +23,21 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
      */
     loaderVariant?: SpinningLoaderProps['variant']
     /**
+     * Content to be displayed before the text
+     */
+    prefix?: React.ReactNode
+    /**
      * The size of the button, from a range of variants.
      */
     size?: Sizes
     /**
-     * An optional visual progress indication of a tiggered button action
+     * An optional visual progress indication of a triggered button action
      */
     state?: ButtonState
     /**
      * Text content of button
      */
-    text: string
+    text: string | React.ReactNode
     /**
      * The stylistic variant to use when rendering.
      */
