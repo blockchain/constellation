@@ -1,8 +1,9 @@
 import * as Avatar from '@radix-ui/react-avatar'
 import cx from 'classnames'
-import randomColor from 'randomcolor'
 import React, { useMemo } from 'react'
 
+import genSeededGradient from '../../../utils/genSeededGradient'
+import getInitials from '../../../utils/getInitials'
 import { FallbackComponent } from './Profile.types'
 
 /**
@@ -18,31 +19,8 @@ const Fallback: FallbackComponent = ({ name, size }) => {
   }
 
   const { gradient, initials } = useMemo(() => {
-    const fullName = name.split(' ')
-    const firstInitial = fullName[0][0]
-    const lastInitial = fullName.length > 1 ? fullName[fullName.length - 1][0] || '' : ''
-
-    const initials = `${firstInitial}${lastInitial}`.toUpperCase()
-
-    const rand = Math.random()
-
-    const angle = rand * 360
-    const firstPercent = rand * 30 + 10 // between 10-40%
-    const secondPercent = rand * 30 + 60 // between 70-90%
-
-    const firstColor = randomColor({
-      format: 'hex',
-      luminosity: 'light',
-      seed: fullName[0],
-    })
-
-    const secondColor = randomColor({
-      format: 'hex',
-      luminosity: 'light',
-      seed: fullName[fullName.length - 1],
-    })
-
-    const gradient = `linear-gradient(${angle}deg, ${firstColor} ${firstPercent}%, ${secondColor} ${secondPercent}%)`
+    const initials = getInitials(name)
+    const gradient = genSeededGradient(name)
 
     return { gradient, initials }
   }, [name])
