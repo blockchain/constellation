@@ -19,6 +19,8 @@ import {
  * prop value). This includes all appropriate HTML attributes or aria tags. This
  * component may have its underlying DOM customized via the 'as' prop.
  */
+export const rootStyles =
+  'constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2'
 
 export const variantStyles: Record<ButtonVariants, string> = {
   alert:
@@ -32,7 +34,7 @@ export const variantStyles: Record<ButtonVariants, string> = {
     'rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600',
 }
 
-const sizeStyles: Record<Sizes, string> = {
+export const sizeStyles: Record<Sizes, string> = {
   default: 'px-6 py-3 text-base h-12',
   large: 'px-10 py-4 text-xl h-16',
   noPadding: 'p-0',
