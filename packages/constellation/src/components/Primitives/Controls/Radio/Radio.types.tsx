@@ -10,7 +10,7 @@ export type Props = RadioGroupItemProps & {
   /**
    * The text content of the Radio item
    */
-  label?: string
+  label?: string | React.ReactNode
   /**
    * The semantic color of the text
    */
