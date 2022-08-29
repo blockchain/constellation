@@ -1,5 +1,5 @@
 import { DialogContentProps, DialogProps } from '@radix-ui/react-dialog'
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 import { CheckboxProps } from '../../Primitives'
 
@@ -7,9 +7,9 @@ export interface FlyoutHeaderProps {
   /**
    * An optional accessible description to be rendered and announced when the dialog is opened.
    */
-  byline?: string
+  byline?: string | ReactNode
   /**
-   * Determins weather the flyout used a close 'X' button or a back arrow
+   * Determines weather the flyout used a close 'X' button or a back arrow
    */
   exitType: 'close' | 'back'
   icon?: React.ReactNode
@@ -24,7 +24,7 @@ export interface FlyoutHeaderProps {
   /**
    * An optional title to be rendered in the modal header
    */
-  title: string
+  title: string | ReactNode
 }
 
 export type HeaderComponent = React.FC<FlyoutHeaderProps>
@@ -32,14 +32,14 @@ export type HeaderComponent = React.FC<FlyoutHeaderProps>
 export type FooterCta = {
   disabled?: boolean
   onClick: () => void
-  text: string
+  text: string | ReactNode
 }
 
 export type FooterCheckbox = CheckboxProps & {
   /**
    * The text to be displayed next to the checkbox
    */
-  text?: string | React.ReactNode
+  text?: string | ReactNode
 }
 
 export interface FlyoutFooterProps {
@@ -68,7 +68,7 @@ export type Props = DialogProps &
      * The content to be rendered at the bottom of the flyout
      * usually this will be the FlyoutFooter component
      */
-    footer?: React.ReactNode
+    footer?: ReactNode
     /**
      * Display the modal
      */
@@ -86,7 +86,7 @@ export type Props = DialogProps &
     /**
      * UI element that triggers the open state of the modal
      */
-    trigger: React.ReactNode
+    trigger: ReactNode
   }
 
 export type Component = React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLDivElement>>

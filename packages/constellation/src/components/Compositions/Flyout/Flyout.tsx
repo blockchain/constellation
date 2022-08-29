@@ -69,7 +69,7 @@ const Flyout = forwardRef<HTMLDivElement, Props>(
               className={cx(
                 'constellation fixed z-50 w-full top-0 bottom-0 left-0 right-0 p-6 sm:max-w-[480px] sm:rounded-3xl sm:top-6 sm:right-6 sm:bottom-6 sm:left-auto',
                 'bg-background mode-dark:bg-dark-800 !drop-shadow-cards',
-                'flex flex-col justify-between',
+                'flex flex-col justify-between overflow-auto',
               )}
             >
               <div>
