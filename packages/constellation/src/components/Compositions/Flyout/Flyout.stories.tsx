@@ -41,7 +41,7 @@ const Template: ComponentStory<FlyoutComponent> = ({ icon, ...args }) => {
       isOpen={open}
       setIsOpen={setIsOpen}
       trigger={<Button variant='minimal' text='Click' />}
-      icon={<StoryIcon />}
+      icon={StoryIcon}
       footer={
         <FlyoutFooter
           primaryCta={{ disabled: true, onClick: () => setIsOpen(false), text: 'Primary Button' }}

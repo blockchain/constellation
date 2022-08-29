@@ -18,6 +18,7 @@ const FlyoutHeader: HeaderComponent = ({
   title,
 }) => {
   const hasByline = !!byline && exitType === 'close'
+  const Icon = icon as React.FC<IconProps>
 
   return (
     <div className='flex gap-5 items-center mb-4'>
@@ -55,15 +56,13 @@ const FlyoutHeader: HeaderComponent = ({
             { 'mb-4': hasByline },
           )}
         >
-          {icon &&
-            React.cloneElement(
-              icon as ReactElement<IconProps>,
-              {
-                color: SemanticColors.muted,
-                height: hasByline ? 32 : 24,
-                width: hasByline ? 32 : 24,
-              } as IconProps,
-            )}
+          {icon && (
+            <Icon
+              color={SemanticColors.muted}
+              height={hasByline ? 32 : 24}
+              width={hasByline ? 32 : 24}
+            />
+          )}
         </div>
 
         <div>
