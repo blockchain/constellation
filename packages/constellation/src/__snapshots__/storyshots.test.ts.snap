@@ -4169,7 +4169,7 @@ exports[`Storyshots Compositions/Input Tag Input 1`] = `
 
 exports[`Storyshots Compositions/ListRow List Row 1`] = `
 <div
-  className="constellation flex flex-row gap-4 p-4 bg-background w-full items-center !items-start"
+  className="constellation flex flex-row gap-4 p-4 bg-background w-full items-center border-background-light !items-start border-none"
 >
   <div
     className="flex flex-row items-center gap-4 !h-[47px]"
