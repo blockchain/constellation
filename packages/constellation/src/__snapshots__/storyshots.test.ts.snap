@@ -4453,7 +4453,7 @@ Array [
             className="flex justify-center items-center w-full h-full"
             style={
               Object {
-                "background": "linear-gradient(219.60263654150123deg, #fce8b5 28.30021971179177%, #7aef97 78.30021971179177%)",
+                "background": "linear-gradient(42deg, #fce8b5 30%, #7aef97 70%)",
               }
             }
           >

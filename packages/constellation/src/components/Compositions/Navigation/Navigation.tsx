@@ -162,9 +162,7 @@ const Navigation: NavigationComponent = ({
               />
             )}
             <Divider orientation='vertical' variant='subtle' className='!h-4 mx-2' />
-            {user && (
-              <Profile name={user.name} imgSrc={user.imgSrc} size='small' onClick={user.onClick} />
-            )}
+            {user && <Profile {...user} />}
           </div>
           <IconButton
             onClick={() => setMenuIsOpen(!menuIsOpen)}
