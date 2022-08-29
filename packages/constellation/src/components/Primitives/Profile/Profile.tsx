@@ -19,7 +19,7 @@ import { ProfileComponent, ProfileProps } from './Profile.types'
 
 const Profile: ProfileComponent = forwardRef(
   <T extends React.ElementType = 'button'>(
-    { as, imgSrc, name, size = 'small', ...otherProps }: ProfileProps<T>,
+    { as, imgSrc, name, size = 'small', storyshotOverride, ...otherProps }: ProfileProps<T>,
     ref?: PolymorphicRef<T>,
   ) => {
     const sizeStyles = {
@@ -41,7 +41,7 @@ const Profile: ProfileComponent = forwardRef(
         <Avatar.Root asChild>
           <>
             <Avatar.Image src={imgSrc} alt={name} className='w-full h-full' />
-            <Fallback size={size} name={name} />
+            <Fallback size={size} name={name} storyshotOverride={storyshotOverride} />
           </>
         </Avatar.Root>
       </Component>

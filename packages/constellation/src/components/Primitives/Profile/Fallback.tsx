@@ -12,7 +12,7 @@ import { FallbackComponent } from './Profile.types'
  * those to create a gradient.
  */
 
-const Fallback: FallbackComponent = ({ name, size = 'small' }) => {
+const Fallback: FallbackComponent = ({ name, size = 'small', storyshotOverride }) => {
   const textSizeStyles = {
     large: 'text-5xl',
     small: 'text-[10px]',
@@ -20,10 +20,10 @@ const Fallback: FallbackComponent = ({ name, size = 'small' }) => {
 
   const { gradient, initials } = useMemo(() => {
     const initials = getInitials(name)
-    const gradient = genSeededGradient(name)
+    const gradient = genSeededGradient(name, storyshotOverride)
 
     return { gradient, initials }
-  }, [name])
+  }, [name, storyshotOverride])
 
   return (
     <Avatar.Fallback

@@ -48,6 +48,7 @@ export default {
     user: {
       name: 'John Doe',
       onClick: () => action('user.onClick')(),
+      storyshotOverride: true,
     },
     walletButton: {
       id: '14qViLJfdGaP4EeHnDyJbEGQysnCpwk3gd',

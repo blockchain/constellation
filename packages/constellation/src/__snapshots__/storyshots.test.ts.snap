@@ -4453,7 +4453,7 @@ Array [
             className="flex justify-center items-center w-full h-full"
             style={
               Object {
-                "background": "linear-gradient(46.81054903641028deg, #fce8b5 13.900879086367524%, #7aef97 63.900879086367524%)",
+                "background": "linear-gradient(219.60263654150123deg, #fce8b5 28.30021971179177%, #7aef97 78.30021971179177%)",
               }
             }
           >
@@ -5779,6 +5779,27 @@ exports[`Storyshots Primitives/Loaders Spinning Loader 1`] = `
     className="h-16 w-16 border-t-primary border-blue-100 mode-dark:border-white-200 mode-dark:border-t-primary border-8 constellation relative overflow-hidden rounded-full animate-spin-fast"
   />
 </div>
+`;
+
+exports[`Storyshots Primitives/Profile Profile 1`] = `
+<button
+  className="constellation flex relative rounded-full overflow-hidden outline outline-0 outline-overlay-dark-200 hover:outline-2 active:outline-2 p-0 no-underline cursor-pointer w-[124px] h-[124px]"
+>
+  <span
+    className="flex justify-center items-center w-full h-full"
+    style={
+      Object {
+        "background": "linear-gradient(42deg, #f29bc8 30%, #7ff9e5 70%)",
+      }
+    }
+  >
+    <span
+      className="font-semibold text-black text-5xl"
+    >
+      LM
+    </span>
+  </span>
+</button>
 `;
 
 exports[`Storyshots Primitives/Slider Primary 1`] = `
