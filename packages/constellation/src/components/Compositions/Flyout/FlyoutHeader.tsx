@@ -1,6 +1,6 @@
 import { Close, Description, Title } from '@radix-ui/react-dialog'
 import cx from 'classnames'
-import React, { ReactElement } from 'react'
+import React from 'react'
 
 import { IconArrowLeft, IconProps, SemanticColors, Text } from '../../Base'
 import { CloseButton, IconButton } from '../../Primitives'

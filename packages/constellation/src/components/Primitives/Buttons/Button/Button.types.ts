@@ -33,7 +33,7 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
     /**
      * Text content of button
      */
-    text: string
+    text: string | React.ReactNode
     /**
      * The stylistic variant to use when rendering.
      */
