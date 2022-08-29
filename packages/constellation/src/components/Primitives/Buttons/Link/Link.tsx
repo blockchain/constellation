@@ -2,7 +2,7 @@ import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { IconCheck } from '../../../Base'
-import { SpinningLoader } from '../..'
+import { SpinningLoader } from '../../Loaders'
 import { Component as ComponentType, LinkState, Props, Sizes } from './Link.types'
 
 /**

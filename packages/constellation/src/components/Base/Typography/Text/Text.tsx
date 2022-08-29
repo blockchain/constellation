@@ -53,6 +53,15 @@ const transformClasses: Record<TextTransforms, string> = {
   uppercase: 'uppercase',
 }
 
+const lineClampClasses = {
+  0: '',
+  2: 'line-clamp-2',
+  3: 'line-clamp-3',
+  4: 'line-clamp-4',
+  5: 'line-clamp-5',
+  6: 'line-clamp-6',
+}
+
 const Text: TextComponentType = forwardRef(
   <T extends React.ElementType = 'span'>(
     {
@@ -62,6 +71,8 @@ const Text: TextComponentType = forwardRef(
       transform,
       truncate,
       variant = 'body1',
+      className,
+      lineClamp = 0,
       ...otherProps
     }: Props<T>,
     ref?: PolymorphicRef<T>,
@@ -79,6 +90,8 @@ const Text: TextComponentType = forwardRef(
           textAlignClasses[textAlign],
           transformClass,
           { truncate },
+          lineClampClasses[lineClamp],
+          className,
         )}
         ref={ref}
         {...otherProps}

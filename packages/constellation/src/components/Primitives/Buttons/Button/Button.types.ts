@@ -4,7 +4,7 @@ import { SpinningLoaderProps } from '../..'
 
 export type ButtonVariants = 'primary' | 'secondary' | 'minimal' | 'alert' | 'icon'
 export type ButtonWidths = 'auto' | 'full'
-export type Sizes = 'default' | 'large' | 'small'
+export type Sizes = 'default' | 'large' | 'small' | 'noPadding'
 export type ButtonState = 'initial' | 'loading' | 'success'
 
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
