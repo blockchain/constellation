@@ -3798,7 +3798,7 @@ exports[`Storyshots Compositions/Cards/Card Card 1`] = `
       className="constellation w-8 h-10 relative flex justify-center items-center"
     >
       <span
-        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-8 h-8"
+        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
       >
         <span>
           <div
@@ -3839,7 +3839,7 @@ exports[`Storyshots Compositions/Cards/CtaCard Cta Card 1`] = `
       className="constellation w-8 h-10 relative flex justify-center items-center"
     >
       <span
-        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-8 h-8"
+        className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
         style={
           Object {
             "backgroundColor": "var(--color-blue-000)",
@@ -4250,7 +4250,7 @@ exports[`Storyshots Compositions/Logo Logo 1`] = `
   className="constellation w-8 h-10 relative flex justify-center items-center"
 >
   <span
-    className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-8 h-8"
+    className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
   >
     <span>
       <div
@@ -5605,7 +5605,7 @@ exports[`Storyshots Primitives/Switcher/Switcher Switcher 1`] = `
     className="constellation w-8 h-10 relative flex justify-center items-center !w-5 !h-8"
   >
     <span
-      className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w- w-5 h-5"
+      className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-5 h-5"
     >
       <span>
         <div
