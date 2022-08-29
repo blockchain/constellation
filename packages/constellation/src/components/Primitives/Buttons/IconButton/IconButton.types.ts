@@ -2,7 +2,7 @@ import React from 'react'
 
 export type IconButtonVariants = 'primary' | 'secondary' | 'minimal'
 export type IconButtonWidths = 'auto' | 'full'
-export type Sizes = 'default' | 'large' | 'small'
+export type Sizes = 'default' | 'large' | 'small' | 'noPadding'
 export type ButtonState = 'initial' | 'loading' | 'success'
 
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<
