@@ -8,7 +8,7 @@ import { ProfileComponent, ProfileProps } from './Profile.types'
 /**
  * The Profile displays a user's profile picture or initials along with a background gradient.
  *
- * Profile untilizes the `@radix-ui/react-avatar` library to display the user's profile picture
+ * Profile utilizes the `@radix-ui/react-avatar` library to display the user's profile picture
  * and handle fallbacks.
  *
  * When a `ref` prop is provided, it will be forwarded to the root element. Any
@@ -32,7 +32,7 @@ const Profile: ProfileComponent = forwardRef(
     return (
       <Component
         className={cx(
-          'constellation flex relative rounded-full overflow-hidden outline outline-0 outline-overlay-dark-200 hover:outline-2 acvice:outline-2 transition-all p-0 no-underline cursor-pointer',
+          'constellation flex relative rounded-full overflow-hidden outline outline-0 outline-overlay-dark-200 hover:outline-2 active:outline-2 p-0 no-underline cursor-pointer',
           sizeStyles[size],
         )}
         ref={ref}

@@ -6,7 +6,7 @@ interface FallbackProps {
    */
   name: string
   /**
-   * The size of the priofile component.
+   * The size of the profile component.
    */
   size: 'small' | 'large'
 }

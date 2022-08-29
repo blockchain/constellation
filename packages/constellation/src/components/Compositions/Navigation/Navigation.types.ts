@@ -1,5 +1,7 @@
 import { FC } from 'react'
 
+import { ProfileProps } from '../../Primitives/Profile/Profile.types'
+
 interface Button {
   onClick: () => void
   text: string
@@ -38,7 +40,7 @@ interface NavigationProps {
    */
   dropdownCtaButton?: ctaButton
   /**
-   * The items to be displayed after the tabs, notifiation, and referrals.
+   * The items to be displayed after the tabs, notification, and referrals.
    */
   dropdownSecondSectionItems?: tab[]
   /**
@@ -80,6 +82,10 @@ interface NavigationProps {
    * The title rendered right after the logo at the start of the header.
    */
   title: string
+  /**
+   * The props for the user profile component.
+   */
+  user?: ProfileProps<'button'>
 }
 
 type NavigationComponent = FC<NavigationProps>

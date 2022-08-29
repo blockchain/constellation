@@ -45,6 +45,10 @@ export default {
       text: 'Send / Receive',
     },
     title: 'Wallet',
+    user: {
+      name: 'John Doe',
+      onClick: () => action('user.onClick')(),
+    },
   },
   component: NavigationComponent,
   parameters: {

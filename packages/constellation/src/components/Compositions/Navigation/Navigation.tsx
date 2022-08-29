@@ -9,7 +9,7 @@ import {
   SemanticColors,
   Text,
 } from '../../Base'
-import { Button, Divider, IconButton, Tabs } from '../../Primitives'
+import { Button, Divider, IconButton, Profile, Tabs } from '../../Primitives'
 import { DropdownItem, NavigationComponent } from './Navigation.types'
 import Dropdown from './NavigationDropdown'
 import NavigationTab from './NavigationTab'
@@ -34,6 +34,7 @@ const Navigation: NavigationComponent = ({
   secondaryButton,
   selected: selectedOverride,
   title,
+  user,
 }) => {
   const tabs = useMemo(() => {
     return navigationTabs.map(({ dot, key, label }) => ({
@@ -139,16 +140,15 @@ const Navigation: NavigationComponent = ({
               />
             )}
             <Divider orientation='vertical' variant='subtle' className='!h-4 mx-2' />
-            <div className='w-8 h-8 bg-medium rounded-full flex justify-center items-center'>
-              EM
-            </div>
-            {/* TODO: replace this with the profile component when merged */}
+            {user && (
+              <Profile name={user.name} imgSrc={user.imgSrc} size='small' onClick={user.onClick} />
+            )}
           </div>
           <IconButton
             onClick={() => setMenuIsOpen(!menuIsOpen)}
             icon={menuIsOpen ? <IconClose size='medium' /> : <IconMenu size='medium' />}
             size='default'
-            className='text-grey-300 hover:text-grey-300 transition-colors border-none !p-0 !h-fit ml-3 lg:hidden'
+            className='!text-grey-300 hover:!text-grey-400 transition-colors border-none !p-0 !h-fit ml-3 lg:hidden'
           />
         </div>
       </div>
