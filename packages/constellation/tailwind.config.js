@@ -6,6 +6,7 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
 const radix = require('tailwindcss-radix')()
+const lineClamp = require('@tailwindcss/line-clamp')
 
 module.exports = {
   important: '.constellation',
@@ -15,6 +16,7 @@ module.exports = {
   content: ['./src/**/*.{ts,js,tsx,jsx}'],
   plugins: [
     radix,
+    lineClamp,
     plugin(({ addVariant }) => {
       addVariant('mode-dark', '.mode-dark &')
       addVariant('mode-light', '.mode-light &')
@@ -169,12 +171,25 @@ module.exports = {
         gold: 'var(--color-tiers-gold)',
       },
 
+      pink: {
+        300: 'var(--color-pink-300)',
+        400: 'var(--color-pink-400)',
+        500: 'var(--color-pink-500)',
+      },
+
+      'new-green': {
+        300: 'var(--color-new-green-300)',
+        400: 'var(--color-new-green-400)',
+        500: 'var(--color-new-green-500)',
+      },
+
       black: 'var(--color-black)',
       transparent: 'var(--color-transparent)',
     },
     extend: {
       dropShadow: {
         control: ['var(--shadow-control)', 'var(--shadow-control-sm)'],
+        cards: ['var(--shadow-cards)', 'var(--shadow-cards-sm)'],
       },
       font: {
         italic: ['font-feature-settings: "zero" on, "ss01" on', 'font-style: italic'],

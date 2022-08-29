@@ -2,7 +2,7 @@ import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { IconCheck } from '../../../Base'
-import { SpinningLoader } from '../../index'
+import { SpinningLoader } from '../../Loaders'
 import {
   ButtonState,
   ButtonVariants,
@@ -19,6 +19,8 @@ import {
  * prop value). This includes all appropriate HTML attributes or aria tags. This
  * component may have its underlying DOM customized via the 'as' prop.
  */
+export const rootStyles =
+  'constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2'
 
 export const variantStyles: Record<ButtonVariants, string> = {
   alert:
@@ -32,9 +34,10 @@ export const variantStyles: Record<ButtonVariants, string> = {
     'rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600',
 }
 
-const sizeStyles: Record<Sizes, string> = {
+export const sizeStyles: Record<Sizes, string> = {
   default: 'px-6 py-3 text-base h-12',
   large: 'px-10 py-4 text-xl h-16',
+  noPadding: 'p-0',
   small: 'px-3 py-1.5 text-sm h-8',
 }
 
@@ -42,16 +45,19 @@ const stateStyles: Record<ButtonState, Record<Sizes, string>> = {
   initial: {
     default: '',
     large: '',
+    noPadding: '',
     small: '',
   },
   loading: {
     default: 'px-14 py-3',
     large: 'px-16 py-5',
+    noPadding: '',
     small: 'px-8 py-2',
   },
   success: {
     default: 'px-14 py-3',
     large: 'px-16 py-5',
+    noPadding: '',
     small: 'px-8 py-2',
   },
 }
@@ -65,6 +71,7 @@ const Button: ComponentType = forwardRef(
       icon,
       inline = false,
       loaderVariant,
+      prefix,
       size = 'default',
       state = 'initial',
       text,
@@ -101,6 +108,7 @@ const Button: ComponentType = forwardRef(
       >
         {state === 'initial' && (
           <>
+            {prefix && prefix}
             {icon && icon}
             {text}
           </>

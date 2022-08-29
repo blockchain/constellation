@@ -3,7 +3,6 @@ import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import {
-  IconArrowDown,
   IconCheckCircle,
   IconChevronDown,
   IconChevronUp,
@@ -41,7 +40,7 @@ const Dropdown = forwardRef<HTMLButtonElement, Props>(
                 {currentItem && (
                   <div className='constellation flex gap-2 items-center wrap'>
                     {currentItem.icon && currentItem.icon}
-                    <span className='constellation truncate'>{currentItem.label}</span>
+                    <span className='constellation truncate text-sm'>{currentItem.label}</span>
                   </div>
                 )}
               </SelectPrimitive.Value>
@@ -49,7 +48,7 @@ const Dropdown = forwardRef<HTMLButtonElement, Props>(
               <SelectPrimitive.Value placeholder='Select option' />
             )}
             <SelectPrimitive.Icon className='constellation ml-2'>
-              <IconTriangleDown color={SemanticColors.muted} />
+              <IconTriangleDown color={SemanticColors.muted} size='medium' />
             </SelectPrimitive.Icon>
           </button>
         </SelectPrimitive.Trigger>

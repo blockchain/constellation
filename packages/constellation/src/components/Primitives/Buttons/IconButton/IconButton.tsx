@@ -17,6 +17,7 @@ import { Component as ComponentType, Props, Sizes } from './IconButton.types'
 const sizeClasses: Record<Sizes, string> = {
   default: 'px-3 py-3',
   large: 'px-4 py-4',
+  noPadding: '!p-0',
   small: 'px-2 py-2',
 }
 

@@ -18,6 +18,7 @@ import iconBackup from './icons/icon-backup.svg'
 import iconBank from './icons/icon-bank.svg'
 import iconBlockchain from './icons/icon-blockchain.svg'
 import iconBlockchainCircle from './icons/icon-blockchain-circle.svg'
+import iconBlockchainLogo from './icons/icon-blockchain-logo.svg'
 import iconCalendar from './icons/icon-calendar.svg'
 import iconCall from './icons/icon-call.svg'
 import iconCamera from './icons/icon-camera.svg'
@@ -179,6 +180,7 @@ export const IconBackup = createIconComponent(iconBackup)
 export const IconBank = createIconComponent(iconBank)
 export const IconBlockchain = createIconComponent(iconBlockchain)
 export const IconBlockchainCircle = createIconComponent(iconBlockchainCircle)
+export const IconBlockchainLogo = createIconComponent(iconBlockchainLogo)
 export const IconCalendar = createIconComponent(iconCalendar)
 export const IconCall = createIconComponent(iconCall)
 export const IconCamera = createIconComponent(iconCamera)

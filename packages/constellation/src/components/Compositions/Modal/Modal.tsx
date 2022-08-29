@@ -3,7 +3,7 @@ import { Close, Content, Description, Overlay, Root, Title, Trigger } from '@rad
 import cx from 'classnames'
 import React, { forwardRef, Fragment } from 'react'
 
-import { IconCloseCircle, SemanticColors } from '../../Base'
+import { CloseButton } from '../../Primitives'
 import { Props } from './Modal.types'
 
 /**
@@ -55,18 +55,18 @@ const Modal = forwardRef<HTMLDivElement, Props>(
               forceMount
               className={cx(
                 'constellation fixed z-50 w-[95vw] max-w-md rounded-lg p-6 md:w-full',
-                'top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]',
+                'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2',
                 'bg-background',
               )}
             >
               <Title className='constellation text-base font-medium text-title'>{title}</Title>
               <Close
                 className={cx(
-                  'constellation absolute top-6 right-6 inline-flex items-center justify-center rounded-full',
+                  'constellation absolute top-4 right-4 inline-flex items-center justify-center rounded-full',
                   'focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75',
                 )}
               >
-                <IconCloseCircle size='medium' color={SemanticColors.medium} />
+                <CloseButton as='div' size='large' />
               </Close>
               {description && <ModalDescription {...{ description }} />}
               {children}
