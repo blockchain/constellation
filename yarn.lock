@@ -4580,6 +4580,7 @@ __metadata:
     "@testing-library/react-hooks": 7.0.2
     "@testing-library/user-event": 13.5.0
     "@types/jest": 27.4.0
+    "@types/randomcolor": 0.5.6
     "@types/react": 17.0.16
     "@types/react-dom": 17.0.9
     "@types/styled-components": 4.4.1
@@ -4614,6 +4615,7 @@ __metadata:
     postcss-prefix-selector: ^1.16.0
     prettier: 2.3.0
     prettier-config-constellation: "workspace:*"
+    randomcolor: 0.6.2
     react: 17.0.2
     react-dom: 17.0.2
     react-test-renderer: 17.0.2
@@ -8971,6 +8973,13 @@ __metadata:
   version: 6.9.7
   resolution: "@types/qs@npm:6.9.7"
   checksum: 7fd6f9c25053e9b5bb6bc9f9f76c1d89e6c04f7707a7ba0e44cc01f17ef5284adb82f230f542c2d5557d69407c9a40f0f3515e8319afd14e1e16b5543ac6cdba
+  languageName: node
+  linkType: hard
+
+"@types/randomcolor@npm:0.5.6":
+  version: 0.5.6
+  resolution: "@types/randomcolor@npm:0.5.6"
+  checksum: b82fec1fc4d74fa9d777ea694cbe9f2b9d275135a6e97905d18d7b8624c92b41e45aec1b17ede43e37db103a1d63c8b0cb24d8762e768c776c3aefbf4ed6cf8d
   languageName: node
   linkType: hard
 
@@ -21704,6 +21713,13 @@ __metadata:
   dependencies:
     safe-buffer: ^5.1.0
   checksum: d779499376bd4cbb435ef3ab9a957006c8682f343f14089ed5f27764e4645114196e75b7f6abf1cbd84fd247c0cb0651698444df8c9bf30e62120fbbc52269d6
+  languageName: node
+  linkType: hard
+
+"randomcolor@npm:0.6.2":
+  version: 0.6.2
+  resolution: "randomcolor@npm:0.6.2"
+  checksum: 539345c0289f7c52ffd8486e61231e19ccc40b1c4ab9c15594f20a2773b71a9317e0cc8b756160fc8a678ace9ed1e96a8ac90346b2c34c64dfd5acad91f9a73d
   languageName: node
   linkType: hard
 
