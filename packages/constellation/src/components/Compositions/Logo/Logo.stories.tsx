@@ -20,9 +20,6 @@ export default {
       control: { type: 'select' },
       options: Object.keys(Icons),
     },
-    'primaryContent.iconColor': {
-      control: { type: 'color' },
-    },
     'primaryContent.imgSrc': {
       control: { type: 'text' },
     },
@@ -37,9 +34,6 @@ export default {
     'secondaryContent.icon': {
       control: { type: 'select' },
       options: Object.keys(Icons),
-    },
-    'secondaryContent.iconColor': {
-      control: { type: 'color' },
     },
     'secondaryContent.imgSrc': {
       control: { type: 'text' },
@@ -77,11 +71,9 @@ const Template: StoryComponent = ({
   circle,
   doubleVariant,
   'primaryContent.icon': primaryIcon,
-  'primaryContent.iconColor': primaryIconColor,
   'primaryContent.imgSrc': primaryImgSrc,
   'primaryContent.text': primaryText,
   'secondaryContent.icon': secondaryIcon,
-  'secondaryContent.iconColor': secondaryIconColor,
   'secondaryContent.imgSrc': secondaryImgSrc,
   'secondaryContent.text': secondaryText,
   size,

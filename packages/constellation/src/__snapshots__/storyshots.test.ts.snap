@@ -3817,12 +3817,19 @@ exports[`Storyshots Compositions/Cards/Card Card 1`] = `
       <span
         className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
       >
-        <span>
-          <div
-            className="text-white-000 text-[10px]"
+        <span
+          className="min-w-full text-center flex"
+        >
+          <span
+            className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            style={
+              Object {
+                "transform": "translate(-50%, -50%) scale(1)",
+              }
+            }
           >
             CAT
-          </div>
+          </span>
         </span>
       </span>
     </div>
@@ -3863,16 +3870,9 @@ exports[`Storyshots Compositions/Cards/CtaCard Cta Card 1`] = `
           }
         }
       >
-        <span>
-          <icon-notification-on.svg
-            color="var(--color-primary)"
-            fill="currentColor"
-            focusable="false"
-            height="1rem"
-            width="1rem"
-            xmlns="http://www.w3.org/2000/svg"
-          />
-        </span>
+        <span
+          className="min-w-full text-center flex"
+        />
       </span>
     </div>
   </div>
@@ -4348,12 +4348,19 @@ exports[`Storyshots Compositions/ListRow List Row 1`] = `
       <span
         className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
       >
-        <span>
-          <div
-            className="text-white-000 text-[10px]"
+        <span
+          className="min-w-full text-center flex"
+        >
+          <span
+            className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            style={
+              Object {
+                "transform": "translate(-50%, -50%) scale(1)",
+              }
+            }
           >
             CATE
-          </div>
+          </span>
         </span>
       </span>
     </div>
@@ -4420,12 +4427,19 @@ exports[`Storyshots Compositions/Logo Logo 1`] = `
   <span
     className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
   >
-    <span>
-      <div
-        className="text-white-000 text-[10px]"
+    <span
+      className="min-w-full text-center flex"
+    >
+      <span
+        className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        style={
+          Object {
+            "transform": "translate(-50%, -50%) scale(1)",
+          }
+        }
       >
         TEST
-      </div>
+      </span>
     </span>
   </span>
 </div>
@@ -4637,12 +4651,19 @@ Array [
             <span
               className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-5 h-5"
             >
-              <span>
-                <div
-                  className="text-white-000 text-[6px]"
+              <span
+                className="min-w-full text-center flex"
+              >
+                <span
+                  className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  style={
+                    Object {
+                      "transform": "translate(-50%, -50%) scale(1)",
+                    }
+                  }
                 >
                   ETH
-                </div>
+                </span>
               </span>
             </span>
           </div>
@@ -6113,12 +6134,19 @@ exports[`Storyshots Primitives/Switcher/Switcher Switcher 1`] = `
     <span
       className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-5 h-5"
     >
-      <span>
-        <div
-          className="text-white-000 text-[4px]"
+      <span
+        className="min-w-full text-center flex"
+      >
+        <span
+          className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          style={
+            Object {
+              "transform": "translate(-50%, -50%) scale(1)",
+            }
+          }
         >
           Bitcoin
-        </div>
+        </span>
       </span>
     </span>
   </div>
