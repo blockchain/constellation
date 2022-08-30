@@ -91,6 +91,7 @@ const ChartHeader = forwardRef<HTMLDivElement, HeaderProps>(
       >
         <PriceInfo {...{ activeTimeframe, changeInCents, changeInDecimal, currentPriceInCents }} />
         <Tabs
+          variant='default'
           size='small'
           tabs={[
             {
@@ -99,8 +100,8 @@ const ChartHeader = forwardRef<HTMLDivElement, HeaderProps>(
                 <span className='constellation inline-flex items-center h-full'>
                   <Text color={SemanticColors.success} variant='title1' className='mt-0 mb-0 pb-1'>
                     •
-                  </Text>{' '}
-                  <span>Live</span>
+                  </Text>
+                  <span> Live</span>
                 </span>
               ),
             },

@@ -11,7 +11,7 @@ export interface TabsProps {
   size: 'large' | 'small'
   tabs: Tab[]
   /**
-   * Vlaue overrides the default selected behavior so the tabs can be controlled
+   * Value overrides the default selected behavior so the tabs can be controlled
    * from outside the component.
    */
   value?: Tab['key']
