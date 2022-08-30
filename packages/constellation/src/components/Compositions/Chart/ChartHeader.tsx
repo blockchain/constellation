@@ -3,6 +3,7 @@ import React, { forwardRef } from 'react'
 import { centsToDollarString, decimalToPercentString } from '../../../utils'
 import { IconArrowDown, IconArrowUp, SemanticColors, Text } from '../../Base'
 import { Dropdown, Tabs } from '../../Primitives'
+import Dot from '../Alerts/Dot/Dot'
 import { HeaderProps, Timeframe } from './Chart.types'
 
 /**
@@ -94,11 +95,9 @@ const ChartHeader = forwardRef<HTMLDivElement, HeaderProps>(
             {
               key: 'live',
               titleContent: (
-                <span className='constellation inline-flex items-center h-full'>
-                  <Text color={SemanticColors.success} variant='title1' className='mt-0 mb-0 pb-1'>
-                    •
-                  </Text>
-                  <span> Live</span>
+                <span className='constellation inline-flex items-center gap-1 h-full'>
+                  <Dot variant='green' />
+                  <span>Live</span>
                 </span>
               ),
             },

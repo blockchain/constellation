@@ -3990,15 +3990,13 @@ exports[`Storyshots Compositions/Chart Chart 1`] = `
             className="constellation text-sm font-medium px-3 border-r border-r-transparent text relative"
           >
             <span
-              className="constellation inline-flex items-center h-full"
+              className="constellation inline-flex items-center gap-1 h-full"
             >
-              <span
-                className="constellation text-[2rem] font-semibold my-5 text-success text-start mt-0 mb-0 pb-1"
-              >
-                •
-              </span>
+              <div
+                className="constellation w-2 h-2 rounded-full outline-1 outline outline-background mode-light:bg-new-green-500 mode-dark:bg-new-green-400"
+              />
               <span>
-                 Live
+                Live
               </span>
             </span>
           </span>
