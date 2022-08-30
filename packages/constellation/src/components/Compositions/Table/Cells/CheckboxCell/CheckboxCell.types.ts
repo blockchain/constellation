@@ -6,7 +6,7 @@ interface Props extends BaseCellProps {
   /**
    * The text content displayed next to the checkbox.
    */
-  text: string
+  text: string | React.ReactNode
 
   // more props to come when the final checkbox component is added
 }

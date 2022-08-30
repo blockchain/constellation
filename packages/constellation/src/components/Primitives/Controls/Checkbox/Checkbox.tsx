@@ -26,7 +26,7 @@ const Checkbox = forwardRef<HTMLButtonElement, Props>(
     return (
       <Label
         className={cx(
-          'constellation inline-flex gap-2 items-center',
+          'constellation inline-flex gap-2 items-center text-sm',
           getTextColorClass(labelColor),
         )}
         htmlFor={fallbackId}

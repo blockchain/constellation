@@ -10,13 +10,13 @@ import { InformationalCellComponentType } from '.'
  */
 
 const InformationalCell: InformationalCellComponentType = ({
-  text,
+  content,
   variant = 'default',
   ...baseProps
 }) => {
   return (
     <BaseCell {...baseProps}>
-      <Tag content={text} variant={variant} />
+      <Tag content={content} variant={variant} />
     </BaseCell>
   )
 }

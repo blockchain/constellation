@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
 
-import { BaseCellProps } from '../..'
+import { BaseCellProps } from '../../index'
 
 interface Props extends BaseCellProps {
   /**

@@ -1,7 +1,16 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { FC } from 'react'
 
-import { ButtonCell, Row, TableContainer, TextCell } from '../index'
+import { IconApple } from '../../../Base'
+import {
+  ButtonCell,
+  CheckboxCell,
+  IconCell,
+  InformationalCell,
+  Row,
+  TableContainer,
+  TextCell,
+} from '../index'
 
 export default {
   argTypes: { onClick: { action: 'clicked' } },
@@ -33,6 +42,11 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
             primaryButton={{ onClick, text: 'Buy', variant: 'primary' }}
             secondaryButton={{ onClick, text: 'Sell', variant: 'secondary' }}
           />
+        </Row>
+        <Row>
+          <CheckboxCell text='BTC' />
+          <IconCell icon={<IconApple />} />
+          <InformationalCell content='Bitcoin' />
         </Row>
       </tbody>
     </TableContainer>
