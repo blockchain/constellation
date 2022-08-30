@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-interface Tab {
+export interface Tab {
   key: string
   titleContent: React.ReactNode
 }

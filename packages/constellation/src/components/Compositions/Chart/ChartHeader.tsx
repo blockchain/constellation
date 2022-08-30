@@ -77,6 +77,7 @@ const ChartHeader = forwardRef<HTMLDivElement, HeaderProps>(
       currentPriceInCents,
       setActiveCurrency,
       setActiveTimeframe,
+      timeframeTabs,
       ...otherProps
     },
     ref,
@@ -91,22 +92,7 @@ const ChartHeader = forwardRef<HTMLDivElement, HeaderProps>(
         <Tabs
           variant='default'
           size='small'
-          tabs={[
-            {
-              key: 'live',
-              titleContent: (
-                <span className='constellation inline-flex items-center gap-1 h-full'>
-                  <Dot variant='green' />
-                  <span>Live</span>
-                </span>
-              ),
-            },
-            { key: 'day', titleContent: '1D' },
-            { key: 'week', titleContent: '1W' },
-            { key: 'month', titleContent: '1M' },
-            { key: 'year', titleContent: '1Y' },
-            { key: 'all', titleContent: 'All' },
-          ]}
+          tabs={timeframeTabs}
           defaultActiveTab={activeTimeframe}
           onTabChange={(value) => setActiveTimeframe(value as Timeframe)}
         />

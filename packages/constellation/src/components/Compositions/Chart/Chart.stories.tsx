@@ -1,9 +1,19 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { FC, useState } from 'react'
 
-import { Chart as RenderedChart, ChartComponent } from '.'
+import Dot from '../Alerts/Dot/Dot'
+import { Chart as RenderedChart } from '.'
 import { HeaderProps, Timeframe } from './Chart.types'
 import ChartHeader from './ChartHeader'
+
+type ComposedChartComponent = FC<{
+  'header.activeCurrency': HeaderProps['activeCurrency']
+  'header.changeInCents': HeaderProps['changeInCents']
+  'header.changeInDecimal': HeaderProps['changeInDecimal']
+  'header.currencies': HeaderProps['currencies']
+  'header.currentPriceInCents': HeaderProps['currentPriceInCents']
+  'header.timeframeTabs': HeaderProps['timeframeTabs']
+}>
 
 export default {
   argTypes: {
@@ -14,6 +24,7 @@ export default {
     'header.currentPriceInCents': { control: { type: 'number' } },
   },
   args: {
+    'header.activeCurrency': 'USD',
     'header.changeInCents': 1234,
     'header.changeInDecimal': 0.34,
     'header.currencies': [
@@ -21,24 +32,33 @@ export default {
       { label: 'CAD', value: 'CAD' },
     ],
     'header.currentPriceInCents': 123456,
+    'header.timeframeTabs': [
+      {
+        key: 'live',
+        titleContent: (
+          <span className='constellation inline-flex items-center gap-1 h-full'>
+            <Dot variant='green' />
+            <span>Live</span>
+          </span>
+        ),
+      },
+      { key: 'day', titleContent: '1D' },
+      { key: 'week', titleContent: '1W' },
+      { key: 'month', titleContent: '1M' },
+      { key: 'year', titleContent: '1Y' },
+      { key: 'all', titleContent: 'All' },
+    ],
   },
   component: RenderedChart,
   title: 'Compositions/Chart',
-} as ComponentMeta<ChartComponent>
+} as ComponentMeta<ComposedChartComponent>
 
-const Template: ComponentStory<
-  FC<{
-    'header.activeCurrency': HeaderProps['activeCurrency']
-    'header.changeInCents': HeaderProps['changeInCents']
-    'header.changeInDecimal': HeaderProps['changeInDecimal']
-    'header.currencies': HeaderProps['currencies']
-    'header.currentPriceInCents': HeaderProps['currentPriceInCents']
-  }>
-> = ({
+const Template: ComponentStory<ComposedChartComponent> = ({
   'header.changeInCents': changeInCents,
   'header.changeInDecimal': changeInDecimal,
   'header.currencies': currencies,
   'header.currentPriceInCents': currentPriceInCents,
+  'header.timeframeTabs': timeframeTabs,
 }) => {
   const [timeframe, setTimeframe] = useState<Timeframe>('day')
   const [activeCurrency, setActiveCurrency] = useState('USD')
@@ -53,6 +73,7 @@ const Template: ComponentStory<
         changeInDecimal={changeInDecimal}
         currencies={currencies}
         currentPriceInCents={currentPriceInCents}
+        timeframeTabs={timeframeTabs}
       />
       {/* TODO: Build chart body component */}
       <div className='constellation w-full bg-background-dark p-8'>
