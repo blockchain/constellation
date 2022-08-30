@@ -1,28 +1,35 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import React from 'react'
+import React, { FC } from 'react'
 
+import { SemanticColors } from '../../../../Base'
 import * as Icons from '../../../../Base/Icon'
-import { IconCell as IconCellComponent, IconCellComponentType } from '.'
+import { IconCell as IconCellComponent, IconCellProps } from '.'
+
+type IconCellStoryComponent = FC<IconCellProps & { iconId: string }>
 
 export default {
   argTypes: {
-    icon: {
+    icon: { control: { disable: true } },
+    iconId: {
       control: { type: 'select' },
       options: Object.keys(Icons),
     },
   },
   args: {
-    icon: 'IconApple',
+    iconId: 'IconApple',
+    iconProps: {
+      color: SemanticColors.title,
+      size: 'large',
+    },
   },
   component: IconCellComponent,
   title: 'Compositions/Table/Cells/IconCell',
-} as ComponentMeta<IconCellComponentType>
+} as ComponentMeta<IconCellStoryComponent>
 
-const Template: ComponentStory<IconCellComponentType> = ({ icon, ...args }) => {
-  const StoryIcon = Icons[icon as keyof typeof Icons] as React.FC
-  const Icon = icon ? <StoryIcon /> : null
+const Template: ComponentStory<IconCellStoryComponent> = ({ iconId, ...args }) => {
+  const StoryIcon = Icons[iconId as keyof typeof Icons]
 
-  return <IconCellComponent icon={Icon} {...args} />
+  return <IconCellComponent icon={StoryIcon} {...args} />
 }
 
 export const IconCell = Template.bind({})
