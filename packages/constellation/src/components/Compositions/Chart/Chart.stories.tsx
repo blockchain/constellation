@@ -53,6 +53,15 @@ export default {
   title: 'Compositions/Chart',
 } as ComponentMeta<ComposedChartComponent>
 
+const timeframeLabels: Record<Timeframe, React.ReactNode> = {
+  all: 'All',
+  day: 'Past day',
+  live: 'Past hour',
+  month: 'Past month',
+  week: 'Past week',
+  year: 'Past year',
+}
+
 const Template: ComponentStory<ComposedChartComponent> = ({
   'header.changeInCents': changeInCents,
   'header.changeInDecimal': changeInDecimal,
@@ -74,6 +83,7 @@ const Template: ComponentStory<ComposedChartComponent> = ({
         currencies={currencies}
         currentPriceInCents={currentPriceInCents}
         timeframeTabs={timeframeTabs}
+        timeframeLabel={timeframeLabels[timeframe]}
       />
       {/* TODO: Build chart body component */}
       <div className='constellation w-full bg-background-dark p-8'>
