@@ -2,6 +2,7 @@
 import { ComponentMeta } from '@storybook/react'
 import React from 'react'
 
+import { IconProps, PaletteColors } from '../../Base'
 import * as Icons from '../../Base/Icon'
 import { Logo as LogoComponent, LogoComponent as LogoComponentProps, LogoProps } from '.'
 
@@ -85,32 +86,71 @@ const Template: StoryComponent = ({
   'secondaryContent.text': secondaryText,
   size,
 }) => {
-  const PrimaryIcon = primaryIcon && (Icons[primaryIcon as keyof typeof Icons] as React.FC)
-  const SecondaryIcon = secondaryIcon && (Icons[secondaryIcon as keyof typeof Icons] as React.FC)
-  return (
-    // We have to ignore some TS errors here because storybook is able to add all props that usually cant be used together.
-    <LogoComponent
-      circle={circle}
-      doubleVariant={doubleVariant}
-      /* @ts-ignore */
-      primaryContent={{
-        icon: PrimaryIcon,
+  const PrimaryIcon =
+    primaryIcon && (Icons[primaryIcon as keyof typeof Icons] as React.FC<IconProps>)
+  const SecondaryIcon =
+    secondaryIcon && (Icons[secondaryIcon as keyof typeof Icons] as React.FC<IconProps>)
+
+  /**
+   * This ComponentWrapper is just used as a workaround for a bug currently in the
+   * Storybook Docs addon. It's a workaround for this issue:
+   * https://github.com/storybookjs/storybook/issues/17720
+   *
+   * When using the Logo component the Icon is supposed to be included in primaryContent and
+   * secondaryContent. However, the bug in the Docs addon means that the Icon can't be set
+   * in an object. So, we have to set the Icon as a separate prop and use the ComponentWrapper
+   * to merge it into the primaryContent and secondaryContent props.
+   */
+
+  const BugWorkaroundWrapper = ({
+    primaryContent,
+    primaryIcon,
+    secondaryContent,
+    secondaryIcon,
+  }: {
+    primaryContent: { imgSrc: string; text: string | React.ReactNode }
+    primaryIcon?: React.ReactNode
+    secondaryContent?: { imgSrc: string; text: string | React.ReactNode }
+    secondaryIcon?: React.ReactNode
+  }) => {
+    return (
+      // We have to ignore some TS errors here because storybook is able to add all props that usually cant be used together.
+      <LogoComponent
+        circle={circle}
+        doubleVariant={doubleVariant}
         /* @ts-ignore */
-        iconColor: primaryIconColor,
+        primaryContent={{
+          ...primaryContent,
+          icon: primaryIcon,
+        }}
+        /* @ts-ignore */
+        secondaryContent={
+          (secondaryContent?.text || secondaryIcon || secondaryContent?.imgSrc) && {
+            ...secondaryContent,
+            icon: secondaryIcon,
+          }
+        }
+        size={size}
+      />
+    )
+  }
+
+  return (
+    <BugWorkaroundWrapper
+      primaryContent={{
         imgSrc: primaryImgSrc,
         text: primaryText,
       }}
-      /* @ts-ignore */
+      primaryIcon={primaryIcon && <PrimaryIcon color={PaletteColors['white-000']} />}
       secondaryContent={
-        (secondaryText || secondaryIcon || secondaryImgSrc) && {
-          icon: SecondaryIcon,
-          /* @ts-ignore */
-          iconColor: secondaryIconColor,
-          imgSrc: secondaryImgSrc,
-          text: secondaryText,
-        }
+        secondaryText || secondaryImgSrc
+          ? {
+              imgSrc: secondaryImgSrc,
+              text: secondaryText,
+            }
+          : undefined
       }
-      size={size}
+      secondaryIcon={secondaryIcon && <SecondaryIcon color={PaletteColors['white-000']} />}
     />
   )
 }

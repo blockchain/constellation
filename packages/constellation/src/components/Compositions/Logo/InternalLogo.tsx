@@ -88,9 +88,10 @@ const InternalLogo: InternalLogoComponent = ({
       <>
         <Avatar.Image src={imgSrc} className='w-full h-full object-cover' />
         <Avatar.Fallback>
-          {(icon && <Icon color={iconColor} />) || (
-            <div className={cx('text-white-000', fontSizes[variant])}>{text}</div>
-          )}
+          {(icon &&
+            (size === 'large' && React.isValidElement(icon)
+              ? React.cloneElement(icon, { size: 'medium' })
+              : icon)) || <div className={cx('text-white-000', fontSizes[variant])}>{text}</div>}
         </Avatar.Fallback>
       </>
     </Avatar.Root>
