@@ -4,7 +4,7 @@ export type Props = DialogProps & {
   /**
    * An optional accessible description to be rendered and announced when the dialog is opened.
    */
-  description?: string
+  description?: string | React.ReactNode
   /**
    * Display the modal
    */
@@ -16,7 +16,7 @@ export type Props = DialogProps & {
   /**
    * An optional title to be rendered in the modal header
    */
-  title?: string
+  title?: string | React.ReactNode
   /**
    * UI element that triggers the open state of the modal
    */
@@ -27,7 +27,7 @@ export type Component = React.ForwardRefExoticComponent<Props & React.RefAttribu
 
 export type FooterCta = {
   onClick: () => void
-  text: string
+  text: string | React.ReactNode
 }
 
 export interface ModalFooterProps {

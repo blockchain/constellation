@@ -35,10 +35,25 @@ interface IconContent {
 type Content = ImgTxtContent | IconContent
 
 type LogoProps = {
+  /**
+   * Determines if the logo is a rounded square of a circle
+   */
   circle?: boolean
+  /**
+   * The variant of the secondary logo
+   */
   doubleVariant?: 'primary' | 'badge'
+  /**
+   * The primary content of the logo
+   */
   primaryContent: Content
+  /**
+   * The secondary content of the logo displayed as either a double of badge
+   */
   secondaryContent?: Content
+  /**
+   * The size of the logo
+   */
   size?: 'base' | 'large' | 'small'
 }
 

@@ -5,12 +5,12 @@ import { LogoContentProps } from '../../index'
 type CardProps = {
   /**
    * Use primarily for the CTA announcement card this will change the
-   * colour of both the button and the border to whatever hex value is
-   * reuqired.
+   * color of both the button and the border to whatever hex value is
+   * required.
    */
   accentColor?: string
   /**
-   * Determins if the card has a border or not.
+   * Determines if the card has a border or not.
    */
   border?: boolean
   /**
@@ -20,12 +20,12 @@ type CardProps = {
   /**
    * The content of the button
    */
-  buttonContent?: string
+  buttonContent?: string | ReactNode
   className?: string
   /**
    * The main body content of the card
    */
-  content: string
+  content: string | ReactNode
   /**
    * Used by the CTA card to add the token info, header allows any ReactNode
    * to be added next to the logo at the top of the card.
@@ -40,7 +40,7 @@ type CardProps = {
    */
   onButtonClick?: () => void
   /**
-   * The function called when the card iteself is clicked.
+   * The function called when the card itself is clicked.
    */
   onCardClick?: () => void
   /**
@@ -50,7 +50,7 @@ type CardProps = {
   /**
    * The title of the card
    */
-  title: string
+  title: string | ReactNode
   /**
    * The variant of the card to render. This determines the layout and text sizing.
    */
