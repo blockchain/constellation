@@ -1,77 +1,124 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
+import { centsToDollarString, decimalToPercentString } from '../../../utils'
 import { IconArrowDown, IconArrowUp, SemanticColors, Text } from '../../Base'
 import { Dropdown, Tabs } from '../../Primitives'
-import { HeaderProps } from './Chart.types'
+import { HeaderProps, Timeframe } from './Chart.types'
 
 /**
  * The Chart Header component description
  */
 
+const timeframeLabels: Record<Timeframe, string> = {
+  all: 'All',
+  day: 'Past day',
+  live: 'Past hour',
+  month: 'Past month',
+  week: 'Past week',
+  year: 'Past year',
+}
+
 const PercentageRow = ({
-  amountInCents,
-  decimalChange,
-  timeframeLabel,
-  trend,
+  activeTimeframe,
+  changeInCents,
+  changeInDecimal,
 }: {
-  amountInCents: number
-  decimalChange: number
-  timeframeLabel: string
-  trend: 'up' | 'down'
+  activeTimeframe: Timeframe
+  changeInCents: number
+  changeInDecimal: number
 }) => {
-  const trendColor = trend === 'up' ? SemanticColors.success : SemanticColors.error
+  const trendColor = changeInDecimal < 0 ? SemanticColors.error : SemanticColors.success
   return (
     <div className='constellation flex items-center gap-2'>
-      {trend === 'up' ? <IconArrowUp color={trendColor} /> : <IconArrowDown color={trendColor} />}
+      {changeInDecimal < 0 ? (
+        <IconArrowDown color={trendColor} />
+      ) : (
+        <IconArrowUp color={trendColor} />
+      )}
       <Text color={trendColor}>
-        {amountInCents} ({decimalChange})
+        {centsToDollarString(changeInCents, 2)} ({decimalToPercentString(changeInDecimal)})
       </Text>
-      <Text color={SemanticColors.body}>{timeframeLabel}</Text>
+      <div className='constellation w-24'>
+        <Text color={SemanticColors.body}>{timeframeLabels[activeTimeframe]}</Text>
+      </div>
     </div>
   )
 }
 
-const PriceInfo = () => (
+const PriceInfo = ({
+  activeTimeframe,
+  changeInCents,
+  changeInDecimal,
+  currentPriceInCents,
+}: {
+  activeTimeframe: Timeframe
+  changeInCents: number
+  changeInDecimal: number
+  currentPriceInCents: number
+}) => (
   <div className='constellation flex flex-col'>
     <Text variant='caption1'>Current Price</Text>
-    <Text variant='display' className='mt-0 mb-0'>
-      1234
+    <Text color={SemanticColors.title} variant='display' className='mt-0 mb-0'>
+      {centsToDollarString(currentPriceInCents, 2)}
     </Text>
-    <PercentageRow
-      amountInCents={12345}
-      decimalChange={0.25}
-      trend='up'
-      timeframeLabel='Past hour'
-    />
+    <PercentageRow {...{ activeTimeframe, changeInCents, changeInDecimal }} />
   </div>
 )
 
-const ChartHeader = forwardRef<HTMLDivElement, HeaderProps>(({ ...otherProps }, ref) => {
-  return (
-    <header className={cx('constellation flex justify-between')} ref={ref} {...otherProps}>
-      <PriceInfo />
-      <Tabs
-        size='small'
-        tabs={[
-          { key: 'Live', titleContent: 'Live' },
-          { key: '1D', titleContent: '1D' },
-          { key: '1W', titleContent: '1W' },
-          { key: '1M', titleContent: '1M' },
-          { key: '1Y', titleContent: '1Y' },
-          { key: 'All', titleContent: 'All' },
-        ]}
-        defaultActiveTab='1D'
-      />
-      <div className='constellation h-fit'>
-        <Dropdown
-          setValue={() => false}
-          items={[{ label: 'USD', value: 'USD' }]}
-          currentValue='USD'
+const ChartHeader = forwardRef<HTMLDivElement, HeaderProps>(
+  (
+    {
+      activeCurrency,
+      activeTimeframe,
+      changeInCents,
+      changeInDecimal,
+      currencies,
+      currentPriceInCents,
+      setActiveCurrency,
+      setActiveTimeframe,
+      ...otherProps
+    },
+    ref,
+  ) => {
+    return (
+      <header
+        className={cx(
+          'constellation flex flex-col lg:flex-row lg:justify-between lg:items-center py-10 gap-4',
+        )}
+        ref={ref}
+        {...otherProps}
+      >
+        <PriceInfo {...{ activeTimeframe, changeInCents, changeInDecimal, currentPriceInCents }} />
+        <Tabs
+          size='small'
+          tabs={[
+            {
+              key: 'live',
+              titleContent: (
+                <span className='constellation inline-flex items-center h-full'>
+                  <Text color={SemanticColors.success} variant='title1' className='mt-0 mb-0 pb-1'>
+                    •
+                  </Text>{' '}
+                  <span>Live</span>
+                </span>
+              ),
+            },
+            { key: 'day', titleContent: '1D' },
+            { key: 'week', titleContent: '1W' },
+            { key: 'month', titleContent: '1M' },
+            { key: 'year', titleContent: '1Y' },
+            { key: 'all', titleContent: 'All' },
+          ]}
+          defaultActiveTab={activeTimeframe}
+          onTabChange={(value) => setActiveTimeframe(value as Timeframe)}
         />
-      </div>
-    </header>
-  )
-})
+        <div className='constellation h-fit'>
+          <Dropdown setValue={setActiveCurrency} items={currencies} currentValue={activeCurrency} />
+        </div>
+      </header>
+    )
+  },
+)
 
 export default ChartHeader
