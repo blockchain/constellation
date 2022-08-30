@@ -10,7 +10,7 @@ type InternalLogoProps = {
   iconColor?: Colors
   imgSrc?: string
   size?: 'small' | 'base' | 'large'
-  text?: string
+  text?: string | ReactNode
   variant?: 'base' | 'double' | 'badge'
 }
 
@@ -21,7 +21,7 @@ interface ImgTxtContent {
   icon?: never
   iconColor?: never
   imgSrc?: string
-  text: string
+  text: string | ReactNode
 }
 
 interface IconContent {
