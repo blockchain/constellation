@@ -1,11 +1,12 @@
-import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { Props } from './Chart.types'
 import ChartHeader from './ChartHeader'
 
 /**
- * The Chart component description
+ * The Chart component displays currency data across multiple different timeframes.
+ *
+ * When a `ref` prop is provided, it will be forwarded to the Chart's body element.
  */
 
 const Chart = forwardRef<HTMLDivElement, Props>(
@@ -24,7 +25,7 @@ const Chart = forwardRef<HTMLDivElement, Props>(
     ref,
   ) => {
     return (
-      <div className={cx('constellation')} ref={ref} {...otherProps}>
+      <div className='constellation' ref={ref} {...otherProps}>
         <ChartHeader
           {...{
             activeCurrency,

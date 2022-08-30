@@ -1,4 +1,3 @@
-import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
 import { centsToDollarString, decimalToPercentString } from '../../../utils'
@@ -83,9 +82,7 @@ const ChartHeader = forwardRef<HTMLDivElement, HeaderProps>(
   ) => {
     return (
       <header
-        className={cx(
-          'constellation flex flex-col lg:flex-row lg:justify-between lg:items-center py-10 gap-4',
-        )}
+        className='constellation flex flex-col lg:flex-row lg:justify-between lg:items-center py-10 gap-4'
         ref={ref}
         {...otherProps}
       >
