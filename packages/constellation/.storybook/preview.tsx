@@ -3,37 +3,8 @@ import React from 'react'
 import { ThemeProvider } from '../src'
 import { useDarkMode } from 'storybook-dark-mode'
 import { themes } from '@storybook/theming'
-import { DocsContainer as BaseContainer } from '@storybook/addon-docs/blocks'
+import DocsContainer from './DocsContainer'
 import '../src/input.css'
-
-export const DocsContainer = ({ children, context }) => {
-  const dark = useDarkMode()
-
-  return (
-    <BaseContainer
-      context={{
-        ...context,
-        storyById: (id) => {
-          const storyContext = context.storyById(id)
-          return {
-            ...storyContext,
-            parameters: {
-              ...storyContext?.parameters,
-              docs: {
-                ...storyContext?.parameters?.docs,
-                theme: dark
-                  ? { ...themes.dark, appContentBg: '#2f2f2f' }
-                  : { ...themes.normal, appContentBg: '#FFFFFF' },
-              },
-            },
-          }
-        },
-      }}
-    >
-      {children}
-    </BaseContainer>
-  )
-}
 
 export const parameters = {
   darkMode: {

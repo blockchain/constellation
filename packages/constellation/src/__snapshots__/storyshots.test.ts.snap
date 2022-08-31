@@ -5244,7 +5244,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
 
 exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
 <table
-  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0 table-auto"
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
 >
   <thead>
     <tr
