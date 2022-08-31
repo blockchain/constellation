@@ -11,7 +11,7 @@ export type Props = Pick<BaseCardProps, 'onCardClick' | 'onCloseClick'> & {
   /**
    * The body text of the card the color is not influenced by the variant
    */
-  content: string
+  content: string | React.ReactNode
   /**
    * The primary call to action button
    */
@@ -21,9 +21,9 @@ export type Props = Pick<BaseCardProps, 'onCardClick' | 'onCloseClick'> & {
    */
   secondaryCta?: CardCta
   /**
-   * The title of the card renderd at the top and the color is influenced by the variant
+   * The title of the card rendered at the top and the color is influenced by the variant
    */
-  title: string
+  title: string | React.ReactNode
   /**
    * The variant of the card, this changes the color of the title and the border
    */

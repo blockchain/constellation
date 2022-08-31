@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 import { LogoProps } from '../../Compositions/Logo/Logo.types'
 
@@ -8,7 +8,7 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
     /**
      * Secondary text content of switcher
      */
-    byline?: string
+    byline?: string | ReactNode
     /**
      * The logo to display in the switcher.
      */
@@ -16,7 +16,7 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
     /**
      * Text content of switcher
      */
-    title: string
+    title: string | ReactNode
   }
 >
 
@@ -41,7 +41,7 @@ export type WalletProps<T extends React.ElementType> = PolymorphicComponentProps
     /**
      * The the secondary content of the switcher.
      */
-    ticker: string
+    ticker: string | ReactNode
   }
 >
 

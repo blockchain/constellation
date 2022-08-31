@@ -8,7 +8,7 @@ export type Props = SwitchProps & {
   /**
    * The text content of the Switch
    */
-  label?: string
+  label?: string | React.ReactNode
   /**
    * The semantic color of the text
    */

@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-interface Tab {
+export interface Tab {
   key: string
   titleContent: React.ReactNode
 }
@@ -11,7 +11,7 @@ export interface TabsProps {
   size: 'large' | 'small'
   tabs: Tab[]
   /**
-   * Vlaue overrides the default selected behavior so the tabs can be controlled
+   * Value overrides the default selected behavior so the tabs can be controlled
    * from outside the component.
    */
   value?: Tab['key']

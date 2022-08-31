@@ -1,9 +1,9 @@
 import { SelectProps } from '@radix-ui/react-select'
-import { FC } from 'react'
+import React, { FC } from 'react'
 
 export interface DropdownItem {
   icon?: React.ReactNode
-  label: string
+  label: React.ReactNode
   value: string
 }
 
