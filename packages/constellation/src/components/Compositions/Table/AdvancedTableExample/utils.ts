@@ -9,14 +9,18 @@ export type RowType = {
   asset: TextCellProps
 }
 
+// compares two text cells for sorting
+export const compareTextCells = (cellA: TextCellProps, cellB: TextCellProps) =>
+  `${cellA.text}${cellA.subtext}`.localeCompare(`${cellB.text}${cellB.subtext}`)
+
 // sort table cells alphabetically by text and then subtext
 export const sortTextCells = (
   rowA: ReactTableRowType<RowType>,
   rowB: ReactTableRowType<RowType>,
   id: string,
 ) => {
-  const rowAData = rowA.original[id as 'amount' | 'asset']
-  const rowBData = rowB.original[id as 'amount' | 'asset']
+  const cellAData = rowA.original[id as keyof RowType] as TextCellProps
+  const cellBData = rowB.original[id as keyof RowType] as TextCellProps
 
-  return `${rowAData.text}${rowAData.subtext}`.localeCompare(`${rowBData.text}${rowBData.subtext}`)
+  return compareTextCells(cellAData, cellBData)
 }

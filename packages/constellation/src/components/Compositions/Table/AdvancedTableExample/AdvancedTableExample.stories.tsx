@@ -131,4 +131,14 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
     </TableContainer>
   )
 }
+
 export const AdvancedTable = Template.bind({})
+
+AdvancedTable.parameters = {
+  docs: {
+    description: {
+      component:
+        'This is a more feature packed table example. It uses react-table to enable sorting in this example.',
+    },
+  },
+}
