@@ -7,7 +7,7 @@ import { Component as ComponentType, Props } from './Close.types'
 
 /**
  * Close Buttons extend off of the Button component, and provide a consistent way
- * for users to close, cards, podals, alerts, etc.
+ * for users to close, cards, modals, alerts, etc.
  *
  * When a `ref` prop is provided, it will be forwarded to the root element. Any
  * other properties supplied will be provided to the root element (ie, the `as`
