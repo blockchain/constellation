@@ -53,3 +53,10 @@ export interface HeaderPriceProps {
 
 export type Timeframe = 'live' | 'day' | 'week' | 'month' | 'year' | 'all'
 export type Currencies = DropdownItem[]
+
+export type ChartData = {
+  close: number
+  date: string
+}
+
+export type TooltipData = ChartData

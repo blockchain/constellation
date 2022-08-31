@@ -1,9 +1,11 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
+import appleStock from '@visx/mock-data/lib/mocks/appleStock'
 import React, { FC, useState } from 'react'
 
 import Dot from '../Alerts/Dot/Dot'
 import { Chart as RenderedChart } from '.'
 import { HeaderProps, Timeframe } from './Chart.types'
+import ChartBody from './ChartBody'
 import ChartHeader from './ChartHeader'
 
 type ComposedChartComponent = FC<{
@@ -85,11 +87,7 @@ const Template: ComponentStory<ComposedChartComponent> = ({
         timeframeTabs={timeframeTabs}
         timeframeLabel={timeframeLabels[timeframe]}
       />
-      {/* TODO: Build chart body component */}
-      <div className='constellation w-full bg-background-dark p-8'>
-        <p>Chart body.</p>
-        <p> Active timeframe: {timeframe}</p>
-      </div>
+      <ChartBody chartData={appleStock.slice(500, 750)} />
     </RenderedChart>
   )
 }
