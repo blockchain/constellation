@@ -60,3 +60,17 @@ export type ChartData = {
 }
 
 export type TooltipData = ChartData
+
+export interface ChartBodyProps {
+  axisTimescale: 'hour' | 'date'
+  chartData: ChartData[]
+  margin?: { bottom: number; left: number; right: number; top: number }
+  trend: 'up' | 'down'
+}
+
+export interface ChartBodyParentProps {
+  height: number
+  width: number
+}
+
+export type ChartProps = ChartBodyProps & ChartBodyParentProps

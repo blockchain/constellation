@@ -1,4 +1,4 @@
-import { SemanticColors } from 'components/Base/Colors'
+import { SemanticColors } from '../Colors'
 
 const colorClasses: Record<SemanticColors, string> = {
   'var(--color-background)': 'text-background',
@@ -14,6 +14,7 @@ const colorClasses: Record<SemanticColors, string> = {
   'var(--color-medium)': 'text-medium',
   'var(--color-muted)': 'text-muted',
   'var(--color-overlay)': 'text-overlay',
+  'var(--color-pink-500)': 'text-pink-500',
   'var(--color-primary)': 'text-primary',
   'var(--color-success)': 'text-success',
   'var(--color-title)': 'text-title',

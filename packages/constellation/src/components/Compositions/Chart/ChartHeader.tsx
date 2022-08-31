@@ -18,7 +18,7 @@ const PercentageRow = ({
   changeInDecimal: number
   timeframeLabel: React.ReactNode
 }) => {
-  const trendColor = changeInDecimal < 0 ? SemanticColors.error : SemanticColors.success
+  const trendColor = changeInDecimal < 0 ? SemanticColors.pink : SemanticColors.success
   return (
     <div className='constellation flex items-center gap-2'>
       {changeInDecimal < 0 ? (

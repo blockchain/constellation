@@ -87,7 +87,11 @@ const Template: ComponentStory<ComposedChartComponent> = ({
         timeframeTabs={timeframeTabs}
         timeframeLabel={timeframeLabels[timeframe]}
       />
-      <ChartBody chartData={appleStock.slice(500, 750)} />
+      <ChartBody
+        chartData={appleStock.slice(500, 750)}
+        axisTimescale={timeframe === 'live' ? 'hour' : 'date'}
+        trend={changeInDecimal < 0 ? 'down' : 'up'}
+      />
     </RenderedChart>
   )
 }

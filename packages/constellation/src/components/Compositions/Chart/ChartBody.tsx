@@ -1,6 +1,7 @@
 import { AxisBottom } from '@visx/axis'
 import { curveBasis } from '@visx/curve'
 import { localPoint } from '@visx/event'
+import { Glyph } from '@visx/glyph'
 import { Group } from '@visx/group'
 import ParentSize from '@visx/responsive/lib/components/ParentSize'
 import { scaleLinear, scaleTime } from '@visx/scale'
@@ -12,33 +13,37 @@ import { timeFormat } from 'd3-time-format'
 import React, { useCallback, useMemo } from 'react'
 
 import { PaletteColors, SemanticColors, Text } from '../../Base'
-import { ChartData, TooltipData } from './Chart.types'
+import { ChartBodyProps, ChartData, ChartProps, TooltipData } from './Chart.types'
 
-const formatDate = timeFormat('%b %d, %H:%M%p')
+const formatDate = timeFormat('%b %d')
+const formatHour = timeFormat('%H:%M%p')
 // accessors
 const getDate = (d: TooltipData) => new Date(d.date)
 const getStockValue = (d: TooltipData) => d.close
 const bisectDate = bisector<TooltipData, Date>((d) => new Date(d.date)).left
 
-type AreaProps = {
-  chartData: ChartData[]
-  height: number
-  margin?: { bottom: number; left: number; right: number; top: number }
-  width: number
-}
+const EndMarker = ({ fill, left, top }: { fill: PaletteColors; left: number; top: number }) => (
+  <Glyph left={left - 2} top={top}>
+    <circle r={16} fill={fill} opacity={0.1} />
+    <circle r={8} fill={fill} opacity={0.1} />
+    <circle r={4} fill={fill} />
+  </Glyph>
+)
 
-const Body = withTooltip<AreaProps, TooltipData>(
+const Body = withTooltip<ChartProps, TooltipData>(
   ({
     chartData,
     width,
     height,
     margin = { bottom: 24, left: 0, right: 0, top: 24 },
+    axisTimescale,
+    trend,
     showTooltip,
     hideTooltip,
     tooltipData,
     tooltipTop = 0,
     tooltipLeft = 0,
-  }: AreaProps & WithTooltipProvidedProps<TooltipData>) => {
+  }: ChartProps & WithTooltipProvidedProps<TooltipData>) => {
     if (width < 10) return null
 
     // bounds
@@ -79,7 +84,7 @@ const Body = withTooltip<AreaProps, TooltipData>(
 
     const xScale = scaleTime({
       domain: extent(chartData, getDate) as [Date, Date],
-      range: [0, width],
+      range: [0, width - (margin.left + margin.right)],
     })
 
     const yMax = max(chartData, getStockValue) || 0
@@ -89,17 +94,28 @@ const Body = withTooltip<AreaProps, TooltipData>(
       range: [height, 0],
     })
 
+    const trendColor = trend === 'up' ? PaletteColors['green-400'] : PaletteColors['pink-400']
+
     return (
       <div>
-        <svg className='constellation cursor-crosshair' width={width} height={height}>
+        <svg
+          className='constellation cursor-crosshair overflow-visible'
+          width={width}
+          height={height}
+        >
           <rect x={0} y={0} width={width} height={height} fill='transparent' rx={14} />
           <LinePath<ChartData>
             curve={curveBasis}
             data={chartData}
             x={(d) => xScale(getDate(d)) ?? 0}
             y={(d) => yScale(getStockValue(d)) ?? 0}
-            stroke={PaletteColors['green-400']}
+            stroke={trendColor}
             strokeWidth={4}
+          />
+          <EndMarker
+            left={xScale(getDate(chartData[chartData.length - 1])) ?? 0}
+            top={yScale(getStockValue(chartData[chartData.length - 1])) ?? 0}
+            fill={trendColor}
           />
           <Bar
             x={margin.left}
@@ -137,19 +153,17 @@ const Body = withTooltip<AreaProps, TooltipData>(
               return (
                 <g className='my-custom-bottom-axis'>
                   {props.ticks.map((tick, i) => {
-                    console.log({ tick }) // eslint-disable-line
-                    const tickX = tick.to.x
-                    const tickY = tick.to.y
                     return (
                       <Group key={`vx-tick-${tick.value}-${i}`} className='vx-axis-tick'>
                         <text
-                          transform={`translate(${tickX}, ${tickY})`}
+                          transform={`translate(${tick.to.x}, ${tick.to.y})`}
                           fontSize={10}
                           textAnchor='middle'
                           fill={SemanticColors.body}
                           className='constellation font-mono'
                         >
-                          {formatDate(tick.value as Date)}
+                          {axisTimescale === 'hour' && formatHour(tick.value as Date)}
+                          {axisTimescale === 'date' && formatDate(tick.value as Date)}
                         </text>
                       </Group>
                     )
@@ -168,7 +182,7 @@ const Body = withTooltip<AreaProps, TooltipData>(
               style={{
                 ...defaultStyles,
                 backdropFilter: 'blur(6px)',
-                background: PaletteColors['white-200'],
+                background: PaletteColors['overlay-light-200'],
                 border: '1px solid',
                 borderColor: SemanticColors['background-light'],
                 color: 'white',
@@ -180,9 +194,10 @@ const Body = withTooltip<AreaProps, TooltipData>(
                 variant='paragraph2'
                 className='constellation block mt-0 mb-0'
               >{`$${getStockValue(tooltipData)}`}</Text>
-              <Text color={SemanticColors.title} variant='caption1'>{`${formatDate(
-                new Date(tooltipData.date),
-              )}`}</Text>
+              <Text color={SemanticColors.title} variant='caption1'>
+                {axisTimescale === 'hour' && `Today, ${formatHour(new Date(tooltipData.date))}`}
+                {axisTimescale === 'date' && formatDate(new Date(tooltipData.date))}
+              </Text>
             </TooltipWithBounds>
           </div>
         )}
@@ -191,9 +206,18 @@ const Body = withTooltip<AreaProps, TooltipData>(
   },
 )
 
-const ChartBody = ({ chartData }: { chartData: ChartData[] }) => (
+const ChartBody = ({ axisTimescale, chartData, margin, trend }: ChartBodyProps) => (
   <ParentSize>
-    {({ height, width }) => <Body chartData={chartData} width={width} height={height || 400} />}
+    {({ height, width }) => (
+      <Body
+        chartData={chartData}
+        trend={trend}
+        axisTimescale={axisTimescale}
+        margin={margin}
+        width={width}
+        height={height || 400}
+      />
+    )}
   </ParentSize>
 )
 

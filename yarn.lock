@@ -4592,6 +4592,7 @@ __metadata:
     "@visx/axis": ^2.12.2
     "@visx/curve": ^2.1.0
     "@visx/event": ^2.6.0
+    "@visx/glyph": ^2.10.0
     "@visx/mock-data": ^2.1.2
     "@visx/responsive": ^2.10.0
     "@visx/scale": ^2.2.2
@@ -9629,6 +9630,22 @@ __metadata:
     "@types/react": "*"
     "@visx/point": 2.6.0
   checksum: a3155bab7d964f592702981a2a6cae3742d9f23732ec64c2c3717c8b17350e22006fb13a96201cbe78bdd35170c8363ab645bf0c4c8f8dee41be64618fd38c47
+  languageName: node
+  linkType: hard
+
+"@visx/glyph@npm:^2.10.0":
+  version: 2.10.0
+  resolution: "@visx/glyph@npm:2.10.0"
+  dependencies:
+    "@types/d3-shape": ^1.3.1
+    "@types/react": "*"
+    "@visx/group": 2.10.0
+    classnames: ^2.3.1
+    d3-shape: ^1.2.0
+    prop-types: ^15.6.2
+  peerDependencies:
+    react: ^16.3.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: 4ffd6f271adfd3e9ce52edcdc92f3b6196c5c6ef62dcb4ac24f0ed2a3f365eac7ef60ddaa0d7295bc857e732c59e2773f434245d02455a9f8b473e396bfe6713
   languageName: node
   linkType: hard
 
