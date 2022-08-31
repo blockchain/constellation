@@ -3,6 +3,7 @@ import React from 'react'
 import { ThemeProvider } from '../src'
 import { useDarkMode } from 'storybook-dark-mode'
 import { themes } from '@storybook/theming'
+import '../src/input.css'
 
 export const parameters = {
   darkMode: {
