@@ -7,27 +7,46 @@ import { scaleLinear, scaleTime } from '@visx/scale'
 import { Bar, Line, LinePath } from '@visx/shape'
 import { defaultStyles, TooltipWithBounds, withTooltip } from '@visx/tooltip'
 import { WithTooltipProvidedProps } from '@visx/tooltip/lib/enhancers/withTooltip'
-import { bisector, extent, max } from 'd3-array'
-import { timeFormat } from 'd3-time-format'
+import { extent, max, maxIndex, min, minIndex } from 'd3-array'
 import React, { useCallback, useMemo } from 'react'
 
-import { PaletteColors, SemanticColors, Text } from '../../Base'
-import { ChartData, ChartProps, TooltipData } from './Chart.types'
+import { Colors, PaletteColors, SemanticColors, Text } from '../../Base'
+import { ChartData, ChartProps, TooltipData, Trend } from './Chart.types'
+import { bisectDate, formatDate, formatHour, getDate, getStockValue } from './utils'
 
-const formatDate = timeFormat('%b %d')
-const formatHour = timeFormat('%H:%M%p')
-// accessors
-const getDate = (d: TooltipData) => new Date(d.date)
-const getStockValue = (d: TooltipData) => d.close
-const bisectDate = bisector<TooltipData, Date>((d) => new Date(d.date)).left
-
-const EndMarker = ({ fill, left, top }: { fill: PaletteColors; left: number; top: number }) => (
+const LiveIndicator = ({ fill, left, top }: { fill: Colors; left: number; top: number }) => (
   <Glyph left={left} top={top}>
     <circle r={16} fill={fill} opacity={0.1} />
     <circle r={8} fill={fill} opacity={0.1} />
     <circle r={4} fill={fill} />
   </Glyph>
 )
+
+const HighMarker = ({ left, top, value }: { left: number; top: number; value: number }) => (
+  <Glyph left={left} top={top - 20}>
+    <text
+      fill={SemanticColors.title}
+      className='constellation font-mono text-sm'
+      textAnchor='middle'
+    >{`$${value}`}</text>
+  </Glyph>
+)
+
+const LowMarker = ({ left, top, value }: { left: number; top: number; value: number }) => (
+  <Glyph left={left} top={top + 20}>
+    <text
+      fill={SemanticColors.title}
+      className='constellation font-mono text-sm'
+      textAnchor='middle'
+    >{`$${value}`}</text>
+  </Glyph>
+)
+
+const trendColors: Record<Trend, Colors> = {
+  down: PaletteColors['pink-400'],
+  neutral: SemanticColors.primary,
+  up: PaletteColors['green-400'],
+}
 
 const ChartInnerBody = withTooltip<ChartProps, TooltipData>(
   ({
@@ -49,6 +68,12 @@ const ChartInnerBody = withTooltip<ChartProps, TooltipData>(
     const innerWidth = width - margin.left - margin.right
     const innerHeight = height - margin.top - margin.bottom
 
+    // limits
+    const yMax = max(chartData, getStockValue) || 0
+    const yMaxIndex = maxIndex(chartData, getStockValue)
+    const yMin = min(chartData, getStockValue) || 0
+    const yMinIndex = minIndex(chartData, getStockValue)
+
     // scales
     const xScale = useMemo(
       () =>
@@ -58,8 +83,6 @@ const ChartInnerBody = withTooltip<ChartProps, TooltipData>(
         }),
       [innerWidth, margin.left, chartData],
     )
-
-    const yMax = max(chartData, getStockValue) || 0
     const yScale = scaleLinear({
       domain: [0, yMax + yMax / 4],
       range: [height, 0],
@@ -87,11 +110,18 @@ const ChartInnerBody = withTooltip<ChartProps, TooltipData>(
       [showTooltip, xScale, chartData],
     )
 
-    const trendColor = trend === 'up' ? PaletteColors['green-400'] : PaletteColors['pink-400']
+    const trendColor = trendColors[trend]
+    const showHighMarker =
+      (axisTimescale === 'hour' && trend === 'down') || axisTimescale === 'date'
+    const showLowMarker = (axisTimescale === 'hour' && trend === 'up') || axisTimescale === 'date'
 
     return (
       <div>
-        <svg className='constellation cursor-crosshair' width={width} height={height}>
+        <svg
+          className='constellation cursor-crosshair overflow-visible'
+          width={width}
+          height={height}
+        >
           <rect x={0} y={0} width={width} height={height} fill='transparent' rx={14} />
           <LinePath<ChartData>
             curve={curveBasis}
@@ -101,11 +131,27 @@ const ChartInnerBody = withTooltip<ChartProps, TooltipData>(
             stroke={trendColor}
             strokeWidth={4}
           />
-          <EndMarker
-            left={xScale(getDate(chartData[chartData.length - 1])) ?? 0}
-            top={yScale(getStockValue(chartData[chartData.length - 1])) ?? 0}
-            fill={trendColor}
-          />
+          {axisTimescale === 'hour' && (
+            <LiveIndicator
+              left={xScale(getDate(chartData[chartData.length - 1])) ?? 0}
+              top={yScale(getStockValue(chartData[chartData.length - 1])) ?? 0}
+              fill={trendColor}
+            />
+          )}
+          {showHighMarker && (
+            <HighMarker
+              left={xScale(getDate(chartData[yMaxIndex])) ?? 0}
+              top={yScale(getStockValue(chartData[yMaxIndex])) ?? 0}
+              value={yMax}
+            />
+          )}
+          {showLowMarker && (
+            <LowMarker
+              left={xScale(getDate(chartData[yMinIndex])) ?? 0}
+              top={yScale(getStockValue(chartData[yMinIndex])) ?? 0}
+              value={yMin}
+            />
+          )}
           <Bar
             x={margin.left}
             y={margin.top}

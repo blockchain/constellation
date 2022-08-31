@@ -65,9 +65,10 @@ export interface ChartBodyProps {
   axisTimescale: 'hour' | 'date'
   chartData: ChartData[]
   margin?: { bottom: number; left: number; right: number; top: number }
-  trend: 'up' | 'down'
+  trend: Trend
 }
 
+export type Trend = 'up' | 'down' | 'neutral'
 export interface ChartBodyParentProps {
   height: number
   width: number

@@ -7,6 +7,7 @@ import { Chart as RenderedChart } from '.'
 import { HeaderProps, Timeframe } from './Chart.types'
 import ChartBody from './ChartBody'
 import ChartHeader from './ChartHeader'
+import { getTrend } from './utils'
 
 type ComposedChartComponent = FC<{
   'header.activeCurrency': HeaderProps['activeCurrency']
@@ -90,7 +91,7 @@ const Template: ComponentStory<ComposedChartComponent> = ({
       <ChartBody
         chartData={appleStock.slice(500, 750)}
         axisTimescale={timeframe === 'live' ? 'hour' : 'date'}
-        trend={changeInDecimal < 0 ? 'down' : 'up'}
+        trend={getTrend(changeInDecimal)}
       />
     </RenderedChart>
   )

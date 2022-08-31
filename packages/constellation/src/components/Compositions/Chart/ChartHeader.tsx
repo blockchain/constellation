@@ -1,13 +1,20 @@
 import React, { forwardRef } from 'react'
 
 import { centsToDollarString, decimalToPercentString } from '../../../utils'
-import { IconArrowDown, IconArrowUp, SemanticColors, Text } from '../../Base'
+import { IconArrowDown, IconArrowRight, IconArrowUp, SemanticColors, Text } from '../../Base'
 import { Dropdown, Tabs } from '../../Primitives'
-import { HeaderProps, Timeframe } from './Chart.types'
+import { HeaderProps, Timeframe, Trend } from './Chart.types'
+import { getTrend } from './utils'
 
 /**
  * The Chart Header component description
  */
+
+const trendColors: Record<Trend, SemanticColors> = {
+  down: SemanticColors.pink,
+  neutral: SemanticColors.primary,
+  up: SemanticColors.success,
+}
 
 const PercentageRow = ({
   changeInCents,
@@ -18,14 +25,14 @@ const PercentageRow = ({
   changeInDecimal: number
   timeframeLabel: React.ReactNode
 }) => {
-  const trendColor = changeInDecimal < 0 ? SemanticColors.pink : SemanticColors.success
+  const trend = getTrend(changeInDecimal)
+  const trendColor = trendColors[trend]
   return (
     <div className='constellation flex items-center gap-2'>
-      {changeInDecimal < 0 ? (
-        <IconArrowDown color={trendColor} />
-      ) : (
-        <IconArrowUp color={trendColor} />
-      )}
+      {trend === 'down' && <IconArrowDown color={trendColor} />}
+      {trend === 'up' && <IconArrowUp color={trendColor} />}
+      {trend === 'neutral' && <IconArrowRight color={trendColor} />}
+
       <Text color={trendColor}>
         {centsToDollarString(changeInCents, 2)} ({decimalToPercentString(changeInDecimal)})
       </Text>
