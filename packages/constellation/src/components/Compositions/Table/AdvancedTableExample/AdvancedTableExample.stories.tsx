@@ -35,6 +35,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
 
           return <TextCell text='Asset' isHeader sort={sort} toggleSort={onClick} />
         },
+        // a custom sort function to sort the text cells by text and then subtext values
         sortingFn: sortTextCells,
       },
       {
@@ -49,6 +50,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
 
           return <TextCell subtext='Amount' isHeader sort={sort} toggleSort={onClick} />
         },
+        // a custom sort function to sort the text cells by text and then subtext values
         sortingFn: sortTextCells,
       },
       {
@@ -63,6 +65,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
     [],
   )
 
+  // data to be displayed in the table as Cell props
   const data = [
     {
       actions: {
@@ -91,9 +94,8 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
   ]
 
   const table = useReactTable({
-    columns,
-    data,
-    debugTable: true,
+    columns, // our column accessors
+    data, // our data
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     onSortingChange: setSorting,
@@ -138,7 +140,7 @@ AdvancedTable.parameters = {
   docs: {
     description: {
       component:
-        'This is a more feature packed table example. It uses react-table to enable sorting in this example.',
+        'This is a more feature packed table example. In this example react-table is used to generate the table and handle sorting the text cells. React-table can also be used to enable filtering, pagination, and more.',
     },
   },
 }
