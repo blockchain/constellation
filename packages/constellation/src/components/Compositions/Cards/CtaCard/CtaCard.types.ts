@@ -1,13 +1,13 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 import { CardProps } from '../Card'
 
 type CtaCardProps = CardProps & {
-  price?: string
-  priceChange?: string
-  ticker: string
-  timeframe?: string
-  tokenName: string
+  price?: string | ReactNode
+  priceChange?: string | ReactNode
+  ticker: string | ReactNode
+  timeframe?: string | ReactNode
+  tokenName: string | ReactNode
   variant?: 'default' | 'announcement'
 }
 

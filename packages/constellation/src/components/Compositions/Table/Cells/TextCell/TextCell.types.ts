@@ -14,11 +14,11 @@ interface Props extends BaseCellProps {
   /**
    * The second line of text in the cell, displayed as a lighter color and below the primary text.
    */
-  subtext?: string
+  subtext?: string | ReactNode
   /**
    * The first line of text displayed in the cell.
    */
-  text?: string
+  text?: string | ReactNode
 }
 type Component = FC<Props>
 

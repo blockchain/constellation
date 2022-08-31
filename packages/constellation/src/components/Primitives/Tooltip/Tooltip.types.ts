@@ -9,7 +9,7 @@ type Props = TooltipContentProps & {
   /**
    * The text content of the tooltip.
    */
-  text?: string
+  text?: string | ReactNode
   /**
    * The trigger element.
    */
