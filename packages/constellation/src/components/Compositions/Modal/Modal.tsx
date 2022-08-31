@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react'
 import { Close, Content, Description, Overlay, Root, Title, Trigger } from '@radix-ui/react-dialog'
 import cx from 'classnames'
-import React, { forwardRef, Fragment } from 'react'
+import React, { forwardRef, Fragment, ReactNode } from 'react'
 
 import { CloseButton } from '../../Primitives'
 import { Props } from './Modal.types'
@@ -9,7 +9,7 @@ import { Props } from './Modal.types'
 /**
  * Internal component for the optional accessible description
  */
-const ModalDescription = ({ description }: { description: string }) => (
+const ModalDescription = ({ description }: { description: string | ReactNode }) => (
   <Description className='constellation my-6 text-sm font-normal text-body'>
     {description}
   </Description>

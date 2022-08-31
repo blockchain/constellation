@@ -10,8 +10,8 @@ interface FallbackProps {
    */
   size?: 'small' | 'large'
   /**
-   * Allows the angle of the gradient to be overridden. This is
-   * allows the classNames to be consistent across for storyshot tests.
+   * Allows the angle of the gradient to be overridden. This allows
+   * the classNames to be consistent across for storyshot tests.
    */
   storyshotOverride?: boolean
 }

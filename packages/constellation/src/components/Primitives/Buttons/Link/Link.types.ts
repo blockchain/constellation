@@ -21,7 +21,7 @@ export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRe
     /**
      * Text content of link
      */
-    text: string
+    text: string | React.ReactNode
   }
 >
 

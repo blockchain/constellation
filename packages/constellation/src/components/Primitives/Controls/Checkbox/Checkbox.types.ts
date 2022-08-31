@@ -10,7 +10,7 @@ export type Props = CheckboxProps & {
   /**
    * The text content of the Checkbox item
    */
-  label?: string
+  label?: string | React.ReactNode
   /**
    * The semantic color of the text
    */

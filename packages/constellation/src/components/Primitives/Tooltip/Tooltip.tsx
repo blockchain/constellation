@@ -9,7 +9,7 @@ import { TooltipComponent } from '.'
  * hovering over it.
  *
  * For extra info and the full list of tooltip content props see the
- * [Contenxt section of the Radix tooltip docs](https://www.radix-ui.com/docs/primitives/components/tooltip#content)
+ * [Context section of the Radix tooltip docs](https://www.radix-ui.com/docs/primitives/components/tooltip#content)
  */
 
 const Tooltip: TooltipComponent = ({ children, delay, text, trigger, ...tooltipContentProps }) => {

@@ -4,10 +4,10 @@ type ReactInputComponent = React.HTMLAttributes<HTMLInputElement>
 
 type InputProps = ReactInputComponent & {
   disabled?: boolean
-  helperText?: string
+  helperText?: string | ReactNode
   id: string
-  label?: string
-  placeholder?: string
+  label?: string | ReactNode
+  placeholder?: string | ReactNode
   postfix?: ReactNode
   prefix?: string | ReactNode
   state?: 'error' | 'success' | 'warning' | 'default'
