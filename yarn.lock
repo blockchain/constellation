@@ -4580,8 +4580,8 @@ __metadata:
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
     "@testing-library/user-event": 13.5.0
-    "@types/d3-array": ^3.0.3
-    "@types/d3-time-format": ^4.0.0
+    "@types/d3-array": 3.0.3
+    "@types/d3-time-format": 4.0.0
     "@types/jest": 27.4.0
     "@types/randomcolor": 0.5.6
     "@types/react": 17.0.16
@@ -4589,22 +4589,22 @@ __metadata:
     "@types/styled-components": 4.4.1
     "@typescript-eslint/eslint-plugin": 4.17.0
     "@typescript-eslint/parser": 4.22.0
-    "@visx/axis": ^2.12.2
-    "@visx/curve": ^2.1.0
-    "@visx/event": ^2.6.0
-    "@visx/glyph": ^2.10.0
-    "@visx/mock-data": ^2.1.2
-    "@visx/responsive": ^2.10.0
-    "@visx/scale": ^2.2.2
-    "@visx/shape": ^2.12.2
-    "@visx/tooltip": ^2.10.0
+    "@visx/axis": 2.12.2
+    "@visx/curve": 2.1.0
+    "@visx/event": 2.6.0
+    "@visx/glyph": 2.10.0
+    "@visx/mock-data": 2.1.2
+    "@visx/responsive": 2.10.0
+    "@visx/scale": 2.2.2
+    "@visx/shape": 2.12.2
+    "@visx/tooltip": 2.10.0
     autoprefixer: 10.4.7
     babel-loader: 8.2.5
     babel-plugin-module-resolver: 4.1.0
     classnames: 2.3.1
     cssnano: 5.1.12
-    d3-array: ^3.2.0
-    d3-time-format: ^4.1.0
+    d3-array: 3.2.0
+    d3-time-format: 4.1.0
     eslint: 7.21.0
     eslint-config-airbnb: 18.2.1
     eslint-config-constellation: "workspace:*"
@@ -8754,7 +8754,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/d3-array@npm:^3.0.3":
+"@types/d3-array@npm:3.0.3":
   version: 3.0.3
   resolution: "@types/d3-array@npm:3.0.3"
   checksum: 972c8ff009c97c9093883d7597aac7185d4e8c2832d7f25420d8312aa1ebd60182f85fe768615cbc9d73d8819add52eea7ce640e57f5b1668ef389f1dc9569bc
@@ -8809,7 +8809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/d3-time-format@npm:^4.0.0":
+"@types/d3-time-format@npm:4.0.0":
   version: 4.0.0
   resolution: "@types/d3-time-format@npm:4.0.0"
   checksum: ac3a841b0cd6e7f4d4c6c2cd09a2662facea6993c16b10f40fdf84f55adf7be59a6d08fd6ac1c42c27c7340f3b5eeafef968b45b052a5476a580c78a991668db
@@ -9581,7 +9581,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/axis@npm:^2.12.2":
+"@visx/axis@npm:2.12.2":
   version: 2.12.2
   resolution: "@visx/axis@npm:2.12.2"
   dependencies:
@@ -9613,7 +9613,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/curve@npm:2.1.0, @visx/curve@npm:^2.1.0":
+"@visx/curve@npm:2.1.0":
   version: 2.1.0
   resolution: "@visx/curve@npm:2.1.0"
   dependencies:
@@ -9623,7 +9623,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/event@npm:^2.6.0":
+"@visx/event@npm:2.6.0":
   version: 2.6.0
   resolution: "@visx/event@npm:2.6.0"
   dependencies:
@@ -9633,7 +9633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/glyph@npm:^2.10.0":
+"@visx/glyph@npm:2.10.0":
   version: 2.10.0
   resolution: "@visx/glyph@npm:2.10.0"
   dependencies:
@@ -9662,7 +9662,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/mock-data@npm:^2.1.2":
+"@visx/mock-data@npm:2.1.2":
   version: 2.1.2
   resolution: "@visx/mock-data@npm:2.1.2"
   dependencies:
@@ -9679,7 +9679,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/responsive@npm:^2.10.0":
+"@visx/responsive@npm:2.10.0":
   version: 2.10.0
   resolution: "@visx/responsive@npm:2.10.0"
   dependencies:
@@ -9694,7 +9694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/scale@npm:2.2.2, @visx/scale@npm:^2.2.2":
+"@visx/scale@npm:2.2.2":
   version: 2.2.2
   resolution: "@visx/scale@npm:2.2.2"
   dependencies:
@@ -9708,7 +9708,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/shape@npm:2.12.2, @visx/shape@npm:^2.12.2":
+"@visx/shape@npm:2.12.2":
   version: 2.12.2
   resolution: "@visx/shape@npm:2.12.2"
   dependencies:
@@ -9746,7 +9746,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/tooltip@npm:^2.10.0":
+"@visx/tooltip@npm:2.10.0":
   version: 2.10.0
   resolution: "@visx/tooltip@npm:2.10.0"
   dependencies:
@@ -13065,7 +13065,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"d3-array@npm:2 - 3, d3-array@npm:^3.2.0":
+"d3-array@npm:2 - 3, d3-array@npm:3.2.0":
   version: 3.2.0
   resolution: "d3-array@npm:3.2.0"
   dependencies:
@@ -13167,7 +13167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"d3-time-format@npm:^4.1.0":
+"d3-time-format@npm:4.1.0":
   version: 4.1.0
   resolution: "d3-time-format@npm:4.1.0"
   dependencies:
