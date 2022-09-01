@@ -53,3 +53,25 @@ export interface HeaderPriceProps {
 
 export type Timeframe = 'live' | 'day' | 'week' | 'month' | 'year' | 'all'
 export type Currencies = DropdownItem[]
+
+export type ChartData = {
+  close: number
+  date: string
+}
+
+export type TooltipData = ChartData
+
+export interface ChartBodyProps {
+  axisTimescale: 'hour' | 'date'
+  chartData: ChartData[]
+  margin?: { bottom: number; left: number; right: number; top: number }
+  trend: Trend
+}
+
+export type Trend = 'up' | 'down' | 'neutral'
+export interface ChartBodyParentProps {
+  height: number
+  width: number
+}
+
+export type ChartProps = ChartBodyProps & ChartBodyParentProps
