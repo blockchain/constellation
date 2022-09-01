@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 
 import { IconChevronRightV2, IconProps, PaletteColors, SemanticColors, Text } from '../../Base'
 import { Switch, Tag } from '../../Primitives'
-import { Logo } from '../index'
+import { Logo } from '../Logo'
 import { ListRowComponent } from './ListRow.types'
 
 /**

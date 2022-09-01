@@ -11,7 +11,7 @@ import {
   Text,
 } from '../../Base'
 import { Button, Divider, IconButton, Profile, Tabs } from '../../Primitives'
-import { Logo } from '../index'
+import { Logo } from '../Logo'
 import { DropdownItem, NavigationComponent } from './Navigation.types'
 import Dropdown from './NavigationDropdown'
 import NavigationTab from './NavigationTab'
