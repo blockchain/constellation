@@ -168,6 +168,7 @@
     "d3-array": "3.2.0",
     "d3-time-format": "4.1.0",
     "randomcolor": "0.6.2",
+    "tailwindcss-animation-delay": "1.0.7",
     "tailwindcss-radix": "2.3.1"
   },
   "lint-staged": {

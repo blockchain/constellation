@@ -16,8 +16,13 @@ import { bisectDate, formatDate, formatHour, getDate, getStockValue } from './ut
 
 const LiveIndicator = ({ fill, left, top }: { fill: Colors; left: number; top: number }) => (
   <Glyph left={left} top={top}>
-    <circle r={16} fill={fill} opacity={0.1} />
-    <circle r={8} fill={fill} opacity={0.1} />
+    <circle
+      className='constellation animate-ping-big animation-delay-700'
+      r={4}
+      fill={fill}
+      opacity={0.1}
+    />
+    <circle className='constellation animate-ping-big' r={4} fill={fill} opacity={0.1} />
     <circle r={4} fill={fill} />
   </Glyph>
 )

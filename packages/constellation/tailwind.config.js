@@ -22,6 +22,7 @@ module.exports = {
       addVariant('mode-light', '.mode-light &')
       addVariant('children', '& > *')
     }),
+    require('tailwindcss-animation-delay'),
   ],
   theme: {
     colors: {
@@ -187,6 +188,12 @@ module.exports = {
       transparent: 'var(--color-transparent)',
     },
     extend: {
+      keyframes: {
+        fade: {
+          '0%': { opacity: 0.3, transform: 'scale(1)' },
+          '100%': { opacity: 0, transform: 'scale(3)' },
+        },
+      },
       dropShadow: {
         control: ['var(--shadow-control)', 'var(--shadow-control-sm)'],
         cards: ['var(--shadow-cards)', 'var(--shadow-cards-sm)'],
@@ -199,6 +206,7 @@ module.exports = {
         ],
       },
       animation: {
+        'ping-big': 'fade 1.5s linear infinite',
         'spin-fast': 'spin 1.25s linear infinite',
       },
     },
