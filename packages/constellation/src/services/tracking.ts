@@ -26,10 +26,20 @@ const tracking = ({
     })
   }
 
-  const setIdentifier = (): void => {
-    fetch(`${api}/events/tracking`, {
+  const setIdentifier = async (): Promise<string> => {
+    const res = fetch(`${api}/events/tracking`, {
       credentials: 'include',
     })
+
+    const data = await res.json()
+
+    const { id } = data
+
+    if (typeof window === 'object') {
+      window.__BC_SESSION_ID__ = id
+    }
+
+    return id
   }
 
   const publish = ({
@@ -48,6 +58,11 @@ const tracking = ({
       [key: string]: unknown
     }[]
   }): void => {
+
+    if (typeof window === 'object' && window.__BC_SESSION_ID__) {
+      context['id'] = window.__BC_SESSION_ID__
+    }
+
     fetch(`${api}/events/publish`, {
       body: JSON.stringify({
         context,
