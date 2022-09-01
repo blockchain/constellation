@@ -30,6 +30,7 @@ const Checkbox = forwardRef<HTMLButtonElement, Props>(
           getTextColorClass(labelColor),
         )}
         htmlFor={fallbackId}
+        role='checkbox'
       >
         <Root
           id={fallbackId}

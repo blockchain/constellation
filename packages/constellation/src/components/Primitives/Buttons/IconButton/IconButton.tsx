@@ -33,6 +33,7 @@ const IconButton: ComponentType = forwardRef(
         ref={ref}
         text=''
         loaderVariant='color'
+        aria-label='icon button'
         {...otherProps}
       />
     )

@@ -11,6 +11,7 @@ const Indicator = ({ index, onChange, selected }: IndicatorProps) => (
       'bg-primary': selected,
     })}
     onClick={() => onChange(index)}
+    aria-label='current page indicator'
   />
 )
 
@@ -24,6 +25,7 @@ const Arrow = ({ direction, disabled, onChange, selectedPage }: ArrowProps) => (
         className={cx({ 'rotate-180': direction === 'right' })}
       />
     }
+    aria-label={`page indicator arrow ${direction}`}
     size='small'
     disabled={disabled}
     onClick={() => onChange(selectedPage + (direction === 'right' ? 1 : -1))}

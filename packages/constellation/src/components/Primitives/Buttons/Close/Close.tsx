@@ -33,6 +33,7 @@ const CloseButton: ComponentType = forwardRef(
     return (
       <Button
         {...props}
+        aria-label='close button'
         variant='icon'
         ref={ref}
         size='noPadding'

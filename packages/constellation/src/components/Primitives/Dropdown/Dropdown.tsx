@@ -34,6 +34,7 @@ const Dropdown = forwardRef<HTMLButtonElement, Props>(
                 '!text-title font-semibold': currentValue,
               },
             )}
+            aria-label='dropdown trigger'
           >
             {currentValue ? (
               <SelectPrimitive.Value placeholder='Select option'>

@@ -29,6 +29,7 @@ const Radio = forwardRef<HTMLButtonElement, Props>(
           getTextColorClass(labelColor),
         )}
         htmlFor={fallbackId}
+        role='radio'
       >
         <Item
           className={cx(
