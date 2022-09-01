@@ -12,6 +12,7 @@ const ShowPasswordToggle = ({ disabled, onClick, showPassword }: ShowPasswordPro
     )}
     onClick={onClick}
     disabled={disabled}
+    aria-label='show password toggle'
   >
     {showPassword ? (
       <IconVisibilityOn height={20} width={24} color={PaletteColors['grey-400']} />

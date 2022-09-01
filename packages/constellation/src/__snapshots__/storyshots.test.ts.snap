@@ -3920,14 +3920,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-24"
+    id="radix-25"
     onClick={[Function]}
     onMouseDown={[Function]}
-    role="label"
+    role="radio"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-24"
+      aria-labelledby="radix-25"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -3962,14 +3962,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-26"
+    id="radix-27"
     onClick={[Function]}
     onMouseDown={[Function]}
-    role="label"
+    role="radio"
   >
     <button
       aria-checked={true}
-      aria-labelledby="radix-26"
+      aria-labelledby="radix-27"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="checked"
@@ -4009,14 +4009,14 @@ exports[`Storyshots Compositions/Controls/RadioGroup Radio Group 1`] = `
   </span>
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-28"
+    id="radix-29"
     onClick={[Function]}
     onMouseDown={[Function]}
-    role="label"
+    role="radio"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-28"
+      aria-labelledby="radix-29"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -4109,6 +4109,7 @@ exports[`Storyshots Compositions/Headers/BalanceHeader Balance Header 1`] = `
       </span>
     </div>
     <button
+      aria-label="favorite"
       className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-3 py-3 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
       disabled={false}
       onClick={[Function]}
@@ -4233,6 +4234,7 @@ exports[`Storyshots Compositions/Input Password Input 1`] = `
       className="mr-4 pl-2"
     >
       <button
+        aria-label="show password toggle"
         className="outline-none border-none bg-transparent flex items-center justify-center cursor-pointer"
         disabled={false}
         onClick={[Function]}
@@ -4716,6 +4718,7 @@ Array [
         </button>
       </div>
       <button
+        aria-label="icon button"
         className="!text-grey-300 hover:!text-grey-400 transition-colors border-none !p-0 !h-fit ml-3 lg:hidden bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
         disabled={false}
         onClick={[Function]}
@@ -4789,6 +4792,7 @@ exports[`Storyshots Compositions/Pager Pager 1`] = `
   className="constellation flex items-center justify-between max-w-[375px]"
 >
   <button
+    aria-label="page indicator arrow left"
     className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-2 py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
     disabled={true}
     onClick={[Function]}
@@ -4809,27 +4813,33 @@ exports[`Storyshots Compositions/Pager Pager 1`] = `
     className="flex gap-[10px]"
   >
     <button
+      aria-label="current page indicator"
       className="w-2 h-2 bg-medium rounded-full outline-none border-none bg-primary"
       onClick={[Function]}
     />
     <button
+      aria-label="current page indicator"
       className="w-2 h-2 bg-medium rounded-full outline-none border-none"
       onClick={[Function]}
     />
     <button
+      aria-label="current page indicator"
       className="w-2 h-2 bg-medium rounded-full outline-none border-none"
       onClick={[Function]}
     />
     <button
+      aria-label="current page indicator"
       className="w-2 h-2 bg-medium rounded-full outline-none border-none"
       onClick={[Function]}
     />
     <button
+      aria-label="current page indicator"
       className="w-2 h-2 bg-medium rounded-full outline-none border-none"
       onClick={[Function]}
     />
   </div>
   <button
+    aria-label="page indicator arrow right"
     className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-2 py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
     disabled={false}
     onClick={[Function]}
@@ -4888,11 +4898,41 @@ exports[`Storyshots Compositions/Table/Cells/CheckboxCell Checkbox Cell 1`] = `
   <div
     className="flex flex-row items-center h-full gap-2"
   >
-    <input
-      type="checkbox"
-    />
-     
-    <span>
+    <span
+      className="constellation inline-flex gap-2 items-center text-body"
+      id="radix-20"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      role="checkbox"
+    >
+      <button
+        aria-checked={false}
+        aria-labelledby="radix-20"
+        className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none"
+        data-state="unchecked"
+        id="checkbox-input"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="checkbox"
+        type="button"
+        value="on"
+      />
+      <input
+        aria-hidden={true}
+        defaultChecked={false}
+        style={
+          Object {
+            "margin": 0,
+            "opacity": 0,
+            "pointerEvents": "none",
+            "position": "absolute",
+            "transform": "translateX(-100%)",
+          }
+        }
+        tabIndex={-1}
+        type="checkbox"
+        value="on"
+      />
       Text
     </span>
   </div>
@@ -5621,6 +5661,7 @@ exports[`Storyshots Primitives/Buttons/Button Button 1`] = `
 
 exports[`Storyshots Primitives/Buttons/Close Close 1`] = `
 <button
+  aria-label="close button"
   className="constellation !bg-background-light mode-dark:!bg-grey-800 rounded-full !p-0 flex justify-center items-center !w-6 !h-6 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 p-0 flex w-fit"
   disabled={false}
   type="button"
@@ -5638,6 +5679,7 @@ exports[`Storyshots Primitives/Buttons/Close Close 1`] = `
 
 exports[`Storyshots Primitives/Buttons/IconButton Icon Button 1`] = `
 <button
+  aria-label="icon button"
   className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-4 py-4 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
   disabled={false}
   type="button"
@@ -5674,14 +5716,14 @@ exports[`Storyshots Primitives/Buttons/Link Link 1`] = `
 exports[`Storyshots Primitives/Controls/Checkbox Checkbox 1`] = `
 <span
   className="constellation inline-flex gap-2 items-center text-body"
-  id="radix-20"
+  id="radix-21"
   onClick={[Function]}
   onMouseDown={[Function]}
-  role="label"
+  role="checkbox"
 >
   <button
     aria-checked={false}
-    aria-labelledby="radix-20"
+    aria-labelledby="radix-21"
     className="flex h-6 w-6 items-center justify-center rounded-lg border border-solid border-medium bg-background-light radix-state-checked:bg-primary radix-state-checked:border-primary radix-state-unchecked:bg-background-light dark:radix-state-unchecked:bg-gray-900 focus:outline-none"
     data-state="unchecked"
     id="option1"
@@ -5730,14 +5772,14 @@ exports[`Storyshots Primitives/Controls/Radio Radio 1`] = `
 >
   <span
     className="constellation inline-flex gap-2 items-center text-body"
-    id="radix-22"
+    id="radix-23"
     onClick={[Function]}
     onMouseDown={[Function]}
-    role="label"
+    role="radio"
   >
     <button
       aria-checked={false}
-      aria-labelledby="radix-22"
+      aria-labelledby="radix-23"
       className="constellation w-6 h-6 rounded-full border-2 p-[3px] radix-state-checked:border-primary radix-state-unchecked:border-medium radix-disabled:border-muted"
       data-radix-collection-item=""
       data-state="unchecked"
@@ -5776,7 +5818,7 @@ exports[`Storyshots Primitives/Controls/Radio Radio 1`] = `
 exports[`Storyshots Primitives/Controls/Switch Switch 1`] = `
 <span
   className="constellation flex gap-3 text-body flex-row items-center"
-  id="radix-29"
+  id="radix-30"
   onClick={[Function]}
   onMouseDown={[Function]}
   role="label"
@@ -5784,6 +5826,7 @@ exports[`Storyshots Primitives/Controls/Switch Switch 1`] = `
   
   <button
     aria-checked={false}
+    aria-label="switch control"
     className="constellation group radix-state-unchecked:bg-background-dark mode-dark:radix-state-unchecked:bg-medium p-0 relative inline-flex h-[24px] w-[48px] flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-all focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-checked:bg-primary"
     data-state="unchecked"
     disabled={false}
@@ -5836,8 +5879,9 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
 >
   <button
     aria-autocomplete="none"
-    aria-controls="radix-30"
+    aria-controls="radix-31"
     aria-expanded={false}
+    aria-label="dropdown trigger"
     className="constellation flex justify-between items-center px-4 py-3.5 w-72 cursor-pointer transition-all truncate rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 !bg-background-light !text-muted font-normal"
     data-placeholder=""
     data-state="closed"
@@ -5893,11 +5937,11 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
       }
     >
       <div
-        aria-labelledby="radix-34"
+        aria-labelledby="radix-35"
         role="group"
       >
         <div
-          aria-labelledby="radix-31"
+          aria-labelledby="radix-32"
           aria-selected={false}
           className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
           data-radix-collection-item=""
@@ -5920,13 +5964,13 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           />
           <span
-            id="radix-31"
+            id="radix-32"
           >
             All Wallets
           </span>
         </div>
         <div
-          aria-labelledby="radix-32"
+          aria-labelledby="radix-33"
           aria-selected={false}
           className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
           data-radix-collection-item=""
@@ -5949,13 +5993,13 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           />
           <span
-            id="radix-32"
+            id="radix-33"
           >
             Second
           </span>
         </div>
         <div
-          aria-labelledby="radix-33"
+          aria-labelledby="radix-34"
           aria-selected={false}
           className="constellation relative flex gap-2 items-center justify-start p-2 rounded-md text-sm text-title font-semibold focus:bg-blue-000 mode-dark:focus:bg-dark-700 radix-disabled:opacity-50 focus:outline-none select-none"
           data-radix-collection-item=""
@@ -5978,7 +6022,7 @@ exports[`Storyshots Primitives/Dropdown Dropdown 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           />
           <span
-            id="radix-33"
+            id="radix-34"
           >
             Third
           </span>
@@ -6226,14 +6270,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
       tabIndex={0}
     >
       <button
-        aria-controls="radix-39-content-tab1"
+        aria-controls="radix-40-content-tab1"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1 radix-state-active:drop-shadow-control radix-state-active:bg-background"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-39-trigger-tab1"
+        id="radix-40-trigger-tab1"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -6248,14 +6292,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-39-content-tab2"
+        aria-controls="radix-40-content-tab2"
         aria-selected={true}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1 radix-state-active:drop-shadow-control radix-state-active:bg-background"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
         disabled={false}
-        id="radix-39-trigger-tab2"
+        id="radix-40-trigger-tab2"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -6270,14 +6314,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-39-content-tab3"
+        aria-controls="radix-40-content-tab3"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1 radix-state-active:drop-shadow-control radix-state-active:bg-background"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-39-trigger-tab3"
+        id="radix-40-trigger-tab3"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
@@ -6292,14 +6336,14 @@ exports[`Storyshots Primitives/Tabs Tabs 1`] = `
         </span>
       </button>
       <button
-        aria-controls="radix-39-content-tab4"
+        aria-controls="radix-40-content-tab4"
         aria-selected={false}
         className="constellation group py-2.5 rounded-[10px] text-grey-600 mode-dark:text-grey-400 focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 radix-state-active:text-primary mode-dark:radix-state-active:text-primary children:radix-state-active:border-r-transparent flex flex-1 radix-state-active:drop-shadow-control radix-state-active:bg-background"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
         disabled={false}
-        id="radix-39-trigger-tab4"
+        id="radix-40-trigger-tab4"
         onFocus={[Function]}
         onKeyDown={[Function]}
         onMouseDown={[Function]}
