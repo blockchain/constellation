@@ -117,7 +117,9 @@ const Button: ComponentType = forwardRef(
           <SpinningLoader
             size='full'
             borderWidth={size === 'small' ? 'xsmall' : 'small'}
-            variant={loaderVariant || variant === 'minimal' ? 'color' : 'monotone'}
+            variant={
+              loaderVariant || variant === 'minimal' || variant === 'icon' ? 'color' : 'monotone'
+            }
           />
         )}
         {state === 'success' && <IconCheck />}
