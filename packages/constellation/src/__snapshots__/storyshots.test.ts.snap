@@ -4793,7 +4793,7 @@ exports[`Storyshots Compositions/Pager Pager 1`] = `
 >
   <button
     aria-label="page indicator arrow left"
-    className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-2 py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+    className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 !px-2 !py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -4840,7 +4840,7 @@ exports[`Storyshots Compositions/Pager Pager 1`] = `
   </div>
   <button
     aria-label="page indicator arrow right"
-    className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-2 py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+    className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 !px-2 !py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -5639,6 +5639,651 @@ exports[`Storyshots Primitives/Buttons/Alert Alert 1`] = `
   />
   Large
 </button>
+`;
+
+exports[`Storyshots Primitives/Buttons/All Buttons All Buttons 1`] = `
+Array [
+  <section
+    className="constellation p-6"
+  >
+    <span
+      className="constellation text-2xl font-semibold my-5 text-body text-start"
+    >
+      Button
+    </span>
+    <div
+      className="constellation bg-medium mode-dark:bg-dark-500 h-px mt-2 mb-4"
+      data-orientation="horizontal"
+      role="separator"
+    />
+    <div
+      className="constellation flex gap-4"
+    >
+      <ul
+        className="constellation list-none flex flex-col gap-2 p-0"
+      >
+        <li>
+          <button
+            className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            large
+          </button>
+        </li>
+        <li>
+          <button
+            className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            default
+          </button>
+        </li>
+        <li>
+          <button
+            className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            small
+          </button>
+        </li>
+        <li>
+          <button
+            className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  p-0 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            noPadding
+          </button>
+        </li>
+      </ul>
+      <ul
+        className="constellation list-none flex flex-col gap-2 p-0"
+      >
+        <li>
+          <button
+            className="bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            large
+          </button>
+        </li>
+        <li>
+          <button
+            className="bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            default
+          </button>
+        </li>
+        <li>
+          <button
+            className="bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            small
+          </button>
+        </li>
+        <li>
+          <button
+            className="bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 p-0 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            noPadding
+          </button>
+        </li>
+      </ul>
+      <ul
+        className="constellation list-none flex flex-col gap-2 p-0"
+      >
+        <li>
+          <button
+            className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            large
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            default
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            small
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 p-0 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            noPadding
+          </button>
+        </li>
+      </ul>
+      <ul
+        className="constellation list-none flex flex-col gap-2 p-0"
+      >
+        <li>
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            large
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            default
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            small
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 p-0 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            noPadding
+          </button>
+        </li>
+      </ul>
+      <ul
+        className="constellation list-none flex flex-col gap-2 p-0"
+      >
+        <li>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            large
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            default
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            small
+          </button>
+        </li>
+        <li>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 p-0 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            <icon-apple.svg
+              color="inherit"
+              fill="currentColor"
+              focusable="false"
+              height="1rem"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+            noPadding
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>,
+  <section
+    className="constellation p-6"
+  >
+    <span
+      className="constellation text-2xl font-semibold my-5 text-body text-start"
+    >
+      Link
+    </span>
+    <div
+      className="constellation bg-medium mode-dark:bg-dark-500 h-px mt-2 mb-4"
+      data-orientation="horizontal"
+      role="separator"
+    />
+    <ul
+      className="constellation list-none flex flex-col gap-2 p-0"
+    >
+      <li>
+        <button
+          aria-disabled="true"
+          className="constellation w-fit text-primary hover:underline hover:underline-offset-[3px] hover:text-blue-700 focus:text-blue-700 font-semibold cursor-pointer transition-all flex items-center justify-center gap-2 mode-dark:hover:text-blue-300 mode-dark:focus:text-blue-300 px-10 py-4 text-xl h-16"
+          inline={false}
+          type="button"
+          width="auto"
+        >
+          large
+        </button>
+      </li>
+      <li>
+        <button
+          aria-disabled="true"
+          className="constellation w-fit text-primary hover:underline hover:underline-offset-[3px] hover:text-blue-700 focus:text-blue-700 font-semibold cursor-pointer transition-all flex items-center justify-center gap-2 mode-dark:hover:text-blue-300 mode-dark:focus:text-blue-300 px-6 py-3 text-base h-12"
+          inline={false}
+          type="button"
+          width="auto"
+        >
+          default
+        </button>
+      </li>
+      <li>
+        <button
+          aria-disabled="true"
+          className="constellation w-fit text-primary hover:underline hover:underline-offset-[3px] hover:text-blue-700 focus:text-blue-700 font-semibold cursor-pointer transition-all flex items-center justify-center gap-2 mode-dark:hover:text-blue-300 mode-dark:focus:text-blue-300 px-3 py-1.5 text-sm h-8"
+          inline={false}
+          type="button"
+          width="auto"
+        >
+          small
+        </button>
+      </li>
+    </ul>
+  </section>,
+  <section
+    className="constellation p-6"
+  >
+    <span
+      className="constellation text-2xl font-semibold my-5 text-body text-start"
+    >
+      Alert Button
+    </span>
+    <div
+      className="constellation bg-medium mode-dark:bg-dark-500 h-px mt-2 mb-4"
+      data-orientation="horizontal"
+      role="separator"
+    />
+    <ul
+      className="constellation list-none flex flex-col gap-2 p-0"
+    >
+      <li>
+        <button
+          className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  px-10 py-4 text-xl h-16 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-alert.svg
+            color="var(--color-warning)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          Alert
+        </button>
+      </li>
+      <li>
+        <button
+          className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  px-6 py-3 text-base h-12 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-alert.svg
+            color="var(--color-warning)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          Alert
+        </button>
+      </li>
+      <li>
+        <button
+          className="text-white-000 rounded-full bg-grey-900 active:bg-grey-900 focus:bg-grey-900 hover:bg-grey-700 disabled:bg-grey-500  px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-alert.svg
+            color="var(--color-warning)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          Alert
+        </button>
+      </li>
+    </ul>
+  </section>,
+  <section
+    className="constellation p-6"
+  >
+    <span
+      className="constellation text-2xl font-semibold my-5 text-body text-start"
+    >
+      Icon Button
+    </span>
+    <div
+      className="constellation bg-medium mode-dark:bg-dark-500 h-px mt-2 mb-4"
+      data-orientation="horizontal"
+      role="separator"
+    />
+    <ul
+      className="constellation list-none flex flex-col gap-2 p-0"
+    >
+      <li>
+        <button
+          aria-label="icon button"
+          className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-4 py-4 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-apple.svg
+            color="inherit"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="icon button"
+          className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 px-3 py-3 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-apple.svg
+            color="inherit"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="icon button"
+          className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 !px-2 !py-2 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-apple.svg
+            color="inherit"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="icon button"
+          className="constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 !p-0 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-apple.svg
+            color="inherit"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          
+        </button>
+      </li>
+    </ul>
+  </section>,
+  <section
+    className="constellation p-6"
+  >
+    <span
+      className="constellation text-2xl font-semibold my-5 text-body text-start"
+    >
+      Close Button
+    </span>
+    <div
+      className="constellation bg-medium mode-dark:bg-dark-500 h-px mt-2 mb-4"
+      data-orientation="horizontal"
+      role="separator"
+    />
+    <ul
+      className="constellation list-none flex flex-col gap-2 p-0"
+    >
+      <li>
+        <button
+          aria-label="close button"
+          className="constellation !bg-background-light mode-dark:!bg-grey-800 rounded-full !p-0 flex justify-center items-center !w-8 !h-8 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 p-0 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-close-v2.svg
+            color="var(--color-grey-400)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width={16}
+            xmlns="http://www.w3.org/2000/svg"
+          />
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="close button"
+          className="constellation !bg-background-light mode-dark:!bg-grey-800 rounded-full !p-0 flex justify-center items-center !w-6 !h-6 bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 p-0 flex w-fit"
+          disabled={false}
+          type="button"
+        >
+          <icon-close-v2.svg
+            color="var(--color-grey-400)"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width={12}
+            xmlns="http://www.w3.org/2000/svg"
+          />
+        </button>
+      </li>
+    </ul>
+  </section>,
+]
 `;
 
 exports[`Storyshots Primitives/Buttons/Button Button 1`] = `
