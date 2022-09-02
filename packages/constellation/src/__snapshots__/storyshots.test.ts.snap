@@ -3827,9 +3827,7 @@ exports[`Storyshots Compositions/Cards/Card Card 1`] = `
                 "transform": "translate(-50%, -50%) scale(1)",
               }
             }
-          >
-            CAT
-          </span>
+          />
         </span>
       </span>
     </div>
@@ -4464,16 +4462,8 @@ exports[`Storyshots Compositions/Modal Modal 1`] = `
 
 exports[`Storyshots Compositions/Navigation Navigation 1`] = `
 Array [
-  <div
-    aria-haspopup="menu"
+  <nav
     className="constellation flex flex-row items-center justify-between h-14 pl-6 pr-4 w-full bg-background border-b border-background-light mode-dark:border-dark-700"
-    data-disabled=""
-    data-state="closed"
-    disabled={true}
-    id="radix-18"
-    onKeyDown={[Function]}
-    onPointerDown={[Function]}
-    type="button"
   >
     <div
       className="flex flex-row items-center"
@@ -4663,9 +4653,7 @@ Array [
                       "transform": "translate(-50%, -50%) scale(1)",
                     }
                   }
-                >
-                  ETH
-                </span>
+                />
               </span>
             </span>
           </div>
@@ -4718,7 +4706,7 @@ Array [
         </button>
       </div>
       <button
-        aria-label="icon button"
+        aria-label="open menu"
         className="!text-grey-300 hover:!text-grey-400 transition-colors border-none !p-0 !h-fit ml-3 lg:hidden bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
         disabled={false}
         onClick={[Function]}
@@ -4735,53 +4723,17 @@ Array [
         
       </button>
     </div>
-  </div>,
-  <div
-    data-radix-popper-content-wrapper=""
-    style={
-      Object {
-        "--radix-popper-transform-origin": " ",
-        "left": 0,
-        "minWidth": "max-content",
-        "position": "fixed",
-        "top": 0,
-        "transform": "translate3d(0, -200%, 0)",
-        "zIndex": undefined,
-      }
-    }
-  >
+  </nav>,
+  <div>
     <div
-      aria-labelledby="radix-18"
-      aria-orientation="vertical"
-      className="constellation overflow-hidden"
-      data-align="center"
-      data-orientation="vertical"
-      data-side="bottom"
+      aria-haspopup="menu"
+      className="constellation w-full"
       data-state="closed"
-      dir="ltr"
-      id="radix-19"
-      onBlur={[Function]}
-      onBlurCapture={[Function]}
-      onFocus={[Function]}
-      onFocusCapture={[Function]}
+      disabled={false}
+      id="radix-18"
       onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onPointerDownCapture={[Function]}
-      onPointerMove={[Function]}
-      onScrollCapture={[Function]}
-      onTouchMoveCapture={[Function]}
-      onWheelCapture={[Function]}
-      role="menu"
-      style={
-        Object {
-          "--radix-dropdown-menu-content-transform-origin": "var(--radix-popper-transform-origin)",
-          "animation": "none",
-          "opacity": undefined,
-          "outline": "none",
-          "pointerEvents": undefined,
-        }
-      }
-      tabIndex={-1}
+      onPointerDown={[Function]}
+      type="button"
     />
   </div>,
 ]
@@ -6833,9 +6785,7 @@ exports[`Storyshots Primitives/Switcher/Switcher Switcher 1`] = `
               "transform": "translate(-50%, -50%) scale(1)",
             }
           }
-        >
-          Bitcoin
-        </span>
+        />
       </span>
     </span>
   </div>

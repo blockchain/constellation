@@ -13,9 +13,9 @@ export default {
     byline: 'Bitcoin',
     logoContent: {
       primaryContent: {
+        altText: 'Bitcoin',
         imgSrc:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png',
-        text: 'Bitcoin',
       },
     },
     title: 'BTC',

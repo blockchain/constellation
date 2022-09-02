@@ -18,6 +18,7 @@ export default {
     content: 'Get a notification when Uniswap is available to trade on Blockchain.com.',
     logoBackground: PaletteColors['blue-000'],
     logoContent: {
+      altText: 'notification icon',
       backgroundColor: PaletteColors['blue-000'],
       icon: IconNotificationOn,
       iconColor: SemanticColors.primary,
