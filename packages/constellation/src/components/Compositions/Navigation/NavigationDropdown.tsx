@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import cx from 'classnames'
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import { SemanticColors, Text } from '../../Base'
 import { Button } from '../../Primitives'
@@ -30,7 +30,6 @@ const Dropdown: DropdownComponent = ({
       <Transition.Root show={open}>
         <DropdownMenu.Content forceMount className='constellation overflow-hidden'>
           <Transition.Child
-            show={open}
             className='constellation flex flex-col justify-between w-screen h-[calc(100vh-56px)] bg-background pt-4 px-6 pb-6 relative box-border overflow-auto'
             enter='ease-out duration-300'
             enterFrom='opacity-0 scale-95 -translate-y-1/2'

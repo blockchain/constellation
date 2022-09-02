@@ -3,7 +3,7 @@ import { FC, ReactNode } from 'react'
 import { Colors } from '../../Base/Colors'
 
 type InternalLogoProps = {
-  altText: string
+  altText?: string
   backgroundColor?: Colors
   circle: boolean
   className?: string
@@ -18,6 +18,7 @@ type InternalLogoProps = {
 type InternalLogoComponent = FC<InternalLogoProps>
 
 interface TxtContent {
+  altText?: never
   backgroundColor?: Colors
   icon?: never
   iconColor?: never
@@ -26,6 +27,7 @@ interface TxtContent {
 }
 
 interface ImgContent {
+  altText: string
   backgroundColor?: Colors
   icon?: never
   iconColor?: never
@@ -34,6 +36,7 @@ interface ImgContent {
 }
 
 interface IconContent {
+  altText: string
   backgroundColor?: Colors
   icon: ReactNode
   iconColor?: Colors
@@ -41,12 +44,7 @@ interface IconContent {
   text?: never
 }
 
-type Content = (TxtContent | IconContent | ImgContent) & {
-  /**
-   * The alt text for the logo image
-   */
-  altText: string
-}
+type Content = TxtContent | IconContent | ImgContent
 
 type LogoProps = {
   /**
