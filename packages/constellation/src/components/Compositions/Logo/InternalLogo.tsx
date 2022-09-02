@@ -5,6 +5,7 @@ import React, { useEffect, useMemo, useRef } from 'react'
 import { InternalLogoComponent } from './Logo.types'
 
 const InternalLogo: InternalLogoComponent = ({
+  altText,
   backgroundColor,
   circle,
   className,
@@ -70,7 +71,7 @@ const InternalLogo: InternalLogoComponent = ({
       ref={containerRef}
     >
       <>
-        <Avatar.Image src={imgSrc} className='w-full h-full object-cover' />
+        <Avatar.Image src={imgSrc} className='w-full h-full object-cover' alt={altText} />
         <Avatar.Fallback className='min-w-full text-center flex'>
           {(icon &&
             (size === 'large' && React.isValidElement(icon)

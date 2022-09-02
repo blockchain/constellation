@@ -47,7 +47,7 @@ const Navigation: NavigationComponent = ({
   }, [navigationTabs])
 
   const dropdownItems: DropdownItem[] = useMemo(() => {
-    const items = navigationTabs
+    const items = [...navigationTabs]
 
     if (onNotificationClick) {
       items.push({ key: 'notifications', label: 'Notifications' })
@@ -94,15 +94,8 @@ const Navigation: NavigationComponent = ({
   )
 
   return (
-    <Dropdown
-      open={menuIsOpen}
-      onOpenChange={setMenuIsOpen}
-      items={dropdownItems}
-      selected={selected}
-      ctaButton={dropdownCtaButton}
-      onSelectedChange={handleSelectedChange}
-    >
-      <div className='constellation flex flex-row items-center justify-between h-14 pl-6 pr-4 w-full bg-background border-b border-background-light mode-dark:border-dark-700'>
+    <>
+      <nav className='constellation flex flex-row items-center justify-between h-14 pl-6 pr-4 w-full bg-background border-b border-background-light mode-dark:border-dark-700'>
         <div className='flex flex-row items-center'>
           <IconBlockchainLogo size='medium' />
           <Text variant='title3' className='ml-2 mr-8' color={SemanticColors.title}>
@@ -132,8 +125,8 @@ const Navigation: NavigationComponent = ({
                   <Logo
                     size='small'
                     primaryContent={{
+                      altText: walletButton.imgAlt,
                       imgSrc: walletButton.imgSrc,
-                      text: walletButton.imgAlt,
                     }}
                   />
                 }
@@ -148,7 +141,8 @@ const Navigation: NavigationComponent = ({
             {onNotificationClick && (
               <IconButton
                 onClick={onNotificationClick}
-                icon={<IconNotificationOn />}
+                icon={<IconNotificationOn alt='Referrals' />}
+                aria-label='Notifications'
                 size='default'
                 className='!bg-background-light border-none rounded-full !h-fit !p-2 text-grey-400 ml-4 hover:text-grey-600 transition-colors'
               />
@@ -156,7 +150,8 @@ const Navigation: NavigationComponent = ({
             {onReferralClick && (
               <IconButton
                 onClick={onReferralClick}
-                icon={<IconPresent />}
+                icon={<IconPresent alt='Referrals' />}
+                aria-label='Referrals'
                 size='default'
                 className='!bg-background-light border-none rounded-full !h-fit !p-2 text-grey-400 hover:text-grey-600 transition-colors'
               />
@@ -168,11 +163,22 @@ const Navigation: NavigationComponent = ({
             onClick={() => setMenuIsOpen(!menuIsOpen)}
             icon={menuIsOpen ? <IconClose size='medium' /> : <IconMenu size='medium' />}
             size='default'
+            aria-label={menuIsOpen ? 'close menu' : 'open menu'}
             className='!text-grey-300 hover:!text-grey-400 transition-colors border-none !p-0 !h-fit ml-3 lg:hidden'
           />
         </div>
+      </nav>
+      <div>
+        <Dropdown
+          open={menuIsOpen}
+          onOpenChange={setMenuIsOpen}
+          items={dropdownItems}
+          selected={selected}
+          ctaButton={dropdownCtaButton}
+          onSelectedChange={handleSelectedChange}
+        />
       </div>
-    </Dropdown>
+    </>
   )
 }
 

@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import cx from 'classnames'
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import { SemanticColors, Text } from '../../Base'
 import { Button } from '../../Primitives'
@@ -14,7 +14,6 @@ const ctaVariants = {
 }
 
 const Dropdown: DropdownComponent = ({
-  children,
   ctaButton,
   items,
   onOpenChange,
@@ -24,21 +23,22 @@ const Dropdown: DropdownComponent = ({
 }) => {
   return (
     <DropdownMenu.Root onOpenChange={onOpenChange} open={open}>
-      <DropdownMenu.Trigger disabled asChild>
-        {children}
+      <DropdownMenu.Trigger asChild>
+        <div className='constellation w-full' />
       </DropdownMenu.Trigger>
-      <DropdownMenu.Content forceMount className='constellation overflow-hidden'>
-        <Transition
-          show={open}
-          className='constellation flex flex-col justify-between w-screen h-[calc(100vh-56px)] bg-background pt-4 px-6 pb-6 relative box-border overflow-auto'
-          enter='ease-out duration-300'
-          enterFrom='opacity-0 scale-95 -translate-y-1/2'
-          enterTo='opacity-100 scale-100 translate-y-0'
-          leave='ease-in duration-200'
-          leaveFrom='opacity-100 scale-100 translate-y-0'
-          leaveTo='opacity-0 scale-95 -translate-y-1/2'
-        >
-          <div>
+
+      <Transition.Root show={open}>
+        <DropdownMenu.Content forceMount className='constellation overflow-hidden'>
+          <Transition.Child
+            show={open}
+            className='constellation flex flex-col justify-between w-screen h-[calc(100vh-56px)] bg-background pt-4 px-6 pb-6 relative box-border overflow-auto'
+            enter='ease-out duration-300'
+            enterFrom='opacity-0 scale-95 -translate-y-1/2'
+            enterTo='opacity-100 scale-100 translate-y-0'
+            leave='ease-in duration-200'
+            leaveFrom='opacity-100 scale-100 translate-y-0'
+            leaveTo='opacity-0 scale-95 -translate-y-1/2'
+          >
             {items.map((item) => {
               const onClick = () => {
                 onSelectedChange(item.key)
@@ -73,22 +73,22 @@ const Dropdown: DropdownComponent = ({
                 </DropdownMenu.Item>
               )
             })}
-          </div>
-          {ctaButton && (
-            <DropdownMenu.Item>
-              <Button
-                variant='minimal'
-                size='large'
-                text={ctaButton.text || 'Sign Out'}
-                className={cx(
-                  'w-full flex justify-center items-center outline-none shadow-none !border border-solid',
-                  ctaVariants[ctaButton.variant || 'error'],
-                )}
-              />
-            </DropdownMenu.Item>
-          )}
-        </Transition>
-      </DropdownMenu.Content>
+            {ctaButton && (
+              <DropdownMenu.Item>
+                <Button
+                  variant='minimal'
+                  size='large'
+                  text={ctaButton.text || 'Sign Out'}
+                  className={cx(
+                    'w-full flex justify-center items-center outline-none shadow-none !border border-solid',
+                    ctaVariants[ctaButton.variant || 'error'],
+                  )}
+                />
+              </DropdownMenu.Item>
+            )}
+          </Transition.Child>
+        </DropdownMenu.Content>
+      </Transition.Root>
     </DropdownMenu.Root>
   )
 }
