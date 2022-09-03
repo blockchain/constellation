@@ -42,6 +42,7 @@ const tracking = ({
       campaign?: {
         [key: string]: unknown
       }
+      id?: string
       traits?: {
         [key: string]: unknown
       }
