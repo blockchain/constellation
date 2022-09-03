@@ -1,6 +1,6 @@
 import debounce from './debounce'
 
-const TIME = 10000
+const TIME = 5000
 
 const MAX_QUEUE_SIZE = 10
 
