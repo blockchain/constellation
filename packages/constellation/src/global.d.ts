@@ -25,9 +25,3 @@ type PolymorphicComponentPropsWithRef<
   T extends React.ElementType,
   Props = Record<string, unknown>,
 > = PolymorphicComponentProps<T, Props> & { ref?: PolymorphicRef<T> }
-
-declare global {
-  interface Window {
-    __BC_SESSION_ID__: string
-  }
-}

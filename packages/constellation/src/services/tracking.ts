@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
 
+const __BC_SESSION_ID__ = uuidv4()
+
 const tracking = ({
   api,
   platform,
@@ -51,12 +53,7 @@ const tracking = ({
       [key: string]: unknown
     }[]
   }): void => {
-    if (typeof window === 'object') {
-      if (typeof window.__BC_SESSION_ID__ === 'undefined') {
-        window.__BC_SESSION_ID__ = uuidv4()
-      }
-      context.id = window.__BC_SESSION_ID__
-    }
+    context.id = __BC_SESSION_ID__
 
     fetch(`${api}/events/publish`, {
       body: JSON.stringify({
