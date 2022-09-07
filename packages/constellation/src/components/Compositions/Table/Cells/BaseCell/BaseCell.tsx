@@ -25,12 +25,9 @@ const BaseCell: BaseCellComponent = ({ children, isHeader, sort, toggleSort }) =
 
   return (
     <Component
-      className={cx(
-        'constellation relative h-full px-4 min-w-[204px] font-medium flex items-center',
-        {
-          'cursor-pointer select-none': toggleSort,
-        },
-      )}
+      className={cx('constellation relative h-full px-4 font-medium', {
+        'cursor-pointer select-none': toggleSort,
+      })}
       onClick={toggleSort}
     >
       <div className='flex flex-row items-center h-full gap-2'>
