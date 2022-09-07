@@ -4813,7 +4813,7 @@ exports[`Storyshots Compositions/Pager Pager 1`] = `
 
 exports[`Storyshots Compositions/Table/Cells/BaseCell Base Cell 1`] = `
 <td
-  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+  className="constellation relative h-full px-4 font-medium"
 >
   <div
     className="flex flex-row items-center h-full gap-2"
@@ -4827,7 +4827,7 @@ exports[`Storyshots Compositions/Table/Cells/BaseCell Base Cell 1`] = `
 
 exports[`Storyshots Compositions/Table/Cells/ButtonCell Button Cell 1`] = `
 <td
-  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+  className="constellation relative h-full px-4 font-medium"
 >
   <div
     className="flex flex-row items-center h-full gap-2"
@@ -4845,7 +4845,7 @@ exports[`Storyshots Compositions/Table/Cells/ButtonCell Button Cell 1`] = `
 
 exports[`Storyshots Compositions/Table/Cells/CheckboxCell Checkbox Cell 1`] = `
 <td
-  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+  className="constellation relative h-full px-4 font-medium"
 >
   <div
     className="flex flex-row items-center h-full gap-2"
@@ -4893,7 +4893,7 @@ exports[`Storyshots Compositions/Table/Cells/CheckboxCell Checkbox Cell 1`] = `
 
 exports[`Storyshots Compositions/Table/Cells/IconCell Icon Cell 1`] = `
 <td
-  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+  className="constellation relative h-full px-4 font-medium"
 >
   <div
     className="flex flex-row items-center h-full gap-2"
@@ -4912,7 +4912,7 @@ exports[`Storyshots Compositions/Table/Cells/IconCell Icon Cell 1`] = `
 
 exports[`Storyshots Compositions/Table/Cells/InformationalCell Informational Cell 1`] = `
 <td
-  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+  className="constellation relative h-full px-4 font-medium"
 >
   <div
     className="flex flex-row items-center h-full gap-2"
@@ -4928,7 +4928,7 @@ exports[`Storyshots Compositions/Table/Cells/InformationalCell Informational Cel
 
 exports[`Storyshots Compositions/Table/Cells/TextCell Text Cell 1`] = `
 <td
-  className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+  className="constellation relative h-full px-4 font-medium"
 >
   <div
     className="flex flex-row items-center h-full gap-2"
@@ -4953,14 +4953,14 @@ exports[`Storyshots Compositions/Table/Cells/TextCell Text Cell 1`] = `
 
 exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`] = `
 <table
-  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden border-spacing-0 table-auto w-full"
 >
   <thead>
     <tr
-      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
     >
-      <th
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center cursor-pointer select-none"
+      <td
+        className="constellation relative h-full px-4 font-medium cursor-pointer select-none"
         onClick={[Function]}
       >
         <div
@@ -4975,7 +4975,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
               Asset
             </span>
             <span
-              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+              className="text-body mode-light:text-background-dark text-sm"
             />
           </div>
           <icon-minus.svg
@@ -4988,9 +4988,9 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
             xmlns="http://www.w3.org/2000/svg"
           />
         </div>
-      </th>
-      <th
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center cursor-pointer select-none"
+      </td>
+      <td
+        className="constellation relative h-full px-4 font-medium cursor-pointer select-none"
         onClick={[Function]}
       >
         <div
@@ -5003,7 +5003,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
               className="text-title text-sm"
             />
             <span
-              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+              className="text-body mode-light:text-background-dark text-sm"
             >
               Amount
             </span>
@@ -5017,9 +5017,9 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
             xmlns="http://www.w3.org/2000/svg"
           />
         </div>
-      </th>
-      <th
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      </td>
+      <td
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5031,21 +5031,21 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
               className="text-title text-sm"
             />
             <span
-              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+              className="text-body mode-light:text-background-dark text-sm"
             >
               Actions
             </span>
           </div>
         </div>
-      </th>
+      </td>
     </tr>
   </thead>
   <tbody>
     <tr
-      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
     >
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5067,7 +5067,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5078,7 +5078,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
             <span
               className="text-title text-sm"
             >
-              $32,000
+              $32,000,000,000,000,000
             </span>
             <span
               className="text-body mode-light:text-background-dark text-sm"
@@ -5089,7 +5089,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5112,10 +5112,10 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
       </td>
     </tr>
     <tr
-      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
     >
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5137,7 +5137,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5159,7 +5159,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5182,10 +5182,10 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
       </td>
     </tr>
     <tr
-      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
     >
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5207,7 +5207,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5229,7 +5229,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5257,14 +5257,14 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
 
 exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
 <table
-  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden border-spacing-0 table-auto w-full"
 >
   <thead>
     <tr
-      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
     >
       <th
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5284,7 +5284,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         </div>
       </th>
       <th
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5304,7 +5304,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         </div>
       </th>
       <th
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5327,10 +5327,10 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
   </thead>
   <tbody>
     <tr
-      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
     >
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5352,7 +5352,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5374,7 +5374,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5397,10 +5397,10 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
       </td>
     </tr>
     <tr
-      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
     >
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5422,7 +5422,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5444,7 +5444,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         </div>
       </td>
       <td
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5472,14 +5472,14 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
 
 exports[`Storyshots Compositions/Table/Row Row 1`] = `
 <table
-  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden border-spacing-0 table-auto"
 >
   <thead>
     <tr
-      className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
     >
       <th
-        className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+        className="constellation relative h-full px-4 font-medium"
       >
         <div
           className="flex flex-row items-center h-full gap-2"
@@ -5503,10 +5503,10 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
     </tr>
   </thead>
   <tr
-    className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+    className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
   >
     <td
-      className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      className="constellation relative h-full px-4 font-medium"
     >
       <div
         className="flex flex-row items-center h-full gap-2"
@@ -5529,10 +5529,10 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
     </td>
   </tr>
   <tr
-    className="constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent"
+    className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
   >
     <td
-      className="constellation relative h-full px-4 min-w-[204px] font-medium flex items-center"
+      className="constellation relative h-full px-4 font-medium"
     >
       <div
         className="flex flex-row items-center h-full gap-2"
@@ -5559,7 +5559,7 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
 
 exports[`Storyshots Compositions/Table/TableContainer Table Container 1`] = `
 <table
-  className="constellation bg-background border border-background-light rounded-lg overflow-hidden w-fit border-spacing-0"
+  className="constellation bg-background border border-background-light rounded-lg overflow-hidden border-spacing-0 table-auto"
 >
   <tbody>
     <tr>
