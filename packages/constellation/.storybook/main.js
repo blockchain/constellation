@@ -37,4 +37,5 @@ module.exports = {
 
     return config
   },
+  staticDirs: ['./static'],
 }

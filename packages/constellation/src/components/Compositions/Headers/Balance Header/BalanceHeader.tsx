@@ -34,7 +34,7 @@ const BalanceHeader: ComponentType = forwardRef(
             {subtitle}
           </Text>
         </div>
-        <IconButton size='default' icon={icon} onClick={onIconClick} />
+        <IconButton aria-label='favorite' size='default' icon={icon} onClick={onIconClick} />
       </SectionHeader>
     )
   },

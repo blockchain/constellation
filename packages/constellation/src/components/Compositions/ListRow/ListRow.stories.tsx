@@ -20,6 +20,8 @@ export default {
     },
     showToggle: {
       control: { type: 'boolean' },
+      description:
+        '**This is a storybook-only prop to show the toggle**. App side the toggle is shown when `onToggleChange` is provided',
     },
     titleIcon: {
       control: { type: 'select' },

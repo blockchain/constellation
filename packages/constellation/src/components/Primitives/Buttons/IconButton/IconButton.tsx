@@ -18,7 +18,7 @@ const sizeClasses: Record<Sizes, string> = {
   default: 'px-3 py-3',
   large: 'px-4 py-4',
   noPadding: '!p-0',
-  small: 'px-2 py-2',
+  small: '!px-2 !py-2',
 }
 
 const IconButton: ComponentType = forwardRef(
@@ -32,6 +32,7 @@ const IconButton: ComponentType = forwardRef(
         variant='icon'
         ref={ref}
         text=''
+        aria-label='icon button'
         loaderVariant='color'
         {...otherProps}
       />

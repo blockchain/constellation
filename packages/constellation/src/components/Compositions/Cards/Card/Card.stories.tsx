@@ -17,8 +17,8 @@ export default {
     content:
       'This is your Portfolio view. Once you own and hold crypto, the balances display here.',
     logoContent: {
+      altText: 'CAT',
       imgSrc: 'https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1175550351.jpg',
-      text: 'CAT',
     },
     title: 'Welcome to Blockchain!',
     variant: 'default',

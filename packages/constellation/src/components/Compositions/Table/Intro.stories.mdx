@@ -1,0 +1,236 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+
+<Meta title='Compositions/Table/Intro' />
+
+# Tables
+
+Tables in constellation are made up of Cell components, Row components, and a table container.
+
+## Components
+
+### [Table Container](?path=/story/compositions-table-tablecontainer--table-container)
+
+The table container is meant to wrap the rows as the `<table>` tag. It also sets the background, border, and overflow.
+
+### [Row](?path=/story/compositions-table-row--row)
+
+The row component is meant to wrap the cells as the `<tr>` tag. It also takes a `header` prop that will
+allow it to wrap the whole row in a `<thead>` tag along with setting the header specific styles. It also
+will pass the header prop down to each cell so they can be styled appropriately.
+
+### Cell
+
+- [BaseCell](?path=/story/compositions-table-cells-basecell--base-cell): The Base Cell is the container all the other cells are built on. It is meant to wrap the
+  content as the `<td>` tag. It also takes a `header` prop that will allow it to wrap the content in a
+  `<th>` tag along with setting the header specific styles.
+
+- [ButtonCell](?path=/story/compositions-table-cells-buttoncell--button-cell): The button cell includes one or two buttons. It takes an `onClick` prop that will be called
+  when the button is clicked. It also takes a `variant` prop that allows for different button styles.
+
+- [CheckboxCell](?path=/story/compositions-table-cells-checkboxcell--checkbox-cell): The CheckboxCell includes a checkbox and a label. The cell proxys all checkbox props onto the
+  checkbox component.
+
+- [IconCell](?path=/story/compositions-table-cells-iconcell--icon-cell): The Icon Cell displays an icon. It takes an `icon` prop that is the Icon component to be displayed.
+
+- [InformationalCell](?path=/story/compositions-table-cells-informationalcell--informational-cell) The Informational Cell displays content in a Tag component. It takes a `text` prop that is the content to be displayed.
+  and a `variant` prop that is the variant of the Tag component.
+
+- [TextCell](?path=/story/compositions-table-cells-textcell--text-cell): The Text Cell displays text, it takes a `text` props that is the main content and a `subtext` prop that is the subtext.
+
+## Usage
+
+### [Simple Table](?path=/story/compositions-table-examples-simpletable--simple-table)
+The components can be used on their own to create a simple table for displaying data.
+
+<Canvas>
+  <Story id='compositions-table-examples-simpletable--simple-table' />
+</Canvas>
+
+For this Table we just need to import the TableContainer, Row, and Cell components.
+
+```tsx
+import { ButtonCell, Row, TableContainer, TextCell } from '@blockchain-com/constellation'
+
+function Table() {
+  return (
+    <TableContainer>
+      <Row header>
+        <TextCell text='Asset' />
+        <TextCell subtext='Amount' />
+        <TextCell subtext='Actions' />
+      </Row>
+      <tbody>
+        <Row>
+          <TextCell subtext='BTC' text='Bitcoin' />
+          <TextCell subtext='1 BTC' text='$32,000' />
+          <ButtonCell
+            primaryButton={{ onClick, text: 'Buy', variant: 'primary' }}
+            secondaryButton={{ onClick, text: 'Sell', variant: 'secondary' }}
+          />
+        </Row>
+        <Row>
+          <TextCell subtext='BTC' text='Bitcoin' />
+          <TextCell subtext='1 BTC' text='$32,000' />
+          <ButtonCell
+            primaryButton={{ onClick, text: 'Buy', variant: 'primary' }}
+            secondaryButton={{ onClick, text: 'Sell', variant: 'secondary' }}
+          />
+        </Row>
+      </tbody>
+    </TableContainer>
+}
+```
+
+### [Advanced Table](?path=/story/compositions-table-examples-advancedtable--advanced-table)
+
+This table leverages the [react-table]('https://react-table-v7.tanstack.com/') library to enable sorting. React-table can also be used to enable pagination, filtering, and more.
+
+<Canvas>
+  <Story id='compositions-table-examples-advancedtable--advanced-table' />
+</Canvas>
+
+#### Formatting the data
+In this example we just use static data structured as the props required for each cell.
+
+```tsx
+  const data = [
+    {
+      actions: {
+        primaryButton: { onClick, text: 'Buy', variant: 'primary' },
+        secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
+      } as ButtonCellProps,
+      amount: { subtext: '1 BTC', text: '$32,000' } as TextCellProps,
+      asset: { subtext: 'BTC', text: 'Bitcoin' } as TextCellProps,
+    },
+    {
+      actions: {
+        primaryButton: { onClick, text: 'Buy', variant: 'primary' },
+        secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
+      } as ButtonCellProps,
+      amount: { subtext: '1 ETH', text: '$1,800' } as TextCellProps,
+      asset: { subtext: 'ETH', text: 'Ethereum' } as TextCellProps,
+    },
+    {
+      actions: {
+        primaryButton: { onClick, text: 'Buy', variant: 'primary' },
+        secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
+      } as ButtonCellProps,
+      amount: { subtext: '1 ETH', text: '$1,900' } as TextCellProps,
+      asset: { subtext: 'ETH', text: 'Ethereum' } as TextCellProps,
+    },
+  ]
+```
+
+#### Setting up column accessors
+First we set up the column accessors for the table. To use the components with `react-table` we need to
+set up the `cell` prop to render our Text Cells and Button Cells. We also need to set up the `header` to
+render our header Text cells along with handling the sorting.
+
+```tsx
+const columns = React.useMemo<ColumnDef<RowType>[]>(
+    () => [
+      {
+        accessorKey: 'asset',
+        cell: ({ getValue }) => {
+          const props = getValue() as TextCellProps
+          return <TextCell {...props} />
+        },
+        header: ({ header }) => {
+          const sort = header.column.getIsSorted()
+          const onClick = header.column.getToggleSortingHandler()
+
+          return <TextCell text='Asset' isHeader sort={sort} toggleSort={onClick} />
+        },
+        // a custom sort function to sort the text cells by text and then subtext values
+        sortingFn: sortTextCells,
+      },
+      {
+        accessorKey: 'amount',
+        cell: ({ getValue }) => {
+          const props = getValue() as TextCellProps
+          return <TextCell {...props} />
+        },
+        header: ({ header }) => {
+          const sort = header.column.getIsSorted()
+          const onClick = header.column.getToggleSortingHandler()
+
+          return <TextCell subtext='Amount' isHeader sort={sort} toggleSort={onClick} />
+        },
+        sortingFn: sortTextCells,
+      },
+      {
+        accessorKey: 'actions',
+        cell: ({ getValue }) => {
+          const props = getValue() as ButtonCellProps
+          return <ButtonCell {...props} />
+        },
+        header: () => <TextCell subtext='Actions' isHeader />,
+      },
+    ],
+    [],
+  )
+  ```
+
+  #### Sorting
+  We can use the `sortingFn` prop to define a custom sort function for the column. This is useful for
+  sorting the text cells as they have a `text` and `subtext` prop that both need to be accounted for in the sorting.
+
+  ```tsx
+  // sort table cells alphabetically by text and then subtext
+  export const sortTextCells = (
+    rowA: ReactTableRowType<RowType>,
+    rowB: ReactTableRowType<RowType>,
+    id: string,
+  ) => {
+    const cellAData = rowA.original[id as keyof RowType] as TextCellProps
+    const cellBData = rowB.original[id as keyof RowType] as TextCellProps
+
+    return `${cellAData.text}${cellAData.subtext}`.localeCompare(`${cellBData.text}${cellBData.subtext}`)
+  }
+```
+
+#### Using the table
+Finally we can use the table by using the `useReactTable` hook to pass in the data and columns and then rendering the table.
+
+```tsx
+const table = useReactTable({
+    columns, // our column accessors
+    data, // our data
+    getCoreRowModel: getCoreRowModel(),
+    getSortedRowModel: getSortedRowModel(),
+    onSortingChange: setSorting,
+    state: {
+      sorting,
+    },
+  })
+
+  return (
+    <TableContainer>
+      {table.getHeaderGroups().map((headerGroup) => (
+        <Row key={headerGroup.id} header> {/* defining the header row */}
+          {headerGroup.headers.map((header) => {
+            return flexRender(header.column.columnDef.header, {
+              ...header.getContext(),
+              key: header.id,
+            })
+          })}
+        </Row>
+      ))}
+      <tbody>
+        {table.getRowModel().rows.map((row) => {
+          return (
+            <Row key={row.id}>
+              {row.getVisibleCells().map((cell) => {
+                return flexRender(cell.column.columnDef.cell, {
+                  ...cell.getContext(),
+                  key: cell.id,
+                })
+              })}
+            </Row>
+          )
+        })}
+      </tbody>
+    </TableContainer>
+  )
+}
+```

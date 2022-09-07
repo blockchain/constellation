@@ -14,7 +14,7 @@ const Row: FC<{ header?: boolean }> = ({ children, header = false }) => {
     return child
   })
 
-  const Wrapper = header ? 'thead' : Fragment // wrapps the component in thead if it's a header row otherwise it wrapps it with a fragment.
+  const Wrapper = header ? 'thead' : Fragment // wraps the component in thead if it's a header row otherwise it wraps it with a fragment.
 
   return (
     <Wrapper>

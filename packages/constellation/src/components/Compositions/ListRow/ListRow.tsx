@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 
 import { IconChevronRightV2, IconProps, PaletteColors, SemanticColors, Text } from '../../Base'
 import { Switch, Tag } from '../../Primitives'
-import { Logo } from '../index'
+import { Logo } from '../Logo'
 import { ListRowComponent } from './ListRow.types'
 
 /**
@@ -99,7 +99,7 @@ const ListRow: ListRowComponent = ({
       <div className={cx('flex flex-row items-center gap-4', { '!h-[47px]': hasDescription })}>
         {icon && <Icon color={PaletteColors['grey-400']} size='medium' />}
         {logoProps && <Logo {...logoProps} />}
-        {imgSrc && imgAlt && <Logo circle={false} primaryContent={{ imgSrc, text: imgAlt }} />}
+        {imgSrc && imgAlt && <Logo circle={false} primaryContent={{ altText: imgAlt, imgSrc }} />}
       </div>
 
       <div className='flex flex-grow flex-col'>

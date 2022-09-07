@@ -1,3 +1,7 @@
+import { v4 as uuidv4 } from 'uuid'
+
+const __BC_SESSION_ID__ = uuidv4()
+
 const tracking = ({
   api,
   platform,
@@ -40,6 +44,7 @@ const tracking = ({
       campaign?: {
         [key: string]: unknown
       }
+      id?: string
       traits?: {
         [key: string]: unknown
       }
@@ -48,6 +53,8 @@ const tracking = ({
       [key: string]: unknown
     }[]
   }): void => {
+    context.id = __BC_SESSION_ID__
+
     fetch(`${api}/events/publish`, {
       body: JSON.stringify({
         context,

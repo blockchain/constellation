@@ -52,6 +52,7 @@ const Switch = forwardRef<HTMLButtonElement, Props>(
           )}
           ref={ref}
           disabled={disabled}
+          aria-label='switch control'
           {...otherProps}
         >
           <Thumb

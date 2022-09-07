@@ -41,6 +41,64 @@ Create a component interface that can accept a valid Constellation color:
 
 ## Adding a Color
 
-TODO
+To add a new color, you have to add it to `src/input.css` and to `tailwind.config.js`.
 
-[View Color Gallery](?path=/story/base-colors--primary&globals=backgrounds.grid:false)
+### Pallette Colors
+
+Colors are added to `input.css` as CSS variables. The variable name should be in the format `--color-{name}-{shade}`. For example, `--color-pink-400`.
+```css
+/* Pink */
+--color-pink-300: #FF51BE;
+--color-pink-400: #F00699;
+--color-pink-500: #DE0082;
+```
+After the colors are in `input.css` they can be added to `tailwind.config.js` as a color prop in the theme object. Each color gets its own
+object named after the color and then each shade it a key in that object. For example, `pink` is the color and `400` is the shade. The value
+of each shade is then set to the CSS variable name. For example, `--color-pink-400`.
+
+```js
+theme: {
+  colors: {
+    ...
+    pink: {
+      300: 'var(--color-pink-300)',
+      400: 'var(--color-pink-400)',
+      500: 'var(--color-pink-500)',
+    },
+    ...
+  }
+  ...
+}
+```
+
+### Semantic Colors
+
+Semantic colors are added to `input.css` as CSS variables the same way as Pallette Colors. They reference the Pallette
+Colors. For example, `--color-title` is set to `--color-grey-900` in the light mode class and `--color-white` in the dark
+mode class. Semantic colors have two classes, one for light mode (`.mode-light`) and one for dark mode (`.mode-dark`).
+
+```css
+ .mode-light {
+  --color-title: var(--color-grey-900);
+  ...
+ }
+
+.mode-dark {
+  --color-title: var(--color-white);
+  ...
+}
+```
+
+The semantic colors can then be added to `tailwind.config.js`.
+
+```js
+theme: {
+    colors: {
+      // semantic colors
+      title: 'var(--color-title)',
+      body: 'var(--color-body)',
+      ...
+    }
+    ...
+}
+```
