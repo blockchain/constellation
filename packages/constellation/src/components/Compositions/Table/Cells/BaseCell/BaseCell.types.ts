@@ -1,6 +1,10 @@
 import { FC } from 'react'
 
 type Props = {
+  /**
+   * Used to change the alignment of the cell. Defaults to left.
+   */
+  align?: 'left' | 'center' | 'right'
   /*
     Controlled by the Row component. isHeader is true when the cell is in a header row.
     When isHeader is true, the cell will render as a th otherwise it will render as a td.
@@ -18,6 +22,11 @@ type Props = {
    * use toggleSort to update the sort state.
    */
   toggleSort?: (event: unknown) => void | (() => void)
+  /**
+   * The width of the cell, auto fills the available space. Content sets the with of the cell to
+   * the width of the content. Defaults to auto.
+   */
+  width?: 'auto' | 'content' | 'fill'
 }
 type Component = FC<Props>
 

@@ -20,7 +20,7 @@ const Row: FC<{ header?: boolean }> = ({ children, header = false }) => {
     <Wrapper>
       <tr
         className={cx(
-          'constellation relative h-16 flex border-b border-background-light last-of-type:!border-transparent',
+          'constellation relative h-16 border-b border-background-light last-of-type:!border-transparent',
           {
             'bg-background-light !h-12': header,
           },

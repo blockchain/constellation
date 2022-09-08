@@ -11,7 +11,7 @@ export default {
 
 const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
   return (
-    <TableContainer>
+    <TableContainer className='w-full'>
       <Row header>
         <TextCell text='Asset' />
         <TextCell subtext='Amount' />

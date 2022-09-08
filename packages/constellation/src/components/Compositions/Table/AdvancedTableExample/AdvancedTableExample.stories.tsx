@@ -33,7 +33,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
           const sort = header.column.getIsSorted()
           const onClick = header.column.getToggleSortingHandler()
 
-          return <TextCell text='Asset' isHeader sort={sort} toggleSort={onClick} />
+          return <TextCell text='Asset' sort={sort} toggleSort={onClick} />
         },
         // a custom sort function to sort the text cells by text and then subtext values
         sortingFn: sortTextCells,
@@ -48,7 +48,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
           const sort = header.column.getIsSorted()
           const onClick = header.column.getToggleSortingHandler()
 
-          return <TextCell subtext='Amount' isHeader sort={sort} toggleSort={onClick} />
+          return <TextCell subtext='Amount' sort={sort} toggleSort={onClick} />
         },
         // a custom sort function to sort the text cells by text and then subtext values
         sortingFn: sortTextCells,
@@ -59,7 +59,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
           const props = getValue() as ButtonCellProps
           return <ButtonCell {...props} />
         },
-        header: () => <TextCell subtext='Actions' isHeader />,
+        header: () => <TextCell subtext='Actions' align='right' width='content' />,
       },
     ],
     [],
@@ -69,6 +69,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
   const data = [
     {
       actions: {
+        align: 'right',
         primaryButton: { onClick, text: 'Buy', variant: 'primary' },
         secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
       } as ButtonCellProps,
@@ -77,6 +78,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
     },
     {
       actions: {
+        align: 'right',
         primaryButton: { onClick, text: 'Buy', variant: 'primary' },
         secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
       } as ButtonCellProps,
@@ -85,6 +87,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
     },
     {
       actions: {
+        align: 'right',
         primaryButton: { onClick, text: 'Buy', variant: 'primary' },
         secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
       } as ButtonCellProps,
@@ -105,7 +108,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
   })
 
   return (
-    <TableContainer>
+    <TableContainer className='w-full'>
       {table.getHeaderGroups().map((headerGroup) => (
         <Row key={headerGroup.id} header>
           {headerGroup.headers.map((header) => {
