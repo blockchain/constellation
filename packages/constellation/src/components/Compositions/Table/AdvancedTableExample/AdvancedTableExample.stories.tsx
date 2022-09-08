@@ -59,7 +59,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
           const props = getValue() as ButtonCellProps
           return <ButtonCell {...props} />
         },
-        header: () => <TextCell subtext='Actions' />,
+        header: () => <TextCell subtext='Actions' align='right' width='content' />,
       },
     ],
     [],
@@ -69,14 +69,16 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
   const data = [
     {
       actions: {
+        align: 'right',
         primaryButton: { onClick, text: 'Buy', variant: 'primary' },
         secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
       } as ButtonCellProps,
-      amount: { subtext: '1 BTC', text: '$32,000,000,000,000,000' } as TextCellProps,
+      amount: { subtext: '1 BTC', text: '$32,000' } as TextCellProps,
       asset: { subtext: 'BTC', text: 'Bitcoin' } as TextCellProps,
     },
     {
       actions: {
+        align: 'right',
         primaryButton: { onClick, text: 'Buy', variant: 'primary' },
         secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
       } as ButtonCellProps,
@@ -85,6 +87,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
     },
     {
       actions: {
+        align: 'right',
         primaryButton: { onClick, text: 'Buy', variant: 'primary' },
         secondaryButton: { onClick, text: 'Sell', variant: 'secondary' },
       } as ButtonCellProps,

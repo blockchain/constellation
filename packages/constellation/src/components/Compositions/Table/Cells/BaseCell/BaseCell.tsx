@@ -10,7 +10,20 @@ import { BaseCellComponent } from '.'
  * be used on its own to make custom cells down the line.
  */
 
-const BaseCell: BaseCellComponent = ({ children, isHeader, sort, toggleSort }) => {
+const alignmentStyles = {
+  center: 'justify-center',
+  left: 'justify-start',
+  right: 'justify-end',
+}
+
+const BaseCell: BaseCellComponent = ({
+  align = 'left',
+  children,
+  isHeader,
+  sort,
+  toggleSort,
+  width = 'auto',
+}) => {
   const Component = isHeader ? 'th' : 'td'
   const SortArrow = useMemo(() => {
     switch (sort) {
@@ -25,12 +38,18 @@ const BaseCell: BaseCellComponent = ({ children, isHeader, sort, toggleSort }) =
 
   return (
     <Component
-      className={cx('constellation relative h-full px-4 font-medium', {
-        'cursor-pointer select-none': toggleSort,
-      })}
+      className={cx(
+        'constellation relative h-full px-4 font-medium',
+        {
+          'cursor-pointer select-none': toggleSort,
+        },
+        { 'w-auto': width === 'auto' },
+        { 'w-[1%]': width === 'content' },
+        { 'w-full': width === 'fill' },
+      )}
       onClick={toggleSort}
     >
-      <div className='flex flex-row items-center h-full gap-2'>
+      <div className={cx('flex flex-row items-center h-full gap-2', alignmentStyles[align])}>
         {children}
         {toggleSort && SortArrow}
       </div>
