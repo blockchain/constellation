@@ -14,6 +14,8 @@ const ButtonCell: ButtonCellComponentType = ({ primaryButton, secondaryButton, .
   return (
     <BaseCell {...baseProps}>
       <Button
+        {...primaryButton}
+        disabled={primaryButton.disabled}
         text={primaryButton.text}
         onClick={primaryButton.onClick}
         variant={primaryButton.variant || 'minimal'}
@@ -21,6 +23,8 @@ const ButtonCell: ButtonCellComponentType = ({ primaryButton, secondaryButton, .
       />
       {secondaryButton && (
         <Button
+          {...secondaryButton}
+          disabled={secondaryButton.disabled}
           text={secondaryButton.text}
           onClick={secondaryButton.onClick}
           variant={secondaryButton.variant || 'minimal'}
