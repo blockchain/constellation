@@ -23,6 +23,10 @@ type Props = {
    */
   toggleSort?: (event: unknown) => void | (() => void)
   /**
+   * value is used here to help with the sorting of a certain column
+   */
+  value?: string | number
+  /**
    * The width of the cell, auto fills the available space. Content sets the with of the cell to
    * the width of the content. Defaults to auto.
    */
