@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { PolymorphicComponentPropsWithRef } from '../../../../typings/polymorphic-component-props-with-ref'
 import { SpinningLoaderProps } from '../..'
 
 export type ButtonVariants = 'primary' | 'secondary' | 'minimal' | 'alert' | 'icon'

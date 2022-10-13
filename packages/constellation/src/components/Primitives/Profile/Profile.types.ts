@@ -1,5 +1,7 @@
 import { FC } from 'react'
 
+import { PolymorphicComponentPropsWithRef } from '../../../typings/polymorphic-component-props-with-ref'
+
 interface FallbackProps {
   /**
    * The full name of the user.

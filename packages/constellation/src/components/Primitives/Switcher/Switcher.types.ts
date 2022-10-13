@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 
+import { PolymorphicComponentPropsWithRef } from '../../../typings/polymorphic-component-props-with-ref'
 import { LogoProps } from '../../Compositions/Logo/Logo.types'
 
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<

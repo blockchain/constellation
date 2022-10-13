@@ -1,6 +1,7 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
+import { PolymorphicRef } from '../../../typings/polymorphic-ref'
 import { IconChevronRightV2, PaletteColors, SemanticColors, Text } from '../../Base'
 import { Logo } from '../../Compositions/Logo'
 import { Component as ComponentType, Props } from './Switcher.types'

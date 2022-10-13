@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { PolymorphicComponentPropsWithRef } from '../../../../typings/polymorphic-component-props-with-ref'
+
 export type SettingsHeaderModes = 'initial' | 'unsaved'
 
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<

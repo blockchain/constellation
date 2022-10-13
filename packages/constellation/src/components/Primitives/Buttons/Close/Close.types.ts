@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { PolymorphicComponentPropsWithRef } from '../../../../typings/polymorphic-component-props-with-ref'
+
 export type Sizes = 'default' | 'large'
 
 export type Props<T extends React.ElementType> = PolymorphicComponentPropsWithRef<

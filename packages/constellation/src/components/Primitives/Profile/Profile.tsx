@@ -2,6 +2,7 @@ import * as Avatar from '@radix-ui/react-avatar'
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
+import { PolymorphicRef } from '../../../typings/polymorphic-ref'
 import Fallback from './Fallback'
 import { ProfileComponent, ProfileProps } from './Profile.types'
 
