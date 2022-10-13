@@ -1,6 +1,7 @@
 import cx from 'classnames'
 import React, { forwardRef } from 'react'
 
+import { PolymorphicRef } from '../../../../typings/polymorphic-ref'
 import { Text } from '../../../Base'
 import { Button, buttonSizeStyles, rootButtonStyles } from '../../../Primitives'
 import { SectionHeader, SectionHeaderComponent } from '../Section Header'

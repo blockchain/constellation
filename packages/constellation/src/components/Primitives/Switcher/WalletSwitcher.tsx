@@ -1,6 +1,7 @@
 import cx from 'classnames'
 import React, { forwardRef, useMemo } from 'react'
 
+import { PolymorphicRef } from '../../../typings/polymorphic-ref'
 import { truncateId } from '../../../utils'
 import { Text } from '../../Base'
 import { WalletComponent as ComponentType, WalletProps } from './Switcher.types'

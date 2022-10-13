@@ -1,3 +1,4 @@
+import { PolymorphicComponentPropsWithRef } from '../../../../typings/polymorphic-component-props-with-ref'
 import { SemanticColors } from '../../Colors'
 
 export const textVariants = [

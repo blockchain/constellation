@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react'
 
+import { PolymorphicRef } from '../../../../typings/polymorphic-ref'
 import { IconAlert, PaletteColors, SemanticColors } from '../../../Base'
 import { Button, ButtonComponentType, ButtonProps } from '../Button'
 import { Component as ComponentType, Props } from './Alert.types'

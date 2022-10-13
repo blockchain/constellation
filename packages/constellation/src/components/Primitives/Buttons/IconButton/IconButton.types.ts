@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { PolymorphicComponentPropsWithRef } from '../../../../typings/polymorphic-component-props-with-ref'
+
 export type IconButtonVariants = 'primary' | 'secondary' | 'minimal'
 export type IconButtonWidths = 'auto' | 'full'
 export type Sizes = 'default' | 'large' | 'small' | 'noPadding'
