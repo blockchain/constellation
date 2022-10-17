@@ -29,7 +29,6 @@ export default {
     text: { control: { type: 'text' }, description: 'Text content of link' },
   },
   args: {
-    as: 'a',
     disabled: false,
     icon: true,
     size: 'large',
