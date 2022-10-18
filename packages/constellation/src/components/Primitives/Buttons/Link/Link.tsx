@@ -39,7 +39,7 @@ const stateStyles: Record<LinkState, Record<Sizes, string>> = {
 }
 
 const Link: ComponentType = forwardRef(
-  <T extends React.ElementType = 'link'>(
+  <T extends React.ElementType = 'a'>(
     {
       as,
       disabled = false,
@@ -51,7 +51,7 @@ const Link: ComponentType = forwardRef(
     }: Props<T>,
     ref?: PolymorphicRef<T>,
   ) => {
-    const Component = as || 'link'
+    const Component = as || 'a'
 
     return (
       <Component
