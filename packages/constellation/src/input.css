@@ -485,9 +485,16 @@
         --color-orange-900: #6A2E00;
 
         /* Pink */
-        --color-pink-300: #FF51BE;
-        --color-pink-400: #F00699;
-        --color-pink-500: #DE0082;
+        --color-pink-000: #F9E5F1;
+        --color-pink-100: #FFD4EF;
+        --color-pink-200: #FFC7EA;
+        --color-pink-300: #FFACE0;
+        --color-pink-400: #FF78CD;
+        --color-pink-500: #FF55B8;
+        --color-pink-600: #F00699;
+        --color-pink-700: #DE0082;
+        --color-pink-800: #B71875;
+        --color-pink-900: #841355;
 
         /* Purple */
         --color-purple-000: #EFECFE;
@@ -561,13 +568,7 @@
         --color-white: #FFFFFF;
         --color-transparent: transparent;
 
-        /* Pink */
-        --color-pink-300: #FF51BE;
-        --color-pink-400: #F00699;
-        --color-pink-500: #DE0082;
-
         /* New Green */
-
         --color-new-green-300: #2AEFBC;
         --color-new-green-400: #06D6A0;
         --color-new-green-500: #00B083;

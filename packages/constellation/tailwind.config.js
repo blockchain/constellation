@@ -173,9 +173,16 @@ module.exports = {
       },
 
       pink: {
+        '000': 'var(--color-pink-000)',
+        100: 'var(--color-pink-100)',
+        200: 'var(--color-pink-200)',
         300: 'var(--color-pink-300)',
         400: 'var(--color-pink-400)',
         500: 'var(--color-pink-500)',
+        600: 'var(--color-pink-600)',
+        700: 'var(--color-pink-700)',
+        800: 'var(--color-pink-800)',
+        900: 'var(--color-pink-900)',
       },
 
       'new-green': {
