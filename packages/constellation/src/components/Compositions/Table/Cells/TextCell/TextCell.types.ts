@@ -16,6 +16,14 @@ interface Props extends BaseCellProps {
    */
   subtext?: string | ReactNode
   /**
+   * The tag of a cell
+   */
+  tag?: ReactNode
+  /**
+   * The position of a tag of a cell
+   */
+  tagPosition?: 'left' | 'right'
+  /**
    * The first line of text displayed in the cell.
    */
   text?: string | ReactNode

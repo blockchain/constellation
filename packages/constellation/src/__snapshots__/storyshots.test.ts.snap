@@ -4934,18 +4934,31 @@ exports[`Storyshots Compositions/Table/Cells/TextCell Text Cell 1`] = `
     className="flex flex-row items-center h-full gap-2 justify-start"
   >
     <div
-      className="flex flex-col justify-center items-start h-full"
+      className="constellation flex justify-between items-center"
+      style={
+        Object {
+          "gap": "4px",
+        }
+      }
     >
-      <span
-        className="text-title text-sm"
+      <div
+        className="flex flex-row items-center h-full gap-2"
       >
-        Text
-      </span>
-      <span
-        className="text-body mode-light:text-background-dark text-sm"
-      >
-        Subtext
-      </span>
+        <div
+          className="flex flex-col justify-center items-start h-full"
+        >
+          <span
+            className="text-title text-sm"
+          >
+            Text
+          </span>
+          <span
+            className="text-body mode-light:text-background-dark text-sm"
+          >
+            Subtext
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </td>
@@ -4967,16 +4980,29 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Asset
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            />
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  Asset
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                />
+              </div>
+            </div>
           </div>
           <icon-minus.svg
             className="ml-1"
@@ -4997,16 +5023,29 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
-            />
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Amount
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                />
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  Amount
+                </span>
+              </div>
+            </div>
           </div>
           <icon-triangle-down.svg
             color="var(--color-primary)"
@@ -5025,16 +5064,29 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
           className="flex flex-row items-center h-full gap-2 justify-end"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
-            />
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Actions
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                />
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  Actions
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5051,18 +5103,31 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Bitcoin
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              BTC
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  Bitcoin
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  BTC
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5073,88 +5138,31 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              $32,000
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              1 BTC
-            </span>
-          </div>
-        </div>
-      </td>
-      <td
-        className="constellation relative h-full px-4 font-medium w-auto"
-      >
-        <div
-          className="flex flex-row items-center h-full gap-2 justify-end"
-        >
-          <button
-            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
-            disabled={false}
-            type="button"
-          >
-            Buy
-          </button>
-          <button
-            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
-            disabled={false}
-            type="button"
-          >
-            Sell
-          </button>
-        </div>
-      </td>
-    </tr>
-    <tr
-      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
-    >
-      <td
-        className="constellation relative h-full px-4 font-medium w-auto"
-      >
-        <div
-          className="flex flex-row items-center h-full gap-2 justify-start"
-        >
-          <div
-            className="flex flex-col justify-center items-start h-full"
-          >
-            <span
-              className="text-title text-sm"
-            >
-              Ethereum
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              ETH
-            </span>
-          </div>
-        </div>
-      </td>
-      <td
-        className="constellation relative h-full px-4 font-medium w-auto"
-      >
-        <div
-          className="flex flex-row items-center h-full gap-2 justify-start"
-        >
-          <div
-            className="flex flex-col justify-center items-start h-full"
-          >
-            <span
-              className="text-title text-sm"
-            >
-              $1,900
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              1 ETH
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  $32,000
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  1 BTC
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5191,18 +5199,31 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Ethereum
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              ETH
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  Ethereum
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  ETH
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5213,18 +5234,127 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              $1,800
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  $1,900
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  1 ETH
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 font-medium w-auto"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2 justify-end"
+        >
+          <button
+            className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Buy
+          </button>
+          <button
+            className="rounded-lg text-white-000 bg-grey-800 border border-transparent mode-dark:border-transparent hover:bg-grey-700 focus:bg-grey-900 active:bg-grey-900 disabled:bg-grey-500 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
+            disabled={false}
+            type="button"
+          >
+            Sell
+          </button>
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent"
+    >
+      <td
+        className="constellation relative h-full px-4 font-medium w-auto"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2 justify-start"
+        >
+          <div
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
+          >
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              1 ETH
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  Ethereum
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  ETH
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td
+        className="constellation relative h-full px-4 font-medium w-auto"
+      >
+        <div
+          className="flex flex-row items-center h-full gap-2 justify-start"
+        >
+          <div
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
+          >
+            <div
+              className="flex flex-row items-center h-full gap-2"
+            >
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  $1,800
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  1 ETH
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5270,16 +5400,29 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Asset
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
-            />
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  Asset
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </th>
@@ -5290,16 +5433,29 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
-            />
-            <span
-              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Amount
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                />
+                <span
+                  className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+                >
+                  Amount
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </th>
@@ -5310,16 +5466,29 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
-            />
-            <span
-              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Actions
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                />
+                <span
+                  className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+                >
+                  Actions
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </th>
@@ -5336,18 +5505,31 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Bitcoin
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              BTC
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  Bitcoin
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  BTC
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5358,18 +5540,31 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              $32,000
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              1 BTC
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  $32,000
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  1 BTC
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5406,18 +5601,31 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              Bitcoin
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              BTC
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  Bitcoin
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  BTC
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5428,18 +5636,31 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              $32,000
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm"
-            >
-              1 BTC
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  $32,000
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm"
+                >
+                  1 BTC
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </td>
@@ -5485,18 +5706,31 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
           className="flex flex-row items-center h-full gap-2 justify-start"
         >
           <div
-            className="flex flex-col justify-center items-start h-full"
+            className="constellation flex justify-between items-center"
+            style={
+              Object {
+                "gap": "4px",
+              }
+            }
           >
-            <span
-              className="text-title text-sm"
+            <div
+              className="flex flex-row items-center h-full gap-2"
             >
-              First Row
-            </span>
-            <span
-              className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
-            >
-              The header prop on this is controlled below
-            </span>
+              <div
+                className="flex flex-col justify-center items-start h-full"
+              >
+                <span
+                  className="text-title text-sm"
+                >
+                  First Row
+                </span>
+                <span
+                  className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
+                >
+                  The header prop on this is controlled below
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </th>
@@ -5512,18 +5746,31 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
         className="flex flex-row items-center h-full gap-2 justify-start"
       >
         <div
-          className="flex flex-col justify-center items-start h-full"
+          className="constellation flex justify-between items-center"
+          style={
+            Object {
+              "gap": "4px",
+            }
+          }
         >
-          <span
-            className="text-title text-sm"
+          <div
+            className="flex flex-row items-center h-full gap-2"
           >
-            Second Row
-          </span>
-          <span
-            className="text-body mode-light:text-background-dark text-sm"
-          >
-            This row is not affected by the controlls below
-          </span>
+            <div
+              className="flex flex-col justify-center items-start h-full"
+            >
+              <span
+                className="text-title text-sm"
+              >
+                Second Row
+              </span>
+              <span
+                className="text-body mode-light:text-background-dark text-sm"
+              >
+                This row is not affected by the controlls below
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </td>
@@ -5538,18 +5785,31 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
         className="flex flex-row items-center h-full gap-2 justify-start"
       >
         <div
-          className="flex flex-col justify-center items-start h-full"
+          className="constellation flex justify-between items-center"
+          style={
+            Object {
+              "gap": "4px",
+            }
+          }
         >
-          <span
-            className="text-title text-sm"
+          <div
+            className="flex flex-row items-center h-full gap-2"
           >
-            Third Row
-          </span>
-          <span
-            className="text-body mode-light:text-background-dark text-sm"
-          >
-            This row has no bottom border so it works with the container 
-          </span>
+            <div
+              className="flex flex-col justify-center items-start h-full"
+            >
+              <span
+                className="text-title text-sm"
+              >
+                Third Row
+              </span>
+              <span
+                className="text-body mode-light:text-background-dark text-sm"
+              >
+                This row has no bottom border so it works with the container 
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </td>
