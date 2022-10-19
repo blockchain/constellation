@@ -441,7 +441,7 @@
         --color-blue-100: #D8EBFD;
         --color-blue-200: #BBDBFC;
         --color-blue-300: #85B5F8;
-        --color-blue-400: #619FF7;
+        --color-blue-400: #65A5FF;
         --color-blue-500: #3D89F5;
         --color-blue-600: #0C6CF2;
         --color-blue-700: #1656B9;
@@ -449,20 +449,20 @@
         --color-blue-900: #0D3578;
 
         /* Green */
-        --color-green-000: #E6FAEC;
-        --color-green-100: #D1F0DB;
-        --color-green-200: #AEE6CA;
-        --color-green-300: #8BDCB3;
-        --color-green-400: #17CE73;
-        --color-green-500: #00B26B;
-        --color-green-600: #00994C;
-        --color-green-700: #006633;
-        --color-green-800: #004C26;
-        --color-green-900: #003319;
+        --color-green-000: #EDFFFA;
+        --color-green-100: #DAFFF6;
+        --color-green-200: #B9FFED;
+        --color-green-300: #96F5DD;
+        --color-green-400: #69ECCA;
+        --color-green-500: #2AEFBC;
+        --color-green-600: #06D6A0;
+        --color-green-700: #00B083;
+        --color-green-800: #0C8868;
+        --color-green-900: #066C52;
 
         /* Red */
-        --color-red-000: #FFD9D6;
-        --color-red-100: #FFECEB;
+        --color-red-000: #FFECEB;
+        --color-red-100: #FFD9D6;
         --color-red-200: #FFC3BF;
         --color-red-300: #F6A7A1;
         --color-red-400: #FF3344;
@@ -521,7 +521,8 @@
         --color-teal-900: #052F33;
 
         /* Grey */
-        --color-grey-000: #F0F2F7;
+        --color-grey-000: #FAFBFF;
+        --color-grey-050: #FAFBFF;
         --color-grey-100: #DFE3EB;
         --color-grey-200: #CCD2DE;
         --color-grey-300: #B1B8C7;
@@ -542,7 +543,7 @@
         --color-dark-600: #3B3E46;
         --color-dark-700: #2C3038;
         --color-dark-800: #20242C;
-        --color-dark-900: #0E121B;
+        --color-dark-900: #07080D;
 
         /* White */
         --color-white: #FFFFFF;
@@ -554,18 +555,12 @@
         --color-white-600: rgba(255, 255, 255, 0.6);
         --color-white-800: rgba(255, 255, 255, 0.8);
 
-        /* Black */
-        --color-black: #000000;
-        --color-white: #FFFFFF;
-        --color-transparent: transparent;
-
         /* Tiers */
         --color-tier-silver: #C2C9D6;
         --color-tier-gold: #F5B73D;
 
         /* Black */
         --color-black: #000000;
-        --color-white: #FFFFFF;
         --color-transparent: transparent;
 
         /* New Green */

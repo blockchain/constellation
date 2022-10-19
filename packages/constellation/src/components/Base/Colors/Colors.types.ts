@@ -64,6 +64,7 @@ export enum PaletteColors {
   'green-800' = 'var(--color-green-800)',
   'green-900' = 'var(--color-green-900)',
   'grey-000' = 'var(--color-grey-000)',
+  'grey-050' = 'var(--color-grey-050)',
   'grey-100' = 'var(--color-grey-100)',
   'grey-200' = 'var(--color-grey-200)',
   'grey-300' = 'var(--color-grey-300)',
