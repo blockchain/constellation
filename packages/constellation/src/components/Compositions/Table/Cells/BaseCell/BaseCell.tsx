@@ -16,6 +16,12 @@ const alignmentStyles = {
   right: 'justify-end',
 }
 
+const widthStyles = {
+  auto: 'w-auto',
+  content: 'w-[1%]',
+  fill: 'w-full',
+}
+
 const BaseCell: BaseCellComponent = ({
   align = 'left',
   children,
@@ -43,13 +49,11 @@ const BaseCell: BaseCellComponent = ({
         {
           'cursor-pointer select-none': toggleSort,
         },
-        { 'w-auto': width === 'auto' },
-        { 'w-[1%]': width === 'content' },
-        { 'w-full': width === 'fill' },
+        widthStyles[width],
       )}
       onClick={toggleSort}
     >
-      <div className={cx('flex flex-row items-center h-full gap-2', alignmentStyles[align])}>
+      <div className={cx('flex flex-row items-center h-full gap-2 w-full', alignmentStyles[align])}>
         {children}
         {toggleSort && SortArrow}
       </div>
