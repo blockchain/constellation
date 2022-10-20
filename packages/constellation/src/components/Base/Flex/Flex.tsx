@@ -29,6 +29,12 @@ const flexDirectionStyles = {
   'row-reverse': 'flex-row-reverse',
 }
 
+const widthStyles = {
+  auto: 'w-auto',
+  content: 'w-[1%]',
+  fill: 'w-full',
+}
+
 const Flex: FlexComponent = ({
   alignItems,
   children,
@@ -36,6 +42,7 @@ const Flex: FlexComponent = ({
   gap,
   grow,
   justifyContent,
+  width,
 }) => (
   <div
     className={cx(
@@ -44,6 +51,7 @@ const Flex: FlexComponent = ({
       alignItems && flexAlignItemsStyles[alignItems],
       flexDirection && flexDirectionStyles[flexDirection],
       { 'flex-grow': grow },
+      width && widthStyles[width],
     )}
     style={{
       gap: gap && `${gap}px`,

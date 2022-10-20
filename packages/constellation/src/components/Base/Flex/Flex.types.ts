@@ -25,6 +25,7 @@ type FlexProps = {
   gap?: number
   grow?: boolean
   justifyContent?: FlexJustifyContent
+  width?: 'auto' | 'content' | 'fill'
 }
 
 type FlexComponent = FC<FlexProps>
