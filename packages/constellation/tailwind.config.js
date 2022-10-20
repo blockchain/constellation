@@ -136,6 +136,7 @@ module.exports = {
       },
       grey: {
         '000': 'var(--color-grey-000)',
+        '050': 'var(--color-grey-050)',
         100: 'var(--color-grey-100)',
         200: 'var(--color-grey-200)',
         300: 'var(--color-grey-300)',
