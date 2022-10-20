@@ -26,6 +26,7 @@ const TextCell: TextCellComponentType = ({
         alignItems='center'
         gap={4}
         justifyContent={tagPosition === 'left' ? 'flex-start' : 'space-between'}
+        width='fill'
       >
         {tagPosition === 'left' && tag}
         <div className='flex flex-row items-center h-full gap-2'>
