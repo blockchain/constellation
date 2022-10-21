@@ -33,7 +33,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
           const sort = header.column.getIsSorted()
           const onClick = header.column.getToggleSortingHandler()
 
-          return <TextCell text='Asset' sort={sort} toggleSort={onClick} />
+          return <TextCell isHeader text='Asset' sort={sort} toggleSort={onClick} />
         },
         // a custom sort function to sort the text cells by text and then subtext values
         sortingFn: sortTextCells,
@@ -48,7 +48,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
           const sort = header.column.getIsSorted()
           const onClick = header.column.getToggleSortingHandler()
 
-          return <TextCell subtext='Amount' sort={sort} toggleSort={onClick} />
+          return <TextCell isHeader subtext='Amount' sort={sort} toggleSort={onClick} />
         },
         // a custom sort function to sort the text cells by text and then subtext values
         sortingFn: sortTextCells,
@@ -59,7 +59,7 @@ const Template: ComponentStory<FC<{ onClick: () => void }>> = ({ onClick }) => {
           const props = getValue() as ButtonCellProps
           return <ButtonCell {...props} />
         },
-        header: () => <TextCell subtext='Actions' align='right' width='content' />,
+        header: () => <TextCell isHeader subtext='Actions' align='right' width='content' />,
       },
     ],
     [],

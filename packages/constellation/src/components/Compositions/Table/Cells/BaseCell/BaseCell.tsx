@@ -53,7 +53,13 @@ const BaseCell: BaseCellComponent = ({
       )}
       onClick={toggleSort}
     >
-      <div className={cx('flex flex-row items-center h-full gap-2 w-full', alignmentStyles[align])}>
+      <div
+        className={cx(
+          'flex flex-row items-center h-full gap-2',
+          alignmentStyles[align],
+          toggleSort && isHeader ? 'w-fit' : 'w-full',
+        )}
+      >
         {children}
         {toggleSort && SortArrow}
       </div>
