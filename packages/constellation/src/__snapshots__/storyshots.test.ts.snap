@@ -4816,7 +4816,7 @@ exports[`Storyshots Compositions/Table/Cells/BaseCell Base Cell 1`] = `
   className="constellation relative h-full px-4 font-medium w-auto"
 >
   <div
-    className="flex flex-row items-center h-full gap-2 w-full justify-start"
+    className="flex flex-row items-center h-full gap-2 justify-start w-full"
   >
     <span>
       This is some content for the BaseCell
@@ -4830,7 +4830,7 @@ exports[`Storyshots Compositions/Table/Cells/ButtonCell Button Cell 1`] = `
   className="constellation relative h-full px-4 font-medium w-auto"
 >
   <div
-    className="flex flex-row items-center h-full gap-2 w-full justify-start"
+    className="flex flex-row items-center h-full gap-2 justify-start w-full"
   >
     <button
       className="rounded-lg bg-white-000 mode-dark:bg-dark-900 text-blue-600 mode-dark:text-blue-300 border border-grey-100 active:bg-blue-000 active:border-primary focus:bg-blue-000 focus:border-primary disabled:text-muted disabled:bg-background disabled:border-grey-100 hover:bg-blue-000 hover:border-blue-400 mode-dark:hover:border-dark-400 mode-dark:hover:bg-dark-800 mode-dark:border-dark-500 mode-dark:active:bg-dark-700 mode-dark:active:border-blue-400 mode-dark:focus:bg-dark-700 mode-dark:focus:border-blue-400 mode-dark:disabled:text-grey-600 mode-dark:disabled:bg-background mode-dark:disabled:border-grey-700 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
@@ -4848,7 +4848,7 @@ exports[`Storyshots Compositions/Table/Cells/CheckboxCell Checkbox Cell 1`] = `
   className="constellation relative h-full px-4 font-medium w-auto"
 >
   <div
-    className="flex flex-row items-center h-full gap-2 w-full justify-start"
+    className="flex flex-row items-center h-full gap-2 justify-start w-full"
   >
     <span
       className="constellation inline-flex gap-2 items-center text-body"
@@ -4896,7 +4896,7 @@ exports[`Storyshots Compositions/Table/Cells/IconCell Icon Cell 1`] = `
   className="constellation relative h-full px-4 font-medium w-auto"
 >
   <div
-    className="flex flex-row items-center h-full gap-2 w-full justify-start"
+    className="flex flex-row items-center h-full gap-2 justify-start w-full"
   >
     <icon-apple.svg
       color="inherit"
@@ -4915,7 +4915,7 @@ exports[`Storyshots Compositions/Table/Cells/InformationalCell Informational Cel
   className="constellation relative h-full px-4 font-medium w-auto"
 >
   <div
-    className="flex flex-row items-center h-full gap-2 w-full justify-start"
+    className="flex flex-row items-center h-full gap-2 justify-start w-full"
   >
     <div
       className="constellation w-fit rounded font-semibold align-middle border py-0.5 px-[7px] text-xs bg-background-light border-background-light text-title"
@@ -4931,7 +4931,7 @@ exports[`Storyshots Compositions/Table/Cells/TextCell Text Cell 1`] = `
   className="constellation relative h-full px-4 font-medium w-auto"
 >
   <div
-    className="flex flex-row items-center h-full gap-2 w-full justify-start"
+    className="flex flex-row items-center h-full gap-2 justify-start w-full"
   >
     <div
       className="constellation flex justify-between items-center w-full"
@@ -4972,12 +4972,12 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
     <tr
       className="constellation relative h-16 border-b border-background-light last-of-type:!border-transparent bg-background-light !h-12"
     >
-      <td
+      <th
         className="constellation relative h-full px-4 font-medium cursor-pointer select-none w-auto"
         onClick={[Function]}
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-fit"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -4999,7 +4999,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
                   Asset
                 </span>
                 <span
-                  className="text-body mode-light:text-background-dark text-sm"
+                  className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
                 />
               </div>
             </div>
@@ -5014,13 +5014,13 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
             xmlns="http://www.w3.org/2000/svg"
           />
         </div>
-      </td>
-      <td
+      </th>
+      <th
         className="constellation relative h-full px-4 font-medium cursor-pointer select-none w-auto"
         onClick={[Function]}
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-fit"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5040,7 +5040,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
                   className="text-title text-sm"
                 />
                 <span
-                  className="text-body mode-light:text-background-dark text-sm"
+                  className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
                 >
                   Amount
                 </span>
@@ -5056,12 +5056,12 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
             xmlns="http://www.w3.org/2000/svg"
           />
         </div>
-      </td>
-      <td
+      </th>
+      <th
         className="constellation relative h-full px-4 font-medium w-[1%]"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-end"
+          className="flex flex-row items-center h-full gap-2 justify-end w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5081,7 +5081,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
                   className="text-title text-sm"
                 />
                 <span
-                  className="text-body mode-light:text-background-dark text-sm"
+                  className="text-body mode-light:text-background-dark text-sm mode-light:!text-grey-600 mode-dark:!text-grey-400"
                 >
                   Actions
                 </span>
@@ -5089,7 +5089,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
             </div>
           </div>
         </div>
-      </td>
+      </th>
     </tr>
   </thead>
   <tbody>
@@ -5100,7 +5100,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5135,7 +5135,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5170,7 +5170,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-end"
+          className="flex flex-row items-center h-full gap-2 justify-end w-full"
         >
           <button
             className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
@@ -5196,7 +5196,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5231,7 +5231,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5266,7 +5266,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-end"
+          className="flex flex-row items-center h-full gap-2 justify-end w-full"
         >
           <button
             className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
@@ -5292,7 +5292,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5327,7 +5327,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5362,7 +5362,7 @@ exports[`Storyshots Compositions/Table/Examples/AdvancedTable Advanced Table 1`]
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-end"
+          className="flex flex-row items-center h-full gap-2 justify-end w-full"
         >
           <button
             className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
@@ -5397,7 +5397,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5430,7 +5430,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5463,7 +5463,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5502,7 +5502,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5537,7 +5537,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5572,7 +5572,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <button
             className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
@@ -5598,7 +5598,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5633,7 +5633,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5668,7 +5668,7 @@ exports[`Storyshots Compositions/Table/Examples/SimpleTable Simple Table 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <button
             className="rounded-lg text-white-000 bg-blue-600 border border-transparent mode-dark:border-transparent hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 disabled:bg-blue-300 disabled:text-overlay-light-600 px-3 py-1.5 text-sm h-8 constellation font-semibold cursor-pointer disabled:cursor-not-allowed transition-all items-center justify-center gap-2 flex w-fit"
@@ -5703,7 +5703,7 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
         className="constellation relative h-full px-4 font-medium w-auto"
       >
         <div
-          className="flex flex-row items-center h-full gap-2 w-full justify-start"
+          className="flex flex-row items-center h-full gap-2 justify-start w-full"
         >
           <div
             className="constellation flex justify-between items-center w-full"
@@ -5743,7 +5743,7 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
       className="constellation relative h-full px-4 font-medium w-auto"
     >
       <div
-        className="flex flex-row items-center h-full gap-2 w-full justify-start"
+        className="flex flex-row items-center h-full gap-2 justify-start w-full"
       >
         <div
           className="constellation flex justify-between items-center w-full"
@@ -5782,7 +5782,7 @@ exports[`Storyshots Compositions/Table/Row Row 1`] = `
       className="constellation relative h-full px-4 font-medium w-auto"
     >
       <div
-        className="flex flex-row items-center h-full gap-2 w-full justify-start"
+        className="flex flex-row items-center h-full gap-2 justify-start w-full"
       >
         <div
           className="constellation flex justify-between items-center w-full"
