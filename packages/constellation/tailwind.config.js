@@ -217,6 +217,9 @@ module.exports = {
         'ping-big': 'fade 1.5s linear infinite',
         'spin-fast': 'spin 1.25s linear infinite',
       },
+      width: {
+        fit: 'fit-content',
+      },
     },
   },
 }
