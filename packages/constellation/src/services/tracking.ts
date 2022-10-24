@@ -39,7 +39,7 @@ const tracking = ({
   const publish = ({
     context,
     events,
-    integrations
+    integrations,
   }: {
     context: {
       campaign?: {
