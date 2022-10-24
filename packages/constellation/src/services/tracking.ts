@@ -64,8 +64,8 @@ const tracking = ({
         context,
         device: 'WEB',
         events,
+        integrations: integrations ?? {},
         platform,
-        integrations: integrations ?? {}
       }),
       credentials: 'include',
       method: 'POST',
