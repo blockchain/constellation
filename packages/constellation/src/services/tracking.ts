@@ -39,6 +39,7 @@ const tracking = ({
   const publish = ({
     context,
     events,
+    integrations
   }: {
     context: {
       campaign?: {
@@ -52,6 +53,9 @@ const tracking = ({
     events: {
       [key: string]: unknown
     }[]
+    integrations?: {
+      [key: string]: unknown
+    }
   }): void => {
     context.id = __BC_SESSION_ID__
 
@@ -61,6 +65,7 @@ const tracking = ({
         device: 'WEB',
         events,
         platform,
+        integrations: integrations ?? {}
       }),
       credentials: 'include',
       method: 'POST',
