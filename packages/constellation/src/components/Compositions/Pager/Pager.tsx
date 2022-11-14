@@ -39,7 +39,7 @@ const Arrow = ({ direction, disabled, onChange, selectedPage }: ArrowProps) => (
 
 const Pager: PagerComponent = ({ onChange, selectedPage = 0, totalPages = 5 }) => {
   return (
-    <div className='constellation flex items-center justify-between max-w-[375px]'>
+    <div className='constellation flex items-center justify-between w-full'>
       <Arrow
         direction='left'
         disabled={selectedPage === 0}
