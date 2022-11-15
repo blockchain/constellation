@@ -24,14 +24,14 @@ const TitleByline = ({
     <div className='flex flex-col justify-center gap-[3px]'>
       {(title || icon) && (
         <div className='flex items-center gap-1 text-grey-400'>
-          <Text variant='body2' className='!m-0' color={SemanticColors.title}>
+          <Text variant='body2' color={SemanticColors.title}>
             {title}
           </Text>
           {icon}
         </div>
       )}
       {byline && (
-        <Text variant='paragraph1' className='!m-0' color={SemanticColors.body}>
+        <Text variant='paragraph1' color={SemanticColors.body}>
           {byline}
         </Text>
       )}

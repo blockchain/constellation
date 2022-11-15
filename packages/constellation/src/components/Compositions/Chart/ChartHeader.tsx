@@ -28,7 +28,7 @@ const PercentageRow = ({
   const trend = getTrend(changeInDecimal)
   const trendColor = trendColors[trend]
   return (
-    <div className='constellation flex items-center gap-2'>
+    <div className='constellation flex items-center gap-2 my-3'>
       {trend === 'down' && <IconArrowDown color={trendColor} />}
       {trend === 'up' && <IconArrowUp color={trendColor} />}
       {trend === 'neutral' && <IconArrowRight color={trendColor} />}
@@ -58,7 +58,7 @@ const PriceInfo = ({
 }) => (
   <div className='constellation flex flex-col'>
     <Text variant='caption1'>Current Price</Text>
-    <Text color={SemanticColors.title} variant='display' className='mt-0 mb-0'>
+    <Text color={SemanticColors.title} variant='display'>
       {centsToDollarString(currentPriceInCents, 2)}
     </Text>
     <PercentageRow {...{ activeTimeframe, changeInCents, changeInDecimal, timeframeLabel }} />

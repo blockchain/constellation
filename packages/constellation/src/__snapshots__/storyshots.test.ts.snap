@@ -3450,7 +3450,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
     className="constellation border-b border-b-medium flex p-4 mb-12"
   >
     <span
-      className="constellation text-[2rem] font-semibold my-5 text-body text-start"
+      className="constellation text-[2rem] font-semibold text-body text-start"
     >
       Typography
     </span>
@@ -3462,7 +3462,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-[2.5rem] font-semibold my-6 text-body text-start truncate"
+        className="constellation text-[2.5rem] font-semibold text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3470,7 +3470,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           display
         </span>
@@ -3480,7 +3480,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-[2rem] font-semibold my-5 text-body text-start truncate"
+        className="constellation text-[2rem] font-semibold text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3488,7 +3488,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           title1
         </span>
@@ -3498,7 +3498,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-2xl font-semibold my-5 text-body text-start truncate"
+        className="constellation text-2xl font-semibold text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3506,7 +3506,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           title2
         </span>
@@ -3516,7 +3516,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-xl font-semibold my-4 text-body text-start truncate"
+        className="constellation text-xl font-semibold text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3524,7 +3524,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           title3
         </span>
@@ -3534,7 +3534,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-xl font-medium my-4 text-body text-start truncate"
+        className="constellation text-xl font-medium text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3542,7 +3542,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           subheading
         </span>
@@ -3552,7 +3552,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-base font-medium font-mono my-3 text-body text-start truncate"
+        className="constellation text-base font-medium font-mono text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3560,7 +3560,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           body-mono
         </span>
@@ -3570,7 +3570,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-base font-medium my-3 text-body text-start truncate"
+        className="constellation text-base font-medium text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3578,7 +3578,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           body1
         </span>
@@ -3588,7 +3588,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-base font-semibold my-3 text-body text-start truncate"
+        className="constellation text-base font-semibold text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3596,7 +3596,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           body2
         </span>
@@ -3606,7 +3606,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-sm font-medium font-mono my-2.5 text-body text-start truncate"
+        className="constellation text-sm font-medium font-mono text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3614,7 +3614,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           paragraph-mono
         </span>
@@ -3624,7 +3624,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-sm font-medium my-2.5 text-body text-start truncate"
+        className="constellation text-sm font-medium text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3632,7 +3632,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           paragraph1
         </span>
@@ -3642,7 +3642,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-sm font-semibold my-2.5 text-body text-start truncate"
+        className="constellation text-sm font-semibold text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3650,7 +3650,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           paragraph2
         </span>
@@ -3660,7 +3660,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-xs font-medium my-2 text-body text-start truncate"
+        className="constellation text-xs font-medium text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3668,7 +3668,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           caption1
         </span>
@@ -3678,7 +3678,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-xs font-semibold my-2 text-body text-start truncate"
+        className="constellation text-xs font-semibold text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3686,7 +3686,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           caption2
         </span>
@@ -3696,7 +3696,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-xs font-bold uppercase tracking-widest my-2 text-body text-start truncate"
+        className="constellation text-xs font-bold uppercase tracking-widest text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3704,7 +3704,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           overline
         </span>
@@ -3714,7 +3714,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
       className="constellation border-b border-b-medium grid grid-cols-2 items-center gap-20"
     >
       <span
-        className="constellation text-[0.625rem] font-medium my-2 text-body text-start truncate"
+        className="constellation text-[0.625rem] font-medium text-body text-start truncate"
       >
         The quick brown fox jumps over the lazy dog
       </span>
@@ -3722,7 +3722,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
         className="capitalize"
       >
         <span
-          className="constellation text-xs font-medium my-2 text-body text-start"
+          className="constellation text-xs font-medium text-body text-start"
         >
           micro
         </span>
@@ -3734,7 +3734,7 @@ exports[`Storyshots Base/Typography/Preview Preview 1`] = `
 
 exports[`Storyshots Base/Typography/Text Text 1`] = `
 <span
-  className="constellation text-base font-medium my-3 text-body text-start"
+  className="constellation text-base font-medium text-body text-start"
 >
   The quick brown fox jumps over the lazy dog
 </span>
@@ -3746,7 +3746,7 @@ exports[`Storyshots Compositions/Alert/Banner Banner 1`] = `
   type="button"
 >
   <span
-    className="constellation text-sm font-medium my-2.5 text-background text-start"
+    className="constellation text-sm font-medium text-background text-start"
   >
     Check that the URL is correct.
   </span>
@@ -3759,7 +3759,7 @@ exports[`Storyshots Compositions/Alert/Banner Banner 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   />
   <span
-    className="constellation text-sm font-medium my-2.5 text-background text-start"
+    className="constellation text-sm font-medium text-background text-start"
   >
     https://login.blockchain.com
   </span>
@@ -3772,12 +3772,12 @@ exports[`Storyshots Compositions/Alert/Card Card 1`] = `
   style={Object {}}
 >
   <span
-    className="constellation text-sm font-semibold my-2.5 text-body text-start !m-0 !text-title"
+    className="constellation text-sm font-semibold text-body text-start !text-title"
   >
     Card Alert Title
   </span>
   <span
-    className="constellation text-xs font-medium my-2 text-body text-start !m-0 !text-title"
+    className="constellation text-xs font-medium text-body text-start !text-title"
   >
     Card alert copy that directs the user to take an action or let’s them know what happened.
   </span>
@@ -3836,12 +3836,12 @@ exports[`Storyshots Compositions/Cards/Card Card 1`] = `
     className="flex flex-col"
   >
     <span
-      className="constellation text-xl font-semibold my-4 text-title text-start !m-0 w-full"
+      className="constellation text-xl font-semibold text-title text-start w-full"
     >
       Welcome to Blockchain!
     </span>
     <span
-      className="constellation text-sm font-medium my-2.5 text-body text-start !m-0 !mt-1 w-full"
+      className="constellation text-sm font-medium text-body text-start !mt-1 w-full"
     >
       This is your Portfolio view. Once you own and hold crypto, the balances display here.
     </span>
@@ -3878,12 +3878,12 @@ exports[`Storyshots Compositions/Cards/CtaCard Cta Card 1`] = `
     className="flex flex-col"
   >
     <span
-      className="constellation text-xl font-semibold my-4 text-title text-start !m-0 w-full"
+      className="constellation text-xl font-semibold text-title text-start w-full"
     >
       Notify Me
     </span>
     <span
-      className="constellation text-sm font-medium my-2.5 text-body text-start !m-0 !mt-1 w-full"
+      className="constellation text-sm font-medium text-body text-start !mt-1 w-full"
     >
       Get a notification when Uniswap is available to trade on Blockchain.com.
     </span>
@@ -4091,17 +4091,17 @@ exports[`Storyshots Compositions/Headers/BalanceHeader Balance Header 1`] = `
       className="constellation flex flex-col"
     >
       <span
-        className="constellation text-xs font-semibold my-2 text-title text-start"
+        className="constellation text-xs font-semibold text-title text-start"
       >
         Your Total |TICKER|
       </span>
       <span
-        className="constellation text-xl font-medium my-4 text-title text-start mt-0 mb-0"
+        className="constellation text-xl font-medium text-title text-start"
       >
         $12,293.21
       </span>
       <span
-        className="constellation text-sm font-medium font-mono my-2.5 text-muted text-start"
+        className="constellation text-sm font-medium font-mono text-muted text-start my-2.5"
       >
         0.1393819 BTC
       </span>
@@ -4128,7 +4128,7 @@ exports[`Storyshots Compositions/Headers/BalanceHeader Balance Header 1`] = `
     className="constellation p-8"
   >
     <span
-      className="constellation text-sm font-medium my-2.5 text-body text-start"
+      className="constellation text-sm font-medium text-body text-start"
     >
       Section content
     </span>
@@ -4144,7 +4144,7 @@ exports[`Storyshots Compositions/Headers/SectionHeader Section Header 1`] = `
     className="constellation flex justify-between items-center p-4 md:p-8 w-full text-title bg-background"
   >
     <span
-      className="constellation text-sm font-semibold my-2.5 text-body text-start mt-0 mb-0"
+      className="constellation text-sm font-semibold text-body text-start mt-0 mb-0"
     >
       Title
     </span>
@@ -4161,7 +4161,7 @@ exports[`Storyshots Compositions/Headers/SectionHeader Section Header 1`] = `
     className="constellation p-8"
   >
     <span
-      className="constellation text-sm font-medium my-2.5 text-body text-start"
+      className="constellation text-sm font-medium text-body text-start"
     >
       Section content
     </span>
@@ -4177,7 +4177,7 @@ exports[`Storyshots Compositions/Headers/SettingsHeader Settings Header 1`] = `
     className="constellation flex justify-between items-center p-4 md:p-8 w-full text-title bg-background"
   >
     <span
-      className="constellation text-2xl font-semibold my-5 text-body text-start mt-0 mb-0 text-xl md:text-2xl"
+      className="constellation text-2xl font-semibold text-body text-start text-xl md:text-2xl"
     >
       Account
     </span>
@@ -4194,7 +4194,7 @@ exports[`Storyshots Compositions/Headers/SettingsHeader Settings Header 1`] = `
     className="constellation p-8"
   >
     <span
-      className="constellation text-sm font-medium my-2.5 text-body text-start"
+      className="constellation text-sm font-medium text-body text-start"
     >
       Section content
     </span>
@@ -4378,13 +4378,13 @@ exports[`Storyshots Compositions/ListRow List Row 1`] = `
           className="flex items-center gap-1 text-grey-400"
         >
           <span
-            className="constellation text-base font-semibold my-3 text-title text-start !m-0"
+            className="constellation text-base font-semibold text-title text-start"
           >
             Left Title
           </span>
         </div>
         <span
-          className="constellation text-sm font-medium my-2.5 text-body text-start !m-0"
+          className="constellation text-sm font-medium text-body text-start"
         >
           Left Byline
         </span>
@@ -4396,20 +4396,20 @@ exports[`Storyshots Compositions/ListRow List Row 1`] = `
           className="flex items-center gap-1 text-grey-400"
         >
           <span
-            className="constellation text-base font-semibold my-3 text-title text-start !m-0"
+            className="constellation text-base font-semibold text-title text-start"
           >
             Right Title
           </span>
         </div>
         <span
-          className="constellation text-sm font-medium my-2.5 text-body text-start !m-0"
+          className="constellation text-sm font-medium text-body text-start"
         >
           Right Byline
         </span>
       </div>
     </div>
     <span
-      className="constellation text-xs font-medium my-2 text-body text-start"
+      className="constellation text-xs font-medium text-body text-start"
     >
       Securely link a bank to buy crypto, deposit cash and withdraw back to your bank at anytime.
     </span>
@@ -4477,7 +4477,7 @@ Array [
         xmlns="http://www.w3.org/2000/svg"
       />
       <span
-        className="constellation text-xl font-semibold my-4 text-title text-start ml-2 mr-8"
+        className="constellation text-xl font-semibold text-title text-start ml-2 mr-8"
       >
         Wallet
       </span>
@@ -5859,7 +5859,7 @@ Array [
     className="constellation p-6"
   >
     <span
-      className="constellation text-2xl font-semibold my-5 text-body text-start"
+      className="constellation text-2xl font-semibold text-body text-start"
     >
       Button
     </span>
@@ -6237,7 +6237,7 @@ Array [
     className="constellation p-6"
   >
     <span
-      className="constellation text-2xl font-semibold my-5 text-body text-start"
+      className="constellation text-2xl font-semibold text-body text-start"
     >
       Link
     </span>
@@ -6288,7 +6288,7 @@ Array [
     className="constellation p-6"
   >
     <span
-      className="constellation text-2xl font-semibold my-5 text-body text-start"
+      className="constellation text-2xl font-semibold text-body text-start"
     >
       Alert Button
     </span>
@@ -6357,7 +6357,7 @@ Array [
     className="constellation p-6"
   >
     <span
-      className="constellation text-2xl font-semibold my-5 text-body text-start"
+      className="constellation text-2xl font-semibold text-body text-start"
     >
       Icon Button
     </span>
@@ -6447,7 +6447,7 @@ Array [
     className="constellation p-6"
   >
     <span
-      className="constellation text-2xl font-semibold my-5 text-body text-start"
+      className="constellation text-2xl font-semibold text-body text-start"
     >
       Close Button
     </span>
@@ -7053,12 +7053,12 @@ exports[`Storyshots Primitives/Switcher/Switcher Switcher 1`] = `
     className="flex flex-col"
   >
     <span
-      className="constellation text-base font-medium my-3 text-title text-start !m-0"
+      className="constellation text-base font-medium text-title text-start"
     >
       BTC
     </span>
     <span
-      className="constellation text-xs font-medium my-2 text-body text-start !m-0"
+      className="constellation text-xs font-medium text-body text-start"
     >
       Bitcoin
     </span>
@@ -7082,7 +7082,7 @@ exports[`Storyshots Primitives/Switcher/WalletSwitcher Wallet Switcher 1`] = `
   type="button"
 >
   <span
-    className="constellation text-xs font-medium my-2 text-body text-start !m-0 text-body"
+    className="constellation text-xs font-medium text-body text-start text-body"
   >
     14qV...k3gd
   </span>
@@ -7090,7 +7090,7 @@ exports[`Storyshots Primitives/Switcher/WalletSwitcher Wallet Switcher 1`] = `
     className="flex flex-row items-center gap-1 bg-medium px-2 rounded-md"
   >
     <span
-      className="constellation text-xs font-medium my-2 text-body text-start !m-0"
+      className="constellation text-xs font-medium text-body text-start"
     >
       BTC
     </span>
@@ -7258,7 +7258,7 @@ exports[`Storyshots hooks/useLocalStorage Multiple Subscribers 1`] = `
 >
   <div>
     <span
-      className="constellation text-base font-medium my-3 text-primary text-start"
+      className="constellation text-base font-medium text-primary text-start"
     >
       Current theme mode: 
       light
@@ -7285,7 +7285,7 @@ exports[`Storyshots hooks/useLocalStorage Multiple Subscribers 1`] = `
   </div>
   <div>
     <span
-      className="constellation text-base font-medium my-3 text-primary text-start"
+      className="constellation text-base font-medium text-primary text-start"
     >
       Current theme mode: 
       light
@@ -7316,7 +7316,7 @@ exports[`Storyshots hooks/useLocalStorage Multiple Subscribers 1`] = `
 exports[`Storyshots hooks/useLocalStorage Usage Example 1`] = `
 <div>
   <span
-    className="constellation text-base font-medium my-3 text-primary text-start"
+    className="constellation text-base font-medium text-primary text-start"
   >
     Current theme mode: 
     light

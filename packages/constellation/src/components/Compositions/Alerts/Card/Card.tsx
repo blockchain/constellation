@@ -36,10 +36,10 @@ const Card: AlertCardComponentType = ({
       accentColor={variantColors[variant]}
       {...baseCardProps}
     >
-      <Text variant='paragraph2' className={cx('!m-0', variantTitleStyles[variant])}>
+      <Text variant='paragraph2' className={cx(variantTitleStyles[variant])}>
         {title}
       </Text>
-      <Text variant='caption1' className='!m-0 !text-title'>
+      <Text variant='caption1' className='!text-title'>
         {content}
       </Text>
       {(primaryCta || secondaryCta) && (

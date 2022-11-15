@@ -35,11 +35,11 @@ const Switcher: ComponentType = forwardRef(
           <Logo {...logoContent} size='small' doubleVariant='badge' />
         )}
         <div className='flex flex-col'>
-          <Text variant='body1' color={SemanticColors.title} className='!m-0'>
+          <Text variant='body1' color={SemanticColors.title}>
             {title}
           </Text>
           {byline && (
-            <Text variant='caption1' color={SemanticColors.body} className='!m-0'>
+            <Text variant='caption1' color={SemanticColors.body}>
               {byline}
             </Text>
           )}

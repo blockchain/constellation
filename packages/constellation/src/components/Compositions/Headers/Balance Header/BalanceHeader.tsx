@@ -28,10 +28,10 @@ const BalanceHeader: ComponentType = forwardRef(
           <Text variant='caption2' color={SemanticColors.title}>
             {title}
           </Text>
-          <Text variant='subheading' className='mt-0 mb-0' color={SemanticColors.title}>
+          <Text variant='subheading' color={SemanticColors.title}>
             {centsToDollarString(balanceTotalCents, 2)}
           </Text>
-          <Text variant='paragraph-mono' color={SemanticColors.muted}>
+          <Text variant='paragraph-mono' color={SemanticColors.muted} className={cx('my-2.5')}>
             {subtitle}
           </Text>
         </div>
