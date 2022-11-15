@@ -4741,7 +4741,7 @@ Array [
 
 exports[`Storyshots Compositions/Pager Pager 1`] = `
 <div
-  className="constellation flex items-center justify-between max-w-[375px]"
+  className="constellation flex items-center justify-between w-full"
 >
   <button
     aria-label="page indicator arrow left"
