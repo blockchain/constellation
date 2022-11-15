@@ -116,7 +116,7 @@ const Button: ComponentType = forwardRef(
         )}
         {state === 'loading' && (
           <SpinningLoader
-            size='full'
+            size='small'
             borderWidth={size === 'small' ? 'xsmall' : 'small'}
             variant={
               loaderVariant || variant === 'minimal' || variant === 'icon' ? 'color' : 'monotone'
