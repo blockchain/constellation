@@ -232,7 +232,7 @@ const ChartInnerBody = withTooltip<ChartProps, TooltipData>(
               <Text
                 color={SemanticColors.title}
                 variant='paragraph2'
-                className='constellation block mt-0 mb-0'
+                className='constellation block'
               >{`$${getStockValue(tooltipData)}`}</Text>
               <Text color={SemanticColors.title} variant='caption1'>
                 {axisTimescale === 'hour' && `Today, ${formatHour(new Date(tooltipData.date))}`}

@@ -9,7 +9,7 @@ import { FlyoutFooterProps, FooterCheckbox } from './Flyout.types'
  */
 
 const FlyoutCheckbox = ({ text, ...args }: FooterCheckbox) => (
-  <div className='flex items-center gap-4 p-4 rounded-lg bg-background-ultra-light border-solid border-medium mode-dark:bg-dark-900'>
+  <div className='flex items-center gap-4 px-4 py-6 rounded-lg bg-background-ultra-light border-solid border-medium mode-dark:bg-dark-900'>
     <Checkbox {...args} />
     <Text variant='paragraph2'>{text}</Text>
   </div>
