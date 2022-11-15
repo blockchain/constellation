@@ -33,7 +33,7 @@ const SettingsHeader: ComponentType = forwardRef(
   ) => {
     return (
       <SectionHeader ref={ref} {...otherProps}>
-        <Text variant='title2' className='mt-0 mb-0 text-xl md:text-2xl'>
+        <Text variant='title2' className='text-xl md:text-2xl'>
           {title}
         </Text>
         {mode === 'initial' && (

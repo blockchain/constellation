@@ -30,13 +30,11 @@ const Switcher: ComponentType = forwardRef(
         {...otherProps}
         className='constellation flex items-center rounded-lg bg-background-light gap-2 p-[3px] pl-2 cursor-pointer'
       >
-        <Text variant='caption1' className='!m-0 text-body'>
+        <Text variant='caption1' className='text-body'>
           {truncatedId}
         </Text>
         <div className='flex flex-row items-center gap-1 bg-medium px-2 rounded-md'>
-          <Text variant='caption1' className='!m-0'>
-            {ticker}
-          </Text>
+          <Text variant='caption1'>{ticker}</Text>
           <div className={cx('w-[6px] h-[6px] rounded-full', statusColor[status])} />
         </div>
       </Component>

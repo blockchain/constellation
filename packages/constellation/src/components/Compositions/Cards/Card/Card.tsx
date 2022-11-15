@@ -75,7 +75,7 @@ const Card: CardComponent = ({
       >
         <Text
           variant={titleVariantStyles[variant] as 'caption1' | 'body2' | 'title3'}
-          className='!m-0 w-full'
+          className='w-full'
           truncate={isAnnouncement || isCallout}
           color={isAnnouncement ? SemanticColors.medium : SemanticColors.title}
         >
@@ -85,7 +85,7 @@ const Card: CardComponent = ({
           variant={bodyVariantStyles[variant] as 'body2' | 'paragraph2' | 'paragraph1'}
           truncate={isCallout}
           lineClamp={isAnnouncement ? 2 : 0}
-          className='!m-0 !mt-1 w-full'
+          className='!mt-1 w-full'
         >
           {content}
         </Text>
