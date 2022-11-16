@@ -522,7 +522,7 @@
 
         /* Grey */
         --color-grey-000: #FAFBFF;
-        --color-grey-050: #FAFBFF;
+        --color-grey-050: #F0F2F7;
         --color-grey-100: #DFE3EB;
         --color-grey-200: #CCD2DE;
         --color-grey-300: #B1B8C7;
@@ -580,8 +580,8 @@
         --color-success: var(--color-green-600);
         --color-warning: var(--color-orange-600);
         --color-error: var(--color-red-600);
-        --color-background-light: var(--color-grey-000);
-        --color-background-ultra-light: #FAFBFF;
+        --color-background-light: var(--color-grey-050);
+        --color-background-ultra-light: var(--color-grey-000);
         --color-background: var(--color-white);
         --color-background-blue: var(--color-blue-000);
         --color-background-green: var(--color-green-000);
