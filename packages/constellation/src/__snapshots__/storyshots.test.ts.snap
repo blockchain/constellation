@@ -4213,7 +4213,7 @@ exports[`Storyshots Compositions/Input Password Input 1`] = `
     Label
   </label>
   <div
-    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-background-light"
+    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-medium"
   >
     <label
       className="text-muted text-sm select-none pl-4"
@@ -4267,7 +4267,7 @@ exports[`Storyshots Compositions/Input Primary Input 1`] = `
     Label
   </label>
   <div
-    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-background-light"
+    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-medium"
   >
     <label
       className="text-muted text-sm select-none pl-4"
@@ -4302,7 +4302,7 @@ exports[`Storyshots Compositions/Input Tag Input 1`] = `
     Label
   </label>
   <div
-    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-background-light"
+    className="h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1 bg-background-light border-medium"
   >
     <label
       className="text-muted text-sm select-none pl-4"
