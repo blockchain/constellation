@@ -3818,7 +3818,7 @@ exports[`Storyshots Compositions/Cards/Card Card 1`] = `
         className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
       >
         <span
-          className="min-w-full text-center flex"
+          className="text-center flex"
         >
           <span
             className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -3869,7 +3869,7 @@ exports[`Storyshots Compositions/Cards/CtaCard Cta Card 1`] = `
         }
       >
         <span
-          className="min-w-full text-center flex"
+          className="text-center flex"
         />
       </span>
     </div>
@@ -4349,7 +4349,7 @@ exports[`Storyshots Compositions/ListRow List Row 1`] = `
         className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
       >
         <span
-          className="min-w-full text-center flex"
+          className="text-center flex"
         >
           <span
             className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -4428,7 +4428,7 @@ exports[`Storyshots Compositions/Logo Logo 1`] = `
     className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-8 h-8"
   >
     <span
-      className="min-w-full text-center flex"
+      className="text-center flex"
     >
       <span
         className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -4644,7 +4644,7 @@ Array [
               className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-5 h-5"
             >
               <span
-                className="min-w-full text-center flex"
+                className="text-center flex"
               >
                 <span
                   className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -7072,7 +7072,7 @@ exports[`Storyshots Primitives/Switcher/Switcher Switcher 1`] = `
       className="!rounded-full rounded flex justify-center items-center bg-primary relative overflow-hidden w-5 h-5"
     >
       <span
-        className="min-w-full text-center flex"
+        className="text-center flex"
       >
         <span
           className="text-white-000 text-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
