@@ -1,15 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 
 import { truncateId } from '../../../utils'
-import {
-  IconBlockchainLogo,
-  IconClose,
-  IconMenu,
-  IconNotificationOn,
-  IconPresent,
-  SemanticColors,
-  Text,
-} from '../../Base'
+import { IconBlockchainLogo, IconClose, IconMenu, SemanticColors, Text } from '../../Base'
 import { Button, Divider, IconButton, Profile, Tabs } from '../../Primitives'
 import { Logo } from '../Logo'
 import { DropdownItem, NavigationComponent } from './Navigation.types'
@@ -29,8 +21,6 @@ const Navigation: NavigationComponent = ({
   dropdownSecondSectionItems,
   dropdownSecondSectionSeparator,
   navigationTabs,
-  onNotificationClick,
-  onReferralClick,
   onSelectedChange,
   primaryButton,
   secondaryButton,
@@ -38,6 +28,7 @@ const Navigation: NavigationComponent = ({
   title,
   user,
   walletButton,
+  iconActions = [],
 }) => {
   const tabs = useMemo(() => {
     return navigationTabs.map(({ dot, key, label }) => ({
@@ -48,13 +39,6 @@ const Navigation: NavigationComponent = ({
 
   const dropdownItems: DropdownItem[] = useMemo(() => {
     const items = [...navigationTabs]
-
-    if (onNotificationClick) {
-      items.push({ key: 'notifications', label: 'Notifications' })
-    }
-    if (onReferralClick) {
-      items.push({ key: 'referrals', label: 'Referrals' })
-    }
     if (dropdownSecondSectionSeparator) {
       items.push({ ...dropdownSecondSectionSeparator, separator: true } as DropdownItem)
     }
@@ -63,13 +47,7 @@ const Navigation: NavigationComponent = ({
     }
 
     return items
-  }, [
-    navigationTabs,
-    onNotificationClick,
-    onReferralClick,
-    dropdownSecondSectionSeparator,
-    dropdownSecondSectionItems,
-  ])
+  }, [navigationTabs, dropdownSecondSectionSeparator, dropdownSecondSectionItems])
 
   const [menuIsOpen, setMenuIsOpen] = useState(false)
   const [selected, setSelected] = useState(selectedOverride || defaultSelected)
@@ -137,25 +115,16 @@ const Navigation: NavigationComponent = ({
               <Button variant='minimal' size='small' {...secondaryButton} />
             )}
           </div>
-          <div className='flex-row items-center gap-2 hidden lg:flex'>
-            {onNotificationClick && (
+          <div className='flex-row items-center gap-2 ml-4 hidden lg:flex'>
+            {iconActions.map(({ label, onClick, icon: Icon }) => (
               <IconButton
-                onClick={onNotificationClick}
-                icon={<IconNotificationOn alt='Referrals' />}
-                aria-label='Notifications'
-                size='default'
-                className='!bg-background-light border-none rounded-full !h-fit !p-2 text-grey-400 ml-4 hover:text-grey-600 transition-colors'
-              />
-            )}
-            {onReferralClick && (
-              <IconButton
-                onClick={onReferralClick}
-                icon={<IconPresent alt='Referrals' />}
-                aria-label='Referrals'
+                onClick={onClick}
+                icon={<Icon alt={label} />}
+                aria-label={label}
                 size='default'
                 className='!bg-background-light border-none rounded-full !h-fit !p-2 text-grey-400 hover:text-grey-600 transition-colors'
               />
-            )}
+            ))}
             <Divider orientation='vertical' variant='subtle' className='!h-4 mx-2' />
             {user && <Profile {...user} />}
           </div>

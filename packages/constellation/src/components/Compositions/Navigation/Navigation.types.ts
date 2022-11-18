@@ -29,6 +29,12 @@ interface ctaButton {
   variant?: 'error' | 'success' | 'warning'
 }
 
+interface IconAction {
+  label: string
+  icon: React.FC<{ alt: string }>
+  onClick: () => void
+}
+
 interface NavigationProps {
   /**
    * The key for the default selected tab
@@ -52,16 +58,6 @@ interface NavigationProps {
    * of the dropdown on mobile.
    */
   navigationTabs: tab[]
-  /**
-   * The function called when clicking on the notification button. This function
-   * existing also shows the notification button, otherwise it is hidden.
-   */
-  onNotificationClick?: () => void
-  /**
-   * The function called when clicking on the referral button. This function
-   * existing also shows the referral button, otherwise it is hidden.
-   */
-  onReferralClick?: () => void
   /**
    * The function called when switching tabs or clicking an option in the dropdown.
    */
@@ -107,6 +103,10 @@ interface NavigationProps {
      */
     onClick: () => void
   }
+  /**
+   * Round icon actions row
+   */
+  iconActions: IconAction[]
 }
 
 type NavigationComponent = FC<NavigationProps>
