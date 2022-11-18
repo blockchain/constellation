@@ -72,7 +72,7 @@ const InternalLogo: InternalLogoComponent = ({
     >
       <>
         <Avatar.Image src={imgSrc} className='w-full h-full object-cover' alt={altText} />
-        <Avatar.Fallback className='min-w-full text-center flex'>
+        <Avatar.Fallback className='text-center flex'>
           {(icon &&
             (size === 'large' && React.isValidElement(icon)
               ? React.cloneElement(icon, { size: 'medium' })
