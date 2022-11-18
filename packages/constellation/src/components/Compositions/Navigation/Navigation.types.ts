@@ -54,6 +54,10 @@ interface NavigationProps {
    */
   dropdownSecondSectionSeparator?: { key: string; label: string }
   /**
+   * Round icon actions row
+   */
+  iconActions: IconAction[]
+  /**
    * The main navigation tabs shown in the header and at the start
    * of the dropdown on mobile.
    */
@@ -103,10 +107,6 @@ interface NavigationProps {
      */
     onClick: () => void
   }
-  /**
-   * Round icon actions row
-   */
-  iconActions: IconAction[]
 }
 
 type NavigationComponent = FC<NavigationProps>
