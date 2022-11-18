@@ -116,8 +116,9 @@ const Navigation: NavigationComponent = ({
             )}
           </div>
           <div className='flex-row items-center gap-2 ml-4 hidden lg:flex'>
-            {iconActions.map(({ label, onClick, icon: Icon }) => (
+            {iconActions.map(({ icon: Icon, label, onClick }) => (
               <IconButton
+                key={label}
                 onClick={onClick}
                 icon={<Icon alt={label} />}
                 aria-label={label}

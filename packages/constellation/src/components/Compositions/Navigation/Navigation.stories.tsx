@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
-import { IconPresent, IconNotificationOn } from '../../Base'
+import { IconNotificationOn, IconPresent } from '../../Base'
 import {
   Navigation as NavigationComponent,
   NavigationComponent as NavigationComponentType,
@@ -29,6 +29,18 @@ export default {
       key: 'account',
       label: 'Account',
     },
+    iconActions: [
+      {
+        icon: IconPresent,
+        label: 'Referrals',
+        onClick: () => action('referrals.onClick')(),
+      },
+      {
+        icon: IconNotificationOn,
+        label: 'Notifications',
+        onClick: () => action('notifications.onClick')(),
+      },
+    ],
     navigationTabs: [
       { key: 'home', label: 'Home' },
       { key: 'prices', label: 'Prices' },
@@ -58,18 +70,6 @@ export default {
         'https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/ZJZZK5B2ZNF25LYQHMUTBTOMLU.png',
       onClick: () => action('walletButton.onClick')(),
     },
-    iconActions: [
-      {
-        label: 'Referrals',
-        icon: IconPresent,
-        onClick: () => action('referrals.onClick')(),
-      },
-      {
-        label: 'Notifications',
-        icon: IconNotificationOn,
-        onClick: () => action('notifications.onClick')(),
-      },
-    ],
   },
   component: NavigationComponent,
   parameters: {

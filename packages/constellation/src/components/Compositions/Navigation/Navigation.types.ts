@@ -30,8 +30,8 @@ interface ctaButton {
 }
 
 interface IconAction {
-  label: string
   icon: React.FC<{ alt: string }>
+  label: string
   onClick: () => void
 }
 
