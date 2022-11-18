@@ -2,6 +2,7 @@ import { action } from '@storybook/addon-actions'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
 
+import { IconNotificationOn, IconPresent } from '../../Base'
 import {
   Navigation as NavigationComponent,
   NavigationComponent as NavigationComponentType,
@@ -28,6 +29,18 @@ export default {
       key: 'account',
       label: 'Account',
     },
+    iconActions: [
+      {
+        icon: IconPresent,
+        label: 'Referrals',
+        onClick: () => action('referrals.onClick')(),
+      },
+      {
+        icon: IconNotificationOn,
+        label: 'Notifications',
+        onClick: () => action('notifications.onClick')(),
+      },
+    ],
     navigationTabs: [
       { key: 'home', label: 'Home' },
       { key: 'prices', label: 'Prices' },
