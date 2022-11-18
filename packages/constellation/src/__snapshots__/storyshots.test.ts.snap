@@ -4677,8 +4677,44 @@ Array [
         </button>
       </div>
       <div
-        className="flex-row items-center gap-2 hidden lg:flex"
+        className="flex-row items-center gap-2 ml-4 hidden lg:flex"
       >
+        <button
+          aria-label="Referrals"
+          className="!bg-background-light border-none rounded-full !h-fit !p-2 text-grey-400 hover:text-grey-600 transition-colors bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <icon-present.svg
+            alt="Referrals"
+            color="inherit"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          
+        </button>
+        <button
+          aria-label="Notifications"
+          className="!bg-background-light border-none rounded-full !h-fit !p-2 text-grey-400 hover:text-grey-600 transition-colors bg-transparent hover:bg-transparent focus:bg-transparent disabled:bg-transparent active:bg-transparent text-primary hover:text-blue-700 mode-dark:hover:text-blue-300 active:text-blue-900 mode-dark:active:text-blue-200 focus:text-blue-800 mode-dark:focus:text-blue-200 disabled:text-blue-200 mode-dark:disabled:text-blue-500 px-6 py-3 text-base h-12 flex w-fit"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <icon-notification-on.svg
+            alt="Notifications"
+            color="inherit"
+            fill="currentColor"
+            focusable="false"
+            height="1rem"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          
+        </button>
         <div
           aria-orientation="vertical"
           className="constellation bg-background-light mode-dark:bg-dark-700 h-full w-px !h-4 mx-2"
