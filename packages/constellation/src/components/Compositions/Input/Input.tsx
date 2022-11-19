@@ -32,7 +32,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           className={classnames(
             'h-12 rounded-lg flex border border-solid items-center focus-within:border-primary mt-1 mb-1',
             {
-              'bg-background-light border-background-light': !disabled,
+              'bg-background-light border-medium': !disabled,
               'bg-medium border-medium': disabled,
               'border-error': state === 'error',
               'border-success': state === 'success',
