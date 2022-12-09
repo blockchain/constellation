@@ -571,7 +571,7 @@
 
     .mode-light {
         --color-title: var(--color-grey-900);
-        --color-body: var(--color-grey-800);
+        --color-body: var(--color-grey-700);
         --color-overlay: var(--color-overlay-dark-600);
         --color-muted: var(--color-grey-400);
         --color-dark: var(--color-grey-300);
