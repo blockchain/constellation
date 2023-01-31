@@ -4637,7 +4637,7 @@ __metadata:
     rollup: 2.63.0
     rollup-plugin-dts: 4.1.0
     rollup-plugin-peer-deps-external: 2.2.4
-    rollup-plugin-postcss: "https://github.com/blockdylanb/rollup-plugin-postcss.git"
+    rollup-plugin-postcss: "https://github.com/milan-bc/rollup-plugin-postcss.git"
     rollup-plugin-svgo: ^2.0.0
     rollup-plugin-terser: 7.0.2
     rollup-plugin-visualizer: 5.6.0
@@ -23435,9 +23435,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-postcss@https://github.com/blockdylanb/rollup-plugin-postcss.git":
+"rollup-plugin-postcss@https://github.com/milan-bc/rollup-plugin-postcss.git":
   version: 3.0.0
-  resolution: "rollup-plugin-postcss@https://github.com/blockdylanb/rollup-plugin-postcss.git#commit=c45035588bd5bb562cba8702a8b65d80dbb9e996"
+  resolution: "rollup-plugin-postcss@https://github.com/milan-bc/rollup-plugin-postcss.git#commit=24a0afa7a3b6527400ccd48aecad919ef919a285"
   dependencies:
     chalk: ^4.1.0
     concat-with-sourcemaps: ^1.1.0
@@ -23451,10 +23451,10 @@ __metadata:
     resolve: ^1.19.0
     rollup-pluginutils: ^2.8.2
     safe-identifier: ^0.4.2
-    style-inject: "https://github.com/blockdylanb/style-inject.git"
+    style-inject: "https://github.com/milan-bc/style-inject.git"
   peerDependencies:
     postcss: 8.x
-  checksum: 87c69a0b01fb739af6a40584e6e026623464b29ee5d0a24ee37787041b39286685887ae08c0c5a0b384a12b385099bccfd15a9cce498f27888a9bc181ad51065
+  checksum: 847353dbc0e5f44b6bf7fecc2c31739e75e9648b5eeccc392cad5c33443249fa0fe9b92a1a04c6ff33dff54ba3060c782a7fb192f3bde48774edce70a4472341
   languageName: node
   linkType: hard
 
@@ -24738,9 +24738,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"style-inject@https://github.com/blockdylanb/style-inject.git":
+"style-inject@https://github.com/milan-bc/style-inject.git":
   version: 0.3.0
-  resolution: "style-inject@https://github.com/blockdylanb/style-inject.git#commit=ad41dc6c8561ee0026a217b8ee9be3af6a88ad0c"
+  resolution: "style-inject@https://github.com/milan-bc/style-inject.git#commit=ad41dc6c8561ee0026a217b8ee9be3af6a88ad0c"
   checksum: bfcf7ccdcc67b7c3e92e150e9facb5930092a0a4a5d39038f5685e7aab062d9c8e71aa3e712c431d8223844307984395af01373e95d3411ccf45209b24bf230c
   languageName: node
   linkType: hard
